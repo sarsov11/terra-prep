@@ -1,0 +1,2 @@
+/* Auto-generated — pipeline artifact */
+window.READY={"reg_entities": {"name": "Federal Taxation of Entities", "n": 155, "v": "38dd76aa"}, "reg_individuals": {"name": "Federal Taxation of Individuals", "n": 160, "v": "7dd2dcae"}, "reg_property_transactions": {"name": "Federal Taxation of Property Transactions", "n": 86, "v": "283c955c"}, "reg_tax_procedures": {"name": "Federal Tax Procedures", "n": 78, "v": "9ec86d93"}};

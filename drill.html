@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Training — {{BRAND}}</title>
+<link rel="icon" href="icons/favicon.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
+<link rel="stylesheet" href="css/app.css">
+<style>
+  .hd{padding:26px 0 4px}
+  .hd h1{font-size:26px}
+  .hd p{color:var(--ink-3);margin:4px 0 0}
+  .row .n{font-weight:900;font-size:15px;color:var(--ink-3);white-space:nowrap}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="hd"><h1>Training</h1><p>Separate from today's set — pick whatever you feel like doing.</p></div>
+  <div class="list sec" id="ls"></div>
+</div>
+<script src="js/brand.js"></script>
+<script src="js/catalog.js"></script>
+<script src="data/ready.js"></script>
+<script src="js/boot.js"></script>
+<script src="js/store.js"></script>
+<script>
+(function () {
+  "use strict";
+  GB.mountNav("drill.html");
+  var S = GB.state(), done = Object.keys(S.pairs).filter(function (k) { return S.pairs[k].ok; }).length;
+  var wrong = GB.wrongList().length, mis = Object.keys(S.ans).filter(function (id) { return S.ans[id].kind === "misconception"; }).length;
+  var rows = [
+    ["ox.html?mode=hard", "Hard True/False", "True sentences with one or two words changed to make them false" + (mis ? " — starting with " + mis + " you were confident about but missed" : ""), GB.pairs().length],
+    ["ox.html?mode=pair", "Confusable pairs", "Pick the true one of two similar past-question sentences", done + " / " + GB.pairs().length],
+    ["ox.html?mode=speed", "60-second sprint", "Reaction only, no confidence step. Short sentences", "60s"],
+    ["ox.html?mode=wrong", "Retry missed sentences", wrong ? "Starting with the most recent misses" : "No missed sentences yet", wrong],
+    ["skilltree.html", "Pick a topic to solve", "Tap a topic in the skill tree to solve just that topic", GB.nodes.length]
+  ];
+  document.getElementById("ls").innerHTML = rows.map(function (r) {
+    return '<a class="row" href="' + r[0] + '"><span class="t"><b>' + r[1] + "</b><span>" + GB.esc(r[2]) + '</span></span><span class="n num">' + r[3] + "</span></a>";
+  }).join("");
+})();
+</script>
+</body>
+</html>
