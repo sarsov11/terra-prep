@@ -23,17 +23,17 @@
     reg_tax_procedures: { name: "Federal Tax Procedures" },
     reg_property_transactions: { name: "Federal Taxation of Property Transactions" },
     reg_individuals: { name: "Federal Taxation of Individuals" },
-    reg_entities: { name: "Federal Taxation of Entities" }
-    /* cfa_l1_ethics: { name: "Ethical and Professional Standards" }  — add once data/cfa_l1_ethics.js exists */
+    reg_entities: { name: "Federal Taxation of Entities" },
+    cfa_l1_ethics: { name: "Ethical and Professional Standards" }
   };
 
   /* Exams — an exam with only one series omits the series list. */
   var EXAMS = [
     { id: "cpa", name: "US CPA — REG (Taxation)", sub: "Offered year-round at Prometric testing centers — enter your own test date on the Settings screen.",
-      date: null, subs: ["reg_tax_procedures", "reg_property_transactions", "reg_individuals", "reg_entities"] }
-    /* Add an exam here. An exam with a series uses `series` instead of `subs`:
-       { id: "cfa1", name: "CFA Level I", sub: "…", date: null, series: [
-         { id: "ethics", name: "Ethics", subs: ["cfa_l1_ethics"] } ] } */
+      date: null, subs: ["reg_tax_procedures", "reg_property_transactions", "reg_individuals", "reg_entities"] },
+    { id: "cfa1", name: "CFA Level I", sub: "Computer-based testing available year-round — enter your own test date on the Settings screen.",
+      date: null, series: [
+        { id: "ethics", name: "Ethics", subs: ["cfa_l1_ethics"] } ] }
   ];
 
   function exam(id) { return EXAMS.filter(function (e) { return e.id === id; })[0] || null; }
