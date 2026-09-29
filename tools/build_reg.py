@@ -51,9 +51,12 @@ def question(it):
         "cite": C.cite_text(it["cite"]),
         "rat": first_sentence(it["why"][it["answer"]]),
         "ex": [clean(it["why"][k]) for k in "ABCD"],
+        "wt": C.tag_wrong_options(it),
         "tags": {"area": it["area"], "group": it["group"], "skill": it["skill"], "diff": it["difficulty"]},
         "asof": it.get("law_asof") or "",
     }
+    if it.get("rule_line"):
+        mc["rl"] = str(it["rule_line"]).strip()
     if isinstance(ex, list) and ex:
         mc["tb"] = ex
     if it.get("testable_from"):
@@ -144,6 +147,17 @@ subs = ", ".join('"%s"' % C.SUBJECTS[ar][0] for ar in C.AREAS)
 cat = re.sub(r"(/\* BEGIN REG SUBJECTS[^\n]*\*/\n).*?(    /\* END REG SUBJECTS \*/)", lambda m: m.group(1) + subj + m.group(2), cat, flags=re.S)
 cat = re.sub(r"(/\* BEGIN REG SUBS \*/).*?(/\* END REG SUBS \*/)", lambda m: m.group(1) + "[" + subs + "]" + m.group(2), cat, flags=re.S)
 open(cp, "w", encoding="utf-8", newline="\n").write(cat)
+
+# ---- offline (PWA): service worker file list + version (content hash of every shipped app file)
+swp = os.path.join(C.ROOT, "sw.js")
+if os.path.exists(swp):
+    files = C.pwa_files()
+    ver = C.pwa_version(files)
+    sw = open(swp, encoding="utf-8").read()
+    sw = re.sub(r"(/\* BEGIN PRECACHE[^\n]*\*/\n).*?(/\* END PRECACHE \*/)",
+                lambda m: m.group(1) + 'var VERSION = "%s";\nvar FILES = %s;\n' % (ver, json.dumps(files, indent=1)) + m.group(2), sw, flags=re.S)
+    open(swp, "w", encoding="utf-8", newline="\n").write(sw)
+    report.append("sw.js version %s, %d files precached" % (ver, len(files)))
 
 print("\n".join(report))
 print("total shipped:", sum(shipped.values()), "| include_draft:", a.include_draft)

@@ -1,1 +1,19 @@
-{"name":"Terra Prep","short_name":"Terra Prep","start_url":"index.html","display":"standalone","background_color":"#FFFFFF","theme_color":"#FFFFFF","icons":[{"src":"icons/favicon.svg","sizes":"any","type":"image/svg+xml"}]}
+{
+  "id": "./",
+  "name": "Terra Prep",
+  "short_name": "Terra Prep",
+  "description": "US CPA REG practice questions with per-choice explanations. Works offline.",
+  "lang": "en",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "icons": [
+    { "src": "icons/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -8,6 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
 <link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/features.css">
 <style>
   .hd{padding:26px 0 4px}
   .hd h1{font-size:26px}
@@ -21,6 +22,7 @@
   <div class="list sec" id="ls"></div>
 </div>
 <script src="js/brand.js"></script>
+<script src="js/pwa.js"></script>
 <script src="js/catalog.js"></script>
 <script src="data/ready.js"></script>
 <script src="js/boot.js"></script>
@@ -36,6 +38,10 @@
     ["exam.html", "Mock exam", "Blueprint-weighted questions across the Areas, timed, with a review screen", "12 · 24 · 36 · 72"],
     ["ox.html?mode=wrong", "Retry missed questions", wrong ? "Starting with the most recent misses" : "No missed questions yet", wrong],
     ["ox.html?mode=flag", "Flagged questions", flagged ? "Questions you marked with Flag" : "Use Flag on a question to keep it here", flagged],
+    ["cards.html", "Flashcards", "Cards made from missed questions, with spaced review", GB.dueCards().length + " due"],
+    ["insights.html", "Insights", "Estimated range and wrong-answer causes by week", "›"],
+    ["plan.html", "Study plan", "Daily split from your test date and weekly hours", GB.planOn() ? GB.hours() + " h" : "Set up"],
+    ["method.html", "How the numbers are made", "How we pick your next question, the range and the plan", "›"],
     ["skilltree.html", "Pick a unit", "Choose a unit and solve 10, 20 or 30 questions from it", GB.nodes.length]
   ];
   if (hasOX) rows = rows.concat([

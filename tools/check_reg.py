@@ -91,6 +91,8 @@ for ar, items in per_area.items():
             if "!" in f or EMO.search(f): F(i, "exclamation mark or emoji"); break
         for f in texts(it):
             if BADCH.search(f): F(i, "non-English or broken characters: " + f[:30]); break
+        for oo in o:                                   # a stray "A." / "(B)" label glued onto an option (a plain article "A $4,000 ..." is fine)
+            if re.match(r"^\(?[A-Da-d][\.\):]\s", oo): F(i, "option text starts with a choice label: " + oo[:30])
         if BAN.search(" ".join(o)): F(i, "banned option word (zero/never/always/none of the above)")
         txt = " ".join([it["stem"]] + list(o))
         if re.search(r"\b\d[\d,]*\s+dollars\b", txt): F(i, "use $ (not 'dollars')")
@@ -165,7 +167,29 @@ if not a.no_data:
             if {q["i"] for q in flat} != src_ids: fails.append("%s: question ids differ from source" % key)
             for q in flat:
                 m2 = q["mc"]
+                wt = m2.get("wt")
+                if not (isinstance(wt, list) and len(wt) == 4 and all((t == "" and j == m2["a"] - 1) or (t in C.WRONG_TAGS and j != m2["a"] - 1) for j, t in enumerate(wt))): fails.append("%s: bad wrong-choice tags %s" % (q["i"], wt))
                 if len(m2["o"]) != 4 or len(m2["ex"]) != 4 or not (1 <= m2["a"] <= 4): fails.append("%s: bad mc structure" % q["i"])
+
+# ---- offline cache: sw.js must list every shipped file and carry the current content hash
+if not a.no_data:
+    swp = os.path.join(C.ROOT, "sw.js")
+    if not os.path.exists(swp): fails.append("sw.js missing")
+    else:
+        sw = open(swp, encoding="utf-8").read()
+        files = C.pwa_files(); ver = C.pwa_version(files)
+        if 'var VERSION = "%s";' % ver not in sw: fails.append("sw.js is stale (run tools/build_reg.py to refresh version and file list)")
+        try:
+            listed = json.loads(re.search(r"var FILES = (\[.*?\]);", sw, re.S).group(1))
+            if listed != files: fails.append("sw.js file list differs from the shipped files")
+        except Exception: fails.append("sw.js FILES list unreadable")
+    try:
+        mf = json.load(open(os.path.join(C.ROOT, "manifest.webmanifest"), encoding="utf-8"))
+        for k in ("name", "short_name", "start_url", "display", "icons"):
+            if not mf.get(k): fails.append("manifest.webmanifest missing " + k)
+    except Exception as e: fails.append("manifest.webmanifest unreadable: %s" % e)
+    tagc = collections.Counter(t for ar, items in per_area.items() for it in items for t in C.tag_wrong_options(it) if t)
+    print("wrong-choice tags:", dict(tagc))
 
 print("Area | source | shipped")
 for ar in C.AREAS:

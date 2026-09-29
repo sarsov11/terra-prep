@@ -96,3 +96,91 @@ def cite_text(cite):
 def accepted(items, include_draft=False):
     ok = set(ACCEPT) | ({"draft"} if include_draft else set())
     return [i for i in items if i.get("status") in ok]
+
+
+# ---------------------------------------------------------------------------
+# Wrong-choice cause tags (rule based, no model call).
+#   concept  = a different rule applied / rule misunderstood
+#   calc     = arithmetic or procedure slip in a computed answer
+#   trap     = a tempting phrase, absolute word or wrong "because" reason
+#   limit    = a dollar limit, percentage, day or year count, or threshold mixed up
+#   unclassified = no rule fired with confidence
+# A source item may carry its own tags and they win over the rules:
+#   "wrong_tags": {"A": "trap", "C": "calc"}   (also accepted as "distractor_tags", or a 4-list)
+# ---------------------------------------------------------------------------
+WRONG_TAGS = ["concept", "calc", "trap", "limit", "unclassified"]
+_LIMIT = re.compile(r"\b(limit|limits|limited|threshold|cap|capped|ceiling|phase-?out|maximum|minimum|band|bracket|increment|"
+                    r"reach-back|recognition period|look-?back|statute of limitations|exceeds?)\b"
+                    r"|\b(\d+|two|three|four|five|six|ten|twelve|thirty|sixty|ninety)[- ](percent|days?|months?|years?|year)\b|\b\d+(\.\d+)?%\s+(rule|test|threshold|limit)", re.I)
+_OP = re.compile(r"^(Uses|Adds|Subtracts|Ignores|Doubles|Reduces|Rounds|Applies|Omits|Deducts|Includes|Forgets|Counts|Taxes|Multiplies|"
+                 r"Divides|Excludes|Disallows|Computes|Takes|Treats|Reverses|Double|Fails|Stops|Starts|Mixes|Only|This is only|This is the|This is)\b")
+_TRAP = re.compile(r"\b(even though|even if|regardless|no matter|merely|does not depend|not on who|rather than|is not the test|looks|appears|"
+                   r"tempting|superficial|the results are reversed|only because|not because)\b", re.I)
+_TRAP_OPT = re.compile(r"\b(only if|only when|solely|automatically|regardless|always|never|both)\b", re.I)
+_CONCEPT = re.compile(r"\b(is|are) (excluded|not|treated|taxable|deductible|allowed|required|stepped|a|an|the|considered)\b|does not|do not|cannot|may not|"
+                      r"not part|instead|applies|apply|governed|reverses|only (for|to)|no state law|is not required|is limited to|must|requires?", re.I)
+
+
+def _numeric_option(t):
+    return bool(re.fullmatch(r"-?\$?[\d,]+(\.\d+)?%?", t.strip())) or bool(re.match(r"^\$[\d,]+", t.strip()))
+
+
+def _src_tags(it):
+    t = it.get("wrong_tags") or it.get("distractor_tags")
+    if isinstance(t, dict):
+        return {k: v for k, v in t.items() if v in WRONG_TAGS}
+    if isinstance(t, list) and len(t) == 4:
+        return {k: v for k, v in zip("ABCD", t) if v in WRONG_TAGS}
+    return {}
+
+
+def tag_wrong_options(it):
+    """List of 4 tags aligned with options; the correct option gets ''."""
+    src = _src_tags(it)
+    out = []
+    for k, opt in zip("ABCD", it["options"]):
+        if k == it["answer"]:
+            out.append(""); continue
+        if k in src:
+            out.append(src[k]); continue
+        why = re.sub(r"^(Correct|Incorrect)\.\s*", "", str(it["why"][k])).strip()
+        limit = bool(_LIMIT.search(why))
+        if it.get("calc") and _numeric_option(opt):
+            out.append("limit" if limit and not _OP.match(why) else "calc")
+        elif _OP.match(why) and _numeric_option(opt):
+            out.append("calc")
+        elif limit:
+            out.append("limit")
+        elif _TRAP.search(why) or _TRAP_OPT.search(opt):
+            out.append("trap")
+        elif _CONCEPT.search(why):
+            out.append("concept")
+        else:
+            out.append("unclassified")
+    return out
+
+
+# ---------------------------------------------------------------------------
+# Offline (PWA): the file list and a content hash that versions the service worker cache.
+# ---------------------------------------------------------------------------
+def pwa_files():
+    """Shipped app files. PWA_EXCLUDE="tbs.html,js/tbs.js" (comma list) leaves out files that are not committed yet."""
+    skip = {x.strip() for x in os.environ.get("PWA_EXCLUDE", "").split(",") if x.strip()}
+    out = []
+    for d, ext in (("", (".html",)), ("css", (".css",)), ("js", (".js",)), ("data", (".js",)), ("icons", (".svg", ".png"))):
+        base = os.path.join(ROOT, d) if d else ROOT
+        if not os.path.isdir(base):
+            continue
+        for n in sorted(os.listdir(base)):
+            if n.endswith(ext) and not (d == "" and n in ("sw.js",)):
+                out.append((d + "/" + n) if d else n)
+    out.append("manifest.webmanifest")
+    return sorted(set(out) - skip)
+
+
+def pwa_version(files):
+    import hashlib
+    h = hashlib.md5()
+    for f in files:
+        h.update(f.encode()); h.update(open(os.path.join(ROOT, f), "rb").read())
+    return h.hexdigest()[:10]

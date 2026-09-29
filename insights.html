@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Insights — {{BRAND}}</title>
+<link rel="icon" href="icons/favicon.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/features.css">
+<style>.hd{padding:26px 0 4px}.hd h1{font-size:26px}.hd p{color:var(--ink-3);margin:4px 0 0}.card{margin-top:14px}.card h2{font-size:17px;margin-bottom:8px}</style>
+</head>
+<body>
+<div class="page">
+  <div class="hd"><h1>Insights</h1></div>
+  <div class="card" id="rd"></div>
+  <div class="card" id="wk"></div>
+</div>
+<script src="js/brand.js"></script>
+<script src="js/pwa.js"></script>
+<script src="js/catalog.js"></script>
+<script src="data/ready.js"></script>
+<script src="js/boot.js"></script>
+<script src="js/store.js"></script>
+<script>
+(function () {
+  "use strict";
+  GB.mountNav("drill.html");
+  var esc = GB.esc, R = GB.readiness(), $ = function (id) { return document.getElementById(id); };
+  var h = "<h2>Readiness</h2>";
+  if (!R.ready) {
+    h += '<p class="muted" style="margin:0">Not enough data · ' + R.n + " of " + R.min + " answers</p>";
+  } else {
+    h += '<div class="stat"><span class="big num">Estimated range ' + R.lo + "–" + R.hi + '</span><span class="muted">% correct, weighted by Area</span></div>' +
+      '<div class="rng" aria-hidden="true"><i style="left:' + R.lo + "%;width:" + Math.max(1, R.hi - R.lo) + '%"></i></div>' +
+      '<p class="fine">Based on ' + R.n + " answered questions in " + R.touched + " of " + R.areas.length + " Areas" +
+      (R.hi - R.lo > 40 ? " · wide range: some Areas have few or no answers" : "") + "</p>";
+  }
+  h += '<p class="fine">Practice scores can differ from the real exam. This is not a pass prediction. <a href="method.html#range">How it is calculated</a></p>' +
+    '<div class="tblwrap" style="margin-top:10px"><table class="tbl"><tr><th>Area</th><th class="r">Weight</th><th class="r">Answered</th><th class="r">Correct</th><th class="r">Range</th></tr>' +
+    R.areas.map(function (a) {
+      return "<tr><td>" + esc(a.name) + '</td><td class="r">' + a.w + '</td><td class="r">' + a.n + '</td><td class="r">' + (a.pct == null ? "–" : a.pct + "%") + '</td><td class="r">' + (a.n ? a.lo + "–" + a.hi : "0–100") + "</td></tr>";
+    }).join("") + "</table></div>";
+  $("rd").innerHTML = h;
+
+  var W = GB.weeklyReport(6), cols = GB.CAUSES;
+  var t = W.total, w = "<h2>Wrong answers by cause</h2>";
+  if (!t.n) {
+    w += '<p class="muted" style="margin:0">No wrong answers logged</p>';
+  } else {
+    w += '<div class="stat"><span class="big num">' + t.sure + '</span><span class="muted">Certain + wrong, all time (' + t.n + " wrong answers logged)</span></div>" +
+      '<p class="fine">Certain + wrong means you chose “Certain” and the answer was wrong. These are the misconceptions.</p>' +
+      '<div class="tblwrap" style="margin-top:10px"><table class="tbl"><tr><th>Week of</th><th class="r">Wrong</th><th class="r">Certain + wrong</th>' +
+      cols.map(function (c) { return '<th class="r">' + esc(c.n) + "</th>"; }).join("") + "</tr>" +
+      W.rows.map(function (r) {
+        return "<tr><td>" + r.start + '</td><td class="r">' + r.n + '</td><td class="r">' + r.sure + "</td>" +
+          cols.map(function (c) { return '<td class="r">' + (r.by[c.v] || 0) + "</td>"; }).join("") + "</tr>";
+      }).join("") +
+      '<tr><td><b>All time</b></td><td class="r"><b>' + t.n + '</b></td><td class="r"><b>' + t.sure + "</b></td>" + cols.map(function (c) { return '<td class="r"><b>' + (t.by[c.v] || 0) + "</b></td>"; }).join("") + "</tr></table></div>" +
+      '<p class="fine">Cause = the type set after the miss, otherwise the automatic guess. Weeks start Monday. <a href="method.html">How the types are assigned</a></p>';
+  }
+  $("wk").innerHTML = w;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Study plan — {{BRAND}}</title>
+<link rel="icon" href="icons/favicon.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/features.css">
+<style>
+  .hd{padding:26px 0 4px}.hd h1{font-size:26px}.hd p{color:var(--ink-3);margin:4px 0 0}.card{margin-top:14px}.card h2{font-size:17px;margin-bottom:8px}
+  .f label{display:block;font-size:14px;color:var(--ink-3);font-weight:700;margin:12px 0 6px}
+  input[type=date],input[type=number]{font:inherit;font-size:16px;padding:10px 12px;border:1.5px solid var(--line-2);border-radius:var(--r2);background:var(--surface);color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="hd"><h1>Study plan</h1></div>
+  <div class="card f">
+    <label for="dt">Test date</label><input type="date" id="dt">
+    <label>Study hours per week</label><div class="seg3" id="hr"></div>
+    <label for="hc">Other hours</label><input type="number" id="hc" min="1" max="60" step="1" style="width:100px">
+  </div>
+  <div id="out"></div>
+  <p class="fine"><a href="method.html#plan">How the plan is calculated</a></p>
+</div>
+<script src="js/brand.js"></script>
+<script src="js/pwa.js"></script>
+<script src="js/catalog.js"></script>
+<script src="data/ready.js"></script>
+<script src="js/boot.js"></script>
+<script src="js/store.js"></script>
+<script>
+(function () {
+  "use strict";
+  GB.mountNav("drill.html");
+  var esc = GB.esc, $ = function (id) { return document.getElementById(id); };
+  var HRS = [5, 8, 10, 15, 20, 25];
+  function seg() {
+    $("hr").innerHTML = HRS.map(function (h) { return '<button type="button" data-h="' + h + '" aria-pressed="' + (GB.hours() === h) + '">' + h + " h</button>"; }).join("");
+    $("hr").querySelectorAll("button").forEach(function (b) { b.onclick = function () { GB.setHours(+b.dataset.h); $("hc").value = ""; draw(); }; });
+  }
+  function fmt(d) { var x = new Date(d + "T00:00:00"); return ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][x.getDay()] + " " + (x.getMonth() + 1) + "/" + x.getDate(); }
+  function draw() {
+    seg();
+    if (GB.goalMark() === "custom") $("dt").value = GB.goal();
+    var p = GB.plan(), o = $("out");
+    if (!p.on) {
+      o.innerHTML = '<div class="card"><p class="muted" style="margin:0">' + (p.why === "passed" ? "Test date passed" : p.why === "date" ? "Test date not set" : "Weekly hours not set") + "</p></div>";
+      return;
+    }
+    var names = {}; p.pools.forEach(function (x) { names[x.key] = x.name; });
+    var h = '<div class="card"><h2>Today</h2><ul class="planlist">' + p.pools.map(function (x) {
+      return "<li><span>" + esc(x.name) + '</span><span><b class="num">' + (p.today[x.key] || 0) + '</b> questions · <a href="ox.html?s=' + x.key + '">Start</a></span></li>'; }).join("") + "</ul>" +
+      '<p class="fine">About ' + p.perDay + " min a day at " + p.hours + " h a week. " + p.days + " days to the test. " + GB.num(p.total) + " questions left to answer or redo.</p>";
+    if (p.short > 0) h += '<p class="fine warnline">At this pace ' + GB.num(p.short) + " questions do not fit before the test. About " + p.needHours + " h a week would cover them.</p>";
+    else h += '<p class="fine">At this pace the pool is finished ' + (p.finishDay == null ? "before the test" : "in " + (p.finishDay + 1) + " days") + ". Remaining time: review + mock exams.</p>";
+    h += "</div>";
+    h += '<div class="card"><h2>Next 14 days</h2><div class="tblwrap"><table class="tbl"><tr><th>Day</th><th class="r">Questions</th><th>Split</th></tr>' +
+      p.list.slice(0, 14).map(function (d, i) {
+        var sp = Object.keys(d.alloc).filter(function (k) { return d.alloc[k]; }).map(function (k) { return esc((names[k] || k).replace(/^Area ([IV]+) · .*$/, "Area $1")) + " " + d.alloc[k]; }).join(", ");
+        return "<tr><td>" + (i ? fmt(d.date) : "Today") + '</td><td class="r">' + d.total + "</td><td>" + (sp || "Review + mock exam") + "</td></tr>";
+      }).join("") + "</table></div></div>";
+    o.innerHTML = h;
+  }
+  $("dt").onchange = function () { if (this.value) { GB.setGoal(this.value, true); location.reload(); } };
+  $("hc").onchange = function () { var v = +this.value; if (v >= 1 && v <= 60) { GB.setHours(v); draw(); } };
+  draw();
+})();
+</script>
+</body>
+</html>

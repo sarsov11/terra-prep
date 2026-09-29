@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>How it works — {{BRAND}}</title>
+<link rel="icon" href="icons/favicon.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/features.css">
+<style>.hd{padding:26px 0 4px}.hd h1{font-size:26px}.hd p{color:var(--ink-3);margin:4px 0 0}</style>
+</head>
+<body>
+<div class="page prose">
+  <div class="hd"><h1>How the numbers are made</h1></div>
+  <div id="body"></div>
+</div>
+<script src="js/brand.js"></script>
+<script src="js/pwa.js"></script>
+<script src="js/catalog.js"></script>
+<script src="data/ready.js"></script>
+<script src="js/boot.js"></script>
+<script src="js/store.js"></script>
+<script>
+(function () {
+  "use strict";
+  GB.mountNav("drill.html");
+  var F = GB.FORMULA, esc = GB.esc, R = GB.readiness();
+  function pc(x) { return Math.round(x * 100) + "%"; }
+  var w = GB.CAUSES.filter(function (c) { return c.v !== "unclassified"; }).map(function (c) { return "<li><b>" + esc(c.n) + "</b>: " + esc(c.d) + "</li>"; }).join("");
+  document.getElementById("body").innerHTML =
+    '<h2 id="pick">How we pick your next question</h2>' +
+    "<p>Each question that is new, or whose review date has arrived, gets a score from 0 to 100. Today’s set takes the highest scores that fit the time budget.</p>" +
+    '<div class="formula">score = 100 × ( ' + F.wTopic + " × T  +  " + F.wType + " × E  +  " + F.wDue + " × D )</div>" +
+    "<ul>" +
+    "<li><b>T, weak topic</b> = 1 − (correct + " + F.prior + " × " + F.priorN + ") ÷ (answered + " + F.priorN + "), for the question’s Topic, using your latest attempt on each question. A Topic with no answers scores " + (1 - F.prior).toFixed(1) + ".</li>" +
+    "<li><b>E, repeated error type</b> = the sum, over cause types, of (that type’s share of your last " + F.typeWindow + " wrong answers) × (how many of this question’s 3 wrong choices carry that type) ÷ " + F.typeFull + ", capped at 1. A type counts only after it appears " + F.typeMin + " times. Guessed and unclassified are left out.</li>" +
+    "<li><b>D, review due</b> = 0 for a new question. For an answered question whose review date has arrived: min(1, " + F.dueBase + " + " + F.dueStep + " × days overdue). Review gaps by box: " + F.gaps.join(", ") + " days. A correct answer given with “Certain” moves up one box; any miss goes back to box 0.</li>" +
+    "<li>At most " + F.perNode + " questions from one Topic go into a day’s set, unless nothing else fits.</li>" +
+    "</ul>" +
+    "<p>The chips above a question (Weak topic, Review due, Repeated: …) show which parts were high for that question.</p>" +
+
+    "<h2>Wrong-choice types</h2>" +
+    "<p>Each wrong choice carries one type, assigned when the question bank is built. Where the question source names a type, that is used. Otherwise a keyword rule reads the choice’s explanation. When no rule fits, the choice is Unclassified. These tags are automatic guesses, not a reviewer’s judgment. After a miss the type can be set by hand, and that choice replaces the guess.</p><ul>" + w + "</ul>" +
+
+    '<h2 id="range">Estimated range</h2>' +
+    "<p>For each Area we take the questions you have answered (latest attempt each) and compute a Wilson score interval for the share correct, at " + Math.round((R.z === 1.645 ? 90 : 0)) + "% confidence (z = " + R.z + "). The range shown is the weighted sum of the low ends to the weighted sum of the high ends, with Blueprint weights (" +
+      R.areas.map(function (a) { return esc(a.area) + " " + a.w; }).join(", ") + "). An Area with no answers counts as 0–100, so the range is wide until every Area has been tried, and it narrows as answers accumulate.</p>" +
+    '<div class="formula">Wilson: centre = (p + z²/2n) ÷ (1 + z²/n)\nhalf-width = z × √(p(1−p)/n + z²/4n²) ÷ (1 + z²/n)\nrange = Σ weight × low  …  Σ weight × high   (÷ Σ weight)</div>' +
+    "<p>The range is shown once you have answered " + R.min + " questions. It is the share of practice questions answered correctly. It is not an exam score and not a pass prediction. Practice scores can differ from the real exam. You choose which questions to practise, and that can pull the range either way.</p>" +
+
+    '<h2 id="plan">Study plan</h2>' +
+    "<p>Inputs: weekly hours and test date. Minutes per day = hours × 60 ÷ 7, and one question is counted as " + Math.round(GB.SEC_MC / 60) + " minute (an estimate). The pool for each Area is the questions you have not answered plus those you last answered wrong. A day’s questions are split across Areas by weight = Blueprint weight × (0.5 + weak), where weak = 1 − (correct + " + F.prior + " × " + F.priorN + ") ÷ (answered + " + F.priorN + "). Only today’s split is saved. Each new day the plan is rebuilt from what is actually left, so missed days and new results re-spread the work. A new placement check re-spreads it at once.</p>" +
+    '<p><a class="btn ghost sm" href="plan.html">Study plan</a> <a class="btn ghost sm" href="insights.html">Insights</a></p>';
+  if (location.hash) { var el = document.getElementById(location.hash.slice(1)); if (el) el.scrollIntoView(); }
+})();
+</script>
+</body>
+</html>

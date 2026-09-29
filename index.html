@@ -8,6 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
 <link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/features.css">
 <style>
   /* Home shows exactly one thing: "do this." Do not pile cards/stats/lists back on. */
   .exam{padding:26px 0 6px}
@@ -62,6 +63,7 @@
 </div>
 
 <script src="js/brand.js"></script>
+<script src="js/pwa.js"></script>
 <script src="js/catalog.js"></script>
 <script src="data/ready.js"></script>
 <script src="js/boot.js"></script>
@@ -88,8 +90,10 @@
   var newN = t.seq.filter(function (s) { return s.k === "ox" && !s.re; }).length;
   var prN = t.seq.filter(function (s) { return s.k === "pair"; }).length;
   var foci = t.foci.slice(0, 3).map(function (n) { return n.name; });
-  var h;
-  if (t.finished) {
+  var h, pl = GB.plan();
+  if (pl.on && !t.total) {
+    h = '<h2>Nothing planned here today</h2>';
+  } else if (t.finished) {
     h = '<h2>You’re done for today</h2><p class="t">You finished ' + t.total + " questions. Want more? Try a mock exam.</p>" +
         '<div style="margin-top:18px"><a class="btn block" href="exam.html">Mock exam</a></div>';
   } else {
@@ -103,7 +107,24 @@
         (t.done ? '<div class="bar"><i style="width:' + Math.round(t.done / t.total * 100) + '%"></i></div>' : "") +
         '<a class="btn block" href="ox.html">' + (t.done ? "Continue · " + t.done + " / " + t.total : "Start") + "</a>";
   }
+  if (pl.on) {
+    h += '<ul class="planlist">' + pl.pools.map(function (x) {
+      return "<li><span>" + esc(x.name.replace(/^Area ([IV]+) · .*$/, "Area $1")) + '</span><span><b class="num">' + (pl.today[x.key] || 0) + '</b>' +
+        (pl.today[x.key] && x.key !== GB.cur() ? ' · <a href="ox.html?s=' + x.key + '">Start</a>' : "") + "</span></li>"; }).join("") + "</ul>" +
+      '<p class="fine"><a href="plan.html">Study plan</a> · <a href="method.html#pick">How we pick your next question</a></p>';
+  } else {
+    h += '<p class="fine"><a href="plan.html">Study plan</a> · <a href="method.html#pick">How we pick your next question</a></p>';
+  }
   $("todo").innerHTML = h;
+  (function () {
+    var R = GB.readiness(), el = document.createElement("div");
+    el.className = "att";
+    el.innerHTML = "<h3>Readiness</h3>" + (R.ready
+      ? '<div class="stat"><span class="big num" style="font-size:26px">Estimated range ' + R.lo + "–" + R.hi + '</span></div>'
+      : '<p class="fine" style="margin:0">Not enough data · ' + R.n + " of " + R.min + " answers</p>") +
+      '<p class="fine">Practice scores can differ from the real exam. <a href="insights.html">Insights</a> · <a href="method.html#range">How it is calculated</a></p>';
+    $("att").parentNode.insertBefore(el, $("att"));
+  })();
 
   /* flame (streak) · shield (tier) · attendance (weekly + monthly) */
   var FLAME = '<svg viewBox="0 0 24 24"><path fill="#F97316" d="M12 2c1 3.5 4.5 5.2 4.5 9.5A4.5 4.5 0 0 1 12 16a4.5 4.5 0 0 1-4.5-4.5c0-1.8.8-3.1 1.8-4.1.1 1.5.9 2.6 2 2.9C11 8 11.2 4.6 12 2z"/><path fill="#FDBA74" d="M12 22a6 6 0 0 1-6-6c0-2.3 1.2-4 2.6-5.3-.1 2.5 1.4 4.3 3.4 4.3s3.5-1.6 3.4-4.3C16.8 12 18 13.7 18 16a6 6 0 0 1-6 6z"/></svg>';

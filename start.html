@@ -8,6 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
 <link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/features.css">
 <style>
   /* first-time setup — one question per screen, one big button */
   .wrap{max-width:520px;margin:0 auto;padding:28px 16px 48px;min-height:100vh;display:flex;flex-direction:column}
@@ -48,6 +49,7 @@
 </div>
 
 <script src="js/brand.js"></script>
+<script src="js/pwa.js"></script>
 <script src="js/catalog.js"></script>
 <script src="data/ready.js"></script>
 <script src="js/boot.js"></script>
@@ -173,7 +175,7 @@
               if (+b.dataset.a === mc.a) b.dataset.s = "ok"; else if (a != null && +b.dataset.a === a) b.dataset.s = "no";
             });
             A.rec.push({ id: q.i, key: x.key, area: x.area || "-", ok: ok, ms: ms, to: to });
-            GB.answerIn(x.key, q.i, ok, { ms: ms, kind: to ? "timeout" : ok ? "right" : "wrong", pick: to ? null : a - 1 });
+            GB.answerIn(x.key, q.i, ok, { ms: ms, kind: to ? "timeout" : ok ? "right" : "wrong", pick: to ? null : a - 1, wt: q.mc && q.mc.wt });
             i++; setTimeout(one, ok ? 500 : 1300);
           }
           $("oxb").querySelectorAll("button").forEach(function (b) { b.onclick = function () { pick(+b.dataset.a); }; });

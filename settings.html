@@ -8,6 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
 <link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/features.css">
 <style>
   /* settings collapse into groups — no long scroll-and-skim page */
   .hd{padding:26px 0 8px}
@@ -39,6 +40,7 @@
     <div class="f"><label>Minutes per day</label><div class="seg" id="min"></div></div>
     <div class="f"><label>What should we call you?</label><input type="text" id="nm" maxlength="12" placeholder="Nickname"></div>
     <div class="f"><label>Confidence step before each answer</label><div class="seg" id="conf"></div></div>
+    <div class="f"><label>Study plan</label><p class="muted" style="margin:0;font-size:15px"><a href="plan.html">Weekly hours and daily split</a> · <a href="method.html">How the numbers are made</a></p></div>
     <div class="f"><label>Question bank</label><p class="muted" id="bank" style="margin:0;font-size:15px"></p></div>
   </div></details>
 
@@ -56,6 +58,7 @@
   </div></details>
 </div>
 <script src="js/brand.js"></script>
+<script src="js/pwa.js"></script>
 <script src="js/catalog.js"></script>
 <script src="data/ready.js"></script>
 <script src="js/boot.js"></script>

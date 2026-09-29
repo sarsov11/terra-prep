@@ -8,6 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
 <link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/features.css">
 <style>
   .hd{display:flex;align-items:center;gap:10px;padding:18px 0 0}
   .hd h1{font-size:20px;flex:1;min-width:0}
@@ -48,6 +49,7 @@
 </div>
 
 <script src="js/brand.js"></script>
+<script src="js/pwa.js"></script>
 <script src="js/catalog.js"></script>
 <script src="data/ready.js"></script>
 <script src="js/boot.js"></script>
@@ -187,7 +189,7 @@
       if (p == null) { A.un++; wrong.push(i); return; }
       ans++;
       var good = p + 1 === mc.a; if (good) { ok++; A.ok++; Sk.ok++; } else wrong.push(i);
-      GB.answerIn(x.key, x.q.i, good, { ms: spent[i], kind: good ? "right" : "wrong", pick: p });
+      GB.answerIn(x.key, x.q.i, good, { ms: spent[i], kind: good ? "right" : "wrong", pick: p, wt: mc.wt });
     });
     try {
       var H = JSON.parse(localStorage.getItem(HKEY) || "[]");
