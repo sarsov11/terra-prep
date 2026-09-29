@@ -28,13 +28,13 @@
   GB.mountNav("drill.html");
   var esc = GB.esc, $ = function (id) { return document.getElementById(id); };
   var queue = GB.dueCards(), pos = 0, seen = 0, got = 0;
-  function head() { var all = GB.cardList().length; $("sub").textContent = all + " card" + (all === 1 ? "" : "s") + " · " + queue.length + " due today"; }
+  function head() { var all = GB.cardList().length; $("sub").textContent = all + " card" + (all === 1 ? "" : "s") + " + " + queue.length + " due"; }
   function show() {
     head();
     if (pos >= queue.length) {
       var all = GB.cardList();
-      $("stage").innerHTML = '<div class="done"><div class="big">' + (seen ? got + " / " + seen : all.length ? "None due" : "No cards") + "</div><p class=\"muted\">" +
-        (seen ? "Missed cards return today. Others return in 1, 3, 7, 14 or 30 days." : "") + "</p>" +
+      $("stage").innerHTML = '<div class="done"><div class="big">' + (seen ? got + " / " + seen : all.length ? "None due" : "") + "</div><p class=\"muted\">" +
+        "" + "</p>" +
         '<div class="acts" style="justify-content:center"><a class="btn ghost" href="drill.html">Training</a></div></div>' + list(all);
       wireList(); return;
     }

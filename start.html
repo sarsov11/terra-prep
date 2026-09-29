@@ -74,13 +74,12 @@
 
   var SCREENS = {
     intro: function () {
-      $("scr").innerHTML = '<h1>Exam-style practice,<br>every choice explained</h1>' +
-        '<p class="lead">Just the time you set, once a day. We pick today’s work for you.</p>' +
-        '<div class="body"></div><div class="foot"><button class="btn block" id="n">Get started</button></div>';
+      $("scr").innerHTML = '<h1>Exam-style practice</h1>' +
+        '<div class="body"></div><div class="foot"><button class="btn block" id="n">Start</button></div>';
       $("n").onclick = nextStep;
     },
     name: function () {
-      $("scr").innerHTML = "<h1>What should we call you?</h1><p class=\"lead\">We’ll use this name on the home screen. Feel free to leave it blank.</p>" +
+      $("scr").innerHTML = "<h1>Nickname</h1>" +
         '<div class="body"><input type="text" id="nm" maxlength="12" placeholder="Nickname" value="' + esc(GB.name()) + '"></div>' +
         '<div class="foot"><button class="btn block" id="n">Next</button></div>';
       $("nm").focus();
@@ -90,9 +89,9 @@
     exam: function () {
       var cur = null;
       try { cur = (JSON.parse(localStorage.getItem("te.pref.v1") || "{}").exam) || null; } catch (e) {}
-      $("scr").innerHTML = "<h1>Which exam are you taking?</h1><p class=\"lead\">We’ll set up the subjects and questions to match.</p>" +
+      $("scr").innerHTML = "<h1>Exam</h1>" +
         '<div class="body"><div class="opts" id="op">' + CATALOG.EXAMS.map(function (e) {
-          return '<button type="button" data-v="' + e.id + '" aria-pressed="' + (e.id === cur) + '">' + e.name + "<small>" + e.sub + "</small></button>";
+          return '<button type="button" data-v="' + e.id + '" aria-pressed="' + (e.id === cur) + '">' + e.name + "</button>";
         }).join("") + "</div></div>";
       $("op").querySelectorAll("button").forEach(function (b) {
         b.onclick = function () {
@@ -106,10 +105,10 @@
     series: function () {
       var e = GB.exam();
       if (!e.series) return go(STEPS.indexOf("subs"));
-      $("scr").innerHTML = "<h1>Which track?</h1><p class=\"lead\">" + esc(e.name) + " — each track has different subjects.</p>" +
+      $("scr").innerHTML = "<h1>Track</h1>" +
         '<div class="body"><div class="opts" id="op">' + e.series.map(function (x) {
           return '<button type="button" data-v="' + x.id + '">' + x.name + "<small>" +
-            x.subs.map(function (k) { return CATALOG.name(k); }).join(" · ") + "</small></button>";
+            x.subs.map(function (k) { return CATALOG.name(k); }).join(" + ") + "</small></button>";
         }).join("") + "</div></div>";
       $("op").querySelectorAll("button").forEach(function (b) {
         b.onclick = function () { b.setAttribute("aria-pressed", "true"); GB.setExam(e.id, b.dataset.v); setTimeout(nextStep, 120); };
@@ -117,21 +116,21 @@
     },
     subs: function () {
       var ss = GB.subs();
-      $("scr").innerHTML = "<h1>Here’s what you’ll cover</h1><p class=\"lead\">These are the " + esc(GB.track().name) + " subjects. You can start on whichever ones are ready.</p>" +
+      $("scr").innerHTML = "<h1>Subjects</h1>" +
         '<div class="body"><div class="opts">' + ss.map(function (k) {
           var r = CATALOG.ready(k);
           return '<button type="button" disabled style="cursor:default;opacity:1">' + CATALOG.name(k) + "<small>" +
             (r ? GB.num(CATALOG.count(k)) + " questions" : "Coming soon") + "</small></button>";
         }).join("") + "</div></div>" +
-        '<div class="foot"><button class="btn block" id="n">Looks good</button></div>';
+        '<div class="foot"><button class="btn block" id="n">Continue</button></div>';
       $("n").onclick = nextStep;
     },
     date: function () {
       var tr = GB.track();
-      $("scr").innerHTML = "<h1>Test date</h1><p class=\"lead\">" + esc(GB.exam().name) + " is offered year-round, so there’s no single fixed date — enter the date you’ve scheduled (or plan to schedule) with the testing center.</p>" +
+      $("scr").innerHTML = "<h1>Test date</h1>" +
         '<div class="body"><div class="dateline num"><span id="dv">' + (GB.goal() ? GB.goal().replace(/-/g, "/") : "Not set") + '</span><span class="chip" id="dm">' + GB.goalMark() + "</span></div>" +
         '<input type="date" id="di" value="' + (GB.goal() || "") + '"></div>' +
-        '<div class="foot"><button class="btn block" id="n">Use this date</button><button class="skip" id="later">I’ll set this later</button></div>';
+        '<div class="foot"><button class="btn block" id="n">Use this date</button><button class="skip" id="later">Later</button></div>';
       $("di").onchange = function () {
         if (!this.value) return;
         GB.setGoal(this.value, true);
@@ -142,7 +141,7 @@
     },
     min: function () {
       var cur = GB.minutes();
-      $("scr").innerHTML = "<h1>How many minutes a day?</h1><p class=\"lead\">You’ll work for exactly the time you set. Change it later in Settings.</p>" +
+      $("scr").innerHTML = "<h1>Minutes per day</h1>" +
         '<div class="body"><div class="opts g2" id="op">' + [10, 15, 20, 30].map(function (m) {
           return '<button type="button" data-v="' + m + '" aria-pressed="' + (m === cur) + '">' + m + " min<small>~" + Math.max(1, Math.round(m * 60 / 60)) + " questions</small>" +
             (m === 15 ? '<span class="bdg">Recommended</span>' : "") + "</button>";
@@ -154,7 +153,7 @@
     check: function () {
       var mine = GB.subs().filter(function (k) { return CATALOG.ready(k); });
       if (!mine.length) return go(STEPS.indexOf("done"));
-      $("scr").innerHTML = '<h1>Placement check</h1><p class="lead">Loading questions…</p>';
+      $("scr").innerHTML = '<h1>Placement check</h1><p class="lead">Loading</p>';
       GB.loadPool(function (pool) {
         var set = GB.placementSet(pool, 20), i = 0, timer = null, t0 = 0;
         if (set.length < 5) return go(STEPS.indexOf("done"));   /* not enough multiple-choice questions — skip the check */
@@ -165,7 +164,7 @@
             '<div class="tm" id="tm"><i style="width:100%"></i></div>' +
             '<div class="qcard" style="margin-top:14px"><p class="sent">' + esc(mc.s) + "</p>" + (mc.d ? '<div class="case mcdata" style="margin:12px 0 0">' + esc(mc.d) + "</div>" : "") + "</div>" +
             '<div class="mcb" id="oxb">' + mc.o.map(function (o, k) { return '<button type="button" data-a="' + (k + 1) + '"><b>' + LETTERS[k] + "</b><span>" + esc(o) + "</span></button>"; }).join("") + "</div>" +
-            '<div class="foot"><button class="skip" id="sk">Skip<span class="tip">Answering all ' + set.length + ' gives the most accurate starting point.</span></button></div>';
+            '<div class="foot"><button class="skip" id="sk">Skip</button></div>';
           var locked = false;
           function pick(a) {
             if (locked) return; locked = true;
@@ -181,7 +180,7 @@
           $("oxb").querySelectorAll("button").forEach(function (b) { b.onclick = function () { pick(+b.dataset.a); }; });
           var armed = false;
           $("sk").onclick = function () {
-            if (!armed) { armed = true; this.classList.add("on"); this.firstChild.textContent = "Skip anyway";
+            if (!armed) { armed = true; this.classList.add("on"); this.firstChild.textContent = "Confirm skip";
               var me = this; setTimeout(function () { armed = false; me.classList.remove("on"); me.firstChild.textContent = "Skip"; }, 6000); return; }
             clearInterval(timer); A.skipped = true; fin();
           };
@@ -206,7 +205,7 @@
       var names = {};
       GB.subs().forEach(function (k) { if (CATALOG.area(k)) names[CATALOG.area(k)] = CATALOG.name(k); });
       var fast = A.rec.filter(function (r) { return r.ok && r.ms < 20000; }).length;
-      $("scr").innerHTML = "<h1>" + (p.n ? p.ok + " of " + p.n + " correct" : "You’re set") + "</h1>" +
+      $("scr").innerHTML = "<h1>" + (p.n ? p.ok + " of " + p.n + " correct" : "Ready") + "</h1>" +
         (p.n ? '<p class="lead">' + A.rec.filter(function (r) { return r.to; }).length + " timed out</p>" : "") +
         '<div class="body">' +
         (p.n ? '<div class="perpart">' + Object.keys(p.per).map(function (ar) {
@@ -214,7 +213,7 @@
           return "<div><span>" + esc(names[ar] || ("Area " + ar)) + '</span><span class="num" style="text-align:right">' + x.ok + " / " + x.n + '</span><div class="bar"><i style="width:' + Math.round(x.ok / x.n * 100) + '%"></i></div></div>';
         }).join("") + "</div>" : "") +
         (subj ? '<div class="from"><b>Starting here</b>' + esc(CATALOG.name(subj)) + "</div>" : "") +
-        '</div><div class="foot"><button class="btn block" id="n">See today’s work</button></div>';
+        '</div><div class="foot"><button class="btn block" id="n">Today</button></div>';
       $("n").onclick = function () { GB.setOnboarded(); location.href = "index.html"; };
     }
   };

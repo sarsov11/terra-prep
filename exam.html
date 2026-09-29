@@ -44,7 +44,7 @@
 </head>
 <body class="focus">
 <div class="page">
-  <div class="hd"><h1 id="ttl">Mock exam</h1><span class="timer" id="tmr"></span><span class="cnt num" id="cnt"></span><a class="x" href="drill.html" title="Quit">✕</a></div>
+  <div class="hd"><h1 id="ttl">Mock exam</h1><span class="timer" id="tmr"></span><span class="cnt num" id="cnt"></span><a class="x" href="drill.html" title="Exit">✕</a></div>
   <div id="stage"></div>
 </div>
 
@@ -72,12 +72,12 @@
   /* ── setup ── */
   function setup() {
     $("ttl").textContent = "Mock exam"; $("tmr").textContent = ""; $("cnt").textContent = "";
-    $("stage").innerHTML = '<div class="setup"><p class="lead muted" style="margin:16px 0 0">Questions are drawn across the Areas in proportion to the 2026 AICPA Blueprint weights. Nothing is explained until you submit.</p>' +
+    $("stage").innerHTML = '<div class="setup">' +
       '<div class="lab">Number of questions</div><div class="sizes" id="sz">' + [12, 24, 36, 72].map(function (n) {
         return '<button type="button" data-n="' + n + '" aria-pressed="' + (n === size) + '">' + n + "</button>"; }).join("") + "</div>" +
       '<div class="lab">Time limit</div><div class="seg2" id="tm"></div>' +
       '<p class="note" id="note"></p>' +
-      '<div class="acts" style="margin-top:22px"><a class="btn ghost" href="drill.html">Back</a><button class="btn" id="go" disabled>Loading…</button></div></div>';
+      '<div class="acts" style="margin-top:22px"><a class="btn ghost" href="drill.html">Back</a><button class="btn" id="go" disabled>Loading</button></div></div>';
     function drawTm() {
       var opts = [Math.round(size * 1.5), Math.round(size * 1.75), Math.round(size * 2), 0];
       opts = opts.filter(function (v, i) { return opts.indexOf(v) === i; });
@@ -97,9 +97,8 @@
       var have = GB.poolItems(pool).length, ar = {};
       var miss = GB.subs().filter(function (k) { return !CATALOG.ready(k); }).map(function (k) { return CATALOG.name(k); });
       GB.poolItems(pool).forEach(function (x) { ar[x.area] = 1; });
-      $("note").textContent = "The time split for the real exam’s multiple-choice section is not fixed here, so the limit is your own setting. " +
-        have + " questions in " + Object.keys(ar).length + " Area" + (Object.keys(ar).length === 1 ? "" : "s") + " are available." +
-        (miss.length ? " No questions yet: " + miss.join(", ") + ". The mix covers the other Areas only." : "");
+      $("note").textContent = "" + have + " questions in " + Object.keys(ar).length + " Area" + (Object.keys(ar).length === 1 ? "" : "s") +
+        (miss.length ? ". No questions yet: " + miss.join(", ") : "");
       $("go").disabled = !have; $("go").textContent = "Start";
       $("go").onclick = function () {
         var n = Math.min(size, have);
@@ -160,7 +159,7 @@
   function review() {
     var un = picks.filter(function (p) { return p == null; }).length, fl = flags.filter(Boolean).length;
     $("cnt").textContent = "Review";
-    $("stage").innerHTML = '<h2 style="font-size:19px;margin-top:18px">Review before you submit</h2>' +
+    $("stage").innerHTML = '<h2 style="font-size:19px;margin-top:18px">Review</h2>' +
       '<div class="sumline"><span><b class="num">' + (set.length - un) + "</b> answered</span><span><b class=\"num\">" + un + "</b> unanswered</span><span><b class=\"num\">" + fl + "</b> flagged</span></div>" +
       '<div class="grid" id="gr">' + set.map(function (x, i) {
         return '<button type="button" data-i="' + i + '" class="' + (picks[i] != null ? "a" : "") + (flags[i] ? " fl" : "") + '">' + (i + 1) + "</button>"; }).join("") + "</div>" +
@@ -200,17 +199,17 @@
     $("ttl").textContent = "Results"; $("cnt").textContent = "";
     function rows(o, nameFn) {
       return Object.keys(o).map(function (k) {
-        var r = o[k]; return "<li><span>" + esc(nameFn(k)) + '</span><b class="num">' + r.ok + " / " + r.n + " · " + Math.round(r.ok / r.n * 100) + "%</b></li>";
+        var r = o[k]; return "<li><span>" + esc(nameFn(k)) + '</span><b class="num">' + r.ok + " / " + r.n + " (" + Math.round(r.ok / r.n * 100) + "%)</b></li>";
       }).join("");
     }
     var pct = Math.round(ok / set.length * 100);
     $("stage").innerHTML = '<div class="done"><div class="big num">' + ok + " / " + set.length + '</div><p class="muted">' + pct + "% correct" +
-      (timeUp ? " · time ran out" : "") + (ans < set.length ? " · " + (set.length - ans) + " unanswered" : "") + "</p></div>" +
+      (timeUp ? ", time ran out" : "") + (ans < set.length ? ", " + (set.length - ans) + " unanswered" : "") + "</p></div>" +
       '<div class="brk"><h3>By Area</h3><ul>' + rows(byA, areaName) + "</ul><h3>By skill</h3><ul>" + rows(byS, function (k) { return k; }) + "</ul></div>" +
       (wrong.length ? '<h3 style="font-size:15px;color:var(--ink-3);margin:22px 0 0">Missed and unanswered</h3><div class="misslist">' + wrong.map(function (i) {
         var mc = set[i].q.mc, p = picks[i], a = mc.a - 1;
         return "<details><summary>" + (i + 1) + ". " + esc(mc.s.length > 110 ? mc.s.slice(0, 110) + "…" : mc.s) + "</summary>" +
-          '<p style="margin:8px 0 4px;font-size:14.5px">' + (p == null ? "You did not answer." : "You chose <b>" + LETTERS[p] + "</b>.") + " Correct answer: <b>" + LETTERS[a] + "</b>. " + esc(mc.o[a]) + "</p>" +
+          '<p style="margin:8px 0 4px;font-size:14.5px">' + (p == null ? "No answer." : "Your answer <b>" + LETTERS[p] + "</b>.") + " Correct answer: <b>" + LETTERS[a] + "</b>. " + esc(mc.o[a]) + "</p>" +
           (mc.ex ? '<div class="exs">' + (p != null ? exItem(mc, p, "no", "Your answer") : "") + exItem(mc, a, "ok", "Correct answer") + "</div>" : "") +
           (mc.cite ? '<p class="basis" style="margin-top:8px"><b>Basis</b> ' + esc(mc.cite) + "</p>" : "") + "</details>";
       }).join("") + "</div>" : "") +

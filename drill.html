@@ -18,7 +18,7 @@
 </head>
 <body>
 <div class="page">
-  <div class="hd"><h1>Training</h1><p>Separate from today's set.</p></div>
+  <div class="hd"><h1>Training</h1></div>
   <div class="list sec" id="ls"></div>
 </div>
 <script src="js/brand.js"></script>
@@ -35,23 +35,23 @@
   var wrong = GB.wrongList().length, mis = Object.keys(S.ans).filter(function (id) { return S.ans[id].kind === "misconception"; }).length;
   var flagged = GB.flagList().length, hasOX = GB.pairs().length > 0;
   var rows = [
-    ["exam.html", "Mock exam", "Blueprint-weighted questions across the Areas, timed, with a review screen", "12 · 24 · 36 · 72"],
-    ["ox.html?mode=wrong", "Retry missed questions", wrong ? "Starting with the most recent misses" : "No missed questions yet", wrong],
-    ["ox.html?mode=flag", "Flagged questions", flagged ? "Questions you marked with Flag" : "Use Flag on a question to keep it here", flagged],
-    ["cards.html", "Flashcards", "Cards made from missed questions, with spaced review", GB.dueCards().length + " due"],
-    ["insights.html", "Insights", "Estimated range and wrong-answer causes by week", "›"],
-    ["plan.html", "Study plan", "Daily split from your test date and weekly hours", GB.planOn() ? GB.hours() + " h" : "Set up"],
-    ["method.html", "How the numbers are made", "How we pick your next question, the range and the plan", "›"],
-    ["skilltree.html", "Pick a unit", "Choose a unit and solve 10, 20 or 30 questions from it", GB.nodes.length]
+    ["exam.html", "Mock exam", "", "12 / 24 / 36 / 72"],
+    ["ox.html?mode=wrong", "Missed questions", "", wrong],
+    ["ox.html?mode=flag", "Flagged questions", "", flagged],
+    ["cards.html", "Flashcards", "", GB.dueCards().length + " due"],
+    ["insights.html", "Insights", "", "›"],
+    ["plan.html", "Study plan", "", GB.planOn() ? GB.hours() + " h" : "Not set"],
+    ["method.html", "Formulas", "", "›"],
+    ["skilltree.html", "Units", "", GB.nodes.length]
   ];
-  if (GB.exam().sec === "FAR") rows.unshift(["je.html", "Journal entry drill", "150 transaction types + endless new numbers", "150"]);
+  if (GB.exam().sec === "FAR") rows.unshift(["je.html", "Journal entry drill", "", "150"]);
   if (hasOX) rows = rows.concat([
-    ["ox.html?mode=hard", "Hard True/False", "True sentences with one or two words changed to make them false" + (mis ? " — starting with " + mis + " you were confident about but missed" : ""), GB.pairs().length],
-    ["ox.html?mode=pair", "Confusable pairs", "Pick the true one of two similar sentences", done + " / " + GB.pairs().length],
-    ["ox.html?mode=speed", "60-second sprint", "Reaction only, no confidence step. Short sentences", "60s"]
+    ["ox.html?mode=hard", "Hard True/False", (mis ? "Certain + wrong " + mis : ""), GB.pairs().length],
+    ["ox.html?mode=pair", "Confusable pairs", "", done + " / " + GB.pairs().length],
+    ["ox.html?mode=speed", "60-second sprint", "", "60 s"]
   ]);
   document.getElementById("ls").innerHTML = rows.map(function (r) {
-    return '<a class="row" href="' + r[0] + '"><span class="t"><b>' + r[1] + "</b><span>" + GB.esc(r[2]) + '</span></span><span class="n num">' + r[3] + "</span></a>";
+    return '<a class="row" href="' + r[0] + '"><span class="t"><b>' + r[1] + "</b>" + (r[2] ? "<span>" + GB.esc(r[2]) + "</span>" : "") + '</span><span class="n num">' + r[3] + "</span></a>";
   }).join("");
 })();
 </script>

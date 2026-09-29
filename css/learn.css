@@ -22,7 +22,7 @@ body.lrn{--g:#0B5E3C;--g-soft:rgba(11,94,60,.07);--g-line:rgba(11,94,60,.35);--x
 .lrn .aprog i{display:block;height:100%;background:var(--g);border-radius:99px}
 .lrn .tp{margin-top:26px}
 .lrn .tp>h2{font-size:15px;font-weight:900;color:var(--ink-2);margin:0 0 8px;line-height:1.4}
-.lrn .tick{flex:none;width:22px;height:22px;border-radius:99px;border:2px solid var(--line-2);display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#fff}
+.lrn .tick{flex:none;width:22px;height:22px;border-radius:99px;border:2px solid var(--line-2);display:inline-flex;align-items:center;justify-content:center;font-size:13.5px;font-weight:900;color:#fff}
 .lrn .tick.on{background:var(--g);border-color:var(--g)}
 .lrn .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .lrn .chip{font-size:13.5px;font-weight:800}

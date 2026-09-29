@@ -17,7 +17,7 @@
 .memo{margin-top:10px}
 .memo summary{cursor:pointer;font-weight:800;font-size:14.5px;color:var(--ink-2)}
 .memo textarea,.copybox{width:100%;min-height:84px;margin-top:8px;font:14.5px/1.5 var(--font);padding:10px 12px;border:1.5px solid var(--line-2);border-radius:var(--r2);background:var(--surface);color:var(--ink)}
-.copybox{min-height:120px;font-size:13px}
+.copybox{min-height:120px;font-size:13.5px}
 .fine{font-size:13.5px;color:var(--ink-3);margin:8px 0 0}
 .stat{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .stat .big{font-size:36px;font-weight:900;letter-spacing:-.05em;line-height:1.1}
@@ -25,11 +25,11 @@
 .rng i{position:absolute;top:0;bottom:0;border-radius:99px;background:var(--ink)}
 .tbl{width:100%;border-collapse:collapse;font-size:14.5px}
 .tbl th,.tbl td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
-.tbl th{font-size:12.5px;color:var(--ink-3);font-weight:800}
+.tbl th{font-size:13.5px;color:var(--ink-3);font-weight:800}
 .tbl td.r,.tbl th.r{text-align:right;font-variant-numeric:tabular-nums}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r2);background:var(--surface)}
 .flip{min-height:190px;display:flex;flex-direction:column;justify-content:center;gap:10px}
-.flip .lab{font-size:12.5px;font-weight:800;color:var(--ink-3)}
+.flip .lab{font-size:13.5px;font-weight:800;color:var(--ink-3)}
 .formula{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13.5px;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r2);padding:10px 12px;white-space:pre-wrap;line-height:1.7}
 .prose h2{font-size:18px;margin:26px 0 8px}
 .prose p,.prose li{font-size:15.5px;color:var(--ink-2)}

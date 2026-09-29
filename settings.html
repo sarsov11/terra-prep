@@ -38,9 +38,9 @@
     <div class="f"><label>Exam &amp; subject</label><div class="seg"><button type="button" id="trk"></button></div></div>
     <div class="f"><label>Test date <span class="chip" id="gm"></span></label><input type="date" id="goal"></div>
     <div class="f"><label>Minutes per day</label><div class="seg" id="min"></div></div>
-    <div class="f"><label>What should we call you?</label><input type="text" id="nm" maxlength="12" placeholder="Nickname"></div>
-    <div class="f"><label>Confidence step before each answer</label><div class="seg" id="conf"></div></div>
-    <div class="f"><label>Study plan</label><p class="muted" style="margin:0;font-size:15px"><a href="plan.html">Weekly hours and daily split</a> · <a href="method.html">How the numbers are made</a></p></div>
+    <div class="f"><label>Nickname</label><input type="text" id="nm" maxlength="12" placeholder="Nickname"></div>
+    <div class="f"><label>Confidence step</label><div class="seg" id="conf"></div></div>
+    <div class="f"><label>Study plan</label><p class="muted" style="margin:0;font-size:15px"><a href="plan.html" style="margin-right:14px">Study plan</a><a href="method.html">Formulas</a></p></div>
     <div class="f"><label>Question bank</label><p class="muted" id="bank" style="margin:0;font-size:15px"></p></div>
   </div></details>
 
@@ -50,7 +50,7 @@
   </div></details>
 
   <details><summary>Data</summary><div class="in">
-    <div class="f"><label>Transfer your history — copy this text and paste it into the same field on another device</label>
+    <div class="f"><label>Transfer history</label>
       <textarea id="ex" readonly></textarea>
       <div class="seg" style="margin-top:8px"><button type="button" id="cp">Copy</button><button type="button" id="im">Restore from pasted text</button></div>
       <p class="msg" id="msg"></p></div>
@@ -80,7 +80,7 @@
     });
   }
   function drawGoal() { $("goal").value = GB.goal(); $("gm").textContent = GB.goalMark(); }
-  $("trk").textContent = GB.track().name + " · Change";
+  $("trk").textContent = GB.track().name + " → Change";
   $("trk").onclick = function () { location.href = "start.html?step=exam"; };
   drawGoal();
   $("goal").onchange = function () { if (this.value) { GB.setGoal(this.value, true); drawGoal(); } };
@@ -93,18 +93,18 @@
   seg($("skin"), GB.SKINS.map(function (s) { return { v: s.v, n: s.n, c: s.c }; }), GB.skin(), function (v) { GB.setSkin(v); });
 
   $("ex").value = GB.exportData();
-  $("cp").onclick = function () { $("ex").select(); try { navigator.clipboard.writeText($("ex").value); } catch (e) { document.execCommand("copy"); } $("msg").textContent = "Copied."; };
+  $("cp").onclick = function () { $("ex").select(); try { navigator.clipboard.writeText($("ex").value); } catch (e) { document.execCommand("copy"); } $("msg").textContent = "Copied"; };
   $("im").onclick = function () {
-    var t = prompt("Paste the history text you copied on another device");
+    var t = prompt("Paste history text");
     if (!t) return;
-    try { GB.importData(t); $("msg").textContent = "Restored."; setTimeout(function () { location.reload(); }, 600); }
-    catch (e) { $("msg").textContent = "That doesn't look right — paste the entire copied text."; }
+    try { GB.importData(t); $("msg").textContent = "Restored"; setTimeout(function () { location.reload(); }, 600); }
+    catch (e) { $("msg").textContent = "Format error → paste the full copied text"; }
   };
   $("again").onclick = function () {
     try { var p = JSON.parse(localStorage.getItem("te.pref.v1") || "{}"); delete p.onboarded; localStorage.setItem("te.pref.v1", JSON.stringify(p)); } catch (e) {}
     location.href = "start.html";
   };
-  $("rs").onclick = function () { if (confirm("Erase all of your history? This can't be undone.")) { GB.reset(); location.reload(); } };
+  $("rs").onclick = function () { if (confirm("Erase all history. This cannot be undone.")) { GB.reset(); location.reload(); } };
 })();
 </script>
 </body>

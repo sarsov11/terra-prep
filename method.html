@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="page prose">
-  <div class="hd"><h1>How the numbers are made</h1></div>
+  <div class="hd"><h1>Formulas</h1></div>
   <div id="body"></div>
 </div>
 <script src="js/brand.js"></script>
@@ -30,7 +30,7 @@
   function pc(x) { return Math.round(x * 100) + "%"; }
   var w = GB.CAUSES.filter(function (c) { return c.v !== "unclassified"; }).map(function (c) { return "<li><b>" + esc(c.n) + "</b>: " + esc(c.d) + "</li>"; }).join("");
   document.getElementById("body").innerHTML =
-    '<h2 id="pick">How we pick your next question</h2>' +
+    '<h2 id="pick">Question selection</h2>' +
     "<p>Each question that is new, or whose review date has arrived, gets a score from 0 to 100. Today’s set takes the highest scores that fit the time budget.</p>" +
     '<div class="formula">score = 100 × ( ' + F.wTopic + " × T  +  " + F.wType + " × E  +  " + F.wDue + " × D )</div>" +
     "<ul>" +
@@ -39,7 +39,7 @@
     "<li><b>D, review due</b> = 0 for a new question. For an answered question whose review date has arrived: min(1, " + F.dueBase + " + " + F.dueStep + " × days overdue). Review gaps by box: " + F.gaps.join(", ") + " days. A correct answer given with “Certain” moves up one box; any miss goes back to box 0.</li>" +
     "<li>At most " + F.perNode + " questions from one Topic go into a day’s set, unless nothing else fits.</li>" +
     "</ul>" +
-    "<p>The chips above a question (Weak topic, Review due, Repeated: …) show which parts were high for that question.</p>" +
+    "<p>The chips above a question (Weak topic, Review due, Repeated: type) show which parts were high for that question.</p>" +
 
     "<h2>Wrong-choice types</h2>" +
     "<p>Each wrong choice carries one type, assigned when the question bank is built. Where the question source names a type, that is used. Otherwise a keyword rule reads the choice’s explanation. When no rule fits, the choice is Unclassified. These tags are automatic guesses, not a reviewer’s judgment. After a miss the type can be set by hand, and that choice replaces the guess.</p><ul>" + w + "</ul>" +
@@ -47,7 +47,7 @@
     '<h2 id="range">Estimated range</h2>' +
     "<p>For each Area we take the questions you have answered (latest attempt each) and compute a Wilson score interval for the share correct, at " + Math.round((R.z === 1.645 ? 90 : 0)) + "% confidence (z = " + R.z + "). The range shown is the weighted sum of the low ends to the weighted sum of the high ends, with Blueprint weights (" +
       R.areas.map(function (a) { return esc(a.area) + " " + a.w; }).join(", ") + "). An Area with no answers counts as 0–100, so the range is wide until every Area has been tried, and it narrows as answers accumulate.</p>" +
-    '<div class="formula">Wilson: centre = (p + z²/2n) ÷ (1 + z²/n)\nhalf-width = z × √(p(1−p)/n + z²/4n²) ÷ (1 + z²/n)\nrange = Σ weight × low  …  Σ weight × high   (÷ Σ weight)</div>' +
+    '<div class="formula">Wilson: centre = (p + z²/2n) ÷ (1 + z²/n)\nhalf-width = z × √(p(1−p)/n + z²/4n²) ÷ (1 + z²/n)\nrange = Σ weight × low  to  Σ weight × high   (÷ Σ weight)</div>' +
     "<p>The range is shown once you have answered " + R.min + " questions. It is the share of practice questions answered correctly. It is not an exam score and not a pass prediction. Practice scores can differ from the real exam. You choose which questions to practise, and that can pull the range either way.</p>" +
     "<p>Guide me: if the latest attempt on a question used the Guide me button (step-by-step hints before you answer), that attempt counts as " + F.guideW + " in both the correct count and the answered count when the range is computed. It is still marked right or wrong and is scheduled for review as usual. Answers that used it are counted on Insights.</p>" +
 

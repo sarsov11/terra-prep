@@ -790,7 +790,7 @@
   function exportData() { return JSON.stringify({ v: 1, pref: P, rec: S }); }
   function importData(txt) {
     var o = JSON.parse(txt);
-    if (!o || !o.rec) throw new Error("That doesn't look like a backup file.");
+    if (!o || !o.rec) throw new Error("Format error");
     S = o.rec; P = o.pref || P; save(); savePref();
   }
 

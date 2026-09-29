@@ -24,7 +24,7 @@
     <label for="hc">Other hours</label><input type="number" id="hc" min="1" max="60" step="1" style="width:100px">
   </div>
   <div id="out"></div>
-  <p class="fine"><a href="method.html#plan">How the plan is calculated</a></p>
+  <p class="fine"><a href="method.html#plan">Formula</a></p>
 </div>
 <script src="js/brand.js"></script>
 <script src="js/pwa.js"></script>
@@ -53,10 +53,10 @@
     }
     var names = {}; p.pools.forEach(function (x) { names[x.key] = x.name; });
     var h = '<div class="card"><h2>Today</h2><ul class="planlist">' + p.pools.map(function (x) {
-      return "<li><span>" + esc(x.name) + '</span><span><b class="num">' + (p.today[x.key] || 0) + '</b> questions · <a href="ox.html?s=' + x.key + '">Start</a></span></li>'; }).join("") + "</ul>" +
-      '<p class="fine">About ' + p.perDay + " min a day at " + p.hours + " h a week. " + p.days + " days to the test. " + GB.num(p.total) + " questions left to answer or redo.</p>";
-    if (p.short > 0) h += '<p class="fine warnline">At this pace ' + GB.num(p.short) + " questions do not fit before the test. About " + p.needHours + " h a week would cover them.</p>";
-    else h += '<p class="fine">At this pace the pool is finished ' + (p.finishDay == null ? "before the test" : "in " + (p.finishDay + 1) + " days") + ". Remaining time: review + mock exams.</p>";
+      return "<li><span>" + esc(x.name) + '</span><span><b class="num">' + (p.today[x.key] || 0) + '</b> questions <a href="ox.html?s=' + x.key + '">Start</a></span></li>'; }).join("") + "</ul>" +
+      '<p class="fine">' + p.perDay + " min a day at " + p.hours + " h a week, " + p.days + " days to the test, " + GB.num(p.total) + ' questions left</p>';
+    if (p.short > 0) h += '<p class="fine warnline">' + GB.num(p.short) + " questions do not fit before the test. Needed: " + p.needHours + ' h a week</p>';
+    else h += '<p class="fine">Pool finished ' + (p.finishDay == null ? "before the test" : "in " + (p.finishDay + 1) + " days") + ' → review + mock exams</p>';
     h += "</div>";
     h += '<div class="card"><h2>Next 14 days</h2><div class="tblwrap"><table class="tbl"><tr><th>Day</th><th class="r">Questions</th><th>Split</th></tr>' +
       p.list.slice(0, 14).map(function (d, i) {

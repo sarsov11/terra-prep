@@ -2,7 +2,7 @@
    (correct = deep green #0B5E3C, wrong = #E5322D, nothing else red). Body weight 500, headings 900, nothing under 13.5px. */
 .je{--je-ac:#0B5E3C;--je-no:#E5322D;--je-warn:#B45309;
   font-family:"Pretendard",var(--font);font-weight:500;padding-bottom:110px}
-:root[data-skin="night"] .je{--je-ac:#3CCB8A;--je-no:#FF5A52;--je-warn:#F59E0B}
+:root[data-skin="night"] .je{--je-ac:#3CCB8A;--je-no:#E5322D;--je-warn:#F59E0B}
 .je h1,.je h2,.je h3{font-weight:900}
 .je small,.je .chip,.je .tag{font-size:13.5px}
 .je .btn{background:var(--je-ac);font-size:16px;padding:13px 20px}

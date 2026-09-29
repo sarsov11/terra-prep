@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pricing — Terra Prep</title>
+<link rel="icon" href="icons/favicon.svg">
+<script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/features.css">
+<style>
+  .pr{max-width:980px;margin:0 auto;padding:0 16px 72px}
+  .pr .top{display:flex;align-items:center;gap:12px;padding:18px 0 0}
+  .pr .top a{font-weight:900;text-decoration:none}
+  .pr h1{font-size:30px;margin-top:22px}
+  .pr h2{font-size:20px;margin:40px 0 12px}
+  .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+  .plan{border:1.5px solid var(--line-2);border-radius:var(--r3);padding:20px 18px;background:var(--surface);display:flex;flex-direction:column;gap:6px}
+  .plan.main{border-color:var(--cta)}
+  .plan .nm{font-size:15px;font-weight:800;color:var(--ink-3)}
+  .plan .pc{font-size:40px;font-weight:900;letter-spacing:-.05em;line-height:1.1}
+  .plan .pc small{font-size:16px;font-weight:700;color:var(--ink-3);letter-spacing:-.02em}
+  .plan .in{font-size:14.5px;color:var(--ink-2);flex:1}
+  .plan .btn{margin-top:10px;cursor:default}
+  .cmp{min-width:820px}
+  .cmp th,.cmp td{vertical-align:middle}
+  .cmp td:first-child{white-space:normal;font-weight:800;min-width:190px}
+  .cmp th.tp,.cmp td.tp{background:var(--cta-soft)}
+  .cmp th.tp{color:var(--cta);font-size:14.5px}
+  .cmp td .y{font-weight:900;color:var(--cta)}
+  .cmp td .n{color:var(--ink-4)}
+  .cmp td small{display:block;color:var(--ink-3);font-weight:500;font-size:13.5px}
+  .src{font-size:13.5px;color:var(--ink-3);line-height:1.7;margin-top:14px}
+  .src li{margin:0}
+  .src ul{padding-left:18px;margin:6px 0}
+</style>
+</head>
+<body>
+<div class="pr">
+  <div class="top"><a href="index.html">Terra Prep</a></div>
+  <h1>Pricing</h1>
+
+  <h2>Monthly</h2>
+  <div class="plans">
+    <div class="plan main"><div class="nm">Full</div><div class="pc num">$43<small> / month</small></div>
+      <div class="in">4 sections: MCQ + TBS + concept cards + mock exams</div>
+      <button type="button" class="btn" aria-disabled="true">Choose</button></div>
+    <div class="plan"><div class="nm">Question bank</div><div class="pc num">$33<small> / month</small></div>
+      <div class="in">MCQ + TBS + mock exams, no concept cards</div>
+      <button type="button" class="btn" aria-disabled="true">Choose</button></div>
+  </div>
+
+  <h2>Fixed term</h2>
+  <div class="plans">
+    <div class="plan"><div class="nm">REG, 3 months</div><div class="pc num">$109</div><div class="in">REG, all features</div>
+      <button type="button" class="btn ghost" aria-disabled="true">Choose</button></div>
+    <div class="plan"><div class="nm">REG, 6 months</div><div class="pc num">$169</div><div class="in">REG, all features</div>
+      <button type="button" class="btn ghost" aria-disabled="true">Choose</button></div>
+    <div class="plan"><div class="nm">4 sections, 12 months</div><div class="pc num">$309</div><div class="in">REG + FAR + TCP + AUD, all features</div>
+      <button type="button" class="btn ghost" aria-disabled="true">Choose</button></div>
+    <div class="plan"><div class="nm">4 sections, 18 months</div><div class="pc num">$389</div><div class="in">REG + FAR + TCP + AUD, all features</div>
+      <button type="button" class="btn ghost" aria-disabled="true">Choose</button></div>
+  </div>
+
+  <h2>Comparison</h2>
+  <div class="tblwrap"><table class="tbl cmp">
+    <tr><th></th><th class="tp">Terra Prep</th><th>Becker</th><th>NINJA CPA</th><th>UWorld (incl. Wiley)</th></tr>
+    <tr><td>Price</td>
+      <td class="tp"><b>$43 / month</b> full<small>$33 / month question bank</small></td>
+      <td>$849 REG, 24 months<small>Packages $2,499 to $6,349 (list)</small></td>
+      <td>$87 / month Course<small>$67 / month Supplement</small></td>
+      <td>About $3,500 to $4,100 (list, all sections)<small>Some figures from secondary sources</small></td></tr>
+    <tr><td>Billing</td><td class="tp">Monthly or fixed term</td><td>One payment</td><td>Monthly</td><td>One payment</td></tr>
+    <tr><td>Explanation for every answer choice</td><td class="tp"><span class="y">Yes</span></td><td><span class="n">—</span></td><td><span class="n">—</span></td><td><span class="n">—</span></td></tr>
+    <tr><td>Adaptive selection formula published</td><td class="tp"><span class="y">Yes</span><small>Formulas page</small></td><td>Not published</td><td>Not published</td><td>Not published</td></tr>
+    <tr><td>Readiness formula published</td><td class="tp"><span class="y">Yes</span><small>Interval with stated method</small></td><td>Not published</td><td>Not published</td><td>Not published</td></tr>
+    <tr><td>AI tutor</td><td class="tp">No<small>Step-by-step Guide me</small></td><td>Newt</td><td>Sensei<small>Course plan only</small></td><td>UAsk</td></tr>
+    <tr><td>TBS partial credit by cell + new-number variants</td><td class="tp"><span class="y">Yes</span></td><td><span class="n">—</span></td><td><span class="n">—</span></td><td><span class="n">—</span></td></tr>
+    <tr><td>Journal entry drill</td><td class="tp"><span class="y">Yes</span><small>FAR, 150 types</small></td><td><span class="n">—</span></td><td><span class="n">—</span></td><td><span class="n">—</span></td></tr>
+    <tr><td>Offline</td><td class="tp"><span class="y">Yes</span><small>Cached in browser</small></td><td><span class="n">—</span></td><td><span class="n">—</span></td><td>Up to 5 lecture videos</td></tr>
+    <tr><td>Mobile with the same features</td><td class="tp"><span class="y">Yes</span><small>Same web app</small></td><td>App<small>Reviews report fewer features</small></td><td><span class="n">—</span></td><td>App</td></tr>
+    <tr><td>Human tutoring</td><td class="tp">No</td><td>1:1 + group, higher tiers</td><td>Group only</td><td>Group boot camps, higher tiers</td></tr>
+  </table></div>
+  <p class="src">Compared on 2026-09-29. Prices in USD from public pages and third-party summaries. — = not confirmed from public sources. 18 months of NINJA Course = 18 × $87 = $1,566.</p>
+  <div class="src">Sources
+    <ul>
+      <li>Becker: becker.com/cpa-review, becker.com/newt-ai-learning-tool, cpaexamguide.com/review-courses/becker</li>
+      <li>NINJA: ninjacpareview.com/faq, ninjacpareview.com/sp/ninja-cpa-review</li>
+      <li>UWorld: accounting.uworld.com/cpa-review/cpa-courses, accounting.uworld.com/cpa-review/cpa-courses/features/uask, accounting.uworld.com/cpa-review/cpa-courses/features/mobile-app</li>
+      <li>Formula publication and tutoring rows: atlascpaindex.com reviews, ipassthecpaexam.com reviews</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

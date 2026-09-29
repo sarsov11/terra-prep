@@ -75,81 +75,34 @@
     confused: "Unsure", guessRight: "Guessed right", dontKnow: "Not learned yet", tooFastWrong: "Answered too fast",
     slowRight: "Correct after thinking", right: "Correct", wrong: "Incorrect", streakWrong: "Missed repeatedly", retryRight: "Correct on retry"
   };
+  /* Rule: facts and symbols only. No coach sentences, no invitations. */
   var PHRASES = {
-    /* confident + correct */
-    know: [
-      "Correct. Move on from {concept}.",
-      "You know {concept}. On to the next question."
-    ],
-    know_x: ["Correct. Move on.", "You know this. On to the next question."],
-
-    knowFast: [
-      "Correct, right away. Move on from {concept}.",
-      "Correct, right away. Moving on from {concept}."
-    ],
-    knowFast_x: ["Correct, right away. Move on.", "Correct, right away."],
-
-    /* ★ confident + wrong — the case to watch most closely. Never say "wrong." State only what to review. */
-    misconception: [
-      "You were certain, but that's not right. Take another look at {concept}.",
-      "Read {concept} again.",
-      "{concept} is an easy one to get backwards. Take another look."
-    ],
-    misconception_x: [
-      "You were certain, but that's not right. Take another look at this.",
-      "Read it again."
-    ],
-
-    /* half-sure + correct */
-    luck: [
-      "Correct. Try one more on {concept}.",
-      "Correct. Take a look at one more on {concept}."
-    ],
-    luck_x: ["Correct. Try one more.", "Correct. Take a look at one more."],
-
-    /* half-sure + wrong */
-    confused: [
-      "Read {concept} again.",
-      "Go back to an easier question on {concept}."
-    ],
-    confused_x: ["Read it again.", "Go back to an easier question."],
-
-    /* guessed + correct */
-    guessRight: [
-      "Correct, but that was a guess. Go read {concept}.",
-      "Go read {concept}."
-    ],
-    guessRight_x: ["Correct, but that was a guess. Go read the source.", "Go read the source."],
-
-    /* guessed + wrong */
-    dontKnow: [
-      "Read {concept} first.",
-      "You haven't covered {concept} yet. Start by reading it."
-    ],
-    dontKnow_x: ["Read the source first.", "You haven't covered this yet. Start by reading it."],
-
-    /* when confidence wasn't asked */
-    right: ["Correct.", "That's right."],
-    right_x: ["Correct.", "That's right."],
-    wrong: [
-      "Incorrect. Take another look at {concept}.",
-      "Incorrect. Read the source for {concept}."
-    ],
-    wrong_x: ["Incorrect. Take another look.", "Incorrect. Read the source."],
-
-    /* response time */
-    tooFastWrong: ["That was answered too fast. Read it all the way through."],
-    tooFastWrong_x: ["That was answered too fast. Read it all the way through."],
-
-    slowRight: ["Correct. That took a while, so try one more on {concept}."],
-    slowRight_x: ["Correct. That took a while, so try one more."],
-
-    /* cumulative */
-    streakWrong: ["You've missed {concept} several times now. Start by reading the source."],
-    streakWrong_x: ["You've missed this several times now. Start by reading the source."],
-
-    retryRight: ["Correct this time. {concept} — this is what sticks longest."],
-    retryRight_x: ["Correct this time. This is what sticks longest."]
+    know: ["Correct → next"],
+    know_x: ["Correct → next"],
+    knowFast: ["Correct, fast → next"],
+    knowFast_x: ["Correct, fast → next"],
+    misconception: ["Certain, incorrect → review {concept}"],
+    misconception_x: ["Certain, incorrect → review"],
+    luck: ["Correct, unsure → 1 more on {concept}"],
+    luck_x: ["Correct, unsure → 1 more"],
+    confused: ["Unsure, incorrect → review {concept}"],
+    confused_x: ["Unsure, incorrect → review"],
+    guessRight: ["Guessed, correct → read {concept}"],
+    guessRight_x: ["Guessed, correct → read the source"],
+    dontKnow: ["Not learned → read {concept}"],
+    dontKnow_x: ["Not learned → read the source"],
+    right: ["Correct"],
+    right_x: ["Correct"],
+    wrong: ["Incorrect → review {concept}"],
+    wrong_x: ["Incorrect → review"],
+    tooFastWrong: ["Answered too fast → read in full"],
+    tooFastWrong_x: ["Answered too fast → read in full"],
+    slowRight: ["Correct, slow → 1 more on {concept}"],
+    slowRight_x: ["Correct, slow → 1 more"],
+    streakWrong: ["Missed repeatedly → read the source"],
+    streakWrong_x: ["Missed repeatedly → read the source"],
+    retryRight: ["Correct on retry"],
+    retryRight_x: ["Correct on retry"]
   };
 
   /* Replaces the `{concept}` placeholder with the concept name. */
@@ -246,13 +199,13 @@
 
   /* Next-step actions in plain words — used for on-screen button labels */
   var NEXT_ACTIONS = {
-    forward: { t: "Next question", why: "You've got this concept — moving on" },
-    skip:    { t: "Next concept", why: "You know this concept" },
-    same:    { t: "One more on this concept", why: "Another question on the same concept" },
-    similar: { t: "One more like this", why: "Another similar question" },
-    easier:  { t: "Start easier", why: "An easier question first" },
-    concept: { t: "Read the source", why: "Read every correct released sentence on this topic" },
-    lecture: { t: "Read the source", why: "Read every correct released sentence on this topic" }
+    forward: { t: "Next question", why: "Concept known" },
+    skip:    { t: "Next concept", why: "Concept known" },
+    same:    { t: "1 more on this concept", why: "Same concept" },
+    similar: { t: "1 more like this", why: "Similar question" },
+    easier:  { t: "Easier question", why: "Easier question" },
+    concept: { t: "Read the source", why: "All correct sentences on this topic" },
+    lecture: { t: "Read the source", why: "All correct sentences on this topic" }
   };
 
   window.JUDGE = {

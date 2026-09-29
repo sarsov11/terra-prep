@@ -11,7 +11,7 @@
   function drop(id) { var el = document.getElementById(id); if (el) el.remove(); }
   function online() {
     if (navigator.onLine) drop("pwa-off");
-    else bar("pwa-off", "<span>Offline · answers saved on this device</span>");
+    else bar("pwa-off", "<span>Offline → answers saved on this device</span>");
   }
   window.addEventListener("online", online); window.addEventListener("offline", online);
   document.addEventListener("DOMContentLoaded", online);

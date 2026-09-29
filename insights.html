@@ -30,16 +30,16 @@
   var esc = GB.esc, R = GB.readiness(), $ = function (id) { return document.getElementById(id); };
   var h = "<h2>Readiness</h2>";
   if (!R.ready) {
-    h += '<p class="muted" style="margin:0">Not enough data · ' + R.n + " of " + R.min + " answers</p>";
+    h += '<p class="muted" style="margin:0">Not enough data (' + R.n + " / " + R.min + " answers)</p>";
   } else {
     h += '<div class="stat"><span class="big num">Estimated range ' + R.lo + "–" + R.hi + '</span><span class="muted">% correct, weighted by Area</span></div>' +
       '<div class="rng" aria-hidden="true"><i style="left:' + R.lo + "%;width:" + Math.max(1, R.hi - R.lo) + '%"></i></div>' +
       '<p class="fine">Based on ' + R.n + " answered questions in " + R.touched + " of " + R.of + " Areas" +
       (R.of > R.areas.length ? " (" + (R.of - R.areas.length) + " without questions yet, left out)" : "") +
-      (R.hi - R.lo > 40 ? " · wide range: some Areas have few or no answers" : "") + "</p>" +
+      (R.hi - R.lo > 40 ? " (wide range: some Areas have few or no answers)" : "") + "</p>" +
       (R.guided ? '<p class="fine">' + R.guided + " of these answers used Guide me and count as " + R.guideW + " in the range.</p>" : "");
   }
-  h += '<p class="fine">Practice scores can differ from the real exam. This is not a pass prediction. <a href="method.html#range">How it is calculated</a></p>' +
+  h += '<p class="fine">Practice scores can differ from the real exam. This is not a pass prediction. <a href="method.html#range">Formula</a></p>' +
     '<div class="tblwrap" style="margin-top:10px"><table class="tbl"><tr><th>Area</th><th class="r">Weight</th><th class="r">Answered</th><th class="r">Correct</th><th class="r">Range</th></tr>' +
     R.areas.map(function (a) {
       return "<tr><td>" + esc(a.name) + '</td><td class="r">' + a.w + '</td><td class="r">' + a.n + '</td><td class="r">' + (a.pct == null ? "–" : a.pct + "%") + '</td><td class="r">' + (a.n ? a.lo + "–" + a.hi : "0–100") + "</td></tr>";
@@ -49,10 +49,10 @@
   var W = GB.weeklyReport(6), cols = GB.CAUSES;
   var t = W.total, w = "<h2>Wrong answers by cause</h2>";
   if (!t.n) {
-    w += '<p class="muted" style="margin:0">No wrong answers logged</p>';
+    w += '<p class="muted" style="margin:0">None</p>';
   } else {
     w += '<div class="stat"><span class="big num">' + t.sure + '</span><span class="muted">Certain + wrong, all time (' + t.n + " wrong answers logged)</span></div>" +
-      '<p class="fine">Certain + wrong means you chose “Certain” and the answer was wrong. These are the misconceptions.</p>' +
+      '<p class="fine">Certain + wrong = misconceptions</p>' +
       '<div class="tblwrap" style="margin-top:10px"><table class="tbl"><tr><th>Week of</th><th class="r">Wrong</th><th class="r">Certain + wrong</th>' +
       cols.map(function (c) { return '<th class="r">' + esc(c.n) + "</th>"; }).join("") + "</tr>" +
       W.rows.map(function (r) {
@@ -60,7 +60,7 @@
           cols.map(function (c) { return '<td class="r">' + (r.by[c.v] || 0) + "</td>"; }).join("") + "</tr>";
       }).join("") +
       '<tr><td><b>All time</b></td><td class="r"><b>' + t.n + '</b></td><td class="r"><b>' + t.sure + "</b></td>" + cols.map(function (c) { return '<td class="r"><b>' + (t.by[c.v] || 0) + "</b></td>"; }).join("") + "</tr></table></div>" +
-      '<p class="fine">Cause = the type set after the miss, otherwise the automatic guess. Weeks start Monday. <a href="method.html">How the types are assigned</a></p>';
+      '<p class="fine">Cause = the type set after the miss, otherwise the automatic guess. Weeks start Monday. <a href="method.html">Formulas</a></p>';
   }
   $("wk").innerHTML = w;
 })();
