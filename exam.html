@@ -60,7 +60,7 @@
   "use strict";
   GB.mountNav("drill.html");
   var $ = function (id) { return document.getElementById(id); }, esc = GB.esc, LETTERS = "ABCDE";
-  var HKEY = GB.exam().sec === "FAR" ? "te.far.exams.v1" : "te.exams.v1";   /* mock exam history is kept per section */
+  var HKEY = { REG: "te.exams.v1", FAR: "te.far.exams.v1", TCP: "te.tcp.exams.v1" }[GB.exam().sec] || "te.exams.v1";   /* mock exam history is kept per section */
   var set = [], picks = [], flags = [], spent = [], cur = 0, endAt = 0, tick = null, t0q = 0, size = 24, mins = 36, submitted = false;
 
   function areaName(ar) {

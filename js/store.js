@@ -71,10 +71,10 @@
      P.series (series id) · P.subs (subject id list) · P.cur (current subject). */
   var C = window.CATALOG;
   function exam() { return (C && C.exam(P.exam)) || (C && C.EXAMS[0]) || { id: "", name: "", date: null }; }
-  /* Section switch (REG / FAR / CFA): the per-exam settings are parked under P.sec[<exam id>] and the target exam's own
+  /* Section switch (REG / FAR / TCP / CFA): the per-exam settings are parked under P.sec[<exam id>] and the target exam's own
      are restored, so each section keeps its own test date, weekly hours, placement result, today's split and current Area.
      Settings saved before sections existed sit at the top level and belong to the exam that was active (REG). Question
-     history is stored per subject (te.<subject key>.v1), so REG and FAR history never mix. */
+     history is stored per subject (te.<subject key>.v1), so REG, FAR and TCP history never mix. */
   var SEC_KEYS = ["goal", "goalMine", "hours", "place", "planToday", "cur"];
   function setExam(id, sid) {
     var from = P.exam || (P.onboarded ? exam().id : null);
@@ -248,7 +248,7 @@
     return s;
   }
   /* True/False sentences are not part of the REG bank any more (concept checks only) — REG sessions are multiple choice */
-  function usable(q) { return !(q.ox && /^(reg|far)_/.test(T.key || "")); }
+  function usable(q) { return !(q.ox && /^(reg|far|tcp)_/.test(T.key || "")); }
   function freshOf(no, k) {
     return qs(no).filter(function (q) { return usable(q) && !S.ans[q.i]; })
       .sort(function (a, b) { return rank(b) - rank(a); }).slice(0, k);
@@ -630,7 +630,7 @@
   var POOL = null;
   function loadPool(cb) {
     if (POOL) return cb(POOL);
-    var R = window.READY || {}, keys = Object.keys(R).filter(function (k) { return /^(reg|far)_/.test(k) && (!window.CATALOG || CATALOG.subsOf(P.exam, P.series).indexOf(k) >= 0); });
+    var R = window.READY || {}, keys = Object.keys(R).filter(function (k) { return /^(reg|far|tcp)_/.test(k) && (!window.CATALOG || CATALOG.subsOf(P.exam, P.series).indexOf(k) >= 0); });
     if (!keys.length) keys = [curKey()];
     var out = [], saved = { T: window.TREE, Q: window.QBANK, P: window.PAIRS }, i = 0;
     function done() { window.TREE = saved.T; window.QBANK = saved.Q; window.PAIRS = saved.P; POOL = out; cb(out); }
@@ -667,7 +667,7 @@
   function weightedSet(pool, n, seed, only) {
     var all = poolItems(pool).filter(function (x) { return !only || only(x); }), byA = {};
     all.forEach(function (x) { (byA[x.area] = byA[x.area] || []).push(x); });
-    /* weight per Area: the catalog weight of the subject the questions come from (REG and FAR both number their Areas I, II, III) */
+    /* weight per Area: the catalog weight of the subject the questions come from (each CPA section numbers its own Areas from I) */
     var aw = {};
     all.forEach(function (x) { aw[x.area] = (window.CATALOG && CATALOG.weight(x.key)) || AREA_W[x.area] || 10; });
     var areas = Object.keys(byA), tot = areas.reduce(function (t, k) { return t + aw[k]; }, 0), alloc = {}, used = 0;

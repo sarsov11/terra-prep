@@ -42,12 +42,12 @@ def part_a(br, tag, viewport, mobile):
     pg.click("#n")                                             # intro
     pg.wait_for_selector("#op button")
     labels = pg.locator("#op button").all_inner_texts()
-    check(tag + " exam list has REG, FAR, CFA", len(labels) == 3 and "FAR" in labels[1], labels[1][:60])
+    check(tag + " exam list has REG, FAR, TCP, CFA", len(labels) == 4 and "FAR" in labels[1] and "TCP" in labels[2], labels[1][:60])
     shot(pg, tag, "1_choose_exam")
     pg.click('#op button[data-v="cpa_far"]')
     pg.wait_for_selector("text=what you’ll cover")
     txt = pg.inner_text("#scr")
-    check(tag + " subjects step lists the three FAR Areas with 150 questions each", "Area I · Financial Reporting" in txt and "Area II · Select Balance Sheet Accounts" in txt and "Area III · Select Transactions" in txt and txt.count("150 questions") == 3, txt[100:300])
+    check(tag + " subjects step lists the three FAR Areas with 150/180/150 questions", "Area I · Financial Reporting" in txt and "Area II · Select Balance Sheet Accounts" in txt and "Area III · Select Transactions" in txt and txt.count("150 questions") == 2 and txt.count("180 questions") == 1, txt[100:300])
     pg.click("#n"); pg.fill("#nm", "Tester"); pg.click("#n")   # subs -> name
     pg.click("#later")                                         # date
     pg.click('#op button[data-v="15"]')                        # minutes
@@ -70,7 +70,7 @@ def part_a(br, tag, viewport, mobile):
     pg.click("#n")
     pg.wait_for_selector("#todo")
     body = pg.inner_text("body")
-    check(tag + " home shows section switch with FAR selected", pg.locator('#secs a.on').inner_text() == "FAR" and pg.locator("#secs a").count() == 2)
+    check(tag + " home shows section switch with FAR selected", pg.locator('#secs a.on').inner_text() == "FAR" and pg.locator("#secs a").count() == 3)
     alt = pg.locator("#alt .row b").all_inner_texts()
     check(tag + " journal entry drill is the first extra row", alt and alt[0] == "Journal entry drill", alt)
     check(tag + " no REG-only rows on FAR home", "Task-based simulations" not in body and "Concept cards" not in body)
@@ -90,7 +90,7 @@ def part_a(br, tag, viewport, mobile):
     pg.goto(BASE + "exam.html")
     pg.wait_for_selector("#go:not([disabled])")
     note = pg.inner_text("#note")
-    check(tag + " mock exam note: 450 questions in 3 Areas, nothing missing", "450 questions in 3 Areas" in note and "No questions yet" not in note, note[-160:])
+    check(tag + " mock exam note: 480 questions in 3 Areas, nothing missing", "480 questions in 3 Areas" in note and "No questions yet" not in note, note[-160:])
     shot(pg, tag, "6_exam_setup")
     pg.click('#sz [data-n="12"]'); pg.click("#go")
     for i in range(12):

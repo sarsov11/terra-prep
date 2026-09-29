@@ -1,0 +1,2878 @@
+{
+ "meta": {
+  "exam": "TCP",
+  "area": "IV",
+  "title": "Property Transactions",
+  "law_asof": "2026-09-29",
+  "count": 27,
+  "status": "verified",
+  "provenance": "terra-original (no Becker/UWorld/Wiley/AICPA released-question text used)",
+  "blueprint": "2026 AICPA TCP Blueprint (second-hand sources; see TCP_SPEC.md)"
+ },
+ "items": [
+  {
+   "id": "TCP-IV-A-0001",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "A",
+   "group_name": "Nontaxable disposition of assets",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Like-kind exchange / involuntary conversion",
+   "task": "Calculate the realized gain, recognized gain and deferred gain on like-kind property exchange and involuntary conversion transactions for tax purposes and the basis of the asset received as a result of the transactions.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Lee Ford exchanges land held for investment, with an adjusted basis of $200,000 and a fair market value of $500,000, for other investment land worth $450,000 plus $50,000 in cash, in a qualifying like-kind exchange. How much of his realized gain is deferred?",
+   "exhibit": "",
+   "options": [
+    "$50,000",
+    "$200,000",
+    "$250,000",
+    "$300,000"
+   ],
+   "answer": "C",
+   "rule_line": "In a like-kind exchange with boot, gain is recognized to the extent of boot received; the rest of the realized gain is deferred.",
+   "why": {
+    "A": "This is the recognized gain, which equals the boot, not the deferred gain.",
+    "B": "Reports the adjusted basis as the deferred gain.",
+    "C": "Realized gain = $500,000 - $200,000 = $300,000. The cash is boot, so gain of $50,000 is recognized. The deferred gain is $300,000 - $50,000 = $250,000.",
+    "D": "This is the total realized gain, without reducing it for the gain recognized on the boot."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "B": "calc",
+    "D": "trap"
+   },
+   "steps": [
+    "Realized gain = 500,000 - 200,000 = $300,000",
+    "Recognized gain = boot = 50,000",
+    "Deferred = $250,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(500000-200000)-50000",
+      "fmt": "$",
+      "value": 250000
+     },
+     {
+      "expr": "500000-200000",
+      "fmt": "$",
+      "value": 300000
+     },
+     {
+      "expr": "50000",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "200000",
+      "fmt": "$",
+      "value": 200000
+     }
+    ],
+    "expr": "(500000-200000)-50000",
+    "fmt": "$",
+    "value": 250000,
+    "distractors": {
+     "A": {
+      "expr": "50000",
+      "value": 50000
+     },
+     "B": {
+      "expr": "200000",
+      "value": 200000
+     },
+     "D": {
+      "expr": "500000-200000",
+      "value": 300000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1031(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1031(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1031(d)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application"
+  },
+  {
+   "id": "TCP-IV-A-0002",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "A",
+   "group_name": "Nontaxable disposition of assets",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Like-kind exchange / involuntary conversion",
+   "task": "Calculate the realized gain, recognized gain and deferred gain on like-kind property exchange and involuntary conversion transactions for tax purposes and the basis of the asset received as a result of the transactions.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Neal Ito exchanges an office building with an adjusted basis of $250,000 and a fair market value of $600,000, subject to a $200,000 mortgage, for another office building worth $500,000 subject to a $100,000 mortgage. No cash changes hands. The exchange otherwise qualifies as like-kind. What gain does Neal recognize?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$25,000",
+    "$50,000",
+    "$100,000"
+   ],
+   "answer": "D",
+   "rule_line": "Net liability relief in a like-kind exchange is treated as boot, and gain is recognized to that extent.",
+   "why": {
+    "A": "Assumes nonrecognition because no cash was received. Net liability relief is boot.",
+    "B": "Uses a quarter of the net liability relief.",
+    "C": "Treats only half of the net liability relief as boot.",
+    "D": "Neal's liabilities decreased from $200,000 to $100,000, so he is treated as receiving $100,000 of boot. He has no offsetting cash paid or new property boot, and the realized gain ($350,000) is larger, so recognized gain is $100,000."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "C": "calc"
+   },
+   "steps": [
+    "Net liability relief = 200,000 - 100,000 = $100,000",
+    "Realized gain = 600,000 - 250,000 = $350,000",
+    "Recognized = lesser = $100,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "200000-100000",
+      "fmt": "$",
+      "value": 100000
+     },
+     {
+      "expr": "600000-250000",
+      "fmt": "$",
+      "value": 350000
+     },
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "(200000-100000)/2",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "(200000-100000)/4",
+      "fmt": "$",
+      "value": 25000
+     }
+    ],
+    "expr": "200000-100000",
+    "fmt": "$",
+    "value": 100000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "(200000-100000)/4",
+      "value": 25000
+     },
+     "C": {
+      "expr": "(200000-100000)/2",
+      "value": 50000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1031(d)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1031(b)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1031(d)-2"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application"
+  },
+  {
+   "id": "TCP-IV-A-0003",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "A",
+   "group_name": "Nontaxable disposition of assets",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Like-kind exchange / involuntary conversion",
+   "task": "Calculate the realized gain, recognized gain and deferred gain on like-kind property exchange and involuntary conversion transactions for tax purposes and the basis of the asset received as a result of the transactions.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In 2026 a city condemns Jan Roe's rental building, which has an adjusted basis of $150,000. She receives $400,000 and in 2026 buys a similar building for $340,000 and elects nonrecognition. How much of her realized gain is deferred?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$60,000",
+    "$190,000",
+    "$250,000"
+   ],
+   "answer": "C",
+   "rule_line": "In an involuntary conversion, gain is recognized only to the extent proceeds exceed the cost of qualifying replacement property.",
+   "why": {
+    "A": "Assumes the entire gain is recognized because the replacement cost was less than the award.",
+    "B": "This is the recognized gain, not the deferred gain.",
+    "C": "Realized gain = $400,000 - $150,000 = $250,000. Gain is recognized to the extent proceeds are not reinvested: $400,000 - $340,000 = $60,000. The deferred gain is $250,000 - $60,000 = $190,000.",
+    "D": "This is the entire realized gain, without reducing it for the gain recognized."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "D": "trap"
+   },
+   "steps": [
+    "Realized gain = 400,000 - 150,000 = $250,000",
+    "Recognized = 400,000 - 340,000 = $60,000",
+    "Deferred = $190,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(400000-150000)-(400000-340000)",
+      "fmt": "$",
+      "value": 190000
+     },
+     {
+      "expr": "400000-150000",
+      "fmt": "$",
+      "value": 250000
+     },
+     {
+      "expr": "400000-340000",
+      "fmt": "$",
+      "value": 60000
+     },
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     }
+    ],
+    "expr": "(400000-150000)-(400000-340000)",
+    "fmt": "$",
+    "value": 190000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "400000-340000",
+      "value": 60000
+     },
+     "D": {
+      "expr": "400000-150000",
+      "value": 250000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1033(a)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1033(b)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1033(a)-2"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application"
+  },
+  {
+   "id": "TCP-IV-A-0004",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "A",
+   "group_name": "Nontaxable disposition of assets",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Like-kind exchange / involuntary conversion",
+   "task": "Calculate the realized gain, recognized gain and deferred gain on like-kind property exchange and involuntary conversion transactions for tax purposes and the basis of the asset received as a result of the transactions.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Gwen Park owns investment land with a basis of $200,000 and a fair market value of $800,000. She can sell it for cash or exchange it in a qualifying like-kind exchange in which she receives replacement land plus $100,000 of cash. Assume gain is taxed at 23.8% in either case. How much federal tax does the exchange defer compared with the sale?",
+   "exhibit": "",
+   "options": [
+    "$23,800",
+    "$47,600",
+    "$95,200",
+    "$119,000"
+   ],
+   "answer": "D",
+   "rule_line": "A like-kind exchange defers tax on the gain not represented by boot.",
+   "why": {
+    "A": "This is the tax still due on the boot, not the deferral.",
+    "B": "Doubles the tax on the boot.",
+    "C": "Subtracts the tax on the boot twice.",
+    "D": "A sale triggers tax on the whole $600,000 gain: $142,800. The exchange triggers tax only on the $100,000 of boot: $23,800. The exchange defers $119,000."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "B": "calc",
+    "C": "calc"
+   },
+   "steps": [
+    "Tax if sold = 23.8% x $600,000 = $142,800",
+    "Tax on exchange = 23.8% x 100,000 = $23,800",
+    "Tax deferred = $119,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "((800000-200000)*0.238)-(100000*0.238)",
+      "fmt": "$",
+      "value": 119000
+     },
+     {
+      "expr": "800000-200000",
+      "fmt": "$",
+      "value": 600000
+     },
+     {
+      "expr": "(800000-200000)*0.238",
+      "fmt": "$",
+      "value": 142800
+     },
+     {
+      "expr": "100000*0.238",
+      "fmt": "$",
+      "value": 23800
+     },
+     {
+      "expr": "((800000-200000)*0.238)-(100000*0.238)*2",
+      "fmt": "$",
+      "value": 95200
+     },
+     {
+      "expr": "100000*0.238*2",
+      "fmt": "$",
+      "value": 47600
+     }
+    ],
+    "expr": "((800000-200000)*0.238)-(100000*0.238)",
+    "fmt": "$",
+    "value": 119000,
+    "distractors": {
+     "A": {
+      "expr": "100000*0.238",
+      "value": 23800
+     },
+     "B": {
+      "expr": "100000*0.238*2",
+      "value": 47600
+     },
+     "C": {
+      "expr": "((800000-200000)*0.238)-(100000*0.238)*2",
+      "value": 95200
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1031(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1031(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(h)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application"
+  },
+  {
+   "id": "TCP-IV-A-0005",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "A",
+   "group_name": "Nontaxable disposition of assets",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Like-kind exchange / involuntary conversion",
+   "task": "Calculate the realized gain, recognized gain and deferred gain on like-kind property exchange and involuntary conversion transactions for tax purposes and the basis of the asset received as a result of the transactions.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "On December 15, 2026, Otto Blum, a calendar-year individual who does not extend his tax return, transfers investment land in a deferred like-kind exchange through a qualified intermediary. He wants to acquire the replacement land as late as possible. What is the last day on which he may receive the replacement property to qualify?",
+   "exhibit": "",
+   "options": [
+    "June 13, 2027, which is 180 days after the date of transfer",
+    "January 29, 2027, which is 45 days after the date of transfer",
+    "December 31, 2027, the end of the calendar year that follows",
+    "April 15, 2027, the return due date, which comes before day 180"
+   ],
+   "answer": "D",
+   "rule_line": "Replacement property must be identified within 45 days and received by the earlier of 180 days or the due date of the return, including extensions, for the transfer year.",
+   "why": {
+    "A": "The 180-day period is cut short by the return due date because he does not extend the return.",
+    "B": "The 45-day period is the deadline to identify replacement property, not to receive it.",
+    "C": "There is no calendar-year deadline. The period ends at the earlier of 180 days or the return due date.",
+    "D": "The exchange period ends on the earlier of 180 days after the transfer or the due date of the return, including extensions, for the year of the transfer."
+   },
+   "wrong_tags": {
+    "A": "limit",
+    "B": "trap",
+    "C": "concept"
+   },
+   "steps": [
+    "45th day after December 15, 2026 is January 29, 2027 (identification deadline)",
+    "180th day is June 13, 2027",
+    "Due date of the 2026 return, without extension, is April 15, 2027, which is earlier"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "days('2026-12-15','2027-01-29')",
+      "fmt": "$",
+      "value": 45
+     },
+     {
+      "expr": "days('2026-12-15','2027-06-13')",
+      "fmt": "$",
+      "value": 180
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1031(a)(3)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1031(k)-1(b)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1031(k)-1(b)(2)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application"
+  },
+  {
+   "id": "TCP-IV-A-0006",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "A",
+   "group_name": "Nontaxable disposition of assets",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Like-kind exchange / involuntary conversion",
+   "task": "Calculate the realized gain, recognized gain and deferred gain on like-kind property exchange and involuntary conversion transactions for tax purposes and the basis of the asset received as a result of the transactions.",
+   "task_skill": "Application",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "In 2026 a state condemns a warehouse that Cole Reed holds for business use, and he realizes a gain on receipt of the award in 2026. Cole is a calendar-year taxpayer. What is the last day of the replacement period for the warehouse if he wants to defer the gain?",
+   "exhibit": "",
+   "options": [
+    "December 31, 2029, three years after the year the gain was first realized",
+    "December 31, 2028, two years after the end of the year the gain was realized",
+    "December 31, 2027, one year after the year the gain was first realized",
+    "December 31, 2030, four years after the year the gain was realized"
+   ],
+   "answer": "A",
+   "rule_line": "The replacement period is two years after the year of first gain, extended to three years for condemned business or investment real property.",
+   "why": {
+    "A": "For condemned real property held for business or investment, the replacement period ends three years after the close of the first year in which any gain is realized.",
+    "B": "Two years is the general period, but condemned business real property gets three.",
+    "C": "There is no one-year replacement period for a condemnation of business real property.",
+    "D": "The extended period for condemned real property is three years, not four."
+   },
+   "wrong_tags": {
+    "B": "limit",
+    "C": "concept",
+    "D": "limit"
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1033(a)(2)(B)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1033(g)(4)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1033(a)-2(c)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Remembering & Understanding"
+  },
+  {
+   "id": "TCP-IV-B-0001",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Character of gain/loss",
+   "task": "Identify the character of the gain and loss recognized by a taxpayer on the disposal of an asset given a specific scenario.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Each of the following sales occurred in 2026 at a gain. Which sale produces long-term capital gain for the seller?",
+   "exhibit": "",
+   "options": [
+    "Inventory held for resale by a retailer for 13 months and then sold at a gain",
+    "Stock held as an investment for 13 months and then sold at a gain",
+    "Machinery used in a business for 8 months and then sold at a gain",
+    "A copyright on a novel held for 13 months by the author who created it"
+   ],
+   "answer": "B",
+   "rule_line": "Capital assets held more than one year produce long-term capital gain; inventory, depreciable business property held short term, and self-created copyrights do not.",
+   "why": {
+    "A": "Inventory is not a capital asset, so the gain is ordinary income.",
+    "B": "Investment stock is a capital asset, and holding it more than one year makes the gain long-term.",
+    "C": "Machinery is depreciable business property, and held less than a year the gain is ordinary.",
+    "D": "A self-created copyright is excluded from capital assets, so the sale generates ordinary income."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1221(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1222(3)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1231(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Character of gain/loss / Application"
+  },
+  {
+   "id": "TCP-IV-B-0002",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Section 1231 netting",
+   "task": "Calculate the Section 1231 capital gain and Section 1231 ordinary loss recognized for tax purposes on the disposition of an asset used in a trade or business.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Pia Voss has a net gain of $100,000 for 2026 from netting her sales of depreciable business property and business real estate held more than one year. In the previous five years the same netting produced net losses of $40,000 that have not been offset by later gains. How much of the 2026 net gain is treated as long-term capital gain?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$40,000",
+    "$60,000",
+    "$100,000"
+   ],
+   "answer": "C",
+   "rule_line": "Net section 1231 gain is ordinary to the extent of net section 1231 losses in the prior five years not yet recaptured.",
+   "why": {
+    "A": "Assumes the whole gain is recaptured as ordinary income. Only prior net losses are recaptured.",
+    "B": "Treats only the prior losses as capital gain.",
+    "C": "Net section 1231 gain is recharacterized as ordinary income to the extent of nonrecaptured net section 1231 losses in the five preceding years: $40,000. The remaining $100,000 - $40,000 = $60,000 is long-term capital gain.",
+    "D": "Treats the entire gain as capital and ignores the five-year lookback for prior losses."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   },
+   "steps": [
+    "Ordinary income = 40,000",
+    "Long-term capital gain = 100,000 - 40,000 = $60,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "100000-40000",
+      "fmt": "$",
+      "value": 60000
+     },
+     {
+      "expr": "100000",
+      "fmt": "$",
+      "value": 100000
+     },
+     {
+      "expr": "40000",
+      "fmt": "$",
+      "value": 40000
+     },
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     }
+    ],
+    "expr": "100000-40000",
+    "fmt": "$",
+    "value": 60000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "40000",
+      "value": 40000
+     },
+     "D": {
+      "expr": "100000",
+      "value": 100000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1231(c)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1231(a)(1)"
+    },
+    {
+     "src": "Form",
+     "ref": "4797 instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Section 1231 netting / Application"
+  },
+  {
+   "id": "TCP-IV-B-0003",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Section 1231 netting",
+   "task": "Calculate the Section 1231 capital gain and Section 1231 ordinary loss recognized for tax purposes on the disposition of an asset used in a trade or business.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Sol Ferro, a sole proprietor, sold two business assets held for more than one year in 2026: one at a gain of $80,000 and one at a loss of $130,000, both on depreciable business property. He has no capital transactions and no prior netting losses. By how much do these sales reduce his 2026 ordinary income?",
+   "exhibit": "",
+   "options": [
+    "$3,000",
+    "$50,000",
+    "$80,000",
+    "$130,000"
+   ],
+   "answer": "B",
+   "rule_line": "Net section 1231 losses are ordinary and fully deductible; net section 1231 gains are treated as long-term capital gain.",
+   "why": {
+    "A": "Applies the capital loss limitation. A net section 1231 loss is ordinary and is not limited to $3,000.",
+    "B": "Section 1231 gains and losses are netted. The net loss of $130,000 - $80,000 = $50,000 is an ordinary loss, fully deductible against other income, and not subject to the capital loss limit.",
+    "C": "Uses only the gain and ignores the loss.",
+    "D": "Uses only the loss and ignores the gain that offsets it in the netting."
+   },
+   "wrong_tags": {
+    "A": "limit",
+    "C": "concept",
+    "D": "concept"
+   },
+   "steps": [
+    "Net section 1231 result = 80,000 - 130,000 = -$50,000",
+    "Ordinary loss = $50,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "130000-80000",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "3000",
+      "fmt": "$",
+      "value": 3000
+     },
+     {
+      "expr": "80000",
+      "fmt": "$",
+      "value": 80000
+     },
+     {
+      "expr": "130000",
+      "fmt": "$",
+      "value": 130000
+     },
+     {
+      "expr": "80000-130000",
+      "fmt": "$",
+      "value": -50000
+     }
+    ],
+    "expr": "130000-80000",
+    "fmt": "$",
+    "value": 50000,
+    "distractors": {
+     "A": {
+      "expr": "3000",
+      "value": 3000
+     },
+     "C": {
+      "expr": "80000",
+      "value": 80000
+     },
+     "D": {
+      "expr": "130000",
+      "value": 130000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1231(a)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1231(a)(1)"
+    },
+    {
+     "src": "Form",
+     "ref": "4797 instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Section 1231 netting / Application"
+  },
+  {
+   "id": "TCP-IV-B-0004",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Section 1245/1250 recapture",
+   "task": "Calculate the Section 1245 and Section 1250 depreciation recapture recognized for tax purposes on the disposition of an asset used in a trade or business.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Rae Bolt sold a machine used in her business for $85,000. She bought it for $100,000 and had claimed $70,000 of depreciation. How much of her gain is ordinary income from depreciation recapture?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$15,000",
+    "$55,000",
+    "$70,000"
+   ],
+   "answer": "C",
+   "rule_line": "Recapture on section 1245 property is ordinary income equal to the lesser of the gain or depreciation taken.",
+   "why": {
+    "A": "Treats the gain as section 1231 gain only. Depreciation recapture on machinery is ordinary income.",
+    "B": "Subtracts the depreciation from the selling price instead of measuring gain over adjusted basis.",
+    "C": "Adjusted basis is $100,000 - $70,000 = $30,000, so the gain is $85,000 - $30,000 = $55,000. Recapture on machinery is the lesser of the gain or the depreciation taken, so all $55,000 is ordinary income.",
+    "D": "Uses the total depreciation taken, which exceeds the gain realized."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "limit"
+   },
+   "steps": [
+    "Adjusted basis = 100,000 - 70,000 = $30,000",
+    "Gain = 85,000 - $30,000 = $55,000",
+    "Ordinary recapture = lesser of $55,000 and 70,000 = $55,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "min(85000-(100000-70000),70000)",
+      "fmt": "$",
+      "value": 55000
+     },
+     {
+      "expr": "100000-70000",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "85000-(100000-70000)",
+      "fmt": "$",
+      "value": 55000
+     },
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "85000-70000",
+      "fmt": "$",
+      "value": 15000
+     },
+     {
+      "expr": "70000",
+      "fmt": "$",
+      "value": 70000
+     }
+    ],
+    "expr": "min(85000-(100000-70000),70000)",
+    "fmt": "$",
+    "value": 55000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "85000-70000",
+      "value": 15000
+     },
+     "D": {
+      "expr": "70000",
+      "value": 70000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1245(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1245(a)(2)"
+    },
+    {
+     "src": "Form",
+     "ref": "4797 instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Section 1245/1250 recapture / Application"
+  },
+  {
+   "id": "TCP-IV-B-0005",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Unrecaptured Section 1250 gain",
+   "task": "Calculate the unrecaptured Section 1250 gain recognized for tax purposes on disposition of an asset used in a trade or business.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Ana Diaz, whose ordinary rate is 37%, sold a rental building for $600,000. She bought it for $500,000 and had claimed $120,000 of straight-line depreciation. The gain is a net gain on business real estate held more than one year. Assume the part of the gain equal to prior straight-line depreciation is taxed at a maximum of 25% and the rest of the gain at 20%. What is the federal income tax on the sale?",
+   "exhibit": "",
+   "options": [
+    "$44,000",
+    "$50,000",
+    "$55,000",
+    "$81,400"
+   ],
+   "answer": "B",
+   "rule_line": "Gain on real property up to prior straight-line depreciation is unrecaptured section 1250 gain, taxed at a maximum 25%; the rest is taxed at 0/15/20%.",
+   "why": {
+    "A": "Taxes all of the gain at 20% and ignores the 25% rate on unrecaptured section 1250 gain.",
+    "B": "The gain is $600,000 - ($500,000 - $120,000) = $220,000. The unrecaptured section 1250 gain, $120,000, is taxed at 25% ($30,000) and the other $100,000 at 20% ($20,000). Total $50,000.",
+    "C": "Taxes all of the gain at 25%, though only the depreciation portion is taxed at that rate.",
+    "D": "Taxes the whole gain at the ordinary rate. Straight-line depreciation on a building is not ordinary recapture."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "steps": [
+    "Gain = $220,000",
+    "Unrecaptured section 1250 gain = 120,000 x 25% = $30,000",
+    "Remaining $100,000 x 20% = $20,000",
+    "Total = $50,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "600000-(500000-120000)",
+      "fmt": "$",
+      "value": 220000
+     },
+     {
+      "expr": "min(220000,120000)*0.25+(220000-min(220000,120000))*0.2",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "min(220000,120000)*0.25",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "220000-min(220000,120000)",
+      "fmt": "$",
+      "value": 100000
+     },
+     {
+      "expr": "(220000-min(220000,120000))*0.2",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "220000*0.2",
+      "fmt": "$",
+      "value": 44000
+     },
+     {
+      "expr": "220000*0.25",
+      "fmt": "$",
+      "value": 55000
+     },
+     {
+      "expr": "220000*0.37",
+      "fmt": "$",
+      "value": 81400
+     }
+    ],
+    "expr": "min(220000,120000)*0.25+(220000-min(220000,120000))*0.2",
+    "fmt": "$",
+    "value": 50000,
+    "distractors": {
+     "A": {
+      "expr": "220000*0.2",
+      "value": 44000
+     },
+     "C": {
+      "expr": "220000*0.25",
+      "value": 55000
+     },
+     "D": {
+      "expr": "220000*0.37",
+      "value": 81400
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1(h)(1)(E)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(h)(6)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1250"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Unrecaptured Section 1250 gain / Application"
+  },
+  {
+   "id": "TCP-IV-B-0006",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Unrecaptured Section 1250 gain",
+   "task": "Calculate the unrecaptured Section 1250 gain recognized for tax purposes on disposition of an asset used in a trade or business.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Tess Kim sold a rental building at a gain of $90,000. She had claimed $120,000 of straight-line depreciation on it, and she has no other capital or business-property items. What part of her gain is taxed at the 25% maximum rate because of prior straight-line depreciation?",
+   "exhibit": "",
+   "options": [
+    "$30,000",
+    "$45,000",
+    "$90,000",
+    "$120,000"
+   ],
+   "answer": "C",
+   "rule_line": "Unrecaptured section 1250 gain is the lesser of the gain on the sale and the straight-line depreciation taken, taxed at a maximum of 25%.",
+   "why": {
+    "A": "Uses the depreciation in excess of the gain rather than the gain itself.",
+    "B": "Uses half of the gain, which has no basis in the rule.",
+    "C": "The part of the gain equal to prior straight-line depreciation is taxed at up to 25%, but it cannot exceed the gain itself. The gain is $90,000, which is less than the $120,000 of depreciation, so all $90,000 is taxed at that rate.",
+    "D": "Uses the total depreciation, which exceeds the gain realized."
+   },
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "limit"
+   },
+   "steps": [
+    "Gain = 90,000; depreciation = 120,000",
+    "Unrecaptured section 1250 gain = lesser = $90,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "min(90000,120000)",
+      "fmt": "$",
+      "value": 90000
+     },
+     {
+      "expr": "120000",
+      "fmt": "$",
+      "value": 120000
+     },
+     {
+      "expr": "120000-90000",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "90000/2",
+      "fmt": "$",
+      "value": 45000
+     }
+    ],
+    "expr": "min(90000,120000)",
+    "fmt": "$",
+    "value": 90000,
+    "distractors": {
+     "A": {
+      "expr": "120000-90000",
+      "value": 30000
+     },
+     "B": {
+      "expr": "90000/2",
+      "value": 45000
+     },
+     "D": {
+      "expr": "120000",
+      "value": 120000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1(h)(6)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(h)(1)(E)"
+    },
+    {
+     "src": "Sch",
+     "ref": "D Tax Worksheet instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Unrecaptured Section 1250 gain / Application"
+  },
+  {
+   "id": "TCP-IV-B-0007",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Section 1244 stock loss",
+   "task": "Calculate the loss allowed on the disposition of Section 1244 small business stock for tax purposes.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Mia and Jon Kade, who file jointly, bought newly issued stock in a small business corporation directly from the corporation for $150,000 cash in 2020, and the stock qualifies as small business stock for ordinary loss treatment. In 2026 they sell it for $30,000. They have no other capital transactions. Assume the ordinary loss limit on a joint return is $100,000. How much of the loss is an ordinary loss?",
+   "exhibit": "",
+   "options": [
+    "$20,000",
+    "$50,000",
+    "$60,000",
+    "$100,000"
+   ],
+   "answer": "D",
+   "rule_line": "Small business (section 1244) stock loss is ordinary up to $50,000 ($100,000 on a joint return); any excess is capital loss.",
+   "why": {
+    "A": "Uses the excess as the ordinary loss. The excess is the capital loss.",
+    "B": "Uses the $50,000 limit that applies to a single return.",
+    "C": "Treats only half of the loss as ordinary.",
+    "D": "The loss is $150,000 - $30,000 = $120,000. The ordinary loss is limited to $100,000 on a joint return; the remaining $20,000 is a capital loss."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "B": "limit",
+    "C": "concept"
+   },
+   "steps": [
+    "Loss = 150,000 - 30,000 = $120,000",
+    "Ordinary loss = lesser of $120,000 and 100,000 = $100,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "min(150000-30000,100000)",
+      "fmt": "$",
+      "value": 100000
+     },
+     {
+      "expr": "150000-30000",
+      "fmt": "$",
+      "value": 120000
+     },
+     {
+      "expr": "150000-30000-100000",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "(150000-30000)/2",
+      "fmt": "$",
+      "value": 60000
+     },
+     {
+      "expr": "50000",
+      "fmt": "$",
+      "value": 50000
+     }
+    ],
+    "expr": "min(150000-30000,100000)",
+    "fmt": "$",
+    "value": 100000,
+    "distractors": {
+     "A": {
+      "expr": "150000-30000-100000",
+      "value": 20000
+     },
+     "B": {
+      "expr": "50000",
+      "value": 50000
+     },
+     "C": {
+      "expr": "(150000-30000)/2",
+      "value": 60000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1244(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1244(b)"
+    },
+    {
+     "src": "Pub",
+     "ref": "550"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Section 1244 stock loss / Application"
+  },
+  {
+   "id": "TCP-IV-B-0008",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Installment sale gain",
+   "task": "Calculate the amount of gain recognized on an installment sale.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "In 2026 Uma Tate sold land for $800,000 under the installment method. The buyer paid $100,000 in cash, assumed her $150,000 mortgage, and gave a note for the rest, payable in later years. Her basis in the land was $200,000. What gain does she recognize in 2026?",
+   "exhibit": "",
+   "options": [
+    "$25,000",
+    "$69,231",
+    "$75,000",
+    "$92,308"
+   ],
+   "answer": "D",
+   "rule_line": "Under the installment method gain is recognized in proportion to payments received, using gross profit divided by contract price.",
+   "why": {
+    "A": "Uses the basis fraction of the price instead of the gross profit fraction.",
+    "B": "Subtracts the assumed mortgage from gross profit.",
+    "C": "Uses the selling price as the contract price. The assumed mortgage reduces the contract price when it does not exceed basis.",
+    "D": "The mortgage is less than her basis, so it is not a payment. Contract price = $800,000 - $150,000 = $650,000; gross profit = $800,000 - $200,000 = $600,000; gross profit percentage = $600,000/$650,000. Gain = $100,000 x that percentage = $92,308."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   },
+   "steps": [
+    "Contract price = 800,000 - 150,000 = $650,000",
+    "Gross profit = 800,000 - 200,000 = $600,000",
+    "Gain in 2026 = 100,000 x $600,000/$650,000 = $92,308"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "100000*(800000-200000)/(800000-150000)",
+      "fmt": "$",
+      "value": 92308
+     },
+     {
+      "expr": "800000-150000",
+      "fmt": "$",
+      "value": 650000
+     },
+     {
+      "expr": "800000-200000",
+      "fmt": "$",
+      "value": 600000
+     },
+     {
+      "expr": "100000*(800000-200000)/800000",
+      "fmt": "$",
+      "value": 75000
+     },
+     {
+      "expr": "100000*200000/800000",
+      "fmt": "$",
+      "value": 25000
+     },
+     {
+      "expr": "100000*(800000-200000-150000)/(800000-150000)",
+      "fmt": "$",
+      "value": 69231
+     }
+    ],
+    "expr": "100000*(800000-200000)/(800000-150000)",
+    "fmt": "$",
+    "value": 92308,
+    "distractors": {
+     "A": {
+      "expr": "100000*200000/800000",
+      "value": 25000
+     },
+     "B": {
+      "expr": "100000*(800000-200000-150000)/(800000-150000)",
+      "value": 69231
+     },
+     "C": {
+      "expr": "100000*(800000-200000)/800000",
+      "value": 75000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§453(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§453(c)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§15a.453-1(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Installment sale gain / Application"
+  },
+  {
+   "id": "TCP-IV-B-0009",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Installment sale gain",
+   "task": "Calculate the amount of gain recognized on an installment sale.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Kit Alder sold business equipment on the installment method for $100,000, receiving $20,000 in 2026 and the balance in later years. The total gain is $90,000, of which $60,000 is depreciation recapture treated as ordinary income. How much gain must Kit report in 2026?",
+   "exhibit": "",
+   "options": [
+    "$18,000",
+    "$60,000",
+    "$66,000",
+    "$90,000"
+   ],
+   "answer": "C",
+   "rule_line": "Depreciation recapture is recognized in the year of sale even on an installment sale; only the remaining gain is deferred.",
+   "why": {
+    "A": "Spreads the entire gain, including the recapture, over the payments. Recapture income is recognized in the year of sale.",
+    "B": "Reports only the recapture and omits the installment gain on the rest.",
+    "C": "Depreciation recapture, $60,000, is recognized entirely in the year of sale. The remaining gain of $30,000 is reported ratably: $20,000/$100,000 = 20% of it is $6,000. Total $66,000.",
+    "D": "Reports all of the gain in 2026 and ignores the installment method for the non-recapture part."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   },
+   "steps": [
+    "Recapture = lesser of 90,000 and 60,000 = $60,000",
+    "Remaining gain = 90,000 - $60,000 = $30,000; 20% = $6,000",
+    "Total = $66,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(min(90000,60000))+((90000-(min(90000,60000)))*20000/100000)",
+      "fmt": "$",
+      "value": 66000
+     },
+     {
+      "expr": "min(90000,60000)",
+      "fmt": "$",
+      "value": 60000
+     },
+     {
+      "expr": "90000-(min(90000,60000))",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "(90000-(min(90000,60000)))*20000/100000",
+      "fmt": "$",
+      "value": 6000
+     },
+     {
+      "expr": "90000*20000/100000",
+      "fmt": "$",
+      "value": 18000
+     },
+     {
+      "expr": "90000",
+      "fmt": "$",
+      "value": 90000
+     }
+    ],
+    "expr": "(min(90000,60000))+((90000-(min(90000,60000)))*20000/100000)",
+    "fmt": "$",
+    "value": 66000,
+    "distractors": {
+     "A": {
+      "expr": "90000*20000/100000",
+      "value": 18000
+     },
+     "B": {
+      "expr": "min(90000,60000)",
+      "value": 60000
+     },
+     "D": {
+      "expr": "90000",
+      "value": 90000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§453(i)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1245"
+    },
+    {
+     "src": "IRC",
+     "ref": "§453(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Installment sale gain / Application"
+  },
+  {
+   "id": "TCP-IV-B-0010",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Character of gain/loss",
+   "task": "Identify the character of the gain and loss recognized by a taxpayer on the disposal of an asset given a specific scenario.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Bo Weiss, a sole proprietor, sold all of the assets of his business in 2026. Inventory sold for $60,000 (basis $40,000). Equipment sold for $90,000; it cost $100,000 and depreciation of $70,000 had been claimed. Land held for business use for many years sold for $50,000 (basis $30,000). Self-created goodwill, with no basis, was sold for $100,000. How much of the total gain is ordinary income?",
+   "exhibit": "",
+   "options": [
+    "$20,000",
+    "$60,000",
+    "$80,000",
+    "$200,000"
+   ],
+   "answer": "C",
+   "rule_line": "On a sale of a business, inventory gain and depreciation recapture are ordinary; land and self-created goodwill are section 1231 or capital.",
+   "why": {
+    "A": "Counts only the inventory and misses the recapture on the equipment.",
+    "B": "Counts only the recapture on the equipment and misses the inventory gain.",
+    "C": "Inventory gain of $20,000 is ordinary. The equipment gain is $90,000 - $30,000 = $60,000, all of which is depreciation recapture (the lesser of gain and depreciation of $70,000) and ordinary. The land and goodwill gains are not ordinary. Total ordinary $80,000.",
+    "D": "Treats the whole gain as ordinary income. Land and goodwill produce section 1231 or capital gain."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   },
+   "steps": [
+    "Inventory gain = $20,000 (ordinary)",
+    "Equipment gain = $60,000; recapture = $60,000 (ordinary)",
+    "Ordinary total = $80,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(60000-40000)+min(90000-(100000-70000),70000)",
+      "fmt": "$",
+      "value": 80000
+     },
+     {
+      "expr": "60000-40000",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "100000-70000",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "90000-(100000-70000)",
+      "fmt": "$",
+      "value": 60000
+     },
+     {
+      "expr": "min(90000-(100000-70000),70000)",
+      "fmt": "$",
+      "value": 60000
+     },
+     {
+      "expr": "(60000-40000)+(90000-(100000-70000))+(50000-30000)+100000",
+      "fmt": "$",
+      "value": 200000
+     }
+    ],
+    "expr": "(60000-40000)+min(90000-(100000-70000),70000)",
+    "fmt": "$",
+    "value": 80000,
+    "distractors": {
+     "A": {
+      "expr": "60000-40000",
+      "value": 20000
+     },
+     "B": {
+      "expr": "min(90000-(100000-70000),70000)",
+      "value": 60000
+     },
+     "D": {
+      "expr": "(60000-40000)+(90000-(100000-70000))+(50000-30000)+100000",
+      "value": 200000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1221(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1245(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1231(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1060"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Character of gain/loss / Application"
+  },
+  {
+   "id": "TCP-IV-B-0011",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Section 1231 netting",
+   "task": "Calculate the Section 1231 capital gain and Section 1231 ordinary loss recognized for tax purposes on the disposition of an asset used in a trade or business.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Ray Odell has a net gain of $40,000 for 2026 from sales of business property held more than one year, with no prior netting losses, and a net short-term capital loss of $25,000 on the sale of stock. He has no other capital items. What is his net capital gain for 2026?",
+   "exhibit": "",
+   "options": [
+    "$15,000",
+    "$25,000",
+    "$40,000",
+    "$65,000"
+   ],
+   "answer": "A",
+   "rule_line": "Net section 1231 gain is treated as long-term capital gain and is netted with other capital gains and losses.",
+   "why": {
+    "A": "A net section 1231 gain is treated as long-term capital gain. It is netted with the short-term capital loss: $40,000 - $25,000 = $15,000 of net long-term capital gain.",
+    "B": "Uses the short-term loss amount as if it were a gain.",
+    "C": "Ignores the short-term capital loss, which offsets the long-term gain in the netting.",
+    "D": "Adds the loss to the gain instead of subtracting it."
+   },
+   "wrong_tags": {
+    "B": "trap",
+    "C": "concept",
+    "D": "calc"
+   },
+   "steps": [
+    "Net long-term capital gain = 40,000 - 25,000 = $15,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "40000-25000",
+      "fmt": "$",
+      "value": 15000
+     },
+     {
+      "expr": "40000",
+      "fmt": "$",
+      "value": 40000
+     },
+     {
+      "expr": "25000",
+      "fmt": "$",
+      "value": 25000
+     },
+     {
+      "expr": "40000+25000",
+      "fmt": "$",
+      "value": 65000
+     }
+    ],
+    "expr": "40000-25000",
+    "fmt": "$",
+    "value": 15000,
+    "distractors": {
+     "B": {
+      "expr": "25000",
+      "value": 25000
+     },
+     "C": {
+      "expr": "40000",
+      "value": 40000
+     },
+     "D": {
+      "expr": "40000+25000",
+      "value": 65000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1231(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1222(11)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1211(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Section 1231 netting / Application"
+  },
+  {
+   "id": "TCP-IV-B-0012",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Unrecaptured Section 1250 gain",
+   "task": "Calculate the unrecaptured Section 1250 gain recognized for tax purposes on disposition of an asset used in a trade or business.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Pete Nolan, whose ordinary rate is 35%, sold a rental building for $380,000 that he had bought for $300,000. He had claimed $90,000 of straight-line depreciation. Assume the part of the gain equal to prior straight-line depreciation is taxed at 25% and other long-term gain at 20%. How much of his federal tax on the sale is attributable to the part taxed at 25%?",
+   "exhibit": "",
+   "options": [
+    "$9,000",
+    "$13,500",
+    "$18,000",
+    "$22,500"
+   ],
+   "answer": "D",
+   "rule_line": "Unrecaptured section 1250 gain, the gain up to prior straight-line depreciation, is taxed at a maximum of 25%.",
+   "why": {
+    "A": "Taxes the depreciation portion at 10%, the wrong rate.",
+    "B": "Taxes the depreciation portion at 15%, the wrong rate.",
+    "C": "Taxes the depreciation portion at 20%, the rate for other long-term gain.",
+    "D": "The gain is $380,000 - ($300,000 - $90,000) = $170,000. The unrecaptured section 1250 gain is the lesser of that gain and the depreciation, $90,000, taxed at 25%: $22,500."
+   },
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "C": "concept"
+   },
+   "steps": [
+    "Gain = $170,000",
+    "Unrecaptured section 1250 gain = lesser of $170,000 and 90,000 = $90,000",
+    "Tax at 25% = $22,500"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "380000-(300000-90000)",
+      "fmt": "$",
+      "value": 170000
+     },
+     {
+      "expr": "min(170000,90000)*0.25",
+      "fmt": "$",
+      "value": 22500
+     },
+     {
+      "expr": "170000",
+      "fmt": "$",
+      "value": 170000
+     },
+     {
+      "expr": "min(170000,90000)*0.15",
+      "fmt": "$",
+      "value": 13500
+     },
+     {
+      "expr": "min(170000,90000)*0.2",
+      "fmt": "$",
+      "value": 18000
+     },
+     {
+      "expr": "min(170000,90000)*0.10",
+      "fmt": "$",
+      "value": 9000
+     },
+     {
+      "expr": "min(170000,90000)",
+      "fmt": "$",
+      "value": 90000
+     }
+    ],
+    "expr": "min(170000,90000)*0.25",
+    "fmt": "$",
+    "value": 22500,
+    "distractors": {
+     "A": {
+      "expr": "min(170000,90000)*0.10",
+      "value": 9000
+     },
+     "B": {
+      "expr": "min(170000,90000)*0.15",
+      "value": 13500
+     },
+     "C": {
+      "expr": "min(170000,90000)*0.2",
+      "value": 18000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1(h)(1)(E)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(h)(6)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1250"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Unrecaptured Section 1250 gain / Application"
+  },
+  {
+   "id": "TCP-IV-B-0013",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Section 1244 stock loss",
+   "task": "Calculate the loss allowed on the disposition of Section 1244 small business stock for tax purposes.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Which taxpayer may claim an ordinary loss under the small business stock rules when the stock becomes worthless in 2026? Assume the issuing corporation qualified as a small business corporation when the stock was issued.",
+   "exhibit": "",
+   "options": [
+    "An individual who bought the same stock from another shareholder on a stock exchange",
+    "A corporation that bought newly issued stock directly from the small business corporation",
+    "An individual who bought newly issued stock for cash directly from the corporation",
+    "An individual who received newly issued stock from the corporation in exchange for services"
+   ],
+   "answer": "C",
+   "rule_line": "Ordinary loss on small business stock is limited to individuals and partnerships that acquired stock directly from the corporation for money or property.",
+   "why": {
+    "A": "The stock must be acquired by original issuance from the corporation, not from another shareholder.",
+    "B": "Only individuals and partnerships are eligible; a corporate shareholder is not.",
+    "C": "Ordinary loss treatment is available only to the individual (or partnership) that originally received the stock from the corporation for money or property.",
+    "D": "The stock must be issued for money or other property, not for services."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1244(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1244(c)(1)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1244(a)-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Section 1244 stock loss / Application"
+  },
+  {
+   "id": "TCP-IV-C-0001",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "C",
+   "group_name": "Related party transactions, including imputed interest",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Related parties definition",
+   "task": "Recall related parties for tax purposes.",
+   "task_skill": "Remembering",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Which pair of persons is related under the rules that disallow losses on sales between related persons?",
+   "exhibit": "",
+   "options": [
+    "An individual and his uncle",
+    "An individual and his first cousin",
+    "An individual and his wife's brother",
+    "An individual and his brother"
+   ],
+   "answer": "D",
+   "rule_line": "For loss disallowance, family includes siblings, spouse, ancestors and lineal descendants; uncles, cousins and in-laws are not included.",
+   "why": {
+    "A": "An uncle is not within the family definition, which covers siblings, spouse, ancestors and lineal descendants.",
+    "B": "A cousin is not a family member for these rules.",
+    "C": "In-laws are not included in the family definition.",
+    "D": "Brothers and sisters are members of an individual's family for the related-party rules."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§267(b)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§267(c)(4)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.267(c)-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group C / Related parties definition / Remembering & Understanding"
+  },
+  {
+   "id": "TCP-IV-C-0002",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "C",
+   "group_name": "Related party transactions, including imputed interest",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Ownership percentage calc",
+   "task": "Calculate the direct and indirect ownership percentages of corporation stock or partnership interests to determine whether there are related parties for tax purposes.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Al Cruz directly owns 30% of the stock of Cruz Tools, Inc. His wife owns 10%, his brother owns 15%, his uncle owns 20%, and unrelated persons own the rest. What percentage of Cruz Tools does Al own directly and constructively in testing whether he is related to the corporation?",
+   "exhibit": "",
+   "options": [
+    "30%",
+    "40%",
+    "55%",
+    "75%"
+   ],
+   "answer": "C",
+   "rule_line": "An individual is treated as owning stock owned by his spouse, siblings, ancestors and lineal descendants; more than 50% ownership makes a corporation related.",
+   "why": {
+    "A": "Counts only direct ownership. Family stock is also attributed.",
+    "B": "Attributes the wife's stock but leaves out the brother's, who is also a member of the family.",
+    "C": "Stock owned by his spouse and brother is attributed to Al: 30% + 10% + 15% = 55%. The uncle's stock is not attributed.",
+    "D": "Includes the uncle's stock, but an uncle is not a family member for attribution."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   },
+   "steps": [
+    "Direct 30% + wife 10% + brother 15% = 55%",
+    "Uncle's stock is not attributed"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "30+10+15",
+      "fmt": "%",
+      "value": 55
+     },
+     {
+      "expr": "30",
+      "fmt": "%",
+      "value": 30
+     },
+     {
+      "expr": "30+10",
+      "fmt": "%",
+      "value": 40
+     },
+     {
+      "expr": "30+10+15+20",
+      "fmt": "%",
+      "value": 75
+     }
+    ],
+    "expr": "30+10+15",
+    "fmt": "%",
+    "value": 55,
+    "distractors": {
+     "A": {
+      "expr": "30",
+      "value": 30
+     },
+     "B": {
+      "expr": "30+10",
+      "value": 40
+     },
+     "D": {
+      "expr": "30+10+15+20",
+      "value": 75
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§267(c)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§267(c)(4)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§267(b)(2)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group C / Ownership percentage calc / Application"
+  },
+  {
+   "id": "TCP-IV-C-0003",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "C",
+   "group_name": "Related party transactions, including imputed interest",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Related parties definition",
+   "task": "Recall related parties for tax purposes.",
+   "task_skill": "Remembering",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Elm Street Corp. is an accrual-basis calendar-year corporation. It owes $50,000 of interest for 2026 to Ted Ross, a cash-basis individual who owns 60% of its stock. Elm accrued the interest on December 31, 2026 and paid it on March 1, 2027. How much of the interest may Elm deduct for 2026?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$20,000",
+    "$30,000",
+    "$50,000"
+   ],
+   "answer": "A",
+   "rule_line": "An accrual-basis payor deducts amounts owed to a related cash-basis payee only when the payee includes them in income.",
+   "why": {
+    "A": "Deductions for amounts owed to a related cash-basis person are deferred until the payee includes the amount in income. Ted, a cash-basis owner of more than 50%, is taxed when paid in 2027, so Elm's deduction also waits until 2027.",
+    "B": "Allows the part owed as if to other shareholders; the amount is owed only to Ted.",
+    "C": "Allows only the part equal to Ted's ownership percentage; the whole amount is deferred.",
+    "D": "Allows the deduction when accrued. Accrual-basis deductions to a related cash-basis owner wait until payment."
+   },
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "concept"
+   },
+   "steps": [
+    "Related party (owner of more than 50%): deduction deferred to the year of payment",
+    "2026 deduction = $0; the deduction belongs in 2027"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "50000",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "0.6*50000",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "(1-0.6)*50000",
+      "fmt": "$",
+      "value": 20000
+     }
+    ],
+    "expr": "0",
+    "fmt": "$",
+    "value": 0,
+    "distractors": {
+     "B": {
+      "expr": "(1-0.6)*50000",
+      "value": 20000
+     },
+     "C": {
+      "expr": "0.6*50000",
+      "value": 30000
+     },
+     "D": {
+      "expr": "50000",
+      "value": 50000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§267(a)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§267(b)(2)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.267(a)-1(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group C / Related parties definition / Application"
+  },
+  {
+   "id": "TCP-IV-C-0004",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "C",
+   "group_name": "Related party transactions, including imputed interest",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Subsequent disposition to unrelated party",
+   "task": "Calculate a taxpayer's gain or loss on a subsequent disposition of an asset to an unrelated third party that was previously purchased from a related party.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Nan Tsai sold stock with a basis of $100,000 to her brother Ivo for $70,000, its fair market value, and her $30,000 loss was disallowed. Ivo later sold the stock to an unrelated buyer for $50,000. What loss does Ivo recognize on the later sale?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$20,000",
+    "$30,000",
+    "$50,000"
+   ],
+   "answer": "B",
+   "rule_line": "A related-party buyer's own loss on a later sale is allowed, and the seller's disallowed loss cannot increase it.",
+   "why": {
+    "A": "Assumes no loss is allowed to Ivo because of Nan's earlier sale. Ivo's own loss is allowed.",
+    "B": "Ivo's basis is his cost, $70,000. His loss is $70,000 - $50,000 = $20,000. Nan's disallowed loss does not increase his loss.",
+    "C": "Uses Nan's disallowed loss as Ivo's loss.",
+    "D": "Uses Nan's original basis, which increases Ivo's loss by her disallowed loss. Disallowed losses can only offset gain."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "C": "trap",
+    "D": "concept"
+   },
+   "steps": [
+    "Ivo's basis = 70,000",
+    "Loss = 70,000 - 50,000 = $20,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "70000-50000",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "100000-50000",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "100000-70000",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     }
+    ],
+    "expr": "70000-50000",
+    "fmt": "$",
+    "value": 20000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "C": {
+      "expr": "100000-70000",
+      "value": 30000
+     },
+     "D": {
+      "expr": "100000-50000",
+      "value": 50000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§267(d)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1012"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.267(d)-1(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group C / Subsequent disposition to unrelated party / Application"
+  },
+  {
+   "id": "TCP-IV-C-0005",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "C",
+   "group_name": "Related party transactions, including imputed interest",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Imputed interest",
+   "task": "Calculate the amount and treatment of imputed interest on related party transactions for tax purposes.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "On January 1, 2026, Trellis Group Corp. lends an employee $200,000 on a demand note that bears no interest. The loan is made in connection with the employee's services and remains outstanding all year. Assume the applicable rate is 4.0%. What amount is treated as additional compensation to the employee for 2026?",
+   "exhibit": "",
+   "options": [
+    "$2,000",
+    "$8,000",
+    "$16,000",
+    "$200,000"
+   ],
+   "answer": "B",
+   "rule_line": "Foregone interest on a below-market compensation-related loan is treated as compensation to the employee and interest paid back to the employer.",
+   "why": {
+    "A": "Uses one quarter of the year's foregone interest.",
+    "B": "A below-market compensation-related loan creates imputed interest at the applicable rate. The foregone interest, $200,000 x 4.0% = $8,000, is treated as paid to the employee as compensation and then paid back as interest.",
+    "C": "Uses two years of foregone interest.",
+    "D": "Treats the entire loan as compensation."
+   },
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "concept"
+   },
+   "steps": [
+    "Foregone interest = 200,000 x 4.0% = $8,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "200000*0.04",
+      "fmt": "$",
+      "value": 8000
+     },
+     {
+      "expr": "200000*0.04*2",
+      "fmt": "$",
+      "value": 16000
+     },
+     {
+      "expr": "200000*0.04/4",
+      "fmt": "$",
+      "value": 2000
+     },
+     {
+      "expr": "200000",
+      "fmt": "$",
+      "value": 200000
+     }
+    ],
+    "expr": "200000*0.04",
+    "fmt": "$",
+    "value": 8000,
+    "distractors": {
+     "A": {
+      "expr": "200000*0.04/4",
+      "value": 2000
+     },
+     "C": {
+      "expr": "200000*0.04*2",
+      "value": 16000
+     },
+     "D": {
+      "expr": "200000",
+      "value": 200000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§7872(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§7872(c)(1)(B)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.7872-4"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group C / Imputed interest / Application"
+  },
+  {
+   "id": "TCP-IV-C-0006",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "C",
+   "group_name": "Related party transactions, including imputed interest",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Imputed interest",
+   "task": "Calculate the amount and treatment of imputed interest on related party transactions for tax purposes.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "On January 1, 2026, Vic Amaro sold land for $500,000, payable in one lump sum in two years, with no stated interest. Assume the applicable federal rate is 4.0% compounded annually. Vic is an accrual-basis taxpayer for interest. How much interest income must he report for 2026?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$18,491",
+    "$20,000",
+    "$37,722"
+   ],
+   "answer": "B",
+   "rule_line": "When a sale has too little stated interest, part of the payment is recharacterized as interest that accrues at the applicable rate.",
+   "why": {
+    "A": "Assumes no interest is reportable because no interest is stated. Unstated interest is imputed.",
+    "B": "The sale has unstated interest. Issue price = present value = $500,000 / 1.04^2 = $462,278. Interest accrued in the first year is $462,278 x 4.0% = $18,491.",
+    "C": "Applies the rate to the stated payment instead of its present value.",
+    "D": "Reports the entire unstated interest in the first year instead of accruing it over the term."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "concept"
+   },
+   "steps": [
+    "Present value = 500,000 / 1.04^2 = $462,278",
+    "First-year interest = $462,278 x 4.0% = $18,491"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(500000/(1+0.04)**2)*0.04",
+      "fmt": "$",
+      "value": 18491
+     },
+     {
+      "expr": "500000/(1+0.04)**2",
+      "fmt": "$",
+      "value": 462278
+     },
+     {
+      "expr": "500000*0.04",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "500000-(500000/(1+0.04)**2)",
+      "fmt": "$",
+      "value": 37722
+     },
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     }
+    ],
+    "expr": "(500000/(1+0.04)**2)*0.04",
+    "fmt": "$",
+    "value": 18491,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "C": {
+      "expr": "500000*0.04",
+      "value": 20000
+     },
+     "D": {
+      "expr": "500000-(500000/(1+0.04)**2)",
+      "value": 37722
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1274(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1272(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§483"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group C / Imputed interest / Application"
+  },
+  {
+   "id": "TCP-IV-C-0007",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "C",
+   "group_name": "Related party transactions, including imputed interest",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Ownership percentage calc",
+   "task": "Calculate the direct and indirect ownership percentages of corporation stock or partnership interests to determine whether there are related parties for tax purposes.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Each of the following taxpayers sells property at a loss to the buyer described. In which case is the loss disallowed under the related-party rules?",
+   "exhibit": "",
+   "options": [
+    "Vera sells stock to a corporation in which she owns 60% of the value",
+    "Wade sells stock to a partnership in which he owns exactly 50% of the capital and profits",
+    "Xena sells stock to her first cousin",
+    "Yale sells stock to a corporation in which he owns 45% and his first cousin owns 5%"
+   ],
+   "answer": "A",
+   "rule_line": "Losses are disallowed between an individual and an entity in which the individual owns more than 50% directly or through family attribution.",
+   "why": {
+    "A": "An individual and a corporation are related if the individual owns, directly or constructively, more than 50% of the corporation's value.",
+    "B": "The relationship rule requires more than 50%, so 50% does not make the partnership related.",
+    "C": "A first cousin is not a family member for the loss disallowance rules.",
+    "D": "The cousin's stock is not attributed, so he owns only 45%, not more than 50%."
+   },
+   "wrong_tags": {
+    "B": "limit",
+    "C": "concept",
+    "D": "limit"
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§267(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§267(b)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§707(b)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group C / Ownership percentage calc / Application"
+  },
+  {
+   "id": "TCP-IV-C-0008",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions",
+   "group": "C",
+   "group_name": "Related party transactions, including imputed interest",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Ownership percentage calc",
+   "task": "Calculate the direct and indirect ownership percentages of corporation stock or partnership interests to determine whether there are related parties for tax purposes.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Ana Cole sells depreciable equipment with an adjusted basis of $60,000 to a corporation of which she owns 60% of the stock, for its fair market value of $100,000. She has held the equipment for many years. What is the amount and character of her gain?",
+   "exhibit": "",
+   "options": [
+    "$40,000 of section 1231 gain",
+    "$40,000 of ordinary income",
+    "$40,000 of short-term capital gain",
+    "$100,000 of ordinary income"
+   ],
+   "answer": "B",
+   "rule_line": "Gain on a sale of depreciable property to a controlled entity is ordinary income, regardless of holding period.",
+   "why": {
+    "A": "Would apply in an unrelated sale of business equipment. A sale to a controlled entity is ordinary.",
+    "B": "A gain on the sale of depreciable property between a taxpayer and a controlled entity (more than 50%) is ordinary. The gain is $100,000 - $60,000 = $40,000.",
+    "C": "The equipment was held for many years, and the gain is ordinary rather than short-term capital gain.",
+    "D": "Treats the entire selling price as ordinary income. Only the gain is income."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "calc"
+   },
+   "steps": [
+    "Gain = 100,000 - 60,000 = $40,000",
+    "Character: ordinary"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "100000-60000",
+      "fmt": "$",
+      "value": 40000
+     },
+     {
+      "expr": "100000",
+      "fmt": "$",
+      "value": 100000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1239(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1239(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§267(c)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group C / Ownership percentage calc / Application"
+  }
+ ]
+}

@@ -1,0 +1,5067 @@
+{
+ "meta": {
+  "exam": "TCP",
+  "area": "B",
+  "title": "Analysis supplement (tcp_b)",
+  "law_asof": "2026-09-29",
+  "count": 40,
+  "status": "verified",
+  "provenance": "terra-original (no Becker/UWorld/Wiley/AICPA released-question text used)",
+  "blueprint": "2026 AICPA TCP Blueprint (second-hand sources; see TCP_SPEC.md)"
+ },
+ "items": [
+  {
+   "id": "TCP-I-A-0031",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "A",
+   "group_name": "Individual compliance and tax planning for gross income, AGI, taxable income and estimated taxes",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Gross income items",
+   "task": "Consider the impact to an individual's taxable income for certain items of gross income, including imputed interest on below-market rate loan and compensation earned while employed outside the U.S.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Hugo Brandt, single, bought a house on January 1, 2018 for $400,000 and rented it to tenants for exactly 48 months. On January 1, 2022 he moved in and has lived there as his main home since. He claimed $48,000 of depreciation during the rental period. He can sell the house on December 31, 2026 (owned 108 months) or keep living in it and sell on December 31, 2028 (owned 132 months). Either sale would bring a net amount realized of $700,000, and there are no other basis changes. How much less taxable gain does Hugo recognize by waiting until 2028?",
+   "exhibit": "",
+   "options": [
+    "$24,242",
+    "$28,121",
+    "$133,333",
+    "$181,333"
+   ],
+   "answer": "A",
+   "rule_line": "Gain on a home sale allocated to periods of nonqualified use, such as rental use before it became the main home, is not excludable, and gain equal to depreciation claimed after May 6, 1997 is also not excludable.",
+   "why": {
+    "A": "The depreciation gain of $48,000 is taxable either way. The remaining $300,000 of gain is allocated to nonqualified use (the 48 rental months before he moved in) by months owned: 48/108 in 2026 and 48/132 in 2028. The gain that is allocated to home use is under the $250,000 exclusion in both years, so only the allocation changes: $300,000 x (48/108 - 48/132) = $24,242.",
+    "B": "Allocates the entire $348,000 of gain by months. The $48,000 of gain from depreciation is taxable in full and is taken out before the nonqualified use allocation, so it cannot be spread by months.",
+    "C": "This is the nonqualified use gain if he sells in 2026, not the reduction from waiting. The 2028 sale also has an allocation ($109,091), so only the difference in the two allocations is saved.",
+    "D": "This is his total taxable gain if he sells in 2026 (allocated gain plus the depreciation). Waiting does not remove that, it only reduces the allocated part."
+   },
+   "wrong_tags": {
+    "B": "calc",
+    "C": "trap",
+    "D": "trap"
+   },
+   "steps": [
+    "Total gain = 700,000 - (400,000 - 48,000) = 348,000",
+    "Depreciation gain of 48,000 is not excludable; remaining gain = 348,000 - 48,000 = 300,000",
+    "Nonqualified fraction: 48/108 for a 2026 sale and 48/132 for a 2028 sale",
+    "Allocated (taxable) gain: 300,000 x 48/108 = 133,333 versus 300,000 x 48/132 = 109,091",
+    "Gain allocated to qualified use (166,667 or 190,909) is below the 250,000 exclusion, so difference = 133,333 - 109,091 = 24,242"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(700000-(400000-48000)-48000)*(48/108-48/132)",
+      "fmt": "$",
+      "value": 24242.424242424233
+     },
+     {
+      "expr": "348000*(48/108-48/132)",
+      "fmt": "$",
+      "value": 28121.21212121211
+     },
+     {
+      "expr": "(700000-(400000-48000)-48000)*48/108",
+      "fmt": "$",
+      "value": 133333.33333333334
+     },
+     {
+      "expr": "(700000-(400000-48000)-48000)*48/108+48000",
+      "fmt": "$",
+      "value": 181333.33333333334
+     },
+     {
+      "expr": "700000-(400000-48000)",
+      "fmt": "$",
+      "value": 348000
+     },
+     {
+      "expr": "(700000-(400000-48000)-48000)*48/132",
+      "fmt": "$",
+      "value": 109090.90909090909
+     },
+     {
+      "expr": "(700000-(400000-48000)-48000)*(1-48/108)",
+      "fmt": "$",
+      "value": 166666.6666666667
+     },
+     {
+      "expr": "(700000-(400000-48000)-48000)*(1-48/132)",
+      "fmt": "$",
+      "value": 190909.0909090909
+     },
+     {
+      "expr": "700000-(400000-48000)-48000",
+      "fmt": "$",
+      "value": 300000
+     }
+    ],
+    "expr": "(700000-(400000-48000)-48000)*(48/108-48/132)",
+    "fmt": "$",
+    "value": 24242.424242424233,
+    "distractors": {
+     "B": {
+      "expr": "348000*(48/108-48/132)",
+      "value": 28121.21212121211
+     },
+     "C": {
+      "expr": "(700000-(400000-48000)-48000)*48/108",
+      "value": 133333.33333333334
+     },
+     "D": {
+      "expr": "(700000-(400000-48000)-48000)*48/108+48000",
+      "value": 181333.33333333334
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§121(b)(5)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§121(d)(6)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.121-1(b)(4)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Nonqualified use excludes any period after the last date the home was used as a main home, and periods before 2009. Rental use from 2018 to 2021 precedes the move-in, so it counts. Confirmed 2026-09-29 (Cornell LII 26 USC 121): (b)(5)(D) applies the nonqualified use allocation after (d)(6), so depreciation gain is removed first; rental use before the move-in counts as nonqualified use.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group A / Gross income items / Analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-I-A-0032",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "A",
+   "group_name": "Individual compliance and tax planning for gross income, AGI, taxable income and estimated taxes",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Itemized vs standard deduction",
+   "task": "Consider the impact of using either itemized deductions or the standard deduction for planning purposes given a specific scenario.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Ravi and Meera Kapoor file jointly and itemize deductions. Assume that for 2026 the deduction for state and local taxes is capped at $40,400, reduced by 30% of modified AGI above $505,000, and never reduced below $10,000. They paid $48,000 of state income and property taxes. Their modified AGI is $565,000 before any additional retirement deferral. Ravi can defer another $20,000 of salary into his employer's traditional 401(k) plan, which lowers modified AGI dollar for dollar. Assume their marginal rate is 35% throughout, they itemize either way, and no other item changes. By how much does the additional deferral reduce their 2026 federal income tax?",
+   "exhibit": "",
+   "options": [
+    "$2,100",
+    "$7,000",
+    "$9,100",
+    "$14,000"
+   ],
+   "answer": "C",
+   "rule_line": "A high-income taxpayer's state and local tax cap is reduced by 30% of modified AGI over the threshold, so an action that lowers modified AGI gives a second deduction benefit.",
+   "why": {
+    "A": "Counts only the extra state and local tax deduction ($6,000 x 35%). The $20,000 deferral also reduces taxable income directly.",
+    "B": "Counts only the salary deferral. It misses the larger state and local tax deduction that results from a lower modified AGI.",
+    "C": "The deferral saves $20,000 x 35% = $7,000 directly. It also lowers modified AGI to $545,000, so the state and local tax cap rises from $22,400 to $28,400 and the deduction rises by $6,000, saving another $2,100. Total $9,100.",
+    "D": "Assumes the SALT deduction rises by the full $20,000 of deferral. The cap rises by only 30% of the reduction in modified AGI, or $6,000."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "D": "calc"
+   },
+   "steps": [
+    "Cap before deferral = 40,400 - 30% x (565,000 - 505,000) = 22,400; deduction = 22,400 (paid 48,000)",
+    "Cap after deferral = 40,400 - 30% x (545,000 - 505,000) = 28,400; deduction = 28,400",
+    "Direct saving = 20,000 x 35% = 7,000; SALT saving = (28,400 - 22,400) x 35% = 2,100",
+    "Total = 7,000 + 2,100 = 9,100"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(28400-22400)*0.35",
+      "fmt": "$",
+      "value": 2100.0
+     },
+     {
+      "expr": "20000*0.35",
+      "fmt": "$",
+      "value": 7000.0
+     },
+     {
+      "expr": "20000*0.35+(min(48000,max(10000,40400-0.3*(545000-505000)))-min(48000,max(10000,40400-0.3*(565000-505000))))*0.35",
+      "fmt": "$",
+      "value": 9100.0
+     },
+     {
+      "expr": "(20000+20000)*0.35",
+      "fmt": "$",
+      "value": 14000.0
+     },
+     {
+      "expr": "40400-0.3*(565000-505000)",
+      "fmt": "$",
+      "value": 22400.0
+     },
+     {
+      "expr": "40400-0.3*(545000-505000)",
+      "fmt": "$",
+      "value": 28400.0
+     },
+     {
+      "expr": "0.3*20000",
+      "fmt": "$",
+      "value": 6000.0
+     },
+     {
+      "expr": "565000-20000",
+      "fmt": "$",
+      "value": 545000
+     }
+    ],
+    "expr": "20000*0.35+(min(48000,max(10000,40400-0.3*(545000-505000)))-min(48000,max(10000,40400-0.3*(565000-505000))))*0.35",
+    "fmt": "$",
+    "value": 9100.0,
+    "distractors": {
+     "A": {
+      "expr": "(28400-22400)*0.35",
+      "value": 2100.0
+     },
+     "B": {
+      "expr": "20000*0.35",
+      "value": 7000.0
+     },
+     "D": {
+      "expr": "(20000+20000)*0.35",
+      "value": 14000.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§164(b)(7)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§402(g)"
+    },
+    {
+     "src": "P.L.",
+     "ref": "119-21 §70120"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "Cap amount, threshold, 30% reduction and $10,000 floor are stem assumptions based on P.L. 119-21 §70120 (cap $40,000 for 2025, 1% higher for 2026; threshold $500,000 for 2025, 1% higher for 2026). Confirmed 26 USC 164(b)(7): $40,000 (2025), $40,400 (2026); threshold $500,000 / $505,000; reduction 30% of MAGI excess; floor $10,000.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group A / Itemized vs standard deduction / Analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-I-A-0033",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "A",
+   "group_name": "Individual compliance and tax planning for gross income, AGI, taxable income and estimated taxes",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Timing planning",
+   "task": "Consider the effect of changing tax rates and legislation on the timing of income and expense items for planning purposes given a specific scenario.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Tomas Ruiz, single, has realized $30,000 of long-term capital gain in 2026 and has no other capital transactions. On December 10 he holds Stock X, bought seven months earlier, with a $15,000 unrealized loss. Assume net long-term capital gain is taxed at 15%, ordinary income at 32%, and the net investment income tax does not apply. He considers three plans. Plan 1: sell Stock X on December 10 and buy the same shares back on December 20. Plan 2: sell Stock X on December 10 and buy the same shares back on January 15, 2027. Plan 3: keep Stock X. Which plan gives the largest 2026 federal tax reduction, and by how much?",
+   "exhibit": "",
+   "options": [
+    "Plan 1, because the loss is realized in 2026 and reduces tax by $2,250",
+    "Plan 2, because the short-term loss is deducted at 32% and reduces tax by $4,800",
+    "Plans 1 and 2 give the same $2,250 reduction, because the repurchase date does not affect the loss",
+    "Plan 2, because the loss is realized in 2026 and reduces tax by $2,250"
+   ],
+   "answer": "D",
+   "rule_line": "A loss on a sale of stock is disallowed if substantially identical stock is bought within 30 days before or after the sale; an allowed short-term loss first offsets long-term gain in the netting.",
+   "why": {
+    "A": "Buying the same shares back within 30 days after the sale is a wash sale, so the $15,000 loss is disallowed and added to the basis of the new shares. Plan 1 gives no 2026 reduction.",
+    "B": "The short-term loss is first netted against long-term gain, so it saves tax at the 15% long-term rate. It is not deducted at the ordinary rate because it is absorbed by gain.",
+    "C": "The repurchase date decides the result. A repurchase within 30 days before or after the sale makes it a wash sale and defers the loss.",
+    "D": "January 15 is 36 days after the sale, outside the 30-day wash sale period, so the loss counts in 2026. The $15,000 short-term loss nets against the $30,000 long-term gain, leaving $15,000 of long-term gain: tax falls from $4,500 to $2,250, a reduction of $2,250."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "C": "concept"
+   },
+   "steps": [
+    "Wash sale window: December 10 plus 30 days ends January 9, so January 15 is outside it (36 days)",
+    "Plan 2: net long-term gain = 30,000 - 15,000 = 15,000, tax = 15,000 x 15% = 2,250 (versus 30,000 x 15% = 4,500)",
+    "Reduction = 4,500 - 2,250 = 2,250; Plan 1 loss is disallowed, so no reduction"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "30000*0.15",
+      "fmt": "$",
+      "value": 4500.0
+     },
+     {
+      "expr": "(30000-15000)*0.15",
+      "fmt": "$",
+      "value": 2250.0
+     },
+     {
+      "expr": "30000*0.15-(30000-15000)*0.15",
+      "fmt": "$",
+      "value": 2250.0
+     },
+     {
+      "expr": "15000*0.32",
+      "fmt": "$",
+      "value": 4800.0
+     },
+     {
+      "expr": "days('2026-12-10','2027-01-15')",
+      "fmt": "n",
+      "value": 36
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1091(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1222"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1211(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 1091(a): 30 days before and after the sale date.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group A / Timing planning / Analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-I-A-0034",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "A",
+   "group_name": "Individual compliance and tax planning for gross income, AGI, taxable income and estimated taxes",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Timing planning",
+   "task": "Consider the effect of changing tax rates and legislation on the timing of income and expense items for planning purposes given a specific scenario.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Wendy Park, single, is a sole proprietor with 2026 net profit of $180,000 from a business that is not a specified service business. Her taxable income is below the level at which the wage and property limits apply, so her qualified business income deduction equals 20% of qualified business income, and the taxable income limit does not restrict it. Qualified business income is reduced by any deductible retirement plan contribution. Assume her marginal rate is 24% throughout and all of a $30,000 SEP-IRA contribution is deductible. By how much does the SEP-IRA contribution reduce her 2026 federal income tax?",
+   "exhibit": "",
+   "options": [
+    "$1,440",
+    "$5,760",
+    "$6,000",
+    "$7,200"
+   ],
+   "answer": "B",
+   "rule_line": "A deductible retirement contribution by a self-employed owner reduces qualified business income, so the net taxable income reduction is 80% of the contribution.",
+   "why": {
+    "A": "Computes only the effect of the lower qualified business income deduction ($6,000 x 24%). The contribution itself is also deducted.",
+    "B": "The contribution lowers AGI and taxable income by $30,000 but also lowers qualified business income by $30,000, which cuts the 20% deduction by $6,000. Taxable income falls by a net $24,000, so tax falls by $24,000 x 24% = $5,760.",
+    "C": "This is the amount of qualified business income deduction lost, $6,000, not a tax amount. The reduction is measured in tax, at her rate.",
+    "D": "Ignores that the deductible contribution also reduces qualified business income and the 20% deduction. Tax falls by less than $30,000 x 24%."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "C": "calc",
+    "D": "trap"
+   },
+   "steps": [
+    "Contribution reduces AGI and taxable income by 30,000",
+    "Qualified business income falls 30,000, so the deduction falls 20% x 30,000 = 6,000",
+    "Net taxable income reduction = 30,000 - 6,000 = 24,000; tax reduction = 24,000 x 24% = 5,760"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "30000*0.2*0.24",
+      "fmt": "$",
+      "value": 1440.0
+     },
+     {
+      "expr": "(30000-30000*0.2)*0.24",
+      "fmt": "$",
+      "value": 5760.0
+     },
+     {
+      "expr": "30000*0.2",
+      "fmt": "$",
+      "value": 6000.0
+     },
+     {
+      "expr": "30000*0.24",
+      "fmt": "$",
+      "value": 7200.0
+     },
+     {
+      "expr": "30000-30000*0.2",
+      "fmt": "$",
+      "value": 24000.0
+     }
+    ],
+    "expr": "(30000-30000*0.2)*0.24",
+    "fmt": "$",
+    "value": 5760.0,
+    "distractors": {
+     "A": {
+      "expr": "30000*0.2*0.24",
+      "value": 1440.0
+     },
+     "C": {
+      "expr": "30000*0.2",
+      "value": 6000.0
+     },
+     "D": {
+      "expr": "30000*0.24",
+      "value": 7200.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§199A(b)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§199A(c)(1)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.199A-3(b)(1)(iii)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§404(h)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "The 20% qualified business income deduction is permanent for tax years after 2025 under P.L. 119-21 §70105, so 2026 use depends on that Act. Confirmed 26 USC 199A(i) as amended: deduction permanent after 2025.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group A / Timing planning / Analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-I-A-0035",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "A",
+   "group_name": "Individual compliance and tax planning for gross income, AGI, taxable income and estimated taxes",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "FSA/HSA",
+   "task": "Identify projected tax savings through utilization of flexible spending accounts (FSAs) and qualified health savings accounts (HSAs) for planning purposes given a specific scenario.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Marta Keller, age 40, is single with a child and has family coverage under a qualifying high-deductible health plan, so her 2026 HSA limit is $8,750. She expects $6,000 of qualified medical expenses in 2026. Her AGI before any HSA contribution is $80,000 and she is in the 22% bracket. Her other itemizable deductions total $9,000, well below the $16,100 standard deduction. She can (1) pay the $6,000 with after-tax dollars, or (2) contribute $6,000 to an HSA through her employer's cafeteria plan by salary reduction and pay the expenses from the HSA. Assume employee FICA is 7.65% on her wages, she is below the Social Security wage base, and medical expenses are deductible only above 7.5% of AGI. How much lower is her combined 2026 federal income tax and employee FICA under choice (2) than under choice (1)?",
+   "exhibit": "",
+   "options": [
+    "$459",
+    "$1,320",
+    "$1,779",
+    "$2,238"
+   ],
+   "answer": "C",
+   "rule_line": "A medical expense paid through a pre-tax HSA salary reduction saves income tax and FICA, while the itemized deduction gives nothing if it falls below the 7.5% floor or the standard deduction.",
+   "why": {
+    "A": "Counts only FICA. The salary reduction also removes the $6,000 from taxable income and saves income tax at 22%.",
+    "B": "Counts only income tax. Contributions made by salary reduction through a cafeteria plan also avoid employee FICA.",
+    "C": "Under choice (1) no itemized medical deduction arises: the 7.5% floor is $6,000, and her itemized total is below the standard deduction anyway. Under choice (2) the salary reduction avoids both income tax (22%) and FICA (7.65%): $6,000 x 29.65% = $1,779.",
+    "D": "Uses 15.3%, which is the combined employer and employee FICA rate. Only the employee's 7.65% is her cost."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "D": "calc"
+   },
+   "steps": [
+    "Choice 1: 7.5% x 80,000 = 6,000 floor, so the medical deduction is 0; itemized 9,000 < 16,100, so no tax benefit",
+    "Choice 2: salary reduction of 6,000 avoids income tax 6,000 x 22% = 1,320 and FICA 6,000 x 7.65% = 459",
+    "Difference = 1,320 + 459 = 1,779"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "6000*0.0765",
+      "fmt": "$",
+      "value": 459.0
+     },
+     {
+      "expr": "6000*0.22",
+      "fmt": "$",
+      "value": 1320.0
+     },
+     {
+      "expr": "6000*(0.22+0.0765)",
+      "fmt": "$",
+      "value": 1779.0
+     },
+     {
+      "expr": "6000*(0.22+0.153)",
+      "fmt": "$",
+      "value": 2238.0
+     },
+     {
+      "expr": "0.075*80000",
+      "fmt": "$",
+      "value": 6000.0
+     }
+    ],
+    "expr": "6000*(0.22+0.0765)",
+    "fmt": "$",
+    "value": 1779.0,
+    "distractors": {
+     "A": {
+      "expr": "6000*0.0765",
+      "value": 459.0
+     },
+     "B": {
+      "expr": "6000*0.22",
+      "value": 1320.0
+     },
+     "D": {
+      "expr": "6000*(0.22+0.153)",
+      "value": 2238.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§223(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§125(d)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§3121(a)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§213(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group A / FSA/HSA / Analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-I-A-0036",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "A",
+   "group_name": "Individual compliance and tax planning for gross income, AGI, taxable income and estimated taxes",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Itemized vs standard deduction",
+   "task": "Consider the impact of using either itemized deductions or the standard deduction for planning purposes given a specific scenario.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Ed Rossi, age 74, single, must take a $30,000 required minimum distribution from his traditional IRA in 2026 and wants to give $10,000 to his church. He has a $165,000 pension, and $12,000 of other itemizable deductions. Assume his standard deduction is $18,150, his income is high enough that any extra deduction for taxpayers age 65 or older is fully phased out, and he is in the 24% bracket at all the relevant income levels. Assume that charitable gifts of cash are deductible only above 0.5% of AGI. Option 1: take the full $30,000 distribution and give $10,000 of cash to the church. Option 2: direct the IRA custodian to send $10,000 to the church as a qualified charitable distribution and take the other $20,000 as his required distribution. Ed uses the larger of itemized and standard deductions each way. How much lower is his 2026 federal income tax under Option 2?",
+   "exhibit": "",
+   "options": [
+    "$1,476",
+    "$1,710",
+    "$2,400",
+    "$4,800"
+   ],
+   "answer": "B",
+   "rule_line": "A qualified charitable distribution is excluded from gross income and counts toward the required distribution, and it beats a cash gift because the cash gift is subject to the AGI floor and to the choice of standard deduction.",
+   "why": {
+    "A": "Deducts the full $10,000 gift in Option 1 and ignores the 0.5% of AGI floor. The floor removes $975 of the gift deduction.",
+    "B": "Option 1: AGI is $195,000, the gift is deductible only above the $975 floor, so itemized deductions are $12,000 + $9,025 = $21,025, above the standard deduction. Option 2: AGI is $185,000 and itemized deductions of $12,000 are below the standard deduction, so he takes $18,150. Taxable income is $173,975 versus $166,850, a difference of $7,125, and tax is $1,710 lower.",
+    "C": "Assumes the gift saves nothing under Option 1 and the exclusion saves the full $10,000 at 24%. In Option 1 he itemizes and gets a deduction for most of the gift.",
+    "D": "Applies the rate to the $20,000 of distribution he still takes. The QCD keeps only the $10,000 given to the church out of income."
+   },
+   "wrong_tags": {
+    "A": "calc",
+    "C": "trap",
+    "D": "trap"
+   },
+   "steps": [
+    "Option 1: AGI = 165,000 + 30,000 = 195,000; deductible gift = 10,000 - 0.5% x 195,000 = 9,025; itemized = 12,000 + 9,025 = 21,025 (> 18,150)",
+    "Taxable income = 195,000 - 21,025 = 173,975",
+    "Option 2: AGI = 165,000 + 20,000 = 185,000; itemized 12,000 < 18,150, so standard deduction; taxable income = 185,000 - 18,150 = 166,850",
+    "Difference = 173,975 - 166,850 = 7,125; tax = 7,125 x 24% = 1,710"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "((165000+30000-max(18150,12000+10000))-(165000+20000-max(18150,12000)))*0.24",
+      "fmt": "$",
+      "value": 1476.0
+     },
+     {
+      "expr": "((165000+30000-max(18150,12000+(10000-0.005*(165000+30000))))-(165000+20000-max(18150,12000)))*0.24",
+      "fmt": "$",
+      "value": 1710.0
+     },
+     {
+      "expr": "10000*0.24",
+      "fmt": "$",
+      "value": 2400.0
+     },
+     {
+      "expr": "20000*0.24",
+      "fmt": "$",
+      "value": 4800.0
+     },
+     {
+      "expr": "165000+30000",
+      "fmt": "$",
+      "value": 195000
+     },
+     {
+      "expr": "12000+(10000-0.005*(165000+30000))",
+      "fmt": "$",
+      "value": 21025.0
+     },
+     {
+      "expr": "165000+30000-max(18150,12000+(10000-0.005*(165000+30000)))",
+      "fmt": "$",
+      "value": 173975.0
+     },
+     {
+      "expr": "165000+20000-max(18150,12000)",
+      "fmt": "$",
+      "value": 166850
+     },
+     {
+      "expr": "0.005*(165000+30000)",
+      "fmt": "$",
+      "value": 975.0
+     },
+     {
+      "expr": "10000-0.005*(165000+30000)",
+      "fmt": "$",
+      "value": 9025.0
+     },
+     {
+      "expr": "165000+20000",
+      "fmt": "$",
+      "value": 185000
+     },
+     {
+      "expr": "(165000+30000-max(18150,12000+(10000-0.005*(165000+30000))))-(165000+20000-max(18150,12000))",
+      "fmt": "$",
+      "value": 7125.0
+     }
+    ],
+    "expr": "((165000+30000-max(18150,12000+(10000-0.005*(165000+30000))))-(165000+20000-max(18150,12000)))*0.24",
+    "fmt": "$",
+    "value": 1710.0,
+    "distractors": {
+     "A": {
+      "expr": "((165000+30000-max(18150,12000+10000))-(165000+20000-max(18150,12000)))*0.24",
+      "value": 1476.0
+     },
+     "C": {
+      "expr": "10000*0.24",
+      "value": 2400.0
+     },
+     "D": {
+      "expr": "20000*0.24",
+      "value": 4800.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§408(d)(8)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§170(b)(1)(I)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§401(a)(9)"
+    },
+    {
+     "src": "P.L.",
+     "ref": "119-21 §70425"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "The 0.5% AGI floor on itemized charitable gifts starts in 2026 (P.L. 119-21 §70425); the stem states it. The senior deduction phase-out is stated in the stem. Confirmed 26 USC 170(b)(1)(I) 0.5% of contribution base floor. The 65-and-older extra deduction is assumed phased out in the stem.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group A / Itemized vs standard deduction / Analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-I-B-0011",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "B",
+   "group_name": "Compliance for passive activity and at-risk loss limitations (excluding tax credit implications)",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Passive activity loss",
+   "task": "Calculate the passive activity loss limitations given a specific scenario, including the netting of passive activity gains and losses.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Jonah Reyes and his wife file jointly and have $400,000 of modified AGI, so the special $25,000 allowance for rental losses is not available. Jonah owns three rental buildings that produce a combined 2026 loss of $60,000, and he is in the 37% bracket. He has a valid election to treat all his rental real estate interests as one activity. His wife does no rental work. Jonah works as an engineer for an unrelated employer for 1,500 hours a year, and spends 900 hours a year on his rentals. He can cut his engineering hours without changing his rental hours. Which choice makes the rental loss deductible against his other income for 2026, and what is the tax saving?",
+   "exhibit": "",
+   "options": [
+    "Reduce the engineering work to 900 hours, since rental hours would then equal the engineering hours, and save $22,200",
+    "Make no change, because 900 rental hours exceeds 750 hours and already meets the test, saving $22,200",
+    "No reduction of engineering hours can make the loss deductible, because employee wages prevent real estate professional status, so the saving is $0",
+    "Reduce the engineering work to 800 hours, which meets both hour tests, and save $22,200"
+   ],
+   "answer": "D",
+   "rule_line": "A taxpayer is a real estate professional only if more than half of personal service hours, and more than 750 hours, are in real property trades in which he materially participates; then rental losses are not passive.",
+   "why": {
+    "A": "Equal hours (900 of 1,800, or 50%) is not more than half. The test requires more than 50% of personal service hours in real estate trades.",
+    "B": "The 750-hour test is only one of two tests. At 1,500 engineering hours, 900 / 2,400 = 37.5%, so the more-than-half test fails and the loss stays passive.",
+    "C": "Wage work does not bar real estate professional status. The wage hours count only in the more-than-half test, and cutting them makes the test pass.",
+    "D": "Real estate professional status needs more than 750 hours in real estate trades and more than half of all personal service hours in them. With 800 engineering hours, 900 / 1,700 = 52.9%. The election to combine the rentals gives him 900 hours in one activity, so he materially participates and the loss is not passive: $60,000 x 37% = $22,200."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "C": "concept"
+   },
+   "steps": [
+    "Test 1: 900 hours > 750 hours (passes at any engineering level)",
+    "Test 2 at 1,500 engineering hours: 900 / (900 + 1,500) = 37.5%, fails",
+    "At 900 engineering hours: 900 / 1,800 = 50%, not more than half, fails",
+    "At 800 engineering hours: 900 / 1,700 = 52.9%, passes; loss becomes nonpassive: 60,000 x 37% = 22,200"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "60000*0.37",
+      "fmt": "$",
+      "value": 22200.0
+     },
+     {
+      "expr": "900/(900+1500)*100",
+      "fmt": "x",
+      "value": 37.5
+     },
+     {
+      "expr": "900/(900+900)*100",
+      "fmt": "x",
+      "value": 50.0
+     },
+     {
+      "expr": "900/(900+800)*100",
+      "fmt": "x",
+      "value": 52.94117647058824
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§469(c)(7)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.469-9(e)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.469-9(g)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Employee work counts as personal services in a trade or business; only services as an employee of a company in which the employee owns more than 5% are treated as real property trade services. Confirmed Reg. 1.469-9(c)(5) (employee services count as trade or business services but not real property services unless 5% owner, so they enter only the denominator) and (g) (aggregation election).",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group B / Passive activity loss / Analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-I-B-0012",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "B",
+   "group_name": "Compliance for passive activity and at-risk loss limitations (excluding tax credit implications)",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "At-risk limitation",
+   "task": "Calculate the at-risk loss limitation for an activity in which an individual materially participates, including losses from pass-through entities and losses from real estate rental activities with active participation.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Kira Sato is a limited partner in a partnership that is a passive activity to her. Her share of the partnership's 2026 loss is $90,000. Her basis in the partnership interest at year-end is $70,000 and her at-risk amount is $50,000. She also has $35,000 of net income from another passive activity. She considers contributing $30,000 in cash to the partnership before December 31, which would raise both her basis and her at-risk amount by $30,000. By how much would the contribution increase her deductible 2026 loss from the partnership?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$20,000",
+    "$30,000",
+    "$45,000"
+   ],
+   "answer": "A",
+   "rule_line": "A loss is limited first by basis, then by the amount at risk, then by the passive activity rules, so extra basis or at-risk amount does not help when the passive limit is binding.",
+   "why": {
+    "A": "The loss must pass three limits in order: basis, at-risk, then passive. Without the contribution, the at-risk limit allows $50,000 but only $35,000 of passive income can absorb it. With the contribution, the at-risk limit rises to $80,000 but the passive limit still allows only $35,000. The deductible loss is $35,000 either way, an increase of $0.",
+    "B": "Applies only the basis limit, which rises from $70,000 to $90,000 (the loss). The at-risk and passive activity limits are more restrictive.",
+    "C": "Applies only the at-risk limit, which rises by $30,000. The passive activity limit caps the loss at $35,000 in both cases.",
+    "D": "Subtracts the passive income from the new at-risk limit. This is the loss that is still suspended after the contribution, not the increase in the deduction."
+   },
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "calc"
+   },
+   "steps": [
+    "Without contribution: min(90,000 loss, 70,000 basis, 50,000 at risk) = 50,000; passive limit 35,000; deductible = 35,000",
+    "With contribution: min(90,000, 100,000, 80,000) = 80,000; passive limit 35,000; deductible = 35,000",
+    "Increase = 35,000 - 35,000 = 0"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "min(min(90000,100000,80000),35000)-min(min(90000,70000,50000),35000)",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "min(90000,100000)-min(90000,70000)",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "80000-50000",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "80000-35000",
+      "fmt": "$",
+      "value": 45000
+     },
+     {
+      "expr": "min(90000,70000,50000)",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "min(90000,100000,80000)",
+      "fmt": "$",
+      "value": 80000
+     }
+    ],
+    "expr": "min(min(90000,100000,80000),35000)-min(min(90000,70000,50000),35000)",
+    "fmt": "$",
+    "value": 0,
+    "distractors": {
+     "B": {
+      "expr": "min(90000,100000)-min(90000,70000)",
+      "value": 20000
+     },
+     "C": {
+      "expr": "80000-50000",
+      "value": 30000
+     },
+     "D": {
+      "expr": "80000-35000",
+      "value": 45000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§704(d)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§465(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§469(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group B / At-risk limitation / Analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-I-C-0011",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "C",
+   "group_name": "Gift taxation compliance and planning",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Gifting for planning",
+   "task": "Identify the potential tax savings from gifting ownership of noncash property to an individual given a specific planning scenario, including identification of the property to be gifted to minimize the donor's future estate.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Ines Varga, age 78, wants to give her son $200,000 of securities now. She owns Stock A (worth $200,000, basis $40,000) and Stock B (worth $200,000, basis $260,000), both held long term. She will keep whichever stock she does not give until death, and her estate is well below the estate tax exemption. Her son will sell whatever he receives right away. Long-term capital gain is taxed at 15% for both, and Ines has large capital gains this year, so any loss she realizes saves tax at 15%. Plan 1: give Stock A. Plan 2: give Stock B. Plan 3: sell Stock B, and give the $200,000 of cash. Which plan gives the lowest combined income tax for Ines and her son?",
+   "exhibit": "",
+   "options": [
+    "Plan 1, with combined tax of $24,000",
+    "Plan 2, because the son sells with no gain or loss and Ines keeps Stock A for a stepped-up basis",
+    "Plans 2 and 3 equally, each with combined tax of $0",
+    "Plan 3, which produces a net tax saving of $9,000"
+   ],
+   "answer": "D",
+   "rule_line": "A gift of appreciated property carries over the donor's basis, and a gift of loss property gives the donee no loss deduction; a donor with loss property should sell it and give the cash, and keep appreciated property for a step-up at death.",
+   "why": {
+    "A": "The son takes Stock A with Ines's $40,000 basis and taxes $160,000 of gain at 15%, which is $24,000. Ines also loses the step-up on Stock A.",
+    "B": "Combined tax is $0, but the loss is wasted: for a loss the son's basis is the $200,000 value, so his sale shows no loss, and Ines's $60,000 loss disappears at her death.",
+    "C": "Plan 3 produces a $9,000 saving while Plan 2 produces none. A gift of loss property gives up the loss for both the donor and the donee.",
+    "D": "Ines sells Stock B and uses the $60,000 loss against gains, saving $60,000 x 15% = $9,000. The cash gift carries no income tax for the son, and Stock A, held until death, gets a step-up. Combined tax is negative $9,000."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "C": "concept"
+   },
+   "steps": [
+    "Plan 1: son's gain = 200,000 - 40,000 = 160,000; tax = 160,000 x 15% = 24,000; B basis steps down at death",
+    "Plan 2: loss basis = 200,000 (value), so son sells at 200,000 with no gain or loss; tax 0, and the 60,000 loss is never used",
+    "Plan 3: loss = 260,000 - 200,000 = 60,000; saving = 60,000 x 15% = 9,000; Stock A keeps its step-up",
+    "Lowest combined tax is Plan 3 (net saving of 9,000)"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(200000-40000)*0.15",
+      "fmt": "$",
+      "value": 24000.0
+     },
+     {
+      "expr": "(260000-200000)*0.15",
+      "fmt": "$",
+      "value": 9000.0
+     },
+     {
+      "expr": "200000-40000",
+      "fmt": "$",
+      "value": 160000
+     },
+     {
+      "expr": "260000-200000",
+      "fmt": "$",
+      "value": 60000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1015(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1014(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1211(b)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1015-1(a)(2)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group C / Gifting for planning / Analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-I-C-0012",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "C",
+   "group_name": "Gift taxation compliance and planning",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Taxable gifts",
+   "task": "Calculate the amount of taxable gifts for federal gift tax purposes.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "In 2026 Hal and Eve Dorn, who are married and consent to split all gifts, make these transfers. Hal gives $200,000 to a 529 plan for his granddaughter Ada and elects to spread the gift over five years. Eve gives $15,000 in cash to their grandson Ben. Hal also pays $12,000 of tuition directly to Ben's university. Assume the annual exclusion is $19,000 per donee and ignore the lifetime exemption. What total amount of taxable gifts do Hal and Eve report on their two gift tax returns for 2026?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$5,000",
+    "$10,000",
+    "$105,000"
+   ],
+   "answer": "C",
+   "rule_line": "Gift splitting treats each spouse as making half of every gift, and a 529 five-year election lets each donor apply five annual exclusions to a large contribution; direct tuition payments are excluded.",
+   "why": {
+    "A": "Assumes the five-year election covers the whole $200,000. Two spouses can apply five exclusions each, $190,000 in total, so $10,000 is taxable.",
+    "B": "Counts the taxable excess for only one spouse. Each spouse is treated as making half of the gift, so both returns show a taxable amount.",
+    "C": "With splitting, each spouse is treated as giving half: $100,000 to Ada and $7,500 to Ben. The five-year election lets each spouse use five annual exclusions ($95,000) on the 529 gift, leaving $5,000 taxable each, or $10,000. Ben's $7,500 share each is under the $19,000 exclusion, and the direct tuition payment is excluded.",
+    "D": "Ignores gift splitting and reports the whole $105,000 excess on Hal's return. With splitting, the $200,000 gift uses two donors' five-year exclusions."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "D": "calc"
+   },
+   "steps": [
+    "Splitting: each spouse gives half: Ada 100,000 each, Ben 7,500 each",
+    "Five-year election: each spouse excludes 5 x 19,000 = 95,000 for Ada; taxable = 100,000 - 95,000 = 5,000 each = 10,000",
+    "Ben: 7,500 < 19,000 exclusion each, taxable 0; tuition of 12,000 paid directly is excluded",
+    "Total taxable gifts = 10,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "max(0,100000-95000)",
+      "fmt": "$",
+      "value": 5000
+     },
+     {
+      "expr": "2*max(0,200000/2-5*19000)+2*max(0,15000/2-19000)",
+      "fmt": "$",
+      "value": 10000.0
+     },
+     {
+      "expr": "200000-5*19000",
+      "fmt": "$",
+      "value": 105000
+     },
+     {
+      "expr": "200000/2",
+      "fmt": "$",
+      "value": 100000.0
+     },
+     {
+      "expr": "5*19000",
+      "fmt": "$",
+      "value": 95000
+     },
+     {
+      "expr": "15000/2",
+      "fmt": "$",
+      "value": 7500.0
+     },
+     {
+      "expr": "2*5*19000",
+      "fmt": "$",
+      "value": 190000
+     }
+    ],
+    "expr": "2*max(0,200000/2-5*19000)+2*max(0,15000/2-19000)",
+    "fmt": "$",
+    "value": 10000.0,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "max(0,100000-95000)",
+      "value": 5000
+     },
+     "D": {
+      "expr": "200000-5*19000",
+      "value": 105000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§2513(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§529(c)(2)(B)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§2503(e)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§2503(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 529(c)(2)(B) five-year election.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group C / Taxable gifts / Analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-I-C-0013",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "C",
+   "group_name": "Gift taxation compliance and planning",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Gifting for planning",
+   "task": "Identify the potential tax savings from gifting ownership of noncash property to an individual given a specific planning scenario, including identification of the property to be gifted to minimize the donor's future estate.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Gwen Alvarez owns a rental building worth $400,000 with an adjusted basis of $100,000, subject to a $150,000 mortgage. Plan A: she gives the building to her son, who assumes the mortgage. Plan B: she uses $150,000 of her own cash to pay off the mortgage and then gives the building to her son free and clear. In either plan the son sells the building immediately for $400,000 (and repays any mortgage). Ignore gift tax rates, depreciation recapture, and the annual exclusion. Compare Plan A with Plan B. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "Plan A produces less combined gain, $250,000, and the gift is $250,000 instead of $400,000",
+    "Plan A produces more combined gain, $350,000, and the gift is $250,000 instead of $400,000",
+    "Plan A produces the same $300,000 of combined gain as Plan B, and the gift is $250,000 instead of $400,000",
+    "Plan A produces the same $300,000 of combined gain as Plan B, and the gift is $400,000 in both plans"
+   ],
+   "answer": "C",
+   "rule_line": "When property subject to debt is given and the donee assumes the debt, the transfer is part sale and part gift: the donor's gain is the debt relief less basis, the gift is the value less the debt, and the donee's basis is the greater of the amount paid or the donor's basis.",
+   "why": {
+    "A": "This counts only the son's gain in Plan A. Gwen also recognizes $50,000 of gain on the part of the transfer that is a sale.",
+    "B": "Adds Gwen's $50,000 gain to the son's gain measured from her $100,000 basis ($300,000). The son's basis is raised to $150,000, the amount paid, which removes the overlap.",
+    "C": "In Plan A the transfer is part gift, part sale. Gwen's gain is $150,000 debt relief less her $100,000 basis, or $50,000. The son's basis is the greater of the debt assumed or her basis, $150,000, so his gain is $250,000. Combined gain is $300,000, the same as Plan B (son's gain of $400,000 - $100,000). The gift is $400,000 - $150,000 = $250,000 in Plan A, against $400,000 in Plan B.",
+    "D": "The debt the son assumes is consideration for the transfer, so the gift is only the value above that. In Plan B, Gwen pays off her own mortgage and the whole $400,000 is a gift."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "B": "calc",
+    "D": "concept"
+   },
+   "steps": [
+    "Plan A: donor gain = 150,000 - 100,000 = 50,000; son's basis = max(150,000, 100,000) = 150,000; son's gain = 400,000 - 150,000 = 250,000; combined gain = 300,000",
+    "Plan A gift = 400,000 - 150,000 = 250,000",
+    "Plan B: no gain to Gwen; son's basis = 100,000; son's gain = 300,000; gift = 400,000",
+    "Combined gain is 300,000 in both plans; the gift differs"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "150000-100000",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "400000-150000",
+      "fmt": "$",
+      "value": 250000
+     },
+     {
+      "expr": "(150000-100000)+(400000-150000)",
+      "fmt": "$",
+      "value": 300000
+     },
+     {
+      "expr": "400000-100000",
+      "fmt": "$",
+      "value": 300000
+     },
+     {
+      "expr": "(150000-100000)+(400000-100000)",
+      "fmt": "$",
+      "value": 350000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "Reg.",
+     "ref": "§1.1001-1(e)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1015-4"
+    },
+    {
+     "src": "IRC",
+     "ref": "§2512(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed Reg. 1.1015-4 (greater of amount paid or donor's basis) and Reg. 1.1001-1(e)(1) (gain = amount realized less adjusted basis, no loss).",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group C / Gifting for planning / Analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-I-D-0014",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "D",
+   "group_name": "Personal financial planning for individuals",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Retirement plans",
+   "task": "Demonstrate an understanding of the advantages and disadvantages of different qualified retirement plans, including traditional IRAs, Roth IRAs, 401(k)s, annuities, and employer-sponsored plans.",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Cal and Dee Ito, who file jointly, expect 2026 modified AGI of $215,000, which includes $70,000 of net investment income. They are considering converting $80,000 from a traditional IRA to a Roth IRA and paying the tax from other funds. Assume the conversion income is taxed at a flat 24% and the net investment income tax rate is 3.8% with a $250,000 threshold for joint filers. How much additional federal tax, including any net investment income tax, does the conversion cause for 2026?",
+   "exhibit": "",
+   "options": [
+    "$1,710",
+    "$3,040",
+    "$19,200",
+    "$20,910"
+   ],
+   "answer": "D",
+   "rule_line": "The net investment income tax applies to the lesser of net investment income or modified AGI above the threshold, and a Roth conversion increases modified AGI even though it is not investment income.",
+   "why": {
+    "A": "This is only the net investment income tax the conversion triggers ($1,710). The conversion income is also taxed at 24%.",
+    "B": "Applies the 3.8% tax to the conversion itself and leaves out the income tax. A Roth conversion is ordinary income, and it is not net investment income; it only raises modified AGI.",
+    "C": "Counts only the income tax on the conversion and misses the net investment income tax it triggers by raising modified AGI over the threshold.",
+    "D": "The conversion is ordinary income of $80,000 taxed at 24% ($19,200). It is not investment income, but it raises modified AGI to $295,000, which is $45,000 over the threshold. The 3.8% tax applies to the lesser of net investment income ($70,000) or the excess ($45,000), or $1,710. Total $20,910."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "C": "trap"
+   },
+   "steps": [
+    "Conversion income tax = 80,000 x 24% = 19,200",
+    "Modified AGI after conversion = 215,000 + 80,000 = 295,000; excess over 250,000 = 45,000",
+    "Net investment income tax = 3.8% x min(70,000, 45,000) = 1,710 (before conversion the excess was 0)",
+    "Additional tax = 19,200 + 1,710 = 20,910"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0.038*min(70000,215000+80000-250000)",
+      "fmt": "$",
+      "value": 1710.0
+     },
+     {
+      "expr": "0.038*80000",
+      "fmt": "$",
+      "value": 3040.0
+     },
+     {
+      "expr": "80000*0.24",
+      "fmt": "$",
+      "value": 19200.0
+     },
+     {
+      "expr": "80000*0.24+0.038*min(70000,215000+80000-250000)",
+      "fmt": "$",
+      "value": 20910.0
+     },
+     {
+      "expr": "215000+80000-250000",
+      "fmt": "$",
+      "value": 45000
+     },
+     {
+      "expr": "215000+80000",
+      "fmt": "$",
+      "value": 295000
+     }
+    ],
+    "expr": "80000*0.24+0.038*min(70000,215000+80000-250000)",
+    "fmt": "$",
+    "value": 20910.0,
+    "distractors": {
+     "A": {
+      "expr": "0.038*min(70000,215000+80000-250000)",
+      "value": 1710.0
+     },
+     "B": {
+      "expr": "0.038*80000",
+      "value": 3040.0
+     },
+     "C": {
+      "expr": "80000*0.24",
+      "value": 19200.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§408A(d)(3)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1411(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1411(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-I-D-0015",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "D",
+   "group_name": "Personal financial planning for individuals",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Retirement plans",
+   "task": "Demonstrate an understanding of the advantages and disadvantages of different qualified retirement plans, including traditional IRAs, Roth IRAs, 401(k)s, annuities, and employer-sponsored plans.",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Pete Novak, age 60, separated from service in 2026. His 401(k) account holds only employer stock with a cost basis of $100,000 and a value of $400,000, and he takes a lump-sum distribution of the entire account in 2026. Option A: take the stock in kind, pay tax on the $100,000 basis now, and sell the stock 18 months later for $450,000. Option B: roll the account to a traditional IRA and later withdraw $450,000 in one year, after the stock has grown to that value. Assume his ordinary rate is 24% and his long-term capital gain rate is 15% in all years, the 10% early distribution tax does not apply, and ignore the time value of money. How much less total federal income tax does Option A produce than Option B?",
+   "exhibit": "",
+   "options": [
+    "$4,500",
+    "$31,500",
+    "$40,500",
+    "$76,500"
+   ],
+   "answer": "B",
+   "rule_line": "On a lump-sum distribution of employer stock, tax on the net unrealized appreciation is deferred to the sale and taxed as long-term gain, while the cost basis is ordinary income at distribution; a rollover to an IRA taxes everything as ordinary income.",
+   "why": {
+    "A": "Gives Option A the favorable rate only on the $50,000 of appreciation after distribution ($50,000 x 9%). The $300,000 of net unrealized appreciation gets long-term capital gain treatment.",
+    "B": "Option A: $100,000 basis is ordinary income now ($24,000). The $300,000 of net unrealized appreciation is long-term gain when sold, and so is the $50,000 of later growth because he held the shares more than a year after distribution ($350,000 x 15% = $52,500). Total $76,500. Option B taxes $450,000 as ordinary income at 24% ($108,000). Difference $31,500.",
+    "C": "Applies the capital gain rate to the whole $450,000. The $100,000 basis is taxed as ordinary income when distributed.",
+    "D": "This is the total tax under Option A ($76,500), not the savings compared with Option B."
+   },
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "trap"
+   },
+   "steps": [
+    "Net unrealized appreciation = 400,000 - 100,000 = 300,000; growth after distribution = 450,000 - 400,000 = 50,000",
+    "Option A tax = 100,000 x 24% + 300,000 x 15% + 50,000 x 15% = 24,000 + 45,000 + 7,500 = 76,500",
+    "Option B tax = 450,000 x 24% = 108,000",
+    "Difference = 108,000 - 76,500 = 31,500"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "4500",
+      "fmt": "$",
+      "value": 4500
+     },
+     {
+      "expr": "450000*0.24-(100000*0.24+300000*0.15+50000*0.15)",
+      "fmt": "$",
+      "value": 31500.0
+     },
+     {
+      "expr": "450000*(0.24-0.15)",
+      "fmt": "$",
+      "value": 40500.0
+     },
+     {
+      "expr": "100000*0.24+300000*0.15+50000*0.15",
+      "fmt": "$",
+      "value": 76500.0
+     },
+     {
+      "expr": "450000*0.24",
+      "fmt": "$",
+      "value": 108000.0
+     },
+     {
+      "expr": "100000*0.24",
+      "fmt": "$",
+      "value": 24000.0
+     },
+     {
+      "expr": "300000*0.15",
+      "fmt": "$",
+      "value": 45000.0
+     },
+     {
+      "expr": "50000*0.15",
+      "fmt": "$",
+      "value": 7500.0
+     },
+     {
+      "expr": "50000*(0.24-0.15)",
+      "fmt": "$",
+      "value": 4500.0
+     },
+     {
+      "expr": "400000-100000",
+      "fmt": "$",
+      "value": 300000
+     },
+     {
+      "expr": "450000-400000",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "350000*0.15",
+      "fmt": "$",
+      "value": 52500.0
+     },
+     {
+      "expr": "300000+50000",
+      "fmt": "$",
+      "value": 350000
+     }
+    ],
+    "expr": "450000*0.24-(100000*0.24+300000*0.15+50000*0.15)",
+    "fmt": "$",
+    "value": 31500.0,
+    "distractors": {
+     "A": {
+      "expr": "4500",
+      "value": 4500
+     },
+     "C": {
+      "expr": "450000*(0.24-0.15)",
+      "value": 40500.0
+     },
+     "D": {
+      "expr": "100000*0.24+300000*0.15+50000*0.15",
+      "value": 76500.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§402(e)(4)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.402(a)-1(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§72(t)(2)(A)(v)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 402(e)(4)(B), (D): lump sum within one taxable year after a triggering event (age 59 1/2 or separation).",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-I-D-0016",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "I",
+   "area_name": "Tax Compliance and Planning for Individuals and Personal Financial Planning",
+   "group": "D",
+   "group_name": "Personal financial planning for individuals",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Retirement plans",
+   "task": "Demonstrate an understanding of the advantages and disadvantages of different qualified retirement plans, including traditional IRAs, Roth IRAs, 401(k)s, annuities, and employer-sponsored plans.",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Sylvia Tran, single, age 62, needs $100,000 of cash in 2026 and has no other income. She can raise it from her traditional IRA, from a taxable brokerage account of long-term holdings whose basis is 10% of their value, or from both. Plan 1: withdraw $100,000 from the IRA. Plan 2: sell $100,000 of brokerage holdings. Plan 3: withdraw $50,000 from the IRA and sell $50,000 of brokerage holdings. Assume a $16,100 standard deduction, ordinary rates of 10% on taxable income up to $12,400, 12% up to $50,400 and 22% up to $105,700, and long-term capital gain rates of 0% on taxable income up to $49,450 and 15% above that, with capital gain stacked on top of ordinary taxable income. Ignore the net investment income tax and state taxes. Which plan has the lowest 2026 federal income tax?",
+   "exhibit": "",
+   "options": [
+    "Plan 1, with tax of about $13,170",
+    "Plan 3, with tax of about $8,238",
+    "Plans 2 and 3 equally, because both use the 0% capital gain rate on part of the gain",
+    "Plan 2, with tax of about $3,668"
+   ],
+   "answer": "D",
+   "rule_line": "Long-term capital gain is taxed at 0% only to the extent it fits in the low bracket after ordinary income, and the standard deduction can offset gain, so a withdrawal order that adds ordinary income can cost more than selling appreciated assets.",
+   "why": {
+    "A": "Withdrawing all $100,000 from the IRA makes it all ordinary income taxed up to the 22% bracket, the highest tax of the three plans.",
+    "B": "The $50,000 IRA withdrawal uses up the standard deduction against ordinary income and pushes the gain into the 15% range, so the tax is higher than selling the brokerage holdings alone.",
+    "C": "Both plans use some 0% bracket, but Plan 3 has ordinary income that occupies part of it and more gain above it, so the two taxes differ.",
+    "D": "The sale produces $90,000 of long-term gain and no ordinary income. The standard deduction reduces the gain to $73,900 of taxable income, of which $49,450 is at 0% and $24,450 at 15%: about $3,668."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "C": "concept"
+   },
+   "steps": [
+    "Plan 1: taxable income = 100,000 - 16,100 = 83,900; tax = 1,240 + 4,560 + 22% x 33,500 = 13,170",
+    "Plan 2: gain = 100,000 - 10,000 = 90,000; taxable income = 90,000 - 16,100 = 73,900; tax = 15% x (73,900 - 49,450) = 3,668",
+    "Plan 3: ordinary taxable income = 50,000 - 16,100 = 33,900, tax 3,820; gain 45,000 stacked above it, 15,550 at 0% and 29,450 at 15% = 4,418; total 8,238",
+    "Plan 2 has the lowest tax"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(min((100000-16100),12400)*0.10+max(0,min((100000-16100),50400)-12400)*0.12+max(0,min((100000-16100),105700)-50400)*0.22)",
+      "fmt": "$",
+      "value": 13170.0
+     },
+     {
+      "expr": "(max(0,(90000-16100)-max(0,49450-0))*0.15)",
+      "fmt": "$",
+      "value": 3667.5
+     },
+     {
+      "expr": "((min((50000-16100),12400)*0.10+max(0,min((50000-16100),50400)-12400)*0.12+max(0,min((50000-16100),105700)-50400)*0.22)+(max(0,45000-max(0,49450-(50000-16100)))*0.15))",
+      "fmt": "$",
+      "value": 8237.5
+     },
+     {
+      "expr": "(min((50000-16100),12400)*0.10+max(0,min((50000-16100),50400)-12400)*0.12+max(0,min((50000-16100),105700)-50400)*0.22)",
+      "fmt": "$",
+      "value": 3820.0
+     },
+     {
+      "expr": "(max(0,45000-max(0,49450-(50000-16100)))*0.15)",
+      "fmt": "$",
+      "value": 4417.5
+     },
+     {
+      "expr": "100000-10000",
+      "fmt": "$",
+      "value": 90000
+     },
+     {
+      "expr": "90000-16100",
+      "fmt": "$",
+      "value": 73900
+     },
+     {
+      "expr": "90000-16100-49450",
+      "fmt": "$",
+      "value": 24450
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1(h)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§408(d)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§63(c)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-A-0028",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "A",
+   "group_name": "C corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Nonliquidating distribution",
+   "task": "Calculate the tax realized and recognized gain (loss) for both a C corporation and shareholders on a nonliquidating distribution of noncash property, and the shareholders' basis in the property received.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Harbor Tool Corp., a C corporation with ample earnings and profits taxed at a flat 21%, will transfer $250,000 of value to its sole shareholder. It owns Asset X, worth $150,000 with an adjusted basis of $50,000, and Asset Y, worth $100,000 with an adjusted basis of $160,000. Both are business assets held more than a year, and any net gain or loss is taxed or deducted at 21%. Plan 1: distribute both assets in kind. Plan 2: sell Asset Y to an unrelated buyer for $100,000 in cash, then distribute Asset X and the $100,000 of cash. The shareholder receives a $250,000 dividend either way. How much less total corporate income tax does Plan 2 produce than Plan 1?",
+   "exhibit": "",
+   "options": [
+    "$8,400",
+    "$12,600",
+    "$21,000",
+    "$33,600"
+   ],
+   "answer": "B",
+   "rule_line": "A corporation recognizes gain, but not loss, when it distributes property to shareholders, so loss property should be sold before the distribution and the cash distributed.",
+   "why": {
+    "A": "This is the corporate tax under Plan 2, not the difference between the plans.",
+    "B": "Plan 1: the corporation recognizes the $100,000 gain on Asset X and cannot deduct the $60,000 loss on Asset Y, so tax is $21,000. Plan 2: the loss on the sale of Y is recognized and offsets the gain on X, so tax is 21% x $40,000 = $8,400. The difference is $12,600.",
+    "C": "This is the corporate tax under Plan 1, not the savings from Plan 2.",
+    "D": "Multiplies the basis of Asset Y by 21%. The loss that is recovered in Plan 2 is the $60,000 of built-in loss, not the whole basis."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "C": "trap",
+    "D": "calc"
+   },
+   "steps": [
+    "Plan 1: gain on X = 150,000 - 50,000 = 100,000 recognized; loss on Y = 100,000 - 160,000 = -60,000 not recognized; tax = 21% x 100,000 = 21,000",
+    "Plan 2: net gain = 100,000 - 60,000 = 40,000; tax = 21% x 40,000 = 8,400",
+    "Difference = 21,000 - 8,400 = 12,600"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0.21*(100000-60000)",
+      "fmt": "$",
+      "value": 8400.0
+     },
+     {
+      "expr": "0.21*100000-0.21*(100000-60000)",
+      "fmt": "$",
+      "value": 12600.0
+     },
+     {
+      "expr": "0.21*100000",
+      "fmt": "$",
+      "value": 21000.0
+     },
+     {
+      "expr": "0.21*160000",
+      "fmt": "$",
+      "value": 33600.0
+     },
+     {
+      "expr": "0.21*60000",
+      "fmt": "$",
+      "value": 12600.0
+     },
+     {
+      "expr": "150000-50000",
+      "fmt": "$",
+      "value": 100000
+     },
+     {
+      "expr": "100000-160000",
+      "fmt": "$",
+      "value": -60000
+     },
+     {
+      "expr": "100000-60000",
+      "fmt": "$",
+      "value": 40000
+     }
+    ],
+    "expr": "0.21*100000-0.21*(100000-60000)",
+    "fmt": "$",
+    "value": 12600.0,
+    "distractors": {
+     "A": {
+      "expr": "0.21*(100000-60000)",
+      "value": 8400.0
+     },
+     "C": {
+      "expr": "0.21*100000",
+      "value": 21000.0
+     },
+     "D": {
+      "expr": "0.21*160000",
+      "value": 33600.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§311(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§311(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1231(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group A / Nonliquidating distribution / Analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-A-0029",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "A",
+   "group_name": "C corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "NOL ownership change limitation",
+   "task": "Recall the limitations on the use of net operating losses when there is an ownership change.",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Cobalt Ridge Corp. has an $800,000 net operating loss carryforward arising after 2017 and expects $600,000 of taxable income before any net operating loss deduction in 2027. Its stock is worth $2,000,000, and assume the long-term tax-exempt rate is 3.5%. An investor may buy stock in one of two ways. Plan A: buy 55% of the stock from existing shareholders in 2026. Plan B: buy 45% of the stock in 2026. Assume no other ownership shifts in the testing period, a 21% corporate rate, and that the net operating loss deduction is limited to 80% of taxable income before the deduction. How much more tax does Cobalt Ridge save in 2027 under Plan B than under Plan A?",
+   "exhibit": "",
+   "options": [
+    "$14,700",
+    "$30,800",
+    "$70,000",
+    "$86,100"
+   ],
+   "answer": "D",
+   "rule_line": "An ownership change of more than 50 percentage points limits the annual net operating loss use to the value of the loss corporation times the long-term tax-exempt rate; without a change, only the 80% of taxable income limit applies.",
+   "why": {
+    "A": "This is the saving under Plan A alone ($14,700), not the difference between the plans.",
+    "B": "Subtracts the $70,000 limit itself instead of the tax it saves ($14,700). The comparison should be of tax savings under the two plans.",
+    "C": "This is the annual limit under Plan A, $70,000, which is a deduction amount and not a tax saving.",
+    "D": "Plan A: a 55-point shift is an ownership change, so the annual limit is $2,000,000 x 3.5% = $70,000 and the deduction is $70,000 (saving $14,700). Plan B: 45 points is not more than 50, so there is no ownership change and the 80% limit allows $480,000 (saving $100,800). Difference $86,100."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "B": "calc",
+    "C": "trap"
+   },
+   "steps": [
+    "Plan A limit = 2,000,000 x 3.5% = 70,000; deduction = min(800,000, 70,000, 480,000) = 70,000; saving = 70,000 x 21% = 14,700",
+    "Plan B: no ownership change (45 points); deduction = min(800,000, 80% x 600,000 = 480,000) = 480,000; saving = 480,000 x 21% = 100,800",
+    "Difference = 100,800 - 14,700 = 86,100"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "2000000*0.035*0.21",
+      "fmt": "$",
+      "value": 14700.0
+     },
+     {
+      "expr": "min(800000,0.8*600000)*0.21-2000000*0.035",
+      "fmt": "$",
+      "value": 30800.0
+     },
+     {
+      "expr": "2000000*0.035",
+      "fmt": "$",
+      "value": 70000.0
+     },
+     {
+      "expr": "(min(800000,0.8*600000)-min(800000,2000000*0.035,0.8*600000))*0.21",
+      "fmt": "$",
+      "value": 86100.0
+     },
+     {
+      "expr": "0.8*600000",
+      "fmt": "$",
+      "value": 480000.0
+     },
+     {
+      "expr": "0.21*70000",
+      "fmt": "$",
+      "value": 14700.0
+     },
+     {
+      "expr": "0.21*480000",
+      "fmt": "$",
+      "value": 100800.0
+     }
+    ],
+    "expr": "(min(800000,0.8*600000)-min(800000,2000000*0.035,0.8*600000))*0.21",
+    "fmt": "$",
+    "value": 86100.0,
+    "distractors": {
+     "A": {
+      "expr": "2000000*0.035*0.21",
+      "value": 14700.0
+     },
+     "B": {
+      "expr": "min(800000,0.8*600000)*0.21-2000000*0.035",
+      "value": 30800.0
+     },
+     "C": {
+      "expr": "2000000*0.035",
+      "value": 70000.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§382(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§382(b)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§382(g)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§172(a)(2)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 382(b)(1) (value x long-term tax-exempt rate) and 382(g)(1) (more than 50 percentage points).",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group A / NOL ownership change limitation / Analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-A-0030",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "A",
+   "group_name": "C corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Nonliquidating distribution",
+   "task": "Calculate the tax realized and recognized gain (loss) for both a C corporation and shareholders on a nonliquidating distribution of noncash property, and the shareholders' basis in the property received.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Basil Corp., a C corporation with ample earnings and profits taxed at 21%, owns an investment asset held for two years. The asset has an adjusted basis of $200,000 and is worth $120,000. Basil Corp. has enough capital gains this year to absorb any capital loss on the asset. Its sole shareholder wants $120,000 of value out of the corporation. Plan 1: the corporation sells the asset to the shareholder for $120,000. Plan 2: the corporation distributes the asset to the shareholder. Plan 3: the corporation sells the asset to an unrelated buyer for $120,000 and distributes the cash. In which plan or plans does the corporation deduct the $80,000 loss, and what is the corporate tax saving?",
+   "exhibit": "",
+   "options": [
+    "Plan 3 only, because the other plans are a related party sale and a distribution, so it saves $16,800",
+    "Plan 1 only, because a sale to the sole shareholder at value is a completed exchange, saving $16,800",
+    "Plans 1 and 2, because the asset leaves the corporation at a value below its basis, saving $16,800",
+    "Plans 2 and 3, because a distribution is treated as a sale at value, and each saves $16,800"
+   ],
+   "answer": "A",
+   "rule_line": "A corporation cannot deduct a loss on a distribution of property or on a sale to a more-than-50% shareholder; a sale to an unrelated buyer produces a deductible loss.",
+   "why": {
+    "A": "Plan 1 is a sale to a more-than-50% shareholder, so the loss is disallowed. Plan 2 is a distribution, so no loss is recognized. Only the sale to an unrelated buyer gives a deductible $80,000 loss, saving $80,000 x 21% = $16,800.",
+    "B": "A loss on a sale between a corporation and a shareholder who owns more than 50% of its stock is disallowed, even if the sale is at value.",
+    "C": "Neither plan allows the loss. The sale to the controlling shareholder is disallowed as a related party sale, and a loss on a distribution is never recognized.",
+    "D": "A distribution is treated as a sale at value only for gain, not for loss, so Plan 2 gives no deduction."
+   },
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "trap"
+   },
+   "steps": [
+    "Plan 1: related party sale (sole shareholder owns 100%), loss of 80,000 disallowed",
+    "Plan 2: distribution of loss property, loss not recognized",
+    "Plan 3: sale to an unrelated buyer, loss = 200,000 - 120,000 = 80,000, tax saving = 80,000 x 21% = 16,800",
+    "Only Plan 3 gives a deductible loss"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "200000-120000",
+      "fmt": "$",
+      "value": 80000
+     },
+     {
+      "expr": "(200000-120000)*0.21",
+      "fmt": "$",
+      "value": 16800.0
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§267(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§267(b)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§311(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 267(a)(1), (b)(2) (more than 50% in value).",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group A / Nonliquidating distribution / Analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-A-0031",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "A",
+   "group_name": "C corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Distributions in excess of E&P",
+   "task": "Calculate the amount and treatment of the cash distributions to shareholders in excess of a C corporation's current and accumulated earnings and profits (E&P).",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Ray Ostrom owns 60% of the stock of Ostrom Co., a C corporation with ample earnings and profits. His son Sam owns the other 40%. Ray's basis in his shares is $100,000 and he can get $500,000 for them. Plan 1: the corporation redeems all of Ray's shares and no agreement is filed. Plan 2: the corporation redeems all of Ray's shares, and Ray files the required agreement, will hold no interest in the corporation other than as a creditor (not as an officer, director, or employee) for 10 years, and has not transferred stock to Sam or received stock from Sam in the previous 10 years. Plan 3: Ray sells all of his shares to Sam for $500,000. Assume qualified dividends and long-term capital gain are both taxed at 20%. What is Ray's federal income tax on each plan?",
+   "exhibit": "",
+   "options": [
+    "Plan 1: $100,000; Plan 2: $80,000; Plan 3: $80,000",
+    "Plan 1: $80,000; Plan 2: $80,000; Plan 3: $80,000",
+    "Plan 1: $100,000; Plan 2: $100,000; Plan 3: $80,000",
+    "Plan 1: $100,000; Plan 2: $80,000; Plan 3: $100,000"
+   ],
+   "answer": "A",
+   "rule_line": "A redemption of all of a shareholder's stock is a sale or exchange only if family attribution does not leave the shareholder with a constructive interest, which requires a waiver; otherwise the redemption is a dividend to the extent of earnings and profits.",
+   "why": {
+    "A": "In Plan 1 Ray is treated as owning Sam's shares, so after the redemption he still owns 100% and the payment is a $500,000 dividend ($100,000). In Plan 2 the waiver of attribution lets the redemption count as a complete termination and gives a $400,000 gain ($80,000). In Plan 3 the sale to Sam is a sale, with a $400,000 gain.",
+    "B": "Ignores family attribution. Without the waiver, Ray is treated as owning his son's shares, so the redemption is not a complete termination and is a dividend.",
+    "C": "The waiver in Plan 2 is what allows attribution from Sam to be ignored, so a complete termination redemption gives capital gain treatment.",
+    "D": "A sale of stock to a related person is a sale, and gain is reported at capital gain rates. The dividend rule applies only to distributions by the corporation."
+   },
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "trap"
+   },
+   "steps": [
+    "Plan 1: constructive ownership of Sam's 40% means Ray still owns 100% after the redemption, so the $500,000 is a dividend: 500,000 x 20% = 100,000",
+    "Plan 2: with the waiver, complete termination gives exchange treatment: gain = 500,000 - 100,000 = 400,000; tax = 400,000 x 20% = 80,000",
+    "Plan 3: sale to Sam: gain 400,000, tax 80,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "500000*0.20",
+      "fmt": "$",
+      "value": 100000.0
+     },
+     {
+      "expr": "(500000-100000)*0.20",
+      "fmt": "$",
+      "value": 80000.0
+     },
+     {
+      "expr": "500000-100000",
+      "fmt": "$",
+      "value": 400000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§302(b)(3)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§302(c)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§318(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§301(c)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 302(c)(2) waiver conditions (no interest other than creditor, 10-year rule, agreement).",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group A / Distributions in excess of E&P / Analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-B-0014",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "B",
+   "group_name": "S corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Income allocation after sale",
+   "task": "Calculate the allocation of S corporation income (loss) after the sale of a shareholder's ownership interest in the S corporation for tax purposes.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Ava Lund owns 50% of Kestrel, Inc., a calendar-year S corporation, with a stock basis of $100,000. On June 30, 2026 she sells all of her shares to an unrelated buyer for $500,000. Kestrel earned $400,000 of ordinary income in 2026, all of it in January through June. Ava's share of income can be figured on a per-day basis (181 of 365 days) or under the closing-of-the-books election at the sale date. Ava's rate is 37% on ordinary income and 20% on long-term capital gain. Ignore the net investment income tax. How much more total federal tax does Ava pay if the closing-of-the-books election is used rather than the per-day allocation, considering both her share of income and her gain on the sale?",
+   "exhibit": "",
+   "options": [
+    "$17,140",
+    "$20,164",
+    "$37,304",
+    "$100,822"
+   ],
+   "answer": "A",
+   "rule_line": "Income allocated to a selling S corporation shareholder increases stock basis and lowers the gain on the sale, so shifting income to the seller trades ordinary income for less capital gain.",
+   "why": {
+    "A": "Per-day: Ava reports $99,178 of income, raising her basis to $199,178 and leaving a $300,822 gain. Closing of the books: she reports all $200,000, basis $300,000, gain $200,000. The extra income of $100,822 is taxed at 37%, but it lowers the gain by the same amount, taxed at 20%. Net cost = $100,822 x 17% = $17,140.",
+    "B": "Counts only the tax on the extra gain. The extra income is taxed at 37% and the gain falls by the same amount, so the net cost uses the difference between the two rates.",
+    "C": "Counts only the tax on the extra ordinary income and ignores that it increases basis and lowers the gain on the sale.",
+    "D": "This is the extra income allocated to Ava under the election, not a tax amount."
+   },
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "calc"
+   },
+   "steps": [
+    "Per-day income = 400,000 x 50% x 181/365 = 99,178; closing-of-the-books income = 200,000; extra = 100,822",
+    "Extra ordinary tax = 100,822 x 37% = 37,304; basis higher by 100,822, so gain lower by 100,822: 100,822 x 20% = 20,164 saved",
+    "Net increase = 37,304 - 20,164 = 17,140"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(400000*0.5-400000*0.5*181/365)*(0.37-0.20)",
+      "fmt": "$",
+      "value": 17139.72602739726
+     },
+     {
+      "expr": "(400000*0.5-400000*0.5*181/365)*0.20",
+      "fmt": "$",
+      "value": 20164.383561643837
+     },
+     {
+      "expr": "(400000*0.5-400000*0.5*181/365)*0.37",
+      "fmt": "$",
+      "value": 37304.109589041094
+     },
+     {
+      "expr": "400000*0.5-400000*0.5*181/365",
+      "fmt": "$",
+      "value": 100821.91780821918
+     },
+     {
+      "expr": "400000*0.5*181/365",
+      "fmt": "$",
+      "value": 99178.08219178082
+     },
+     {
+      "expr": "(0.37*200000+0.20*(500000-(100000+200000)))-(0.37*(400000*0.5*181/365)+0.20*(500000-(100000+400000*0.5*181/365)))",
+      "fmt": "$",
+      "value": 17139.72602739725
+     },
+     {
+      "expr": "100000+400000*0.5*181/365",
+      "fmt": "$",
+      "value": 199178.08219178082
+     },
+     {
+      "expr": "500000-(100000+400000*0.5*181/365)",
+      "fmt": "$",
+      "value": 300821.9178082192
+     },
+     {
+      "expr": "400000*0.5",
+      "fmt": "$",
+      "value": 200000.0
+     },
+     {
+      "expr": "100000+400000*0.5",
+      "fmt": "$",
+      "value": 300000.0
+     }
+    ],
+    "expr": "(400000*0.5-400000*0.5*181/365)*(0.37-0.20)",
+    "fmt": "$",
+    "value": 17139.72602739726,
+    "distractors": {
+     "B": {
+      "expr": "(400000*0.5-400000*0.5*181/365)*0.20",
+      "value": 20164.383561643837
+     },
+     "C": {
+      "expr": "(400000*0.5-400000*0.5*181/365)*0.37",
+      "value": 37304.109589041094
+     },
+     "D": {
+      "expr": "400000*0.5-400000*0.5*181/365",
+      "value": 100821.91780821918
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1377(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1377(a)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1367(a)(1)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1377-1(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed Reg. 1.1377-1(a)(2): the seller is treated as a shareholder for the day of the disposition, so a June 30 sale gives 181 days; (b)(5) requires consent of the corporation and each affected shareholder.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group B / Income allocation after sale / Analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-B-0015",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "B",
+   "group_name": "S corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Stock basis — distribution",
+   "task": "Calculate the impact on a shareholder's stock basis in an S corporation for tax purposes resulting from nonliquidating distributions of noncash property.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Lior Mizrahi owns all of Fable Co., a calendar-year S corporation. His stock basis on January 1, 2026 is $70,000, and he has no debt basis. Fable expects a $60,000 ordinary loss for 2026 and no other items. Lior plans to take a $50,000 cash distribution. Plan 1: take it in November 2026. Plan 2: take it in January 2027. Ignore any effect on 2027. How much more of the 2026 loss can Lior deduct under Plan 2 than under Plan 1?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$10,000",
+    "$20,000",
+    "$40,000"
+   ],
+   "answer": "D",
+   "rule_line": "An S corporation shareholder's stock basis is increased by income and contributions, decreased by distributions, and only then decreased by losses, so a distribution taken before year-end can cut off the deduction of a loss.",
+   "why": {
+    "A": "Assumes losses reduce basis before distributions, so timing would not matter. The ordering rule reduces basis by distributions first.",
+    "B": "This is the basis left at the end of 2026 if the whole loss is deducted (Plan 2), not the additional loss that Plan 2 allows.",
+    "C": "This is the loss Lior can deduct under Plan 1, not the difference between the plans.",
+    "D": "Basis is reduced by distributions before it is reduced by losses. In Plan 1 the November distribution takes basis to $20,000, so only $20,000 of the loss is deductible and $40,000 is suspended. In Plan 2 basis is still $70,000 at year-end, so the full $60,000 is deductible. Difference $40,000."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "C": "trap"
+   },
+   "steps": [
+    "Plan 1: basis = 70,000 - 50,000 = 20,000 before losses; deductible loss = 20,000; suspended = 40,000",
+    "Plan 2: basis = 70,000 at year-end; deductible loss = 60,000",
+    "Difference = 60,000 - 20,000 = 40,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "70000-60000",
+      "fmt": "$",
+      "value": 10000
+     },
+     {
+      "expr": "70000-50000",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "60000-(70000-50000)",
+      "fmt": "$",
+      "value": 40000
+     }
+    ],
+    "expr": "60000-(70000-50000)",
+    "fmt": "$",
+    "value": 40000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "70000-60000",
+      "value": 10000
+     },
+     "C": {
+      "expr": "70000-50000",
+      "value": 20000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1367(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1366(d)(1)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1367-1(f)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 1367(a)(2): distributions reduce basis before losses.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group B / Stock basis — distribution / Analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-B-0016",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "B",
+   "group_name": "S corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Contribution to S corp",
+   "task": "Calculate the impact on a shareholder's stock basis in an S corporation for tax purposes resulting from contributions of noncash property, including an S corporation's assumption of debt on the contributed property.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Mona Lisle owns all of Zenith Corp., an S corporation that expects a $90,000 ordinary loss for 2026. Her stock basis at the start of the year is $10,000 and she has no debt basis. She wants to put $80,000 of value into Zenith before December 31. Plan 1: contribute long-term stock she owns, worth $80,000 with a basis of $30,000. Plan 2: sell the stock, pay 20% tax on the long-term capital gain, and contribute $80,000 of cash. She is in the 37% bracket and the loss is otherwise fully deductible. How much greater is her net 2026 tax benefit (tax saved on the deducted loss minus the capital gain tax) under Plan 2 than under Plan 1?",
+   "exhibit": "",
+   "options": [
+    "$8,500",
+    "$10,000",
+    "$18,500",
+    "$23,300"
+   ],
+   "answer": "A",
+   "rule_line": "Contributed property increases an S corporation shareholder's stock basis only by the property's adjusted basis, so selling appreciated property and contributing the cash can raise the basis at the price of a capital gain tax.",
+   "why": {
+    "A": "Plan 1: basis is $10,000 + $30,000 (basis of the contributed stock) = $40,000, so $40,000 of the loss is deducted (saving $14,800) and the gain is never taxed. Plan 2: basis is $90,000, so the full $90,000 is deducted (saving $33,300), less tax of $10,000 on the $50,000 gain, for $23,300. The difference is $8,500.",
+    "B": "This is only the capital gain tax under Plan 2. The extra loss deduction it buys is worth more.",
+    "C": "Counts the extra deduction of $50,000 at 37% but forgets the $10,000 of capital gain tax that Plan 2 costs.",
+    "D": "This is the net benefit under Plan 2 alone ($23,300), not the excess over Plan 1."
+   },
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "calc"
+   },
+   "steps": [
+    "Plan 1: basis = 10,000 + 30,000 = 40,000; deductible loss 40,000; saving = 40,000 x 37% = 14,800",
+    "Plan 2: gain = 80,000 - 30,000 = 50,000, tax = 50,000 x 20% = 10,000; basis = 10,000 + 80,000 = 90,000; loss saving = 90,000 x 37% = 33,300; net = 23,300",
+    "Difference = 23,300 - 14,800 = 8,500"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(90000*0.37-(80000-30000)*0.20)-(40000*0.37)",
+      "fmt": "$",
+      "value": 8500.0
+     },
+     {
+      "expr": "(80000-30000)*0.20",
+      "fmt": "$",
+      "value": 10000.0
+     },
+     {
+      "expr": "(90000-40000)*0.37",
+      "fmt": "$",
+      "value": 18500.0
+     },
+     {
+      "expr": "90000*0.37-(80000-30000)*0.20",
+      "fmt": "$",
+      "value": 23300.0
+     },
+     {
+      "expr": "90000*0.37",
+      "fmt": "$",
+      "value": 33300.0
+     },
+     {
+      "expr": "40000*0.37",
+      "fmt": "$",
+      "value": 14800.0
+     },
+     {
+      "expr": "10000+30000",
+      "fmt": "$",
+      "value": 40000
+     },
+     {
+      "expr": "80000-30000",
+      "fmt": "$",
+      "value": 50000
+     }
+    ],
+    "expr": "(90000*0.37-(80000-30000)*0.20)-(40000*0.37)",
+    "fmt": "$",
+    "value": 8500.0,
+    "distractors": {
+     "B": {
+      "expr": "(80000-30000)*0.20",
+      "value": 10000.0
+     },
+     "C": {
+      "expr": "(90000-40000)*0.37",
+      "value": 18500.0
+     },
+     "D": {
+      "expr": "90000*0.37-(80000-30000)*0.20",
+      "value": 23300.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§358(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1366(d)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1367(a)(2)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Stock basis from a contribution comes from the general basis rules (26 USC 358/1012); 1367(a)(1) lists income items only. Cite corrected.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group B / Contribution to S corp / Analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-C-0014",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "C",
+   "group_name": "Partnerships",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Contribution to partnership",
+   "task": "Calculate a partner's tax realized and recognized gain (loss) on the contribution of noncash property to a partnership, and the partnership's basis in the property contributed.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Alpha contributes equipment with a tax basis of $40,000 and a value of $100,000 to a new partnership, and Beta contributes $100,000 of cash. The partners share all items equally. The equipment has a 10-year remaining life and is depreciated straight-line for both book and tax, so book depreciation is $10,000 a year and tax depreciation is $4,000 a year. Compare the traditional method with the remedial method for allocating the equipment's tax depreciation in the first year. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "Under the remedial method Beta's taxable income is $1,000 lower and Alpha's is unchanged from the traditional method",
+    "Under the remedial method Beta's taxable income is unchanged and Alpha's is $1,000 higher than under the traditional method",
+    "Under the remedial method Beta's taxable income is $1,000 higher and Alpha's is $1,000 lower than under the traditional method",
+    "Under the remedial method Beta's taxable income is $1,000 lower and Alpha's is $1,000 higher than under the traditional method"
+   ],
+   "answer": "D",
+   "rule_line": "Under the traditional method the ceiling rule can leave the noncontributing partner with less tax depreciation than book depreciation, while the remedial method fixes the shortfall with an offsetting deduction to that partner and income to the contributing partner.",
+   "why": {
+    "A": "The remedial method creates an offsetting item for the contributing partner. Alpha reports $1,000 of remedial income, so Alpha's income is not unchanged.",
+    "B": "Beta is the partner who benefits from the remedial deduction, so her income falls by $1,000. Both partners are affected.",
+    "C": "Reverses the effect. The remedial method corrects Beta's shortfall of depreciation, so Beta gets the deduction and Alpha gets the income.",
+    "D": "Beta's book share of depreciation is $5,000, but the ceiling rule limits tax depreciation to the $4,000 available, all of which goes to Beta under the traditional method. The remedial method gives Beta a $1,000 additional deduction and Alpha $1,000 of offsetting income."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "trap"
+   },
+   "steps": [
+    "Book depreciation = 100,000 / 10 = 10,000; each partner's book share = 5,000; tax depreciation = 40,000 / 10 = 4,000",
+    "Traditional: Beta gets all 4,000 of tax depreciation (ceiling rule), a shortfall of 5,000 - 4,000 = 1,000; Alpha gets 0",
+    "Remedial: Beta gets an additional 1,000 deduction and Alpha reports 1,000 of remedial income",
+    "Beta's income is 1,000 lower and Alpha's is 1,000 higher under the remedial method"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "100000/10",
+      "fmt": "$",
+      "value": 10000.0
+     },
+     {
+      "expr": "40000/10",
+      "fmt": "$",
+      "value": 4000.0
+     },
+     {
+      "expr": "100000/10/2-40000/10",
+      "fmt": "$",
+      "value": 1000.0
+     },
+     {
+      "expr": "100000/10/2",
+      "fmt": "$",
+      "value": 5000.0
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§704(c)(1)(A)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.704-3(b)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.704-3(d)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed Reg. 1.704-3(b)(1) ceiling rule and (d) remedial method (remedial deduction to the noncontributing partner, offsetting income to the contributor).",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group C / Contribution to partnership / Analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-C-0015",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "C",
+   "group_name": "Partnerships",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Partner basis — distribution",
+   "task": "Calculate the impact on a partner's basis in a partnership for tax purposes resulting from nonliquidating distributions of noncash property.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Cara Wolfe is a limited partner whose basis in her partnership interest is $50,000 at the start of 2026. Her share of 2026 partnership ordinary income is $10,000. During 2026 she receives a $40,000 cash distribution, and the partnership's repayment of a loan reduces her share of partnership liabilities by $35,000. Plan 1: make no contribution. Plan 2: contribute $20,000 in cash to the partnership on December 28, 2026. Plan 3: contribute $20,000 in cash on January 10, 2027. Which plan, or plans, avoid gain recognition for 2026?",
+   "exhibit": "",
+   "options": [
+    "Plans 2 and 3; a contribution before the return is filed restores basis, so there is no gain",
+    "Plan 2 only; Plans 1 and 3 each produce a $25,000 gain in 2026",
+    "Plan 2 only; Plans 1 and 3 each produce a $15,000 gain in 2026",
+    "None of the plans; the gain arises from the liability decrease and is $15,000 under any of them"
+   ],
+   "answer": "C",
+   "rule_line": "A partner's basis is increased by income and contributions and then decreased by distributions, including deemed cash distributions from liability decreases; distributions above basis cause gain, and only contributions made by year-end count.",
+   "why": {
+    "A": "Basis is measured at the end of the partnership's tax year. A contribution made after year-end cannot prevent gain for that year.",
+    "B": "Forgets to increase basis by her $10,000 share of income. Distributions of $75,000 exceed basis of $60,000 by $15,000, not $25,000.",
+    "C": "Basis is increased by income and contributions before it is reduced by distributions and the deemed distribution from the liability decrease. Before the contribution: $50,000 + $10,000 - $75,000 = -$15,000, so gain is $15,000. A December contribution of $20,000 brings basis to $5,000 and avoids gain. A January contribution comes too late for 2026.",
+    "D": "Contributions increase basis, so a contribution before year-end can absorb the deemed distribution. The $20,000 more than covers the $15,000 shortfall."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   },
+   "steps": [
+    "Basis before distributions = 50,000 + 10,000 = 60,000; distributions and deemed distribution = 40,000 + 35,000 = 75,000",
+    "Plan 1: gain = 75,000 - 60,000 = 15,000",
+    "Plan 2: basis = 60,000 + 20,000 = 80,000 >= 75,000, no gain; basis after = 5,000",
+    "Plan 3: contribution is in 2027, so the 2026 gain is 15,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "50000+10000",
+      "fmt": "$",
+      "value": 60000
+     },
+     {
+      "expr": "40000+35000",
+      "fmt": "$",
+      "value": 75000
+     },
+     {
+      "expr": "40000+35000-(50000+10000)",
+      "fmt": "$",
+      "value": 15000
+     },
+     {
+      "expr": "50000+10000+20000-(40000+35000)",
+      "fmt": "$",
+      "value": 5000
+     },
+     {
+      "expr": "40000+35000-50000",
+      "fmt": "$",
+      "value": 25000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§731(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§752(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§705(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group C / Partner basis — distribution / Analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-C-0016",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "C",
+   "group_name": "Partnerships",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Nonliquidating distribution",
+   "task": "Calculate the tax realized and recognized gain (loss) for both a partnership and partners on a nonliquidating distribution of noncash property, and the partner's basis in the property received.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "In 2023 Dev contributed land with a basis of $50,000 and a value of $200,000 to the DevCo partnership for an interest. The partnership still holds the land. In 2026 the partnership makes a nonliquidating distribution to Dev of other property worth $180,000, in which the partnership's basis is $90,000. Dev's basis in his partnership interest immediately before the distribution is $100,000, and no cash is distributed. The partnership could instead make the same distribution in 2031, when the land is still held. By how much does waiting until 2031 reduce the gain Dev recognizes?",
+   "exhibit": "",
+   "options": [
+    "$30,000",
+    "$50,000",
+    "$80,000",
+    "$150,000"
+   ],
+   "answer": "C",
+   "rule_line": "A partner who contributed appreciated property recognizes gain if the partnership distributes other property to him within seven years, equal to the lesser of the excess of the value received over his outside basis or his net precontribution gain.",
+   "why": {
+    "A": "Subtracts the built-in gain from the value received. The gain is measured by comparing the value received to his basis, not to the land's built-in gain.",
+    "B": "This is the basis of the contributed land. The gain is measured by comparing the value received to his outside basis, and it is capped by the built-in gain.",
+    "C": "A distribution to a contributing partner of other property within seven years of the contribution triggers gain equal to the lesser of the excess of the value received over his basis ($180,000 - $100,000 = $80,000) or his net precontribution gain ($150,000). Gain is $80,000 in 2026. In 2031, more than seven years have passed and a property distribution within his basis causes no gain.",
+    "D": "This is the net precontribution gain, which is only a cap on the gain. The lesser amount, $80,000, is recognized."
+   },
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "D": "trap"
+   },
+   "steps": [
+    "Excess of value received over outside basis = 180,000 - 100,000 = 80,000",
+    "Net precontribution gain = 200,000 - 50,000 = 150,000",
+    "2026 gain = min(80,000, 150,000) = 80,000; a 2031 distribution is outside the seven-year period and within his basis, so gain = 0",
+    "Reduction = 80,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "180000-200000+50000",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "50000",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "min(180000-100000,200000-50000)",
+      "fmt": "$",
+      "value": 80000
+     },
+     {
+      "expr": "200000-50000",
+      "fmt": "$",
+      "value": 150000
+     },
+     {
+      "expr": "180000-100000",
+      "fmt": "$",
+      "value": 80000
+     }
+    ],
+    "expr": "min(180000-100000,200000-50000)",
+    "fmt": "$",
+    "value": 80000,
+    "distractors": {
+     "A": {
+      "expr": "180000-200000+50000",
+      "value": 30000
+     },
+     "B": {
+      "expr": "50000",
+      "value": 50000
+     },
+     "D": {
+      "expr": "200000-50000",
+      "value": 150000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§737(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§737(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§731(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 737(a), (b): lesser of excess of value over basis (reduced by money) or net precontribution gain; property contributed within 7 years.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group C / Nonliquidating distribution / Analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-C-0017",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "C",
+   "group_name": "Partnerships",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Liquidating distribution",
+   "task": "Calculate the tax realized and recognized gain (loss) for both a partnership and partners on a liquidating distribution, and the partner's basis in the property received.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Dina Voss, a general partner, retires from Voss & Klein, an accounting partnership in which capital is not a material income-producing factor. Her basis in her partnership interest is $100,000. In liquidation of her entire interest the partnership will pay her $300,000: $100,000 for her share of the partnership's cash and other property and $200,000 that reflects her share of unrecorded goodwill. Plan 1: the partnership agreement, which does not mention goodwill, stays as it is. Plan 2: the partners amend the agreement before Dina retires to provide for payment for her share of goodwill. Dina's rates are 37% on ordinary income and 20% on capital gain. The remaining partners are in the 37% bracket and receive any deduction the partnership gets. Ignore other taxes. By how much does Plan 2 increase the combined federal income tax of Dina and the remaining partners compared with Plan 1?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$34,000",
+    "$40,000",
+    "$74,000"
+   ],
+   "answer": "C",
+   "rule_line": "In a service partnership, a retiring partner's payment for goodwill that the agreement does not mention is an ordinary income payment that the partnership deducts; if the agreement provides for goodwill it is a property payment taxed as capital gain, with no deduction.",
+   "why": {
+    "A": "This is the combined tax difference in Plan 1, where Dina's ordinary income is offset by the partners' deduction. Plan 2 adds capital gain tax with no offsetting deduction.",
+    "B": "This is only Dina's tax saving from capital gain treatment ($34,000). It ignores that the partnership loses its $200,000 deduction.",
+    "C": "Plan 1: the $200,000 for goodwill is a payment under the ordinary income rules, taxed to Dina at 37% ($74,000) and deducted by the partnership, saving the remaining partners $74,000, for a net of $0. Plan 2: the payment is a distribution for her interest, so she has $200,000 of capital gain ($40,000) and no deduction is available. Plan 2 increases combined tax by $40,000.",
+    "D": "This is the value of the deduction lost by the remaining partners, without the tax Dina saves. Combined, Dina's tax falls by $34,000."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "D": "trap"
+   },
+   "steps": [
+    "Plan 1: 200,000 is ordinary to Dina (74,000) and deductible by the partnership (saves 74,000); basis 100,000 is recovered by the 100,000 property payment",
+    "Plan 2: total payment 300,000 - basis 100,000 = 200,000 capital gain; tax = 200,000 x 20% = 40,000; no partnership deduction",
+    "Plan 1 combined = 74,000 - 74,000 = 0; Plan 2 combined = 40,000; increase = 40,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "200000*(0.37-0.20)",
+      "fmt": "$",
+      "value": 34000.0
+     },
+     {
+      "expr": "200000*0.20-(200000*0.37-200000*0.37)",
+      "fmt": "$",
+      "value": 40000.0
+     },
+     {
+      "expr": "200000*0.37",
+      "fmt": "$",
+      "value": 74000.0
+     },
+     {
+      "expr": "200000*0.20",
+      "fmt": "$",
+      "value": 40000.0
+     },
+     {
+      "expr": "300000-100000",
+      "fmt": "$",
+      "value": 200000
+     }
+    ],
+    "expr": "200000*0.20-(200000*0.37-200000*0.37)",
+    "fmt": "$",
+    "value": 40000.0,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "200000*(0.37-0.20)",
+      "value": 34000.0
+     },
+     "D": {
+      "expr": "200000*0.37",
+      "value": 74000.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§736(a)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§736(b)(3)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§731(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§707(c)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 736(b)(3): the goodwill exclusion applies only if capital is not a material income-producing factor and the retiree is a general partner; stem amended to say general partner.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group C / Liquidating distribution / Analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-D-0007",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "D",
+   "group_name": "Trusts",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Trust DNI/taxable income",
+   "task": "Calculate a trust's accounting income, distributable net income and taxable income, including the income distribution deduction.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "The Larch Trust is a complex trust with 2026 distributable net income of $50,000, all ordinary income. The trustee paid $10,000 to beneficiary Beth during 2026 and will pay her $30,000 more on February 20, 2027. The trust has no 2027 income. Assume the trust's taxable income is taxed at a flat 37%, Beth is taxed at a flat 22% in both years, and ignore the trust's exemption. The trustee is considering whether to elect to treat the February 2027 payment as made on the last day of 2026. How much combined federal income tax (trust and Beth) does the election save?",
+   "exhibit": "",
+   "options": [
+    "$4,500",
+    "$6,600",
+    "$11,100",
+    "$17,000"
+   ],
+   "answer": "A",
+   "rule_line": "A trustee can elect to treat distributions made within 65 days after year-end as made on the last day of the year, so that the amount is carried out to the beneficiary and deducted by the trust, limited to distributable net income not already distributed.",
+   "why": {
+    "A": "Without the election, the trust is taxed on $40,000 (income of $50,000 less the $10,000 paid), $14,800, and Beth on $10,000, $2,200: total $17,000. With the election, distributions for 2026 are $40,000, so the trust is taxed on $10,000 ($3,700) and Beth on $40,000 ($8,800): total $12,500. The savings are $4,500.",
+    "B": "This is only the tax Beth pays on the extra $30,000. The trust saves more tax at 37% than Beth costs at 22%, and the net saving is what matters.",
+    "C": "This is only the trust's tax saving. The election makes Beth taxable on the $30,000, which costs her $6,600.",
+    "D": "This is the combined tax without the election ($17,000), not the amount saved by the election."
+   },
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "calc"
+   },
+   "steps": [
+    "No election: trust taxable = 50,000 - 10,000 = 40,000, tax = 14,800; Beth tax on 10,000 = 2,200; total 17,000",
+    "Election: distribution deduction = 10,000 + 30,000 = 40,000 (not above DNI 50,000); trust tax = 10,000 x 37% = 3,700; Beth tax = 40,000 x 22% = 8,800; total 12,500",
+    "Savings = 17,000 - 12,500 = 4,500"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "((50000-10000)*0.37+10000*0.22)-((50000-40000)*0.37+40000*0.22)",
+      "fmt": "$",
+      "value": 4500.0
+     },
+     {
+      "expr": "30000*0.22",
+      "fmt": "$",
+      "value": 6600.0
+     },
+     {
+      "expr": "30000*0.37",
+      "fmt": "$",
+      "value": 11100.0
+     },
+     {
+      "expr": "(50000-10000)*0.37+10000*0.22",
+      "fmt": "$",
+      "value": 17000.0
+     },
+     {
+      "expr": "(50000-10000)*0.37",
+      "fmt": "$",
+      "value": 14800.0
+     },
+     {
+      "expr": "10000*0.22",
+      "fmt": "$",
+      "value": 2200.0
+     },
+     {
+      "expr": "(50000-40000)*0.37",
+      "fmt": "$",
+      "value": 3700.0
+     },
+     {
+      "expr": "40000*0.22",
+      "fmt": "$",
+      "value": 8800.0
+     },
+     {
+      "expr": "50000-10000",
+      "fmt": "$",
+      "value": 40000
+     },
+     {
+      "expr": "(50000-40000)*0.37+40000*0.22",
+      "fmt": "$",
+      "value": 12500.0
+     }
+    ],
+    "expr": "((50000-10000)*0.37+10000*0.22)-((50000-40000)*0.37+40000*0.22)",
+    "fmt": "$",
+    "value": 4500.0,
+    "distractors": {
+     "B": {
+      "expr": "30000*0.22",
+      "value": 6600.0
+     },
+     "C": {
+      "expr": "30000*0.37",
+      "value": 11100.0
+     },
+     "D": {
+      "expr": "(50000-10000)*0.37+10000*0.22",
+      "value": 17000.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§663(b)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.663(b)-1"
+    },
+    {
+     "src": "IRC",
+     "ref": "§661(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§662(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 663(b) 65-day election. The amount limit is in Reg. 1.663(b)-1 (not opened).",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group D / Trust DNI/taxable income / Analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-E-0005",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "E",
+   "group_name": "Tax-exempt organizations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "UBI types",
+   "task": "Recall the different types of unrelated business income for tax-exempt organizations for tax purposes.",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Cedar Hall, a tax-exempt museum organized as a corporation, buys an office building for $2,000,000 using $1,200,000 borrowed from a bank at 6% interest and its own reserves, and leases it to a for-profit tenant. The lease is not related to the museum's exempt purpose. The building's average adjusted basis for the year is $2,000,000. Annual rent is $220,000, and straight-line depreciation and other expenses directly connected with the building, not counting interest, total $60,000. Plan A: keep the loan outstanding all year. Plan B: on January 1, repay $600,000 of the loan using reserves that are not debt-financed, so average acquisition indebtedness for the year is $600,000 and interest for the year is $36,000. Cedar Hall is taxed at 21% on unrelated business taxable income and has the $1,000 specific deduction. How much less tax does Plan B produce than Plan A?",
+   "exhibit": "",
+   "options": [
+    "$2,520",
+    "$3,276",
+    "$5,439",
+    "$10,080"
+   ],
+   "answer": "B",
+   "rule_line": "Income from debt-financed property is unrelated business income in the proportion that average acquisition indebtedness bears to average adjusted basis, and directly connected deductions, including interest on the debt, are allowed in the same proportion.",
+   "why": {
+    "A": "Deducts all of the interest instead of the debt/basis percentage of it. Interest is one of the deductions that is allowed only in the same percentage as the income.",
+    "B": "Unrelated debt-financed income is the net income from the property multiplied by average acquisition indebtedness over average adjusted basis, and the directly connected deductions, including interest on the acquisition debt, are allowed in the same proportion. Plan A: 60% x ($220,000 - $60,000 - $72,000) = $52,800, less $1,000, taxed at 21% is $10,878. Plan B: 30% x ($220,000 - $60,000 - $36,000) = $37,200, less $1,000, taxed at 21% is $7,602. The saving is $3,276.",
+    "C": "Assumes that repaying half the debt halves the tax. The interest deduction also falls, and the percentage applies to a different net income, so the saving is smaller than half of Plan A's tax.",
+    "D": "Leaves out the interest deduction. Interest on the acquisition debt is a directly connected deduction, allowed in the debt/basis percentage, and it is lower in Plan B."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "trap"
+   },
+   "steps": [
+    "Plan A: net income = 220,000 - 60,000 - 72,000 = 88,000; 60% x 88,000 = 52,800; UBTI = 51,800; tax = 10,878",
+    "Plan B: net income = 220,000 - 60,000 - 36,000 = 124,000; 30% x 124,000 = 37,200; UBTI = 36,200; tax = 7,602",
+    "Saving = 10,878 - 7,602 = 3,276"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "((220000-60000)*0.6-72000-1000)*0.21-((220000-60000)*0.3-36000-1000)*0.21",
+      "fmt": "$",
+      "value": 2520.0
+     },
+     {
+      "expr": "(((220000-60000-72000)*0.6-1000)*0.21)-(((220000-60000-36000)*0.3-1000)*0.21)",
+      "fmt": "$",
+      "value": 3276.0
+     },
+     {
+      "expr": "(((220000-60000-72000)*0.6-1000)*0.21)*0.5",
+      "fmt": "$",
+      "value": 5439.0
+     },
+     {
+      "expr": "(((220000-60000)*0.6-1000)*0.21)-(((220000-60000)*0.3-1000)*0.21)",
+      "fmt": "$",
+      "value": 10080.0
+     },
+     {
+      "expr": "(220000-60000-72000)*0.6",
+      "fmt": "$",
+      "value": 52800.0
+     },
+     {
+      "expr": "(220000-60000-36000)*0.3",
+      "fmt": "$",
+      "value": 37200.0
+     },
+     {
+      "expr": "((220000-60000-72000)*0.6-1000)*0.21",
+      "fmt": "$",
+      "value": 10878.0
+     },
+     {
+      "expr": "((220000-60000-36000)*0.3-1000)*0.21",
+      "fmt": "$",
+      "value": 7602.0
+     },
+     {
+      "expr": "1200000*0.06",
+      "fmt": "$",
+      "value": 72000.0
+     },
+     {
+      "expr": "(220000-60000)*0.6",
+      "fmt": "$",
+      "value": 96000.0
+     },
+     {
+      "expr": "(220000-60000)*0.3",
+      "fmt": "$",
+      "value": 48000.0
+     }
+    ],
+    "expr": "(((220000-60000-72000)*0.6-1000)*0.21)-(((220000-60000-36000)*0.3-1000)*0.21)",
+    "fmt": "$",
+    "value": 3276.0,
+    "distractors": {
+     "A": {
+      "expr": "((220000-60000)*0.6-72000-1000)*0.21-((220000-60000)*0.3-36000-1000)*0.21",
+      "value": 2520.0
+     },
+     "C": {
+      "expr": "(((220000-60000-72000)*0.6-1000)*0.21)*0.5",
+      "value": 5439.0
+     },
+     "D": {
+      "expr": "(((220000-60000)*0.6-1000)*0.21)-(((220000-60000)*0.3-1000)*0.21)",
+      "value": 10080.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§514(a)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.514(a)-1(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§514(c)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§11(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Corrected 2026-09-29: Reg. 1.514(a)-1(a) allows interest on the acquisition debt as a directly connected deduction in the debt/basis percentage. The draft said interest was excluded; the stem now gives interest and the answer changed from $10,080 to $3,276 (position B unchanged).",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group E / UBI types / Analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-II-E-0006",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "II",
+   "area_name": "Entity Tax Compliance",
+   "group": "E",
+   "group_name": "Tax-exempt organizations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "UBI types",
+   "task": "Recall the different types of unrelated business income for tax-exempt organizations for tax purposes.",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Harbor Arts Society, a charitable organization exempt from federal income tax, publishes a members' magazine on subjects related to its exempt purpose. For the year it has $90,000 of gross advertising income, $30,000 of costs directly connected with selling the advertising, $40,000 of circulation income, and $100,000 of readership costs (editorial and circulation costs). A sales campaign could raise advertising income by another $50,000 with no added costs. By how much would the campaign raise the society's unrelated business taxable income before the specific deduction?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$10,000",
+    "$50,000",
+    "$110,000"
+   ],
+   "answer": "C",
+   "rule_line": "For an exempt organization's periodical, net advertising income is unrelated business income, reduced by readership costs only to the extent they exceed circulation income and only up to the net advertising income.",
+   "why": {
+    "A": "Assumes the readership costs continue to absorb the extra income. The deduction for readership costs above circulation income is capped at $60,000.",
+    "B": "Deducts the entire $100,000 of readership costs. Circulation income of $40,000 offsets part of those costs, so only $60,000 is deductible against advertising.",
+    "C": "Advertising is unrelated income. Readership costs are deductible against it only to the extent they exceed circulation income ($100,000 - $40,000 = $60,000), and no more than the net advertising income. Now: net advertising $60,000, deduction $60,000, UBTI $0. After: net advertising $110,000, deduction still $60,000, UBTI $50,000. The increase is $50,000.",
+    "D": "Ignores the readership cost deduction entirely. Readership costs above circulation income are deductible against advertising income."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "trap"
+   },
+   "steps": [
+    "Readership costs in excess of circulation income = 100,000 - 40,000 = 60,000",
+    "Now: net advertising = 90,000 - 30,000 = 60,000; deduction = min(60,000, 60,000) = 60,000; UBTI = 0",
+    "After: net advertising = 140,000 - 30,000 = 110,000; deduction = min(110,000, 60,000) = 60,000; UBTI = 50,000",
+    "Increase = 50,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "140000-30000-100000",
+      "fmt": "$",
+      "value": 10000
+     },
+     {
+      "expr": "(max(0,140000-30000-min(max(0,100000-40000),max(0,140000-30000))))-(max(0,90000-30000-min(max(0,100000-40000),max(0,90000-30000))))",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "140000-30000",
+      "fmt": "$",
+      "value": 110000
+     },
+     {
+      "expr": "100000-40000",
+      "fmt": "$",
+      "value": 60000
+     },
+     {
+      "expr": "140000-30000-60000",
+      "fmt": "$",
+      "value": 50000
+     }
+    ],
+    "expr": "(max(0,140000-30000-min(max(0,100000-40000),max(0,140000-30000))))-(max(0,90000-30000-min(max(0,100000-40000),max(0,90000-30000))))",
+    "fmt": "$",
+    "value": 50000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "140000-30000-100000",
+      "value": 10000
+     },
+     "D": {
+      "expr": "140000-30000",
+      "value": 110000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§512(a)(1)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.512(a)-1(f)(2)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.512(a)-1(f)(3)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed Reg. 1.512(a)-1(f)(2)(ii): if readership costs exceed circulation income, UBTI is total periodical income less total periodical costs (same result as the explanation).",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area II / Group E / UBI types / Analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-III-A-0009",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "A",
+   "group_name": "Formation and liquidation of business entities",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Entity selection/formation comparison",
+   "task": "Derive the tax implications of entity selection and formation decisions across multiple entity types and compare the results.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Mia Chen, single, will run a business that earns $400,000 a year before any compensation to her and before employer payroll tax. She compares three structures. S corporation: she takes a $150,000 salary and leaves the rest as S corporation income. C corporation: she takes a $150,000 salary and the corporation distributes all remaining after-tax profit as a qualified dividend. Partnership taxed business (or sole proprietorship): all $400,000 is self-employment earnings. Assume her ordinary rate is 35% on taxable income and qualified dividends are taxed at 23.8% including the net investment income tax, and the corporate rate is 21%. Payroll tax is only Medicare of 1.45% for the employer and 1.45% for the employee on wages; on self-employment earnings it is 2.9% on 92.35% of net earnings, half of which is deductible. Ignore Social Security tax and additional Medicare tax. The business is not a specified service business, has no employees other than Mia and no depreciable property, and her taxable income is high enough that the wage and property limits apply in full to the qualified business income deduction of 20%. What is the difference between the highest and second highest after-tax cash she keeps from the business?",
+   "exhibit": "",
+   "options": [
+    "$5,028",
+    "$6,651",
+    "$22,597",
+    "$29,248"
+   ],
+   "answer": "C",
+   "rule_line": "A pass-through with owner wages can get the 20% qualified business income deduction when the wage limit applies, while a partnership with no wages cannot, and a C corporation pays two levels of tax on distributed profit.",
+   "why": {
+    "A": "Gives the partnership the 20% qualified business income deduction. Without W-2 wages or property, the wage and property limit reduces that deduction to zero at her income level.",
+    "B": "Compares the partnership with the C corporation. The S corporation, with its salary supporting the deduction, is the highest, so the comparison is between it and the partnership.",
+    "C": "S corporation: employer Medicare $2,175, S income $247,825, qualified business income deduction $49,565 (under 50% of wages), taxable income $348,260, tax $121,891, so after-tax cash is $273,759. Partnership: self-employment tax $10,713, no deduction because there are no wages, tax $138,125, after-tax cash $251,162. C corporation: $244,511. The S corporation is highest, and it exceeds the partnership by $22,597.",
+    "D": "Compares the S corporation with the C corporation. The partnership, at $251,162, is second highest, not the C corporation."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "D": "trap"
+   },
+   "steps": [
+    "S corporation: employer Medicare = 150,000 x 1.45% = 2,175; S income = 400,000 - 150,000 - 2,175 = 247,825; deduction = min(20% x 247,825 = 49,565, 50% x 150,000 = 75,000) = 49,565; taxable income = 348,260; tax = 121,891; after-tax cash = 273,759",
+    "Partnership: self-employment tax = 400,000 x 92.35% x 2.9% = 10,713; taxable income = 400,000 - 5,357 = 394,643; no deduction; tax = 138,125; after-tax cash = 251,162",
+    "C corporation: corporate tax = 21% x 247,825 = 52,043; dividend = 195,782; individual tax = 52,500 + 46,596; after-tax cash = 244,511",
+    "Highest S corporation 273,759 less second highest partnership 251,162 = 22,597"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(400000-(400000*0.9235*0.029)-((400000-(400000*0.9235*0.029)/2)-0.2*(400000-(400000*0.9235*0.029)/2))*0.35)-(400000-(150000*0.0145)-(150000*0.0145)-(150000+(400000-150000-(150000*0.0145))-min(0.2*(400000-150000-(150000*0.0145)),0.5*150000))*0.35)",
+      "fmt": "$",
+      "value": 5028.16399999999
+     },
+     {
+      "expr": "(400000-(400000*0.9235*0.029)-(400000-(400000*0.9235*0.029)/2)*0.35)-(150000-150000*0.0145-150000*0.35+((400000-150000-(150000*0.0145))-((400000-150000-(150000*0.0145))*0.21))*(1-0.238))",
+      "fmt": "$",
+      "value": 6651.411500000046
+     },
+     {
+      "expr": "(400000-(150000*0.0145)-(150000*0.0145)-(150000+(400000-150000-(150000*0.0145))-min(0.2*(400000-150000-(150000*0.0145)),0.5*150000))*0.35)-(400000-(400000*0.9235*0.029)-(400000-(400000*0.9235*0.029)/2)*0.35)",
+      "fmt": "$",
+      "value": 22596.89499999996
+     },
+     {
+      "expr": "(400000-(150000*0.0145)-(150000*0.0145)-(150000+(400000-150000-(150000*0.0145))-min(0.2*(400000-150000-(150000*0.0145)),0.5*150000))*0.35)-(150000-150000*0.0145-150000*0.35+((400000-150000-(150000*0.0145))-((400000-150000-(150000*0.0145))*0.21))*(1-0.238))",
+      "fmt": "$",
+      "value": 29248.306500000006
+     },
+     {
+      "expr": "(400000-150000-(150000*0.0145))",
+      "fmt": "$",
+      "value": 247825.0
+     },
+     {
+      "expr": "min(0.2*(400000-150000-(150000*0.0145)),0.5*150000)",
+      "fmt": "$",
+      "value": 49565.0
+     },
+     {
+      "expr": "(150000+(400000-150000-(150000*0.0145))-min(0.2*(400000-150000-(150000*0.0145)),0.5*150000))",
+      "fmt": "$",
+      "value": 348260.0
+     },
+     {
+      "expr": "(400000-(150000*0.0145)-(150000*0.0145)-(150000+(400000-150000-(150000*0.0145))-min(0.2*(400000-150000-(150000*0.0145)),0.5*150000))*0.35)",
+      "fmt": "$",
+      "value": 273759.0
+     },
+     {
+      "expr": "(400000-(400000*0.9235*0.029)-(400000-(400000*0.9235*0.029)/2)*0.35)",
+      "fmt": "$",
+      "value": 251162.10500000004
+     },
+     {
+      "expr": "(150000-150000*0.0145-150000*0.35+((400000-150000-(150000*0.0145))-((400000-150000-(150000*0.0145))*0.21))*(1-0.238))",
+      "fmt": "$",
+      "value": 244510.6935
+     },
+     {
+      "expr": "(400000*0.9235*0.029)",
+      "fmt": "$",
+      "value": 10712.6
+     },
+     {
+      "expr": "150000*0.0145",
+      "fmt": "$",
+      "value": 2175.0
+     },
+     {
+      "expr": "(150000+(400000-150000-(150000*0.0145))-min(0.2*(400000-150000-(150000*0.0145)),0.5*150000))*0.35",
+      "fmt": "$",
+      "value": 121890.99999999999
+     },
+     {
+      "expr": "(400000-(400000*0.9235*0.029)/2)*0.35",
+      "fmt": "$",
+      "value": 138125.29499999998
+     }
+    ],
+    "expr": "(400000-(150000*0.0145)-(150000*0.0145)-(150000+(400000-150000-(150000*0.0145))-min(0.2*(400000-150000-(150000*0.0145)),0.5*150000))*0.35)-(400000-(400000*0.9235*0.029)-(400000-(400000*0.9235*0.029)/2)*0.35)",
+    "fmt": "$",
+    "value": 22596.89499999996,
+    "distractors": {
+     "A": {
+      "expr": "(400000-(400000*0.9235*0.029)-((400000-(400000*0.9235*0.029)/2)-0.2*(400000-(400000*0.9235*0.029)/2))*0.35)-(400000-(150000*0.0145)-(150000*0.0145)-(150000+(400000-150000-(150000*0.0145))-min(0.2*(400000-150000-(150000*0.0145)),0.5*150000))*0.35)",
+      "value": 5028.16399999999
+     },
+     "B": {
+      "expr": "(400000-(400000*0.9235*0.029)-(400000-(400000*0.9235*0.029)/2)*0.35)-(150000-150000*0.0145-150000*0.35+((400000-150000-(150000*0.0145))-((400000-150000-(150000*0.0145))*0.21))*(1-0.238))",
+      "value": 6651.411500000046
+     },
+     "D": {
+      "expr": "(400000-(150000*0.0145)-(150000*0.0145)-(150000+(400000-150000-(150000*0.0145))-min(0.2*(400000-150000-(150000*0.0145)),0.5*150000))*0.35)-(150000-150000*0.0145-150000*0.35+((400000-150000-(150000*0.0145))-((400000-150000-(150000*0.0145))*0.21))*(1-0.238))",
+      "value": 29248.306500000006
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§199A(b)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1402(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§11(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(h)(11)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "The 20% deduction and its wage limit for 2026 depend on P.L. 119-21 §70105 (deduction made permanent). Rates are stem assumptions. Confirmed 26 USC 199A(b)(2)(B) wage/UBIA limit and (b)(3)(B) phase-in range $75,000 ($150,000 joint).",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group A / Entity selection/formation comparison / Analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-III-A-0010",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "A",
+   "group_name": "Formation and liquidation of business entities",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Entity selection/formation comparison",
+   "task": "Derive the tax implications of entity selection and formation decisions across multiple entity types and compare the results.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Nell Ford is starting a business in which she will materially participate. It expects a $200,000 loss in Year 1 and $200,000 of income before any loss deduction in Year 2. Nell invests $120,000 and expects to have no other basis, and she has other income taxed at 35%. She can form an S corporation or a C corporation. The C corporation is taxed at 21% and can carry its Year 1 loss forward, deducting no more than 80% of Year 2 taxable income before the deduction. Ignore payroll tax, qualified business income deduction, and any tax on Year 2 income itself. How much greater is the cumulative federal income tax saving through Year 2 from the Year 1 loss with the S corporation than with the C corporation?",
+   "exhibit": "",
+   "options": [
+    "$28,000",
+    "$33,600",
+    "$36,400",
+    "$70,000"
+   ],
+   "answer": "C",
+   "rule_line": "An S corporation loss passes through to the shareholder subject to basis, with any excess carried forward, while a C corporation's loss is a carryforward limited to 80% of taxable income.",
+   "why": {
+    "A": "Assumes the full $200,000 is used at each entity's rate, ignoring the 80% limit for the C corporation. That gives a $28,000 difference.",
+    "B": "This is the C corporation's saving in Year 2 ($33,600), not the excess of the S corporation's saving over it.",
+    "C": "S corporation: only $120,000 of the loss is deductible in Year 1, up to her basis (saving $42,000); the other $80,000 is suspended and deducted in Year 2 after income raises her basis (saving $28,000). Total $70,000. C corporation: the loss carries to Year 2, where the 80% limit allows $160,000 (saving $33,600). Difference $36,400.",
+    "D": "This is the S corporation's total saving and not the difference from the C corporation."
+   },
+   "wrong_tags": {
+    "A": "calc",
+    "B": "trap",
+    "D": "trap"
+   },
+   "steps": [
+    "S corporation Year 1: deductible loss = min(200,000, 120,000 basis) = 120,000; saving 120,000 x 35% = 42,000; suspended 80,000",
+    "S corporation Year 2: Year 2 income increases basis, so suspended 80,000 is deducted; saving 80,000 x 35% = 28,000; total 70,000",
+    "C corporation Year 2: deduction = min(200,000, 80% x 200,000 = 160,000) = 160,000; saving 160,000 x 21% = 33,600",
+    "Difference = 70,000 - 33,600 = 36,400"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(200000*0.35)-(200000*0.21)",
+      "fmt": "$",
+      "value": 28000.0
+     },
+     {
+      "expr": "0.8*200000*0.21",
+      "fmt": "$",
+      "value": 33600.0
+     },
+     {
+      "expr": "(120000*0.35+80000*0.35)-min(200000,0.8*200000)*0.21",
+      "fmt": "$",
+      "value": 36400.0
+     },
+     {
+      "expr": "200000*0.35",
+      "fmt": "$",
+      "value": 70000.0
+     },
+     {
+      "expr": "120000*0.35",
+      "fmt": "$",
+      "value": 42000.0
+     },
+     {
+      "expr": "80000*0.35",
+      "fmt": "$",
+      "value": 28000.0
+     },
+     {
+      "expr": "0.8*200000",
+      "fmt": "$",
+      "value": 160000.0
+     },
+     {
+      "expr": "min(200000,0.8*200000)*0.21",
+      "fmt": "$",
+      "value": 33600.0
+     },
+     {
+      "expr": "120000*0.35+80000*0.35",
+      "fmt": "$",
+      "value": 70000.0
+     },
+     {
+      "expr": "200000-120000",
+      "fmt": "$",
+      "value": 80000
+     }
+    ],
+    "expr": "(120000*0.35+80000*0.35)-min(200000,0.8*200000)*0.21",
+    "fmt": "$",
+    "value": 36400.0,
+    "distractors": {
+     "A": {
+      "expr": "(200000*0.35)-(200000*0.21)",
+      "value": 28000.0
+     },
+     "B": {
+      "expr": "0.8*200000*0.21",
+      "value": 33600.0
+     },
+     "D": {
+      "expr": "200000*0.35",
+      "value": 70000.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1366(d)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§172(a)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§11(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§469(h)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group A / Entity selection/formation comparison / Analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-III-B-0007",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "B",
+   "group_name": "Tax planning for C corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Proposed formation transaction",
+   "task": "Derive the tax implications to a shareholder and C corporation for a proposed transaction after formation of the corporation, including noncash property contributions and noncash property distributions.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Orion Corp., a C corporation taxed at 21%, will pay its sole owner-employee $100,000 of its current pre-tax earnings, and the corporation's total cash cost is the same $100,000 either way. Option 1: pay a deductible bonus, where the corporation's cost includes its share of Medicare tax. Option 2: pay a dividend out of the earnings after corporate tax. The owner's ordinary rate is 37%. Qualified dividends are taxed at 20% plus a 3.8% net investment income tax. Medicare tax on wages is 1.45% for the employer and 1.45% for the employee, plus 0.9% additional Medicare tax on the employee; Social Security tax does not apply because the wage base is already exceeded. Which option produces less combined corporate and owner federal tax, and by how much?",
+   "exhibit": "",
+   "options": [
+    "The bonus, by about $452",
+    "The bonus, by about $2,802",
+    "The dividend, by about $3,417",
+    "The dividend, by about $415"
+   ],
+   "answer": "D",
+   "rule_line": "Compensation is deductible but bears payroll tax, while a dividend from a C corporation is taxed at the corporate level and then to the shareholder, so the two can cost nearly the same and payroll tax details matter.",
+   "why": {
+    "A": "Leaves out the employer's Medicare tax on the bonus, which is part of the $100,000 cost. That makes the bonus look cheaper than it is.",
+    "B": "Counts only income tax at 37% on the bonus. Medicare tax on wages, including the 0.9% additional tax, is a real cost of the bonus.",
+    "C": "Leaves out the 3.8% net investment income tax on the dividend, making the dividend look cheaper than it is.",
+    "D": "Bonus: $100,000 of cost covers a $98,571 bonus and $1,429 of employer Medicare; the owner pays 37% + 1.45% + 0.9% = 39.35% on the bonus, $38,788, so total tax is $40,217. Dividend: corporate tax $21,000 plus 23.8% on the remaining $79,000 ($18,802), or $39,802. The dividend costs about $415 less."
+   },
+   "wrong_tags": {
+    "A": "calc",
+    "B": "trap",
+    "C": "trap"
+   },
+   "steps": [
+    "Bonus B: B + 1.45% x B = 100,000, so B = 98,571 and employer Medicare = 1,429",
+    "Owner tax on bonus = 98,571 x (37% + 1.45% + 0.9%) = 38,788; total tax = 38,788 + 1,430 = 40,217",
+    "Dividend: corporate tax = 100,000 x 21% = 21,000; dividend = 79,000; owner tax = 79,000 x 23.8% = 18,802; total = 39,802",
+    "The dividend is about 415 lower"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(100000/1.0145)",
+      "fmt": "$",
+      "value": 98570.72449482504
+     },
+     {
+      "expr": "((100000/1.0145)*(0.37+0.0235)+(100000/1.0145)*0.0145)",
+      "fmt": "$",
+      "value": 40216.85559388862
+     },
+     {
+      "expr": "(100000*0.21+(100000-100000*0.21)*0.238)",
+      "fmt": "$",
+      "value": 39802.0
+     },
+     {
+      "expr": "((100000/1.0145)*(0.37+0.0235)+(100000/1.0145)*0.0145)-(100000*0.21+(100000-100000*0.21)*0.238)",
+      "fmt": "$",
+      "value": 414.8555938886202
+     },
+     {
+      "expr": "100000*0.21",
+      "fmt": "$",
+      "value": 21000.0
+     },
+     {
+      "expr": "100000-100000*0.21",
+      "fmt": "$",
+      "value": 79000.0
+     },
+     {
+      "expr": "(100000-100000*0.21)*0.238",
+      "fmt": "$",
+      "value": 18802.0
+     },
+     {
+      "expr": "(100000/1.0145)*0.0145",
+      "fmt": "$",
+      "value": 1429.2755051749632
+     },
+     {
+      "expr": "(100000/1.0145)*(0.37+0.0235)",
+      "fmt": "$",
+      "value": 38787.58008871366
+     },
+     {
+      "expr": "(100000*0.21+(100000-100000*0.21)*0.238)-100000*(0.37+0.0235)",
+      "fmt": "$",
+      "value": 452.0
+     },
+     {
+      "expr": "(100000*0.21+(100000-100000*0.21)*0.238)-100000*0.37",
+      "fmt": "$",
+      "value": 2802.0
+     },
+     {
+      "expr": "((100000/1.0145)*(0.37+0.0235)+(100000/1.0145)*0.0145)-(21000+79000*0.20)",
+      "fmt": "$",
+      "value": 3416.85559388862
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§162(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§3101(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1411"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(h)(11)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group B / Proposed formation transaction / Analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-III-C-0008",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "C",
+   "group_name": "Tax planning for S corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Terminating S election",
+   "task": "Derive the tax implications to a shareholder and S corporation for a proposed transaction after formation of the corporation, including noncash property contributions and distributions, and loans and repayment of loans from and to a shareholder.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Sal Reed owns all of Reed Mills, Inc., an S corporation since its formation, with stock basis of $200,000 that equals the net basis of its assets. The corporation has no liabilities. A corporate buyer will pay $1,000,000 for all of the stock in a purchase that qualifies for a joint election that treats the purchase as a sale of the corporation's assets followed by a liquidation, and the buyer is willing to make it. The assets are worth $1,000,000. Of the $800,000 total gain, $150,000 would be ordinary income from depreciation recapture and the rest long-term capital gain. Sal's rates are 37% on ordinary income and 20% on long-term capital gain. How much more federal income tax does Sal pay if the election is made?",
+   "exhibit": "",
+   "options": [
+    "$25,500",
+    "$30,000",
+    "$55,500",
+    "$185,500"
+   ],
+   "answer": "A",
+   "rule_line": "An election to treat a stock sale as an asset sale passes the corporation's ordinary income items to the S shareholders, so the shareholder can pay more tax even though the total gain is unchanged.",
+   "why": {
+    "A": "Without the election, the sale is a $800,000 capital gain on stock, taxed at 20% ($160,000). With it, the S corporation's deemed asset sale passes through $150,000 of ordinary income and $650,000 of capital gain ($55,500 + $130,000 = $185,500), and the deemed liquidation adds no more gain because his basis rose by $800,000. The extra tax is $25,500.",
+    "B": "Taxes the recapture at only 20%. The extra cost is the 17-point rate difference on the $150,000, or $25,500.",
+    "C": "This is the whole tax on the recapture, not the extra tax. The same $150,000 would otherwise be taxed at 20% as part of the stock gain.",
+    "D": "This is Sal's total tax with the election. The question asks for the increase over the $160,000 stock sale tax."
+   },
+   "wrong_tags": {
+    "B": "calc",
+    "C": "trap",
+    "D": "trap"
+   },
+   "steps": [
+    "Stock sale: gain = 1,000,000 - 200,000 = 800,000 at 20% = 160,000",
+    "Election: pass-through of 150,000 ordinary (37% = 55,500) and 650,000 capital gain (20% = 130,000) = 185,500; deemed liquidation: basis 200,000 + 800,000 = 1,000,000, no further gain",
+    "Extra tax = 185,500 - 160,000 = 25,500"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(150000*0.37+650000*0.20)-(800000*0.20)",
+      "fmt": "$",
+      "value": 25500.0
+     },
+     {
+      "expr": "150000*0.20",
+      "fmt": "$",
+      "value": 30000.0
+     },
+     {
+      "expr": "150000*0.37",
+      "fmt": "$",
+      "value": 55500.0
+     },
+     {
+      "expr": "150000*0.37+650000*0.20",
+      "fmt": "$",
+      "value": 185500.0
+     },
+     {
+      "expr": "650000*0.20",
+      "fmt": "$",
+      "value": 130000.0
+     },
+     {
+      "expr": "800000*0.20",
+      "fmt": "$",
+      "value": 160000.0
+     },
+     {
+      "expr": "1000000-200000",
+      "fmt": "$",
+      "value": 800000
+     },
+     {
+      "expr": "800000-150000",
+      "fmt": "$",
+      "value": 650000
+     }
+    ],
+    "expr": "(150000*0.37+650000*0.20)-(800000*0.20)",
+    "fmt": "$",
+    "value": 25500.0,
+    "distractors": {
+     "B": {
+      "expr": "150000*0.20",
+      "value": 30000.0
+     },
+     "C": {
+      "expr": "150000*0.37",
+      "value": 55500.0
+     },
+     "D": {
+      "expr": "150000*0.37+650000*0.20",
+      "value": 185500.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§338(h)(10)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1245(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1366(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§331(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group C / Terminating S election / Analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-III-C-0009",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "C",
+   "group_name": "Tax planning for S corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "S corp formation/distribution/loan planning",
+   "task": "Derive the tax implications to a shareholder and S corporation for a proposed transaction after formation of the corporation, including noncash property contributions and distributions, and loans and repayment of loans from and to a shareholder.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Leah Voss, single, owns all of an S corporation that will earn $300,000 in 2026 before any salary to her and before employer payroll tax. She can defend either of two salaries as reasonable: $60,000 or $120,000. Assume Social Security and Medicare tax total 7.65% for the employer and 7.65% for the employee on wages (both salaries are below the Social Security wage base), her ordinary rate is 35%, and the corporation's remaining income passes through to her. Her taxable income is high enough that the wage limit on the 20% qualified business income deduction applies in full, so that deduction is limited to 50% of the W-2 wages paid. Ignore state taxes and additional Medicare tax. How much more after-tax cash does Leah keep with the $60,000 salary than with the $120,000 salary?",
+   "exhibit": "",
+   "options": [
+    "$6,116",
+    "$7,574",
+    "$9,180",
+    "$12,095"
+   ],
+   "answer": "A",
+   "rule_line": "A lower S corporation salary saves payroll tax but also reduces the wages that support the qualified business income deduction, so the two effects must be netted.",
+   "why": {
+    "A": "With $60,000 of wages: employer tax $4,590, S income $235,410, deduction limited to $30,000 (50% of wages), taxable income $265,410, tax $92,894, after-tax cash $197,927. With $120,000: employer tax $9,180, S income $170,820, deduction $34,164, taxable income $256,656, tax $89,830, after-tax cash $191,810. The lower salary keeps $6,116 more.",
+    "B": "Leaves out the qualified business income deduction. It is not the same under both salaries, so the payroll savings from the lower salary are partly offset by the wage limit.",
+    "C": "This is only the extra payroll tax from the higher salary. The lower salary also loses part of the deduction and pushes more income into the 35% bracket, so the net benefit is smaller.",
+    "D": "Ignores the wage limit and gives the full 20% deduction under both salaries. At $60,000 of wages the deduction is limited to $30,000, which reduces the benefit of the low salary."
+   },
+   "wrong_tags": {
+    "B": "trap",
+    "C": "calc",
+    "D": "concept"
+   },
+   "steps": [
+    "Salary 60,000: employer tax = 4,590; S income = 300,000 - 60,000 - 4,590 = 235,410; deduction = min(47,082, 30,000) = 30,000; taxable = 265,410; tax = 92,894; after-tax cash = 300,000 - 4,590 - 4,590 - 92,894 = 197,927",
+    "Salary 120,000: employer tax = 9,180; S income = 170,820; deduction = min(34,164, 60,000) = 34,164; taxable = 256,656; tax = 89,830; after-tax cash = 191,810",
+    "Difference = 197,927 - 191,810 = 6,116"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(300000-(60000*0.0765)-60000*0.0765-(60000+(300000-60000-(60000*0.0765))-min(0.2*(300000-60000-(60000*0.0765)),0.5*60000))*0.35)-(300000-(120000*0.0765)-120000*0.0765-(120000+(300000-120000-(120000*0.0765))-min(0.2*(300000-120000-(120000*0.0765)),0.5*120000))*0.35)",
+      "fmt": "$",
+      "value": 6116.099999999977
+     },
+     {
+      "expr": "(300000-(60000*0.0765)-60000*0.0765-(60000+(300000-60000-(60000*0.0765)))*0.35)-(300000-(120000*0.0765)-120000*0.0765-(120000+(300000-120000-(120000*0.0765)))*0.35)",
+      "fmt": "$",
+      "value": 7573.5
+     },
+     {
+      "expr": "(120000-60000)*0.0765*2",
+      "fmt": "$",
+      "value": 9180.0
+     },
+     {
+      "expr": "(300000-(60000*0.0765)-60000*0.0765-(60000+(300000-60000-(60000*0.0765))-0.2*(300000-60000-(60000*0.0765)))*0.35)-(300000-(120000*0.0765)-120000*0.0765-(120000+(300000-120000-(120000*0.0765))-0.2*(300000-120000-(120000*0.0765)))*0.35)",
+      "fmt": "$",
+      "value": 12094.799999999988
+     },
+     {
+      "expr": "(300000-(60000*0.0765)-60000*0.0765-(60000+(300000-60000-(60000*0.0765))-min(0.2*(300000-60000-(60000*0.0765)),0.5*60000))*0.35)",
+      "fmt": "$",
+      "value": 197926.5
+     },
+     {
+      "expr": "(300000-(120000*0.0765)-120000*0.0765-(120000+(300000-120000-(120000*0.0765))-min(0.2*(300000-120000-(120000*0.0765)),0.5*120000))*0.35)",
+      "fmt": "$",
+      "value": 191810.40000000002
+     },
+     {
+      "expr": "60000*0.0765",
+      "fmt": "$",
+      "value": 4590.0
+     },
+     {
+      "expr": "300000-60000-60000*0.0765",
+      "fmt": "$",
+      "value": 235410.0
+     },
+     {
+      "expr": "0.5*60000",
+      "fmt": "$",
+      "value": 30000.0
+     },
+     {
+      "expr": "60000+(300000-60000-60000*0.0765)-0.5*60000",
+      "fmt": "$",
+      "value": 265410.0
+     },
+     {
+      "expr": "(60000+(300000-60000-60000*0.0765)-0.5*60000)*0.35",
+      "fmt": "$",
+      "value": 92893.5
+     },
+     {
+      "expr": "300000-120000-120000*0.0765",
+      "fmt": "$",
+      "value": 170820.0
+     },
+     {
+      "expr": "0.2*(300000-120000-120000*0.0765)",
+      "fmt": "$",
+      "value": 34164.0
+     },
+     {
+      "expr": "120000+(300000-120000-120000*0.0765)-0.2*(300000-120000-120000*0.0765)",
+      "fmt": "$",
+      "value": 256656.0
+     },
+     {
+      "expr": "(120000+(300000-120000-120000*0.0765)-0.2*(300000-120000-120000*0.0765))*0.35",
+      "fmt": "$",
+      "value": 89829.59999999999
+     }
+    ],
+    "expr": "(300000-(60000*0.0765)-60000*0.0765-(60000+(300000-60000-(60000*0.0765))-min(0.2*(300000-60000-(60000*0.0765)),0.5*60000))*0.35)-(300000-(120000*0.0765)-120000*0.0765-(120000+(300000-120000-(120000*0.0765))-min(0.2*(300000-120000-(120000*0.0765)),0.5*120000))*0.35)",
+    "fmt": "$",
+    "value": 6116.099999999977,
+    "distractors": {
+     "B": {
+      "expr": "(300000-(60000*0.0765)-60000*0.0765-(60000+(300000-60000-(60000*0.0765)))*0.35)-(300000-(120000*0.0765)-120000*0.0765-(120000+(300000-120000-(120000*0.0765)))*0.35)",
+      "value": 7573.5
+     },
+     "C": {
+      "expr": "(120000-60000)*0.0765*2",
+      "value": 9180.0
+     },
+     "D": {
+      "expr": "(300000-(60000*0.0765)-60000*0.0765-(60000+(300000-60000-(60000*0.0765))-0.2*(300000-60000-(60000*0.0765)))*0.35)-(300000-(120000*0.0765)-120000*0.0765-(120000+(300000-120000-(120000*0.0765))-0.2*(300000-120000-(120000*0.0765)))*0.35)",
+      "value": 12094.799999999988
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§199A(b)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§3121(a)"
+    },
+    {
+     "src": "Rev. Rul.",
+     "ref": "74-44"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "The 2026 qualified business income deduction relies on P.L. 119-21 §70105. Both salaries are assumed reasonable.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group C / S corp formation/distribution/loan planning / Analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-III-D-0007",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "D",
+   "group_name": "Tax planning for partnerships",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Proposed partnership transaction",
+   "task": "Derive the tax implications to a partner and partnership for a proposed transaction, including a contribution of noncash property, a nonliquidating distribution of noncash property or the sale of a partnership interest.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Tom Baird is offered a 10% interest in Quill LLC, a partnership with no debt, for services and without a cash contribution. Plan 1: he receives a 10% capital interest, immediately vested, that would entitle him to $100,000 if the partnership liquidated on that day. Plan 2: he receives a 10% profits interest that would entitle him to nothing on an immediate liquidation, and it meets the safe harbor requirements. Three years later he sells his interest for $130,000. Assume his rate is 37% on ordinary income and 20% on long-term capital gain, no allocations of income occur, and ignore self-employment tax, the partnership's deduction, and other items. How much less total federal income tax does Tom pay under Plan 2 than under Plan 1 on the receipt and the sale together?",
+   "exhibit": "",
+   "options": [
+    "$6,000",
+    "$17,000",
+    "$37,000",
+    "$43,000"
+   ],
+   "answer": "B",
+   "rule_line": "A partnership interest received for services is taxed as compensation to the extent of its liquidation value, but a profits interest that meets the safe harbor is not taxed when received and has no basis.",
+   "why": {
+    "A": "This is the tax on the sale under Plan 1 ($6,000). It ignores the tax on the receipt of the capital interest.",
+    "B": "Plan 1: receipt of a capital interest is compensation of $100,000 ($37,000), and his basis becomes $100,000, so the later gain is $30,000 ($6,000): total $43,000. Plan 2: the profits interest is not taxed on receipt and has no basis, so the whole $130,000 is capital gain ($26,000). The difference is $17,000.",
+    "C": "This is only the tax on the receipt of the capital interest. Plan 2 also pays more tax on the sale because it has no basis.",
+    "D": "This is the total under Plan 1 ($43,000), not the difference between the two plans."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "C": "trap",
+    "D": "calc"
+   },
+   "steps": [
+    "Plan 1: compensation = 100,000 x 37% = 37,000; basis 100,000; gain on sale = 130,000 - 100,000 = 30,000 x 20% = 6,000; total 43,000",
+    "Plan 2: no tax on receipt; basis 0; gain = 130,000 x 20% = 26,000",
+    "Difference = 43,000 - 26,000 = 17,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(130000-100000)*0.20",
+      "fmt": "$",
+      "value": 6000.0
+     },
+     {
+      "expr": "(100000*0.37+(130000-100000)*0.20)-(130000*0.20)",
+      "fmt": "$",
+      "value": 17000.0
+     },
+     {
+      "expr": "100000*0.37",
+      "fmt": "$",
+      "value": 37000.0
+     },
+     {
+      "expr": "100000*0.37+(130000-100000)*0.20",
+      "fmt": "$",
+      "value": 43000.0
+     },
+     {
+      "expr": "130000*0.20",
+      "fmt": "$",
+      "value": 26000.0
+     },
+     {
+      "expr": "130000-100000",
+      "fmt": "$",
+      "value": 30000
+     }
+    ],
+    "expr": "(100000*0.37+(130000-100000)*0.20)-(130000*0.20)",
+    "fmt": "$",
+    "value": 17000.0,
+    "distractors": {
+     "A": {
+      "expr": "(130000-100000)*0.20",
+      "value": 6000.0
+     },
+     "C": {
+      "expr": "100000*0.37",
+      "value": 37000.0
+     },
+     "D": {
+      "expr": "100000*0.37+(130000-100000)*0.20",
+      "value": 43000.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "Rev. Proc.",
+     "ref": "93-27"
+    },
+    {
+     "src": "Rev. Proc.",
+     "ref": "2001-43"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.721-1(b)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§83"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group D / Proposed partnership transaction / Analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-IV-A-0007",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions (disposition of assets)",
+   "group": "A",
+   "group_name": "Nontaxable disposition of assets",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Like-kind exchange / involuntary conversion",
+   "task": "Calculate the realized gain, recognized gain and deferred gain on like-kind property exchange and involuntary conversion transactions for tax purposes and the basis of the asset received as a result of the transactions.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Ola Peretz exchanges investment land with a basis of $200,000 and a value of $700,000 for other investment land worth $700,000 (like-kind, no boot). Plan 1: she exchanges directly with her brother, who owns the other land and who gives up land with a basis of $500,000. Fourteen months later her brother sells the land he received from Ola to an unrelated buyer for $700,000. Plan 2: she exchanges through a qualified intermediary with an unrelated party, and that party sells Ola's former land 14 months later for $700,000. Assume no exception to the two-year rule applies. Which statement about the gain Ola recognizes on her exchange is correct?",
+   "exhibit": "",
+   "options": [
+    "Plan 1: no gain recognized; Plan 2: no gain recognized, because both exchanges are of like-kind property",
+    "Plan 1: $500,000 recognized in the year of her brother's sale; Plan 2: no gain recognized",
+    "Plan 1: $500,000 recognized in the year of the exchange; Plan 2: no gain recognized",
+    "Plan 1: $500,000 recognized in the year of her brother's sale; Plan 2: $500,000 recognized in the year of the exchange"
+   ],
+   "answer": "B",
+   "rule_line": "Gain deferred in a like-kind exchange with a related person is recognized if either party disposes of the property within two years, in the year of the disposition.",
+   "why": {
+    "A": "Being like-kind is not enough for the related party exchange. A disposition by the related party within two years triggers the deferred gain.",
+    "B": "Ola's realized gain is $500,000 in both plans. If a related person disposes of the property received within two years, the deferral is lost and Ola recognizes the deferred gain in the year of the second disposition, so Plan 1 gives $500,000 in the year of the brother's sale. Plan 2 is an exchange with an unrelated party, so the sale by that party has no effect on Ola.",
+    "C": "The gain is recognized when the related person disposes of the property (the year of the brother's sale), not on the exchange date. If the property were held two years, Ola would have kept the deferral.",
+    "D": "An exchange through a qualified intermediary with an unrelated party is a normal like-kind exchange. The unrelated party's later sale does not affect Ola."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "C": "trap",
+    "D": "concept"
+   },
+   "steps": [
+    "Realized gain = 700,000 - 200,000 = 500,000 in both plans",
+    "Plan 1: related party exchange; brother's sale within 2 years (14 months) triggers recognition of 500,000 in that year",
+    "Plan 2: exchange with an unrelated party; later sale is irrelevant to Ola, so no gain is recognized"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "700000-200000",
+      "fmt": "$",
+      "value": 500000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1031(f)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1031(f)(3)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§267(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 1031(f)(1), (2): recognition on the date of the disposition; exceptions (death, involuntary conversion, no tax avoidance purpose) excluded by the stem.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-IV-A-0008",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions (disposition of assets)",
+   "group": "A",
+   "group_name": "Nontaxable disposition of assets",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Like-kind exchange / involuntary conversion",
+   "task": "Calculate the realized gain, recognized gain and deferred gain on like-kind property exchange and involuntary conversion transactions for tax purposes and the basis of the asset received as a result of the transactions.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Lena Ortiz's husband died on March 10, 2025. They had owned their main home and lived in it for ten years, as joint tenants with rights of survivorship, and their combined basis in it was $200,000. Its value on the date of death was $600,000. Lena has not remarried and will not remarry. She can sell the home for a net amount realized of $800,000 either on March 5, 2027 or on March 20, 2027. Assume she has owned and lived in the home for two of the last five years at each date and that her husband's half was included in his estate. How much more gain does she recognize by selling on March 20, 2027 than on March 5, 2027?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$150,000",
+    "$250,000",
+    "$400,000"
+   ],
+   "answer": "B",
+   "rule_line": "A surviving spouse who has not remarried may use the $500,000 exclusion on a sale within two years of the spouse's death, and only the $250,000 exclusion later; the deceased spouse's half of jointly held property gets a stepped-up basis.",
+   "why": {
+    "A": "Assumes the exclusion covers the gain on both dates. The $250,000 exclusion after two years is less than her $400,000 gain.",
+    "B": "Only her husband's half of the home gets a stepped-up basis, so her basis is $100,000 + $300,000 = $400,000 and the gain is $400,000. A sale by March 10, 2027 (within two years of death) still allows the $500,000 exclusion, so no gain is taxable. A sale after that date allows only $250,000, leaving $150,000 taxable. The difference is $150,000.",
+    "C": "This is the difference between the two exclusion limits. The extra gain recognized is limited to the gain that exceeds $250,000, which is smaller here.",
+    "D": "This is her entire gain of $400,000. A sale on either date qualifies for some exclusion, so not all of it is recognized."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "C": "trap",
+    "D": "concept"
+   },
+   "steps": [
+    "Basis = 200,000 / 2 + 600,000 / 2 = 400,000 (only the husband's half is stepped up); gain = 800,000 - 400,000 = 400,000",
+    "March 5, 2027 is within two years of March 10, 2025: exclusion 500,000, taxable gain = 0",
+    "March 20, 2027 is after two years: exclusion 250,000, taxable gain = 400,000 - 250,000 = 150,000",
+    "Difference = 150,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "max(0,(800000-(200000/2+600000/2))-250000)-max(0,(800000-(200000/2+600000/2))-500000)",
+      "fmt": "$",
+      "value": 150000.0
+     },
+     {
+      "expr": "500000-250000",
+      "fmt": "$",
+      "value": 250000
+     },
+     {
+      "expr": "800000-(200000/2+600000/2)",
+      "fmt": "$",
+      "value": 400000.0
+     },
+     {
+      "expr": "200000/2+600000/2",
+      "fmt": "$",
+      "value": 400000.0
+     },
+     {
+      "expr": "(800000-(200000/2+600000/2))-250000",
+      "fmt": "$",
+      "value": 150000.0
+     },
+     {
+      "expr": "200000/2",
+      "fmt": "$",
+      "value": 100000.0
+     },
+     {
+      "expr": "600000/2",
+      "fmt": "$",
+      "value": 300000.0
+     }
+    ],
+    "expr": "max(0,(800000-(200000/2+600000/2))-250000)-max(0,(800000-(200000/2+600000/2))-500000)",
+    "fmt": "$",
+    "value": 150000.0,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "C": {
+      "expr": "500000-250000",
+      "value": 250000
+     },
+     "D": {
+      "expr": "800000-(200000/2+600000/2)",
+      "value": 400000.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§121(b)(4)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1014(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§2040(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 121(b)(4): sale not later than 2 years after the spouse's death, unmarried at sale.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-IV-B-0014",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions (disposition of assets)",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Installment sale gain",
+   "task": "Calculate the amount of gain recognized on an installment sale.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Rae Bolt sold business equipment for $300,000. She bought it for $250,000 and has claimed $150,000 of depreciation, so its adjusted basis is $100,000. Plan 1: take the full $300,000 in the year of sale. Plan 2: take $60,000 in the year of sale and $60,000 in each of the next four years, using the installment method with adequate stated interest. Assume ordinary income is taxed at 35% and long-term capital gain at 20%, and ignore interest. How much less tax does Rae pay in the year of sale under Plan 2 than under Plan 1?",
+   "exhibit": "",
+   "options": [
+    "$8,000",
+    "$14,000",
+    "$48,500",
+    "$62,500"
+   ],
+   "answer": "A",
+   "rule_line": "On an installment sale, depreciation recapture is recognized in the year of sale, and only the remaining gain can be spread over the payments.",
+   "why": {
+    "A": "The gain is $200,000: $150,000 of depreciation recapture (ordinary) and $50,000 of long-term capital gain. Recapture income is recognized in the year of sale even on the installment method, and it is added to her basis for the installment computation. The remaining $50,000 gain is reported as payments come in: 50,000 / 300,000 x $60,000 = $10,000 in the year of sale. Plan 2 defers $40,000 of capital gain, saving $8,000.",
+    "B": "Assumes that the deferred $40,000 is taxed at the ordinary rate. Recapture is not deferred; the deferred gain is the capital gain part, taxed at 20%.",
+    "C": "Spreads the whole $200,000 gain by the 66.7% gross profit ratio and taxes the $40,000 reported in the year of sale as recapture income. Recapture must be recognized in full in the year of sale, and only the capital gain is spread.",
+    "D": "This is the year-of-sale tax under Plan 1 ($62,500), not the difference between the plans."
+   },
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "trap"
+   },
+   "steps": [
+    "Gain = 300,000 - 100,000 = 200,000; recapture = min(200,000, 150,000) = 150,000 (ordinary); remaining gain = 50,000",
+    "Plan 1: tax = 150,000 x 35% + 50,000 x 20% = 62,500",
+    "Plan 2: adjusted basis after recapture = 250,000; gross profit percentage = 50,000 / 300,000; year of sale gain = 60,000 x 50,000 / 300,000 = 10,000; tax = 52,500 + 2,000 = 54,500",
+    "Difference = 62,500 - 54,500 = 8,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(150000*0.35+50000*0.20)-(150000*0.35+10000*0.20)",
+      "fmt": "$",
+      "value": 8000.0
+     },
+     {
+      "expr": "40000*0.35",
+      "fmt": "$",
+      "value": 14000.0
+     },
+     {
+      "expr": "(150000*0.35+50000*0.20)-40000*0.35",
+      "fmt": "$",
+      "value": 48500.0
+     },
+     {
+      "expr": "150000*0.35+50000*0.20",
+      "fmt": "$",
+      "value": 62500.0
+     },
+     {
+      "expr": "300000-100000",
+      "fmt": "$",
+      "value": 200000
+     },
+     {
+      "expr": "min(200000,150000)",
+      "fmt": "$",
+      "value": 150000
+     },
+     {
+      "expr": "60000*50000/300000",
+      "fmt": "$",
+      "value": 10000.0
+     },
+     {
+      "expr": "150000*0.35+10000*0.20",
+      "fmt": "$",
+      "value": 54500.0
+     },
+     {
+      "expr": "300000-100000-150000",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "50000-10000",
+      "fmt": "$",
+      "value": 40000
+     }
+    ],
+    "expr": "(150000*0.35+50000*0.20)-(150000*0.35+10000*0.20)",
+    "fmt": "$",
+    "value": 8000.0,
+    "distractors": {
+     "B": {
+      "expr": "40000*0.35",
+      "value": 14000.0
+     },
+     "C": {
+      "expr": "(150000*0.35+50000*0.20)-40000*0.35",
+      "value": 48500.0
+     },
+     "D": {
+      "expr": "150000*0.35+50000*0.20",
+      "value": 62500.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§453(i)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1245(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§453(c)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 453(i): recapture income recognized in the year of disposition; remaining gain by the installment method.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Installment sale gain / Analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-IV-B-0015",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions (disposition of assets)",
+   "group": "B",
+   "group_name": "Amount and character of gains and losses on asset disposition and netting process",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Section 1231 netting",
+   "task": "Calculate the Section 1231 capital gain and Section 1231 ordinary loss recognized for tax purposes on the disposition of an asset used in a trade or business.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Kurt Lund had a net loss of $30,000 from sales of business assets held more than a year in 2025 that he deducted as an ordinary loss, and he had no other such net losses or gains in the prior five years. In 2026 and 2027 he plans to sell two business assets held more than a year: Asset X at a $100,000 gain and Asset Y at a $70,000 loss. Plan 1: sell both in 2026. Plan 2: sell X in 2026 and Y in 2027. Plan 3: sell Y in 2026 and X in 2027. Assume he is in the 37% bracket on ordinary income in both years, long-term capital gain is taxed at 20%, and ignore later years. Which plan gives the lowest total federal tax for 2026 and 2027?",
+   "exhibit": "",
+   "options": [
+    "Plan 1, with total tax of $11,100",
+    "Plan 3, with a net total tax saving of $25,900",
+    "Plans 1 and 3 equally, each with total tax of $11,100, and both lower than Plan 2",
+    "Plan 2, with a net total tax saving of $800"
+   ],
+   "answer": "D",
+   "rule_line": "Net section 1231 gain is treated as ordinary income to the extent of net section 1231 losses in the prior five years that have not been recaptured, so the timing of gains and losses across years changes their character.",
+   "why": {
+    "A": "Plan 1 nets to a $30,000 gain, all of it ordinary because of the 2025 loss recapture, for $11,100. Plan 2 is lower.",
+    "B": "The 2026 ordinary loss saves $25,900, but the loss adds to the nonrecaptured losses, so the 2027 gain of $100,000 is all ordinary and costs $37,000. Total tax is $11,100.",
+    "C": "Plans 1 and 3 do give $11,100, but Plan 2 is lower because it turns $70,000 of gain into capital gain in 2026 and uses the 2027 loss as an ordinary deduction.",
+    "D": "In 2026 the $100,000 net gain is $30,000 ordinary (recapture of the 2025 loss) and $70,000 capital gain: $11,100 + $14,000 = $25,100. In 2027 the $70,000 net loss is ordinary and saves $25,900. Net is a saving of $800, against $11,100 of tax in Plan 1."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "C": "concept"
+   },
+   "steps": [
+    "Plan 1: 2026 net gain 30,000, ordinary by recapture of the 2025 loss: tax = 30,000 x 37% = 11,100",
+    "Plan 2: 2026 net gain 100,000 = 30,000 ordinary + 70,000 capital: tax = 11,100 + 14,000 = 25,100; 2027 net loss 70,000 ordinary: saving 25,900; total = 25,100 - 25,900 = -800",
+    "Plan 3: 2026 net loss 70,000 saves 25,900; 2027 gain 100,000 is ordinary up to nonrecaptured losses 30,000 + 70,000 = 100,000: tax 37,000; total = 11,100",
+    "Lowest is Plan 2 (a net saving of 800)"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "30000*0.37",
+      "fmt": "$",
+      "value": 11100.0
+     },
+     {
+      "expr": "70000*0.20",
+      "fmt": "$",
+      "value": 14000.0
+     },
+     {
+      "expr": "30000*0.37+70000*0.20",
+      "fmt": "$",
+      "value": 25100.0
+     },
+     {
+      "expr": "70000*0.37",
+      "fmt": "$",
+      "value": 25900.0
+     },
+     {
+      "expr": "30000*0.37+70000*0.20-70000*0.37",
+      "fmt": "$",
+      "value": -800.0
+     },
+     {
+      "expr": "100000*0.37",
+      "fmt": "$",
+      "value": 37000.0
+     },
+     {
+      "expr": "100000*0.37-70000*0.37",
+      "fmt": "$",
+      "value": 11100.0
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1231(c)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1231(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(h)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 1231(c): net gain is ordinary to the extent of nonrecaptured net losses of the 5 preceding years.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group B / Section 1231 netting / Analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-IV-C-0009",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions (disposition of assets)",
+   "group": "C",
+   "group_name": "Related party transactions, including imputed interest",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Ownership percentage calc",
+   "task": "Calculate the direct and indirect ownership percentages of corporation stock or partnership interests to determine whether there are related parties for tax purposes.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Nilo Corp. is an accrual-basis, calendar-year C corporation taxed at 21%. At December 31, 2026 it owes year-end bonuses that are fixed and unconditional: $60,000 to Mira, who owns 60% of its stock and uses the cash method, and $90,000 to employees who own no stock. Plan 1: pay all bonuses on February 15, 2027. Plan 2: pay Mira's bonus on December 28, 2026 and the other bonuses on February 15, 2027. How much lower is Nilo's 2026 federal income tax under Plan 2 than under Plan 1?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$12,600",
+    "$18,900",
+    "$31,500"
+   ],
+   "answer": "B",
+   "rule_line": "An accrual-basis payer may deduct an amount owed to a related cash-basis person only when the payee includes it in income, so the 2 1/2 month rule for bonuses does not help with a more-than-50% shareholder.",
+   "why": {
+    "A": "Assumes all bonuses are deductible in 2026 if paid within 2 1/2 months. That rule does not apply to amounts owed to a related cash-basis person.",
+    "B": "Bonuses to unrelated employees paid within 2 1/2 months after year-end are deductible in 2026. Mira owns more than 50%, so an amount owed to her is deductible only when she includes it in income; a February payment is deductible in 2027. Under Plan 1 the 2026 deduction is $90,000; under Plan 2 it is $150,000. The extra $60,000 deduction saves $12,600.",
+    "C": "This is the value of the deduction for the unrelated employees, which is available under both plans.",
+    "D": "This is the total 2026 tax reduction under Plan 2, not the difference. The $90,000 of unrelated bonuses is deductible in 2026 under both plans."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "trap"
+   },
+   "steps": [
+    "Mira owns 60% (over 50%), so she is a related person",
+    "Plan 1: 2026 deduction = 90,000 (unrelated bonuses paid within 2 1/2 months); Mira's 60,000 is deductible in 2027",
+    "Plan 2: 2026 deduction = 90,000 + 60,000 = 150,000",
+    "Extra deduction = 60,000; tax = 60,000 x 21% = 12,600"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "60000*0.21",
+      "fmt": "$",
+      "value": 12600.0
+     },
+     {
+      "expr": "90000*0.21",
+      "fmt": "$",
+      "value": 18900.0
+     },
+     {
+      "expr": "150000*0.21",
+      "fmt": "$",
+      "value": 31500.0
+     },
+     {
+      "expr": "90000+60000",
+      "fmt": "$",
+      "value": 150000
+     }
+    ],
+    "expr": "60000*0.21",
+    "fmt": "$",
+    "value": 12600.0,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "C": {
+      "expr": "90000*0.21",
+      "value": 18900.0
+     },
+     "D": {
+      "expr": "150000*0.21",
+      "value": 31500.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§267(a)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§267(b)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§404(a)(5)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.404(b)-1T"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 267(a)(2), (b)(2): payor deduction deferred to the payee's inclusion; applies to compensation.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group C / Ownership percentage calc / Analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  },
+  {
+   "id": "TCP-IV-C-0010",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "IV",
+   "area_name": "Property Transactions (disposition of assets)",
+   "group": "C",
+   "group_name": "Related party transactions, including imputed interest",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Subsequent disposition to unrelated party",
+   "task": "Calculate a taxpayer's gain or loss on a subsequent disposition of an asset to an unrelated third party that was previously purchased from a related party.",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Ann Kohl sells rental land with a basis of $100,000 to her daughter Beth for $500,000. Beth pays $100,000 at closing and gives a note for $400,000 payable in four equal annual installments, and Ann uses the installment method. Plan 1: Beth resells the land to an unrelated buyer for $550,000 in the same year. Plan 2: Beth resells it to an unrelated buyer for $550,000 after holding it for three years. How much more of Ann's gain is recognized in the year of the sale to Beth under Plan 1 than under Plan 2?",
+   "exhibit": "",
+   "options": [
+    "$80,000",
+    "$320,000",
+    "$360,000",
+    "$400,000"
+   ],
+   "answer": "B",
+   "rule_line": "If a related buyer resells installment property within two years, the seller treats the lesser of the resale amount realized or the total contract price, less payments received, as received at the resale, which accelerates the gain.",
+   "why": {
+    "A": "This is Ann's gain in the sale year under Plan 2 ($80,000), not the additional gain under Plan 1.",
+    "B": "The gross profit percentage is $400,000 / $500,000 = 80%. Under Plan 2 only the $100,000 down payment is received in the sale year, so gain is $80,000. Under Plan 1, a resale by the related buyer within two years is treated as a payment to Ann of the lesser of the amount realized ($550,000) or the total contract price ($500,000), less payments already received: another $400,000, so all of the gain is recognized: 80% x $500,000 = $400,000. The difference is $320,000.",
+    "C": "Uses the resale price of $550,000 as the deemed payment. The deemed payment is limited to the total contract price, $500,000, less the payments already received.",
+    "D": "This is all of Ann's gain in the sale year under Plan 1. Under Plan 2 she already recognizes $80,000 in that year, so the additional gain is $320,000."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "C": "calc",
+    "D": "trap"
+   },
+   "steps": [
+    "Gross profit percentage = (500,000 - 100,000) / 500,000 = 80%",
+    "Plan 2: sale year payment 100,000, gain = 100,000 x 80% = 80,000",
+    "Plan 1: deemed payment = min(550,000, 500,000) - 100,000 = 400,000; sale year payments = 500,000; gain = 500,000 x 80% = 400,000",
+    "Difference = 400,000 - 80,000 = 320,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "100000*0.8",
+      "fmt": "x",
+      "value": 80000.0
+     },
+     {
+      "expr": "500000*(500000-100000)/500000-100000*(500000-100000)/500000",
+      "fmt": "$",
+      "value": 320000.0
+     },
+     {
+      "expr": "(550000-100000)*0.8",
+      "fmt": "$",
+      "value": 360000.0
+     },
+     {
+      "expr": "500000*0.8",
+      "fmt": "$",
+      "value": 400000.0
+     },
+     {
+      "expr": "(500000-100000)/500000*100",
+      "fmt": "$",
+      "value": 80.0
+     },
+     {
+      "expr": "min(550000,500000)-100000",
+      "fmt": "$",
+      "value": 400000
+     }
+    ],
+    "expr": "500000*(500000-100000)/500000-100000*(500000-100000)/500000",
+    "fmt": "$",
+    "value": 320000.0,
+    "distractors": {
+     "A": {
+      "expr": "100000*0.8",
+      "value": 80000.0
+     },
+     "C": {
+      "expr": "(550000-100000)*0.8",
+      "value": 360000.0
+     },
+     "D": {
+      "expr": "500000*0.8",
+      "value": 400000.0
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§453(e)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§453(e)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§453(f)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Confirmed 26 USC 453(e)(1), (2): amount realized on the second disposition within 2 years is treated as received.",
+   "provenance": "terra-original",
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area IV / Group C / Subsequent disposition to unrelated party / Analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "0610780",
+    "match": true
+   }
+  }
+ ]
+}

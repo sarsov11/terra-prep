@@ -54,9 +54,24 @@ FAR_SUBJECTS = {
 FAR_AREA_TITLE = {"I": "Conceptual Framework, Standard-Setting, and Financial Reporting",
                   "II": "Select Financial Statement Accounts", "III": "Select Transactions"}
 FAR_WEIGHT = {"I": 35, "II": 35, "III": 30}
+# ---------------------------------------------------------------------------
+# TCP section (elective discipline; source folder tools/src/TCP/tcp_*_mcq.json, Areas I-IV; items carry group_name; file tcp_b holds
+# extra Analysis items of any Area, so TCP items are gathered from every file and split by their own "area" field).
+# Blueprint weights = midpoint of the 2026 ranges (I 30-40, II 30-40, III 10-20, IV 10-20 -> 35/35/15/15, see TCP_SPEC.md).
+# ---------------------------------------------------------------------------
+TCP_DEFAULT_SRC = os.path.join(HERE, "src", "TCP")
+TCP_AREAS = ["I", "II", "III", "IV"]
+TCP_SUBJECTS = {
+    "I":   ("tcp_area1_individuals", "Area I · Individuals and Personal Financial Planning", "--fam-geo"),
+    "II":  ("tcp_area2_entity_compliance", "Area II · Entity Tax Compliance", "--fam-soc"),
+    "III": ("tcp_area3_entity_planning", "Area III · Entity Tax Planning", "--fam-eth"),
+    "IV":  ("tcp_area4_property", "Area IV · Property Transactions", "--mint"),
+}
+TCP_WEIGHT = {"I": 35, "II": 35, "III": 15, "IV": 15}
 SECTIONS = {
     "REG": {"areas": AREAS, "subjects": SUBJECTS, "weight": WEIGHT, "src": DEFAULT_SRC, "prefix": "reg", "tool": "build_reg.py"},
     "FAR": {"areas": FAR_AREAS, "subjects": FAR_SUBJECTS, "weight": FAR_WEIGHT, "src": FAR_DEFAULT_SRC, "prefix": "far", "tool": "build_far.py"},
+    "TCP": {"areas": TCP_AREAS, "subjects": TCP_SUBJECTS, "weight": TCP_WEIGHT, "src": TCP_DEFAULT_SRC, "prefix": "tcp", "tool": "build_tcp.py"},
 }
 
 
@@ -65,6 +80,8 @@ def find_files(src, area, sec="REG"):
     FAR files are named far_area<N>*_mcq.json."""
     import glob
     n = {"I": "1", "II": "2", "III": "3", "IV": "4", "V": "5"}[area]
+    if sec == "TCP":
+        return sorted(glob.glob(os.path.join(src, "tcp_*_mcq.json")))
     if sec == "FAR":
         return sorted(glob.glob(os.path.join(src, "far_area%s*_mcq.json" % n)))
     found = sorted(glob.glob(os.path.join(src, "area%s*_mcq.json" % n)))
@@ -83,6 +100,8 @@ def load_area(src, area, sec="REG"):
         if meta is None:
             meta = d.get("meta", {})
         for it in d.get("items", []):
+            if sec == "TCP" and it.get("area") != area:
+                continue                      # TCP: one folder, items belong to the Area named in the item
             items.append(it)                  # duplicate ids across files are reported by check_reg.py
     return meta, items
 
@@ -90,7 +109,7 @@ def load_area(src, area, sec="REG"):
 def group_names(area, meta, items, sec="REG"):
     """Group letter -> name. Blueprint names are read from meta.blueprint when present (FAR items carry group_name)."""
     names = dict(GROUP_NAMES.get(area, {})) if sec == "REG" else {}
-    if sec == "FAR":
+    if sec in ("FAR", "TCP"):
         for i in items:
             if i.get("group_name"):
                 names.setdefault(i["group"], i["group_name"])
@@ -328,9 +347,9 @@ def read_ready():
 
 
 def write_ready(R):
-    """Fixed key order (other subjects, then reg_*, then far_*), so a rebuild of one section never reorders the others."""
+    """Fixed key order (other subjects, then reg_*, far_*, tcp_*), so a rebuild of one section never reorders the others."""
     def rank(k):
-        return 1 if k.startswith("reg_") else 2 if k.startswith("far_") else 0
+        return 1 if k.startswith("reg_") else 2 if k.startswith("far_") else 3 if k.startswith("tcp_") else 0
     R = {k: R[k] for k in sorted(R, key=rank)}          # stable sort keeps the order inside a group
     with open(os.path.join(ROOT, "data", "ready.js"), "w", encoding="utf-8", newline="\n") as f:
         f.write("/* Auto-generated — pipeline artifact */\nwindow.READY=" + json.dumps(R, ensure_ascii=False) + ";\n")

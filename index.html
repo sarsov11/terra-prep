@@ -75,7 +75,7 @@
   GB.mountNav("index.html");
   var $ = function (id) { return document.getElementById(id); }, esc = GB.esc;
 
-  /* CPA section switch: REG and FAR keep separate history, test date, plan and placement result */
+  /* CPA section switch: REG, FAR and TCP keep separate history, test date, plan and placement result */
   var SEC = GB.exam().sec || "", secs = CATALOG.sections();
   $("secs").innerHTML = secs.length > 1 ? secs.map(function (e) {
     return '<a href="#" data-x="' + e.id + '"' + (e.sec === SEC ? ' class="on" aria-current="true"' : "") + ">" + esc(e.sec) + "</a>";

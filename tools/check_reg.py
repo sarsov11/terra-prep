@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-"""Checker for the REG and FAR question banks (SPEC section 1 and 4 rules + the Area II checker rules).
+"""Checker for the REG, FAR and TCP question banks (SPEC section 1 and 4 rules + the Area II checker rules).
 
   py tools/check_reg.py                 check the items that build_reg.py ships (status verified)
   py tools/check_reg.py --include-draft check draft items too
-  py tools/check_reg.py --src DIR       read another REG source folder (--far-src DIR for FAR)
+  py tools/check_reg.py --src DIR       read another REG source folder (--far-src DIR for FAR, --tcp-src DIR for TCP)
 
-Both sections are checked with the same rules. FAR adds: no ASC / ASU / GASB / Topic number in a stem or option.
+All sections are checked with the same rules. FAR adds: no ASC / ASU / GASB / Topic number in a stem or option.
 
 Exit code 1 when any FAIL is found. WARN lines do not fail.
-Also confirms data/reg_*.js, data/far_*.js and data/ready.js match the source (unless --no-data).
+Also confirms data/reg_*.js, data/far_*.js, data/tcp_*.js and data/ready.js match the source (unless --no-data).
 """
 import argparse, collections, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -19,6 +19,7 @@ import reg_common as C
 ap = argparse.ArgumentParser()
 ap.add_argument("--src", default=C.DEFAULT_SRC)
 ap.add_argument("--far-src", default=C.FAR_DEFAULT_SRC)
+ap.add_argument("--tcp-src", default=C.TCP_DEFAULT_SRC)
 ap.add_argument("--include-draft", action="store_true")
 ap.add_argument("--no-data", action="store_true")
 a = ap.parse_args()
@@ -43,7 +44,7 @@ def texts(it):
     return [it["stem"], ex or ""] + list(it["options"]) + list(it["why"].values()) + list(it.get("steps") or [])
 
 all_items, per_area, skipped = [], {}, collections.Counter()
-SRCS = {"REG": a.src, "FAR": a.far_src}
+SRCS = {"REG": a.src, "FAR": a.far_src, "TCP": a.tcp_src}
 for sec, cfg in C.SECTIONS.items():
     for ar in cfg["areas"]:
         meta, items = C.load_area(SRCS[sec], ar, sec)
@@ -79,7 +80,7 @@ for (sec, ar), items in per_area.items():
         if sorted(w.keys()) != list("ABCD") or any(len(str(v)) < 20 for v in w.values()): F(i, "why needs 4 explanations of 20+ chars")
         hd = [str(w.get(c, "")).split(" ")[0] for c in "ABCD"]
         if any(h in ("Correct.", "Incorrect.") for h in hd):     # Area II style headers must be consistent
-            if sec == "FAR":                                      # FAR style: only the answer carries "Correct."; wrong choices start with the reason
+            if sec in ("FAR", "TCP"):                              # FAR/TCP style: only the answer carries "Correct."; wrong choices start with the reason
                 if hd[k] != "Correct." or any(hd[j] == "Correct." for j in range(4) if j != k): F(i, "why headers Correct. do not match answer")
             elif hd[k] != "Correct." or any(hd[j] != "Incorrect." for j in range(4) if j != k): F(i, "why headers Correct./Incorrect. do not match answer")
         if it["skill"] not in C.SKILLS: F(i, "invalid skill")
@@ -99,6 +100,8 @@ for (sec, ar), items in per_area.items():
         if CITE.search(it["stem"]) or any(CITE.search(x) for x in o): F(i, "citation in stem/options (keep it in why/cite)")
         if sec == "FAR" and (STDNUM.search(it["stem"]) or any(STDNUM.search(x) for x in o) or STDNUM.search(str(it["exhibit"]))): F(i, "ASC / ASU / GASB number in stem, exhibit or options (keep it in why/cite)")
         if sec == "FAR" and not str(it["id"]).startswith("FAR-%s-" % ar): F(i, "FAR id must start with FAR-%s-" % ar)
+        if sec == "TCP" and not str(it["id"]).startswith("TCP-%s-" % ar): F(i, "TCP id must start with TCP-%s-" % ar)
+        if sec == "TCP" and re.search(r"section\s+\d{2,4}[A-Za-z]?|IRC", " ".join([it["stem"]] + list(o))): F(i, "IRC section number in stem/options (keep it in why/cite)")
         for f in texts(it):
             if "!" in f or EMO.search(f): F(i, "exclamation mark or emoji"); break
         for f in texts(it):
@@ -167,11 +170,12 @@ for (sec, ar), items in per_area.items():
     m, p2, l2, u2 = dist(items)
     if any(abs(p2[c] / m - .25) > .10 for c in "ABCD"): warns.append("%s Area %s answer positions %s" % (sec, ar, {c: p2[c] for c in "ABCD"}))
     if l2 / m > .40: warns.append("%s Area %s longest-option rate %.0f%%" % (sec, ar, 100 * l2 / m))
-    if sec == "FAR":                                   # Blueprint skill ranges (2026-27): R&U 5-15, Application 45-55, Analysis 35-45
+    if sec in ("FAR", "TCP"):                          # Blueprint skill ranges (2026-27). FAR: R&U 5-15, Application 45-55, Analysis 35-45. TCP: R&U 5-15, Application 50-65, Analysis 25-40
         sk = collections.Counter(x["skill"] for x in items)
-        for name, lo, hi in (("Remembering & Understanding", 5, 15), ("Application", 45, 55), ("Analysis", 35, 45)):
+        rng = (("Remembering & Understanding", 5, 15), ("Application", 45, 55), ("Analysis", 35, 45)) if sec == "FAR" else (("Remembering & Understanding", 5, 15), ("Application", 50, 65), ("Analysis", 25, 40))
+        for name, lo, hi in rng:
             pc = 100.0 * sk[name] / m
-            if pc < lo - 5 or pc > hi + 5: warns.append("FAR Area %s skill mix: %s %.0f%% (Blueprint %d-%d%%)" % (ar, name, pc, lo, hi))
+            if pc < lo - 5 or pc > hi + 5: warns.append("%s Area %s skill mix: %s %.0f%% (Blueprint %d-%d%%)" % (sec, ar, name, pc, lo, hi))
 n = len(all_items)
 
 # ---- data files consistent with the source

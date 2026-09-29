@@ -1,0 +1,3027 @@
+{
+ "meta": {
+  "exam": "TCP",
+  "area": "III",
+  "title": "Entity Tax Planning",
+  "law_asof": "2026-09-29",
+  "count": 27,
+  "status": "verified",
+  "provenance": "terra-original (no Becker/UWorld/Wiley/AICPA released-question text used)",
+  "blueprint": "2026 AICPA TCP Blueprint (second-hand sources; see TCP_SPEC.md)"
+ },
+ "items": [
+  {
+   "id": "TCP-III-A-0001",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "A",
+   "group_name": "Formation and liquidation of business entities",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Entity type identification",
+   "task": "Identify the type of business entity that is best described by a given set of legal characteristics.",
+   "task_skill": "Remembering",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Which type of business entity is best described by these characteristics: it is a state-law corporation, its owners have limited liability, it has 40 shareholders who are all U.S. individuals, it has one class of stock, and its income is reported by its shareholders in proportion to their shares?",
+   "exhibit": "",
+   "options": [
+    "A C corporation, because any state-law corporation is taxed as a separate entity on its income",
+    "A general partnership, because income is reported by the owners in proportion to their interests in it",
+    "A limited partnership, because its owners report their shares of income and have limited liability",
+    "An S corporation, because it has eligible shareholders and one class of stock and elected pass-through"
+   ],
+   "answer": "D",
+   "rule_line": "An S corporation is a small business corporation with eligible shareholders and one class of stock that elects pass-through taxation.",
+   "why": {
+    "A": "A C corporation pays its own tax and does not report income to shareholders in proportion to shares held each year.",
+    "B": "A general partnership is not a corporation and does not provide limited liability to its owners.",
+    "C": "A limited partnership is not a corporation and needs at least one general partner with unlimited liability.",
+    "D": "An S corporation is a corporation whose income, losses and credits pass through to shareholders in proportion to stock held."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1361(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1361(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1366"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group A / Entity type identification / Remembering & Understanding"
+  },
+  {
+   "id": "TCP-III-A-0002",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "A",
+   "group_name": "Formation and liquidation of business entities",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Entity selection/formation comparison",
+   "task": "Derive the tax implications of entity selection and formation decisions across multiple entity types and compare the results.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Rex Moon owns land with a basis of $100,000 and a fair market value of $400,000, subject to a $250,000 mortgage. He is deciding whether to contribute the land to a new C corporation for all of its stock or to a new partnership in which he will have a 50% interest and share the liabilities 50%, with the partnership assuming the mortgage. Ignoring other considerations, how much more gain does he recognize on the contribution to the corporation than on the contribution to the partnership?",
+   "exhibit": "",
+   "options": [
+    "$25,000",
+    "$125,000",
+    "$150,000",
+    "$175,000"
+   ],
+   "answer": "B",
+   "rule_line": "A corporation triggers gain when liabilities exceed basis; a partnership triggers gain only when the net deemed distribution from liability relief exceeds outside basis.",
+   "why": {
+    "A": "This is the gain on the partnership contribution alone, not the difference.",
+    "B": "Corporation: liabilities of $250,000 exceed basis of $100,000, so gain of $150,000. Partnership: relief of $250,000 less his 50% share ($125,000) is a deemed distribution of $125,000, which exceeds his basis of $100,000 by $25,000. Difference $125,000.",
+    "C": "This is the gain on the corporation contribution alone, not the difference.",
+    "D": "Adds the two gains instead of taking the difference."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "C": "trap",
+    "D": "calc"
+   },
+   "steps": [
+    "Corporation gain = 250,000 - 100,000 = $150,000",
+    "Partnership: relief = 250,000 - 50% x 250,000 = $125,000; gain = $125,000 - 100,000 = $25,000",
+    "Difference = $125,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(250000-100000)-((250000-0.5*250000)-100000)",
+      "fmt": "$",
+      "value": 125000
+     },
+     {
+      "expr": "250000-100000",
+      "fmt": "$",
+      "value": 150000
+     },
+     {
+      "expr": "0.5*250000",
+      "fmt": "$",
+      "value": 125000
+     },
+     {
+      "expr": "250000-0.5*250000",
+      "fmt": "$",
+      "value": 125000
+     },
+     {
+      "expr": "(250000-0.5*250000)-100000",
+      "fmt": "$",
+      "value": 25000
+     },
+     {
+      "expr": "(250000-100000)+((250000-0.5*250000)-100000)",
+      "fmt": "$",
+      "value": 175000
+     }
+    ],
+    "expr": "(250000-100000)-((250000-0.5*250000)-100000)",
+    "fmt": "$",
+    "value": 125000,
+    "distractors": {
+     "A": {
+      "expr": "(250000-0.5*250000)-100000",
+      "value": 25000
+     },
+     "C": {
+      "expr": "250000-100000",
+      "value": 150000
+     },
+     "D": {
+      "expr": "(250000-100000)+((250000-0.5*250000)-100000)",
+      "value": 175000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§357(c)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§752(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§731(a)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group A / Entity selection/formation comparison / Analysis"
+  },
+  {
+   "id": "TCP-III-A-0003",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "A",
+   "group_name": "Formation and liquidation of business entities",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Entity liquidation comparison",
+   "task": "Derive the tax implications of entity liquidation decisions across multiple entity types and compare the results.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Oak Ridge Holdings owns assets worth $1,000,000 with a total basis of $400,000, all producing long-term capital gain on sale. The owner's stock basis is $400,000. The owner liquidates the company and receives all the proceeds after paying tax. Compare a liquidation as a C corporation with a liquidation as an S corporation with no built-in gains tax. The corporate rate is 21%, and the owner's capital gain rate is 20%. Ignore state tax and the net investment income tax. How much more total federal income tax results from the C corporation liquidation?",
+   "exhibit": "",
+   "options": [
+    "$94,800",
+    "$100,800",
+    "$126,000",
+    "$220,800"
+   ],
+   "answer": "B",
+   "rule_line": "A C corporation liquidation is taxed at both corporate and shareholder levels; an S corporation liquidation is taxed once through pass-through gain.",
+   "why": {
+    "A": "Counts only the shareholder-level tax under the C corporation case.",
+    "B": "C corporation: corporate tax $126,000; the owner receives $874,000 and recognizes gain of $474,000 taxed at 20% ($94,800); total $220,800. S corporation: the $600,000 gain passes through at 20%, $120,000, and raises stock basis so the liquidation produces no further gain. Difference $100,800.",
+    "C": "Counts only the corporate-level tax and omits the shareholder tax and the pass-through tax in the S corporation case.",
+    "D": "This is the total tax under the C corporation liquidation, not the difference."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "trap"
+   },
+   "steps": [
+    "C: corporate tax = 21% x $600,000 = $126,000",
+    "C: shareholder gain = (1,000,000 - $126,000) - 400,000 = $474,000; tax = $94,800",
+    "S: tax = 20% x $600,000 = $120,000",
+    "Difference = $100,800"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(((1000000-400000)*0.21)+((1000000-((1000000-400000)*0.21))-400000)*0.2)-((1000000-400000)*0.2)",
+      "fmt": "$",
+      "value": 100800
+     },
+     {
+      "expr": "(1000000-400000)*0.21",
+      "fmt": "$",
+      "value": 126000
+     },
+     {
+      "expr": "1000000-((1000000-400000)*0.21)",
+      "fmt": "$",
+      "value": 874000
+     },
+     {
+      "expr": "(1000000-((1000000-400000)*0.21))-400000",
+      "fmt": "$",
+      "value": 474000
+     },
+     {
+      "expr": "((1000000-((1000000-400000)*0.21))-400000)*0.2",
+      "fmt": "$",
+      "value": 94800
+     },
+     {
+      "expr": "((1000000-400000)*0.21)+((1000000-((1000000-400000)*0.21))-400000)*0.2",
+      "fmt": "$",
+      "value": 220800
+     },
+     {
+      "expr": "1000000-400000",
+      "fmt": "$",
+      "value": 600000
+     },
+     {
+      "expr": "(1000000-400000)*0.2",
+      "fmt": "$",
+      "value": 120000
+     }
+    ],
+    "expr": "(((1000000-400000)*0.21)+((1000000-((1000000-400000)*0.21))-400000)*0.2)-((1000000-400000)*0.2)",
+    "fmt": "$",
+    "value": 100800,
+    "distractors": {
+     "A": {
+      "expr": "((1000000-((1000000-400000)*0.21))-400000)*0.2",
+      "value": 94800
+     },
+     "C": {
+      "expr": "(1000000-400000)*0.21",
+      "value": 126000
+     },
+     "D": {
+      "expr": "((1000000-400000)*0.21)+((1000000-((1000000-400000)*0.21))-400000)*0.2",
+      "value": 220800
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§336(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§331(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1366(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group A / Entity liquidation comparison / Analysis"
+  },
+  {
+   "id": "TCP-III-A-0004",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "A",
+   "group_name": "Formation and liquidation of business entities",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "NOL/capital loss carryover savings",
+   "task": "Calculate the potential tax savings from utilization of net operating and capital loss carryovers.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Cove Street Corp. has a net operating loss carryforward of $400,000 from years beginning after 2020. It projects 2027 taxable income of $350,000 before any net operating loss deduction, at a 21% rate. What tax saving does the carryforward produce in 2027?",
+   "exhibit": "",
+   "options": [
+    "$58,800",
+    "$67,200",
+    "$73,500",
+    "$84,000"
+   ],
+   "answer": "A",
+   "rule_line": "The NOL deduction for post-2020 losses is limited to 80% of taxable income computed before the deduction.",
+   "why": {
+    "A": "The deduction is limited to 80% of taxable income: 80% x $350,000 = $280,000, which is less than the carryforward. The saving is $280,000 x 21% = $58,800.",
+    "B": "Applies 80% to the size of the loss rather than to taxable income.",
+    "C": "Assumes the loss can offset all taxable income. The deduction is limited to 80% of taxable income.",
+    "D": "Assumes the entire loss is used in one year."
+   },
+   "wrong_tags": {
+    "B": "concept",
+    "C": "limit",
+    "D": "limit"
+   },
+   "steps": [
+    "Deduction = lesser of 400,000 and 80% x 350,000 = $280,000",
+    "Saving = $280,000 x 21% = $58,800"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0.8*350000*0.21",
+      "fmt": "$",
+      "value": 58800
+     },
+     {
+      "expr": "0.8*350000",
+      "fmt": "$",
+      "value": 280000
+     },
+     {
+      "expr": "0.8*400000*0.21",
+      "fmt": "$",
+      "value": 67200
+     },
+     {
+      "expr": "350000*0.21",
+      "fmt": "$",
+      "value": 73500
+     },
+     {
+      "expr": "400000*0.21",
+      "fmt": "$",
+      "value": 84000
+     }
+    ],
+    "expr": "0.8*350000*0.21",
+    "fmt": "$",
+    "value": 58800,
+    "distractors": {
+     "B": {
+      "expr": "0.8*400000*0.21",
+      "value": 67200
+     },
+     "C": {
+      "expr": "350000*0.21",
+      "value": 73500
+     },
+     "D": {
+      "expr": "400000*0.21",
+      "value": 84000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§172(a)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§172(b)(1)(A)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§11(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group A / NOL/capital loss carryover savings / Application"
+  },
+  {
+   "id": "TCP-III-A-0005",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "A",
+   "group_name": "Formation and liquidation of business entities",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "SALT optimization",
+   "task": "Identify opportunities to optimize state and local income tax rules in tax planning for business expansion given a specific scenario, including apportionment of income and location of business.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Pine Point Co. has $1,000,000 of taxable income and plans a new plant. In State M, which apportions by an equally weighted three-factor formula (property, payroll, sales), the plant would give the company 40% of its property, 40% of its payroll and 10% of its sales. In State N, which apportions by sales only, the company would have 10% of its sales. Both states tax apportioned income at 7%. By how much is the tax in State M more than the tax in State N?",
+   "exhibit": "",
+   "options": [
+    "$7,000",
+    "$14,000",
+    "$21,000",
+    "$28,000"
+   ],
+   "answer": "B",
+   "rule_line": "Apportionment formulas that weight property and payroll increase the tax of a company that builds facilities in the state; a sales-only formula does not.",
+   "why": {
+    "A": "This is the tax in State N, not the difference.",
+    "B": "State M's factor is (40% + 40% + 10%)/3 = 30%, so tax = $1,000,000 x 30% x 7% = $21,000. State N's factor is 10%, so tax = $7,000. The difference is $14,000.",
+    "C": "This is the tax in State M, not the difference.",
+    "D": "Uses only the property factor for State M instead of the average of the three factors."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "C": "trap",
+    "D": "concept"
+   },
+   "steps": [
+    "M factor = (0.40 + 0.40 + 0.10)/3 = 30%; tax = $21,000",
+    "N factor = 10%; tax = $7,000",
+    "Difference = $14,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(1000000*((0.4+0.4+0.1)/3)*0.07)-(1000000*0.1*0.07)",
+      "fmt": "$",
+      "value": 14000
+     },
+     {
+      "expr": "1000000*((0.4+0.4+0.1)/3)*0.07",
+      "fmt": "$",
+      "value": 21000
+     },
+     {
+      "expr": "1000000*0.1*0.07",
+      "fmt": "$",
+      "value": 7000
+     },
+     {
+      "expr": "1000000*0.4*0.07",
+      "fmt": "$",
+      "value": 28000
+     }
+    ],
+    "expr": "(1000000*((0.4+0.4+0.1)/3)*0.07)-(1000000*0.1*0.07)",
+    "fmt": "$",
+    "value": 14000,
+    "distractors": {
+     "A": {
+      "expr": "1000000*0.1*0.07",
+      "value": 7000
+     },
+     "C": {
+      "expr": "1000000*((0.4+0.4+0.1)/3)*0.07",
+      "value": 21000
+     },
+     "D": {
+      "expr": "1000000*0.4*0.07",
+      "value": 28000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "Multistate",
+     "ref": "Tax Compact art. IV"
+    },
+    {
+     "src": "IRC",
+     "ref": "§164(a)(3)"
+    },
+    {
+     "src": "Pub",
+     "ref": "535"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group A / SALT optimization / Analysis"
+  },
+  {
+   "id": "TCP-III-A-0006",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "A",
+   "group_name": "Formation and liquidation of business entities",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "SALT optimization",
+   "task": "Identify opportunities to optimize state and local income tax rules in tax planning for business expansion given a specific scenario, including apportionment of income and location of business.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Dee Parker is a partner in a partnership doing business in a state that offers an elective pass-through entity tax with a full credit to partners. Dee's federal deduction for state and local taxes is limited to $10,000 because of her income, and she already pays $20,000 of state and local property tax individually. The partnership could elect to pay $60,000 of state income tax at the entity level on Dee's share, deducting it in computing partnership income. Dee's federal rate is 37%. By how much does the election reduce Dee's federal income tax?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$3,700",
+    "$22,200",
+    "$60,000"
+   ],
+   "answer": "C",
+   "rule_line": "An entity-level state tax paid by a partnership is deducted in computing partnership income and is not subject to the individual limit on state and local taxes.",
+   "why": {
+    "A": "Assumes the entity-level payment is treated the same as an individual payment subject to the limit. The entity deduction is not subject to the individual limit.",
+    "B": "Applies the individual limit of $10,000. The entity-level tax is deducted in full in computing partnership income.",
+    "C": "Without the election, Dee's individual payment would be nondeductible because her deduction limit is already used by her property tax. With the election the partnership deducts $60,000 in computing income, reducing her share of income by $60,000 and her federal tax by $60,000 x 37% = $22,200.",
+    "D": "Reports the amount of the tax deducted rather than the tax it saves."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "limit",
+    "D": "trap"
+   },
+   "steps": [
+    "Entity-level deduction = 60,000",
+    "Federal saving = 60,000 x 37% = $22,200"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "60000*0.37",
+      "fmt": "$",
+      "value": 22200
+     },
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "10000*0.37",
+      "fmt": "$",
+      "value": 3700
+     },
+     {
+      "expr": "60000",
+      "fmt": "$",
+      "value": 60000
+     }
+    ],
+    "expr": "60000*0.37",
+    "fmt": "$",
+    "value": 22200,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "10000*0.37",
+      "value": 3700
+     },
+     "D": {
+      "expr": "60000",
+      "value": 60000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "Notice",
+     "ref": "2020-75"
+    },
+    {
+     "src": "IRC",
+     "ref": "§164(b)(6)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§703(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "Individual SALT limit (with income-based reduction) is supplied in the stem; P.L. 119-21 §70120 set the higher limit for tax years after 2024. The elective entity-level tax deduction is unchanged by the Act.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group A / SALT optimization / Analysis"
+  },
+  {
+   "id": "TCP-III-A-0007",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "A",
+   "group_name": "Formation and liquidation of business entities",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "NOL/capital loss carryover savings",
+   "task": "Calculate the potential tax savings from utilization of net operating and capital loss carryovers.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 1,
+   "calc": true,
+   "stem": "Ridge Top Corp. has a net capital loss carryover of $90,000 from 2026. It expects to recognize a $60,000 net capital gain in 2027 and has no other capital transactions. The corporate rate is 21%. What tax saving does the carryover produce in 2027?",
+   "exhibit": "",
+   "options": [
+    "$12,600",
+    "$18,900",
+    "$31,500",
+    "$60,000"
+   ],
+   "answer": "A",
+   "rule_line": "A corporation's capital loss carryover reduces tax only to the extent of capital gains in the carryover year.",
+   "why": {
+    "A": "A corporate capital loss carryover offsets only capital gains. It absorbs the $60,000 gain, saving 21% x $60,000 = $12,600; the remaining $30,000 carries forward.",
+    "B": "Assumes the entire carryover can be used in 2027. It can offset only the capital gain available.",
+    "C": "Adds the loss and the gain together.",
+    "D": "Reports the gain absorbed rather than the tax saved."
+   },
+   "wrong_tags": {
+    "B": "limit",
+    "C": "calc",
+    "D": "trap"
+   },
+   "steps": [
+    "Loss absorbed = lesser of 90,000 and 60,000 = 60,000",
+    "Saving = 60,000 x 21% = $12,600"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "60000*0.21",
+      "fmt": "$",
+      "value": 12600
+     },
+     {
+      "expr": "90000-60000",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "90000*0.21",
+      "fmt": "$",
+      "value": 18900
+     },
+     {
+      "expr": "60000",
+      "fmt": "$",
+      "value": 60000
+     },
+     {
+      "expr": "(90000+60000)*0.21",
+      "fmt": "$",
+      "value": 31500
+     }
+    ],
+    "expr": "60000*0.21",
+    "fmt": "$",
+    "value": 12600,
+    "distractors": {
+     "B": {
+      "expr": "90000*0.21",
+      "value": 18900
+     },
+     "C": {
+      "expr": "(90000+60000)*0.21",
+      "value": 31500
+     },
+     "D": {
+      "expr": "60000",
+      "value": 60000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1212(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1211(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§11(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group A / NOL/capital loss carryover savings / Application"
+  },
+  {
+   "id": "TCP-III-A-0008",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "A",
+   "group_name": "Formation and liquidation of business entities",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Entity selection/formation comparison",
+   "task": "Derive the tax implications of entity selection and formation decisions across multiple entity types and compare the results.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Lark Hill's owner expects the business to earn $300,000 a year before owner compensation and distributes all after-tax profits. If the business is a C corporation, it pays 21% tax and the owner pays 23.8% (including the net investment income tax) on the dividends. If it is an S corporation, the owner is taxed at 37% on the income after a 20% qualified business income deduction, which is not limited by wages or other rules. Ignore payroll taxes and state taxes. How much less total federal income tax results from the S corporation?",
+   "exhibit": "",
+   "options": [
+    "$30,606",
+    "$56,406",
+    "$88,800",
+    "$119,406"
+   ],
+   "answer": "A",
+   "rule_line": "C corporation profits are taxed twice; pass-through profits are taxed once and may qualify for the 20% qualified business income deduction.",
+   "why": {
+    "A": "C corporation: $300,000 x 21% = $63,000 plus 23.8% of the $237,000 distributed ($56,406) = $119,406. S corporation: taxable income is $240,000 after the deduction, taxed at 37% = $88,800. The difference is $30,606.",
+    "B": "This is only the shareholder-level tax on dividends.",
+    "C": "This is the tax on the S corporation owner, not the difference.",
+    "D": "This is the total tax under the C corporation, not the difference."
+   },
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "trap"
+   },
+   "steps": [
+    "C: corporate tax $63,000; dividend tax $56,406; total $119,406",
+    "S: (300,000 - 0.2 x 300,000) x 37% = $88,800",
+    "Difference = $30,606"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(300000*0.21+(300000-300000*0.21)*0.238)-((300000-0.2*300000)*0.37)",
+      "fmt": "$",
+      "value": 30606
+     },
+     {
+      "expr": "300000*0.21",
+      "fmt": "$",
+      "value": 63000
+     },
+     {
+      "expr": "300000-300000*0.21",
+      "fmt": "$",
+      "value": 237000
+     },
+     {
+      "expr": "(300000-300000*0.21)*0.238",
+      "fmt": "$",
+      "value": 56406
+     },
+     {
+      "expr": "300000*0.21+(300000-300000*0.21)*0.238",
+      "fmt": "$",
+      "value": 119406
+     },
+     {
+      "expr": "300000-0.2*300000",
+      "fmt": "$",
+      "value": 240000
+     },
+     {
+      "expr": "(300000-0.2*300000)*0.37",
+      "fmt": "$",
+      "value": 88800
+     }
+    ],
+    "expr": "(300000*0.21+(300000-300000*0.21)*0.238)-((300000-0.2*300000)*0.37)",
+    "fmt": "$",
+    "value": 30606,
+    "distractors": {
+     "B": {
+      "expr": "(300000-300000*0.21)*0.238",
+      "value": 56406
+     },
+     "C": {
+      "expr": "(300000-0.2*300000)*0.37",
+      "value": 88800
+     },
+     "D": {
+      "expr": "300000*0.21+(300000-300000*0.21)*0.238",
+      "value": 119406
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§11(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§199A(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(h)(11)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "The 20% qualified business income deduction was made permanent by P.L. 119-21 for tax years beginning after 2025, so a 2026 computation depends on that Act.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group A / Entity selection/formation comparison / Analysis"
+  },
+  {
+   "id": "TCP-III-B-0001",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "B",
+   "group_name": "Tax planning for C corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Timing of income/expense for planning",
+   "task": "Calculate the effect of changing tax rates and legislation on the timing of income and expense items for tax planning purposes given a specific scenario.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Assume for this question that Congress has enacted a corporate income tax rate of 25% for 2027, while the 2026 rate is 21%. Delta Street Corp., an accrual-basis C corporation, can choose to recognize $400,000 of income in 2026 by completing a sale before year end instead of in 2027, and can delay $150,000 of deductible expenses from December 2026 into January 2027. Ignoring the time value of money, what is the total federal tax effect of doing both, compared with taking no action?",
+   "exhibit": "",
+   "options": [
+    "$6,000",
+    "$10,000",
+    "$16,000",
+    "$22,000"
+   ],
+   "answer": "D",
+   "rule_line": "When rates will rise, accelerate income into the lower-rate year and delay deductions into the higher-rate year.",
+   "why": {
+    "A": "Counts only the delayed deductions.",
+    "B": "Subtracts the deduction effect. Moving deductions to the higher-rate year adds to the saving.",
+    "C": "Counts only the accelerated income.",
+    "D": "Recognizing $400,000 of income in 2026 at 21% instead of 2027 at 25% saves $16,000. Delaying $150,000 of deductions into 2027, when each dollar of deduction is worth 25% instead of 21%, saves $6,000. Total $22,000."
+   },
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "C": "calc"
+   },
+   "steps": [
+    "Income: 400,000 x (25% - 21%) = $16,000",
+    "Deductions: 150,000 x (25% - 21%) = $6,000",
+    "Total = $22,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "400000*(0.25-0.21)+150000*(0.25-0.21)",
+      "fmt": "$",
+      "value": 22000
+     },
+     {
+      "expr": "400000*(0.25-0.21)",
+      "fmt": "$",
+      "value": 16000
+     },
+     {
+      "expr": "150000*(0.25-0.21)",
+      "fmt": "$",
+      "value": 6000
+     },
+     {
+      "expr": "400000*(0.25-0.21)-150000*(0.25-0.21)",
+      "fmt": "$",
+      "value": 10000
+     }
+    ],
+    "expr": "400000*(0.25-0.21)+150000*(0.25-0.21)",
+    "fmt": "$",
+    "value": 22000,
+    "distractors": {
+     "A": {
+      "expr": "150000*(0.25-0.21)",
+      "value": 6000
+     },
+     "B": {
+      "expr": "400000*(0.25-0.21)-150000*(0.25-0.21)",
+      "value": 10000
+     },
+     "C": {
+      "expr": "400000*(0.25-0.21)",
+      "value": 16000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§451"
+    },
+    {
+     "src": "IRC",
+     "ref": "§461"
+    },
+    {
+     "src": "IRC",
+     "ref": "§11(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": false,
+    "note": "풀이자 오답(세율 오를 때 공제 이연은 절감). 작성자 정답 D 가 맞음"
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group B / Timing of income/expense for planning / Analysis"
+  },
+  {
+   "id": "TCP-III-B-0002",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "B",
+   "group_name": "Tax planning for C corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "C corp estimated tax",
+   "task": "Calculate estimated tax payments for a C corporation in order to avoid underpayment penalties given a specific planning scenario.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Bramble Corp., a calendar-year C corporation, had taxable income of $2,000,000 in 2024 and total tax of $420,000 for 2025. It expects total tax of $630,000 for 2026. What is the smallest first installment of 2026 estimated tax (due April 15) that avoids the underpayment penalty, without using the annualized income installment method?",
+   "exhibit": "",
+   "options": [
+    "$105,000",
+    "$141,750",
+    "$157,500",
+    "$420,000"
+   ],
+   "answer": "A",
+   "rule_line": "A large corporation may base only its first installment on prior-year tax; the rest must be based on current-year tax.",
+   "why": {
+    "A": "Bramble is a large corporation because its taxable income was at least $1,000,000 in a preceding year, so it may use 100% of prior-year tax only for the first installment: 25% x $420,000 = $105,000. Later installments must catch up to 100% of current-year tax.",
+    "B": "Uses 90% of current-year tax. The required annual payment for a corporation is 100% of current-year tax.",
+    "C": "Uses 100% of current-year tax for the first installment. A large corporation may use prior-year tax for that installment.",
+    "D": "Uses the whole prior-year tax as the first installment instead of one quarter of it."
+   },
+   "wrong_tags": {
+    "B": "limit",
+    "C": "concept",
+    "D": "calc"
+   },
+   "steps": [
+    "Large corporation (taxable income of at least $1,000,000 in a preceding year)",
+    "First installment = 25% x 420,000 = $105,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0.25*420000",
+      "fmt": "$",
+      "value": 105000
+     },
+     {
+      "expr": "0.25*0.9*630000",
+      "fmt": "$",
+      "value": 141750
+     },
+     {
+      "expr": "0.25*630000",
+      "fmt": "$",
+      "value": 157500
+     },
+     {
+      "expr": "420000",
+      "fmt": "$",
+      "value": 420000
+     }
+    ],
+    "expr": "0.25*420000",
+    "fmt": "$",
+    "value": 105000,
+    "distractors": {
+     "B": {
+      "expr": "0.25*0.9*630000",
+      "value": 141750
+     },
+     "C": {
+      "expr": "0.25*630000",
+      "value": 157500
+     },
+     "D": {
+      "expr": "420000",
+      "value": 420000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§6655(d)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6655(d)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6655(g)(2)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group B / C corp estimated tax / Application"
+  },
+  {
+   "id": "TCP-III-B-0003",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "B",
+   "group_name": "Tax planning for C corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Proposed formation transaction",
+   "task": "Derive the tax implications to a shareholder and C corporation for a proposed transaction after formation of the corporation, including noncash property contributions and noncash property distributions.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Kira Volkov plans to transfer land with a basis of $100,000 and a fair market value of $400,000, subject to a $150,000 mortgage, to a new corporation in exchange for stock worth $200,000 and a $50,000 note from the corporation. The corporation will assume the mortgage. She will own all of the stock. What will the corporation's basis in the land be?",
+   "exhibit": "",
+   "options": [
+    "$100,000",
+    "$150,000",
+    "$200,000",
+    "$400,000"
+   ],
+   "answer": "C",
+   "rule_line": "In a section 351 exchange with boot and liabilities in excess of basis, the corporation's basis equals the transferor's basis plus gain recognized.",
+   "why": {
+    "A": "Uses only her basis. The corporation adds the gain she recognizes.",
+    "B": "Adds only the note as recognized gain and misses the gain from liabilities in excess of basis.",
+    "C": "Kira recognizes gain equal to the boot ($50,000 note) plus liabilities assumed in excess of basis ($150,000 - $100,000 = $50,000): $100,000. The corporation's basis is her basis plus the gain recognized: $100,000 + $100,000 = $200,000.",
+    "D": "Uses fair market value, which applies only in a taxable exchange."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   },
+   "steps": [
+    "Boot = 50,000",
+    "Liabilities over basis = 150,000 - 100,000 = $50,000",
+    "Gain recognized = $100,000; corporation's basis = 100,000 + $100,000 = $200,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "100000+(50000+max(150000-100000,0))",
+      "fmt": "$",
+      "value": 200000
+     },
+     {
+      "expr": "150000-100000",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "50000+max(150000-100000,0)",
+      "fmt": "$",
+      "value": 100000
+     },
+     {
+      "expr": "100000",
+      "fmt": "$",
+      "value": 100000
+     },
+     {
+      "expr": "100000+50000",
+      "fmt": "$",
+      "value": 150000
+     },
+     {
+      "expr": "400000",
+      "fmt": "$",
+      "value": 400000
+     }
+    ],
+    "expr": "100000+(50000+max(150000-100000,0))",
+    "fmt": "$",
+    "value": 200000,
+    "distractors": {
+     "A": {
+      "expr": "100000",
+      "value": 100000
+     },
+     "B": {
+      "expr": "100000+50000",
+      "value": 150000
+     },
+     "D": {
+      "expr": "400000",
+      "value": 400000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§351(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§357(c)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§362(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group B / Proposed formation transaction / Analysis"
+  },
+  {
+   "id": "TCP-III-B-0004",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "B",
+   "group_name": "Tax planning for C corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Timing of income/expense for planning",
+   "task": "Calculate the effect of changing tax rates and legislation on the timing of income and expense items for tax planning purposes given a specific scenario.",
+   "task_skill": "Analysis",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Copper Field Corp., an accrual-basis calendar-year C corporation, has a fixed obligation for year-end bonuses at December 31, 2026, and wants deductions in 2026. Which bonus is deductible in 2026?",
+   "exhibit": "",
+   "options": [
+    "A bonus owed to non-owner employees on December 31 and paid on March 1, 2027",
+    "A bonus owed to the corporation's 60% shareholder-employee on December 31 and paid on March 1, 2027",
+    "A bonus owed to non-owner employees on December 31 and paid on April 20, 2027",
+    "A bonus payable to non-owner employees only if they remain employed on the payment date in 2027"
+   ],
+   "answer": "A",
+   "rule_line": "An accrual-basis corporation deducts a fixed bonus liability to non-owner employees in the year accrued if paid within 2 1/2 months; owner-related amounts wait for payment.",
+   "why": {
+    "A": "An accrued compensation liability that is fixed at year end and paid within 2 1/2 months after year end is deductible in the year accrued.",
+    "B": "Amounts owed to a more-than-50% owner are deductible only when paid, because of the related-party rules.",
+    "C": "Payment after the 2 1/2 month period defers the deduction to the year of payment.",
+    "D": "A liability that depends on later employment is not fixed at year end."
+   },
+   "wrong_tags": {
+    "B": "concept",
+    "C": "limit",
+    "D": "concept"
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§404(a)(5)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§267(a)(2)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.404(b)-1T"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group B / Timing of income/expense for planning / Application"
+  },
+  {
+   "id": "TCP-III-B-0005",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "B",
+   "group_name": "Tax planning for C corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "C corp estimated tax",
+   "task": "Calculate estimated tax payments for a C corporation in order to avoid underpayment penalties given a specific planning scenario.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Sable Hollow Corp., a calendar-year C corporation, has never had taxable income above $1,000,000. Its 2025 tax was $80,000 and it expects a 2026 tax of $200,000. It wants to make four equal installments that are just enough to avoid the underpayment penalty and does not use the annualized method. What is each installment?",
+   "exhibit": "",
+   "options": [
+    "$20,000",
+    "$45,000",
+    "$50,000",
+    "$80,000"
+   ],
+   "answer": "A",
+   "rule_line": "A corporation that is not large may base its installments on 100% of prior-year tax if that is less than 100% of current-year tax.",
+   "why": {
+    "A": "The required annual payment is the lesser of 100% of current-year tax ($200,000) or 100% of prior-year tax ($80,000), so $80,000. Four equal installments are $20,000 each.",
+    "B": "Uses 90% of current-year tax. The corporate rate is 100%, and prior-year tax is smaller anyway.",
+    "C": "Uses 100% of current-year tax, which is more than needed.",
+    "D": "Treats the whole prior-year tax as one installment."
+   },
+   "wrong_tags": {
+    "B": "limit",
+    "C": "concept",
+    "D": "calc"
+   },
+   "steps": [
+    "Required annual payment = lesser of 200,000 and 80,000 = 80,000",
+    "Each installment = 80,000 / 4 = $20,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "min(200000,80000)/4",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "0.9*200000/4",
+      "fmt": "$",
+      "value": 45000
+     },
+     {
+      "expr": "200000/4",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "80000",
+      "fmt": "$",
+      "value": 80000
+     },
+     {
+      "expr": "80000/4",
+      "fmt": "$",
+      "value": 20000
+     }
+    ],
+    "expr": "min(200000,80000)/4",
+    "fmt": "$",
+    "value": 20000,
+    "distractors": {
+     "B": {
+      "expr": "0.9*200000/4",
+      "value": 45000
+     },
+     "C": {
+      "expr": "200000/4",
+      "value": 50000
+     },
+     "D": {
+      "expr": "80000",
+      "value": 80000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§6655(d)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6655(d)(2)"
+    },
+    {
+     "src": "Form",
+     "ref": "1120-W instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group B / C corp estimated tax / Application"
+  },
+  {
+   "id": "TCP-III-B-0006",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "B",
+   "group_name": "Tax planning for C corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Proposed formation transaction",
+   "task": "Derive the tax implications to a shareholder and C corporation for a proposed transaction after formation of the corporation, including noncash property contributions and noncash property distributions.",
+   "task_skill": "Analysis",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Dana Wolfe transfers equipment with an adjusted basis of $200,000 and a fair market value of $120,000 to a newly formed corporation in exchange for all of its stock. No election is made to reduce her stock basis. What is Dana's basis in the stock?",
+   "exhibit": "",
+   "options": [
+    "$80,000",
+    "$120,000",
+    "$200,000",
+    "$320,000"
+   ],
+   "answer": "C",
+   "rule_line": "When a transferor contributes built-in loss property in a section 351 exchange, the corporation's basis is limited to fair market value unless the transferor elects to reduce stock basis instead.",
+   "why": {
+    "A": "Uses the built-in loss amount rather than a basis.",
+    "B": "Uses fair market value for her stock basis. Her stock basis carries over; it is the corporation's asset basis that is limited to value.",
+    "C": "The transfer qualifies under the control rules, so her stock basis is her carryover basis, $200,000. Because the property has a net built-in loss, the corporation's basis in the equipment is reduced to fair market value ($120,000), so the loss is preserved only in the shareholder's stock basis.",
+    "D": "Adds the basis and the fair market value."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "D": "calc"
+   },
+   "steps": [
+    "Stock basis = carryover basis = 200,000",
+    "Corporation's basis = lesser of 200,000 and 120,000 = 120,000 (no election)"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "200000",
+      "fmt": "$",
+      "value": 200000
+     },
+     {
+      "expr": "120000",
+      "fmt": "$",
+      "value": 120000
+     },
+     {
+      "expr": "200000-120000",
+      "fmt": "$",
+      "value": 80000
+     },
+     {
+      "expr": "200000+120000",
+      "fmt": "$",
+      "value": 320000
+     }
+    ],
+    "expr": "200000",
+    "fmt": "$",
+    "value": 200000,
+    "distractors": {
+     "A": {
+      "expr": "200000-120000",
+      "value": 80000
+     },
+     "B": {
+      "expr": "120000",
+      "value": 120000
+     },
+     "D": {
+      "expr": "200000+120000",
+      "value": 320000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§362(e)(2)(A)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§358(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§351(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group B / Proposed formation transaction / Application"
+  },
+  {
+   "id": "TCP-III-C-0001",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "C",
+   "group_name": "Tax planning for S corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Built-in gains tax planning",
+   "task": "Calculate the projected amount subject to built-in gains for a proposed disposition of an asset in order to minimize the built-in gains tax due.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Umber Creek, Inc., a calendar-year corporation, was a C corporation until it elected S status effective January 1, 2022. Assume its taxable income (as if it were a C corporation) is more than large enough that the taxable income limit does not apply, and that its net unrealized built-in gain does not limit the tax. In 2026 it sells a building for $520,000. On January 1, 2022 the building was worth $400,000 and its adjusted basis was $150,000, which is still its basis. The corporate rate is 21%. What is the corporation's built-in gains tax on the sale?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$25,200",
+    "$52,500",
+    "$77,700"
+   ],
+   "answer": "C",
+   "rule_line": "Built-in gains tax applies at the corporate rate to gain recognized during the five-year recognition period, limited to the built-in gain at conversion.",
+   "why": {
+    "A": "Assumes the recognition period has ended. The period is five years from the first S corporation year, which includes 2026.",
+    "B": "Taxes only the post-conversion appreciation, which is the amount that is not built-in gain.",
+    "C": "The 2026 sale is in the five-year recognition period. The gain is $520,000 - $150,000 = $370,000, but only the built-in gain at conversion, $400,000 - $150,000 = $250,000, is taxed at 21%: $52,500.",
+    "D": "Taxes the whole gain. Appreciation after conversion is not built-in gain."
+   },
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "D": "concept"
+   },
+   "steps": [
+    "Built-in gain at conversion = 400,000 - 150,000 = $250,000",
+    "Recognized built-in gain = lesser of total gain $370,000 and $250,000",
+    "Tax = 21% x $250,000 = $52,500"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(400000-150000)*0.21",
+      "fmt": "$",
+      "value": 52500
+     },
+     {
+      "expr": "520000-150000",
+      "fmt": "$",
+      "value": 370000
+     },
+     {
+      "expr": "400000-150000",
+      "fmt": "$",
+      "value": 250000
+     },
+     {
+      "expr": "(520000-150000)*0.21",
+      "fmt": "$",
+      "value": 77700
+     },
+     {
+      "expr": "(520000-400000)*0.21",
+      "fmt": "$",
+      "value": 25200
+     },
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     }
+    ],
+    "expr": "(400000-150000)*0.21",
+    "fmt": "$",
+    "value": 52500,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "(520000-400000)*0.21",
+      "value": 25200
+     },
+     "D": {
+      "expr": "(520000-150000)*0.21",
+      "value": 77700
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1374(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1374(d)(7)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1374(b)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group C / Built-in gains tax planning / Application"
+  },
+  {
+   "id": "TCP-III-C-0002",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "C",
+   "group_name": "Tax planning for S corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Built-in gains tax planning",
+   "task": "Calculate the projected amount subject to built-in gains for a proposed disposition of an asset in order to minimize the built-in gains tax due.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Jasper Lane, Inc. converted from a C corporation to an S corporation on January 1, 2022. In December 2026 it plans to sell an asset with $180,000 of built-in gain. Its 2026 taxable income, computed as if it were a C corporation and including this sale, is $120,000. The corporate rate is 21% and its net unrealized built-in gain at conversion is not a limit. What built-in gains tax does the sale produce?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$12,600",
+    "$25,200",
+    "$37,800"
+   ],
+   "answer": "C",
+   "rule_line": "Net recognized built-in gain is limited to taxable income computed as if the corporation were a C corporation.",
+   "why": {
+    "A": "Assumes the recognition period has ended. December 2026 is still within the five-year period.",
+    "B": "Applies the tax to the built-in gain in excess of taxable income.",
+    "C": "The net recognized built-in gain is limited to the corporation's taxable income computed as if it were a C corporation. The lesser of $180,000 and $120,000 is $120,000; the tax is 21% x $120,000 = $25,200.",
+    "D": "Ignores the taxable income limit on net recognized built-in gain."
+   },
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "D": "limit"
+   },
+   "steps": [
+    "Net recognized built-in gain = lesser of 180,000 and 120,000 = $120,000",
+    "Tax = 21% x $120,000 = $25,200"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "min(180000,120000)*0.21",
+      "fmt": "$",
+      "value": 25200
+     },
+     {
+      "expr": "180000*0.21",
+      "fmt": "$",
+      "value": 37800
+     },
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "(180000-120000)*0.21",
+      "fmt": "$",
+      "value": 12600
+     },
+     {
+      "expr": "min(180000,120000)",
+      "fmt": "$",
+      "value": 120000
+     }
+    ],
+    "expr": "min(180000,120000)*0.21",
+    "fmt": "$",
+    "value": 25200,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "(180000-120000)*0.21",
+      "value": 12600
+     },
+     "D": {
+      "expr": "180000*0.21",
+      "value": 37800
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1374(d)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1374(d)(7)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1374(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group C / Built-in gains tax planning / Application"
+  },
+  {
+   "id": "TCP-III-C-0003",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "C",
+   "group_name": "Tax planning for S corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Terminating S election",
+   "task": "Identify the implications of terminating an S corporation election given a specific planning scenario.",
+   "task_skill": "Analysis",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Vantage Mills, Inc., an S corporation, earned ordinary income of $730,000 evenly through 2026. On October 1, 2026, an entity that is not an eligible shareholder acquired shares, terminating the S election on that date. The corporation makes no election to close its books, and there are 92 days in the C corporation short year (October 1 through December 31). The corporate rate is 21%. What is the corporation's tax for the C corporation short year?",
+   "exhibit": "",
+   "options": [
+    "$38,640",
+    "$76,650",
+    "$114,660",
+    "$153,300"
+   ],
+   "answer": "A",
+   "rule_line": "When an S election terminates mid-year, income is allocated between the S and C short years by days unless the corporation elects to close its books.",
+   "why": {
+    "A": "Without a closing election the year's income is allocated by days: $730,000 x 92/365 = $184,000 to the C short year. Tax = 21% x $184,000 = $38,640.",
+    "B": "Uses half of the year rather than the actual days.",
+    "C": "Taxes the S short year's share, which stays in the S corporation year.",
+    "D": "Taxes the whole year as C corporation income. Only the days after termination are in the C short year."
+   },
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "concept"
+   },
+   "steps": [
+    "C short-year days = 92; income allocated = 730,000 x 92/365 = $184,000",
+    "Tax = 21% x $184,000 = $38,640"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "730000*92/365*0.21",
+      "fmt": "$",
+      "value": 38640
+     },
+     {
+      "expr": "730000*92/365",
+      "fmt": "$",
+      "value": 184000
+     },
+     {
+      "expr": "730000*0.21",
+      "fmt": "$",
+      "value": 153300
+     },
+     {
+      "expr": "730000*273/365*0.21",
+      "fmt": "$",
+      "value": 114660
+     },
+     {
+      "expr": "730000/2*0.21",
+      "fmt": "$",
+      "value": 76650
+     }
+    ],
+    "expr": "730000*92/365*0.21",
+    "fmt": "$",
+    "value": 38640,
+    "distractors": {
+     "B": {
+      "expr": "730000/2*0.21",
+      "value": 76650
+     },
+     "C": {
+      "expr": "730000*273/365*0.21",
+      "value": 114660
+     },
+     "D": {
+      "expr": "730000*0.21",
+      "value": 153300
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1362(e)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1362(e)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§11(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group C / Terminating S election / Application"
+  },
+  {
+   "id": "TCP-III-C-0004",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "C",
+   "group_name": "Tax planning for S corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Terminating S election",
+   "task": "Identify the implications of terminating an S corporation election given a specific planning scenario.",
+   "task_skill": "Analysis",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Halden Print, Inc. has been an S corporation for many years. On March 3, 2026, a shareholder transferred shares to an ineligible shareholder, which terminated the S election, and the corporation does not qualify for or seek inadvertent termination relief. Which statement about the consequences is correct?",
+   "exhibit": "",
+   "options": [
+    "The corporation may immediately re-elect S status by filing Form 2553 for the same year",
+    "It becomes a C corporation on March 3 and cannot re-elect S status for five years without IRS consent",
+    "The election terminates at the beginning of 2026, so the corporation is a C corporation for the whole year",
+    "The shareholders recognize gain on their stock as if the corporation liquidated when it becomes a C corporation"
+   ],
+   "answer": "B",
+   "rule_line": "An S election terminates on the day of the terminating event; the corporation generally waits five years to re-elect unless the IRS consents.",
+   "why": {
+    "A": "There is a five-year waiting period after a termination, absent IRS consent.",
+    "B": "A termination takes effect on the date of the terminating event, and a corporation whose election terminated must wait five years to re-elect unless the IRS consents.",
+    "C": "The termination is effective on the date of the terminating event, so the year is split.",
+    "D": "A termination by an ineligible shareholder is not a liquidation; the corporation continues as a C corporation."
+   },
+   "wrong_tags": {
+    "A": "limit",
+    "C": "concept",
+    "D": "concept"
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1362(d)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1362(g)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1362(f)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group C / Terminating S election / Application"
+  },
+  {
+   "id": "TCP-III-C-0005",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "C",
+   "group_name": "Tax planning for S corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "S corp formation/distribution/loan planning",
+   "task": "Derive the tax implications to a shareholder and S corporation for a proposed transaction after formation of the corporation, including noncash property contributions and distributions, and loans and repayment of loans from and to a shareholder.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Zack Moore lent his S corporation $60,000 under a written note. Earlier losses reduced his basis in the note to $20,000. During 2026 the corporation had net income items that produce a $15,000 net increase in his basis, and at year end it repays $30,000 of the note. What gain does Zack recognize on the repayment?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$12,500",
+    "$20,000",
+    "$30,000"
+   ],
+   "answer": "B",
+   "rule_line": "Repayment of a shareholder note with reduced basis produces gain in proportion to the basis shortfall, after basis is restored by the year's net increase.",
+   "why": {
+    "A": "Assumes the repayment is less than the restored basis, so no gain arises. Gain arises in proportion to the basis shortfall relative to face.",
+    "B": "The net increase for the year first restores debt basis: $20,000 + $15,000 = $35,000. The note is now $25,000 below face, and that shortfall is the share of each repayment that is gain: $30,000 x ($25,000/$60,000) = $12,500.",
+    "C": "Ignores the restoration of debt basis from the year's net increase.",
+    "D": "Treats the entire repayment as gain instead of only the proportion above basis."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "steps": [
+    "Restored basis = 20,000 + 15,000 = $35,000",
+    "Gain fraction = (60,000 - $35,000) / 60,000",
+    "Gain = 30,000 x that fraction = $12,500"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "30000*(60000-(20000+15000))/60000",
+      "fmt": "$",
+      "value": 12500
+     },
+     {
+      "expr": "20000+15000",
+      "fmt": "$",
+      "value": 35000
+     },
+     {
+      "expr": "60000-(20000+15000)",
+      "fmt": "$",
+      "value": 25000
+     },
+     {
+      "expr": "30000*(60000-20000)/60000",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "30000",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     }
+    ],
+    "expr": "30000*(60000-(20000+15000))/60000",
+    "fmt": "$",
+    "value": 12500,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "C": {
+      "expr": "30000*(60000-20000)/60000",
+      "value": 20000
+     },
+     "D": {
+      "expr": "30000",
+      "value": 30000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1367(b)(2)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1367-2(c)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1367-2(e)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group C / S corp formation/distribution/loan planning / Analysis"
+  },
+  {
+   "id": "TCP-III-C-0006",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "C",
+   "group_name": "Tax planning for S corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "AEP vs AAA distribution election",
+   "task": "Derive the tax implications of a contemplated election to treat distributions to shareholders as being made from an S corporation's accumulated earnings and profits (AEP) and not from the accumulated adjustments account (AAA).",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Fox Run, Inc. is an S corporation with an accumulated adjustments account of $40,000 and accumulated earnings and profits of $100,000. It will distribute $100,000 to its sole shareholder in 2026. Without any election, distributions come first from the accumulated adjustments account and then from accumulated earnings and profits. The corporation and shareholder consider electing to treat the distribution as coming first from accumulated earnings and profits. Dividends are taxed at 23.8% including the net investment income tax. How much additional tax does the election cause in 2026?",
+   "exhibit": "",
+   "options": [
+    "$9,520",
+    "$14,280",
+    "$19,040",
+    "$23,800"
+   ],
+   "answer": "A",
+   "rule_line": "Electing to distribute accumulated E&P first converts what would be a tax-free return of basis into a dividend, but eliminates E&P.",
+   "why": {
+    "A": "Without the election, $40,000 is a tax-free return of basis and $60,000 is a dividend, taxed at 23.8% = $14,280. With the election the whole $100,000 is a dividend, $23,800. The additional tax is $9,520.",
+    "B": "This is the tax without the election, not the additional tax.",
+    "C": "Doubles the tax on the accumulated adjustments account amount.",
+    "D": "This is the tax with the election, not the additional tax."
+   },
+   "wrong_tags": {
+    "B": "trap",
+    "C": "calc",
+    "D": "trap"
+   },
+   "steps": [
+    "No election: dividend = 100,000 - 40,000 = $60,000; tax $14,280",
+    "Election: dividend = 100,000; tax $23,800",
+    "Additional tax = $9,520"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(100000-max(100000-40000,0))*0.238",
+      "fmt": "$",
+      "value": 9520
+     },
+     {
+      "expr": "100000-40000",
+      "fmt": "$",
+      "value": 60000
+     },
+     {
+      "expr": "(100000-40000)*0.238",
+      "fmt": "$",
+      "value": 14280
+     },
+     {
+      "expr": "100000*0.238",
+      "fmt": "$",
+      "value": 23800
+     },
+     {
+      "expr": "40000*0.238*2",
+      "fmt": "$",
+      "value": 19040
+     }
+    ],
+    "expr": "(100000-max(100000-40000,0))*0.238",
+    "fmt": "$",
+    "value": 9520,
+    "distractors": {
+     "B": {
+      "expr": "(100000-40000)*0.238",
+      "value": 14280
+     },
+     "C": {
+      "expr": "40000*0.238*2",
+      "value": 19040
+     },
+     "D": {
+      "expr": "100000*0.238",
+      "value": 23800
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1368(e)(3)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1368(c)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(h)(11)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group C / AEP vs AAA distribution election / Analysis"
+  },
+  {
+   "id": "TCP-III-C-0007",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "C",
+   "group_name": "Tax planning for S corporations",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "S corp formation/distribution/loan planning",
+   "task": "Derive the tax implications to a shareholder and S corporation for a proposed transaction after formation of the corporation, including noncash property contributions and distributions, and loans and repayment of loans from and to a shareholder.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Gale Force Inc. is an S corporation. Its sole shareholder is selling all of the stock for a total gain of $500,000, which equals the gain that the corporation would realize on a sale of its assets. If a joint election is made to treat the sale as a sale of assets followed by a liquidation, $100,000 of the gain is depreciation recapture taxed as ordinary income at 37% and $400,000 is capital gain taxed at 20%. Without the election the whole gain is capital gain at 20%. Ignore all other taxes. How much more tax does the shareholder pay if the election is made?",
+   "exhibit": "",
+   "options": [
+    "$17,000",
+    "$37,000",
+    "$100,000",
+    "$117,000"
+   ],
+   "answer": "A",
+   "rule_line": "A joint election to treat a stock sale as an asset sale exposes the seller to ordinary income on recapture and similar assets.",
+   "why": {
+    "A": "With the election: $100,000 x 37% + $400,000 x 20% = $117,000. Without it: $500,000 x 20% = $100,000. The election costs $17,000, a price the buyer pays for the stepped-up asset basis.",
+    "B": "Counts only the tax on the ordinary income, not the difference from the capital gain rate.",
+    "C": "This is the total tax without the election, not the additional tax.",
+    "D": "This is the total tax with the election, not the additional tax."
+   },
+   "wrong_tags": {
+    "B": "concept",
+    "C": "trap",
+    "D": "trap"
+   },
+   "steps": [
+    "Election: $37,000 + $80,000 = $117,000",
+    "No election: $100,000",
+    "Extra tax = $17,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(100000*0.37+400000*0.2)-((100000+400000)*0.2)",
+      "fmt": "$",
+      "value": 17000
+     },
+     {
+      "expr": "100000*0.37+400000*0.2",
+      "fmt": "$",
+      "value": 117000
+     },
+     {
+      "expr": "(100000+400000)*0.2",
+      "fmt": "$",
+      "value": 100000
+     },
+     {
+      "expr": "100000*0.37",
+      "fmt": "$",
+      "value": 37000
+     },
+     {
+      "expr": "400000*0.2",
+      "fmt": "$",
+      "value": 80000
+     }
+    ],
+    "expr": "(100000*0.37+400000*0.2)-((100000+400000)*0.2)",
+    "fmt": "$",
+    "value": 17000,
+    "distractors": {
+     "B": {
+      "expr": "100000*0.37",
+      "value": 37000
+     },
+     "C": {
+      "expr": "(100000+400000)*0.2",
+      "value": 100000
+     },
+     "D": {
+      "expr": "100000*0.37+400000*0.2",
+      "value": 117000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§338(h)(10)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1245"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(h)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group C / S corp formation/distribution/loan planning / Analysis"
+  },
+  {
+   "id": "TCP-III-D-0001",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "D",
+   "group_name": "Tax planning for partnerships",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Contribution of appreciated/depreciated property",
+   "task": "Calculate the tax implications to a partner for the contribution to a partnership of noncash property that has appreciated or depreciated in value.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Ira Bell contributes equipment with an adjusted basis of $200,000 and a fair market value of $120,000 to a partnership in which he and Mae share profits and losses equally. The partnership later sells the equipment for $100,000. How much of the tax loss on the sale is allocated to Ira?",
+   "exhibit": "",
+   "options": [
+    "$50,000",
+    "$80,000",
+    "$90,000",
+    "$100,000"
+   ],
+   "answer": "C",
+   "rule_line": "Built-in loss on contributed property is taken into account only by the contributing partner; later declines are shared under the agreement.",
+   "why": {
+    "A": "Shares the whole loss equally and ignores that the built-in loss belongs to the contributor.",
+    "B": "Allocates only the built-in loss and omits Ira's share of the later decline.",
+    "C": "The built-in loss ($200,000 - $120,000 = $80,000) is allocated only to Ira. The additional loss after contribution ($120,000 - $100,000 = $20,000) is shared equally, so Ira gets $10,000. Total $90,000.",
+    "D": "Allocates the entire loss to Ira."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   },
+   "steps": [
+    "Built-in loss = 200,000 - 120,000 = $80,000",
+    "Later decline = 120,000 - 100,000 = $20,000; Ira's half = $10,000",
+    "Total = $90,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(200000-120000)+0.5*(120000-100000)",
+      "fmt": "$",
+      "value": 90000
+     },
+     {
+      "expr": "200000-120000",
+      "fmt": "$",
+      "value": 80000
+     },
+     {
+      "expr": "120000-100000",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "0.5*(120000-100000)",
+      "fmt": "$",
+      "value": 10000
+     },
+     {
+      "expr": "0.5*(200000-100000)",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "200000-100000",
+      "fmt": "$",
+      "value": 100000
+     }
+    ],
+    "expr": "(200000-120000)+0.5*(120000-100000)",
+    "fmt": "$",
+    "value": 90000,
+    "distractors": {
+     "A": {
+      "expr": "0.5*(200000-100000)",
+      "value": 50000
+     },
+     "B": {
+      "expr": "200000-120000",
+      "value": 80000
+     },
+     "D": {
+      "expr": "200000-100000",
+      "value": 100000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§704(c)(1)(C)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§704(c)(1)(A)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.704-3"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group D / Contribution of appreciated/depreciated property / Application"
+  },
+  {
+   "id": "TCP-III-D-0002",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "D",
+   "group_name": "Tax planning for partnerships",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Payments to partner",
+   "task": "Calculate the tax implications of various types of payments to a partner, including guaranteed payments and a nonliquidating distribution.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Nell Pryor is a 25% partner in a partnership with $200,000 of ordinary income before any payment to her. The partners are deciding whether to pay her $60,000 for services as a guaranteed payment or as a nonliquidating cash distribution, which is within her basis. How much more income does Nell report with the guaranteed payment than with the distribution?",
+   "exhibit": "",
+   "options": [
+    "$15,000",
+    "$30,000",
+    "$35,000",
+    "$45,000"
+   ],
+   "answer": "D",
+   "rule_line": "A guaranteed payment is ordinary income to the partner and a deduction to the partnership; a nonliquidating distribution is generally not taxable within basis.",
+   "why": {
+    "A": "Counts only her share of the deduction.",
+    "B": "Uses half of the guaranteed payment.",
+    "C": "Reports only her share of the income remaining after the deduction.",
+    "D": "With the guaranteed payment she reports $60,000 plus 25% of the $140,000 left after the deduction, $35,000, for $95,000. With the distribution she reports 25% x $200,000 = $50,000, and the distribution is not income. The difference is $45,000."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "B": "calc",
+    "C": "concept"
+   },
+   "steps": [
+    "Guaranteed payment case = 60,000 + 25% x (200,000 - 60,000) = $95,000",
+    "Distribution case = 25% x 200,000 = $50,000",
+    "Difference = $45,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(60000+0.25*(200000-60000))-(0.25*200000)",
+      "fmt": "$",
+      "value": 45000
+     },
+     {
+      "expr": "200000-60000",
+      "fmt": "$",
+      "value": 140000
+     },
+     {
+      "expr": "0.25*(200000-60000)",
+      "fmt": "$",
+      "value": 35000
+     },
+     {
+      "expr": "60000+0.25*(200000-60000)",
+      "fmt": "$",
+      "value": 95000
+     },
+     {
+      "expr": "0.25*200000",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "60000*0.5",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "0.25*60000",
+      "fmt": "$",
+      "value": 15000
+     }
+    ],
+    "expr": "(60000+0.25*(200000-60000))-(0.25*200000)",
+    "fmt": "$",
+    "value": 45000,
+    "distractors": {
+     "A": {
+      "expr": "0.25*60000",
+      "value": 15000
+     },
+     "B": {
+      "expr": "60000*0.5",
+      "value": 30000
+     },
+     "C": {
+      "expr": "0.25*(200000-60000)",
+      "value": 35000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§707(c)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§731(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§702"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group D / Payments to partner / Application"
+  },
+  {
+   "id": "TCP-III-D-0003",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "D",
+   "group_name": "Tax planning for partnerships",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Proposed partnership transaction",
+   "task": "Derive the tax implications to a partner and partnership for a proposed transaction, including a contribution of noncash property, a nonliquidating distribution of noncash property or the sale of a partnership interest.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Wes Adair contributes land with a basis of $100,000 and a fair market value of $400,000 to a partnership. On the same day the partnership pays him $150,000 in cash from its existing funds, not from borrowed money, and the payment is not explained by any exception. What gain does Wes recognize?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$50,000",
+    "$75,000",
+    "$112,500"
+   ],
+   "answer": "D",
+   "rule_line": "A payment to a contributing partner within two years is presumed to be a sale of part of the property, and gain is recognized on the part sold.",
+   "why": {
+    "A": "Assumes the contribution is entirely tax-free. A payment made in close connection with the contribution is treated as sale proceeds.",
+    "B": "Subtracts the entire basis from the payment.",
+    "C": "Recognizes only half of the payment as gain.",
+    "D": "A contribution followed closely by a payment to the contributor is a disguised sale of the part of the property equal to the payment ($150,000/$400,000 = 37.5%). Basis allocated to the sale is $37,500, so gain = $150,000 - $37,500 = $112,500."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "calc"
+   },
+   "steps": [
+    "Portion sold = 150,000 / 400,000",
+    "Basis allocated = 150,000/400,000 x 100,000 = $37,500",
+    "Gain = 150,000 - $37,500 = $112,500"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "150000-150000/400000*100000",
+      "fmt": "$",
+      "value": 112500
+     },
+     {
+      "expr": "150000/400000*100",
+      "fmt": "%",
+      "value": 37.5
+     },
+     {
+      "expr": "150000/400000*100000",
+      "fmt": "$",
+      "value": 37500
+     },
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "150000-100000",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "150000/2",
+      "fmt": "$",
+      "value": 75000
+     }
+    ],
+    "expr": "150000-150000/400000*100000",
+    "fmt": "$",
+    "value": 112500,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "150000-100000",
+      "value": 50000
+     },
+     "C": {
+      "expr": "150000/2",
+      "value": 75000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§707(a)(2)(B)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.707-3"
+    },
+    {
+     "src": "IRC",
+     "ref": "§721(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Reg. §1.707-5(b): a transfer traceable to partnership borrowing counts as sale consideration only to the extent it exceeds the partner's allocable share of the liability; the stem removes the borrowing so the full $150,000 is sale consideration. Reviewed 2026-09-29 (draft said the partnership borrowed the money).",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group D / Proposed partnership transaction / Analysis"
+  },
+  {
+   "id": "TCP-III-D-0004",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "D",
+   "group_name": "Tax planning for partnerships",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Proposed partnership transaction",
+   "task": "Derive the tax implications to a partner and partnership for a proposed transaction, including a contribution of noncash property, a nonliquidating distribution of noncash property or the sale of a partnership interest.",
+   "task_skill": "Analysis",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In 2023 Pia Doran contributed land with a basis of $50,000 and a fair market value of $200,000 to a partnership. In 2026, when the land is worth $260,000, the partnership distributes the land to another partner, Sam, in a nonliquidating distribution. Pia's interest continues. How much gain does Pia recognize because of the distribution?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$60,000",
+    "$150,000",
+    "$210,000"
+   ],
+   "answer": "C",
+   "rule_line": "A contributing partner recognizes built-in gain when the partnership distributes the contributed property to another partner within seven years.",
+   "why": {
+    "A": "Assumes a distribution is never taxable to the contributor. The seven-year anti-shifting rule applies.",
+    "B": "Uses only the post-contribution appreciation, which is not the built-in gain at contribution.",
+    "C": "Distributing contributed property to another partner within seven years of the contribution causes the contributor to recognize the built-in gain at contribution, $200,000 - $50,000 = $150,000, as if the partnership had sold the property.",
+    "D": "Uses the total appreciation since her original basis, including gain that arose after the contribution."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   },
+   "steps": [
+    "Built-in gain at contribution = 200,000 - 50,000 = $150,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "200000-50000",
+      "fmt": "$",
+      "value": 150000
+     },
+     {
+      "expr": "0",
+      "fmt": "$",
+      "value": 0
+     },
+     {
+      "expr": "260000-200000",
+      "fmt": "$",
+      "value": 60000
+     },
+     {
+      "expr": "260000-50000",
+      "fmt": "$",
+      "value": 210000
+     }
+    ],
+    "expr": "200000-50000",
+    "fmt": "$",
+    "value": 150000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "260000-200000",
+      "value": 60000
+     },
+     "D": {
+      "expr": "260000-50000",
+      "value": 210000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§704(c)(1)(B)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§737"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.704-4"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.704-4(a)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Gain is limited to the built-in gain at contribution (Reg. §1.704-4(a): gain that would be allocated under §704(c)(1)(A) on a sale at fair market value). The statute now uses seven years (§704(c)(1)(B)); the regulation text still says five years. 2023 to 2026 is inside both.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group D / Proposed partnership transaction / Application"
+  },
+  {
+   "id": "TCP-III-D-0005",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "D",
+   "group_name": "Tax planning for partnerships",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Proposed partnership transaction",
+   "task": "Derive the tax implications to a partner and partnership for a proposed transaction, including a contribution of noncash property, a nonliquidating distribution of noncash property or the sale of a partnership interest.",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Ivy Reed contributes equipment with an adjusted basis of $200,000 and a fair market value of $120,000 to a partnership in which she and Hugo share profits and losses equally. The partnership sells the equipment for $150,000. Hugo's share is computed using a basis equal to the fair market value at contribution. How much tax loss on the sale is allocated to Ivy?",
+   "exhibit": "",
+   "options": [
+    "$15,000",
+    "$50,000",
+    "$65,000",
+    "$80,000"
+   ],
+   "answer": "C",
+   "rule_line": "For built-in loss property, the other partners are allocated items as if the basis equaled fair market value at contribution.",
+   "why": {
+    "A": "This is Hugo's gain, not Ivy's loss.",
+    "B": "Allocates the entire partnership loss to Ivy without offsetting Hugo's gain.",
+    "C": "The partnership's tax loss is $200,000 - $150,000 = $50,000. For Hugo, the basis is treated as $120,000, so he has a gain of $150,000 - $120,000 = $30,000 and reports half, $15,000. The rest of the net loss goes to Ivy: $50,000 + $15,000 = $65,000.",
+    "D": "Allocates only the built-in loss and ignores the sale price above fair market value."
+   },
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "D": "concept"
+   },
+   "steps": [
+    "Partnership loss = 200,000 - 150,000 = $50,000",
+    "Hugo's gain = 50% x (150,000 - 120,000) = $15,000",
+    "Ivy's loss = $50,000 + $15,000 = $65,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(200000-150000)+0.5*(150000-120000)",
+      "fmt": "$",
+      "value": 65000
+     },
+     {
+      "expr": "200000-150000",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "150000-120000",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "0.5*(150000-120000)",
+      "fmt": "$",
+      "value": 15000
+     },
+     {
+      "expr": "200000-120000",
+      "fmt": "$",
+      "value": 80000
+     }
+    ],
+    "expr": "(200000-150000)+0.5*(150000-120000)",
+    "fmt": "$",
+    "value": 65000,
+    "distractors": {
+     "A": {
+      "expr": "0.5*(150000-120000)",
+      "value": 15000
+     },
+     "B": {
+      "expr": "200000-150000",
+      "value": 50000
+     },
+     "D": {
+      "expr": "200000-120000",
+      "value": 80000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§704(c)(1)(C)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.704-3(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§721"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group D / Proposed partnership transaction / Analysis"
+  },
+  {
+   "id": "TCP-III-D-0006",
+   "type": "mcq",
+   "exam": "TCP",
+   "area": "III",
+   "area_name": "Entity Tax Planning",
+   "group": "D",
+   "group_name": "Tax planning for partnerships",
+   "subgroup": null,
+   "subgroup_name": null,
+   "topic": "Payments to partner",
+   "task": "Calculate the tax implications of various types of payments to a partner, including guaranteed payments and a nonliquidating distribution.",
+   "task_skill": "Application",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Kai Alvarado, a calendar-year partner, receives guaranteed payments for services of $5,000 a month from a partnership whose valid fiscal year ends on June 30, 2027. He received $30,000 from July through December 2026 and $30,000 from January through June 2027. In which of his tax years does he report the $60,000?",
+   "exhibit": "",
+   "options": [
+    "$30,000 in 2026 and $30,000 in 2027, because he reports each payment when he receives it",
+    "All $60,000 in 2026, because the first payment was received in that year",
+    "All $60,000 in 2027, because the partnership's year ends June 30, 2027",
+    "All $60,000 in 2028, when the partnership files its return for the year ended June 30, 2027"
+   ],
+   "answer": "C",
+   "rule_line": "A partner reports items, including guaranteed payments, for the partnership year that ends with or within the partner's tax year.",
+   "why": {
+    "A": "Guaranteed payments are reported for the partnership year, not when each payment is received.",
+    "B": "The partner reports for the partnership year that ends in his tax year, which is 2027.",
+    "C": "A partner includes guaranteed payments and distributive share for the partnership year that ends within the partner's tax year.",
+    "D": "Filing dates do not control. The partnership year ends June 30, 2027, so the payments belong in his 2027 year."
+   },
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "D": "concept"
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§706(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§707(c)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.706-1(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (tcp_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "ed14c83",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "blueprint_tag": "TCP Area III / Group D / Payments to partner / Application"
+  }
+ ]
+}
