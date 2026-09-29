@@ -318,12 +318,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 3-402(a), (b)(1) (Cornell LII)",
@@ -365,12 +367,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 3-402(a), (b)(2) (Cornell LII)",
@@ -412,12 +416,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 301 (ULC final act PDF)",
@@ -694,12 +700,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 305(b) (ULC final act PDF text opened)",
@@ -741,12 +749,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 103(e); numbering as in the 2013 harmonized text (ULC final act PDF); older 1997 text placed this rule in 102(f)",
@@ -788,12 +798,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 308(a) (ULC final act PDF text opened)",
@@ -835,12 +847,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 306(a), (b) (ULC final act PDF text opened)",
@@ -886,12 +900,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 703(a), (b) and 103(d)(2)(A) (ULC final act PDF text opened)",
@@ -933,12 +949,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 3-403(a) (Cornell LII)",
@@ -980,12 +998,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-205: merchant, signed writing, no consideration, three-month maximum (Cornell LII)",
@@ -1027,12 +1047,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-201(1) first clause (Cornell LII); list of exceptions in the explanation is standard text, not re-opened",
@@ -1074,12 +1096,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-209(1) (Cornell LII)",
@@ -1121,12 +1145,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-601 (Cornell LII); cure and installment remarks from standard text, not re-opened",
@@ -1172,12 +1198,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-712(1),(2) (Cornell LII)",
@@ -1279,12 +1307,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-725(1) four years (Cornell LII); accrual and future-performance rule in (2) from standard text, not re-opened",
@@ -1527,12 +1557,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-207 (Cornell LII)",
@@ -1578,12 +1610,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-314, 2-316 (Cornell LII)",
@@ -1625,12 +1659,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-708(1) (Cornell LII)",
@@ -1680,12 +1716,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-609 (Cornell LII)",
@@ -1727,12 +1765,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-508(1) (Cornell LII)",
@@ -1774,12 +1814,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-719 (Cornell LII)",
@@ -1821,12 +1863,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-403 (Cornell LII)",
@@ -1868,12 +1912,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-509(1), (3) (Cornell LII)",
@@ -1919,12 +1965,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-706(1) (Cornell LII); incidental damages under 2-710 from general knowledge, section not opened",
@@ -1976,12 +2024,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-709(1), (2) (Cornell LII)",
@@ -2023,12 +2073,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-718(2) (Cornell LII); offset for proven damages under (3) from general knowledge, subsection not quoted",
@@ -2079,12 +2131,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-608(1), (2) (Cornell LII); stem revised so the facts fit 2-608(1)(a): buyer knew of the defect at acceptance and kept the unit on the seller's promise to cure",
@@ -2126,12 +2180,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-615(a), (b) (Cornell LII); notice duty in (c) from general knowledge",
@@ -2173,12 +2229,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-202 (Cornell LII)",
@@ -2220,12 +2278,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-206(1) (Cornell LII)",
@@ -2267,12 +2327,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-203(a),(b) (Cornell LII)",
@@ -2318,12 +2380,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-308(a), 9-310(a) (Cornell LII)",
@@ -2365,12 +2429,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-313(a) (Cornell LII)",
@@ -2412,12 +2478,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-322(a)(1) (Cornell LII)",
@@ -2459,12 +2527,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-324(a) (Cornell LII)",
@@ -2506,12 +2576,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-609(a),(b) (Cornell LII)",
@@ -2604,12 +2676,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-315 (Cornell LII)",
@@ -2651,12 +2725,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-317(a)(2), (e) (Cornell LII)",
@@ -2698,12 +2774,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-320(a) (Cornell LII)",
@@ -2745,12 +2823,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-615(a), (d) (Cornell LII)",
@@ -2800,12 +2880,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-623 (Cornell LII)",
@@ -2847,12 +2929,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-515 (Cornell LII)",
@@ -2894,12 +2978,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-204(a), (b) (Cornell LII)",
@@ -2949,12 +3035,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 3-605(b), 3-419 (Cornell LII)",
@@ -3051,12 +3139,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-309(1) (Cornell LII)",
@@ -3098,12 +3188,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-620(a), (b), (c), (e), (f) (Cornell LII); 9-620(f)(2) wording checked against LII (longer period agreed after default)",
@@ -3145,12 +3237,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-625(c)(2) (Cornell LII)",
@@ -3205,12 +3299,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-324(b) (Cornell LII); 9-322(a)(1) as in earlier items",
@@ -3256,12 +3352,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-307(b), (e) and 9-301(1) (Cornell LII)",
@@ -3303,12 +3401,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-507(c) (Cornell LII)",
@@ -3350,12 +3450,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-612(a), (b) (Cornell LII)",
@@ -3397,12 +3499,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-406(a) (Cornell LII)",
@@ -3444,12 +3548,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-404(a), (b) (Cornell LII); waiver rule in 9-403 from general knowledge, section not opened",
@@ -3504,12 +3610,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 4980H(c)(2)(A),(E) (Cornell LII)",
@@ -3568,12 +3676,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: Treas. Reg. 31.3121(d)-1 (Cornell LII)",
@@ -3623,12 +3733,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 704(a)(1), 727, 109(e) (Cornell LII)",
@@ -3670,12 +3782,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 727(a)(8) (Cornell LII)",
@@ -3717,12 +3831,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 362(a),(a)(1) (Cornell LII)",
@@ -3768,12 +3884,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 78dd-1(a), 78m(b)(2)(A) (Cornell LII); intermediary wording from the statute summary",
@@ -3823,12 +3941,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 78dd-1(b) (Cornell LII)",
@@ -3870,12 +3990,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 26 U.S.C. 3301: excise tax on employers (Cornell LII)",
@@ -3921,12 +4043,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: §3102(a): employer collects the §3101 tax by deducting from wages; statute has no employee opt-out (Cornell LII). Non-waiver is read from the mandatory wording",
@@ -3981,12 +4105,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: §36B(c)(2)(B) excludes months of eligibility for other minimum essential coverage; (C) governs employer plan affordability and minimum value (Cornell LII)",
@@ -4032,12 +4158,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_80.md, 기준 4e90306)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: IRC 3101(b)(2), 3102(f)(1) (Cornell LII)",
@@ -4096,12 +4224,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: IRC 3301, 3302, 3306(b)(1) (Cornell LII)",
@@ -4156,12 +4286,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: IRC 4980H(a), (c) (Cornell LII); the $3,000 amount is a hypothetical, the statute indexes it annually",
@@ -4215,12 +4347,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: IRC 4980H(b), (c) (Cornell LII); the $4,500 and $3,000 amounts are hypotheticals, the statute indexes them annually",
@@ -4275,12 +4409,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: IRC 6672(a), 6671(b) (Cornell LII)",
@@ -4322,12 +4458,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 547(b), (c), (f) (Cornell LII)",
@@ -4369,12 +4507,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 523(a)(2)(A) (Cornell LII)",
@@ -4416,12 +4556,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 15 U.S.C. 78dd-2(a), (h) (Cornell LII)",
@@ -4463,12 +4605,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 362(a), (b)(1) (Cornell LII)",
@@ -4510,12 +4654,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 548(a)(1) (Cornell LII)",
@@ -4561,12 +4707,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 726(a), (b) (Cornell LII); 507(a) order from general knowledge, section not opened",
@@ -4618,12 +4766,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 1325(b)(1), (b)(4) (Cornell LII)",
@@ -4665,12 +4815,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 26 U.S.C. 6656(a), (b)(1) (Cornell LII)",
@@ -4721,12 +4873,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 26 U.S.C. 3509(a), (b), (c) (Cornell LII); employer FICA share 7.65 percent assumed in stem",
@@ -4782,12 +4936,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 26 U.S.C. 3121(d)(2), (d)(3) (Cornell LII)",
@@ -4829,12 +4985,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 26 U.S.C. 4980H(c)(2)(B) (Cornell LII)",
@@ -4941,12 +5099,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 15 U.S.C. 78dd-1(c), (f)(1)(A) (Cornell LII)",
@@ -4988,12 +5148,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: 15 U.S.C. 78m(b)(2)(A), (B) (Cornell LII)",
@@ -5039,12 +5201,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 202(a), 306(a) (ULC PDF)",
@@ -5086,12 +5250,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: RULPA (1985) as enacted in South Carolina; ULC text not opened, confirm numbering",
@@ -5133,12 +5299,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 6.22(b) (ABA official text)",
@@ -5184,12 +5352,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 8.30(a),(b), 8.01(b) (ABA official text)",
@@ -5231,12 +5401,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: ULLCA (2006, amended 2013) 304(a),(b) (ULC PDF); act is outside the Blueprint reference list (decision item)",
@@ -5282,12 +5454,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: RULPA (1985) as enacted in South Carolina; ULC text not opened, confirm numbering",
@@ -5329,12 +5503,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 2.03(a) text (ABA official text, 3rd ed., 2002 supplement)",
@@ -5376,12 +5552,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: ULC RUPA (1997, amended 2013) final act PDF, 401(a): each partner is entitled to an equal share of the partnership distributions. Unified to the 2013 numbering and wording; the 1997 original 401(b) said profits.",
@@ -5431,12 +5609,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 7.25(a), (c) (American Bar Foundation official text, 3rd ed. through 2002)",
@@ -5478,12 +5658,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 6.40(c), (d) (American Bar Foundation official text, 3rd ed. through 2002)",
@@ -5584,12 +5766,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 401(h), (k) (ULC final act PDF)",
@@ -5631,12 +5815,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 806(a), (c) (ULC final act PDF)",
@@ -5692,12 +5878,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 801(1), 601(1) (ULC final act PDF)",
@@ -5739,12 +5927,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 3rd ed. text (American Bar Foundation, through 2002 supplement); 2016 revision not opened; 2.04 text opened",
@@ -5786,12 +5976,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 3rd ed. text (American Bar Foundation, through 2002 supplement); 2016 revision not opened; 8.08 text opened",
@@ -5833,12 +6025,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "B",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 3rd ed. text (American Bar Foundation, through 2002 supplement); 2016 revision not opened; 6.30 text opened",
@@ -5880,12 +6074,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 3rd ed. text (American Bar Foundation, through 2002 supplement); 2016 revision not opened; 7.28 text opened",
@@ -5927,12 +6123,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "A",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 3rd ed. text (American Bar Foundation, through 2002 supplement); 2016 revision not opened; 8.24 text opened",
@@ -5974,12 +6172,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: ULLCA (2006, amended 2013) 407(b) (ULC final act PDF text opened)",
@@ -6021,12 +6221,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "C",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: ULLCA (2006, amended 2013) 409(a)-(e) (ULC final act PDF text opened)",
@@ -6068,12 +6270,14 @@
    "testable_from": null,
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
+    "solver_answer": "D",
+    "solver_id": "independent-solver (검산_신규40.md, 기준 7492e8b)",
     "cite_ok": true,
-    "date": null
+    "date": "2026-09-29",
+    "commit": "bfeacc8",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "needs_review": false,
    "review": "verified 2026-09-29: ULLCA (2006, amended 2013) 503(a), (c) (ULC final act PDF text opened); transferee rights in 502 not quoted",

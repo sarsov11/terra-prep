@@ -5,7 +5,7 @@
   "blueprint": "2026 AICPA CPA Exam Blueprint, REG Area V (A book-tax differences, B C corporations, C S corporations, D partnerships, E LLCs, F tax-exempt organizations; supplement groups: corporate formation/distributions/liquidation, S corporation distributions and corporate-level taxes, partnership distributions/sale/basis adjustments/allocations, unrelated business income, trusts and estates)",
   "law_asof": "2026-09-29",
   "count": 175,
-  "status": "draft",
+  "status": "verified",
   "provenance": "terra-original (no Becker/UWorld/Wiley text used)"
  },
  "items": [
@@ -52,12 +52,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-002"
   },
@@ -125,7 +127,7 @@
     },
     {
      "src": "IRC",
-     "ref": "§274(k)"
+     "ref": "§274(n)(1)"
     },
     {
      "src": "IRC",
@@ -137,12 +139,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -220,12 +224,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -313,12 +319,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -364,12 +372,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -435,7 +445,7 @@
     },
     {
      "src": "IRC",
-     "ref": "§274(k)"
+     "ref": "§274(n)(1)"
     }
    ],
    "law_asof": "2026-09-29",
@@ -443,12 +453,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -515,7 +527,7 @@
     },
     {
      "src": "IRC",
-     "ref": "§451"
+     "ref": "§451(c)"
     }
    ],
    "law_asof": "2026-09-29",
@@ -523,12 +535,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -574,12 +588,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -625,12 +641,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-001"
   },
@@ -677,12 +695,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-003"
   },
@@ -747,6 +767,10 @@
     {
      "src": "Form",
      "ref": "1120 instructions (line 19)"
+    },
+    {
+     "src": "Public Law",
+     "ref": "P.L. 119-21 §70426"
     }
    ],
    "law_asof": "2026-09-29",
@@ -754,12 +778,14 @@
    "law_note": "OBBBA adds a 1%-of-taxable-income floor on corporate charitable deductions for tax years beginning after 2025 (10% ceiling unchanged). Testable from 2026-07-01. The stem states both limits.",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -832,12 +858,14 @@
    "law_note": "OBBBA (P.L. 119-21, 2025-07-04) made 100% bonus depreciation permanent for qualified property acquired after 2025-01-19. Testable from 2026-07-01. The stem states the property qualifies.",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -850,7 +878,7 @@
    "task": "Review an entity's adjusted book trial balance and supporting documentation to identify and calculate possible book/tax differences.",
    "task_source": "지도.json",
    "task_skill": "Analysis",
-   "skill": "Analysis",
+   "skill": "Application",
    "difficulty": 2,
    "calc": false,
    "stem": "Ferrand Freight, Inc., a calendar-year corporation, is completing Schedule M-3. Its preparer classified certain 2026 differences as shown. Which classification is incorrect?",
@@ -904,12 +932,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -922,7 +952,7 @@
    "task": "Review an entity's adjusted book trial balance and supporting documentation to identify and calculate possible book/tax differences.",
    "task_source": "지도.json",
    "task_skill": "Analysis",
-   "skill": "Analysis",
+   "skill": "Application",
    "difficulty": 2,
    "calc": false,
    "stem": "Preparing Norwood Steel, Inc.'s 2026 Form 1120, a reviewer compares the adjusted trial balance with the preparer's book-tax adjustments. The preparer already added back the fines and 50% of the meals and made no other adjustments. Which omitted adjustment is required?",
@@ -984,12 +1014,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -1042,19 +1074,25 @@
     {
      "src": "Form",
      "ref": "1120 instructions (line 19)"
+    },
+    {
+     "src": "Public Law",
+     "ref": "P.L. 119-21 §70426"
     }
    ],
    "law_asof": "2026-09-29",
    "testable_from": "2026-07-01",
-   "law_note": "OBBBA adds a 1%-of-taxable-income floor on corporate charitable deductions for tax years beginning after 2025 (10% ceiling unchanged). Testable from 2026-07-01. The stem states both limits.",
+   "law_note": "OBBBA adds a 1%-of-taxable-income floor on corporate charitable deductions for tax years beginning after 2025 (10% ceiling unchanged). Testable from 2026-07-01. The stem states both limits. The excess over the 10% ceiling ($18,000) is carried forward; the floor amount is absorbed because contributions exceed the ceiling. The excess over the 10% ceiling ($18,000) is carried forward; the floor amount is absorbed because contributions exceed the ceiling.",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -1067,7 +1105,7 @@
    "task": "Calculate the book/tax differences to be reported on a Schedule M-1 or M-3.",
    "task_source": "지도.json",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Application",
    "difficulty": 2,
    "calc": true,
    "stem": "Two corporations each buy $200,000 of equipment in 2026 that qualifies for 100% bonus depreciation. Kiln Co. claims the bonus depreciation. Larch Co. elects out of bonus depreciation and uses regular MACRS, under which first-year depreciation is 20% of cost. Ignoring all other items, by how much is Kiln's 2026 taxable income lower than Larch's?",
@@ -1124,12 +1162,14 @@
    "law_note": "OBBBA (P.L. 119-21, 2025-07-04) made 100% bonus depreciation permanent for qualified property acquired after 2025-01-19. Testable from 2026-07-01. The stem states the property qualifies.",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -1142,7 +1182,7 @@
    "task": "Review an entity's adjusted book trial balance and supporting documentation to identify and calculate possible book/tax differences.",
    "task_source": "지도.json",
    "task_skill": "Analysis",
-   "skill": "Analysis",
+   "skill": "Remembering & Understanding",
    "difficulty": 2,
    "calc": false,
    "stem": "Quill Publishing, Inc. bought a $500,000 life insurance policy on its chief executive in 2023, naming the corporation as beneficiary, and paid $9,000 of premiums in 2026. The chief executive died in 2026 and the corporation received $500,000 of proceeds. Which statement correctly describes the effect on the 2026 book-tax reconciliation?",
@@ -1172,6 +1212,10 @@
     {
      "src": "Form",
      "ref": "1120 Schedule M-1"
+    },
+    {
+     "src": "IRC",
+     "ref": "§101(j)"
     }
    ],
    "law_asof": "2026-09-29",
@@ -1179,12 +1223,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -1197,8 +1243,8 @@
    "task": "Review a C corporation's adjusted book trial balance and supporting documentation... to determine completeness and accuracy of book/tax differences on Form 1120.",
    "task_source": "지도.json",
    "task_skill": "Analysis",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Application",
+   "difficulty": 2,
    "calc": true,
    "stem": "Taber Outdoor, Inc.'s books show net income of $300,000 and its filed 2026 return shows taxable income of $331,000 after adding $63,000 of federal income tax expense and subtracting $8,000 of state bond interest and $24,000 of excess tax depreciation. In reviewing, the CPA finds that book expenses include $10,000 of fines that the preparer did not add back. What is the corrected taxable income?",
    "exhibit": "",
@@ -1254,12 +1300,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -1328,12 +1376,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-004"
   },
@@ -1407,12 +1457,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-005"
   },
@@ -1480,6 +1532,10 @@
     {
      "src": "Form",
      "ref": "1120 Schedule C"
+    },
+    {
+     "src": "IRC",
+     "ref": "§246(b)(3)"
     }
    ],
    "law_asof": "2026-09-29",
@@ -1487,12 +1543,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -1538,12 +1596,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -1615,19 +1675,29 @@
     {
      "src": "IRC",
      "ref": "§103(a)"
+    },
+    {
+     "src": "Public Law",
+     "ref": "P.L. 119-21 §70426"
+    },
+    {
+     "src": "IRC",
+     "ref": "§170(d)(2)"
     }
    ],
    "law_asof": "2026-09-29",
    "testable_from": "2026-07-01",
-   "law_note": "OBBBA adds a 1%-of-taxable-income floor on corporate charitable deductions for tax years beginning after 2025 (with the 10% ceiling unchanged). Testable from 2026-07-01. This item is built so the floor does not change the answer or gives the rule in the stem.",
+   "law_note": "P.L. 119-21 s.70426 adds a 1% floor to the corporate charitable deduction for tax years beginning after 2025 (10% ceiling unchanged). Testable from 2026-07-01. The stem states both limits. Here the contribution ($25,000) is below the ceiling, so the $5,200 disallowed by the floor is not carried forward. (The Cornell LII copy of IRC 170 predates the amendment; confirmed against the public-law summary and practitioner guidance.)",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -1643,7 +1713,7 @@
    "skill": "Remembering & Understanding",
    "difficulty": 1,
    "calc": false,
-   "stem": "Foxglove Industries, Inc. is an accrual-basis, calendar-year corporation. Its board of directors authorized a $20,000 gift to a public charity on December 15, 2026, and the gift was paid on March 10, 2027. In which year may Foxglove deduct the gift, subject to the percentage limit?",
+   "stem": "Foxglove Industries, Inc. is an accrual-basis, calendar-year corporation. Its board of directors authorized a $20,000 gift to a public charity on December 15, 2026, and the gift was paid on March 10, 2027. Foxglove makes the election available to accrual-basis corporations to treat the gift as paid when authorized. In which year may Foxglove deduct the gift, subject to the percentage limit?",
    "exhibit": "",
    "options": [
     "2027, because contributions are deductible only when paid, whatever the corporation's method",
@@ -1655,7 +1725,7 @@
    "why": {
     "A": "That is the general cash-basis result. The 3.5-month election is available to accrual-basis corporations.",
     "B": "There is no date within the year that matters; authorization by year-end is enough.",
-    "C": "The election gives 2026 treatment; it does not offer a free choice of year.",
+    "C": "The election has been made, so the gift is treated as paid in 2026. It is not left to be deducted in either year at the filing date.",
     "D": "An accrual-basis corporation may treat a gift authorized by the board during the tax year as paid in that year if actually paid by the 15th day of the fourth month after year-end."
    },
    "cite": [
@@ -1670,15 +1740,17 @@
    ],
    "law_asof": "2026-09-29",
    "testable_from": "2026-01-01",
-   "law_note": "",
+   "law_note": "IRC 170(a)(2) is an election. The stem now states that the election is made, so only 2026 is correct (before the fix, C 'either year at the corporation's choice' was also arguable).",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -1691,7 +1763,7 @@
    "task": "Calculate taxable income for a C corporation.",
    "task_source": "지도.json",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Application",
    "difficulty": 2,
    "calc": false,
    "stem": "Reviewing Redwood Dynamics, Inc.'s 2026 Schedule C, a CPA sees the dividends-received deductions shown. Which item was claimed at the wrong percentage? Assume the deductions are not limited by taxable income and all holding periods are met.",
@@ -1758,12 +1830,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -1834,12 +1908,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -1889,12 +1965,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -1928,7 +2006,7 @@
    "cite": [
     {
      "src": "IRC",
-     "ref": "§6072(b)"
+     "ref": "§6072(a)"
     },
     {
      "src": "Form",
@@ -1944,12 +2022,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -2023,12 +2103,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -2074,12 +2156,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-007"
   },
@@ -2126,12 +2210,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-008"
   },
@@ -2202,12 +2288,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -2223,7 +2311,7 @@
    "skill": "Application",
    "difficulty": 3,
    "calc": true,
-   "stem": "Ivory Coast Imports, Inc. had a taxable loss of $200,000 in 2026, which is a net operating loss. Its taxable income before any net operating loss deduction was $150,000 in 2027 and $300,000 in 2028. It has no other carryovers. What is the taxable income for 2028?",
+   "stem": "Ivory Coast Imports, Inc. had a taxable loss of $200,000 in 2024, which is a net operating loss. Its taxable income before any net operating loss deduction was $150,000 in 2025 and $300,000 in 2026. It has no other carryovers. What is the taxable income for 2026?",
    "exhibit": "",
    "options": [
     "$60,000",
@@ -2233,16 +2321,16 @@
    ],
    "answer": "C",
    "why": {
-    "A": "Applies the 80% limit to 2028 income as though no NOL had been used in 2027.",
-    "B": "Deducts the full $200,000 in 2028, ignoring the $120,000 already used in 2027.",
-    "C": "In 2027 the deduction is limited to 80% x $150,000 = $120,000, leaving $80,000 of NOL. In 2028 the $80,000 is fully deductible (limit $240,000), so taxable income is $300,000 - $80,000 = $220,000.",
-    "D": "Assumes the entire NOL was used in 2027 or ignores the loss carryover."
+    "A": "Applies the 80% limit to 2026 income as though no NOL had been used in 2025.",
+    "B": "Deducts the full $200,000 in 2026, ignoring the $120,000 already used in 2025.",
+    "C": "In 2025 the deduction is limited to 80% x $150,000 = $120,000, leaving $80,000 of NOL. In 2026 the $80,000 is fully deductible (limit $240,000), so taxable income is $300,000 - $80,000 = $220,000.",
+    "D": "Assumes the entire NOL was used in 2025 or ignores the loss carryover."
    },
    "steps": [
-    "2027 deduction = min(200,000, 80% x 150,000 = 120,000) = 120,000",
+    "2025 deduction = min(200,000, 80% x 150,000 = 120,000) = 120,000",
     "Remaining NOL = 80,000",
-    "2028 deduction = min(80,000, 240,000) = 80,000",
-    "Taxable income 2028 = 300,000 - 80,000 = 220,000"
+    "2026 deduction = min(80,000, 240,000) = 80,000",
+    "Taxable income 2026 = 300,000 - 80,000 = 220,000"
    ],
    "calc_check": {
     "expr": "300000-(200000-0.80*150000)",
@@ -2278,12 +2366,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -2296,13 +2386,13 @@
    "task": "Calculate the current-year net operating or capital loss of a C corporation, and the limitations on use in the current year.",
    "task_source": "지도.json",
    "task_skill": "Application",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Application",
+   "difficulty": 2,
    "calc": true,
-   "stem": "Bayshore Analytics, Inc.'s draft 2027 Form 1120 shows taxable income before the net operating loss deduction of $400,000, a net operating loss carryforward from 2025 of $500,000, an NOL deduction of $400,000, and taxable income of $0. Bayshore has no other loss carryforwards. What correction is required?",
+   "stem": "Bayshore Analytics, Inc.'s draft 2026 Form 1120 shows taxable income before the net operating loss deduction of $400,000, a net operating loss carryforward from 2025 of $500,000, an NOL deduction of $400,000, and taxable income of $0. Bayshore has no other loss carryforwards. What correction is required?",
    "exhibit": [
     [
-     "Draft Form 1120 (2027)",
+     "Draft Form 1120 (2026)",
      "Amount"
     ],
     [
@@ -2364,12 +2454,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -2411,12 +2503,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -2479,7 +2573,7 @@
     },
     {
      "src": "IRC",
-     "ref": "§38(c)(6)(E)"
+     "ref": "§38(c)(1)(B)"
     },
     {
      "src": "Form",
@@ -2491,12 +2585,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-012"
   },
@@ -2543,12 +2639,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-010"
   },
@@ -2623,12 +2721,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -2674,12 +2774,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-011"
   },
@@ -2693,8 +2795,8 @@
    "task": "Calculate the credits allowable as a reduction to tax for a C corporation.",
    "task_source": "지도.json",
    "task_skill": "Application",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Application",
+   "difficulty": 2,
    "calc": true,
    "stem": "Draft 2026 Form 1120 workpapers for Linden Rail Supply, Inc. claim the full available general business credit. Linden has no minimum tax liability, and the one-year carryback should be ignored. Which correction is required?",
    "exhibit": [
@@ -2750,7 +2852,7 @@
     },
     {
      "src": "IRC",
-     "ref": "§38(c)(6)(E)"
+     "ref": "§38(c)(1)(B)"
     },
     {
      "src": "IRC",
@@ -2766,12 +2868,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -2817,12 +2921,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -2868,12 +2974,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -2919,12 +3027,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -2993,12 +3103,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3068,12 +3180,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3087,7 +3201,7 @@
    "task_source": "지도.json",
    "task_skill": "Application",
    "skill": "Application",
-   "difficulty": 3,
+   "difficulty": 2,
    "calc": true,
    "stem": "Delmar Textiles, Inc. reported the following for State U: business income of $600,000, of which 25% is apportioned to State U under the state's formula, and $40,000 of rental income from a nonbusiness building located in State U, which is allocated entirely to State U. What is Delmar's State U taxable income before any state adjustments?",
    "exhibit": "",
@@ -3143,12 +3257,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3205,12 +3321,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3249,6 +3367,10 @@
     {
      "src": "IRC",
      "ref": "§162(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§164(b)(6)"
     }
    ],
    "law_asof": "2026-09-29",
@@ -3256,12 +3378,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3331,12 +3455,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3403,12 +3529,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3478,12 +3606,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3529,12 +3659,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3547,8 +3679,8 @@
    "task": "Calculate the gain recognized and the basis of stock and assets in a corporate formation (transfer of property for stock).",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
    "calc": true,
    "stem": "Ivy and Noah transferred property with a total adjusted basis of $40,000 and a fair market value of $100,000 to a new corporation solely for all of its stock, and control is met. The corporation's draft opening balance sheet records the property at $100,000. What correction is required to the corporation's basis in the property?",
    "exhibit": "",
@@ -3585,12 +3717,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3640,12 +3774,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3714,12 +3850,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3789,12 +3927,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3858,12 +3998,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -3927,12 +4069,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -4007,12 +4151,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -4025,8 +4171,8 @@
    "task": "Determine the tax treatment of a corporation's distribution to shareholders (earnings and profits, dividend, return of capital, gain).",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Application",
+   "difficulty": 2,
    "calc": true,
    "stem": "For 2026, Wren Valley, Inc. distributed $90,000 in cash to its only shareholder, Owen Pruitt. The corporation's current and accumulated earnings and profits total $20,000, and Owen's stock basis is $50,000. Owen's draft return reports the entire $90,000 as a qualified dividend. Which correction is needed?",
    "exhibit": "",
@@ -4068,12 +4214,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -4123,12 +4271,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -4196,12 +4346,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -4256,12 +4408,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -4334,12 +4488,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -4352,7 +4508,7 @@
    "task": "Determine the tax consequences of a complete liquidation to the corporation and its shareholders.",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Remembering & Understanding",
    "difficulty": 2,
    "calc": false,
    "stem": "Tilden Hardware, Inc. is 90% owned by Parent Corp. and 10% owned by an individual, Ray. Tilden completely liquidates and distributes appreciated land to each owner in proportion to ownership. Which statement is correct?",
@@ -4393,12 +4549,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -4444,12 +4602,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -4495,12 +4655,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -4550,12 +4712,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-013"
   },
@@ -4612,12 +4776,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-015"
   },
@@ -4631,7 +4797,7 @@
    "task": "Recall eligible shareholders for an S corporation for tax purposes.",
    "task_source": "지도.json",
    "task_skill": "Remembering",
-   "skill": "Analysis",
+   "skill": "Remembering & Understanding",
    "difficulty": 2,
    "calc": false,
    "stem": "Ferro Components, Inc., an S corporation, has two arrangements under consideration. Which one would create a second class of stock and terminate the S election?",
@@ -4664,12 +4830,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-018"
   },
@@ -4712,12 +4880,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-017"
   },
@@ -4761,6 +4931,10 @@
     {
      "src": "Rev.",
      "ref": "Proc. 2013-30"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1362(b)(1)(B)"
     }
    ],
    "law_asof": "2026-09-29",
@@ -4768,12 +4942,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -4829,12 +5005,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-019"
   },
@@ -4849,7 +5027,7 @@
    "task_source": "지도.json",
    "task_skill": "Application",
    "skill": "Remembering & Understanding",
-   "difficulty": 2,
+   "difficulty": 1,
    "calc": false,
    "stem": "Cedar Hollow, Inc. is an S corporation that was a C corporation earlier and still has accumulated earnings and profits. Passive investment income exceeded 25% of gross receipts in each of 2024, 2025 and 2026. When does its S status terminate?",
    "exhibit": "",
@@ -4881,12 +5059,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-020"
   },
@@ -4933,12 +5113,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -4980,12 +5162,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-021"
   },
@@ -4999,7 +5183,7 @@
    "task": "Recall eligible shareholders for an S corporation for tax purposes.",
    "task_source": "지도.json",
    "task_skill": "Remembering",
-   "skill": "Analysis",
+   "skill": "Remembering & Understanding",
    "difficulty": 2,
    "calc": false,
    "stem": "Marlin Yard Supply, Inc. filed Form 2553 in 2026, listing the shareholders shown. All shareholders consented and the corporation is otherwise eligible. Which shareholder makes the corporation ineligible?",
@@ -5057,12 +5241,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -5135,12 +5321,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-022"
   },
@@ -5157,7 +5345,7 @@
    "skill": "Application",
    "difficulty": 2,
    "calc": true,
-   "stem": "Falcon Ridge, Inc., a calendar-year S corporation that has not elected to close its books, had $365,000 of ordinary business income for 2026. Wes Palmer owned 40% of the stock from January 1 through March 31 and sold all of it on April 1. How much ordinary business income is allocated to Wes?",
+   "stem": "Falcon Ridge, Inc., a calendar-year S corporation that has not elected to close its books, had $365,000 of ordinary business income for 2026. Wes Palmer owned 40% of the stock from January 1 through March 31 and sold all of it on March 31. How much ordinary business income is allocated to Wes?",
    "exhibit": "",
    "options": [
     "$36,000",
@@ -5167,7 +5355,7 @@
    ],
    "answer": "A",
    "why": {
-    "A": "Income is allocated per share per day. Wes owned 40% for 90 days (January 1 through March 31): $365,000 x 90/365 x 40% = $36,000.",
+    "A": "Income is allocated per share per day. Wes owned 40% for 90 days (January 1 through March 31, the day of sale counting as a day of ownership): $365,000 x 90/365 x 40% = $36,000.",
     "B": "Uses a half-year holding period instead of 90 days.",
     "C": "Prorates by days but does not apply Wes's 40% ownership.",
     "D": "Allocates 40% of the full year, ignoring that Wes owned the stock for only 90 days."
@@ -5200,19 +5388,25 @@
     {
      "src": "IRC",
      "ref": "§1377(a)(1)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.1377-1(a)(2)(ii)"
     }
    ],
    "law_asof": "2026-09-29",
    "testable_from": "2026-01-01",
-   "law_note": "",
+   "law_note": "A seller is treated as the shareholder for the day of disposition (Reg. 1.1377-1(a)(2)(ii)). The stem originally said the sale was on April 1 (91 days, $36,400); it now says March 31 so the count is exactly 90 days.",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -5258,12 +5452,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -5309,12 +5505,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-024"
   },
@@ -5344,7 +5542,7 @@
     "A": "Fringe benefit exclusions do not apply to more-than-2% shareholders.",
     "B": "Premiums are deductible compensation-type expenses if included in wages.",
     "C": "Premiums for a more-than-2% shareholder-employee are wages for income tax purposes (not FICA), deductible by the corporation, and deductible by the shareholder on Schedule 1.",
-    "D": "Health insurance premiums for such a shareholder are wages for income tax withholding but are generally not subject to FICA when paid under a plan."
+    "D": "Premiums paid under a plan for a more-than-2% shareholder-employee are reported in box 1 wages but are not FICA wages, so the statement that they are subject to FICA like other wages is wrong."
    },
    "cite": [
     {
@@ -5365,12 +5563,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -5383,7 +5583,7 @@
    "task": "Review federal Form 1120S and supporting documentation to determine completeness and accuracy of classification of items.",
    "task_source": "지도.json",
    "task_skill": "Analysis",
-   "skill": "Analysis",
+   "skill": "Application",
    "difficulty": 2,
    "calc": false,
    "stem": "A preparer classified the following 2026 items of Delta Ridge, Inc., an S corporation, on Form 1120-S and Schedule K. Which classification is incorrect?",
@@ -5442,12 +5642,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -5460,8 +5662,8 @@
    "task": "Review and resolve discrepancies identified by automated diagnostic and validation checks for Form 1120S.",
    "task_source": "지도.json",
    "task_skill": "Analysis",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Application",
+   "difficulty": 2,
    "calc": true,
    "stem": "An automated check on Sedge Bay, Inc.'s 2026 Form 1120-S flags that shareholder box 1 amounts do not equal Schedule K line 1, which shows $200,000. Shareholders and ownership all year: Amy 50%, Ben 30%, Cal 20%. The Schedule K-1s show box 1 of $100,000 for Amy, $60,000 for Ben and $30,000 for Cal. Which correction resolves the discrepancy?",
    "exhibit": "",
@@ -5507,12 +5709,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -5583,12 +5787,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -5657,12 +5863,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-027"
   },
@@ -5732,12 +5940,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-025"
   },
@@ -5784,12 +5994,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-026"
   },
@@ -5832,12 +6044,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-027"
   },
@@ -5851,8 +6065,8 @@
    "task": "Calculate the impact of current year operations on an S corporation's accumulated adjustments account.",
    "task_source": "지도.json",
    "task_skill": "Application",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Application",
+   "difficulty": 2,
    "calc": true,
    "stem": "Draft Schedule M-2 for Bluff Point, Inc., an S corporation, is shown. The corporation had no other items. Which correction is needed?",
    "exhibit": [
@@ -5926,12 +6140,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -5996,12 +6212,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -6056,12 +6274,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -6103,12 +6323,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -6179,12 +6401,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-030"
   },
@@ -6254,12 +6478,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-023"
   },
@@ -6329,12 +6555,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-031"
   },
@@ -6405,12 +6633,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -6475,12 +6705,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-032"
   },
@@ -6523,12 +6755,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-028"
   },
@@ -6597,12 +6831,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-029"
   },
@@ -6677,12 +6913,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -6695,7 +6933,7 @@
    "task": "Calculate a shareholder's stock basis in an S corporation resulting from business operations, cash contributions and cash distributions.",
    "task_source": "지도.json",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Application",
    "difficulty": 3,
    "calc": true,
    "stem": "Draft basis worksheet for Petra Lund's S corporation stock for 2026 is shown. Petra's share of tax-exempt interest was $4,000 and it was omitted; all other items are correct. Which correction is needed?",
@@ -6765,12 +7003,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -6820,12 +7060,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -6880,12 +7122,12 @@
    },
    "cite": [
     {
-     "src": "IRC",
-     "ref": "§358(a)"
+     "src": "Form",
+     "ref": "7203 instructions (capital contributions)"
     },
     {
-     "src": "IRC",
-     "ref": "§722"
+     "src": "Reg",
+     "ref": "§1.118-1"
     }
    ],
    "law_asof": "2026-09-29",
@@ -6893,12 +7135,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -6967,12 +7211,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -7014,12 +7260,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -7090,12 +7338,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -7141,12 +7391,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -7225,12 +7477,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -7307,12 +7561,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-034"
   },
@@ -7387,12 +7643,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-035"
   },
@@ -7439,12 +7697,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-034"
   },
@@ -7487,12 +7747,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-035"
   },
@@ -7539,12 +7801,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-036"
   },
@@ -7595,12 +7859,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -7646,12 +7912,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -7664,8 +7932,8 @@
    "task": "Review federal Form 1065 and supporting documentation to determine completeness and accuracy of classification of items.",
    "task_source": "지도.json",
    "task_skill": "Analysis",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Application",
+   "difficulty": 2,
    "calc": true,
    "stem": "Draft 2026 Form 1065 for Corbel Studio Partners is shown. The $60,000 paid to partner Nia Roberts for her services, regardless of income, was recorded as a distribution and not deducted. Which correction is required?",
    "exhibit": [
@@ -7730,12 +7998,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -7748,8 +8018,8 @@
    "task": "Review and resolve discrepancies identified by automated diagnostic and validation checks for Form 1065.",
    "task_source": "지도.json",
    "task_skill": "Analysis",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Application",
+   "difficulty": 2,
    "calc": true,
    "stem": "An automated diagnostic on the 2026 Form 1065 of Tidewater Partners flags that the ending profit-sharing percentages on the Schedules K-1 total 105%. The partnership agreement allocates profits 50% to Amos, 30% to Bea and 20% to Cole. The K-1s show 50% for Amos, 35% for Bea and 20% for Cole. Which correction resolves the discrepancy?",
    "exhibit": "",
@@ -7790,12 +8060,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -7869,12 +8141,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -7945,12 +8219,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-037"
   },
@@ -8025,12 +8301,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -8099,12 +8377,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -8142,7 +8422,7 @@
     },
     {
      "src": "IRC",
-     "ref": "§722"
+     "ref": "§705(a)"
     }
    ],
    "law_asof": "2026-09-29",
@@ -8150,12 +8430,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-037"
   },
@@ -8220,12 +8502,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-038"
   },
@@ -8295,12 +8579,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-039"
   },
@@ -8370,12 +8656,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -8388,8 +8676,8 @@
    "task": "Calculate the partner's basis in a partnership resulting from business operations, cash contributions, cash distributions and changes in existing partnership liabilities.",
    "task_source": "지도.json",
    "task_skill": "Application",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Application",
+   "difficulty": 2,
    "calc": true,
    "stem": "Draft basis worksheet for Kade Ibarra's partnership interest for 2026 is shown. Kade also contributed services worth $20,000 for his interest. Which correction is required?",
    "exhibit": [
@@ -8458,12 +8746,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -8476,7 +8766,7 @@
    "task": "Calculate the partner's basis in a partnership resulting from business operations, cash contributions, cash distributions and changes in existing partnership liabilities.",
    "task_source": "지도.json",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Application",
    "difficulty": 3,
    "calc": true,
    "stem": "Ines Varga started 2026 with a $40,000 basis in her partnership interest. Her Schedule K-1 shows ordinary income of $30,000, long-term capital gain of $10,000, tax-exempt interest of $5,000, charitable contributions of $2,000 and a $60,000 cash distribution. Her draft return reports a $20,000 gain on the distribution. Which statement is correct?",
@@ -8518,12 +8808,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -8539,7 +8831,7 @@
    "skill": "Application",
    "difficulty": 3,
    "calc": true,
-   "stem": "Ori Blanco contributed land with an adjusted basis of $30,000 and a fair market value of $100,000, subject to a $50,000 mortgage, to a partnership. The partnership assumed the mortgage, and Ori's share of partnership liabilities after the contribution is $25,000. What is Ori's basis in the partnership interest?",
+   "stem": "Ori Blanco contributed land with an adjusted basis of $30,000 and a fair market value of $100,000, subject to a $50,000 mortgage, to a partnership. The partnership assumed the mortgage, and Ori's share of partnership liabilities after the contribution is $25,000. Assume the mortgage was incurred more than two years before the contribution, so the disguised-sale rules do not apply. What is Ori's basis in the partnership interest?",
    "exhibit": "",
    "options": [
     "$5,000",
@@ -8591,6 +8883,10 @@
     {
      "src": "IRC",
      "ref": "§752(b)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.707-5(a)(6)"
     }
    ],
    "law_asof": "2026-09-29",
@@ -8598,12 +8894,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -8617,7 +8915,7 @@
    "task_source": "지도.json",
    "task_skill": "Application",
    "skill": "Remembering & Understanding",
-   "difficulty": 2,
+   "difficulty": 1,
    "calc": false,
    "stem": "Mika Sato contributed equipment (adjusted basis $25,000, fair market value $60,000) to a partnership in exchange for a partnership interest. Which statement about her capital account and outside basis is correct?",
    "exhibit": "",
@@ -8649,12 +8947,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -8726,12 +9026,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -8796,6 +9098,10 @@
     {
      "src": "IRC",
      "ref": "§752"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.742-1"
     }
    ],
    "law_asof": "2026-09-29",
@@ -8803,12 +9109,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -8877,12 +9185,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-039"
   },
@@ -8948,12 +9258,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9017,12 +9329,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9096,12 +9410,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9147,12 +9463,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9220,12 +9538,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9238,7 +9558,7 @@
    "task": "Determine the tax consequences of partnership distributions and of the sale or exchange of a partnership interest, including the basis adjustment election.",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Remembering & Understanding",
    "difficulty": 2,
    "calc": false,
    "stem": "In which situation must a partnership adjust the basis of its assets for a transferee partner even though no basis adjustment election is in effect?",
@@ -9271,12 +9591,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9289,8 +9611,8 @@
    "task": "Determine the tax consequences of partnership distributions and of the sale or exchange of a partnership interest, including the basis adjustment election.",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Application",
+   "difficulty": 2,
    "calc": true,
    "stem": "Draft calculation of the gain on the sale of Hana Kwon's partnership interest is shown. Hana's basis included her $20,000 share of partnership liabilities, which the buyer assumed. Which correction is needed?",
    "exhibit": [
@@ -9348,12 +9670,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9366,7 +9690,7 @@
    "task": "Determine the tax consequences of partnership distributions and of the sale or exchange of a partnership interest, including the basis adjustment election.",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Remembering & Understanding",
    "difficulty": 2,
    "calc": false,
    "stem": "Two entities each own land with an adjusted basis of $30,000 and a fair market value of $100,000, and each distributes the land to a 50% owner as a current distribution. One entity is an S corporation and the other a partnership. Which statement compares the entity-level results correctly?",
@@ -9403,12 +9727,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9476,12 +9802,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9536,12 +9864,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9611,12 +9941,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9629,7 +9961,7 @@
    "task": "Determine partnership allocations (special allocations, contributed property), formation consequences and the required tax year.",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Remembering & Understanding",
    "difficulty": 2,
    "calc": false,
    "stem": "Which special allocation of partnership items among partners is most likely to be respected for federal tax purposes?",
@@ -9662,12 +9994,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9709,12 +10043,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9727,7 +10063,7 @@
    "task": "Determine partnership allocations (special allocations, contributed property), formation consequences and the required tax year.",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Remembering & Understanding",
    "difficulty": 2,
    "calc": false,
    "stem": "Two service providers each work for a partnership. Ola receives a 20% profits interest with no right to current partnership capital. Rex receives a 20% capital interest worth $30,000 at the grant date. Both interests vest immediately. Which statement about the grant is correct?",
@@ -9764,12 +10100,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9837,12 +10175,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -9888,12 +10228,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-040"
   },
@@ -9945,12 +10287,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-041"
   },
@@ -9997,12 +10341,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -10016,7 +10362,7 @@
    "task_source": "지도.json",
    "task_skill": "Remembering",
    "skill": "Remembering & Understanding",
-   "difficulty": 2,
+   "difficulty": 1,
    "calc": false,
    "stem": "Dune Ridge, LLC elected to be taxed as a corporation effective January 1, 2026. In 2028 its members want to change its classification back to a partnership. Which statement is correct?",
    "exhibit": "",
@@ -10048,12 +10394,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -10066,7 +10414,7 @@
    "task": "Recall the tax classification options for a limited liability company for tax purposes.",
    "task_source": "지도.json",
    "task_skill": "Remembering",
-   "skill": "Analysis",
+   "skill": "Remembering & Understanding",
    "difficulty": 2,
    "calc": false,
    "stem": "Tess Whalen is the only member of Whalen Design, LLC, which has three employees and made no election. Which statement describes the federal tax treatment correctly?",
@@ -10099,12 +10447,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -10150,12 +10500,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-043"
   },
@@ -10198,12 +10550,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-044"
   },
@@ -10246,12 +10600,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-046"
   },
@@ -10325,12 +10681,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_entities-045"
   },
@@ -10370,6 +10728,10 @@
     {
      "src": "Form",
      "ref": "990-T instructions"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.6012-2(e)"
     }
    ],
    "law_asof": "2026-09-29",
@@ -10377,12 +10739,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -10428,12 +10792,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -10446,7 +10812,7 @@
    "task": "Calculate or identify unrelated business taxable income and the annual return filing requirements of an exempt organization.",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Application",
    "difficulty": 2,
    "calc": false,
    "stem": "Two exempt organizations each sell used goods to the public. Haven Thrift Shop sells only goods donated to it and is staffed entirely by volunteers. Crest Resale purchases new goods from wholesalers and sells them through paid staff. Which statement is correct?",
@@ -10479,12 +10845,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -10497,7 +10865,7 @@
    "task": "Calculate or identify unrelated business taxable income and the annual return filing requirements of an exempt organization.",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Application",
    "difficulty": 3,
    "calc": true,
    "stem": "Reviewing Pine Barrens Society's draft Form 990-T, a CPA sees gross unrelated business income of $80,000 that includes $10,000 of dividends from a stock portfolio, directly connected expenses of $45,000, no specific deduction, and UBTI of $35,000. Which correction is needed?",
@@ -10564,12 +10932,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -10642,12 +11012,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -10689,12 +11061,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -10728,7 +11102,7 @@
    "cite": [
     {
      "src": "IRC",
-     "ref": "§441(e)"
+     "ref": "§441(b), §644(a)"
     },
     {
      "src": "Form",
@@ -10740,12 +11114,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -10758,8 +11134,8 @@
    "task": "Determine the income taxation of trusts and estates (simple and complex trusts, distributable net income, distribution deduction).",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Application",
+   "difficulty": 2,
    "calc": true,
    "stem": "A complex trust has distributable net income of $50,000. It must distribute $30,000 currently to Beneficiary A. The trustee also distributes $40,000 in its discretion to Beneficiary B. How much of B's distribution is taxable to B?",
    "exhibit": "",
@@ -10815,12 +11191,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -10833,7 +11211,7 @@
    "task": "Determine the income taxation of trusts and estates (simple and complex trusts, distributable net income, distribution deduction).",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Remembering & Understanding",
    "difficulty": 2,
    "calc": false,
    "stem": "Which of the following trusts is a simple trust for the year?",
@@ -10866,12 +11244,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -10884,7 +11264,7 @@
    "task": "Determine the tax treatment of a corporation's distribution to shareholders (earnings and profits, dividend, return of capital, gain).",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Application",
    "difficulty": 3,
    "calc": true,
    "stem": "Mesa Ridge Corp. began 2026 with an accumulated earnings and profits deficit of $100,000 and had current earnings and profits of $30,000 for 2026, earned evenly. It distributed $20,000 on July 1 to one shareholder and $20,000 on December 1 to another. How much of the December 1 distribution is a dividend?",
@@ -10940,12 +11320,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -11015,12 +11397,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -11086,12 +11470,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -11143,6 +11529,10 @@
     {
      "src": "IRC",
      "ref": "§243(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§246(b)(3)"
     }
    ],
    "law_asof": "2026-09-29",
@@ -11150,12 +11540,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -11168,7 +11560,7 @@
    "task": "Review a C corporation's adjusted book trial balance and supporting documentation... to determine completeness and accuracy of book/tax differences on Form 1120.",
    "task_source": "지도.json",
    "task_skill": "Analysis",
-   "skill": "Analysis",
+   "skill": "Application",
    "difficulty": 2,
    "calc": false,
    "stem": "Draft 2026 Schedule M-1 additions for Kelso Machine Works, Inc. are shown. The corporation is a calendar-year C corporation with no other differences. Which addition is incorrect?",
@@ -11230,12 +11622,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -11248,7 +11642,7 @@
    "task": "Recall S corporation eligibility requirements for tax purposes.",
    "task_source": "지도.json",
    "task_skill": "Remembering",
-   "skill": "Analysis",
+   "skill": "Remembering & Understanding",
    "difficulty": 2,
    "calc": false,
    "stem": "Orchard Bay Supply, Inc. was formed and began business on January 1, 2026, and intended to be an S corporation from that date. Its shareholders signed Form 2553, but it was not filed until July 10, 2026. The corporation otherwise met every S requirement. Which statement is correct?",
@@ -11281,12 +11675,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -11299,8 +11695,8 @@
    "task": "Determine the tax consequences of a complete liquidation to the corporation and its shareholders.",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Application",
+   "difficulty": 2,
    "calc": true,
    "stem": "Wells Corridor Corp. completely liquidated in 2026, and Jon Ames, its only shareholder, received $250,000 in cash. Jon's stock basis is $80,000 and he has held the stock for five years. His draft return reports the $170,000 as an ordinary dividend. Which correction is needed?",
    "exhibit": "",
@@ -11340,12 +11736,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -11358,8 +11756,8 @@
    "task": "Determine the tax consequences of partnership distributions and of the sale or exchange of a partnership interest, including the basis adjustment election.",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
-   "difficulty": 3,
+   "skill": "Application",
+   "difficulty": 2,
    "calc": true,
    "stem": "Partner Mia Lowry has a $30,000 basis in her partnership interest. She received a $45,000 cash distribution in 2026 that did not involve unrealized receivables or inventory. Her draft return reports $15,000 of ordinary income on the distribution. Which correction is needed?",
    "exhibit": "",
@@ -11400,12 +11798,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   },
   {
@@ -11418,7 +11818,7 @@
    "task": "Determine the income taxation of trusts and estates (simple and complex trusts, distributable net income, distribution deduction).",
    "task_source": "supplement (not in 지도.json; verify against Blueprint)",
    "task_skill": "Application",
-   "skill": "Analysis",
+   "skill": "Remembering & Understanding",
    "difficulty": 2,
    "calc": false,
    "stem": "Draft 2026 Form 1041 for the estate of Paul Ortiz claims a $100 exemption. The estate is a domestic decedent estate with no other special facts. Which correction is required?",
@@ -11451,12 +11851,14 @@
    "law_note": "",
    "provenance": "terra-original",
    "verify": {
-    "solver_answer": null,
-    "solver_id": null,
-    "cite_ok": null,
-    "date": null
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "85f4343",
+    "match": true
    },
-   "status": "draft",
+   "status": "verified",
    "version": 1
   }
  ]
