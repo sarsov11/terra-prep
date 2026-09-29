@@ -116,3 +116,51 @@
 - 독립 풀이 검산 24개.
 - TBS 를 REG 시험 구성(8개)에 맞춰 최소 3배(약 72개)로 확대. Area 별 목표: I 12·II 12·III 12·IV 18·V 18.
 - 조사 형식: 조문 원문 뷰어(내장 발췌)와 인용 자동 완성 추가.
+
+## 7. FAR TBS 확장: 분개 입력 칸(`je`)과 계산표 칸 (작성 2026-09-29)
+REG 와 같은 엔진·스키마를 쓰고, FAR 에서 필요한 것만 더한다. 산출: `원천/FAR/tbs_far.json`(24개), `tbs_far_문제지_검산용.json`, `tbs_far_계산검산.py`, `tbs_far_작성메모.md`. 작성 원본은 `tbs_far_lib.py`·`tbs_far_items_1~3.py`·`tbs_far_작성원본.py`. 사이트 엔진(`js/tbs.js`·`js/je.js`)은 읽기만 했고 아래는 변경 제안이다.
+
+### 7-1 FAR 필드 차이
+| 필드 | REG | FAR |
+|---|---|---|
+| `id` | `REG-{Area}-T-nnn` | `FAR-{Area}-T-nnn` (Area I·II·III), `exam: "FAR"` 추가 |
+| `format` | numeric_table / document_review / research / dropdown_judgment | 위 4종 + **`journal_entry`**(분개 칸이 들어간 TBS). 칸 종류는 형식과 무관하게 섞을 수 있다(예: 분개 표 + 숫자 칸 + 드롭다운) |
+| `cite[]` | 문자열(IRC 등) | `{src:"ASC"|"GASB", ref}` (FAR_SPEC 4절). 소주제(subtopic) 수준까지만 쓰고 문단 번호는 넣지 않았다 |
+| 전시물 `kind` | email·memo·return_excerpt·contract·table·notes·statute_note | 그대로(FAR 는 table·notes·memo 를 주로 사용). 재무제표 전시물은 `table` 에 헤더 행 + 소계 행으로 표현 |
+| 칸 `fmt` | `$`(정수 달러) / `n`(정수) / `%dec` | `$` `n` **`$2`**(소수 2자리 금액, EPS) **`x2`**(소수 2자리 비율) **`p1`**(퍼센트 소수 1자리). 정답은 `rd(값, 자릿수)`=사사오입(`floor(x*10^d+0.5+1e-9)/10^d`). 기본 `tol`: `$`1, `n`0, `$2`·`x2` 0.01, `p1` 0.1 |
+| 식 함수 | rnd min max abs tax_s se_tax dual_basis ltcg_tax | rnd min max abs **pvann**(r,n,pmt,fv) 보통연금+일시금 현가, **pvdue** 선급연금, **pmtann**, **iff**(c,a,b). 이름 충돌을 피하려고 매개변수 이름으로 함수명을 못 쓴다(검산이 검사) |
+| 자리표시자 | `{x}` `{x:,}` | 추가 `{x:2}`(소수 2자리 고정), `{x:1}`. 정수화된 실수는 정수로 표시 |
+| 인용 칸 | `norm_cite`(IRC·CFR) | `norm:"std"` — `norm_std()`: 소문자화, `§`·`fasb asc gasb codification topic subtopic statement no number section paragraph` 단어와 `# . , ; :` 제거, 공백 제거. `ASC 205-20`→`205-20`, `GASB Statement No. 34`→`34`. 채점: 입력이 `accept` 와 같거나 `accept-` 로 시작(더 구체적)이면 1점, `partial`(상위 주제)과 같으면 0.5점 |
+
+### 7-2 분개 칸 `je` 스키마
+```
+{ id, kind:"je", label, ask, accounts:[je_coa 계정 id …], tol:1, points: <정답 줄 수>,
+  lines:[{ s:"D"|"C", a:<계정 id>, expr:<금액식>, why:<줄 해설>, alt:[<같이 인정할 계정 id>] }],
+  mist:[{ k:"sub"|"swap"|"amt"|"extra"|"miss", a, b?, expr?, msg }],   // JE_SPEC 3절과 같은 뜻
+  why, steps[], hints[] }
+```
+- `expr` 는 다른 숫자 칸(`c1` …)·params·derived 를 쓴다. 렌더 후 `lines[].v`(정수 달러), `lines[].deps`(참조한 앞 칸 id), `mist[].v` 가 채워진다.
+- `accounts` 는 화면에 뜨는 계정 후보(정답 계정 + 방해 계정, 6~10개). 계정 id·이름은 `je_coa.json`(118개)을 그대로 쓴다. 후보가 없으면 전체 검색(je.js 의 `search()`)으로 대체 가능.
+- 입력: 행 목록 `[{a:<계정 id>, d:<차변>, c:<대변>}]`. 행 수는 정답 줄 수 + 2로 시작하고 「줄 추가」 버튼.
+- 세트는 1칸 = 1분개(날짜·거래 하나). 한 TBS 에 분개 칸을 2~4개 둔다.
+
+### 7-3 분개 채점(JE_SPEC 4절 재사용)
+1. `je.js` 의 `grade(v, si, rows)` 를 그대로 쓴다. 매핑: `v.sets[0].lines` ← 칸 `lines`(`s,a,v,alt`), `v.mist` ← 칸 `mist`, `v.tol` ← 칸 `tol`. 파이썬 참고 구현은 `tbs_far_lib.py grade_je()`(je.js 이식, 이월 추가분만 다름).
+2. **부분 점수 = 줄 단위**: 정확 1, 금액만 틀림 0.5, 불필요·미인식 줄 −0.5(하한 0). 줄 순서 무관, 같은 계정·같은 변 합산, 대체 계정(`alt`), 양변 순액 한 줄 허용.
+3. 칸 점수 = `score`(0~1) x `points`. 숫자·드롭다운·인용 칸은 `points` 1. 따라서 분개 칸은 줄 수만큼 비중을 갖는다(분개가 2~4줄이라 숫자 칸 2~4개와 같은 무게).
+4. **앞칸 오류 이월(ECF)**: 분개 줄 금액이 앞 숫자 칸을 참조하면(`deps` 비어 있지 않음), 학생이 입력한 앞 숫자 칸 값으로 `expr` 을 다시 계산한 `av` 를 만들고, 줄 금액이 `av` 와 같으면(정답과는 다른 경우) 줄 점수 **0.75**(상수 `JE_ECF`)로 `ecf` 표시. 숫자 칸 ECF(0.5)보다 후하게 둔 이유: 분개 줄 하나가 이미 「금액 틀림 0.5」를 받는 구조라 그보다 위로 구분하기 위함(조정 가능).
+5. 오답 진단: `mist` 규칙이 걸리면 줄 옆에 `msg` 표시(계정 치환 sub, 반대변 swap, 금액 amt, 불필요 extra, 누락 miss). 규칙이 없으면 je.js 기본 문구.
+6. 힌트 3단계(`hints[]` 자동 생성): 영향 계정 이름 → 증감 → 차/대. 금액은 알려 주지 않는다. 채점 후 T계정 보기는 je.js `tHTML` 재사용.
+
+### 7-4 엔진 변경 제안(파일 단위, 이번에 수정하지 않음)
+| 파일 | 변경 |
+|---|---|
+| `js/tbs.js` | ① `FN` 에 pvann·pvdue·pmtann·iff 추가(같은 식 언어, 파서 무변경) ② `solve`/`render`: `fmt` 별 자릿수 반올림, `je` 칸의 `lines[].v`·`mist[].v`·`deps` 계산 ③ `gradeCell` 에 `je` 분기(JE 채점 호출 + ECF), 인용 칸 `norm:"std"` 분기 ④ 칸 렌더러: `je` 입력 그리드(계정 선택 + 차/대 금액, 차대 합계 실시간 표시), `fmt` 별 입력 접두어(`$`·없음·`%`) ⑤ 채점 후 요약: 분개 줄별 상태(정확·금액·반대변·불필요·누락) |
+| `js/je.js` | `grade`, `hintLines`, `tAccounts`/`tHTML`, `search`, `COA` 를 `window.JEEngine` 으로 내보내기(현재 IIFE 안이라 tbs.js 가 못 씀). 동작 변경 없음 |
+| `tools/build_tbs.py`(빌더) | `tbs_far.json` → 정답 있는 파일 + 문제지형. 계정 목록은 `je_coa.json` 에서 이름을 붙여 배포 |
+| `tools/test_tbs_variants.py` | FAR 쌍둥이 시험 추가(같은 시드에서 파이썬·JS 답 일치). 이번 PC 에는 Node 가 없어 JS 쪽은 실행하지 못했다 |
+
+### 7-5 FAR TBS 1차 24개 구성과 검사
+- Area I 8 · II 8 · III 8 (FAR_SPEC 비중 근처). 형식: 분개 입력 8 · 숫자 계산표 8 · 문서 검토 2 + 드롭다운 판단 2 · 조사(ASC·GASB 번호) 4. 칸 167개(숫자 84, 분개 23, 드롭다운 36, 인용 24).
+- 검사(`tbs_far_계산검산.py`): 기본값과 변형 4,800개(24 x 200) 전부를 **식과 다른 절차로 짠 손계산**(반복·월별 시뮬레이션·대차 균형)과 대조, 만점 채점, 분개 차대 균형, 식 문법이 `tbs.js` 파서 부분집합인지 검사, ECF·분개 부분점수·번호 정규화 시험.
+- 남은 일: 독립 검산(다른 에이전트가 `tbs_far_문제지_검산용.json` 을 풀어 대조 후 `status: verified`), 엔진 변경 반영, JS 쌍둥이 시험, ASC·GASB 번호 링크 유효성 점검.

@@ -1,0 +1,1375 @@
+{
+ "coa": [
+  {
+   "id": "cash",
+   "name": "Cash",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Cash and Cash Equivalents",
+    "Cash in Bank",
+    "Checking Account",
+    "Cash - Checking"
+   ]
+  },
+  {
+   "id": "pettycash",
+   "name": "Petty Cash",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Petty Cash Fund"
+   ]
+  },
+  {
+   "id": "cashos",
+   "name": "Cash Over and Short",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Cash Short and Over",
+    "Cash Shortage and Overage"
+   ]
+  },
+  {
+   "id": "bankfee",
+   "name": "Bank Service Charge Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Bank Charges",
+    "Bank Fees",
+    "Bank Service Charges",
+    "Service Charge Expense"
+   ]
+  },
+  {
+   "id": "ar",
+   "name": "Accounts Receivable",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "A/R",
+    "Trade Receivables",
+    "Receivables",
+    "Accounts Receivable - Trade"
+   ]
+  },
+  {
+   "id": "allow",
+   "name": "Allowance for Credit Losses",
+   "cls": "contra-asset",
+   "n": "C",
+   "syn": [
+    "Allowance for Doubtful Accounts",
+    "Allowance for Uncollectible Accounts",
+    "Allowance for Bad Debts",
+    "Allowance for Expected Credit Losses",
+    "Allowance"
+   ]
+  },
+  {
+   "id": "nr",
+   "name": "Notes Receivable",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "N/R",
+    "Note Receivable"
+   ]
+  },
+  {
+   "id": "discnr",
+   "name": "Discount on Notes Receivable",
+   "cls": "contra-asset",
+   "n": "C",
+   "syn": [
+    "Unearned Interest Revenue",
+    "Unamortized Discount on Note Receivable"
+   ]
+  },
+  {
+   "id": "intrec",
+   "name": "Interest Receivable",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Accrued Interest Receivable"
+   ]
+  },
+  {
+   "id": "salesret",
+   "name": "Sales Returns and Allowances",
+   "cls": "contra-revenue",
+   "n": "D",
+   "syn": [
+    "Sales Returns",
+    "Sales Allowances",
+    "Returns and Allowances"
+   ]
+  },
+  {
+   "id": "salesdisc",
+   "name": "Sales Discounts",
+   "cls": "contra-revenue",
+   "n": "D",
+   "syn": [
+    "Sales Discounts Taken",
+    "Cash Discounts on Sales"
+   ]
+  },
+  {
+   "id": "bde",
+   "name": "Credit Loss Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Bad Debt Expense",
+    "Uncollectible Accounts Expense",
+    "Doubtful Accounts Expense",
+    "Provision for Credit Losses",
+    "Provision for Doubtful Accounts"
+   ]
+  },
+  {
+   "id": "bdrec",
+   "name": "Recoveries of Accounts Written Off",
+   "cls": "revenue",
+   "n": "C",
+   "syn": [
+    "Bad Debt Recovery"
+   ]
+  },
+  {
+   "id": "inv",
+   "name": "Inventory",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Merchandise Inventory",
+    "Inventories",
+    "Finished Goods Inventory"
+   ]
+  },
+  {
+   "id": "cogs",
+   "name": "Cost of Goods Sold",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "COGS",
+    "Cost of Sales",
+    "Cost of Merchandise Sold"
+   ]
+  },
+  {
+   "id": "invloss",
+   "name": "Loss on Inventory Write-Down",
+   "cls": "loss",
+   "n": "D",
+   "syn": [
+    "Inventory Write-Down",
+    "Loss from Write-Down of Inventory",
+    "Loss on Write-down to Net Realizable Value",
+    "Inventory Valuation Loss",
+    "Loss on Decline in Inventory Value"
+   ]
+  },
+  {
+   "id": "rrg",
+   "name": "Right to Recover Returned Products",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Asset for Returned Goods",
+    "Estimated Inventory Returns",
+    "Right of Return Asset",
+    "Returns Asset"
+   ]
+  },
+  {
+   "id": "prepaid",
+   "name": "Prepaid Expenses",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Prepaid Insurance",
+    "Prepaid Rent",
+    "Prepaid Expense",
+    "Prepaids"
+   ]
+  },
+  {
+   "id": "supplies",
+   "name": "Supplies",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Supplies on Hand"
+   ]
+  },
+  {
+   "id": "land",
+   "name": "Land",
+   "cls": "asset",
+   "n": "D",
+   "syn": []
+  },
+  {
+   "id": "bldg",
+   "name": "Buildings",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Building",
+    "Plant"
+   ]
+  },
+  {
+   "id": "equip",
+   "name": "Equipment",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Machinery",
+    "Machinery and Equipment",
+    "Plant Assets",
+    "Property, Plant and Equipment",
+    "Vehicles",
+    "Furniture and Fixtures"
+   ]
+  },
+  {
+   "id": "accdep",
+   "name": "Accumulated Depreciation",
+   "cls": "contra-asset",
+   "n": "C",
+   "syn": [
+    "Accumulated Depreciation - Equipment",
+    "Accumulated Depreciation - Buildings",
+    "Accumulated Depreciation-Equipment",
+    "Allowance for Depreciation"
+   ]
+  },
+  {
+   "id": "depexp",
+   "name": "Depreciation Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Depreciation"
+   ]
+  },
+  {
+   "id": "cip",
+   "name": "Construction in Progress",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Construction in Process",
+    "CIP"
+   ]
+  },
+  {
+   "id": "gainppe",
+   "name": "Gain on Disposal of Equipment",
+   "cls": "gain",
+   "n": "C",
+   "syn": [
+    "Gain on Sale of Equipment",
+    "Gain on Disposal of Plant Assets",
+    "Gain on Sale of Plant Assets",
+    "Gain on Sale of Property, Plant and Equipment",
+    "Gain on Disposal of PP&E",
+    "Gain on Disposal of Assets",
+    "Gain on Sale of Assets"
+   ]
+  },
+  {
+   "id": "lossppe",
+   "name": "Loss on Disposal of Equipment",
+   "cls": "loss",
+   "n": "D",
+   "syn": [
+    "Loss on Sale of Equipment",
+    "Loss on Disposal of Plant Assets",
+    "Loss on Sale of Plant Assets",
+    "Loss on Sale of Property, Plant and Equipment",
+    "Loss on Disposal of PP&E",
+    "Loss on Disposal of Assets",
+    "Loss on Sale of Assets",
+    "Casualty Loss",
+    "Loss from Fire",
+    "Loss from Casualty",
+    "Fire Loss",
+    "Loss on Disposal of Buildings",
+    "Loss on Retirement of Equipment"
+   ]
+  },
+  {
+   "id": "impl",
+   "name": "Impairment Loss",
+   "cls": "loss",
+   "n": "D",
+   "syn": [
+    "Loss on Impairment",
+    "Impairment Expense",
+    "Impairment of Assets",
+    "Asset Impairment Loss",
+    "Loss from Impairment"
+   ]
+  },
+  {
+   "id": "rou",
+   "name": "Right-of-Use Asset",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "ROU Asset",
+    "Leased Asset",
+    "Leased Equipment Under Finance Lease",
+    "Right of Use Asset",
+    "Lease Asset"
+   ]
+  },
+  {
+   "id": "patent",
+   "name": "Patent",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Patents",
+    "Licenses",
+    "License",
+    "Trademark",
+    "Franchise"
+   ]
+  },
+  {
+   "id": "goodwill",
+   "name": "Goodwill",
+   "cls": "asset",
+   "n": "D",
+   "syn": []
+  },
+  {
+   "id": "software",
+   "name": "Software Development Costs",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Capitalized Software",
+    "Internal-Use Software",
+    "Software"
+   ]
+  },
+  {
+   "id": "accamort",
+   "name": "Accumulated Amortization",
+   "cls": "contra-asset",
+   "n": "C",
+   "syn": [
+    "Accumulated Amortization - Patent",
+    "Accumulated Amortization - Intangibles"
+   ]
+  },
+  {
+   "id": "amortexp",
+   "name": "Amortization Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Amortization",
+    "Amortization of Intangible Assets",
+    "Amortization of Patent"
+   ]
+  },
+  {
+   "id": "rdexp",
+   "name": "Research and Development Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "R&D Expense",
+    "Research Expense",
+    "Development Expense",
+    "Research and Development Costs"
+   ]
+  },
+  {
+   "id": "oi",
+   "name": "Other Assets",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Deferred Charges"
+   ]
+  },
+  {
+   "id": "afs",
+   "name": "Investment in Debt Securities (AFS)",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Available-for-Sale Securities",
+    "AFS Securities",
+    "Investment in Available-for-Sale Debt Securities",
+    "Debt Securities, Available for Sale",
+    "Investments in AFS Securities"
+   ]
+  },
+  {
+   "id": "htm",
+   "name": "Investment in Debt Securities (HTM)",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Held-to-Maturity Securities",
+    "HTM Securities",
+    "Investment in Held-to-Maturity Securities",
+    "Investments in HTM Securities"
+   ]
+  },
+  {
+   "id": "eqsec",
+   "name": "Investment in Equity Securities",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Equity Securities",
+    "Trading Securities",
+    "Investment in Equity Securities (FV-NI)",
+    "Marketable Securities",
+    "Investments in Equity Securities at Fair Value"
+   ]
+  },
+  {
+   "id": "invassoc",
+   "name": "Investment in Investee",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Equity Method Investment",
+    "Investment in Associate",
+    "Investment in Affiliate",
+    "Investment in Investee Company"
+   ]
+  },
+  {
+   "id": "invinc",
+   "name": "Investment Income",
+   "cls": "revenue",
+   "n": "C",
+   "syn": [
+    "Dividend Income",
+    "Dividend Revenue",
+    "Investment Revenue"
+   ]
+  },
+  {
+   "id": "intinc",
+   "name": "Interest Revenue",
+   "cls": "revenue",
+   "n": "C",
+   "syn": [
+    "Interest Income",
+    "Interest Earned"
+   ]
+  },
+  {
+   "id": "eqinc",
+   "name": "Equity in Earnings of Investee",
+   "cls": "revenue",
+   "n": "C",
+   "syn": [
+    "Income from Investee",
+    "Equity Method Income",
+    "Equity in Net Income of Investee",
+    "Share of Investee Income",
+    "Equity in Income of Affiliate",
+    "Investment Income from Investee"
+   ]
+  },
+  {
+   "id": "ugl",
+   "name": "Unrealized Gain on Investments",
+   "cls": "gain",
+   "n": "C",
+   "syn": [
+    "Unrealized Holding Gain",
+    "Unrealized Gain on Trading Securities",
+    "Unrealized Holding Gain - Net Income",
+    "Unrealized Gain - Net Income",
+    "Fair Value Adjustment Gain",
+    "Unrealized Gain on Equity Securities",
+    "Holding Gain"
+   ]
+  },
+  {
+   "id": "uloss",
+   "name": "Unrealized Loss on Investments",
+   "cls": "loss",
+   "n": "D",
+   "syn": [
+    "Unrealized Holding Loss",
+    "Unrealized Loss on Trading Securities",
+    "Unrealized Holding Loss - Net Income",
+    "Unrealized Loss - Net Income",
+    "Fair Value Adjustment Loss",
+    "Unrealized Loss on Equity Securities",
+    "Holding Loss"
+   ]
+  },
+  {
+   "id": "aoci",
+   "name": "Accumulated Other Comprehensive Income",
+   "cls": "equity",
+   "n": "C",
+   "syn": [
+    "AOCI",
+    "Other Comprehensive Income",
+    "Unrealized Holding Gain - OCI",
+    "Unrealized Gain on AFS Securities",
+    "Unrealized Loss on AFS Securities",
+    "Unrealized Holding Loss - OCI",
+    "OCI - Unrealized Gain or Loss",
+    "Accumulated Other Comprehensive Loss",
+    "Foreign Currency Translation Adjustment"
+   ]
+  },
+  {
+   "id": "gainsec",
+   "name": "Gain on Sale of Investments",
+   "cls": "gain",
+   "n": "C",
+   "syn": [
+    "Gain on Sale of Securities",
+    "Realized Gain on Sale of Investments",
+    "Gain on Sale of Securities Investments",
+    "Realized Gain"
+   ]
+  },
+  {
+   "id": "losssec",
+   "name": "Loss on Sale of Investments",
+   "cls": "loss",
+   "n": "D",
+   "syn": [
+    "Loss on Sale of Securities",
+    "Realized Loss on Sale of Investments",
+    "Realized Loss"
+   ]
+  },
+  {
+   "id": "ap",
+   "name": "Accounts Payable",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "A/P",
+    "Trade Payables",
+    "Payables"
+   ]
+  },
+  {
+   "id": "np",
+   "name": "Notes Payable",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "N/P",
+    "Note Payable",
+    "Short-Term Notes Payable",
+    "Loans Payable",
+    "Bank Loan"
+   ]
+  },
+  {
+   "id": "mortgage",
+   "name": "Mortgage Payable",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Long-Term Notes Payable",
+    "Long-Term Debt",
+    "Loan Payable"
+   ]
+  },
+  {
+   "id": "intpay",
+   "name": "Interest Payable",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Accrued Interest Payable",
+    "Accrued Interest"
+   ]
+  },
+  {
+   "id": "unearned",
+   "name": "Unearned Revenue",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Deferred Revenue",
+    "Contract Liability",
+    "Customer Deposits",
+    "Advances from Customers",
+    "Unearned Fees",
+    "Customer Advances"
+   ]
+  },
+  {
+   "id": "contractasset",
+   "name": "Contract Asset",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Unbilled Receivables",
+    "Unbilled Revenue",
+    "Costs and Estimated Earnings in Excess of Billings"
+   ]
+  },
+  {
+   "id": "refundliab",
+   "name": "Refund Liability",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Estimated Refund Liability",
+    "Sales Returns Liability",
+    "Liability for Returns"
+   ]
+  },
+  {
+   "id": "warrantyliab",
+   "name": "Estimated Warranty Liability",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Warranty Liability",
+    "Warranty Payable",
+    "Provision for Warranty",
+    "Accrued Warranty Costs",
+    "Estimated Liability for Warranties"
+   ]
+  },
+  {
+   "id": "warrantyexp",
+   "name": "Warranty Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Warranty Cost",
+    "Product Warranty Expense"
+   ]
+  },
+  {
+   "id": "lawloss",
+   "name": "Loss from Litigation",
+   "cls": "loss",
+   "n": "D",
+   "syn": [
+    "Litigation Loss",
+    "Loss on Lawsuit",
+    "Loss Contingency",
+    "Loss from Lawsuit",
+    "Legal Settlement Expense",
+    "Loss from Contingency"
+   ]
+  },
+  {
+   "id": "lawliab",
+   "name": "Estimated Litigation Liability",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Liability for Lawsuit",
+    "Accrued Litigation Liability",
+    "Litigation Payable",
+    "Estimated Liability for Litigation",
+    "Contingent Liability"
+   ]
+  },
+  {
+   "id": "bondsp",
+   "name": "Bonds Payable",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Bonds Payable (Face)"
+   ]
+  },
+  {
+   "id": "disc",
+   "name": "Discount on Bonds Payable",
+   "cls": "contra-liability",
+   "n": "D",
+   "syn": [
+    "Bond Discount",
+    "Discount on Bonds",
+    "Unamortized Bond Discount"
+   ]
+  },
+  {
+   "id": "prem",
+   "name": "Premium on Bonds Payable",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Bond Premium",
+    "Premium on Bonds",
+    "Unamortized Bond Premium"
+   ]
+  },
+  {
+   "id": "dfc",
+   "name": "Deferred Financing Costs",
+   "cls": "contra-liability",
+   "n": "D",
+   "syn": [
+    "Debt Issuance Costs",
+    "Bond Issue Costs",
+    "Deferred Bond Issue Costs",
+    "Unamortized Debt Issuance Costs"
+   ]
+  },
+  {
+   "id": "intexp",
+   "name": "Interest Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Interest Cost"
+   ]
+  },
+  {
+   "id": "gainext",
+   "name": "Gain on Extinguishment of Debt",
+   "cls": "gain",
+   "n": "C",
+   "syn": [
+    "Gain on Bond Retirement",
+    "Gain on Early Retirement of Debt",
+    "Gain on Redemption of Bonds",
+    "Gain on Retirement of Bonds",
+    "Gain on Debt Extinguishment"
+   ]
+  },
+  {
+   "id": "lossext",
+   "name": "Loss on Extinguishment of Debt",
+   "cls": "loss",
+   "n": "D",
+   "syn": [
+    "Loss on Bond Retirement",
+    "Loss on Early Retirement of Debt",
+    "Loss on Redemption of Bonds",
+    "Loss on Retirement of Bonds",
+    "Loss on Debt Extinguishment"
+   ]
+  },
+  {
+   "id": "leaseliab",
+   "name": "Lease Liability",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Lease Obligation",
+    "Obligation Under Lease",
+    "Finance Lease Liability",
+    "Operating Lease Liability",
+    "Lease Payable"
+   ]
+  },
+  {
+   "id": "leaseexp",
+   "name": "Lease Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Operating Lease Cost",
+    "Rent Expense",
+    "Lease Cost",
+    "Operating Lease Expense"
+   ]
+  },
+  {
+   "id": "dta",
+   "name": "Deferred Tax Asset",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Deferred Income Tax Asset",
+    "Deferred Tax Assets"
+   ]
+  },
+  {
+   "id": "dtl",
+   "name": "Deferred Tax Liability",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Deferred Income Tax Liability",
+    "Deferred Tax Liabilities"
+   ]
+  },
+  {
+   "id": "dtava",
+   "name": "Valuation Allowance for Deferred Tax Assets",
+   "cls": "contra-asset",
+   "n": "C",
+   "syn": [
+    "Deferred Tax Valuation Allowance",
+    "Valuation Allowance"
+   ]
+  },
+  {
+   "id": "taxexp",
+   "name": "Income Tax Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Provision for Income Taxes",
+    "Income Taxes",
+    "Provision for Income Tax",
+    "Deferred Tax Expense",
+    "Deferred Income Tax Expense",
+    "Deferred Tax Benefit"
+   ]
+  },
+  {
+   "id": "taxpay",
+   "name": "Income Taxes Payable",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Income Tax Payable",
+    "Taxes Payable"
+   ]
+  },
+  {
+   "id": "cs",
+   "name": "Common Stock",
+   "cls": "equity",
+   "n": "C",
+   "syn": [
+    "Common Stock, $1 par",
+    "Common Stock at Par",
+    "Capital Stock",
+    "Common Shares",
+    "Common Stock Issued"
+   ]
+  },
+  {
+   "id": "ps",
+   "name": "Preferred Stock",
+   "cls": "equity",
+   "n": "C",
+   "syn": [
+    "Preferred Shares",
+    "Preferred Stock at Par"
+   ]
+  },
+  {
+   "id": "apic",
+   "name": "Additional Paid-In Capital",
+   "cls": "equity",
+   "n": "C",
+   "syn": [
+    "APIC",
+    "Paid-in Capital in Excess of Par",
+    "Paid-in Capital in Excess of Par - Common",
+    "Additional Paid-in Capital - Common Stock",
+    "Capital in Excess of Par",
+    "Contributed Capital in Excess of Par",
+    "Share Premium",
+    "APIC - Common Stock",
+    "Paid-In Capital"
+   ]
+  },
+  {
+   "id": "apicps",
+   "name": "Additional Paid-In Capital - Preferred Stock",
+   "cls": "equity",
+   "n": "C",
+   "syn": [
+    "APIC - Preferred",
+    "Paid-in Capital in Excess of Par - Preferred"
+   ]
+  },
+  {
+   "id": "apicts",
+   "name": "Additional Paid-In Capital - Treasury Stock",
+   "cls": "equity",
+   "n": "C",
+   "syn": [
+    "APIC - Treasury Stock",
+    "Paid-in Capital from Treasury Stock",
+    "Paid-in Capital - Treasury Stock Transactions",
+    "Paid-in Capital from Treasury Stock Transactions"
+   ]
+  },
+  {
+   "id": "apicopt",
+   "name": "Paid-In Capital - Stock Options",
+   "cls": "equity",
+   "n": "C",
+   "syn": [
+    "Stock Options Outstanding",
+    "Stock Option Equity",
+    "APIC - Stock Options",
+    "Additional Paid-In Capital - Stock Options",
+    "Share-Based Compensation Equity",
+    "Stock-Based Compensation Equity",
+    "Paid-In Capital - Share-Based Compensation"
+   ]
+  },
+  {
+   "id": "apicconv",
+   "name": "Paid-In Capital - Conversion Feature",
+   "cls": "equity",
+   "n": "C",
+   "syn": [
+    "Conversion Feature",
+    "APIC - Conversion Option",
+    "Equity Component of Convertible Debt"
+   ]
+  },
+  {
+   "id": "ts",
+   "name": "Treasury Stock",
+   "cls": "contra-equity",
+   "n": "D",
+   "syn": [
+    "Treasury Stock - Common",
+    "Treasury Shares",
+    "Treasury Stock, at Cost",
+    "Common Stock in Treasury"
+   ]
+  },
+  {
+   "id": "re",
+   "name": "Retained Earnings",
+   "cls": "equity",
+   "n": "C",
+   "syn": [
+    "Retained Earnings - Unappropriated",
+    "Accumulated Earnings"
+   ]
+  },
+  {
+   "id": "divdecl",
+   "name": "Dividends Declared",
+   "cls": "contra-equity",
+   "n": "D",
+   "syn": [
+    "Dividends",
+    "Cash Dividends",
+    "Cash Dividends Declared",
+    "Common Dividends"
+   ]
+  },
+  {
+   "id": "divpay",
+   "name": "Dividends Payable",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Cash Dividends Payable",
+    "Dividend Payable"
+   ]
+  },
+  {
+   "id": "stkdivdist",
+   "name": "Common Stock Dividend Distributable",
+   "cls": "equity",
+   "n": "C",
+   "syn": [
+    "Stock Dividend Distributable",
+    "Stock Dividends Distributable",
+    "Common Stock Distributable"
+   ]
+  },
+  {
+   "id": "rev",
+   "name": "Sales Revenue",
+   "cls": "revenue",
+   "n": "C",
+   "syn": [
+    "Revenue",
+    "Sales",
+    "Service Revenue",
+    "Revenues",
+    "Contract Revenue",
+    "Fee Revenue",
+    "Rental Revenue",
+    "Net Sales",
+    "Revenue from Contracts with Customers",
+    "Sales Revenue (Net)"
+   ]
+  },
+  {
+   "id": "gainmisc",
+   "name": "Other Gain",
+   "cls": "gain",
+   "n": "C",
+   "syn": [
+    "Other Income",
+    "Miscellaneous Income",
+    "Other Gains"
+   ]
+  },
+  {
+   "id": "lossmisc",
+   "name": "Other Loss",
+   "cls": "loss",
+   "n": "D",
+   "syn": [
+    "Other Expense",
+    "Miscellaneous Expense",
+    "Other Losses"
+   ]
+  },
+  {
+   "id": "capcost",
+   "name": "Capitalized Contract Costs",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Contract Fulfillment Costs",
+    "Costs to Obtain a Contract",
+    "Deferred Contract Costs",
+    "Capitalized Commissions",
+    "Deferred Commissions",
+    "Contract Acquisition Costs"
+   ]
+  },
+  {
+   "id": "commexp",
+   "name": "Commission Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Commissions Expense",
+    "Sales Commissions"
+   ]
+  },
+  {
+   "id": "compexp",
+   "name": "Compensation Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Stock-Based Compensation Expense",
+    "Share-Based Compensation Expense",
+    "Stock Compensation Expense",
+    "Salaries Expense",
+    "Compensation Expense - Stock Options",
+    "Stock Option Expense"
+   ]
+  },
+  {
+   "id": "salexp",
+   "name": "Salaries and Wages Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Salaries Expense",
+    "Wages Expense",
+    "Salary Expense"
+   ]
+  },
+  {
+   "id": "salpay",
+   "name": "Salaries and Wages Payable",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Salaries Payable",
+    "Wages Payable",
+    "Accrued Salaries",
+    "Accrued Vacation Liability",
+    "Liability for Compensated Absences",
+    "Accrued Compensated Absences",
+    "Accrued Bonuses",
+    "Bonus Payable",
+    "Accrued Wages Payable"
+   ]
+  },
+  {
+   "id": "rentexp",
+   "name": "Rent Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Rent"
+   ]
+  },
+  {
+   "id": "insexp",
+   "name": "Insurance Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Insurance"
+   ]
+  },
+  {
+   "id": "fxg",
+   "name": "Foreign Currency Transaction Gain",
+   "cls": "gain",
+   "n": "C",
+   "syn": [
+    "Foreign Exchange Gain",
+    "Exchange Gain",
+    "Gain on Foreign Currency Transactions",
+    "Foreign Currency Gain",
+    "Foreign Currency Exchange Gain"
+   ]
+  },
+  {
+   "id": "fxl",
+   "name": "Foreign Currency Transaction Loss",
+   "cls": "loss",
+   "n": "D",
+   "syn": [
+    "Foreign Exchange Loss",
+    "Exchange Loss",
+    "Loss on Foreign Currency Transactions",
+    "Foreign Currency Loss",
+    "Foreign Currency Exchange Loss"
+   ]
+  },
+  {
+   "id": "gainsale",
+   "name": "Gain on Sale of Business",
+   "cls": "gain",
+   "n": "C",
+   "syn": []
+  },
+  {
+   "id": "utility",
+   "name": "Utilities Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Utilities"
+   ]
+  },
+  {
+   "id": "misc",
+   "name": "Miscellaneous Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Sundry Expense"
+   ]
+  },
+  {
+   "id": "freight",
+   "name": "Freight-In",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Freight In",
+    "Transportation-In"
+   ]
+  },
+  {
+   "id": "duefactor",
+   "name": "Receivable from Factor",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Due from Factor",
+    "Factor Holdback Receivable",
+    "Retainage Receivable from Factor"
+   ]
+  },
+  {
+   "id": "lossar",
+   "name": "Loss on Sale of Receivables",
+   "cls": "loss",
+   "n": "D",
+   "syn": [
+    "Factoring Expense",
+    "Loss on Factoring of Receivables",
+    "Factoring Fee Expense"
+   ]
+  },
+  {
+   "id": "ccfee",
+   "name": "Credit Card Fee Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Credit Card Fees",
+    "Credit Card Discount Expense",
+    "Merchant Fees",
+    "Credit Card Processing Fees"
+   ]
+  },
+  {
+   "id": "salestax",
+   "name": "Sales Tax Payable",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Sales Taxes Payable",
+    "Sales Tax Liability"
+   ]
+  },
+  {
+   "id": "delivery",
+   "name": "Delivery Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Freight-Out",
+    "Freight Out",
+    "Shipping Expense",
+    "Transportation-Out",
+    "Freight Expense"
+   ]
+  },
+  {
+   "id": "trademark",
+   "name": "Trademark",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Trademarks",
+    "Trade Name",
+    "Brand Name"
+   ]
+  },
+  {
+   "id": "apicwar",
+   "name": "Paid-In Capital - Stock Warrants",
+   "cls": "equity",
+   "n": "C",
+   "syn": [
+    "Stock Warrants Outstanding",
+    "Warrants Outstanding",
+    "APIC - Stock Warrants",
+    "Additional Paid-In Capital - Warrants"
+   ]
+  },
+  {
+   "id": "aro",
+   "name": "Asset Retirement Obligation",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Asset Retirement Obligations",
+    "ARO",
+    "Liability for Asset Retirement"
+   ]
+  },
+  {
+   "id": "accretion",
+   "name": "Accretion Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Accretion of Asset Retirement Obligation",
+    "ARO Accretion Expense"
+   ]
+  },
+  {
+   "id": "repairs",
+   "name": "Repairs and Maintenance Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Repairs Expense",
+    "Maintenance Expense",
+    "Repair Expense",
+    "Repairs and Maintenance"
+   ]
+  },
+  {
+   "id": "discnp",
+   "name": "Discount on Notes Payable",
+   "cls": "contra-liability",
+   "n": "D",
+   "syn": [
+    "Discount on Note Payable",
+    "Unamortized Discount on Notes Payable",
+    "Notes Payable Discount"
+   ]
+  },
+  {
+   "id": "leaserec",
+   "name": "Net Investment in Lease",
+   "cls": "asset",
+   "n": "D",
+   "syn": [
+    "Lease Receivable",
+    "Net Investment in Sales-Type Lease",
+    "Investment in Sales-Type Lease"
+   ]
+  },
+  {
+   "id": "lossctr",
+   "name": "Loss on Construction Contract",
+   "cls": "loss",
+   "n": "D",
+   "syn": [
+    "Loss on Contract",
+    "Provision for Contract Loss",
+    "Loss on Long-Term Contract",
+    "Loss on Onerous Contract"
+   ]
+  },
+  {
+   "id": "ctrliab",
+   "name": "Estimated Loss on Contract Liability",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Provision for Loss on Contract",
+    "Loss Provision on Contract",
+    "Contract Loss Provision",
+    "Liability for Contract Loss"
+   ]
+  },
+  {
+   "id": "restrexp",
+   "name": "Restructuring Expense",
+   "cls": "expense",
+   "n": "D",
+   "syn": [
+    "Restructuring Cost",
+    "Restructuring Charge",
+    "Severance Expense",
+    "Termination Benefits Expense"
+   ]
+  },
+  {
+   "id": "restrliab",
+   "name": "Restructuring Liability",
+   "cls": "liability",
+   "n": "C",
+   "syn": [
+    "Severance Payable",
+    "Accrued Severance",
+    "Accrued Restructuring Costs",
+    "Termination Benefits Payable",
+    "Restructuring Reserve"
+   ]
+  },
+  {
+   "id": "losslease",
+   "name": "Loss on Lease Termination",
+   "cls": "loss",
+   "n": "D",
+   "syn": [
+    "Loss on Termination of Lease",
+    "Lease Termination Loss",
+    "Loss on Early Termination of Lease"
+   ]
+  }
+ ]
+}

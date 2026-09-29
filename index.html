@@ -175,8 +175,9 @@
   var rows = [];
   if (SEC === "FAR") rows.push(row("je.html", "Journal entry drill", "150 transaction types + endless new numbers"));
   rows.push(row("exam.html", "Mock exam", "Timed, Blueprint-weighted, with a review screen"));
+  if (SEC === "FAR") rows.push(row("tbs.html?sec=FAR", "Task-based simulations", "24 TBS + journal entry cells + partial credit by line"));
   if (SEC === "REG") {
-    rows.push(row("tbs.html", "Task-based simulations", "24 TBS + partial credit by cell + new numbers"));
+    rows.push(row("tbs.html?sec=REG", "Task-based simulations", "24 TBS + partial credit by cell + new numbers"));
     rows.push('<a class="row" href="#" id="tofar"><span class="t"><b>Journal entry drill</b><span>FAR section → switch to FAR</span></span><span class="go">›</span></a>');
     rows.push(row("learn.html", "Concept cards", "57 cards + 5 min each"));
   }

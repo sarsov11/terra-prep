@@ -1,0 +1,3503 @@
+{
+ "meta": {
+  "schema": "terra-prep-tbs/2",
+  "exam": "US CPA FAR",
+  "count": 24,
+  "law_asof": "2026-09-29",
+  "spec": "../../TBS_SPEC.md",
+  "note": "정답·해설 제거본(독립 풀이용)"
+ },
+ "items": [
+  {
+   "id": "FAR-I-T-001",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "I",
+   "format": "numeric_table",
+   "title": "Statement of cash flows: indirect method",
+   "scenario": "Larkspur Industries prepares its 20X6 statement of cash flows using the indirect method. Comparative balance sheets and supporting information are in the exhibits.",
+   "task": "Using the exhibits, compute each amount. Enter cash outflows and decreases as negative numbers (for example, -5,000). Round to the nearest dollar.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Comparative balance sheets",
+     "kind": "table",
+     "body": [
+      [
+       "Account",
+       "Dec 31, 20X5",
+       "Dec 31, 20X6"
+      ],
+      [
+       "Cash",
+       "520,000",
+       "695,000"
+      ],
+      [
+       "Accounts receivable",
+       "120,000",
+       "150,000"
+      ],
+      [
+       "Inventory",
+       "200,000",
+       "185,000"
+      ],
+      [
+       "Equipment, at cost",
+       "900,000",
+       "1,050,000"
+      ],
+      [
+       "Accumulated depreciation",
+       "(300,000)",
+       "(325,000)"
+      ],
+      [
+       "Total assets",
+       "1,440,000",
+       "1,755,000"
+      ],
+      [
+       "Accounts payable",
+       "90,000",
+       "105,000"
+      ],
+      [
+       "Bonds payable",
+       "400,000",
+       "500,000"
+      ],
+      [
+       "Common stock and additional paid-in capital",
+       "500,000",
+       "560,000"
+      ],
+      [
+       "Retained earnings",
+       "450,000",
+       "590,000"
+      ],
+      [
+       "Total liabilities and equity",
+       "1,440,000",
+       "1,755,000"
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "title": "Additional information",
+     "kind": "notes",
+     "body": "1. Net income for 20X6 was $180,000.\n2. During 20X6 the company sold equipment that cost $100,000 and had accumulated depreciation of $70,000, for cash proceeds of $20,000. It also bought equipment for cash.\n3. Bonds payable were issued at par during the year; no bonds were retired.\n4. Common stock was issued for cash. There were no stock dividends or stock splits.\n5. Retained earnings changed only because of net income and cash dividends declared and paid.\n6. There were no other changes in equipment or accumulated depreciation, and no other noncash transactions."
+    }
+   ],
+   "blueprint": {
+    "area": "I",
+    "group": "A Financial statements of business entities",
+    "topic": "Statement of cash flows",
+    "task": "Prepare operating, investing and financing amounts (indirect method)",
+    "skill": "Application"
+   },
+   "difficulty": 2,
+   "est_minutes": 15,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "number",
+     "label": "Depreciation expense for 20X6",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c2",
+     "kind": "number",
+     "label": "Loss on sale of equipment (added back in the operating section)",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c3",
+     "kind": "number",
+     "label": "Net cash provided by operating activities",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c4",
+     "kind": "number",
+     "label": "Cash paid to purchase equipment",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Net cash used in investing activities",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "number",
+     "label": "Cash dividends paid",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c7",
+     "kind": "number",
+     "label": "Net cash provided by financing activities",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c8",
+     "kind": "number",
+     "label": "Net increase in cash for 20X6",
+     "points": 1,
+     "fmt": "$"
+    }
+   ]
+  },
+  {
+   "id": "FAR-I-T-002",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "I",
+   "format": "numeric_table",
+   "title": "Basic and diluted earnings per share",
+   "scenario": "Corvane Corp. is a public company with a calendar fiscal year. The controller is computing 20X6 earnings per share for the annual report. Facts are in the exhibits.",
+   "task": "Compute each amount. Enter share counts as whole shares and per-share amounts to the nearest cent. Assume the treasury stock method for options and the if-converted method for the bonds.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Income and share activity",
+     "kind": "notes",
+     "body": "Net income for 20X6: $2,400,000\nCumulative preferred stock dividends for 20X6 (not declared): $150,000\nCommon shares outstanding January 1: 1,000,000\nApril 1: issued 240,000 shares for cash\nOctober 1: repurchased 120,000 shares as treasury stock\nNovember 1: 10% common stock dividend distributed to all shareholders of record"
+    },
+    {
+     "id": "e2",
+     "title": "Potentially dilutive securities",
+     "kind": "notes",
+     "body": "Options: 60,000 options outstanding all year, exercise price $24 per share. Average market price of common stock during 20X6: $30. Ignore any adjustment of the option terms for the stock dividend.\nConvertible bonds: $2,000,000 face amount, 5% stated rate, issued at par before 20X6 and outstanding all year. The bonds convert into 60,000 common shares (already adjusted for the stock dividend). Income tax rate: 25%."
+    }
+   ],
+   "blueprint": {
+    "area": "I",
+    "group": "D Reporting topics (public companies)",
+    "topic": "Earnings per share",
+    "task": "Compute basic and diluted EPS with weighted shares, options and convertible debt",
+    "skill": "Analysis"
+   },
+   "difficulty": 3,
+   "est_minutes": 16,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "number",
+     "label": "Weighted-average common shares outstanding for basic EPS",
+     "points": 1,
+     "fmt": "n"
+    },
+    {
+     "id": "c2",
+     "kind": "number",
+     "label": "Income available to common stockholders",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c3",
+     "kind": "number",
+     "label": "Basic earnings per share",
+     "points": 1,
+     "fmt": "$2"
+    },
+    {
+     "id": "c4",
+     "kind": "number",
+     "label": "Incremental shares from the options (treasury stock method)",
+     "points": 1,
+     "fmt": "n"
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "After-tax interest added back for the convertible bonds",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "number",
+     "label": "Diluted earnings per share",
+     "points": 1,
+     "fmt": "$2"
+    },
+    {
+     "id": "c7",
+     "kind": "dropdown",
+     "label": "The convertible bonds are:",
+     "points": 1,
+     "options": [
+      "Dilutive; included in diluted EPS",
+      "Included only if the average market price exceeds the conversion price",
+      "Antidilutive; excluded from diluted EPS",
+      "Excluded because they were issued before the year"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-I-T-003",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "I",
+   "format": "numeric_table",
+   "title": "Governmental funds to government-wide reconciliation",
+   "scenario": "The City of Eastbrook prepares governmental fund statements (modified accrual, current financial resources) and government-wide statements (full accrual). The finance director is preparing the two reconciliations.",
+   "task": "Using the exhibits, compute each reconciling amount and total. Enter reductions as negative numbers. Round to the nearest dollar.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Governmental funds balance sheet and other data at year end",
+     "kind": "table",
+     "body": [
+      [
+       "Item",
+       "Amount"
+      ],
+      [
+       "Total fund balances, governmental funds",
+       "4,200,000"
+      ],
+      [
+       "Capital assets at cost (not reported in the funds)",
+       "18,500,000"
+      ],
+      [
+       "Accumulated depreciation on those assets",
+       "6,800,000"
+      ],
+      [
+       "General obligation bonds payable",
+       "5,000,000"
+      ],
+      [
+       "Accrued interest on bonds (not due and payable)",
+       "75,000"
+      ],
+      [
+       "Compensated absences (long-term portion)",
+       "240,000"
+      ],
+      [
+       "Property taxes receivable not collected within the availability period (deferred inflows in the funds)",
+       "180,000"
+      ],
+      [
+       "Net position of internal service funds (reported with governmental activities)",
+       "350,000"
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "title": "Governmental funds operating statement and other data for the year",
+     "kind": "table",
+     "body": [
+      [
+       "Item",
+       "Amount"
+      ],
+      [
+       "Total revenues",
+       "22,000,000"
+      ],
+      [
+       "Total expenditures (includes capital outlay and principal payments)",
+       "21,500,000"
+      ],
+      [
+       "Proceeds of bonds issued",
+       "1,000,000"
+      ],
+      [
+       "Capital outlay capitalized in the government-wide statements",
+       "1,800,000"
+      ],
+      [
+       "Principal payments on bonds (included in expenditures)",
+       "500,000"
+      ],
+      [
+       "Depreciation expense for the year",
+       "1,100,000"
+      ],
+      [
+       "Increase in unavailable property tax revenue (revenue in government-wide statements)",
+       "60,000"
+      ],
+      [
+       "Increase in compensated absences liability (expense in government-wide statements)",
+       "40,000"
+      ],
+      [
+       "Change in net position of internal service funds",
+       "30,000"
+      ]
+     ]
+    }
+   ],
+   "blueprint": {
+    "area": "I",
+    "group": "C State and local governments",
+    "topic": "Governmental fund to government-wide reconciliation",
+    "task": "Reconcile fund balance to net position and the change in fund balance to change in net position",
+    "skill": "Analysis"
+   },
+   "difficulty": 3,
+   "est_minutes": 15,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "number",
+     "label": "Capital assets, net, to add in the balance sheet reconciliation",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c2",
+     "kind": "number",
+     "label": "Long-term liabilities not reported in the funds (enter as a negative)",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c3",
+     "kind": "number",
+     "label": "Net position of governmental activities",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c4",
+     "kind": "number",
+     "label": "Net change in fund balances, governmental funds",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Capital-related adjustment (capital outlay less depreciation)",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "number",
+     "label": "Debt-related adjustment (principal payments less proceeds)",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c7",
+     "kind": "number",
+     "label": "Change in net position, governmental activities",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c8",
+     "kind": "dropdown",
+     "label": "In the governmental fund statements, principal payments on the bonds are reported as:",
+     "points": 1,
+     "options": [
+      "Other financing uses only when refunded",
+      "Expenses reducing net position",
+      "A decrease in bonds payable with no effect on fund balance",
+      "Expenditures (debt service)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-I-T-004",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "I",
+   "format": "numeric_table",
+   "title": "Liquidity, activity and coverage ratios",
+   "scenario": "Analyst Mina Okafor is evaluating Westgate Supply Co. from its 20X6 financial statements. All sales are on credit.",
+   "task": "Compute each ratio from the exhibits. Use ending balances for liquidity ratios and average balances (beginning and ending) for turnover and return ratios. Use a 365-day year. Round ratios to two decimals, days to the nearest whole day, and percentages to one decimal.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Balance sheet data",
+     "kind": "table",
+     "body": [
+      [
+       "Item",
+       "Dec 31, 20X5",
+       "Dec 31, 20X6"
+      ],
+      [
+       "Cash",
+       "",
+       "90,000"
+      ],
+      [
+       "Marketable securities (current)",
+       "",
+       "60,000"
+      ],
+      [
+       "Accounts receivable, net",
+       "210,000",
+       "240,000"
+      ],
+      [
+       "Inventory",
+       "300,000",
+       "360,000"
+      ],
+      [
+       "Prepaid expenses",
+       "",
+       "30,000"
+      ],
+      [
+       "Total current liabilities",
+       "",
+       "450,000"
+      ],
+      [
+       "Common stockholders' equity",
+       "1,100,000",
+       "1,300,000"
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "title": "Income statement data for 20X6",
+     "kind": "table",
+     "body": [
+      [
+       "Item",
+       "Amount"
+      ],
+      [
+       "Net credit sales",
+       "3,600,000"
+      ],
+      [
+       "Cost of goods sold",
+       "2,200,000"
+      ],
+      [
+       "Interest expense",
+       "60,000"
+      ],
+      [
+       "Income tax expense",
+       "120,000"
+      ],
+      [
+       "Net income",
+       "300,000"
+      ],
+      [
+       "Preferred dividends (the equity data above is common equity only)",
+       "20,000"
+      ]
+     ]
+    }
+   ],
+   "blueprint": {
+    "area": "I",
+    "group": "F Financial statement analysis",
+    "topic": "Financial ratios",
+    "task": "Compute liquidity, turnover, coverage and return ratios",
+    "skill": "Application"
+   },
+   "difficulty": 2,
+   "est_minutes": 12,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "number",
+     "label": "Current ratio (December 31, 20X6)",
+     "points": 1,
+     "fmt": "x2"
+    },
+    {
+     "id": "c2",
+     "kind": "number",
+     "label": "Quick (acid-test) ratio (December 31, 20X6)",
+     "points": 1,
+     "fmt": "x2"
+    },
+    {
+     "id": "c3",
+     "kind": "number",
+     "label": "Accounts receivable turnover",
+     "points": 1,
+     "fmt": "x2"
+    },
+    {
+     "id": "c4",
+     "kind": "number",
+     "label": "Average days to collect receivables",
+     "points": 1,
+     "fmt": "n"
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Inventory turnover",
+     "points": 1,
+     "fmt": "x2"
+    },
+    {
+     "id": "c6",
+     "kind": "number",
+     "label": "Times interest earned",
+     "points": 1,
+     "fmt": "x2"
+    },
+    {
+     "id": "c7",
+     "kind": "number",
+     "label": "Return on common stockholders' equity (percent)",
+     "points": 1,
+     "fmt": "p1"
+    }
+   ]
+  },
+  {
+   "id": "FAR-I-T-005",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "I",
+   "format": "dropdown_judgment",
+   "title": "Not-for-profit contributions and classification",
+   "scenario": "The Harbor Arts Foundation is a not-for-profit organization that follows U.S. GAAP. Seven transactions from the current year are listed in Exhibit 1.",
+   "task": "For each transaction, select how it is reported in the Foundation's financial statements.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Transactions",
+     "kind": "table",
+     "body": [
+      [
+       "#",
+       "Facts"
+      ],
+      [
+       "1",
+       "The Harbor Arts Foundation (a not-for-profit) receives a $60,000 cash gift. The donor requires that the money be used only for student scholarships. There are no other conditions."
+      ],
+      [
+       "2",
+       "A state agency awards the Foundation a $300,000 grant payable as qualifying program costs are incurred. Costs not spent on the program must be returned to the agency. The Foundation has received $150,000 in advance."
+      ],
+      [
+       "3",
+       "The Foundation's board votes to set aside $250,000 of general funds as a reserve for a future building. The board can reverse the decision at any time."
+      ],
+      [
+       "4",
+       "A donor makes an unconditional written pledge of $40,000 per year for three years with no other stipulation. Nothing has been received yet."
+      ],
+      [
+       "5",
+       "Two CPAs contribute audit work that the Foundation would otherwise buy. The services require specialized skills. Fair value of the work is $18,000."
+      ],
+      [
+       "6",
+       "Volunteers stuff envelopes for the annual mailing. No special skills are needed and the Foundation would not otherwise hire staff for the work."
+      ],
+      [
+       "7",
+       "The salaries of staff who prepare donor solicitation mailings total $85,000 for the year. The Foundation reports expenses by function."
+      ]
+     ]
+    }
+   ],
+   "blueprint": {
+    "area": "I",
+    "group": "B Not-for-profit entities",
+    "topic": "Contributions and net asset classification",
+    "task": "Classify contributions, conditions and expenses",
+    "skill": "Application"
+   },
+   "difficulty": 2,
+   "est_minutes": 12,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "dropdown",
+     "label": "Item 1 (gift for scholarships): how is it reported?",
+     "points": 1,
+     "options": [
+      "Refundable advance (liability) until scholarships are awarded",
+      "Contribution revenue reported in net assets without donor restrictions",
+      "Contribution revenue reported in net assets with donor restrictions",
+      "Not recognized until the money is spent"
+     ]
+    },
+    {
+     "id": "c2",
+     "kind": "dropdown",
+     "label": "Item 2 (government grant with barrier): how is it reported?",
+     "points": 1,
+     "options": [
+      "Refundable advance (liability) until the condition is met",
+      "Contribution revenue with donor restrictions",
+      "Contribution revenue without donor restrictions",
+      "Deferred inflow of resources"
+     ]
+    },
+    {
+     "id": "c3",
+     "kind": "dropdown",
+     "label": "Item 3 (board designation): how is it reported?",
+     "points": 1,
+     "options": [
+      "Net assets with donor restrictions",
+      "Liability for the future building",
+      "Reduction of net assets with a charge to expense",
+      "Net assets without donor restrictions (board-designated)"
+     ]
+    },
+    {
+     "id": "c4",
+     "kind": "dropdown",
+     "label": "Item 4 (multi-year pledge): how is it reported?",
+     "points": 1,
+     "options": [
+      "Disclosed only in the notes",
+      "Contribution revenue with donor restrictions, measured at present value of the expected cash flows",
+      "Contribution revenue without donor restrictions at the undiscounted total",
+      "Not recognized until cash is received"
+     ]
+    },
+    {
+     "id": "c5",
+     "kind": "dropdown",
+     "label": "Item 5 (skilled donated services): how is it reported?",
+     "points": 1,
+     "options": [
+      "Recognize revenue only, with no expense",
+      "Disclosed only, at cost",
+      "Not recognized",
+      "Recognize contribution revenue and expense at fair value"
+     ]
+    },
+    {
+     "id": "c6",
+     "kind": "dropdown",
+     "label": "Item 6 (general volunteers): how is it reported?",
+     "points": 1,
+     "options": [
+      "Recognize revenue and expense at the minimum wage rate",
+      "Recognize a liability for unpaid wages",
+      "Not recognized in the financial statements",
+      "Recognize revenue and expense at the fair value of an equivalent employee"
+     ]
+    },
+    {
+     "id": "c7",
+     "kind": "dropdown",
+     "label": "Item 7 (fundraising salaries): how is it reported?",
+     "points": 1,
+     "options": [
+      "Program services",
+      "Supporting services: fundraising",
+      "Supporting services: management and general",
+      "Reduction of contribution revenue"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-I-T-006",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "I",
+   "format": "document_review",
+   "title": "Draft financial statement presentation memo",
+   "scenario": "You are a senior associate reviewing a draft memo that summarizes presentation and disclosure rules for the year-end financial statements of Norfield Holdings, a public manufacturer. The controller asks you to correct any statement that is wrong.",
+   "task": "For each numbered statement, choose the option that makes the statement correct. Choose 'Keep as written' if the statement is already correct.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Draft memo",
+     "kind": "memo",
+     "body": "TO: Financial reporting team    FROM: Controller    RE: Presentation matters (draft)\n\n1. Any component that management classifies as held for sale is reported in discontinued operations.\n2. Other comprehensive income may be presented only within the statement of changes in stockholders' equity.\n3. Gains and losses that are both unusual and infrequent are reported separately, net of tax, below income from continuing operations as extraordinary items.\n4. For each annual and interim period, management evaluates whether conditions raise substantial doubt about the entity's ability to continue as a going concern within one year after the balance sheet date.\n5. An operating segment is a reportable segment if its revenue, including intersegment revenue, is at least 10% of the combined revenue of all operating segments.\n6. Accumulated other comprehensive income is presented in the equity section of the balance sheet, separately from retained earnings."
+    },
+    {
+     "id": "e2",
+     "title": "Assumptions",
+     "kind": "notes",
+     "body": "Assume the entity is an SEC registrant following U.S. GAAP. Facts about Norfield are not needed beyond what each statement says."
+    }
+   ],
+   "blueprint": {
+    "area": "I",
+    "group": "A Financial statements of business entities",
+    "topic": "Presentation and disclosure",
+    "task": "Identify correct presentation of discontinued operations, OCI, going concern and segments",
+    "skill": "Analysis"
+   },
+   "difficulty": 2,
+   "est_minutes": 12,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "dropdown",
+     "label": "Statement 1: discontinued operations",
+     "points": 1,
+     "options": [
+      "Keep as written",
+      "Revise: only after the component has been sold",
+      "Revise: only if the disposal represents a strategic shift that has, or will have, a major effect on operations and financial results"
+     ]
+    },
+    {
+     "id": "c2",
+     "kind": "dropdown",
+     "label": "Statement 2: presentation of other comprehensive income",
+     "points": 1,
+     "options": [
+      "Revise: present it only in the notes",
+      "Revise: present it in a single continuous statement or in two consecutive statements of net income and comprehensive income",
+      "Keep as written"
+     ]
+    },
+    {
+     "id": "c3",
+     "kind": "dropdown",
+     "label": "Statement 3: extraordinary items",
+     "points": 1,
+     "options": [
+      "Keep as written",
+      "Revise: report the item net of tax within discontinued operations",
+      "Revise: the extraordinary item classification no longer exists; report the item within continuing operations and disclose it as unusual or infrequent"
+     ]
+    },
+    {
+     "id": "c4",
+     "kind": "dropdown",
+     "label": "Statement 4: going concern evaluation period",
+     "points": 1,
+     "options": [
+      "Keep as written",
+      "Revise: within one year after the date the financial statements are issued (or available to be issued)",
+      "Revise: within five years after the balance sheet date"
+     ]
+    },
+    {
+     "id": "c5",
+     "kind": "dropdown",
+     "label": "Statement 5: reportable segment revenue test",
+     "points": 1,
+     "options": [
+      "Revise: 10% of consolidated net income",
+      "Keep as written",
+      "Revise: 5% of combined revenue"
+     ]
+    },
+    {
+     "id": "c6",
+     "kind": "dropdown",
+     "label": "Statement 6: accumulated other comprehensive income",
+     "points": 1,
+     "options": [
+      "Revise: include it within retained earnings",
+      "Revise: present it as a liability until realized",
+      "Keep as written"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-I-T-007",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "I",
+   "format": "research",
+   "title": "Locate the Codification guidance: presentation and reporting",
+   "scenario": "You are researching accounting questions for the reporting group of a public company. For each question, identify the FASB Accounting Standards Codification location that governs it.",
+   "task": "Enter the Codification Topic (or Topic and Subtopic when asked). Formats such as '260', 'ASC 260' and 'ASC 205-20' are accepted.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "How to enter",
+     "kind": "notes",
+     "body": "Codification numbers are structured as Topic-Subtopic-Section-Paragraph. Enter only what each question asks (Topic, or Topic-Subtopic)."
+    }
+   ],
+   "blueprint": {
+    "area": "I",
+    "group": "D Reporting topics (public companies)",
+    "topic": "Codification research: presentation",
+    "task": "Locate Topics for EPS, discontinued operations, segments, cash flows, going concern and interim reporting",
+    "skill": "Remembering and Understanding"
+   },
+   "difficulty": 1,
+   "est_minutes": 8,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "citation",
+     "label": "Which Topic governs the computation and presentation of earnings per share?",
+     "points": 1,
+     "ask": "Enter the Codification Topic number (three digits)."
+    },
+    {
+     "id": "c2",
+     "kind": "citation",
+     "label": "Which Topic and Subtopic address presenting a disposed component as discontinued operations?",
+     "points": 1,
+     "ask": "Enter the Topic and Subtopic (for example, 000-00)."
+    },
+    {
+     "id": "c3",
+     "kind": "citation",
+     "label": "Which Topic covers disclosures about operating segments?",
+     "points": 1,
+     "ask": "Enter the Codification Topic number (three digits)."
+    },
+    {
+     "id": "c4",
+     "kind": "citation",
+     "label": "Which Topic prescribes classification of cash receipts and payments in the statement of cash flows?",
+     "points": 1,
+     "ask": "Enter the Codification Topic number (three digits)."
+    },
+    {
+     "id": "c5",
+     "kind": "citation",
+     "label": "Which Topic and Subtopic contain management's going-concern evaluation and disclosure requirements?",
+     "points": 1,
+     "ask": "Enter the Topic and Subtopic (for example, 000-00)."
+    },
+    {
+     "id": "c6",
+     "kind": "citation",
+     "label": "Which Topic governs reporting for interim periods?",
+     "points": 1,
+     "ask": "Enter the Codification Topic number (three digits)."
+    }
+   ]
+  },
+  {
+   "id": "FAR-I-T-008",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "I",
+   "format": "research",
+   "title": "Locate the GASB Statement: state and local government reporting",
+   "scenario": "You are a staff accountant at the City of Lakeview. For each reporting question, identify the GASB Statement that is the primary source of the requirement.",
+   "task": "Enter the GASB Statement number. Formats such as '34', 'GASB 34' and 'GASB Statement No. 34' are accepted.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "How to enter",
+     "kind": "notes",
+     "body": "Enter the number of the Statement that established the requirement. Later amendments are not asked."
+    }
+   ],
+   "blueprint": {
+    "area": "I",
+    "group": "C State and local governments",
+    "topic": "GASB research",
+    "task": "Identify the GASB Statement for major governmental reporting requirements",
+    "skill": "Remembering and Understanding"
+   },
+   "difficulty": 1,
+   "est_minutes": 8,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "citation",
+     "label": "Which Statement established the government-wide statements and fund financial statements with management's discussion and analysis (the basic financial statements model)?",
+     "points": 1,
+     "ask": "Enter the GASB Statement number (for example, 'GASB 34' or '34')."
+    },
+    {
+     "id": "c2",
+     "kind": "citation",
+     "label": "Which Statement established the classification of governmental fund balances as nonspendable, restricted, committed, assigned and unassigned?",
+     "points": 1,
+     "ask": "Enter the GASB Statement number (for example, 'GASB 34' or '34')."
+    },
+    {
+     "id": "c3",
+     "kind": "citation",
+     "label": "Which Statement requires a government lessee to recognize a lease liability and an intangible right-to-use asset for most leases?",
+     "points": 1,
+     "ask": "Enter the GASB Statement number (for example, 'GASB 34' or '34')."
+    },
+    {
+     "id": "c4",
+     "kind": "citation",
+     "label": "Which Statement sets criteria for identifying fiduciary activities and reporting fiduciary funds?",
+     "points": 1,
+     "ask": "Enter the GASB Statement number (for example, 'GASB 34' or '34')."
+    },
+    {
+     "id": "c5",
+     "kind": "citation",
+     "label": "Which Statement requires an employer government to report a net pension liability for defined benefit pensions provided through trusts?",
+     "points": 1,
+     "ask": "Enter the GASB Statement number (for example, 'GASB 34' or '34')."
+    },
+    {
+     "id": "c6",
+     "kind": "citation",
+     "label": "Which Statement governs subscription-based information technology arrangements (SBITAs)?",
+     "points": 1,
+     "ask": "Enter the GASB Statement number (for example, 'GASB 34' or '34')."
+    }
+   ]
+  },
+  {
+   "id": "FAR-II-T-001",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "II",
+   "format": "numeric_table",
+   "title": "Depreciation schedule and change in estimate",
+   "scenario": "Dunmore Fabrication bought a machine and uses the double-declining-balance method for its first two years. At the start of Year 3 management changes the estimates and the method, as described in the exhibits.",
+   "task": "Compute each amount. Round to the nearest dollar. Follow the company's partial-year policy in Exhibit 1.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Asset record and policies",
+     "kind": "table",
+     "body": [
+      [
+       "Item",
+       "Detail"
+      ],
+      [
+       "Acquisition",
+       "Placed in service 3 months before the end of Year 1"
+      ],
+      [
+       "Cost",
+       "$640,000"
+      ],
+      [
+       "Estimated salvage value",
+       "$40,000"
+      ],
+      [
+       "Estimated useful life",
+       "5 years"
+      ],
+      [
+       "Method, Years 1 and 2",
+       "Double-declining balance (rate = 2 / life) applied to beginning-of-year book value"
+      ],
+      [
+       "Partial-year policy",
+       "First-year depreciation = 3/12 of a full year's amount. Year 2 uses a full year on book value at the start of Year 2."
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "title": "Change at the start of Year 3",
+     "kind": "memo",
+     "body": "At January 1, Year 3, management concludes that the machine will be used for a total of 8 years from the date placed in service, and that salvage value will be $40,000. It also switches to the straight-line method, which it believes better reflects the pattern of use. The switch is supported by a preferability assessment. The remaining life is measured from January 1, Year 3, using months (81 months)."
+    }
+   ],
+   "blueprint": {
+    "area": "II",
+    "group": "D Property, plant and equipment",
+    "topic": "Depreciation methods and change in estimate",
+    "task": "Compute DDB and straight-line depreciation and apply a prospective change in estimate",
+    "skill": "Application"
+   },
+   "difficulty": 3,
+   "est_minutes": 14,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "number",
+     "label": "Year 1 depreciation (double-declining balance)",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c2",
+     "kind": "number",
+     "label": "Year 2 depreciation (double-declining balance)",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c3",
+     "kind": "number",
+     "label": "Book value at December 31, Year 2",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c4",
+     "kind": "number",
+     "label": "Excess of Year 1 DDB depreciation over straight-line depreciation for the same period",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Year 3 depreciation after the change (straight-line, prospective)",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "number",
+     "label": "Accumulated depreciation at December 31, Year 3",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c7",
+     "kind": "dropdown",
+     "label": "How is the Year 3 change reported?",
+     "points": 1,
+     "options": [
+      "Correction of an error; restate prior years",
+      "Change in accounting principle; applied retrospectively with restatement",
+      "Cumulative effect reported in Year 3 income",
+      "Change in accounting estimate effected by a change in accounting principle; applied prospectively"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-II-T-002",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "II",
+   "format": "numeric_table",
+   "title": "Inventory cost flow and lower of cost or net realizable value",
+   "scenario": "Bramwell Distributors sells a single product and uses a periodic inventory system. The year's purchase and sales data are in the exhibit. Selling prices have been falling late in the year.",
+   "task": "Compute each amount. Enter per-unit costs to the nearest cent and other amounts to the nearest dollar.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Inventory records",
+     "kind": "table",
+     "body": [
+      [
+       "Layer",
+       "Units",
+       "Unit cost",
+       "Total cost"
+      ],
+      [
+       "Beginning inventory",
+       "2,000",
+       "$10",
+       "20,000"
+      ],
+      [
+       "First purchase",
+       "4,000",
+       "$11",
+       "44,000"
+      ],
+      [
+       "Second purchase",
+       "3,000",
+       "$12",
+       "36,000"
+      ],
+      [
+       "Third purchase",
+       "1,000",
+       "$13",
+       "13,000"
+      ],
+      [
+       "Goods available for sale",
+       "10,000",
+       "",
+       "113,000"
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "title": "Other information",
+     "kind": "notes",
+     "body": "Units sold during the year: 7,500. Sales are recorded at a single selling price.\nAt year end the estimated net realizable value of the product (estimated selling price less costs of completion, disposal and transportation) is $11 per unit.\nThe FIFO inventory method is used for the lower-of-cost-or-net-realizable-value test in the last question."
+    }
+   ],
+   "blueprint": {
+    "area": "II",
+    "group": "C Inventory",
+    "topic": "Cost flow assumptions and LCNRV",
+    "task": "Compute FIFO, LIFO and average cost amounts and an NRV write-down",
+    "skill": "Application"
+   },
+   "difficulty": 2,
+   "est_minutes": 13,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "number",
+     "label": "Units in ending inventory",
+     "points": 1,
+     "fmt": "n"
+    },
+    {
+     "id": "c2",
+     "kind": "number",
+     "label": "Ending inventory under FIFO",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c3",
+     "kind": "number",
+     "label": "Cost of goods sold under FIFO",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c4",
+     "kind": "number",
+     "label": "Weighted-average cost per unit (periodic)",
+     "points": 1,
+     "fmt": "$2"
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Cost of goods sold under periodic LIFO",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "number",
+     "label": "Write-down of FIFO ending inventory to net realizable value",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c7",
+     "kind": "dropdown",
+     "label": "The lower of cost or net realizable value measurement applies to inventory costed under:",
+     "points": 1,
+     "options": [
+      "FIFO and average cost; LIFO and the retail inventory method use lower of cost or market",
+      "LIFO only",
+      "Only inventory held for more than one year",
+      "All inventory methods, with no difference among them"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-II-T-003",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "II",
+   "format": "numeric_table",
+   "title": "Allowance for credit losses and sale of receivables",
+   "scenario": "Calloway Wholesale estimates expected credit losses on trade receivables with an aging schedule. It also sold a block of receivables to a factor near year end.",
+   "task": "Compute each amount. Round to the nearest dollar.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Aging schedule at December 31 (expected loss rates reflect current conditions and forecasts)",
+     "kind": "table",
+     "body": [
+      [
+       "Age category",
+       "Receivable balance",
+       "Expected loss rate"
+      ],
+      [
+       "Not yet due",
+       "600,000",
+       "1%"
+      ],
+      [
+       "1 to 30 days past due",
+       "300,000",
+       "3%"
+      ],
+      [
+       "31 to 60 days past due",
+       "150,000",
+       "8%"
+      ],
+      [
+       "Over 60 days past due",
+       "90,000",
+       "25%"
+      ],
+      [
+       "Total",
+       "1,140,000",
+       ""
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "title": "Allowance activity before year-end adjustment",
+     "kind": "notes",
+     "body": "Allowance for credit losses, January 1 (credit balance): $52,000\nReceivables written off during the year: $30,000\nCash collected on receivables that had been written off in a prior year (reinstated first): $4,000"
+    },
+    {
+     "id": "e3",
+     "title": "Sale of receivables",
+     "kind": "notes",
+     "body": "On December 30 the company sold $200,000 of receivables to a factor without recourse. The sale qualifies for derecognition. The factor keeps a 3% fee and withholds a further 10% of the face amount until customers pay; the withheld amount is a receivable from the factor. The factor pays the rest in cash."
+    }
+   ],
+   "blueprint": {
+    "area": "II",
+    "group": "B Receivables",
+    "topic": "Aging allowance and factoring",
+    "task": "Compute the allowance, credit loss expense and a factoring transaction",
+    "skill": "Application"
+   },
+   "difficulty": 2,
+   "est_minutes": 12,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "number",
+     "label": "Required ending allowance for credit losses",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c2",
+     "kind": "number",
+     "label": "Allowance balance before the year-end adjustment",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c3",
+     "kind": "number",
+     "label": "Credit loss expense for the year",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c4",
+     "kind": "number",
+     "label": "Net receivables reported at December 31 (before the factor sale)",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Cash received from the factor",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "number",
+     "label": "Loss on sale of receivables",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c7",
+     "kind": "number",
+     "label": "Receivable from factor recorded",
+     "points": 1,
+     "fmt": "$"
+    }
+   ]
+  },
+  {
+   "id": "FAR-II-T-004",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "II",
+   "format": "dropdown_judgment",
+   "title": "Capitalization and impairment of long-lived assets",
+   "scenario": "Ravenna Corp. is reviewing seven items related to property, plant and equipment and intangible assets. Facts are listed in Exhibit 1.",
+   "task": "For each item, select the required treatment under U.S. GAAP.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Items",
+     "kind": "table",
+     "body": [
+      [
+       "#",
+       "Facts"
+      ],
+      [
+       "1",
+       "Ravenna Corp. bought a machine for $250,000. It also paid $6,000 for freight to its plant, $9,000 for installation and $3,000 for test runs before regular production began. How are the freight, installation and testing costs treated?"
+      ],
+      [
+       "2",
+       "During the year Ravenna paid $12,000 for routine repairs and maintenance that keep the machine in its normal working condition without extending its useful life or increasing capacity."
+      ],
+      [
+       "3",
+       "Ravenna builds software for internal use. It spent $15,000 on evaluating alternatives (preliminary project stage), $140,000 on coding and testing (application development stage), and $20,000 on training and maintenance after go-live."
+      ],
+      [
+       "4",
+       "Ravenna spent $90,000 on laboratory research for a new coating and $25,000 on building prototypes of the same coating. The company has not yet decided whether to bring the coating to market."
+      ],
+      [
+       "5",
+       "A reporting unit has a carrying amount of $900,000, including goodwill of $200,000. The fair value of the reporting unit is $780,000. The company performs the quantitative impairment test."
+      ],
+      [
+       "6",
+       "A plant asset group shows indicators of impairment. Its carrying amount is $500,000. The sum of its undiscounted expected future cash flows is $430,000, and its fair value is $380,000."
+      ],
+      [
+       "7",
+       "The company owns a trade name with an indefinite life, carried at $300,000. Its fair value at year end is $240,000."
+      ]
+     ]
+    }
+   ],
+   "blueprint": {
+    "area": "II",
+    "group": "D Property, plant and equipment; F Intangible assets",
+    "topic": "Capitalization and impairment",
+    "task": "Decide cost capitalization and impairment measurement",
+    "skill": "Application"
+   },
+   "difficulty": 2,
+   "est_minutes": 12,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "dropdown",
+     "label": "Item 1 (costs to prepare a machine for use): required treatment",
+     "points": 1,
+     "options": [
+      "Expensed as incurred",
+      "Deferred and expensed over one year",
+      "Capitalized as a separate intangible asset",
+      "Capitalized as part of the machine's cost"
+     ]
+    },
+    {
+     "id": "c2",
+     "kind": "dropdown",
+     "label": "Item 2 (ordinary repairs): required treatment",
+     "points": 1,
+     "options": [
+      "Capitalized and amortized over five years",
+      "Charged to accumulated depreciation",
+      "Capitalized and depreciated over the remaining life",
+      "Expensed as incurred"
+     ]
+    },
+    {
+     "id": "c3",
+     "kind": "dropdown",
+     "label": "Item 3 (internal-use software costs): required treatment",
+     "points": 1,
+     "options": [
+      "Capitalize all three amounts",
+      "Capitalize only the application development stage costs",
+      "Expense all three amounts",
+      "Capitalize only the preliminary project stage costs"
+     ]
+    },
+    {
+     "id": "c4",
+     "kind": "dropdown",
+     "label": "Item 4 (research costs): required treatment",
+     "points": 1,
+     "options": [
+      "Capitalized only if the coating is later patented",
+      "Capitalized as an intangible asset",
+      "Capitalized and amortized over 20 years",
+      "Expensed as incurred"
+     ]
+    },
+    {
+     "id": "c5",
+     "kind": "dropdown",
+     "label": "Item 5 (goodwill impairment measurement): required treatment",
+     "points": 1,
+     "options": [
+      "Impairment loss equals the full goodwill balance",
+      "Impairment loss equals the excess of carrying amount over fair value, limited to goodwill",
+      "No impairment: fair value is positive",
+      "Impairment loss equals the excess of carrying amount over fair value with no limit"
+     ]
+    },
+    {
+     "id": "c6",
+     "kind": "dropdown",
+     "label": "Item 6 (long-lived asset held and used): required treatment",
+     "points": 1,
+     "options": [
+      "Recoverability test: compare carrying amount with undiscounted cash flows; if not recoverable, write down to fair value",
+      "Compare carrying amount with discounted cash flows and write down to that amount",
+      "Write the asset down to undiscounted cash flows",
+      "Compare carrying amount with fair value only"
+     ]
+    },
+    {
+     "id": "c7",
+     "kind": "dropdown",
+     "label": "Item 7 (indefinite-lived intangible): required treatment",
+     "points": 1,
+     "options": [
+      "Write down to fair value; reverse the loss if fair value recovers",
+      "Write down to fair value; the loss is not reversed later",
+      "Keep the carrying amount; disclosure only",
+      "Amortize the trade name over 40 years"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-II-T-005",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "II",
+   "format": "journal_entry",
+   "title": "Bonds issued at a discount: effective interest and early retirement",
+   "scenario": "On January 1, Year 1, Ferndale Corp. issues 5-year bonds with a face amount of $1,000,000 and a stated rate of 6%, paying interest semiannually on June 30 and December 31. The market (effective) rate at issuance is 8% annual, compounded semiannually. The company uses the effective interest method and rounds each period's interest to the nearest dollar. There are no issue costs.",
+   "task": "Compute the amounts and record the journal entries. For journal entries, choose accounts from the list and enter amounts in the Debit or Credit column. Round to the nearest dollar.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Bond terms",
+     "kind": "notes",
+     "body": "Face amount: $1,000,000\nStated annual rate: 6% (semiannual cash interest = $30,000)\nMarket annual rate: 8% (semiannual rate = 4%)\nTerm: 10 semiannual periods\nOn January 2, Year 2 (immediately after the December 31, Year 1 payment), Ferndale calls and retires all the bonds at 102% of face."
+    }
+   ],
+   "blueprint": {
+    "area": "II",
+    "group": "H Debt (financial liabilities)",
+    "topic": "Bonds payable and effective interest",
+    "task": "Price a discount bond, amortize the discount and record an early retirement",
+    "skill": "Application"
+   },
+   "difficulty": 3,
+   "est_minutes": 16,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "number",
+     "label": "Issue price of the bonds",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c2",
+     "kind": "je",
+     "label": "Record the issuance on January 1, Year 1.",
+     "points": 3,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "bondsp",
+       "name": "Bonds Payable"
+      },
+      {
+       "id": "disc",
+       "name": "Discount on Bonds Payable"
+      },
+      {
+       "id": "prem",
+       "name": "Premium on Bonds Payable"
+      },
+      {
+       "id": "intexp",
+       "name": "Interest Expense"
+      },
+      {
+       "id": "intpay",
+       "name": "Interest Payable"
+      },
+      {
+       "id": "gainext",
+       "name": "Gain on Extinguishment of Debt"
+      },
+      {
+       "id": "lossext",
+       "name": "Loss on Extinguishment of Debt"
+      },
+      {
+       "id": "dfc",
+       "name": "Deferred Financing Costs"
+      }
+     ]
+    },
+    {
+     "id": "c3",
+     "kind": "je",
+     "label": "Record the first interest payment on June 30, Year 1.",
+     "points": 3,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "bondsp",
+       "name": "Bonds Payable"
+      },
+      {
+       "id": "disc",
+       "name": "Discount on Bonds Payable"
+      },
+      {
+       "id": "prem",
+       "name": "Premium on Bonds Payable"
+      },
+      {
+       "id": "intexp",
+       "name": "Interest Expense"
+      },
+      {
+       "id": "intpay",
+       "name": "Interest Payable"
+      },
+      {
+       "id": "gainext",
+       "name": "Gain on Extinguishment of Debt"
+      },
+      {
+       "id": "lossext",
+       "name": "Loss on Extinguishment of Debt"
+      },
+      {
+       "id": "dfc",
+       "name": "Deferred Financing Costs"
+      }
+     ]
+    },
+    {
+     "id": "c4",
+     "kind": "number",
+     "label": "Interest expense for Year 1 (both periods)",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Carrying amount of the bonds at December 31, Year 1",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "je",
+     "label": "Record the retirement on January 2, Year 2 at the call price.",
+     "points": 4,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "bondsp",
+       "name": "Bonds Payable"
+      },
+      {
+       "id": "disc",
+       "name": "Discount on Bonds Payable"
+      },
+      {
+       "id": "prem",
+       "name": "Premium on Bonds Payable"
+      },
+      {
+       "id": "intexp",
+       "name": "Interest Expense"
+      },
+      {
+       "id": "intpay",
+       "name": "Interest Payable"
+      },
+      {
+       "id": "gainext",
+       "name": "Gain on Extinguishment of Debt"
+      },
+      {
+       "id": "lossext",
+       "name": "Loss on Extinguishment of Debt"
+      },
+      {
+       "id": "dfc",
+       "name": "Deferred Financing Costs"
+      }
+     ]
+    },
+    {
+     "id": "c7",
+     "kind": "dropdown",
+     "label": "Compared with the cash interest paid in Year 1, effective-interest expense in Year 1 is:",
+     "points": 1,
+     "options": [
+      "Lower, because the bonds sold below face",
+      "Equal to the cash interest",
+      "Higher, because the discount is amortized into interest expense",
+      "Higher only in the final year"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-II-T-006",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "II",
+   "format": "journal_entry",
+   "title": "Treasury stock, stock dividend and cash dividend",
+   "scenario": "Halstead Inc. has 500,000 shares of $5 par common stock issued and outstanding, no treasury shares, and retained earnings large enough for all distributions. The company uses the cost method for treasury stock. Transactions during the year occur in the order listed.",
+   "task": "Compute the share counts and record each journal entry. Choose accounts from the list and enter amounts in the Debit or Credit column.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Transactions in order",
+     "kind": "notes",
+     "body": "1. Acquires 20,000 of its own shares at $30 per share.\n2. Reissues 8,000 of the treasury shares at $34 per share.\n3. Distributes a 10% common stock dividend to shareholders when the market price is $36 per share (treated as a small stock dividend; it is declared and distributed on the same date).\n4. Declares a cash dividend of $1 per share on the shares outstanding after the stock dividend."
+    }
+   ],
+   "blueprint": {
+    "area": "II",
+    "group": "I Equity",
+    "topic": "Treasury stock and dividends",
+    "task": "Record treasury stock, stock dividend and cash dividend entries",
+    "skill": "Application"
+   },
+   "difficulty": 3,
+   "est_minutes": 15,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "je",
+     "label": "Record the acquisition of treasury shares (transaction 1).",
+     "points": 2,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "cs",
+       "name": "Common Stock"
+      },
+      {
+       "id": "apic",
+       "name": "Additional Paid-In Capital"
+      },
+      {
+       "id": "apicts",
+       "name": "Additional Paid-In Capital - Treasury Stock"
+      },
+      {
+       "id": "ts",
+       "name": "Treasury Stock"
+      },
+      {
+       "id": "re",
+       "name": "Retained Earnings"
+      },
+      {
+       "id": "divdecl",
+       "name": "Dividends Declared"
+      },
+      {
+       "id": "divpay",
+       "name": "Dividends Payable"
+      },
+      {
+       "id": "stkdivdist",
+       "name": "Common Stock Dividend Distributable"
+      }
+     ]
+    },
+    {
+     "id": "c2",
+     "kind": "je",
+     "label": "Record the reissuance of treasury shares (transaction 2).",
+     "points": 3,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "cs",
+       "name": "Common Stock"
+      },
+      {
+       "id": "apic",
+       "name": "Additional Paid-In Capital"
+      },
+      {
+       "id": "apicts",
+       "name": "Additional Paid-In Capital - Treasury Stock"
+      },
+      {
+       "id": "ts",
+       "name": "Treasury Stock"
+      },
+      {
+       "id": "re",
+       "name": "Retained Earnings"
+      },
+      {
+       "id": "divdecl",
+       "name": "Dividends Declared"
+      },
+      {
+       "id": "divpay",
+       "name": "Dividends Payable"
+      },
+      {
+       "id": "stkdivdist",
+       "name": "Common Stock Dividend Distributable"
+      }
+     ]
+    },
+    {
+     "id": "c3",
+     "kind": "number",
+     "label": "Shares outstanding after the reissuance",
+     "points": 1,
+     "fmt": "n"
+    },
+    {
+     "id": "c4",
+     "kind": "number",
+     "label": "Number of shares distributed in the stock dividend",
+     "points": 1,
+     "fmt": "n"
+    },
+    {
+     "id": "c5",
+     "kind": "je",
+     "label": "Record the stock dividend (transaction 3).",
+     "points": 3,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "cs",
+       "name": "Common Stock"
+      },
+      {
+       "id": "apic",
+       "name": "Additional Paid-In Capital"
+      },
+      {
+       "id": "apicts",
+       "name": "Additional Paid-In Capital - Treasury Stock"
+      },
+      {
+       "id": "ts",
+       "name": "Treasury Stock"
+      },
+      {
+       "id": "re",
+       "name": "Retained Earnings"
+      },
+      {
+       "id": "divdecl",
+       "name": "Dividends Declared"
+      },
+      {
+       "id": "divpay",
+       "name": "Dividends Payable"
+      },
+      {
+       "id": "stkdivdist",
+       "name": "Common Stock Dividend Distributable"
+      }
+     ]
+    },
+    {
+     "id": "c6",
+     "kind": "number",
+     "label": "Shares outstanding after the stock dividend",
+     "points": 1,
+     "fmt": "n"
+    },
+    {
+     "id": "c7",
+     "kind": "je",
+     "label": "Record the declaration of the cash dividend (transaction 4).",
+     "points": 2,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "cs",
+       "name": "Common Stock"
+      },
+      {
+       "id": "apic",
+       "name": "Additional Paid-In Capital"
+      },
+      {
+       "id": "apicts",
+       "name": "Additional Paid-In Capital - Treasury Stock"
+      },
+      {
+       "id": "ts",
+       "name": "Treasury Stock"
+      },
+      {
+       "id": "re",
+       "name": "Retained Earnings"
+      },
+      {
+       "id": "divdecl",
+       "name": "Dividends Declared"
+      },
+      {
+       "id": "divpay",
+       "name": "Dividends Payable"
+      },
+      {
+       "id": "stkdivdist",
+       "name": "Common Stock Dividend Distributable"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-II-T-007",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "II",
+   "format": "journal_entry",
+   "title": "Equity method and fair value investments",
+   "scenario": "Iverson Corp. holds three investments at December 31, Year 1. Details are in the exhibit.",
+   "task": "Compute the equity-method amounts and record the journal entries. Choose accounts from the list and enter amounts in the Debit or Credit column. Ignore income taxes.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Investment facts",
+     "kind": "notes",
+     "body": "A. On January 1, Year 1, Iverson paid $900,000 cash for a 30% interest in Jasper Co. and can exercise significant influence. Jasper's net assets had a book value of $2,600,000. The excess of cost over Iverson's share of book value is attributed to equipment with a remaining life of 10 years (straight-line, no salvage). Jasper reported Year 1 net income of $400,000 and paid dividends of $100,000 during Year 1.\nB. On January 1, Year 1, Iverson bought a debt security classified as available for sale for $200,000 (its face amount). At December 31, Year 1 fair value is $188,000. The decline is not due to credit losses.\nC. Iverson holds shares of an unrelated company (no significant influence, readily determinable fair value) that cost $90,000. Fair value at December 31, Year 1 is $97,000."
+    }
+   ],
+   "blueprint": {
+    "area": "II",
+    "group": "E Investments",
+    "topic": "Equity method and fair value",
+    "task": "Apply the equity method and fair value measurement to investments",
+    "skill": "Application"
+   },
+   "difficulty": 3,
+   "est_minutes": 15,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "je",
+     "label": "Record the purchase of the 30% interest in Jasper (item A).",
+     "points": 2,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "invassoc",
+       "name": "Investment in Investee"
+      },
+      {
+       "id": "eqinc",
+       "name": "Equity in Earnings of Investee"
+      },
+      {
+       "id": "invinc",
+       "name": "Investment Income"
+      },
+      {
+       "id": "afs",
+       "name": "Investment in Debt Securities (AFS)"
+      },
+      {
+       "id": "aoci",
+       "name": "Accumulated Other Comprehensive Income"
+      },
+      {
+       "id": "eqsec",
+       "name": "Investment in Equity Securities"
+      },
+      {
+       "id": "ugl",
+       "name": "Unrealized Gain on Investments"
+      },
+      {
+       "id": "uloss",
+       "name": "Unrealized Loss on Investments"
+      }
+     ]
+    },
+    {
+     "id": "c2",
+     "kind": "number",
+     "label": "Equity in earnings of Jasper for Year 1",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c3",
+     "kind": "je",
+     "label": "Record the equity in earnings for Year 1.",
+     "points": 2,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "invassoc",
+       "name": "Investment in Investee"
+      },
+      {
+       "id": "eqinc",
+       "name": "Equity in Earnings of Investee"
+      },
+      {
+       "id": "invinc",
+       "name": "Investment Income"
+      },
+      {
+       "id": "afs",
+       "name": "Investment in Debt Securities (AFS)"
+      },
+      {
+       "id": "aoci",
+       "name": "Accumulated Other Comprehensive Income"
+      },
+      {
+       "id": "eqsec",
+       "name": "Investment in Equity Securities"
+      },
+      {
+       "id": "ugl",
+       "name": "Unrealized Gain on Investments"
+      },
+      {
+       "id": "uloss",
+       "name": "Unrealized Loss on Investments"
+      }
+     ]
+    },
+    {
+     "id": "c4",
+     "kind": "je",
+     "label": "Record the dividend received from Jasper.",
+     "points": 2,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "invassoc",
+       "name": "Investment in Investee"
+      },
+      {
+       "id": "eqinc",
+       "name": "Equity in Earnings of Investee"
+      },
+      {
+       "id": "invinc",
+       "name": "Investment Income"
+      },
+      {
+       "id": "afs",
+       "name": "Investment in Debt Securities (AFS)"
+      },
+      {
+       "id": "aoci",
+       "name": "Accumulated Other Comprehensive Income"
+      },
+      {
+       "id": "eqsec",
+       "name": "Investment in Equity Securities"
+      },
+      {
+       "id": "ugl",
+       "name": "Unrealized Gain on Investments"
+      },
+      {
+       "id": "uloss",
+       "name": "Unrealized Loss on Investments"
+      }
+     ]
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Carrying amount of the Jasper investment at December 31, Year 1",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "je",
+     "label": "Record the year-end fair value adjustment on the debt security (item B).",
+     "points": 2,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "invassoc",
+       "name": "Investment in Investee"
+      },
+      {
+       "id": "eqinc",
+       "name": "Equity in Earnings of Investee"
+      },
+      {
+       "id": "invinc",
+       "name": "Investment Income"
+      },
+      {
+       "id": "afs",
+       "name": "Investment in Debt Securities (AFS)"
+      },
+      {
+       "id": "aoci",
+       "name": "Accumulated Other Comprehensive Income"
+      },
+      {
+       "id": "eqsec",
+       "name": "Investment in Equity Securities"
+      },
+      {
+       "id": "ugl",
+       "name": "Unrealized Gain on Investments"
+      },
+      {
+       "id": "uloss",
+       "name": "Unrealized Loss on Investments"
+      }
+     ]
+    },
+    {
+     "id": "c7",
+     "kind": "je",
+     "label": "Record the year-end fair value adjustment on the equity security (item C).",
+     "points": 2,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "invassoc",
+       "name": "Investment in Investee"
+      },
+      {
+       "id": "eqinc",
+       "name": "Equity in Earnings of Investee"
+      },
+      {
+       "id": "invinc",
+       "name": "Investment Income"
+      },
+      {
+       "id": "afs",
+       "name": "Investment in Debt Securities (AFS)"
+      },
+      {
+       "id": "aoci",
+       "name": "Accumulated Other Comprehensive Income"
+      },
+      {
+       "id": "eqsec",
+       "name": "Investment in Equity Securities"
+      },
+      {
+       "id": "ugl",
+       "name": "Unrealized Gain on Investments"
+      },
+      {
+       "id": "uloss",
+       "name": "Unrealized Loss on Investments"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-II-T-008",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "II",
+   "format": "research",
+   "title": "Locate the Codification guidance: balance sheet accounts",
+   "scenario": "You are documenting accounting policies for balance sheet accounts. For each question, identify the FASB Accounting Standards Codification location.",
+   "task": "Enter the Codification Topic, or the Topic and Subtopic when asked. Formats such as '330', 'ASC 330' and 'ASC 835-20' are accepted.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "How to enter",
+     "kind": "notes",
+     "body": "Enter only what each question asks for (Topic or Topic-Subtopic)."
+    }
+   ],
+   "blueprint": {
+    "area": "II",
+    "group": "A-I Balance sheet accounts",
+    "topic": "Codification research: balance sheet accounts",
+    "task": "Locate Topics for inventory, interest capitalization, AROs, credit losses, intangibles and debt",
+    "skill": "Remembering and Understanding"
+   },
+   "difficulty": 1,
+   "est_minutes": 8,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "citation",
+     "label": "Which Topic governs the measurement of inventory?",
+     "points": 1,
+     "ask": "Enter the Codification Topic number (three digits)."
+    },
+    {
+     "id": "c2",
+     "kind": "citation",
+     "label": "Which Topic and Subtopic address capitalizing interest cost incurred during the construction of an asset?",
+     "points": 1,
+     "ask": "Enter the Topic and Subtopic (for example, 000-00)."
+    },
+    {
+     "id": "c3",
+     "kind": "citation",
+     "label": "Which Topic and Subtopic cover legal obligations to retire a long-lived asset (asset retirement obligations)?",
+     "points": 1,
+     "ask": "Enter the Topic and Subtopic (for example, 000-00)."
+    },
+    {
+     "id": "c4",
+     "kind": "citation",
+     "label": "Which Topic and Subtopic address expected credit losses on financial assets measured at amortized cost?",
+     "points": 1,
+     "ask": "Enter the Topic and Subtopic (for example, 000-00)."
+    },
+    {
+     "id": "c5",
+     "kind": "citation",
+     "label": "Which Topic and Subtopic address the accounting for intangible assets other than goodwill after acquisition?",
+     "points": 1,
+     "ask": "Enter the Topic and Subtopic (for example, 000-00)."
+    },
+    {
+     "id": "c6",
+     "kind": "citation",
+     "label": "Which Topic and Subtopic cover debt modifications and extinguishments?",
+     "points": 1,
+     "ask": "Enter the Topic and Subtopic (for example, 000-00)."
+    }
+   ]
+  },
+  {
+   "id": "FAR-III-T-001",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "III",
+   "format": "journal_entry",
+   "title": "Lessee accounting: classification, commencement and first year",
+   "scenario": "On January 1, Year 1, Kroll Co. leases a fleet of delivery vehicles for 5 years. Payments of $100,000 are due at the beginning of each year, starting January 1, Year 1. The vehicles have an economic life of 6 years. The lease has no ownership transfer, no purchase option and no residual value guarantee. The present value of the lease payments is less than substantially all of the fair value of the vehicles, and the vehicles are not specialized. Kroll's incremental borrowing rate is 6% (the rate implicit in the lease is not readily determinable). There are no initial direct costs, incentives or variable payments. Kroll has a December 31 year end and does not use the short-term lease exemption.",
+   "task": "Classify the lease, compute the amounts, and record the journal entries. Choose accounts from the list and enter amounts in the Debit or Credit column. Round to the nearest dollar.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Lease terms",
+     "kind": "table",
+     "body": [
+      [
+       "Term",
+       "Detail"
+      ],
+      [
+       "Lease term",
+       "5 years"
+      ],
+      [
+       "Annual payment (beginning of year)",
+       "$100,000"
+      ],
+      [
+       "Economic life of vehicles",
+       "6 years"
+      ],
+      [
+       "Discount rate",
+       "6%"
+      ],
+      [
+       "Ownership transfer / purchase option",
+       "None"
+      ],
+      [
+       "Amortization policy",
+       "Straight-line over the shorter of lease term and useful life"
+      ]
+     ]
+    }
+   ],
+   "blueprint": {
+    "area": "III",
+    "group": "A Leases (lessee)",
+    "topic": "Lessee finance lease",
+    "task": "Classify a lease and account for commencement and first-year interest and amortization",
+    "skill": "Application"
+   },
+   "difficulty": 3,
+   "est_minutes": 16,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "dropdown",
+     "label": "Classification of the lease by Kroll (lessee)",
+     "points": 1,
+     "options": [
+      "Operating lease",
+      "Sales-type lease",
+      "Finance lease",
+      "Short-term lease exempt from recognition"
+     ]
+    },
+    {
+     "id": "c2",
+     "kind": "number",
+     "label": "Lease liability at commencement",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c3",
+     "kind": "je",
+     "label": "Record the lease commencement on January 1, Year 1 (before the first payment).",
+     "points": 2,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "rou",
+       "name": "Right-of-Use Asset"
+      },
+      {
+       "id": "leaseliab",
+       "name": "Lease Liability"
+      },
+      {
+       "id": "leaseexp",
+       "name": "Lease Expense"
+      },
+      {
+       "id": "intexp",
+       "name": "Interest Expense"
+      },
+      {
+       "id": "amortexp",
+       "name": "Amortization Expense"
+      },
+      {
+       "id": "depexp",
+       "name": "Depreciation Expense"
+      },
+      {
+       "id": "accamort",
+       "name": "Accumulated Amortization"
+      },
+      {
+       "id": "equip",
+       "name": "Equipment"
+      }
+     ]
+    },
+    {
+     "id": "c4",
+     "kind": "je",
+     "label": "Record the first payment on January 1, Year 1.",
+     "points": 2,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "rou",
+       "name": "Right-of-Use Asset"
+      },
+      {
+       "id": "leaseliab",
+       "name": "Lease Liability"
+      },
+      {
+       "id": "leaseexp",
+       "name": "Lease Expense"
+      },
+      {
+       "id": "intexp",
+       "name": "Interest Expense"
+      },
+      {
+       "id": "amortexp",
+       "name": "Amortization Expense"
+      },
+      {
+       "id": "depexp",
+       "name": "Depreciation Expense"
+      },
+      {
+       "id": "accamort",
+       "name": "Accumulated Amortization"
+      },
+      {
+       "id": "equip",
+       "name": "Equipment"
+      }
+     ]
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Interest expense for Year 1",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "number",
+     "label": "Amortization of the right-of-use asset for Year 1",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c7",
+     "kind": "je",
+     "label": "Record interest and amortization at December 31, Year 1.",
+     "points": 4,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "rou",
+       "name": "Right-of-Use Asset"
+      },
+      {
+       "id": "leaseliab",
+       "name": "Lease Liability"
+      },
+      {
+       "id": "leaseexp",
+       "name": "Lease Expense"
+      },
+      {
+       "id": "intexp",
+       "name": "Interest Expense"
+      },
+      {
+       "id": "amortexp",
+       "name": "Amortization Expense"
+      },
+      {
+       "id": "depexp",
+       "name": "Depreciation Expense"
+      },
+      {
+       "id": "accamort",
+       "name": "Accumulated Amortization"
+      },
+      {
+       "id": "equip",
+       "name": "Equipment"
+      }
+     ]
+    },
+    {
+     "id": "c8",
+     "kind": "number",
+     "label": "Lease liability at December 31, Year 1",
+     "points": 1,
+     "fmt": "$"
+    }
+   ]
+  },
+  {
+   "id": "FAR-III-T-002",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "III",
+   "format": "journal_entry",
+   "title": "Revenue: multiple performance obligations and right of return",
+   "scenario": "Tolliver Systems sells a machine together with 12 months of maintenance for a single price of $90,000, collected in cash on the delivery date. The machine and the maintenance are distinct. Control of the machine transfers on delivery, and maintenance starts the same day, 3 months before the December 31 year end. Customers may return the machine within 90 days for a full refund, and Tolliver expects 5% of machines sold to be returned. The company applies the relative stand-alone selling price method.",
+   "task": "Compute the amounts and record the journal entries at delivery and at year end. Choose accounts from the list and enter amounts in the Debit or Credit column. Round to the nearest dollar.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Contract data",
+     "kind": "table",
+     "body": [
+      [
+       "Item",
+       "Amount"
+      ],
+      [
+       "Contract price",
+       "$90,000"
+      ],
+      [
+       "Stand-alone selling price: machine",
+       "$80,000"
+      ],
+      [
+       "Stand-alone selling price: 12-month maintenance",
+       "$20,000"
+      ],
+      [
+       "Cost of the machine (in inventory)",
+       "$48,000"
+      ],
+      [
+       "Expected return rate for machines",
+       "5%"
+      ],
+      [
+       "Maintenance term",
+       "12 months, recognized evenly"
+      ]
+     ]
+    }
+   ],
+   "blueprint": {
+    "area": "III",
+    "group": "C Revenue recognition",
+    "topic": "Revenue from contracts with customers",
+    "task": "Allocate the transaction price and record revenue with a right of return",
+    "skill": "Application"
+   },
+   "difficulty": 3,
+   "est_minutes": 15,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "number",
+     "label": "Transaction price allocated to the machine",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c2",
+     "kind": "number",
+     "label": "Transaction price allocated to the maintenance service",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c3",
+     "kind": "je",
+     "label": "Record the sale and cash receipt on the delivery date.",
+     "points": 4,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "ar",
+       "name": "Accounts Receivable"
+      },
+      {
+       "id": "rev",
+       "name": "Sales Revenue"
+      },
+      {
+       "id": "unearned",
+       "name": "Unearned Revenue"
+      },
+      {
+       "id": "refundliab",
+       "name": "Refund Liability"
+      },
+      {
+       "id": "cogs",
+       "name": "Cost of Goods Sold"
+      },
+      {
+       "id": "rrg",
+       "name": "Right to Recover Returned Products"
+      },
+      {
+       "id": "inv",
+       "name": "Inventory"
+      },
+      {
+       "id": "contractasset",
+       "name": "Contract Asset"
+      },
+      {
+       "id": "salesret",
+       "name": "Sales Returns and Allowances"
+      }
+     ]
+    },
+    {
+     "id": "c4",
+     "kind": "je",
+     "label": "Record the cost of the machine sold.",
+     "points": 3,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "ar",
+       "name": "Accounts Receivable"
+      },
+      {
+       "id": "rev",
+       "name": "Sales Revenue"
+      },
+      {
+       "id": "unearned",
+       "name": "Unearned Revenue"
+      },
+      {
+       "id": "refundliab",
+       "name": "Refund Liability"
+      },
+      {
+       "id": "cogs",
+       "name": "Cost of Goods Sold"
+      },
+      {
+       "id": "rrg",
+       "name": "Right to Recover Returned Products"
+      },
+      {
+       "id": "inv",
+       "name": "Inventory"
+      },
+      {
+       "id": "contractasset",
+       "name": "Contract Asset"
+      },
+      {
+       "id": "salesret",
+       "name": "Sales Returns and Allowances"
+      }
+     ]
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Maintenance revenue earned through December 31",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "je",
+     "label": "Record maintenance revenue recognized at December 31.",
+     "points": 2,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "ar",
+       "name": "Accounts Receivable"
+      },
+      {
+       "id": "rev",
+       "name": "Sales Revenue"
+      },
+      {
+       "id": "unearned",
+       "name": "Unearned Revenue"
+      },
+      {
+       "id": "refundliab",
+       "name": "Refund Liability"
+      },
+      {
+       "id": "cogs",
+       "name": "Cost of Goods Sold"
+      },
+      {
+       "id": "rrg",
+       "name": "Right to Recover Returned Products"
+      },
+      {
+       "id": "inv",
+       "name": "Inventory"
+      },
+      {
+       "id": "contractasset",
+       "name": "Contract Asset"
+      },
+      {
+       "id": "salesret",
+       "name": "Sales Returns and Allowances"
+      }
+     ]
+    },
+    {
+     "id": "c7",
+     "kind": "number",
+     "label": "Contract liability (unearned maintenance) at December 31",
+     "points": 1,
+     "fmt": "$"
+    }
+   ]
+  },
+  {
+   "id": "FAR-III-T-003",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "III",
+   "format": "journal_entry",
+   "title": "Income tax provision: current and deferred",
+   "scenario": "Norwood Corp. is preparing its Year 2 income tax provision. The enacted tax rate is 25% for Year 2 and all future years, and no valuation allowance is needed. Facts are in the exhibits.",
+   "task": "Compute the amounts and record the year-end income tax journal entry. Choose accounts from the list and enter amounts in the Debit or Credit column. Round to the nearest dollar; percentages to one decimal.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Year 2 pretax income and reconciling items",
+     "kind": "table",
+     "body": [
+      [
+       "Item",
+       "Amount"
+      ],
+      [
+       "Pretax financial income",
+       "800,000"
+      ],
+      [
+       "Tax depreciation",
+       "300,000"
+      ],
+      [
+       "Book depreciation",
+       "220,000"
+      ],
+      [
+       "Warranty expense accrued in Year 2 (deductible when paid)",
+       "90,000"
+      ],
+      [
+       "Warranty claims paid in Year 2",
+       "60,000"
+      ],
+      [
+       "Interest on municipal bonds (never taxable)",
+       "25,000"
+      ],
+      [
+       "Fines included in expenses (never deductible)",
+       "10,000"
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "title": "Balances at the beginning of Year 2",
+     "kind": "table",
+     "body": [
+      [
+       "Item",
+       "Amount"
+      ],
+      [
+       "Cumulative excess of tax depreciation over book depreciation (taxable temporary difference)",
+       "200,000"
+      ],
+      [
+       "Estimated warranty liability (deductible temporary difference)",
+       "40,000"
+      ],
+      [
+       "Deferred tax liability",
+       "50,000"
+      ],
+      [
+       "Deferred tax asset",
+       "10,000"
+      ]
+     ]
+    }
+   ],
+   "blueprint": {
+    "area": "III",
+    "group": "D Income taxes",
+    "topic": "Current and deferred taxes",
+    "task": "Compute taxable income, deferred balances and total tax expense; record the provision",
+    "skill": "Analysis"
+   },
+   "difficulty": 3,
+   "est_minutes": 16,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "number",
+     "label": "Taxable income for Year 2",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c2",
+     "kind": "number",
+     "label": "Current income tax payable for Year 2",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c3",
+     "kind": "number",
+     "label": "Deferred tax liability at December 31, Year 2",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c4",
+     "kind": "number",
+     "label": "Deferred tax asset at December 31, Year 2",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Total income tax expense for Year 2",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "je",
+     "label": "Record the income tax provision for Year 2.",
+     "points": 4,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "taxexp",
+       "name": "Income Tax Expense"
+      },
+      {
+       "id": "taxpay",
+       "name": "Income Taxes Payable"
+      },
+      {
+       "id": "dta",
+       "name": "Deferred Tax Asset"
+      },
+      {
+       "id": "dtl",
+       "name": "Deferred Tax Liability"
+      },
+      {
+       "id": "dtava",
+       "name": "Valuation Allowance for Deferred Tax Assets"
+      },
+      {
+       "id": "cash",
+       "name": "Cash"
+      }
+     ]
+    },
+    {
+     "id": "c7",
+     "kind": "number",
+     "label": "Effective tax rate for Year 2 (percent)",
+     "points": 1,
+     "fmt": "p1"
+    }
+   ]
+  },
+  {
+   "id": "FAR-III-T-004",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "III",
+   "format": "journal_entry",
+   "title": "Correction of a prior period error",
+   "scenario": "Rowan Industries discovers in Year 3, before its Year 3 books are closed, that on January 1, Year 1 it purchased a machine for $120,000 cash and recorded the whole amount as repairs expense. The machine has a 5-year life and no salvage value; straight-line depreciation should have been recorded from January 1, Year 1. The Year 1 and Year 2 financial statements have already been issued. The tax rate is 25% and the error correction is accounted for on an after-tax basis, with the tax effect settled through income taxes payable.",
+   "task": "Compute the amounts, record the correcting entry, and select the reporting treatment. Choose accounts from the list and enter amounts in the Debit or Credit column. Ignore the Year 3 depreciation entry, which is recorded separately.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Facts",
+     "kind": "notes",
+     "body": "1. The machine was placed in service on January 1, Year 1. Nothing was capitalized. No depreciation was recorded for Year 1 or Year 2.\n2. The error is material to the previously issued financial statements.\n3. Separately, the December 31, Year 1 ending inventory was overstated by $15,000 because of a counting error. The Year 2 ending inventory was counted correctly."
+    }
+   ],
+   "blueprint": {
+    "area": "III",
+    "group": "A Accounting changes and error corrections",
+    "topic": "Error correction",
+    "task": "Compute the cumulative effect and record a prior period error correction",
+    "skill": "Analysis"
+   },
+   "difficulty": 3,
+   "est_minutes": 16,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "number",
+     "label": "Annual depreciation that should have been recorded",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c2",
+     "kind": "number",
+     "label": "Accumulated depreciation at December 31, Year 2",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c3",
+     "kind": "number",
+     "label": "Pretax cumulative understatement of retained earnings at the beginning of Year 3",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c4",
+     "kind": "number",
+     "label": "Income tax effect of the correction",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Net-of-tax adjustment to retained earnings",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "je",
+     "label": "Record the correcting entry in Year 3 for the machine error.",
+     "points": 4,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "equip",
+       "name": "Equipment"
+      },
+      {
+       "id": "accdep",
+       "name": "Accumulated Depreciation"
+      },
+      {
+       "id": "depexp",
+       "name": "Depreciation Expense"
+      },
+      {
+       "id": "taxpay",
+       "name": "Income Taxes Payable"
+      },
+      {
+       "id": "re",
+       "name": "Retained Earnings"
+      },
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "inv",
+       "name": "Inventory"
+      },
+      {
+       "id": "cogs",
+       "name": "Cost of Goods Sold"
+      },
+      {
+       "id": "taxexp",
+       "name": "Income Tax Expense"
+      }
+     ]
+    },
+    {
+     "id": "c7",
+     "kind": "dropdown",
+     "label": "How is the correction reported in the Year 3 financial statements?",
+     "points": 1,
+     "options": [
+      "Include the correction in Year 3 net income",
+      "Report it in other comprehensive income",
+      "Restate the prior period statements presented and adjust opening retained earnings of the earliest period presented, with disclosure of the error",
+      "Apply it prospectively as a change in estimate"
+     ]
+    },
+    {
+     "id": "c8",
+     "kind": "dropdown",
+     "label": "Effect of the Year 1 ending inventory overstatement on retained earnings at December 31, Year 2:",
+     "points": 1,
+     "options": [
+      "Overstated by the amount net of tax",
+      "Overstated by the full amount",
+      "None; the error reversed itself in Year 2 because Year 2 ending inventory was correct",
+      "Understated by the full amount"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-III-T-005",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "III",
+   "format": "journal_entry",
+   "title": "Warranties and loss contingencies",
+   "scenario": "Pinegate Corp. sells appliances with a one-year warranty. It is also a defendant in two lawsuits. The controller is preparing year-end entries and disclosures.",
+   "task": "Compute the amounts and record the journal entries. Choose accounts from the list and enter amounts in the Debit or Credit column. Round to the nearest dollar.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Warranty data",
+     "kind": "table",
+     "body": [
+      [
+       "Item",
+       "Amount"
+      ],
+      [
+       "Sales for the year",
+       "$2,000,000"
+      ],
+      [
+       "Estimated warranty cost, as a percent of sales",
+       "3%"
+      ],
+      [
+       "Warranty liability, January 1",
+       "$25,000"
+      ],
+      [
+       "Warranty repairs paid in cash during the year",
+       "$40,000"
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "title": "Legal matters (attorney's letter)",
+     "kind": "memo",
+     "body": "Lawsuit A (product injury): Counsel believes a loss is probable. The estimated loss is between $300,000 and $500,000. No amount within that range is a better estimate than any other.\nLawsuit B (patent claim): Counsel believes a loss is reasonably possible, and estimates it at $250,000.\nPinegate has also filed a counterclaim in Lawsuit A that its counsel believes is likely to succeed for $400,000; it has not been awarded."
+    }
+   ],
+   "blueprint": {
+    "area": "III",
+    "group": "B Contingencies and commitments",
+    "topic": "Warranties and loss contingencies",
+    "task": "Accrue warranties and litigation losses and classify contingencies",
+    "skill": "Application"
+   },
+   "difficulty": 2,
+   "est_minutes": 14,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "number",
+     "label": "Warranty expense for the year",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c2",
+     "kind": "je",
+     "label": "Record the warranty accrual for the year.",
+     "points": 2,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "warrantyexp",
+       "name": "Warranty Expense"
+      },
+      {
+       "id": "warrantyliab",
+       "name": "Estimated Warranty Liability"
+      },
+      {
+       "id": "lawloss",
+       "name": "Loss from Litigation"
+      },
+      {
+       "id": "lawliab",
+       "name": "Estimated Litigation Liability"
+      },
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "ar",
+       "name": "Accounts Receivable"
+      },
+      {
+       "id": "np",
+       "name": "Notes Payable"
+      }
+     ]
+    },
+    {
+     "id": "c3",
+     "kind": "je",
+     "label": "Record the warranty repairs paid in cash.",
+     "points": 2,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "warrantyexp",
+       "name": "Warranty Expense"
+      },
+      {
+       "id": "warrantyliab",
+       "name": "Estimated Warranty Liability"
+      },
+      {
+       "id": "lawloss",
+       "name": "Loss from Litigation"
+      },
+      {
+       "id": "lawliab",
+       "name": "Estimated Litigation Liability"
+      },
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "ar",
+       "name": "Accounts Receivable"
+      },
+      {
+       "id": "np",
+       "name": "Notes Payable"
+      }
+     ]
+    },
+    {
+     "id": "c4",
+     "kind": "number",
+     "label": "Estimated warranty liability at December 31",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Loss accrued for Lawsuit A",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "je",
+     "label": "Record the loss on Lawsuit A.",
+     "points": 2,
+     "ask": "Enter the journal entry. Choose accounts from the list; enter each amount in the Debit or Credit column.",
+     "accounts": [
+      {
+       "id": "warrantyexp",
+       "name": "Warranty Expense"
+      },
+      {
+       "id": "warrantyliab",
+       "name": "Estimated Warranty Liability"
+      },
+      {
+       "id": "lawloss",
+       "name": "Loss from Litigation"
+      },
+      {
+       "id": "lawliab",
+       "name": "Estimated Litigation Liability"
+      },
+      {
+       "id": "cash",
+       "name": "Cash"
+      },
+      {
+       "id": "ar",
+       "name": "Accounts Receivable"
+      },
+      {
+       "id": "np",
+       "name": "Notes Payable"
+      }
+     ]
+    },
+    {
+     "id": "c7",
+     "kind": "number",
+     "label": "Additional exposure on Lawsuit A disclosed but not accrued",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c8",
+     "kind": "dropdown",
+     "label": "Lawsuit B (reasonably possible loss) and the counterclaim (likely gain) are reported as:",
+     "points": 1,
+     "options": [
+      "Lawsuit B: accrue the loss; counterclaim: recognize the gain",
+      "Lawsuit B: accrue the loss; counterclaim: disclose only",
+      "Lawsuit B: no disclosure; counterclaim: disclose only",
+      "Lawsuit B: disclose only; counterclaim: do not recognize the gain until realized"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-III-T-006",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "III",
+   "format": "numeric_table",
+   "title": "Revenue over time: cost-to-cost and a loss contract",
+   "scenario": "Harlan Builders signed a fixed-price contract to construct a warehouse. Revenue is recognized over time using the cost-to-cost input method, which the company considers a faithful measure of progress. Facts by year are in the exhibit.",
+   "task": "Compute each amount. Enter losses as negative numbers. Round percentages to one decimal and dollars to the nearest dollar.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Contract data",
+     "kind": "table",
+     "body": [
+      [
+       "Item",
+       "Amount"
+      ],
+      [
+       "Fixed contract price",
+       "$5,000,000"
+      ],
+      [
+       "Year 1: total estimated contract cost at end of Year 1",
+       "$4,000,000"
+      ],
+      [
+       "Year 1: contract costs incurred to date",
+       "$1,200,000"
+      ],
+      [
+       "Year 2: revised total estimated contract cost at end of Year 2",
+       "$5,500,000"
+      ],
+      [
+       "Year 2: contract costs incurred to date (cumulative)",
+       "$3,300,000"
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "title": "Notes",
+     "kind": "notes",
+     "body": "The estimate revision in Year 2 results from higher material prices and is a change in estimate. Ignore taxes. Provisions for anticipated losses follow the guidance for loss contracts."
+    }
+   ],
+   "blueprint": {
+    "area": "III",
+    "group": "C Revenue recognition",
+    "topic": "Revenue recognized over time",
+    "task": "Apply the cost-to-cost method and recognize an anticipated loss",
+    "skill": "Analysis"
+   },
+   "difficulty": 3,
+   "est_minutes": 13,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "number",
+     "label": "Percentage complete at the end of Year 1",
+     "points": 1,
+     "fmt": "p1"
+    },
+    {
+     "id": "c2",
+     "kind": "number",
+     "label": "Revenue recognized in Year 1",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c3",
+     "kind": "number",
+     "label": "Gross profit recognized in Year 1",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c4",
+     "kind": "number",
+     "label": "Cumulative percentage complete at the end of Year 2",
+     "points": 1,
+     "fmt": "p1"
+    },
+    {
+     "id": "c5",
+     "kind": "number",
+     "label": "Revenue recognized in Year 2",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c6",
+     "kind": "number",
+     "label": "Gross profit (loss) recognized in Year 2",
+     "points": 1,
+     "fmt": "$"
+    },
+    {
+     "id": "c7",
+     "kind": "dropdown",
+     "label": "The anticipated loss on the contract is:",
+     "points": 1,
+     "options": [
+      "Deferred until the contract is completed",
+      "Recognized in full in the period in which it becomes evident",
+      "Recognized only as work is performed",
+      "Disclosed but not accrued"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-III-T-007",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "III",
+   "format": "document_review",
+   "title": "Draft accounting policy memo: events, changes and measurement",
+   "scenario": "You are reviewing a draft accounting policy memo for Sterling Machinery, a private company that follows U.S. GAAP. The controller asks you to correct any statement that is wrong.",
+   "task": "For each numbered statement, choose the option that makes the statement correct. Choose 'Keep as written' if the statement is already correct.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "Draft memo",
+     "kind": "memo",
+     "body": "TO: Accounting staff    FROM: Controller    RE: Policy summary (draft)\n\n1. A lawsuit that is settled after year end but before the statements are issued, for an event that occurred before year end, is disclosed in the notes and not recorded.\n2. A fire that destroys a plant after year end but before the statements are issued is recorded with an adjusting entry at year end.\n3. A change from double-declining-balance to straight-line depreciation is a change in accounting estimate effected by a change in accounting principle, and it is applied prospectively.\n4. Level 2 inputs in the fair value hierarchy are unobservable inputs that reflect management's own assumptions.\n5. A lessee may elect not to recognize a right-of-use asset and lease liability for a lease with a term of 12 months or less that has no purchase option the lessee is reasonably certain to exercise.\n6. A loss that is reasonably possible and can be estimated is accrued and also disclosed."
+    },
+    {
+     "id": "e2",
+     "title": "Assumptions",
+     "kind": "notes",
+     "body": "Assume the financial statements have not yet been issued in statements 1 and 2. Facts beyond each statement are not needed."
+    }
+   ],
+   "blueprint": {
+    "area": "III",
+    "group": "A-B Accounting changes; contingencies; subsequent events; fair value; leases",
+    "topic": "Policy review",
+    "task": "Identify correct treatment of subsequent events, changes, fair value levels, short-term leases and contingencies",
+    "skill": "Analysis"
+   },
+   "difficulty": 2,
+   "est_minutes": 12,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "dropdown",
+     "label": "Statement 1: settlement after year end of a pre-year-end event",
+     "points": 1,
+     "options": [
+      "Revise: record it as an adjustment to the year-end financial statements (a recognized subsequent event)",
+      "Keep as written",
+      "Revise: record it in the next year's statements"
+     ]
+    },
+    {
+     "id": "c2",
+     "kind": "dropdown",
+     "label": "Statement 2: fire after year end",
+     "points": 1,
+     "options": [
+      "Revise: record it in the next year's income statement only, with no disclosure",
+      "Revise: disclose it in the notes (a nonrecognized subsequent event); do not adjust the year-end statements",
+      "Keep as written"
+     ]
+    },
+    {
+     "id": "c3",
+     "kind": "dropdown",
+     "label": "Statement 3: change in depreciation method",
+     "points": 1,
+     "options": [
+      "Revise: it is a change in accounting principle applied retrospectively",
+      "Keep as written",
+      "Revise: it is an error correction restated in prior periods"
+     ]
+    },
+    {
+     "id": "c4",
+     "kind": "dropdown",
+     "label": "Statement 4: fair value hierarchy, Level 2",
+     "points": 1,
+     "options": [
+      "Revise: Level 2 inputs are quoted prices for identical assets in active markets",
+      "Revise: Level 2 inputs are observable inputs other than quoted prices for identical items, such as quoted prices for similar items or observable interest rates",
+      "Keep as written"
+     ]
+    },
+    {
+     "id": "c5",
+     "kind": "dropdown",
+     "label": "Statement 5: short-term lease election",
+     "points": 1,
+     "options": [
+      "Keep as written",
+      "Revise: the lessee must always recognize a right-of-use asset",
+      "Revise: the election applies only to leases of 6 months or less"
+     ]
+    },
+    {
+     "id": "c6",
+     "kind": "dropdown",
+     "label": "Statement 6: reasonably possible loss contingency",
+     "points": 1,
+     "options": [
+      "Revise: disclose it; do not accrue it",
+      "Revise: accrue it but do not disclose it",
+      "Keep as written"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "FAR-III-T-008",
+   "type": "tbs",
+   "exam": "FAR",
+   "area": "III",
+   "format": "research",
+   "title": "Locate the Codification guidance: transactions",
+   "scenario": "You are documenting the authoritative sources for six transactions in a company's accounting policy manual. For each question, identify the FASB Accounting Standards Codification location.",
+   "task": "Enter the Codification Topic, or the Topic and Subtopic when asked. Formats such as '740', 'ASC 740' and 'ASC 842-20' are accepted.",
+   "exhibits": [
+    {
+     "id": "e1",
+     "title": "How to enter",
+     "kind": "notes",
+     "body": "Enter only what each question asks for (Topic or Topic-Subtopic)."
+    }
+   ],
+   "blueprint": {
+    "area": "III",
+    "group": "A-C Select transactions",
+    "topic": "Codification research: transactions",
+    "task": "Locate Topics for revenue, leases, income taxes, fair value, subsequent events and contingencies",
+    "skill": "Remembering and Understanding"
+   },
+   "difficulty": 1,
+   "est_minutes": 8,
+   "cells": [
+    {
+     "id": "c1",
+     "kind": "citation",
+     "label": "Which Topic governs revenue from contracts with customers?",
+     "points": 1,
+     "ask": "Enter the Codification Topic number (three digits)."
+    },
+    {
+     "id": "c2",
+     "kind": "citation",
+     "label": "Which Topic and Subtopic contain the accounting by lessees for leases?",
+     "points": 1,
+     "ask": "Enter the Topic and Subtopic (for example, 000-00)."
+    },
+    {
+     "id": "c3",
+     "kind": "citation",
+     "label": "Which Topic governs accounting for income taxes, including deferred taxes?",
+     "points": 1,
+     "ask": "Enter the Codification Topic number (three digits)."
+    },
+    {
+     "id": "c4",
+     "kind": "citation",
+     "label": "Which Topic governs fair value measurement and its disclosures?",
+     "points": 1,
+     "ask": "Enter the Codification Topic number (three digits)."
+    },
+    {
+     "id": "c5",
+     "kind": "citation",
+     "label": "Which Topic governs recognition and disclosure of subsequent events?",
+     "points": 1,
+     "ask": "Enter the Codification Topic number (three digits)."
+    },
+    {
+     "id": "c6",
+     "kind": "citation",
+     "label": "Which Topic and Subtopic cover the accrual and disclosure of loss contingencies?",
+     "points": 1,
+     "ask": "Enter the Topic and Subtopic (for example, 000-00)."
+    }
+   ]
+  }
+ ]
+}
