@@ -119,6 +119,62 @@ def cite_text(cite):
     return "; ".join(out)
 
 
+# ---------------------------------------------------------------------------
+# FAR display rule: a paragraph-level citation is shown only when verify.cite_ok says that paragraph was checked against the
+# source text. Everything else is cut back to the topic (ASC 842, GASB 34, ...) at build time; the source files are not changed.
+# ---------------------------------------------------------------------------
+_UNCONFIRMED = re.compile(r"미열람|(번호|문단)[^;.(),]{0,25}미확인")
+
+
+def _confirmed(ref, ok):
+    """Is this exact paragraph named in cite_ok as checked?"""
+    m = re.match(r"Statement (\d+), paragraphs? (\d+)", ref)
+    if m:
+        return re.search(r"(?<!\d)%s\s*¶\s*%s(?!\d)" % (m.group(1), m.group(2)), ok) is not None
+    if ref in ok:
+        return True
+    base, _, last = ref.rpartition("-")                # "250-10-45-18/19" also confirms 250-10-45-19
+    return bool(base) and re.search(re.escape(base) + r"-\d+(/\d+)*/" + re.escape(last) + r"(?!\d)", ok) is not None
+
+
+def _topic(src, ref):
+    """(src, ref) cut back to topic level."""
+    if src == "ASC":
+        return src, ref.split("-")[0]
+    if src == "GASB":
+        m = re.match(r"Statement (\d+)", ref)
+        if m: return src, m.group(1)
+        if ref.startswith("Cod. Sec."): return src, "Cod. Sec. " + re.search(r"\d+", ref).group(0)
+    if src == "SFAC":
+        return src, ref.split(",")[0]
+    if src == "SEC":
+        m = re.match(r"(Form [\w-]+)", ref)
+        if m: return src, m.group(1)
+    return src, ref                                    # ASU, AU-C, Interpretation, SAB, Blueprint notes: already topic level
+
+
+def far_cite(it):
+    """Citation list shown for a FAR item: paragraph numbers only where cite_ok confirms them, topic otherwise."""
+    ok = str((it.get("verify") or {}).get("cite_ok") or "")
+    checked = ok.startswith("public-checked") and not _UNCONFIRMED.search(ok)
+    out, have = [], set()
+    for c in it.get("cite") or []:
+        src, ref = (c.get("src") or "").strip(), (c.get("ref") or "").strip()
+        if ref and not (checked and _confirmed(ref, ok)):
+            src, ref = _topic(src, ref)
+        key = (src, ref)
+        if key not in have:
+            have.add(key); out.append({"src": src, "ref": ref})
+    conf = {(s, r) for s, r in have if s == "ASC" and re.search(r"-", r)}      # drop a bare topic that a confirmed paragraph already covers
+    out = [c for c in out if not (c["src"] == "ASC" and "-" not in c["ref"] and any(k[1].split("-")[0] == c["ref"] for k in conf))]
+    return out
+
+
+def far_cite_is_paragraph(text):
+    """True when a displayed citation string carries an ASC paragraph number."""
+    return re.search(r"\d{3}-\d{2}-\d{2}", text) is not None
+
+
 def accepted(items, include_draft=False):
     ok = set(ACCEPT) | ({"draft"} if include_draft else set())
     return [i for i in items if i.get("status") in ok]

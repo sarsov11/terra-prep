@@ -201,6 +201,10 @@ if not a.no_data:
                 wt = m2.get("wt")
                 if not (isinstance(wt, list) and len(wt) == 4 and all((t == "" and j == m2["a"] - 1) or (t in C.WRONG_TAGS and j != m2["a"] - 1) for j, t in enumerate(wt))): fails.append("%s: bad wrong-choice tags %s" % (q["i"], wt))
                 if len(m2["o"]) != 4 or len(m2["ex"]) != 4 or not (1 <= m2["a"] <= 4): fails.append("%s: bad mc structure" % q["i"])
+                if sec == "FAR":                           # displayed citation follows the paragraph-number display rule
+                    si = next(x for x in items if x["id"] == q["i"])
+                    if m2["cite"] != C.cite_text(C.far_cite(si)): fails.append("%s: displayed cite %r breaks the FAR paragraph-number rule" % (q["i"], m2["cite"]))
+                    if C.far_cite_is_paragraph(m2["cite"]) and not str((si.get("verify") or {}).get("cite_ok", "")).startswith("public-checked"): fails.append("%s: paragraph number shown but cite_ok is unchecked" % q["i"])
 
 # ---- offline cache: sw.js must list every shipped file and carry the current content hash
 if not a.no_data:

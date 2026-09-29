@@ -11,6 +11,8 @@ Writes   data/far_area<N>_<name>.js        window.TREE / window.QBANK / window.P
          js/catalog.js                     FAR subject list between the BEGIN/END FAR markers
          sw.js                             file list + version
 
+Citation display: paragraph numbers are shown only when verify.cite_ok says the paragraph was checked; otherwise the citation is cut to its topic
+(ASC 842, GASB 34) at build time (C.far_cite). The source files keep the full reference.
 Same helpers as build_reg.py (tools/reg_common.py). One Blueprint Group = one unit (chapter with a single node), because FAR topic titles are unique per question. A source file that does not exist yet (Area I) or holds no
 verified item builds nothing, and the Area shows "Coming soon" in the app. Run it again when a file arrives.
 The FAR journal entry drill (je.html, data/je_far.js) is built by tools/build_je.py and is not touched here.
@@ -53,7 +55,7 @@ for ar in C.FAR_AREAS:
     no = 0
     for gi, g in enumerate(groups, 1):
         # FAR topics are per question (each item has its own title), so a unit = one Blueprint Group (its task line)
-        lst = [C.question(i) for i in keep if i["group"] == g]
+        lst = [C.question(dict(i, cite=C.far_cite(i))) for i in keep if i["group"] == g]   # display rule: paragraph numbers only when cite_ok confirms them
         no += 1
         Q[str(no)] = lst
         nodes.append({"no": no, "part": 1, "ch": gi, "title": gn[g], "name": gn[g], "vol": len(lst), "q": len(lst), "cs": 0, "law": 0, "grp": g})
