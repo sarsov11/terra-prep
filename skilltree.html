@@ -270,7 +270,7 @@
   }
   function tierOf(a,played){ return !played?"L":a>=80?"S":a>=60?"A":a>=30?"B":"C"; }
   function howFar(st){
-    if(!st.n) return "No past-question choices logged here yet";
+    if(!st.n) return "No questions here yet";
     if(!st.solved) return "Not started yet";
     if(st.achieve<30) return "Just getting started";
     if(st.achieve<60) return "About halfway there";
@@ -475,7 +475,7 @@
       lg.dataset.cx=x; lg.dataset.cy=y; lg.dataset.r=rr;
       var l1=txt(lg,p.name,{x:x+ca*off,y:up?y0-L.fSub-5:y0,"text-anchor":anc,fill:SINK,
         "font-size":L.fName+2,"font-weight":700,"font-family":cv("--kr")});
-      var l2=txt(lg,ps.vol+" pages · "+ps.n+" past-question items · "+ps.achieve+"% mastery",
+      var l2=txt(lg,GB.num(ps.n)+" questions · "+ps.achieve+"% mastery",
         {x:x+ca*off,y:up?y0:y0+L.fSub+5,"text-anchor":anc,fill:SINK2,
          "font-size":L.fSub+1,"font-weight":600,"font-family":cv("--kr")});
       [l1,l2].forEach(function(e){ e.classList.add("lbl"); });
@@ -500,7 +500,7 @@
       gp.addEventListener("keydown",function(e){
         if(e.key==="Enter"||e.key===" "){ e.preventDefault(); open(); } });
     });
-    coreOrb(g,CORE,T.subject,T.stat.nodes+" topics · "+GB.num(ALL.n)+" past-question items",null);
+    coreOrb(g,CORE,T.subject,T.stat.nodes+" units · "+GB.num(ALL.n)+" questions",null);
     unstack(g,L.CX,L.CY);
   }
 
@@ -530,7 +530,7 @@
       lg.dataset.cx=x; lg.dataset.cy=y; lg.dataset.r=rr;
       var l1=txt(lg,c.name,{x:x+ca*off,y:up?y0-L.fSub-4:y0,"text-anchor":anc,fill:SINK,
         "font-size":L.fName+1,"font-weight":700,"font-family":cv("--kr")});
-      var l2=txt(lg,c.nodes.length+" topics · "+st.vol+" pages · "+st.achieve+"%",
+      var l2=txt(lg,c.nodes.length+(c.nodes.length===1?" unit · ":" units · ")+st.n+" questions · "+st.achieve+"%",
         {x:x+ca*off,y:up?y0:y0+L.fSub+4,"text-anchor":anc,fill:SINK2,
          "font-size":L.fSub,"font-weight":600,"font-family":cv("--kr")});
       [l1,l2].forEach(function(e){ e.classList.add("lbl"); });
@@ -581,7 +581,7 @@
       var short=n.title.length>22?n.title.slice(0,21)+"…":n.title;
       var l1=txt(lg,short,{x:x+ca*off,y:up?y0-L.fSub-4:y0,"text-anchor":anc,
         fill:lock?SINK2:SINK,"font-size":L.fName,"font-weight":700,"font-family":cv("--kr")});
-      var l2=txt(lg,n.vol+" pages · "+n.q+" past-question items"+(lock?"":" · "+st.achieve+"%"),
+      var l2=txt(lg,n.q+" questions"+(lock||st.acc==null?"":" · "+st.acc+"% correct"),
         {x:x+ca*off,y:up?y0:y0+L.fSub+4,"text-anchor":anc,fill:SINK2,
          "font-size":L.fSub,"font-weight":600,"font-family":cv("--kr")});
       [l1,l2].forEach(function(e){ e.classList.add("lbl"); });
@@ -652,8 +652,8 @@
     if(level===0){
       c.innerHTML='<span class="swapin">'+esc(T.subject)+'</span>';
       document.getElementById("lede").textContent=
-        "The exam scope is split into parts, sections, and topics — "+T.stat.parts+" parts · "+T.stat.chs+
-        " sections · "+T.stat.nodes+" topics. Tap to explore. "+GB.num(ALL.n)+" past-question items logged";
+        "Blueprint scope for this Area — "+T.stat.chs+
+        " groups · "+T.stat.nodes+" units. Tap to explore. "+GB.num(ALL.n)+" questions";
       document.getElementById("plateTitle").textContent=T.subject;
       document.getElementById("plateSub").textContent=GB.track().name;
     }else if(level===2&&chk){
@@ -664,7 +664,7 @@
       document.getElementById("upbtn").onclick=function(){ if(!busy) goAll(); };
       document.getElementById("uppart").onclick=function(){ if(!busy) goPart(ch.part,LAY.CX,LAY.CY); };
       document.getElementById("lede").textContent=
-        ch.nodes.length+" topics · "+st.vol+" pages · "+st.n+" past-question items logged. Tap one to try it.";
+        ch.nodes.length+" units · "+st.n+" questions. Tap one to try it.";
       document.getElementById("plateTitle").textContent=ch.name;
       document.getElementById("plateSub").textContent=ch.nodes.length+" topics";
     }else{
@@ -673,7 +673,7 @@
         '<em class="swapin" style="font-style:normal;color:var(--red-2)">'+esc(p.name)+'</em>';
       document.getElementById("upbtn").onclick=function(){ if(!busy) goAll(); };
       document.getElementById("lede").textContent=
-        chs.length+" sections · "+ps.nodes+" topics · "+ps.vol+" pages · "+ps.n+" past-question items logged";
+        chs.length+" groups · "+ps.nodes+" units · "+ps.n+" questions";
       document.getElementById("plateTitle").textContent=p.name;
       var weak=GB.nodes.filter(function(n){ return n.part===part&&GB.nodeStat(n.no).solved>0; })
         .sort(function(a,b){ return GB.nodeStat(a.no).achieve-GB.nodeStat(b.no).achieve; })[0];
@@ -734,8 +734,8 @@
     document.getElementById("pkQ").textContent=
       chs.length+" sections · "+st.nodes+" topics";
     document.getElementById("pkBody").innerHTML=
-      '<div class="pk-stats"><div><b>'+st.vol+'</b><span>Volume</span></div>'+
-      '<div><b>'+st.n+'</b><span>Past-question items</span></div>'+
+      '<div class="pk-stats"><div><b>'+st.nodes+'</b><span>Units</span></div>'+
+      '<div><b>'+st.n+'</b><span>Questions</span></div>'+
       '<div><b>'+st.achieve+'%</b><span>Mastery</span></div></div>'+
       '<div class="pk-keys">'+chs.slice(0,8).map(function(c){
         return '<span class="pk-key">'+esc(c.name)+'</span>'; }).join("")+'</div>'+
@@ -751,8 +751,8 @@
     document.getElementById("pkTitle").textContent=c.name;
     document.getElementById("pkQ").textContent=list.length+" topics";
     document.getElementById("pkBody").innerHTML=
-      '<div class="pk-stats"><div><b>'+st.vol+'</b><span>Volume</span></div>'+
-      '<div><b>'+st.n+'</b><span>Past-question items</span></div>'+
+      '<div class="pk-stats"><div><b>'+st.nodes+'</b><span>Units</span></div>'+
+      '<div><b>'+st.n+'</b><span>Questions</span></div>'+
       '<div><b>'+st.achieve+'%</b><span>Mastery</span></div></div>'+
       '<div class="pk-keys">'+list.slice(0,7).map(function(n){
         return '<span class="pk-key">'+esc(n.title.slice(0,18))+'</span>'; }).join("")+'</div>'+
@@ -769,14 +769,14 @@
     tc.style.color=(tier==="C"||tier==="L")?SBG2:SBG;
     document.getElementById("pkTitle").textContent=n.title;
     document.getElementById("pkQ").textContent=
-      n.vol+" pages · "+n.q+" past-question items · "+howFar(st);
+      n.q+" questions · "+howFar(st);
     document.getElementById("pkBody").innerHTML=
-      '<div class="pk-stats"><div><b>'+n.vol+'</b><span>Volume</span></div>'+
-      '<div><b>'+n.q+'</b><span>Past-question items</span></div>'+
+      '<div class="pk-stats"><div><b>'+(st.acc==null?"–":st.acc+"%")+'</b><span>Recent accuracy</span></div>'+
+      '<div><b>'+n.q+'</b><span>Questions</span></div>'+
       '<div><b>'+st.achieve+'%</b><span>Mastery</span></div></div>'+
       '<div class="pk-keys">'+GB.qs(n.no).slice(0,3).map(function(q){
         return '<span class="pk-key">'+esc(q.t.slice(0,26))+'…</span>'; }).join("")+'</div>'+
-      '<div class="pk-foot">Tap to open · cases '+n.cs+' · citations '+n.law+'</div>';
+      '<div class="pk-foot">Tap to open</div>';
     place(g);
   }
   function hidePeek(){
@@ -794,25 +794,19 @@
       GB.part(n.part).name+" · "+GB.ch(n.chkey).name;
     document.getElementById("shTitle").textContent=n.title;
     document.getElementById("shFacts").innerHTML=
-      '<span class="fact">Volume <b>'+n.vol+'</b> pages</span>'+
-      '<span class="fact">Past-question items <b>'+n.q+'</b></span>'+
-      '<span class="fact">Cases <b>'+n.cs+'</b></span>'+
-      '<span class="fact">Citations <b>'+n.law+'</b></span>'+
+      '<span class="fact">Questions <b>'+n.q+'</b></span>'+
+      '<span class="fact">Recent accuracy <b>'+(st.acc==null?"–":st.acc+"%")+'</b></span>'+
       '<span class="fact">'+howFar(st)+(st.solved?" · <b>"+st.achieve+"</b>%":"")+'</span>';
     document.getElementById("shKeys").innerHTML="";
     document.getElementById("shNote").innerHTML=
-      '<b>Circle size</b> reflects <b>study volume</b>, not the number of past questions — '+
-      'sizing by question count alone would make topics with a recent flood of questions look bigger than they are. '+
-      'The number of past-question items is counted separately. Every sentence is <b>verbatim from a past exam</b>, and True/False follows that exam\'s answer key.';
-    /* ★ never show the answer before solving — the old version showed all 5 choices together with True/False,
-       leaking the answer to the first True/False sentence right below (fixed 2026-09-23). Show only the count. */
+      'Terra Prep original questions aligned to the 2026 AICPA Blueprint. Every choice has its own explanation, shown after you answer. '+
+      'Recent accuracy is your last 20 answers in this unit.';
     document.getElementById("shList").innerHTML= qs.length
-      ? '<p style="font-size:14px;color:var(--ink-3)">'+qs.length+' past-question sentences for this topic — answers appear once you solve them.</p>'
-      : '<p style="font-size:14px;color:var(--ink-3)">No past-question sentences for this topic yet.</p>';
+      ? '<p style="font-size:14px;color:var(--ink-3)">'+qs.length+' questions in this unit. Answers and explanations appear after you solve them.</p>'
+      : '<p style="font-size:14px;color:var(--ink-3)">No questions in this unit yet.</p>';
     document.getElementById("shGo").innerHTML= qs.length
-      ? '<a class="btn" href="ox.html?node='+n.no+'">Solve this topic’s True/False</a>'+
-        '<a class="btn ghost" href="ox.html?read='+n.no+'">Read the true sentences</a>'
-      : '<span class="muted">No past-question sentences for this topic yet.</span>';
+      ? [10,20,30].map(function(k,i){ return '<a class="btn'+(i?' ghost':'')+'" style="padding:15px 10px;flex:1;white-space:nowrap" href="ox.html?node='+n.no+'&n='+k+'">Solve '+k+'</a>'; }).join("")
+      : '<span class="muted">No questions in this unit yet.</span>';
     sheet.hidden=false;
     requestAnimationFrame(function(){ sheet.classList.add("on"); });
     document.body.style.overflow="hidden";
@@ -834,7 +828,7 @@
         var st=GB.partStat(p.no);
         return '<div class="grp"><div class="gh">'+
           '<span class="cd" style="color:'+PC[p.no].hex+'">'+p.no+'</span>'+
-          '<h3>'+esc(p.name)+'</h3><span class="n">'+st.vol+' pages · '+st.n+' past-question items</span></div>'+
+          '<h3>'+esc(p.name)+'</h3><span class="n">'+st.n+' questions</span></div>'+
           GB.chsOf(p.no).map(function(c){
             return '<div class="mrow" data-goch="'+c.key+'">'+
               '<span class="bul" style="background:'+PC[p.no].hex+';opacity:.7"></span>'+
@@ -854,7 +848,7 @@
               '<span class="bul" style="background:'+(tier==="S"?GOLD:tone(c.part,tier,paper()?14:0))+
               ';opacity:'+(tier==="L"?.55:1)+'"></span>'+
               '<span class="nm">'+esc(n.title)+'</span>'+
-              '<span class="pc">'+n.vol+' pages · '+n.q+' past-question items</span></div>';
+              '<span class="pc">'+n.q+' questions</span></div>';
           }).join("")+'</div>';
       }).join("");
     }
@@ -870,7 +864,7 @@
   function legend(){
     var p=part||T.parts[0].no;
     var size='<span class="sz">Circle size<i style="width:9px;height:9px"></i>'+
-             '<i style="width:16px;height:16px"></i>study volume</span>';
+             '<i style="width:16px;height:16px"></i>questions</span>';
     document.getElementById("legend").innerHTML=(level>0
       ? ["S","A","B","C","L"].map(function(k){
           return '<span class="k"><i class="dot" style="background:'+
@@ -882,13 +876,11 @@
   function note(){
     var s=T.stat;
     document.getElementById("note").innerHTML=
-      '<b>This tree splits '+esc(T.subject)+'\'s exam scope into '+s.parts+' parts · '+s.chs+' sections · '+s.nodes+
-      ' topics</b>. A section is a mid-level grouping that organizes topics within a part.<br>'+
-      '<b>Circle size reflects study volume</b>, not the number of past questions. Sizing by question count alone '+
-      'would make recently heavy topics look bigger than they are, and topics with no items yet would vanish to a point.<br>'+
-      '<b>'+GB.num(s.q)+' past-question items</b> were pulled from released past exams and attached to topics. True/False '+
-      'follows that exam\'s answer key.<br>'+
-      'Mastery is the study history stored in this browser — 55 points for how much you\'ve solved, 45 for how much you got right, and accuracy counts for less until you\'ve solved 10 sentences.';
+      '<b>This tree splits '+esc(T.subject)+' into '+s.chs+' Blueprint groups · '+s.nodes+
+      ' units</b>. A unit is a Blueprint topic; solve 10, 20 or 30 questions from one.<br>'+
+      '<b>Circle size reflects the number of questions</b> in the unit.<br>'+
+      '<b>'+GB.num(s.q)+' questions</b> — Terra Prep original questions aligned to the 2026 AICPA Blueprint. Each choice has an explanation.<br>'+
+      'Mastery is the study history stored in this browser — 55 points for how much you\'ve solved, 45 for how much you got right, and accuracy counts for less until you\'ve solved 10 questions.';
   }
 
   /* == boot == */

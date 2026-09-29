@@ -56,7 +56,7 @@
   <div class="att" id="att"></div>
 
   <div class="alt">
-    <h3>Want to practice something else?</h3>
+    <h3>More practice</h3>
     <div class="list" id="alt"></div>
   </div>
 </div>
@@ -78,8 +78,11 @@
     if (!CATALOG.ready(k)) return "<span>" + esc(CATALOG.name(k)) + "<small>Coming soon</small></span>";
     return '<a href="index.html?s=' + k + '"' + (k === GB.cur() ? ' class="on"' : "") + ">" + esc(CATALOG.name(k)) + "</a>";
   }).join("");
-  $("ed").innerHTML = (dd > 0 ? "D-" + dd : dd === 0 ? "D-DAY" : "Exam date passed") + "<small>" + GB.goal().replace(/-/g, "/") +
-    ' <span class="chip">' + GB.goalMark() + "</span></small>";
+  if (GB.goalMark() === "default") {
+    $("ed").innerHTML = '<a href="settings.html" style="text-decoration:none;font-size:24px;letter-spacing:-.03em">Test date not set</a><small>Set it in Settings</small>';
+  } else {
+    $("ed").innerHTML = (dd > 0 ? "D-" + dd : dd === 0 ? "D-DAY" : "Exam date passed") + "<small>" + GB.goal().replace(/-/g, "/") + "</small>";
+  }
 
   var t = GB.today(), nm = GB.name();
   var newN = t.seq.filter(function (s) { return s.k === "ox" && !s.re; }).length;
@@ -87,11 +90,11 @@
   var foci = t.foci.slice(0, 3).map(function (n) { return n.name; });
   var h;
   if (t.finished) {
-    h = '<h2>You’re done for today</h2><p class="t">You finished ' + t.total + " sentences. Want more? Try the hard True/False set.</p>" +
-        '<div style="margin-top:18px"><a class="btn block" href="ox.html?mode=hard">Hard True/False</a></div>';
+    h = '<h2>You’re done for today</h2><p class="t">You finished ' + t.total + " questions. Want more? Try a mock exam.</p>" +
+        '<div style="margin-top:18px"><a class="btn block" href="exam.html">Mock exam</a></div>';
   } else {
     h = '<h2>' + (nm ? esc(nm) + ", " : "") + (t.done ? "Let’s keep going — " : "") + "how about " + t.min + " minutes?</h2>" +
-        '<p class="t">About ' + t.min + " min · " + t.total + " sentences</p>" +
+        '<p class="t">About ' + t.min + " min · " + t.total + " questions</p>" +
         "<ul>" +
         (t.re ? "<li><b class=\"num\">" + t.re + "</b><span>Review — missed items, or ones due for another look</span></li>" : "") +
         "<li><b class=\"num\">" + newN + "</b><span>New — " + esc(foci.join(" · ")) + "</span></li>" +
@@ -109,8 +112,8 @@
   var shield = '<svg viewBox="0 0 34 38"><path d="M17 1 32 6v12c0 9.5-6.4 16.2-15 19C8.4 34.2 2 27.5 2 18V6z" fill="' + SHIELD[tr2.rank] + '"/><path d="M17 5 28 9v9c0 7.2-4.6 12.4-11 14.8C10.6 30.4 6 25.2 6 18V9z" fill="rgba(255,255,255,.28)"/></svg>';
   $("mini").innerHTML =
     '<div><b class="num flame">' + FLAME + GB.streak() + "</b><span>Day streak</span></div>" +
-    (GB.tierOn() ? '<div><b class="shield">' + shield + '<span style="font-size:16px">' + tr2.name + "</span></b><span>" + GB.num(tr2.held) + " sentences held long-term</span></div>"
-                 : '<div><b class="num">' + GB.overall().prog + "%</b><span>Sentences solved</span></div>") +
+    (GB.tierOn() ? '<div><b class="shield">' + shield + '<span style="font-size:16px">' + tr2.name + "</span></b><span>" + GB.num(tr2.held) + " questions held long-term</span></div>"
+                 : '<div><b class="num">' + GB.overall().prog + "%</b><span>Questions solved</span></div>") +
     '<div><b class="num">' + GB.todayCount() + "</b><span>Solved today</span></div>";
   (function attendance() {
     var D = GB.days(), now = new Date(), y = now.getFullYear(), m = now.getMonth();
@@ -133,11 +136,13 @@
       '<details style="margin-top:10px"><summary>' + MONTHS[m] + " attendance</summary>" + '<div class="cal">' + mo + "</div></details>";
   })();
 
-  var wrong = GB.wrongList().length;
+  var wrong = GB.wrongList().length, flg = GB.flagList().length, ox = GB.pairs().length > 0;
   $("alt").innerHTML =
-    '<a class="row" href="ox.html?mode=hard"><span class="t"><b>Hard True/False</b><span>Sentences with one or two words changed to make them false</span></span><span class="go">›</span></a>' +
-    '<a class="row" href="ox.html?mode=pair"><span class="t"><b>Confusable pairs</b><span>Pick the correct one of two similar past-question sentences</span></span><span class="go">›</span></a>' +
-    (wrong ? '<a class="row" href="ox.html?mode=wrong"><span class="t"><b>Retry missed sentences</b><span>' + wrong + "</span></span><span class=\"go\">›</span></a>" : "");
+    '<a class="row" href="exam.html"><span class="t"><b>Mock exam</b><span>Timed, Blueprint-weighted, with a review screen</span></span><span class="go">›</span></a>' +
+    (wrong ? '<a class="row" href="ox.html?mode=wrong"><span class="t"><b>Retry missed questions</b><span>' + wrong + "</span></span><span class=\"go\">›</span></a>" : "") +
+    (flg ? '<a class="row" href="ox.html?mode=flag"><span class="t"><b>Flagged questions</b><span>' + flg + "</span></span><span class=\"go\">›</span></a>" : "") +
+    (ox ? '<a class="row" href="ox.html?mode=hard"><span class="t"><b>Hard True/False</b><span>Sentences with one or two words changed to make them false</span></span><span class="go">›</span></a>' +
+    '<a class="row" href="ox.html?mode=pair"><span class="t"><b>Confusable pairs</b><span>Pick the correct one of two similar sentences</span></span><span class="go">›</span></a>' : "");
 })();
 </script>
 </body>

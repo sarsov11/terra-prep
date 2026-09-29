@@ -19,8 +19,9 @@
   .body{flex:1;margin-top:26px}
   .opts{display:flex;flex-direction:column;gap:10px}
   .opts button{appearance:none;position:relative;text-align:left;border:1.5px solid var(--line-2);background:var(--surface);
-    border-radius:var(--r3);padding:16px 18px;font-size:17px;font-weight:700;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center}
-  .opts button small{font-size:14px;color:var(--ink-3);font-weight:600}
+    border-radius:var(--r3);padding:16px 18px;font-size:17px;font-weight:700;color:var(--ink);cursor:pointer;display:flex;flex-direction:column;align-items:flex-start;gap:3px;width:100%;line-height:1.35}
+  .opts button:hover{border-color:var(--line-3)}
+  .opts button small{display:block;font-size:14px;color:var(--ink-3);font-weight:600;line-height:1.4}
   .opts button[aria-pressed="true"]{border:2px solid var(--ink);background:var(--surface-3)}
   .opts.g2{display:grid;grid-template-columns:1fr 1fr}
   input[type=text],input[type=date]{width:100%;font:inherit;font-size:19px;padding:15px 16px;border:1.5px solid var(--line-2);
@@ -34,7 +35,7 @@
   .dateline{display:flex;align-items:center;gap:8px;margin-bottom:12px;font-size:28px;font-weight:900;letter-spacing:-.05em}
   .qhd{display:flex;justify-content:space-between;align-items:center;font-size:15px;color:var(--ink-3);font-weight:700}
   .perpart{display:flex;flex-direction:column;gap:10px;margin-top:18px}
-  .perpart div{display:grid;grid-template-columns:1fr 60px;gap:6px 10px;align-items:center;font-size:15px}
+  .perpart div{display:grid;grid-template-columns:1fr auto;gap:6px 10px;align-items:center;font-size:15px}
   .perpart .bar{grid-column:1 / -1}
   .from{margin-top:20px;padding:16px;border:1px solid var(--line);border-radius:var(--r3);background:var(--surface)}
   .from b{display:block;font-size:14px;color:var(--ink-3);margin-bottom:6px}
@@ -56,10 +57,10 @@
 (function () {
   "use strict";
   var $ = function (id) { return document.getElementById(id); }, esc = GB.esc;
-  var LIMIT = 15000;     /* time limit per placement-test sentence — 15s (multi-choice items run longer than a plain 10s True/False) */
+  var LIMIT = 90000;     /* time limit per placement-check question — 90s (multiple-choice items with a short case) */
+  var LETTERS = "ABCDE";
   var STEPS = ["intro", "exam", "series", "subs", "name", "date", "min", "check", "done"];
-  /* Once subjects are chosen, the placement check runs on the first ready subject among them —
-     if that's not the subject currently loaded, reopen start.html on that subject. */
+  /* The placement check draws from every ready subject at once (GB.loadPool), so this page never has to reload itself. */
   var startStep = new URLSearchParams(location.search).get("step");
   var at = 0, A = { rec: [] };
 
@@ -71,7 +72,7 @@
 
   var SCREENS = {
     intro: function () {
-      $("scr").innerHTML = '<h1>Solve True/False<br>from real past questions</h1>' +
+      $("scr").innerHTML = '<h1>Exam-style practice,<br>every choice explained</h1>' +
         '<p class="lead">Just the time you set, once a day. We pick today’s work for you.</p>' +
         '<div class="body"></div><div class="foot"><button class="btn block" id="n">Get started</button></div>';
       $("n").onclick = nextStep;
@@ -87,7 +88,7 @@
     exam: function () {
       var cur = null;
       try { cur = (JSON.parse(localStorage.getItem("te.pref.v1") || "{}").exam) || null; } catch (e) {}
-      $("scr").innerHTML = "<h1>Which exam are you taking?</h1><p class=\"lead\">We’ll set up subjects and past questions to match.</p>" +
+      $("scr").innerHTML = "<h1>Which exam are you taking?</h1><p class=\"lead\">We’ll set up the subjects and questions to match.</p>" +
         '<div class="body"><div class="opts" id="op">' + CATALOG.EXAMS.map(function (e) {
           return '<button type="button" data-v="' + e.id + '" aria-pressed="' + (e.id === cur) + '">' + e.name + "<small>" + e.sub + "</small></button>";
         }).join("") + "</div></div>";
@@ -118,7 +119,7 @@
         '<div class="body"><div class="opts">' + ss.map(function (k) {
           var r = CATALOG.ready(k);
           return '<button type="button" disabled style="cursor:default;opacity:1">' + CATALOG.name(k) + "<small>" +
-            (r ? GB.num(CATALOG.count(k)) + " past questions" : "Coming soon") + "</small></button>";
+            (r ? GB.num(CATALOG.count(k)) + " questions" : "Coming soon") + "</small></button>";
         }).join("") + "</div></div>" +
         '<div class="foot"><button class="btn block" id="n">Looks good</button></div>';
       $("n").onclick = nextStep;
@@ -141,7 +142,7 @@
       var cur = GB.minutes();
       $("scr").innerHTML = "<h1>How many minutes a day?</h1><p class=\"lead\">You’ll work for exactly the time you set. Change it later in Settings.</p>" +
         '<div class="body"><div class="opts g2" id="op">' + [10, 15, 20, 30].map(function (m) {
-          return '<button type="button" data-v="' + m + '" aria-pressed="' + (m === cur) + '">' + m + " min<small>~" + Math.round(m * 60 / GB.SEC_PER) + " items</small>" +
+          return '<button type="button" data-v="' + m + '" aria-pressed="' + (m === cur) + '">' + m + " min<small>~" + Math.max(1, Math.round(m * 60 / 60)) + " questions</small>" +
             (m === 15 ? '<span class="bdg">Recommended</span>' : "") + "</button>";
         }).join("") + "</div></div>";
       $("op").querySelectorAll("button").forEach(function (b) {
@@ -150,62 +151,67 @@
     },
     check: function () {
       var mine = GB.subs().filter(function (k) { return CATALOG.ready(k); });
-      if (mine.length && mine.indexOf(GB.cur()) < 0) { location.replace("start.html?s=" + mine[0] + "&step=check"); return; }
       if (!mine.length) return go(STEPS.indexOf("done"));
-      var set = GB.placementSet(20), i = 0, timer = null, t0 = 0;
-      if (set.length < 5) return go(STEPS.indexOf("done"));   /* no True/False sentences for this subject — skip straight in, no placement check */
-      function one() {
-        if (i >= set.length) { clearInterval(timer); return fin(); }
-        var q = set[i]; t0 = Date.now();
-        $("scr").innerHTML = '<div class="qhd"><span>Placement check ' + (i + 1) + " / " + set.length + '</span><span class="chip">' + esc(GB.node(q.n).name) + "</span></div>" +
-          '<div class="tm" id="tm"><i style="width:100%"></i></div>' +
-          '<div class="qcard" style="margin-top:14px"><p class="sent">' + esc(q.t) + "</p></div>" +
-          '<div class="oxb" id="oxb"><button type="button" data-a="O">True</button><button type="button" data-a="X">False</button></div>' +
-          '<div class="foot"><button class="skip" id="sk">Skip<span class="tip">Answering all 20 gives the most accurate starting point.</span></button></div>';
-        var locked = false;
-        function pick(a) {
-          if (locked) return; locked = true;
-          var ms = Date.now() - t0, to = a == null, ok = !to && a === q.ox;
-          $("oxb").querySelectorAll("button").forEach(function (x) {
-            x.disabled = true;
-            if (x.dataset.a === q.ox) x.dataset.s = "ok"; else if (x.dataset.a === a) x.dataset.s = "no";
-          });
-          A.rec.push({ id: q.i, ok: ok, ms: ms, to: to });
-          GB.answer(q.i, ok, { ms: ms, kind: to ? "timeout" : ok ? "right" : "wrong" });
-          i++; setTimeout(one, ok ? 450 : 1100);
+      $("scr").innerHTML = '<h1>Placement check</h1><p class="lead">Loading questions…</p>';
+      GB.loadPool(function (pool) {
+        var set = GB.placementSet(pool, 20), i = 0, timer = null, t0 = 0;
+        if (set.length < 5) return go(STEPS.indexOf("done"));   /* not enough multiple-choice questions — skip the check */
+        function one() {
+          if (i >= set.length) { clearInterval(timer); return fin(); }
+          var x = set[i], q = x.q, mc = q.mc; t0 = Date.now();
+          $("scr").innerHTML = '<div class="qhd"><span>Placement check ' + (i + 1) + " / " + set.length + '</span><span class="chip">' + esc(mc.tags ? "Area " + mc.tags.area : x.node.name) + "</span></div>" +
+            '<div class="tm" id="tm"><i style="width:100%"></i></div>' +
+            '<div class="qcard" style="margin-top:14px"><p class="sent">' + esc(mc.s) + "</p>" + (mc.d ? '<div class="case mcdata" style="margin:12px 0 0">' + esc(mc.d) + "</div>" : "") + "</div>" +
+            '<div class="mcb" id="oxb">' + mc.o.map(function (o, k) { return '<button type="button" data-a="' + (k + 1) + '"><b>' + LETTERS[k] + "</b><span>" + esc(o) + "</span></button>"; }).join("") + "</div>" +
+            '<div class="foot"><button class="skip" id="sk">Skip<span class="tip">Answering all ' + set.length + ' gives the most accurate starting point.</span></button></div>';
+          var locked = false;
+          function pick(a) {
+            if (locked) return; locked = true;
+            var ms = Date.now() - t0, to = a == null, ok = !to && a === mc.a;
+            $("oxb").querySelectorAll("button").forEach(function (b) {
+              b.disabled = true;
+              if (+b.dataset.a === mc.a) b.dataset.s = "ok"; else if (a != null && +b.dataset.a === a) b.dataset.s = "no";
+            });
+            A.rec.push({ id: q.i, key: x.key, area: x.area || "-", ok: ok, ms: ms, to: to });
+            GB.answerIn(x.key, q.i, ok, { ms: ms, kind: to ? "timeout" : ok ? "right" : "wrong", pick: to ? null : a - 1 });
+            i++; setTimeout(one, ok ? 500 : 1300);
+          }
+          $("oxb").querySelectorAll("button").forEach(function (b) { b.onclick = function () { pick(+b.dataset.a); }; });
+          var armed = false;
+          $("sk").onclick = function () {
+            if (!armed) { armed = true; this.classList.add("on"); this.firstChild.textContent = "Skip anyway";
+              var me = this; setTimeout(function () { armed = false; me.classList.remove("on"); me.firstChild.textContent = "Skip"; }, 6000); return; }
+            clearInterval(timer); A.skipped = true; fin();
+          };
+          clearInterval(timer);
+          timer = setInterval(function () {
+            var left = LIMIT - (Date.now() - t0), el = $("tm");
+            if (!el) return;
+            el.firstChild.style.width = Math.max(0, left / LIMIT * 100) + "%";
+            el.classList.toggle("low", left < LIMIT * 0.15);
+            if (left <= 0) { clearInterval(timer); pick(null); }
+          }, 200);
         }
-        $("oxb").querySelectorAll("button").forEach(function (b) { b.onclick = function () { pick(b.dataset.a); }; });
-        var armed = false;
-        $("sk").onclick = function () {
-          if (!armed) { armed = true; this.classList.add("on"); this.firstChild.textContent = "Skip anyway";
-            var me = this; setTimeout(function () { armed = false; me.classList.remove("on"); me.firstChild.textContent = "Skip"; }, 6000); return; }
-          clearInterval(timer); A.skipped = true; fin();
-        };
-        clearInterval(timer);
-        timer = setInterval(function () {
-          var left = LIMIT - (Date.now() - t0), el = $("tm");
-          if (!el) return;
-          el.firstChild.style.width = Math.max(0, left / LIMIT * 100) + "%";
-          el.classList.toggle("low", left < LIMIT * 0.3);
-          if (left <= 0) { clearInterval(timer); pick(null); }
-        }, 100);
-      }
-      function fin() { A.place = GB.setPlacement(A.rec); nextStep(); }
-      one();
+        function fin() { if (A.rec.length) A.place = GB.setPlacement(A.rec); nextStep(); }
+        one();
+      });
     },
     done: function () {
       var p = A.place || GB.placement() || { n: 0, ok: 0, per: {} };
-      /* ★ "start here" must match what Home actually picks as today's work — a mismatch confuses the learner */
-      var from = GB.today().foci.slice(0, 3);
-      var fast = A.rec.filter(function (r) { return r.ok && r.ms < 6000; }).length;
-      $("scr").innerHTML = "<h1>" + (p.n ? p.ok + " of " + p.n + " correct" : "Great, let’s dive in") + "</h1>" +
-        (p.n ? '<p class="lead">' + fast + " answered instantly (under 6s) · " + A.rec.filter(function (r) { return r.to; }).length + " timed out</p>" : "") +
+      /* subject that Home will open on = the weakest Area of the check (GB.setPlacement stored it) */
+      var subj = null;
+      if (p.n && p.weakArea) GB.subs().forEach(function (k) { if (CATALOG.area(k) === p.weakArea && CATALOG.ready(k)) subj = k; });
+      var names = {};
+      GB.subs().forEach(function (k) { if (CATALOG.area(k)) names[CATALOG.area(k)] = CATALOG.name(k); });
+      var fast = A.rec.filter(function (r) { return r.ok && r.ms < 20000; }).length;
+      $("scr").innerHTML = "<h1>" + (p.n ? p.ok + " of " + p.n + " correct" : "You’re set") + "</h1>" +
+        (p.n ? '<p class="lead">' + A.rec.filter(function (r) { return r.to; }).length + " timed out</p>" : "") +
         '<div class="body">' +
-        (p.n ? '<div class="perpart">' + GB.parts.filter(function (pt) { return p.per[pt.no]; }).map(function (pt) {
-          var x = p.per[pt.no];
-          return "<div><span>" + esc(pt.name) + '</span><span class="num" style="text-align:right">' + x.ok + " / " + x.n + '</span><div class="bar"><i style="width:' + Math.round(x.ok / x.n * 100) + '%"></i></div></div>';
+        (p.n ? '<div class="perpart">' + Object.keys(p.per).map(function (ar) {
+          var x = p.per[ar];
+          return "<div><span>" + esc(names[ar] || ("Area " + ar)) + '</span><span class="num" style="text-align:right">' + x.ok + " / " + x.n + '</span><div class="bar"><i style="width:' + Math.round(x.ok / x.n * 100) + '%"></i></div></div>';
         }).join("") + "</div>" : "") +
-        (from.length ? '<div class="from"><b>Starting here</b>' + from.map(function (n) { return esc(n.name); }).join(" · ") + "</div>" : "") +
+        (subj ? '<div class="from"><b>Starting here</b>' + esc(CATALOG.name(subj)) + "</div>" : "") +
         '</div><div class="foot"><button class="btn block" id="n">See today’s work</button></div>';
       $("n").onclick = function () { GB.setOnboarded(); location.href = "index.html"; };
     }

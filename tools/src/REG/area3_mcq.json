@@ -1,0 +1,4206 @@
+{
+ "meta": {
+  "area": "III",
+  "title": "Federal Taxation of Property Transactions",
+  "blueprint": "2026 AICPA CPA Exam Blueprint, REG Area III (Groups A Basis of assets, B Cost recovery)",
+  "law_asof": "2026-09-29",
+  "count": 60,
+  "status": "verified",
+  "provenance": "terra-original (no Becker/UWorld/Wiley text used)"
+ },
+ "items": [
+  {
+   "id": "REG-III-A-0001",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of an asset purchased for use in a trade or business.",
+   "skill": "Application",
+   "difficulty": 1,
+   "calc": true,
+   "stem": "Harbor Fabrication, a calendar-year manufacturer, bought a new press in 2026. The invoice price was $60,000. Harbor also paid $3,900 of sales tax, $1,800 of freight to deliver the press, and $2,300 to have the press installed and tested. After installation, Harbor spent $1,000 to train its employees to run the press. What is Harbor's cost basis in the press?",
+   "exhibit": "",
+   "options": [
+    "$60,000",
+    "$65,700",
+    "$68,000",
+    "$69,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Only the invoice price. Sales tax, freight and installation are costs of acquiring and readying the asset and belong in basis.",
+    "B": "Includes tax and freight but omits the $2,300 installation and testing cost, which is also capitalized into basis.",
+    "C": "Basis of purchased property is its cost, including sales tax, freight, and the installation and testing costs needed to place it in service: $60,000 + $3,900 + $1,800 + $2,300 = $68,000. Employee training is an operating expense, not part of the asset's cost.",
+    "D": "Capitalizes the $1,000 of employee training as well. Training occurs after the asset is ready for use and is a currently deductible operating cost."
+   },
+   "steps": [
+    "Invoice price 60,000",
+    "Add sales tax 3,900, freight 1,800, installation 2,300",
+    "60,000 + 3,900 + 1,800 + 2,300 = 68,000",
+    "Training (1,000) is expensed, not capitalized"
+   ],
+   "calc_check": {
+    "expr": "60000+3900+1800+2300",
+    "value": 68000,
+    "distractors": {
+     "A": {
+      "expr": "60000",
+      "value": 60000
+     },
+     "B": {
+      "expr": "60000+3900+1800",
+      "value": 65700
+     },
+     "D": {
+      "expr": "60000+3900+1800+2300+1000",
+      "value": 69000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1012(a)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.1012-1(a)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0002",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of an asset purchased for use in a trade or business.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In 2026, Maple Ridge Partners bought land with an office building for a lump-sum price of $900,000. An appraisal at the purchase date valued the land at $250,000 and the building at $750,000. At closing, Maple Ridge also paid $6,000 of title insurance and recording fees, $4,000 of legal fees for the purchase, and $8,000 of real property taxes that the seller owed for the period before the sale. What is Maple Ridge's basis in the building?",
+   "exhibit": "",
+   "options": [
+    "$675,000",
+    "$682,500",
+    "$688,500",
+    "$918,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Allocates only the contract price. Closing costs and the seller's taxes paid by the buyer are also part of the cost that gets allocated.",
+    "B": "Adds the title and legal costs but leaves out the $8,000 of the seller's taxes the buyer paid. Those taxes are part of the buyer's cost.",
+    "C": "Total cost = $900,000 + $6,000 + $4,000 + $8,000 = $918,000. Taxes the seller owed that the buyer pays are added to the buyer's cost. Allocate by relative fair market value: $918,000 x 75% = $688,500.",
+    "D": "Total cost of the whole purchase. It fails to split the cost between non-depreciable land and the building."
+   },
+   "steps": [
+    "Total cost = 900,000 + 6,000 + 4,000 + 8,000 = 918,000",
+    "Building share = 750,000 / (250,000 + 750,000) = 75%",
+    "918,000 x 75% = 688,500"
+   ],
+   "calc_check": {
+    "expr": "(900000+6000+4000+8000)*750000/(250000+750000)",
+    "value": 688500,
+    "distractors": {
+     "A": {
+      "expr": "900000*750000/(250000+750000)",
+      "value": 675000
+     },
+     "B": {
+      "expr": "(900000+6000+4000)*750000/(250000+750000)",
+      "value": 682500
+     },
+     "D": {
+      "expr": "900000+6000+4000+8000",
+      "value": 918000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1012(a)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.61-6(a)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.1012-1(b)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0003",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of an asset purchased for use in a trade or business.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": true,
+   "stem": "Priya Nair bought a rental duplex in 2026. She paid $40,000 in cash and assumed the seller's $160,000 mortgage on the property. She also paid $5,000 of legal and recording costs at closing. What is Priya's total cost basis in the duplex (land and building combined)?",
+   "exhibit": "",
+   "options": [
+    "$40,000",
+    "$45,000",
+    "$200,000",
+    "$205,000"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Counts only the cash. Debt the buyer assumes is part of the price paid for the property.",
+    "B": "Adds closing costs to the cash but leaves out the assumed mortgage, which is part of cost.",
+    "C": "Includes the mortgage but omits the $5,000 of legal and recording costs, which are capitalized.",
+    "D": "Basis includes cash paid, liabilities assumed, and capitalized closing costs: $40,000 + $160,000 + $5,000 = $205,000."
+   },
+   "steps": [
+    "Cash 40,000",
+    "Add mortgage assumed 160,000",
+    "Add closing costs 5,000",
+    "Total 205,000"
+   ],
+   "calc_check": {
+    "expr": "40000+160000+5000",
+    "value": 205000,
+    "distractors": {
+     "A": {
+      "expr": "40000",
+      "value": 40000
+     },
+     "B": {
+      "expr": "40000+5000",
+      "value": 45000
+     },
+     "C": {
+      "expr": "40000+160000",
+      "value": 200000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1012(a)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.1012-1(a)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0004",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of an asset purchased for use in a trade or business.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Lakeside Bakery bought an oven in 2026 for $50,000. It paid $10,000 down and signed a $40,000 note that carries adequate stated interest. During 2026, Lakeside paid $3,200 of interest on the note. Which statement correctly describes the tax treatment?",
+   "exhibit": "",
+   "options": [
+    "The oven's basis is $50,000, and the $3,200 is interest expense rather than part of basis",
+    "The oven's basis is $10,000 for 2026 and rises as principal payments on the note are made",
+    "The oven's basis is $53,200, because interest paid on purchase debt is a cost of acquiring the asset",
+    "The oven's basis is $46,800, because $3,200 of the payments is not paid for the oven itself"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Debt used to buy an asset is part of its cost from the start, so basis is the full $50,000. Interest paid on that debt is the price of borrowing, not the price of the oven, so it is treated as interest expense subject to the usual limits.",
+    "B": "Confuses cost basis with the equity paid so far. Basis includes the note from the acquisition date.",
+    "C": "Capitalizes the interest. Stated interest on a purchase note is deducted as interest, not added to the asset's basis.",
+    "D": "Reduces basis by the interest. The interest is paid in addition to the $50,000 price, so it never reduces the cost of the oven."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1012(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§163(a)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 535"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0005",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of an asset purchased for use in a trade or business.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Delgado Print Shop bought a folding machine for $90,000 in 2023 and later paid $6,000 for a capitalized upgrade. Through 2025, the shop deducted $30,000 of depreciation on its returns. The depreciation allowable under the correct MACRS computation for those years was $42,000, and the shop never corrected the difference. What is the machine's adjusted basis at the start of 2026?",
+   "exhibit": "",
+   "options": [
+    "$48,000",
+    "$54,000",
+    "$66,000",
+    "$96,000"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Correctly uses the $42,000 allowable depreciation but leaves out the $6,000 capitalized upgrade, which increases basis.",
+    "B": "Basis is reduced by depreciation allowed or allowable, so the full $42,000 allowable amount reduces basis even though only $30,000 was claimed: $90,000 + $6,000 - $42,000 = $54,000.",
+    "C": "Reduces basis by only the $30,000 claimed. Basis is reduced by depreciation allowable, even if the taxpayer under-claimed it.",
+    "D": "Adds the upgrade but ignores depreciation altogether. Depreciation always reduces adjusted basis."
+   },
+   "steps": [
+    "Cost 90,000 + upgrade 6,000 = 96,000",
+    "Reduce by allowable depreciation 42,000 (not the 30,000 claimed)",
+    "96,000 - 42,000 = 54,000"
+   ],
+   "calc_check": {
+    "expr": "90000+6000-42000",
+    "value": 54000,
+    "distractors": {
+     "A": {
+      "expr": "90000-42000",
+      "value": 48000
+     },
+     "C": {
+      "expr": "90000+6000-30000",
+      "value": 66000
+     },
+     "D": {
+      "expr": "90000+6000",
+      "value": 96000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1016(a)(2)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.1016-3(a)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0006",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of an asset purchased for use in a trade or business.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Oakhaven Dental bought an office building in 2026 to use in its practice. Which of the following payments would be added to Oakhaven's basis in the property?",
+   "exhibit": "",
+   "options": [
+    "The origination fee the lender charged on the mortgage used to finance the purchase",
+    "The first year's fire and liability insurance premium on the building",
+    "Title search and recording fees paid at the closing",
+    "Mortgage interest for the days between the closing date and the end of that month"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "A loan cost, not a cost of the building. It is amortized over the loan term, not added to the building's basis.",
+    "B": "Insurance is a recurring operating expense, deductible when it applies to the business period, not part of purchase cost.",
+    "C": "Settlement costs directly tied to acquiring title, such as title search, recording and legal fees for the purchase, are capitalized into basis.",
+    "D": "Interest on borrowed money is interest expense, even when it accrues immediately after closing."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1012(a)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.263(a)-2(f)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0007",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of an asset converted from personal to business use.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In 2026, Tomás Ruiz converted his personal residence into a rental property. His adjusted basis in the property at conversion was $310,000, of which $60,000 was attributable to the land. At the conversion date, the property's fair market value was $280,000, of which $70,000 was attributable to the land. What is Tomás's basis in the building for computing depreciation?",
+   "exhibit": "",
+   "options": [
+    "$210,000",
+    "$250,000",
+    "$280,000",
+    "$310,000"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "For property converted to business use, depreciation basis is the lower of adjusted basis or fair market value at conversion. Building only: adjusted basis $250,000 vs. FMV $210,000, so $210,000. Land is never depreciated.",
+    "B": "Uses the building's adjusted basis and ignores the lower FMV at conversion. The lower amount governs so that a personal decline in value is never deducted as depreciation.",
+    "C": "Uses total FMV including land. Land is not depreciable, and the FMV comparison is made for the building alone.",
+    "D": "Uses total adjusted basis including land. Land is not depreciable and the lower-of test also applies."
+   },
+   "steps": [
+    "Building adjusted basis = 310,000 - 60,000 = 250,000",
+    "Building FMV = 280,000 - 70,000 = 210,000",
+    "Lower of the two = 210,000"
+   ],
+   "calc_check": {
+    "expr": "min(310000-60000, 280000-70000)",
+    "value": 210000,
+    "distractors": {
+     "B": {
+      "expr": "310000-60000",
+      "value": 250000
+     },
+     "C": {
+      "expr": "280000",
+      "value": 280000
+     },
+     "D": {
+      "expr": "310000",
+      "value": 310000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "Reg",
+     "ref": "§1.168(i)-4(b)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.167(g)-1"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 527"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Conversion rule comes from regulations (Reg. §1.168(i)-4(b)); no OBBBA change.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0008",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of an asset converted from personal to business use.",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Jamal converted a personal-use boat to a charter business on January 2, 2024. His adjusted basis at conversion was $50,000 and the boat's fair market value was $36,000. Through 2025 he deducted $9,000 of depreciation on the boat. In 2026, he sold the boat to an unrelated buyer for $38,000. What is the result of the sale?",
+   "exhibit": "",
+   "options": [
+    "A $3,000 loss is recognized",
+    "No gain or loss is recognized",
+    "An $11,000 gain is recognized",
+    "A $12,000 loss is recognized"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Subtracts the $41,000 gain basis from the $38,000 price. The gain basis cannot be used to compute a loss; the lower loss basis controls.",
+    "B": "Converted property has two bases. Gain basis = $50,000 - $9,000 = $41,000; loss basis = $36,000 - $9,000 = $27,000. The $38,000 amount realized is above the loss basis but below the gain basis, so neither a gain nor a loss results.",
+    "C": "Subtracts the $27,000 loss basis from the price. The loss basis cannot be used to compute a gain; the higher gain basis controls.",
+    "D": "Subtracts the sale price from the original $50,000 basis without adjusting for depreciation or the lower fair market value at conversion."
+   },
+   "steps": [
+    "Gain basis = 50,000 - 9,000 = 41,000",
+    "Loss basis = lower of 50,000 or 36,000, minus 9,000 = 27,000",
+    "Amount realized 38,000 is between 27,000 and 41,000",
+    "No gain or loss"
+   ],
+   "cite": [
+    {
+     "src": "Reg",
+     "ref": "§1.168(i)-4(b)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.165-9(b)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1016(a)(2)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0009",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of an asset converted from personal to business use.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": true,
+   "stem": "Devon Park bought a car for $28,000 in 2022 and used it only for personal driving. On February 1, 2026, when the car was worth $17,000 and his adjusted basis was still $28,000, he began using it exclusively in his consulting business. What basis does Devon use to compute depreciation on the car?",
+   "exhibit": "",
+   "options": [
+    "$11,000",
+    "$17,000",
+    "$22,500",
+    "$28,000"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "The $11,000 decline in value is a personal loss that is never deductible; it is not a depreciable basis.",
+    "B": "Depreciation basis for converted property is the lower of adjusted basis or FMV at the date of conversion: $17,000.",
+    "C": "Averaging the two amounts is not a rule for converted property. The lower of the two is used.",
+    "D": "Uses adjusted basis regardless of FMV. That would let a business deduct a personal decline in value."
+   },
+   "steps": [
+    "Adjusted basis at conversion 28,000",
+    "FMV at conversion 17,000",
+    "Depreciation basis = lower = 17,000"
+   ],
+   "calc_check": {
+    "expr": "min(28000,17000)",
+    "value": 17000,
+    "distractors": {
+     "A": {
+      "expr": "28000-17000",
+      "value": 11000
+     },
+     "C": {
+      "expr": "(28000+17000)/2",
+      "value": 22500
+     },
+     "D": {
+      "expr": "28000",
+      "value": 28000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "Reg",
+     "ref": "§1.168(i)-4(b)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0010",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of an asset converted from personal to business use.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Lena Fischer moved out of her home on May 20, 2026. On June 15, 2026, the house was cleaned, listed with a rental agent, and offered at market rent. A tenant signed a lease and moved in on August 1, 2026, and the first rent payment was received on September 1, 2026. In which month is the house treated as placed in service as a rental property for depreciation?",
+   "exhibit": "",
+   "options": [
+    "May 2026",
+    "June 2026",
+    "August 2026",
+    "September 2026"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Moving out is not enough. The house was not yet ready and available for rent when Lena moved out.",
+    "B": "Property is placed in service when it is ready and available for its specific use. The house was ready and offered for rent on June 15, even though it was not yet occupied.",
+    "C": "Treats the tenant's move-in as the trigger. Availability, not occupancy, starts depreciation.",
+    "D": "Treats receipt of the first rent as the trigger. Depreciation begins when the property is available for rent, not when income starts."
+   },
+   "cite": [
+    {
+     "src": "Reg",
+     "ref": "§1.167(a)-11(e)(1)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 527"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0011",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of property received as a gift or as an inheritance from a decedent.",
+   "skill": "Application",
+   "difficulty": 1,
+   "calc": true,
+   "stem": "In 2026, Mira's aunt gave her 400 shares of listed stock. Her aunt's adjusted basis was $20,000 and the fair market value on the gift date was $50,000. No gift tax was paid. Mira sold all 400 shares in 2027 for $60,000. What gain does Mira recognize?",
+   "exhibit": "",
+   "options": [
+    "$10,000",
+    "$20,000",
+    "$30,000",
+    "$40,000"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Uses the gift-date FMV as basis. FMV is used only as the loss basis when it is lower than the donor's basis.",
+    "B": "Reports the donor's basis as if it were the gain. The gain is the sale price minus that basis.",
+    "C": "Computes the appreciation before the gift, not the gain on the sale. The gain is measured against the sale price.",
+    "D": "The FMV at the gift date exceeds the donor's basis, so Mira takes the donor's $20,000 carryover basis: $60,000 - $20,000 = $40,000 gain."
+   },
+   "steps": [
+    "FMV 50,000 > donor basis 20,000, so use donor basis 20,000 for gain",
+    "60,000 - 20,000 = 40,000 gain"
+   ],
+   "calc_check": {
+    "expr": "60000-20000",
+    "value": 40000,
+    "distractors": {
+     "A": {
+      "expr": "60000-50000",
+      "value": 10000
+     },
+     "B": {
+      "expr": "20000",
+      "value": 20000
+     },
+     "C": {
+      "expr": "50000-20000",
+      "value": 30000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1015(a)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.1015-1(a)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0012",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of property received as a gift or as an inheritance from a decedent.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In 2026, Hollis received a gift of a rental cottage. The donor's adjusted basis was $40,000 and the fair market value on the gift date was $100,000. Assume the donor paid $40,000 of gift tax on the transfer. What is Hollis's basis in the cottage for computing gain?",
+   "exhibit": "",
+   "options": [
+    "$40,000",
+    "$56,000",
+    "$64,000",
+    "$80,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Ignores the gift-tax adjustment. When gift tax is paid, basis is increased by the portion attributable to net appreciation.",
+    "B": "Uses the wrong fraction: basis over FMV instead of net appreciation over FMV.",
+    "C": "Gift tax paid raises the donee's basis only by the part attributable to net appreciation: $40,000 x ($60,000 / $100,000) = $24,000. Basis = $40,000 + $24,000 = $64,000.",
+    "D": "Adds the entire gift tax. Only the share of tax attributable to the appreciation ($60,000 of $100,000) is added."
+   },
+   "steps": [
+    "Net appreciation = 100,000 - 40,000 = 60,000",
+    "Gift tax attributable = 40,000 x 60,000 / 100,000 = 24,000",
+    "Basis = 40,000 + 24,000 = 64,000"
+   ],
+   "calc_check": {
+    "expr": "40000+40000*(100000-40000)/100000",
+    "value": 64000,
+    "distractors": {
+     "A": {
+      "expr": "40000",
+      "value": 40000
+     },
+     "B": {
+      "expr": "40000+40000*40000/100000",
+      "value": 56000
+     },
+     "D": {
+      "expr": "40000+40000",
+      "value": 80000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1015(a), (d)(6)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.1015-5"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0013",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of property received as a gift or as an inheritance from a decedent.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Tara's uncle bought 300 shares of stock in March 2024 for $20,000. On November 1, 2026, when the shares were worth $30,000, he gave them to Tara. Tara sold the shares on February 10, 2027 for $35,000. How is Tara's gain classified?",
+   "exhibit": "",
+   "options": [
+    "Short-term, because Tara herself held the shares for less than a year",
+    "Short-term, because the holding period restarts on any gift of property",
+    "Long-term, but only if her uncle had paid gift tax on the transfer",
+    "Long-term, because her holding period includes the time her uncle held the shares"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Ignores tacking. A donee using the donor's basis includes the donor's holding period.",
+    "B": "The holding period restarts only when the donee must use fair market value as basis (loss case), not when carryover basis applies.",
+    "C": "Tacking does not depend on whether gift tax was paid.",
+    "D": "Because Tara takes her uncle's carryover basis, her holding period includes his, so the shares were held well over one year."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1223(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1015(a)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 550"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0014",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of property received as a gift or as an inheritance from a decedent.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Emil Ortiz bought 500 shares of stock for $12,000 in 2015. He died on March 1, 2026, when the shares were worth $75,000. His granddaughter Lucia inherited the shares and sold all of them on October 20, 2026 for $80,000. What are the amount and character of Lucia's gain?",
+   "exhibit": "",
+   "options": [
+    "$5,000 long-term capital gain",
+    "$5,000 short-term capital gain",
+    "$68,000 long-term capital gain",
+    "$68,000 short-term capital gain"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Inherited property takes a basis equal to FMV at death ($75,000), and its holding period is treated as long-term regardless of how long the heir holds it: $80,000 - $75,000 = $5,000 long-term gain.",
+    "B": "Right amount, wrong character. Lucia held the shares for less than a year, but inherited property is automatically long-term.",
+    "C": "Uses Emil's $12,000 original basis. Inherited property is stepped up to FMV at death.",
+    "D": "Uses carryover basis and treats the holding period as starting at death. Both are wrong for inherited property."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1014(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1223(9)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0015",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of property received as a gift or as an inheritance from a decedent.",
+   "skill": "Application",
+   "difficulty": 1,
+   "calc": true,
+   "stem": "Walter Neeley died on April 10, 2026. Property that he had bought for $300,000 was worth $500,000 on his date of death and $430,000 six months later. The estate was required to file an estate tax return, and the executor validly elected the alternate valuation date because it reduced both the gross estate and the estate tax. The estate still held the property on the alternate valuation date. What is the beneficiary's basis in the property?",
+   "exhibit": "",
+   "options": [
+    "$300,000",
+    "$430,000",
+    "$465,000",
+    "$500,000"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Walter's original cost is replaced by a fair-market-value basis for inherited property.",
+    "B": "With a valid alternate valuation election, the property is valued six months after death (if still held), so basis is $430,000.",
+    "C": "Averaging the two dates is not allowed. One valuation date applies to the property.",
+    "D": "Date-of-death value is the default basis, but the executor elected the alternate date."
+   },
+   "steps": [
+    "Alternate valuation date elected and property still held",
+    "Basis = FMV six months after death = 430,000"
+   ],
+   "calc_check": {
+    "expr": "430000",
+    "value": 430000,
+    "distractors": {
+     "A": {
+      "expr": "300000",
+      "value": 300000
+     },
+     "C": {
+      "expr": "(500000+430000)/2",
+      "value": 465000
+     },
+     "D": {
+      "expr": "500000",
+      "value": 500000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1014(a)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§2032"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0016",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of property received as a gift or as an inheritance from a decedent.",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In 2026, Corin gave his uncle Ruben stock in which Corin's adjusted basis was $20,000. The stock was worth $60,000 on the gift date. Ruben died five months later, when the stock was worth $70,000, and left the stock to Corin. Ruben's basis at death was still the carryover basis from Corin's gift. What is Corin's basis in the stock after inheriting it?",
+   "exhibit": "",
+   "options": [
+    "$20,000",
+    "$30,000",
+    "$60,000",
+    "$70,000"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Appreciated property given to a person who dies within one year, and then inherited by the donor, gets no step-up. The donor's basis equals the decedent's adjusted basis just before death: $20,000.",
+    "B": "Adds the post-gift appreciation to the carryover basis. The anti-abuse rule uses the decedent's adjusted basis without any increase.",
+    "C": "Uses the gift-date FMV. The rule looks to the decedent's adjusted basis, which was carryover basis because FMV exceeded basis.",
+    "D": "Applies the normal step-up to FMV at death. The rule denies that step-up when appreciated property returns to the donor within one year."
+   },
+   "steps": [
+    "Gift within one year of death and property passes back to donor",
+    "No step-up; basis = decedent's adjusted basis immediately before death",
+    "Ruben's basis = Corin's carryover 20,000"
+   ],
+   "calc_check": {
+    "expr": "20000",
+    "value": 20000,
+    "distractors": {
+     "B": {
+      "expr": "20000+(70000-60000)",
+      "value": 30000
+     },
+     "C": {
+      "expr": "60000",
+      "value": 60000
+     },
+     "D": {
+      "expr": "70000",
+      "value": 70000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1014(e)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0017",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of property received as a gift or as an inheritance from a decedent.",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Two couples each bought a home in 2010 for $200,000. Mr. Alvarez and his wife live in a community property state and hold their home as community property. Mr. Baptiste and his wife live in a common-law state and hold their home as spouses in joint tenancy, with each contributing half of the cost. Mr. Alvarez and Mr. Baptiste each died in 2026, when each home was worth $600,000. What basis does each surviving spouse have in the home after the death?",
+   "exhibit": "",
+   "options": [
+    "Mrs. Alvarez $400,000; Mrs. Baptiste $600,000",
+    "Both surviving spouses $400,000",
+    "Both surviving spouses $600,000",
+    "Mrs. Alvarez $600,000; Mrs. Baptiste $400,000"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Reverses the two rules. Full step-up belongs to community property, not common-law joint tenancy.",
+    "B": "Applies the joint tenancy rule to both homes. Community property gets a step-up on the surviving spouse's half as well.",
+    "C": "Applies the community property rule to both homes. In joint tenancy only the decedent's half is stepped up.",
+    "D": "Community property: both halves are stepped up to FMV, so $600,000. Spousal joint tenancy: only the decedent's half is stepped up to $300,000 and the survivor keeps her $100,000 half cost, so $400,000."
+   },
+   "steps": [
+    "Community property: survivor basis = FMV of whole = 600,000",
+    "Joint tenancy: decedent's half stepped up 300,000 + survivor's half at cost 100,000 = 400,000"
+   ],
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1014(b)(6)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§2040(b)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1014(b)(9)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0018",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of property received as a gift or as an inheritance from a decedent.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Nora's father bought stock for $90,000. He died in 2026 when the stock was worth $60,000, and Nora inherited it. She sold the stock three months later for $65,000. What is the result of Nora's sale?",
+   "exhibit": "",
+   "options": [
+    "A $25,000 loss",
+    "A $5,000 gain",
+    "No gain or loss is recognized",
+    "A $30,000 loss"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Uses her father's $90,000 cost. Inherited property is not carryover basis property.",
+    "B": "Inherited property takes FMV at death as basis even when it is lower than the decedent's cost, so basis is $60,000 and the gain is $65,000 - $60,000 = $5,000.",
+    "C": "Applies the dual-basis rule for gifts, under which a price between the two bases produces no gain or loss. Inherited property has one basis: FMV at death.",
+    "D": "Compares the father's cost to the date-of-death value, which is a loss the father never realized and Nora cannot claim."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1014(a)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0019",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of property received as a gift or as an inheritance from a decedent.",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Ben and Cara's mother owned two identical blocks of stock, each with an adjusted basis of $20,000. In 2026, she gave the first block to Ben when it was worth $80,000. She died later that year, and Cara inherited the second block when it was worth $80,000. Ben and Cara each sold their blocks immediately for $80,000. How do the results compare?",
+   "exhibit": "",
+   "options": [
+    "Ben recognizes a $60,000 gain; Cara recognizes no gain or loss",
+    "Both recognize a $60,000 gain",
+    "Neither recognizes any gain or loss",
+    "Ben recognizes no gain or loss; Cara recognizes a $60,000 gain"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Ben takes a $20,000 carryover basis, so his gain is $60,000. Cara takes an $80,000 date-of-death basis, so her gain is zero.",
+    "B": "Gives Cara carryover basis. Inheritance produces a stepped-up basis.",
+    "C": "Gives Ben a stepped-up basis. A lifetime gift carries over the donor's basis.",
+    "D": "Reverses the rules for gifts and inheritances."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1015(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1014(a)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 551"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0020",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of stock acquired through a wash sale.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "On December 10, 2026, Ellis sold 200 shares of Vanta Corp. for $24,000. His basis in those shares was $30,000. On December 28, 2026, he bought 200 shares of Vanta Corp. for $25,000. Ellis is not a dealer in securities. What is Ellis's basis in the newly purchased shares?",
+   "exhibit": "",
+   "options": [
+    "$24,000",
+    "$25,000",
+    "$30,000",
+    "$31,000"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Uses the sale proceeds of the old shares. Replacement-share basis starts with what was paid for the new shares.",
+    "B": "Uses the purchase price alone. The disallowed loss is added to the replacement shares' basis so it is not lost.",
+    "C": "Carries over the old shares' basis unchanged. The new basis is the new purchase price plus the disallowed loss, not the old basis.",
+    "D": "The $6,000 loss is disallowed and added to the basis of the replacement shares: $25,000 + $6,000 = $31,000."
+   },
+   "steps": [
+    "Loss on sale = 30,000 - 24,000 = 6,000 (disallowed)",
+    "Replacement basis = 25,000 + 6,000 = 31,000"
+   ],
+   "calc_check": {
+    "expr": "25000+(30000-24000)",
+    "value": 31000,
+    "distractors": {
+     "A": {
+      "expr": "24000",
+      "value": 24000
+     },
+     "B": {
+      "expr": "25000",
+      "value": 25000
+     },
+     "C": {
+      "expr": "30000",
+      "value": 30000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1091(a), (d)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 550"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0021",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of stock acquired through a wash sale.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "On November 3, 2026, Priyanka sold 500 shares of Corvane Inc. for $30,000. Her basis in the shares was $40,000. On November 20, 2026, she bought 200 shares of Corvane Inc. for $12,000. She is not a dealer. How much of the loss on the sale may Priyanka deduct on her 2026 return?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$4,000",
+    "$6,000",
+    "$10,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Treats the whole loss as disallowed. The rule applies only to the number of shares replaced.",
+    "B": "This is the disallowed amount, not the allowed amount.",
+    "C": "Only the loss on the 200 replaced shares is disallowed: $10,000 x 200/500 = $4,000. The remaining $6,000 loss is allowed.",
+    "D": "Ignores the wash sale altogether."
+   },
+   "steps": [
+    "Total loss = 40,000 - 30,000 = 10,000",
+    "Disallowed = 10,000 x 200 / 500 = 4,000",
+    "Allowed = 10,000 - 4,000 = 6,000"
+   ],
+   "calc_check": {
+    "expr": "10000-10000*200/500",
+    "value": 6000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "10000*200/500",
+      "value": 4000
+     },
+     "D": {
+      "expr": "10000",
+      "value": 10000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1091(b)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.1091-1(c)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 550"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0022",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of stock acquired through a wash sale.",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "On November 5, 2026, Nadia sold 100 shares of Brill Corp. in her taxable brokerage account at an $8,000 loss. On November 20, 2026, she bought 100 shares of Brill Corp. inside her traditional IRA. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "The loss is disallowed, and the disallowed amount does not increase her basis in the IRA shares",
+    "The loss is disallowed, but the $8,000 is added to her basis in the shares held in the IRA",
+    "The loss is allowed, because a purchase inside a tax-deferred account is not a purchase by the taxpayer",
+    "The loss is deferred and becomes deductible when Nadia takes a distribution from the IRA"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Buying substantially identical stock in an IRA triggers the wash sale rule. Because IRA basis does not work the way basis in a taxable account does, the loss is permanently lost.",
+    "B": "Correctly finds a wash sale but adds the loss to the IRA shares' basis. The IRS position is that no basis adjustment is available in the IRA.",
+    "C": "Nadia is treated as acquiring the stock through her IRA. The wash sale rule applies.",
+    "D": "The Code has no such deferral mechanism for an IRA replacement purchase."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1091(a)"
+    },
+    {
+     "src": "Rev. Rul.",
+     "ref": "2008-5"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 550"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "author_note": "IRS position from Rev. Rul. 2008-5; verify the citation against the ruling text before status=verified."
+  },
+  {
+   "id": "REG-III-A-0023",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of stock acquired through a wash sale.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Sasha sold stock at a loss on June 15, 2026. She is not a dealer. Which of the following purchases of substantially identical stock would cause the loss to be disallowed?",
+   "exhibit": "",
+   "options": [
+    "A purchase on May 12, 2026",
+    "A purchase on May 14, 2026",
+    "A purchase on July 15, 2026",
+    "A purchase on July 17, 2026"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "This is 34 days before the sale, outside the 30-day window before the sale.",
+    "B": "This is 32 days before the sale, still outside the window.",
+    "C": "The wash sale period runs 30 days before through 30 days after the sale. July 15 is exactly 30 days after June 15.",
+    "D": "This is 32 days after the sale, outside the 30-day window."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1091(a)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 550"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0024",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the tax basis of stock acquired through a wash sale.",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Kwan bought 100 shares of Lyra Corp. on January 2, 2026 for $10,000. He sold them on December 1, 2026 for $7,000, then bought 100 identical shares on December 20, 2026 for $6,500. On April 12, 2027, he sold the newer shares for $9,000. What is the result on Kwan's 2027 return?",
+   "exhibit": "",
+   "options": [
+    "A $500 long-term capital loss",
+    "A $500 short-term capital loss",
+    "A $2,500 short-term capital gain",
+    "A $2,500 long-term capital gain"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "The $3,000 disallowed loss is added to the new basis ($6,500 + $3,000 = $9,500), and the holding period includes the time held before the wash sale. $9,000 - $9,500 = $500 loss, long-term.",
+    "B": "Gets the amount right but not the holding period. The holding period of the sold shares carries over to the replacement shares.",
+    "C": "Uses the $6,500 cost as basis and starts a new holding period. The disallowed loss and old holding period both carry over.",
+    "D": "Uses the $6,500 cost as basis with the correct holding period. The disallowed loss must be added to basis."
+   },
+   "steps": [
+    "2026 loss = 10,000 - 7,000 = 3,000 disallowed",
+    "New basis = 6,500 + 3,000 = 9,500",
+    "2027 result = 9,000 - 9,500 = 500 loss",
+    "Holding period tacks back to Jan 2, 2026, so long-term"
+   ],
+   "calc_check": {
+    "expr": "9000-(6500+(10000-7000))",
+    "value": -500
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1091(d)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1223(3)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 550"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0025",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the basis of intangible assets, including organization costs, start-up costs and loan costs.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Zephyr Foods, Inc., a calendar-year C corporation formed in 2026, incurred $54,000 of qualifying organizational costs, all before it began business on September 1, 2026. Zephyr made the election to deduct and amortize the costs at the earliest opportunity. What organizational cost deduction may Zephyr claim for 2026? Round to the nearest dollar.",
+   "exhibit": "",
+   "options": [
+    "$1,000",
+    "$1,178",
+    "$2,178",
+    "$6,089"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Includes only the reduced immediate deduction. The remaining $53,000 is also amortized starting in the month business begins.",
+    "B": "Counts only the amortization of the remaining $53,000 and forgets the $1,000 immediate deduction.",
+    "C": "The $5,000 immediate deduction is reduced by the $4,000 by which costs exceed $50,000, leaving $1,000. The remaining $53,000 is amortized over 180 months beginning September: $53,000 x 4/180 = $1,178. Total: $2,178.",
+    "D": "Amortizes correctly but keeps the full $5,000 deduction. The $5,000 is reduced dollar for dollar by costs above $50,000."
+   },
+   "steps": [
+    "Excess over 50,000 = 54,000 - 50,000 = 4,000",
+    "Immediate deduction = 5,000 - 4,000 = 1,000",
+    "Amortizable = 54,000 - 1,000 = 53,000 over 180 months; 4 months in 2026",
+    "53,000 x 4 / 180 = 1,178 (rounded)",
+    "Total = 1,000 + 1,178 = 2,178"
+   ],
+   "calc_check": {
+    "expr": "org_startup(54000,4)",
+    "value": 2178,
+    "distractors": {
+     "A": {
+      "expr": "5000-4000",
+      "value": 1000
+     },
+     "B": {
+      "expr": "53000*4/180",
+      "value": 1178
+     },
+     "D": {
+      "expr": "5000+(54000-5000)*4/180",
+      "value": 6089
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§248(a)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.248-1"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 535"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0026",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the basis of intangible assets, including organization costs, start-up costs and loan costs.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Kenji Mori, a sole proprietor, incurred $52,000 of start-up costs (market research, pre-opening advertising and employee training) before opening a bakery on October 1, 2026. Kenji elects to deduct and amortize the costs at the earliest opportunity. What is his start-up cost deduction for 2026? Round to the nearest dollar.",
+   "exhibit": "",
+   "options": [
+    "$867",
+    "$3,000",
+    "$3,817",
+    "$52,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Amortizes the full cost and skips the immediate deduction that the election allows.",
+    "B": "Takes only the reduced immediate deduction and skips the amortization of the remaining $49,000.",
+    "C": "The $5,000 immediate deduction is reduced by the $2,000 of costs over $50,000, leaving $3,000. The remaining $49,000 is amortized over 180 months: $49,000 x 3/180 = $817. Total: $3,817.",
+    "D": "Deducts all start-up costs currently. Costs above the limit must be amortized over 180 months."
+   },
+   "steps": [
+    "Excess over 50,000 = 2,000",
+    "Immediate = 5,000 - 2,000 = 3,000",
+    "Amortizable = 49,000; 3 months of 180",
+    "49,000 x 3 / 180 = 817",
+    "Total = 3,000 + 817 = 3,817"
+   ],
+   "calc_check": {
+    "expr": "org_startup(52000,3)",
+    "value": 3817,
+    "distractors": {
+     "A": {
+      "expr": "52000*3/180",
+      "value": 867
+     },
+     "B": {
+      "expr": "5000-2000",
+      "value": 3000
+     },
+     "D": {
+      "expr": "52000",
+      "value": 52000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§195(b)(1)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.195-1"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 535"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0027",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the basis of intangible assets, including organization costs, start-up costs and loan costs.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Ridgeview Investors LLC was formed in 2026 as a partnership. Which of the following costs incurred in forming the partnership can NOT be deducted or amortized under the partnership organizational-cost rules?",
+   "exhibit": "",
+   "options": [
+    "Legal fees for negotiating and drafting the partnership agreement",
+    "Commissions paid to a broker for selling partnership interests",
+    "Accounting fees for setting up the partnership's opening books",
+    "Filing fees paid to the state to organize the partnership entity"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Legal fees for negotiating and drafting the agreement are organizational costs and are deductible or amortizable.",
+    "B": "Syndication costs, such as commissions and printing costs for marketing interests, are capitalized and are not deductible or amortizable.",
+    "C": "Accounting services incident to organization qualify as organizational costs.",
+    "D": "Fees for filing organizational documents with the state are organizational costs that qualify."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§709(a), (b)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.709-2"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 541"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0028",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the basis of intangible assets, including organization costs, start-up costs and loan costs.",
+   "skill": "Application",
+   "difficulty": 1,
+   "calc": true,
+   "stem": "On April 1, 2026, Brookline Machine Works obtained a 10-year bank loan for its business and paid $12,000 of loan origination costs. Brookline uses the calendar year. What amount of the loan costs may Brookline deduct for 2026?",
+   "exhibit": "",
+   "options": [
+    "$600",
+    "$900",
+    "$1,200",
+    "$12,000"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Uses 180 months as if the costs were a section 197 intangible. Loan costs follow the loan's term.",
+    "B": "Loan costs are amortized ratably over the term of the loan (120 months) beginning when the loan starts: $12,000 x 9/120 = $900 for April through December.",
+    "C": "Takes a full year of amortization even though the loan was outstanding only nine months of 2026.",
+    "D": "Deducts all costs immediately. Costs of getting a loan are amortized over the loan's life."
+   },
+   "steps": [
+    "Term = 10 years = 120 months",
+    "2026 months = April-December = 9",
+    "12,000 x 9 / 120 = 900"
+   ],
+   "calc_check": {
+    "expr": "12000/120*9",
+    "value": 900,
+    "distractors": {
+     "A": {
+      "expr": "12000/180*9",
+      "value": 600
+     },
+     "C": {
+      "expr": "12000/10",
+      "value": 1200
+     },
+     "D": {
+      "expr": "12000",
+      "value": 12000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "Reg",
+     "ref": "§1.446-5"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.263(a)-5"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 535"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Loan-cost amortization comes from regulations and Pub 535 (no single IRC section).",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-A-0029",
+   "type": "mcq",
+   "area": "III",
+   "group": "A",
+   "topic": "Basis of assets",
+   "task": "Calculate the basis of intangible assets, including organization costs, start-up costs and loan costs.",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Elm Ridge LLC, a partnership, began business on August 1, 2026 after incurring $8,000 of organizational costs and, separately, $12,000 of start-up costs, all before opening. Elm Ridge made every available election. What total amount may Elm Ridge deduct or amortize for these costs in 2026? Round to the nearest dollar.",
+   "exhibit": "",
+   "options": [
+    "$278",
+    "$5,417",
+    "$10,000",
+    "$10,278"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Counts only the amortization and forgets the two $5,000 immediate deductions.",
+    "B": "Treats all costs as one pool with a single $5,000 deduction. The two categories are separate.",
+    "C": "Takes both immediate deductions but forgets to amortize the remaining $10,000 starting in August.",
+    "D": "Organizational and start-up costs each have their own $5,000 immediate deduction. Immediate: $5,000 + $5,000 = $10,000. Remaining $3,000 + $7,000 = $10,000 is amortized over 180 months for 5 months: $278. Total: $10,278."
+   },
+   "steps": [
+    "Org: immediate 5,000; remaining 3,000",
+    "Start-up: immediate 5,000; remaining 7,000",
+    "Amortizable 10,000 x 5/180 = 278",
+    "Total = 10,000 + 278 = 10,278"
+   ],
+   "calc_check": {
+    "expr": "org_startup(8000,5)+org_startup(12000,5)",
+    "value": 10278,
+    "distractors": {
+     "A": {
+      "expr": "(8000-5000+12000-5000)*5/180",
+      "value": 278
+     },
+     "B": {
+      "expr": "org_startup(20000,5)",
+      "value": 5417
+     },
+     "C": {
+      "expr": "10000",
+      "value": 10000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§709(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§195(b)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 535"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0001",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax depreciation for tangible business property using MACRS, including identification of the applicable recovery period and convention.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Which of the following business assets is classified as 5-year property under MACRS?",
+   "exhibit": "",
+   "options": [
+    "Computers and peripheral equipment",
+    "Office desks and chairs",
+    "A paved parking lot at an office park",
+    "A garden apartment building held for rent"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Computers and peripheral equipment are 5-year property, along with cars and light trucks.",
+    "B": "Office furniture and fixtures are 7-year property.",
+    "C": "Land improvements such as parking lots, sidewalks and fences are 15-year property.",
+    "D": "Residential rental buildings are 27.5-year real property, not personal property classes."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(e)(3)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0002",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax depreciation for tangible business property using MACRS, including identification of the applicable recovery period and convention.",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Cobalt Tooling, a calendar-year taxpayer, placed the following in service in 2026: a milling machine (7-year property) costing $400,000 in February; a packaging line (7-year property) costing $220,000 in November; and a warehouse (39-year property) costing $900,000 in December. Cobalt elected to expense $250,000 of the milling machine under section 179 and elected out of bonus depreciation. Which convention applies to the 7-year property, and why?",
+   "exhibit": "",
+   "options": [
+    "Half-year, because the November property is only about 35% of the 7-year property's cost before considering section 179",
+    "Mid-quarter, because the December warehouse pushes fourth-quarter additions above 40% of the year's total basis",
+    "Half-year, because property that qualifies for section 179 is excluded from the 40% test entirely",
+    "Mid-quarter, because about 59% of the personal property's depreciable basis was placed in service in the last quarter"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Uses cost before the section 179 reduction ($220,000 / $620,000). Depreciable basis for the test is reduced by section 179.",
+    "B": "Includes the warehouse. Nonresidential real property is excluded from the mid-quarter test.",
+    "C": "Section 179 property is not excluded. Only the amount expensed under section 179 is removed from basis.",
+    "D": "The test compares fourth-quarter basis to all personal-property basis for the year, excluding the warehouse and after reducing basis by the section 179 deduction: $220,000 / ($150,000 + $220,000) is about 59%, more than 40%."
+   },
+   "steps": [
+    "Exclude the warehouse (39-year real property)",
+    "Milling machine depreciable basis = 400,000 - 250,000 = 150,000",
+    "Q4 basis 220,000 / total (150,000 + 220,000) = 59.5%",
+    "More than 40%, so mid-quarter convention applies"
+   ],
+   "calc_check": {
+    "expr": "220000*100/(400000-250000+220000)",
+    "value": 59.45945945945946
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(d)(3)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.168(d)-1(b)(4)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0003",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax depreciation for tangible business property using MACRS, including identification of the applicable recovery period and convention.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Northgate Movers placed a new 7-year machine costing $150,000 in service on November 12, 2026. It was the only property Northgate placed in service in 2026. Northgate elected out of bonus depreciation and took no section 179 deduction. Year-1 percentages for 7-year property appear in the exhibit. What is Northgate's 2026 depreciation on the machine?",
+   "exhibit": [
+    [
+     "7-year property, year 1",
+     "Half-year",
+     "MQ Q1",
+     "MQ Q2",
+     "MQ Q3",
+     "MQ Q4"
+    ],
+    [
+     "Percentage",
+     "14.29%",
+     "25.00%",
+     "17.85%",
+     "10.71%",
+     "3.57%"
+    ]
+   ],
+   "options": [
+    "$5,355",
+    "$10,714",
+    "$21,435",
+    "$42,857"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "All property placed in service in the year came in the last quarter, so 100% of basis is in Q4 and the mid-quarter convention applies. Year-1 percentage is 3.57%: $150,000 x 3.57% = $5,355.",
+    "B": "Straight-line with a half-year. MACRS 7-year property uses the declining balance method in the tables.",
+    "C": "Uses the half-year table. More than 40% of basis was placed in service in the last quarter, so mid-quarter is required.",
+    "D": "Full-year 200% declining balance with no convention. Every year-1 percentage reflects a convention."
+   },
+   "steps": [
+    "Q4 basis = 100% of the year's personal property > 40%",
+    "Mid-quarter convention, Q4 percentage = 3.57%",
+    "150,000 x 3.57% = 5,355"
+   ],
+   "calc_check": {
+    "expr": "150000*mq1(7,4)/100",
+    "value": 5355,
+    "distractors": {
+     "B": {
+      "expr": "150000/7/2",
+      "value": 10714
+     },
+     "C": {
+      "expr": "150000*hy(7,1)/100",
+      "value": 21435
+     },
+     "D": {
+      "expr": "150000*2/7",
+      "value": 42857
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(d)(1)-(3)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0004",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax depreciation for tangible business property using MACRS, including identification of the applicable recovery period and convention.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In September 2026, Sierra Rentals bought an apartment building for $480,000, of which $80,000 was allocated to land. The building was ready and available for rent on September 12, 2026. The IRS table percentage for the first year of residential rental property placed in service in September is 1.061%. What is Sierra's 2026 depreciation on the building?",
+   "exhibit": "",
+   "options": [
+    "$4,244",
+    "$5,093",
+    "$7,273",
+    "$17,455"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Land is not depreciable, so the base is $400,000. Table percentage of 1.061% reflects 27.5-year straight-line with the mid-month convention: $400,000 x 1.061% = $4,244.",
+    "B": "Applies the percentage to the full $480,000. Land must be removed first.",
+    "C": "Uses the half-year convention. Real property uses mid-month, and the table percentage is given.",
+    "D": "A full year of straight-line on cost including land. Neither land nor the partial first year is handled."
+   },
+   "steps": [
+    "Depreciable basis = 480,000 - 80,000 = 400,000",
+    "Table percentage for September year 1 = 1.061%",
+    "400,000 x 1.061% = 4,244"
+   ],
+   "calc_check": {
+    "expr": "(480000-80000)*1.061/100",
+    "value": 4244,
+    "distractors": {
+     "B": {
+      "expr": "480000*1.061/100",
+      "value": 5093
+     },
+     "C": {
+      "expr": "(480000-80000)/27.5*0.5",
+      "value": 7273
+     },
+     "D": {
+      "expr": "480000/27.5",
+      "value": 17455
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(c), (d)(2)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0005",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax depreciation for tangible business property using MACRS, including identification of the applicable recovery period and convention.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Which statement correctly describes how a commercial office building placed in service in 2026 is depreciated?",
+   "exhibit": "",
+   "options": [
+    "150% declining balance over 39 years using the mid-month convention",
+    "Straight-line over 27.5 years using the mid-quarter convention",
+    "Straight-line over 39 years using the half-year convention",
+    "Straight-line over 39 years using the mid-month convention"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Real property may not use accelerated methods under the general system.",
+    "B": "27.5 years applies to residential rental property, and real property always uses mid-month.",
+    "C": "The half-year convention is for personal property.",
+    "D": "Nonresidential real property is depreciated straight-line over 39 years with the mid-month convention."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(b)(3), (c), (d)(2)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0006",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax depreciation for tangible business property using MACRS, including identification of the applicable recovery period and convention.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Wren Landscaping bought a new passenger automobile for $62,500 in March 2026 and placed it in service immediately. Wren used the car 60% for business and 40% for personal purposes, and did not elect out of bonus depreciation. Assume the 2026 first-year depreciation limit for a passenger automobile, including bonus depreciation, is $20,000 for a car used 100% for business, and that the bonus percentage is 100%. What is Wren's maximum 2026 depreciation deduction for the car?",
+   "exhibit": "",
+   "options": [
+    "$12,000",
+    "$20,000",
+    "$37,500",
+    "$62,500"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Bonus on the business portion would be $37,500 (60% of $62,500), but the annual limit applies. The limit is reduced by the business-use percentage: $20,000 x 60% = $12,000.",
+    "B": "Applies the limit for 100% business use. The limit is prorated when business use is below 100%.",
+    "C": "Takes 100% bonus on the business portion and ignores the annual passenger-automobile cap.",
+    "D": "Takes 100% bonus on the full cost, ignoring both personal use and the annual limit."
+   },
+   "steps": [
+    "Business-use basis = 62,500 x 60% = 37,500",
+    "First-year limit at 100% business use = 20,000",
+    "Limit x business use = 20,000 x 60% = 12,000",
+    "Deduction = lesser of 37,500 and 12,000 = 12,000"
+   ],
+   "calc_check": {
+    "expr": "20000*0.6",
+    "value": 12000,
+    "distractors": {
+     "B": {
+      "expr": "20000",
+      "value": 20000
+     },
+     "C": {
+      "expr": "62500*0.6",
+      "value": 37500
+     },
+     "D": {
+      "expr": "62500",
+      "value": 62500
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§280F(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§168(k)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA (P.L. 119-21, enacted 2025-07-04) made 100% bonus depreciation permanent for property acquired after 2025-01-19; AICPA treats 2024/2025-effective OBBBA provisions as testable from 2026-07-01. The stem gives the percentage, so no memorized rate is required.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0007",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax depreciation for tangible business property using MACRS, including identification of the applicable recovery period and convention.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "In June 2026, Halvorsen Design bought a new passenger automobile and placed it in service. The car is used 40% for business and 60% for personal driving. Which statement describes the depreciation treatment of the car?",
+   "exhibit": "",
+   "options": [
+    "The car qualifies for bonus depreciation on the 40% business portion but not for section 179",
+    "The car does not qualify for section 179 or bonus depreciation and must be depreciated using straight-line ADS",
+    "The car is depreciated using 200% declining balance MACRS on the 40% business portion",
+    "No depreciation is allowed because business use is below 50%"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Bonus depreciation and section 179 both require qualified business use above 50% for listed property.",
+    "B": "Business use of 50% or less means the car cannot use accelerated MACRS, section 179 or bonus depreciation. Depreciation on the business portion is straight-line under ADS.",
+    "C": "Accelerated methods require business use above 50%.",
+    "D": "Depreciation is still allowed on the business portion, but only under straight-line ADS."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§280F(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§179(d)(1)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Listed-property predominant-use rule; unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0008",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax depreciation for tangible business property using MACRS, including identification of the applicable recovery period and convention.",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Quarry Point Supply placed only 5-year property in service in 2026: $300,000 of equipment in February and $200,000 of equipment in November. It elected out of bonus depreciation and took no section 179 deduction. Applicable year-1 percentages are in the exhibit. What is Quarry Point's total 2026 depreciation?",
+   "exhibit": [
+    [
+     "5-year property, year 1",
+     "Percentage"
+    ],
+    [
+     "Half-year convention",
+     "20.00%"
+    ],
+    [
+     "Mid-quarter, placed in service in Q1",
+     "35.00%"
+    ],
+    [
+     "Mid-quarter, placed in service in Q4",
+     "5.00%"
+    ]
+   ],
+   "options": [
+    "$40,000",
+    "$60,000",
+    "$100,000",
+    "$115,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Depreciates only the November equipment and leaves out the February equipment.",
+    "B": "Depreciates only the February equipment and leaves out the November equipment.",
+    "C": "November property is $200,000 of $500,000 total, exactly 40%. The mid-quarter convention applies only when more than 40% is placed in service in the last quarter, so the half-year convention applies: $500,000 x 20% = $100,000.",
+    "D": "Applies the mid-quarter convention. Exactly 40% does not exceed the 40% threshold."
+   },
+   "steps": [
+    "Q4 basis 200,000 / total 500,000 = 40.0%",
+    "Not more than 40%, so half-year convention",
+    "500,000 x 20.00% = 100,000"
+   ],
+   "calc_check": {
+    "expr": "(300000+200000)*hy(5,1)/100",
+    "value": 100000,
+    "distractors": {
+     "A": {
+      "expr": "200000*hy(5,1)/100",
+      "value": 40000
+     },
+     "B": {
+      "expr": "300000*hy(5,1)/100",
+      "value": 60000
+     },
+     "D": {
+      "expr": "300000*mq1(5,1)/100+200000*mq1(5,4)/100",
+      "value": 115000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(d)(3)(A)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.168(d)-1(b)(4)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0009",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax depreciation for tangible business property using MACRS, including identification of the applicable recovery period and convention.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Fairway Printing bought a 7-year press for $100,000 and placed it in service in 2023. It elected out of bonus depreciation, took no section 179 deduction, and used the half-year convention. Fairway sold the press on March 15, 2026. The half-year percentages for years 1 through 4 are 14.29%, 24.49%, 17.49% and 12.49%. What is the press's adjusted basis on the date of sale?",
+   "exhibit": "",
+   "options": [
+    "$31,240",
+    "$37,485",
+    "$43,730",
+    "$62,515"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Takes a full year of 2026 depreciation. In the year of disposition only half a year is allowed under the half-year convention.",
+    "B": "The half-year convention also applies in the year of disposition, so only half of the year-4 percentage is allowed for 2026. Depreciation = 14.29 + 24.49 + 17.49 + 6.245 = 62.515%, so adjusted basis = $100,000 - $62,515 = $37,485.",
+    "C": "Takes no depreciation in 2026. The asset is treated as in service for half of the year of sale.",
+    "D": "This is the total depreciation taken, not the remaining basis."
+   },
+   "steps": [
+    "Years 1-3: 14.29 + 24.49 + 17.49 = 56.27%",
+    "Year of sale: 12.49% / 2 = 6.245%",
+    "Total depreciation = 62.515% x 100,000 = 62,515",
+    "Adjusted basis = 100,000 - 62,515 = 37,485"
+   ],
+   "calc_check": {
+    "expr": "100000*(1-(hy(7,1)+hy(7,2)+hy(7,3)+hy(7,4)/2)/100)",
+    "value": 37485,
+    "distractors": {
+     "A": {
+      "expr": "100000*(1-(hy(7,1)+hy(7,2)+hy(7,3)+hy(7,4))/100)",
+      "value": 31240
+     },
+     "C": {
+      "expr": "100000*(1-(hy(7,1)+hy(7,2)+hy(7,3))/100)",
+      "value": 43730
+     },
+     "D": {
+      "expr": "100000*(hy(7,1)+hy(7,2)+hy(7,3)+hy(7,4)/2)/100",
+      "value": 62515
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(d)(1)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.168(d)-1(c)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1016(a)(2)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0010",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax depreciation for tangible business property using MACRS, including identification of the applicable recovery period and convention.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "In 2026, Crestline Insurance, which has owned and occupied its office building since 2019, spent $90,000 to renovate the building's interior with new partitions, ceilings, lighting and restrooms. The work did not enlarge the building, add an elevator or escalator, or change the internal structural framework. What is the recovery period for these improvements?",
+   "exhibit": "",
+   "options": [
+    "5 years",
+    "7 years",
+    "15 years",
+    "39 years"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Applies the period for computers and vehicles. It does not fit interior building improvements.",
+    "B": "Treats the work as furniture and fixtures. Building interior improvements are not office furniture.",
+    "C": "Interior improvements to nonresidential real property placed in service after the building was first placed in service are qualified improvement property, which has a 15-year recovery period.",
+    "D": "Treats the work as part of the building. Qualified improvement property has its own shorter recovery period."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(e)(6)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§168(e)(3)(E)(vii)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0011",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax depreciation for tangible business property using MACRS, including identification of the applicable recovery period and convention.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Tri-Pines Realty owns a residential rental building placed in service in 2026. It elected out of the business interest limitation as a real property trade or business, which requires it to use the alternative depreciation system for the building. What recovery period applies to the building?",
+   "exhibit": "",
+   "options": [
+    "27.5 years",
+    "30 years",
+    "39 years",
+    "40 years"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "This is the general depreciation system period for residential rental property, not the ADS period.",
+    "B": "Under ADS, residential rental property placed in service after 2017 has a 30-year recovery period.",
+    "C": "This is the general depreciation system period for nonresidential real property.",
+    "D": "This is the ADS period for nonresidential real property."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(g)(2)(C)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§163(j)(7)(B)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    },
+    {
+     "src": "IRC",
+     "ref": "§168(g)(1)(F)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0012",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Determine property eligible for a special depreciation allowance (bonus depreciation) or a Section 179 deduction.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In 2026, Granite Fabrication placed $4,500,000 of qualifying section 179 property in service. Assume the 2026 section 179 dollar limit is $2,560,000, reduced dollar for dollar by the amount that qualifying property placed in service exceeds $4,090,000. Granite has ample taxable income from its business. What is the maximum section 179 deduction?",
+   "exhibit": "",
+   "options": [
+    "$410,000",
+    "$2,150,000",
+    "$2,560,000",
+    "$4,500,000"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "This is only the excess over the threshold. It is the reduction, not the remaining limit.",
+    "B": "Excess property = $4,500,000 - $4,090,000 = $410,000. Limit is reduced to $2,560,000 - $410,000 = $2,150,000.",
+    "C": "Ignores the phase-out for large purchases.",
+    "D": "Expenses the full cost, which exceeds the dollar limit by a wide margin."
+   },
+   "steps": [
+    "Excess = 4,500,000 - 4,090,000 = 410,000",
+    "Reduced limit = 2,560,000 - 410,000 = 2,150,000"
+   ],
+   "calc_check": {
+    "expr": "sec179_limit(2560000,4090000,4500000)",
+    "value": 2150000,
+    "distractors": {
+     "A": {
+      "expr": "4500000-4090000",
+      "value": 410000
+     },
+     "C": {
+      "expr": "2560000",
+      "value": 2560000
+     },
+     "D": {
+      "expr": "4500000",
+      "value": 4500000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§179(b)(1), (b)(2)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA raised the section 179 limit and phase-out threshold for tax years beginning after 2024 (indexed thereafter); testable from 2026-07-01. The stem supplies the dollar amounts.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0013",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Determine property eligible for a special depreciation allowance (bonus depreciation) or a Section 179 deduction.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Slate Machining bought a $300,000 machine in 2026 and elected to expense its entire cost under section 179, and elected out of bonus depreciation. The section 179 dollar limit is not a constraint. Slate's taxable income from its active trade or business, before the section 179 deduction, is $210,000. What is Slate's total 2026 cost recovery deduction for the machine?",
+   "exhibit": "",
+   "options": [
+    "$90,000",
+    "$210,000",
+    "$222,861",
+    "$300,000"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "This is the disallowed amount that carries forward, not the deduction allowed.",
+    "B": "The section 179 deduction cannot exceed taxable business income of $210,000. The $90,000 that is disallowed is carried forward, and no regular MACRS applies to the amount elected.",
+    "C": "Adds regular MACRS on the disallowed $90,000. The entire cost was elected under section 179, so the disallowed part carries forward instead of being depreciated.",
+    "D": "Ignores the taxable income limit."
+   },
+   "steps": [
+    "Elected cost 300,000",
+    "Taxable income limit = 210,000",
+    "Deduction = lesser = 210,000; 90,000 carries forward"
+   ],
+   "calc_check": {
+    "expr": "min(300000,210000)",
+    "value": 210000,
+    "distractors": {
+     "A": {
+      "expr": "300000-210000",
+      "value": 90000
+     },
+     "C": {
+      "expr": "min(300000,210000)+(300000-210000)*hy(7,1)/100",
+      "value": 222861
+     },
+     "D": {
+      "expr": "300000",
+      "value": 300000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§179(b)(3)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.179-3"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA raised the section 179 limit and phase-out threshold for tax years beginning after 2024 (indexed thereafter); testable from 2026-07-01. The stem supplies the dollar amounts.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0014",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Determine property eligible for a special depreciation allowance (bonus depreciation) or a Section 179 deduction.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Ferris Logistics plans to make a section 179 election for property placed in service in 2026. Which of the following purchases would NOT qualify as section 179 property?",
+   "exhibit": "",
+   "options": [
+    "The purchase of an existing nonresidential warehouse building",
+    "Off-the-shelf accounting software",
+    "A replacement roof on a nonresidential warehouse Ferris already owns",
+    "Used forklifts bought from an unrelated dealer"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "The building structure itself is not eligible. Only specified improvements to nonresidential buildings can qualify.",
+    "B": "Off-the-shelf computer software qualifies as section 179 property.",
+    "C": "A roof replacement on nonresidential real property is qualified real property and can be expensed.",
+    "D": "Used tangible personal property qualifies if it is acquired by purchase from an unrelated party."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§179(d)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§179(e)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0015",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Determine property eligible for a special depreciation allowance (bonus depreciation) or a Section 179 deduction.",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "On January 10, 2025, Nova Packaging signed a binding written contract to buy a new $500,000 packaging machine (7-year property). Nova received the machine and placed it in service on March 3, 2025. Nova took no section 179 deduction and did not elect out of bonus depreciation. The bonus percentage is 40% for qualifying property acquired before January 20, 2025 and placed in service in 2025, and 100% for qualifying property acquired after January 19, 2025. The half-year percentage for year 1 of 7-year property is 14.29%. What is Nova's total 2025 depreciation on the machine?",
+   "exhibit": "",
+   "options": [
+    "$71,450",
+    "$200,000",
+    "$242,870",
+    "$500,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Regular MACRS only, with no bonus. Bonus applies unless the taxpayer elects out.",
+    "B": "Takes 40% bonus but forgets regular MACRS on the remaining basis.",
+    "C": "Property is acquired when the binding contract is signed, so the machine was acquired on January 10, 2025, before the cutoff. Bonus is 40% = $200,000. Regular MACRS on the remaining $300,000: $300,000 x 14.29% = $42,870. Total: $242,870.",
+    "D": "Applies 100% bonus by using the delivery date. Acquisition occurs on the binding-contract date, which was before the cutoff."
+   },
+   "steps": [
+    "Acquisition date = binding contract date, Jan 10, 2025 (before Jan 20, 2025)",
+    "Bonus = 500,000 x 40% = 200,000",
+    "Remaining basis 300,000 x 14.29% = 42,870",
+    "Total = 200,000 + 42,870 = 242,870"
+   ],
+   "calc_check": {
+    "expr": "500000*0.4+500000*0.6*hy(7,1)/100",
+    "value": 242870,
+    "distractors": {
+     "A": {
+      "expr": "500000*hy(7,1)/100",
+      "value": 71450
+     },
+     "B": {
+      "expr": "500000*0.4",
+      "value": 200000
+     },
+     "D": {
+      "expr": "500000",
+      "value": 500000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(k)(2)(A)(ii), (k)(6)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.168(k)-2(b)(5)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA (P.L. 119-21, enacted 2025-07-04) made 100% bonus depreciation permanent for property acquired after 2025-01-19; AICPA treats 2024/2025-effective OBBBA provisions as testable from 2026-07-01. The stem gives the percentage, so no memorized rate is required. The 40% figure is pre-OBBBA phase-down law that still governs property acquired before 2025-01-20; the stem states both rates.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0016",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Determine property eligible for a special depreciation allowance (bonus depreciation) or a Section 179 deduction.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In August 2026, Rafael Ortiz's business bought and placed in service used commercial refrigeration equipment (7-year property) for $45,000 from an unrelated dealer, new land improvements (15-year property) for $30,000, and a commercial building for $400,000 (excluding land). Rafael had never used the equipment before. He took no section 179 deduction and did not elect out of bonus depreciation. Assume the bonus percentage for property acquired in 2026 is 100%. What is his total bonus depreciation for 2026?",
+   "exhibit": "",
+   "options": [
+    "$30,000",
+    "$45,000",
+    "$75,000",
+    "$475,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Excludes the used equipment. Used property qualifies if it was not previously used by the taxpayer and is bought from an unrelated party.",
+    "B": "Counts the equipment only and forgets the 15-year land improvements.",
+    "C": "Bonus depreciation applies to property with a recovery period of 20 years or less, including used property acquired from an unrelated party for the first time. That covers the equipment and the land improvements: $45,000 + $30,000 = $75,000. The 39-year building does not qualify.",
+    "D": "Includes the building. Property with a recovery period longer than 20 years does not qualify."
+   },
+   "steps": [
+    "Eligible: recovery period 20 years or less",
+    "Equipment 45,000 (used, eligible) + land improvements 30,000 = 75,000",
+    "Building (39-year) excluded"
+   ],
+   "calc_check": {
+    "expr": "45000+30000",
+    "value": 75000,
+    "distractors": {
+     "A": {
+      "expr": "30000",
+      "value": 30000
+     },
+     "B": {
+      "expr": "45000",
+      "value": 45000
+     },
+     "D": {
+      "expr": "45000+30000+400000",
+      "value": 475000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(k)(2)(A)(i), (E)(ii)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA (P.L. 119-21, enacted 2025-07-04) made 100% bonus depreciation permanent for property acquired after 2025-01-19; AICPA treats 2024/2025-effective OBBBA provisions as testable from 2026-07-01. The stem gives the percentage, so no memorized rate is required.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0017",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Determine property eligible for a special depreciation allowance (bonus depreciation) or a Section 179 deduction.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Which statement about electing out of bonus depreciation is correct?",
+   "exhibit": "",
+   "options": [
+    "The election may be made asset by asset within a class, so only chosen assets are affected",
+    "The election applies to every depreciable asset placed in service during the year, whatever its class",
+    "The election requires IRS consent even when it is made on a timely filed return",
+    "The election applies to all property in the same MACRS class placed in service that year"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Election is by class, not by individual asset.",
+    "B": "Different classes can be treated differently. Only the class named in the election is affected.",
+    "C": "The election is made on the return without IRS consent.",
+    "D": "Electing out is made by class of property, so every asset in that class placed in service that year is affected."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(k)(7)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA (P.L. 119-21, enacted 2025-07-04) made 100% bonus depreciation permanent for property acquired after 2025-01-19; AICPA treats 2024/2025-effective OBBBA provisions as testable from 2026-07-01. The stem gives the percentage, so no memorized rate is required.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0018",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Determine property eligible for a special depreciation allowance (bonus depreciation) or a Section 179 deduction.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Basalt Industries bought a $200,000 5-year machine in 2026 and used the half-year convention. Basalt elected to expense $60,000 under section 179 and elected out of bonus depreciation for 5-year property. The year-1 half-year percentage is 20.00%. What is Basalt's total 2026 cost recovery on the machine?",
+   "exhibit": "",
+   "options": [
+    "$28,000",
+    "$60,000",
+    "$88,000",
+    "$100,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Counts only MACRS on the reduced basis and leaves out the section 179 deduction.",
+    "B": "Counts section 179 alone and forgets regular MACRS on the remaining basis.",
+    "C": "Section 179 comes first and reduces the basis: $200,000 - $60,000 = $140,000. Regular MACRS: $140,000 x 20% = $28,000. Total: $60,000 + $28,000 = $88,000.",
+    "D": "Applies MACRS to the full cost. Section 179 reduces the depreciable basis first."
+   },
+   "steps": [
+    "Section 179 = 60,000",
+    "Remaining basis = 200,000 - 60,000 = 140,000",
+    "MACRS = 140,000 x 20% = 28,000",
+    "Total = 88,000"
+   ],
+   "calc_check": {
+    "expr": "60000+(200000-60000)*hy(5,1)/100",
+    "value": 88000,
+    "distractors": {
+     "A": {
+      "expr": "(200000-60000)*hy(5,1)/100",
+      "value": 28000
+     },
+     "B": {
+      "expr": "60000",
+      "value": 60000
+     },
+     "D": {
+      "expr": "60000+200000*hy(5,1)/100",
+      "value": 100000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§179"
+    },
+    {
+     "src": "IRC",
+     "ref": "§168(k)(7)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.179-1(f)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA (P.L. 119-21, enacted 2025-07-04) made 100% bonus depreciation permanent for property acquired after 2025-01-19; AICPA treats 2024/2025-effective OBBBA provisions as testable from 2026-07-01. The stem gives the percentage, so no memorized rate is required.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0019",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Determine property eligible for a special depreciation allowance (bonus depreciation) or a Section 179 deduction.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In 2026, Timber Ridge Surveying bought a new SUV with a gross vehicle weight rating of 6,400 pounds for $70,000 and used it 100% for business. Timber Ridge elected the maximum section 179 deduction allowed for this vehicle and claimed bonus depreciation on the remaining basis. Assume the section 179 limit for SUVs over 6,000 pounds is $31,000 and the bonus percentage is 100%. What is the total 2026 deduction for the SUV?",
+   "exhibit": "",
+   "options": [
+    "$14,000",
+    "$31,000",
+    "$45,000",
+    "$70,000"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Regular MACRS only. It skips both section 179 and bonus.",
+    "B": "Stops at the section 179 cap. The remaining basis is eligible for bonus depreciation.",
+    "C": "Adds regular MACRS on the full cost to the section 179 amount. MACRS applies only to basis remaining after section 179, and bonus takes precedence.",
+    "D": "The section 179 deduction is capped at $31,000 for this heavy SUV. Bonus depreciation applies to the remaining $39,000, and the passenger-automobile caps do not apply to vehicles over 6,000 pounds. Total: $70,000."
+   },
+   "steps": [
+    "Section 179 = 31,000 (SUV cap)",
+    "Remaining basis = 70,000 - 31,000 = 39,000",
+    "100% bonus on 39,000",
+    "Total = 31,000 + 39,000 = 70,000"
+   ],
+   "calc_check": {
+    "expr": "31000+(70000-31000)",
+    "value": 70000,
+    "distractors": {
+     "A": {
+      "expr": "70000*hy(5,1)/100",
+      "value": 14000
+     },
+     "B": {
+      "expr": "31000",
+      "value": 31000
+     },
+     "C": {
+      "expr": "31000+70000*hy(5,1)/100",
+      "value": 45000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§179(b)(5)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§168(k)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§280F(a), (d)(5)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA (P.L. 119-21, enacted 2025-07-04) made 100% bonus depreciation permanent for property acquired after 2025-01-19; AICPA treats 2024/2025-effective OBBBA provisions as testable from 2026-07-01. The stem gives the percentage, so no memorized rate is required.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0020",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Determine property eligible for a special depreciation allowance (bonus depreciation) or a Section 179 deduction.",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "In February 2025, Corbin Consulting bought a passenger automobile and used it 100% for business, claiming accelerated depreciation within the annual limit. In 2026, Corbin began working remotely and business use of the car fell to 40%. Which describes the tax consequence for 2026?",
+   "exhibit": "",
+   "options": [
+    "No adjustment is needed, because business use was over 50% when the car was placed in service, which is the only year tested",
+    "Corbin includes all depreciation ever deducted on the car in 2026 income and stops depreciating it",
+    "Corbin must amend the 2025 return to remove the accelerated depreciation and refile with straight-line",
+    "Corbin includes in income the excess of accelerated over straight-line ADS depreciation and uses ADS from then on"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "The 50% test continues to apply in later years. A fall in business use triggers recapture.",
+    "B": "Only the excess over straight-line ADS is recaptured, not all depreciation.",
+    "C": "Prior years were correct when filed. The excess is recaptured in the year business use falls.",
+    "D": "When business use of listed property falls to 50% or less after accelerated depreciation was claimed, the excess depreciation is recaptured as income and later depreciation is straight-line."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§280F(b)(2)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Listed-property recapture rule; unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0021",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Determine property eligible for a special depreciation allowance (bonus depreciation) or a Section 179 deduction.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Cyrus Adler's timely filed 2025 return did not claim a section 179 deduction for equipment he placed in service in 2025. He has now decided he would rather have expensed the equipment. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "He may make the election on an amended 2025 return without IRS consent",
+    "He may not, because the election must be made on the original timely filed return",
+    "He may, but only with a private letter ruling from the IRS",
+    "He may not, because the election can be made only in the year after the property is placed in service"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "A section 179 election can be made or revoked on an amended return for the year without IRS consent.",
+    "B": "Amended-return elections are permitted for section 179.",
+    "C": "No IRS consent is required for this election on an amended return.",
+    "D": "The election belongs to the year the property is placed in service."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§179(c)(2)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.179-5(c)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Amended-return election is permanent law; unaffected by OBBBA.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0022",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax amortization for intangible assets.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Sterling Bakery purchased an ongoing bakery business on August 20, 2026. The price included goodwill of $300,000 and a covenant not to compete of $90,000 from the seller, entered into in connection with the acquisition. What is Sterling's 2026 amortization of these intangibles? Round to the nearest dollar.",
+   "exhibit": "",
+   "options": [
+    "$2,500",
+    "$8,333",
+    "$10,833",
+    "$15,833"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Amortizes the covenant only and leaves out the goodwill, which is also a section 197 intangible.",
+    "B": "Amortizes goodwill only. The covenant not to compete is also a section 197 intangible.",
+    "C": "Goodwill and a covenant entered into with an acquisition are both section 197 intangibles amortized over 15 years (180 months) starting in the month acquired: $390,000 x 5/180 = $10,833 for August through December.",
+    "D": "Amortizes the covenant over a 5-year period. Section 197 requires 15 years."
+   },
+   "steps": [
+    "Section 197 intangibles = 300,000 + 90,000 = 390,000",
+    "15 years = 180 months; months in 2026 = August-December = 5",
+    "390,000 x 5 / 180 = 10,833"
+   ],
+   "calc_check": {
+    "expr": "(300000+90000)/180*5",
+    "value": 10833,
+    "distractors": {
+     "A": {
+      "expr": "90000/180*5",
+      "value": 2500
+     },
+     "B": {
+      "expr": "300000/180*5",
+      "value": 8333
+     },
+     "D": {
+      "expr": "300000/180*5+90000/60*5",
+      "value": 15833
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§197(a), (d)(1)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.197-2(f)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 535"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0023",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax amortization for intangible assets.",
+   "skill": "Remembering & Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Which of the following intangible assets, acquired in 2026, is amortized as a section 197 intangible over 15 years?",
+   "exhibit": "",
+   "options": [
+    "Off-the-shelf computer software available to the general public",
+    "A patent purchased separately, not as part of a business acquisition",
+    "An interest in land",
+    "A trademark acquired as part of the purchase of a business"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Off-the-shelf software is excluded from section 197 and is generally amortized over 36 months.",
+    "B": "A separately acquired patent is excluded and is amortized over its remaining life.",
+    "C": "Interests in land are excluded from section 197 and are not amortized.",
+    "D": "Trademarks and trade names acquired with a business are section 197 intangibles."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§197(d)(1)(F), (e)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 535"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0024",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax amortization for intangible assets.",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Bluewater Corp. bought a business in 2023 and recorded goodwill of $240,000 and a customer list of $60,000, both amortized over 15 years. In 2026, the customer list became worthless and Bluewater abandoned it, but it kept the goodwill and the rest of the business. How is the customer list's unamortized basis treated?",
+   "exhibit": "",
+   "options": [
+    "It is deducted in 2026 as an ordinary loss from abandoning a worthless business asset",
+    "It is deducted in 2026 as a capital loss because the customer list was a capital asset",
+    "It is deducted in 2027, the year after abandonment, once the loss is finally determined",
+    "No loss is allowed; the basis is added to the remaining section 197 intangibles"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "An abandonment loss is disallowed when other section 197 intangibles from the same acquisition are kept.",
+    "B": "Same problem: no loss is recognized, and the character issue never arises.",
+    "C": "The rule does not defer the loss; it eliminates the loss and reallocates the basis.",
+    "D": "Section 197 disallows a loss on the disposition or abandonment of one intangible while others from the same acquisition are retained. The basis moves to the remaining intangibles."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§197(f)(1)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.197-2(g)(1)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 535"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0025",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Calculate tax amortization for intangible assets.",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "On October 1, 2026, Kestrel Labs bought a patent from an inventor for $84,000. The purchase was not part of the acquisition of a business. The patent has 14 years of remaining life. Kestrel amortizes the patent straight-line over its remaining life beginning in the month acquired. What is the 2026 amortization? Round to the nearest dollar.",
+   "exhibit": "",
+   "options": [
+    "$500",
+    "$1,400",
+    "$1,500",
+    "$6,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "This is one month of amortization. October through December is three months.",
+    "B": "Applies the 15-year section 197 period, which applies only to intangibles bought with a business.",
+    "C": "A patent bought separately is not a section 197 intangible. It is amortized over its remaining life: $84,000 / 168 months = $500 per month x 3 months (October through December) = $1,500.",
+    "D": "Takes a full year of amortization. Only three months of 2026 apply."
+   },
+   "steps": [
+    "Not part of a business acquisition, so not section 197",
+    "Monthly amortization = 84,000 / (14 x 12) = 500",
+    "October-December = 3 months",
+    "500 x 3 = 1,500"
+   ],
+   "calc_check": {
+    "expr": "84000/(14*12)*3",
+    "value": 1500,
+    "distractors": {
+     "A": {
+      "expr": "84000/(14*12)",
+      "value": 500
+     },
+     "B": {
+      "expr": "84000/180*3",
+      "value": 1400
+     },
+     "D": {
+      "expr": "84000/14",
+      "value": 6000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§167(f)(2)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.167(a)-14(c)(4)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§197(e)(4)(C)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 535"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Separately acquired patents: Reg. §1.167(a)-14(c)(4) (straight-line over remaining useful life).",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0026",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Review a tax depreciation and amortization schedule for the current year and supporting documentation... to determine completeness and accuracy.",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Review the 2026 depreciation schedule prepared for Larkspur Co. All assets were placed in service in 2026. Larkspur elected out of bonus depreciation and took no section 179 deduction. The preparer applied the half-year convention to every asset. Which correction is required?",
+   "exhibit": [
+    [
+     "Asset",
+     "Placed in service",
+     "Cost",
+     "Class",
+     "Convention used",
+     "Rate",
+     "2026 depreciation"
+    ],
+    [
+     "Servers",
+     "Feb 10",
+     "$50,000",
+     "5-year",
+     "Half-year",
+     "20.00%",
+     "$10,000"
+    ],
+    [
+     "Office furniture",
+     "Jun 3",
+     "$30,000",
+     "7-year",
+     "Half-year",
+     "14.29%",
+     "$4,287"
+    ],
+    [
+     "Parking lot",
+     "Sep 15",
+     "$60,000",
+     "15-year",
+     "Half-year",
+     "5.00%",
+     "$3,000"
+    ],
+    [
+     "Machinery",
+     "Dec 5",
+     "$220,000",
+     "7-year",
+     "Half-year",
+     "14.29%",
+     "$31,438"
+    ]
+   ],
+   "options": [
+    "Apply the mid-quarter convention only to the December machinery, which is the asset that triggers the test",
+    "Reclassify the parking lot as 39-year property, because it is attached to the building's land",
+    "No correction is needed, because the half-year convention applies when assets are placed in service in several quarters",
+    "Apply the mid-quarter convention to all four assets, because over 40% of basis was placed in service in Q4"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "The mid-quarter convention, once triggered, applies to all property subject to the test that year.",
+    "B": "Land improvements such as parking lots are 15-year property, as the schedule shows.",
+    "C": "The test is the 40% fourth-quarter threshold, not the number of quarters used.",
+    "D": "The December machinery is $220,000 of $360,000 total (61%), so the mid-quarter convention is required for all property placed in service during the year."
+   },
+   "steps": [
+    "Total basis = 50,000 + 30,000 + 60,000 + 220,000 = 360,000",
+    "Q4 basis = 220,000; 220,000 / 360,000 = 61%",
+    "More than 40%, so mid-quarter for all assets"
+   ],
+   "calc_check": {
+    "expr": "220000*100/(50000+30000+60000+220000)",
+    "value": 61.111111111111114
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(d)(3)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0027",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Review a tax depreciation and amortization schedule for the current year and supporting documentation... to determine completeness and accuracy.",
+   "skill": "Analysis",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Review the asset classification section of Redwood Supply's 2026 depreciation schedule. Which entry shows an incorrect MACRS recovery period?",
+   "exhibit": [
+    [
+     "Asset",
+     "Recovery period on schedule"
+    ],
+    [
+     "Office furniture",
+     "7-year"
+    ],
+    [
+     "Heavy general-purpose delivery trucks",
+     "7-year"
+    ],
+    [
+     "Computers",
+     "5-year"
+    ],
+    [
+     "Perimeter fencing",
+     "15-year"
+    ]
+   ],
+   "options": [
+    "Office furniture, shown as 7-year property",
+    "Heavy general-purpose delivery trucks, shown as 7-year property",
+    "Computers, shown as 5-year property",
+    "Perimeter fencing, shown as 15-year property"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Office furniture is 7-year property, so this entry is correct.",
+    "B": "Heavy general-purpose trucks are 5-year property under MACRS.",
+    "C": "Computers are 5-year property, so this entry is correct.",
+    "D": "Land improvements such as fencing are 15-year property, so this entry is correct."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(e)(3)"
+    },
+    {
+     "src": "Rev. Proc.",
+     "ref": "87-56"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0028",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Review a tax depreciation and amortization schedule for the current year and supporting documentation... to determine completeness and accuracy.",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Review Aldergrove Co.'s 2026 amortization schedule. Aldergrove bought a business on March 1, 2026, and all amounts below were acquired in that purchase except as noted. Which entry must be corrected?",
+   "exhibit": [
+    [
+     "Intangible",
+     "Cost",
+     "Amortization period used"
+    ],
+    [
+     "Goodwill",
+     "$240,000",
+     "180 months"
+    ],
+    [
+     "Trademark",
+     "$60,000",
+     "180 months"
+    ],
+    [
+     "Covenant not to compete (3-year term)",
+     "$45,000",
+     "36 months"
+    ],
+    [
+     "Off-the-shelf software (bought separately)",
+     "$12,000",
+     "36 months"
+    ]
+   ],
+   "options": [
+    "The covenant not to compete, which should be amortized over 180 months rather than 36",
+    "Goodwill, which should be amortized over 20 years rather than 180 months",
+    "Off-the-shelf software, which should be amortized over 180 months",
+    "The trademark, which should be amortized over its 10-year registration term"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "A covenant entered into in connection with an acquisition is a section 197 intangible, amortized over 15 years no matter how short its term is.",
+    "B": "Goodwill acquired with a business is amortized over 15 years, so the schedule is correct.",
+    "C": "Off-the-shelf software is not a section 197 intangible; 36 months is correct.",
+    "D": "A trademark acquired with a business is amortized over 15 years, regardless of its registration term."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§197(a), (d)(1)(E)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§167(f)(1)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 535"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0029",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Review a tax depreciation and amortization schedule for the current year and supporting documentation... to determine completeness and accuracy.",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Review Juniper Partners' 2026 return worksheet. The partnership began business on July 1, 2026, after incurring $62,000 of start-up costs, and made the start-up cost election. The worksheet deducts $5,000 immediately and amortizes the remaining $57,000 over 180 months. What is the correct 2026 start-up cost deduction? Round to the nearest dollar.",
+   "exhibit": [
+    [
+     "Worksheet line",
+     "Amount"
+    ],
+    [
+     "Total start-up costs",
+     "$62,000"
+    ],
+    [
+     "Immediate deduction",
+     "$5,000"
+    ],
+    [
+     "Amortizable balance",
+     "$57,000"
+    ],
+    [
+     "Amortization (57,000 x 6/180)",
+     "$1,900"
+    ],
+    [
+     "Total 2026 deduction",
+     "$6,900"
+    ]
+   ],
+   "options": [
+    "$2,067",
+    "$5,000",
+    "$6,900",
+    "$62,000"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Costs exceed $50,000 by $12,000, which eliminates the $5,000 immediate deduction ($5,000 - $12,000 is below zero). All $62,000 is amortized over 180 months for 6 months: $62,000 x 6/180 = $2,067.",
+    "B": "Takes only the $5,000 immediate deduction. All of it is eliminated when costs exceed $55,000.",
+    "C": "This is the worksheet's result. It does not reduce the $5,000 for costs above $50,000.",
+    "D": "Deducts all start-up costs immediately, which is not allowed."
+   },
+   "steps": [
+    "Excess over 50,000 = 12,000",
+    "Immediate deduction = max(0, 5,000 - 12,000) = 0",
+    "Amortize 62,000 x 6 / 180 = 2,067"
+   ],
+   "calc_check": {
+    "expr": "org_startup(62000,6)",
+    "value": 2067,
+    "distractors": {
+     "B": {
+      "expr": "5000",
+      "value": 5000
+     },
+     "C": {
+      "expr": "5000+(62000-5000)*6/180",
+      "value": 6900
+     },
+     "D": {
+      "expr": "62000",
+      "value": 62000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§195(b)(1)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.195-1"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 535"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0030",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Review and resolve discrepancies identified by automated diagnostic and validation checks...",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Review the automated validation report for Delmar Co.'s 2026 depreciation schedule. The support on file for each flag is summarized in the exhibit. Which flagged item requires a correction to the schedule?",
+   "exhibit": [
+    [
+     "Flag",
+     "Item",
+     "Support on file"
+    ],
+    [
+     "1",
+     "Machine basis $91,000 exceeds vendor invoice $85,000",
+     "Freight $2,500 and installation $3,500 paid to third parties"
+    ],
+    [
+     "2",
+     "Equipment first depreciated in 2026; invoice dated Dec 28, 2025",
+     "Delivered and installed Jan 6, 2026"
+    ],
+    [
+     "3",
+     "5-year equipment shows no 2026 depreciation",
+     "Placed in service 2020; half-year convention"
+    ],
+    [
+     "4",
+     "Office building basis $1,250,000 equals purchase price",
+     "Closing statement allocates $200,000 to land"
+    ]
+   ],
+   "options": [
+    "Machine basis above the vendor invoice",
+    "Equipment showing 2026 as its first depreciation year despite a December 2025 invoice",
+    "Equipment with no 2026 depreciation deduction",
+    "Office building basis that equals the full purchase price"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Freight and installation ($6,000) on file explain the $6,000 difference, and both are capitalized, so no correction is needed.",
+    "B": "It was delivered and installed in January 2026, and the placed-in-service date controls, so no correction is needed.",
+    "C": "The 5-year equipment was placed in service in 2020 and was fully depreciated by 2025, so no correction is needed.",
+    "D": "The closing statement allocates $200,000 to land, which is not depreciable. Depreciable basis should be $1,050,000, not $1,250,000."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(a)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.167(a)-2"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "unchanged",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  },
+  {
+   "id": "REG-III-B-0031",
+   "type": "mcq",
+   "area": "III",
+   "group": "B",
+   "topic": "Cost recovery (depreciation and amortization)",
+   "task": "Review and resolve discrepancies identified by automated diagnostic and validation checks...",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Review Tilden Corp.'s 2026 section 179 worksheet in the exhibit. Tilden's taxable income from its active trade or business is shown on line 8. The worksheet claims the amount on line 7 as the deduction. What is the correct section 179 deduction, and what is carried forward?",
+   "exhibit": [
+    [
+     "Line",
+     "Description",
+     "Amount"
+    ],
+    [
+     "1",
+     "Dollar limit",
+     "$2,560,000"
+    ],
+    [
+     "2",
+     "Cost of section 179 property placed in service",
+     "$3,600,000"
+    ],
+    [
+     "3",
+     "Phase-out threshold",
+     "$4,090,000"
+    ],
+    [
+     "4",
+     "Reduction (line 2 minus line 3, not below zero)",
+     "$0"
+    ],
+    [
+     "5",
+     "Dollar limit after reduction",
+     "$2,560,000"
+    ],
+    [
+     "6",
+     "Cost elected (lesser of line 2 or line 5)",
+     "$2,560,000"
+    ],
+    [
+     "7",
+     "Deduction claimed",
+     "$2,560,000"
+    ],
+    [
+     "8",
+     "Taxable income from active trade or business",
+     "$2,100,000"
+    ]
+   ],
+   "options": [
+    "A $2,100,000 deduction, with $460,000 carried forward",
+    "A $2,560,000 deduction, with nothing carried forward",
+    "A $2,100,000 deduction, with nothing carried forward",
+    "A $2,560,000 deduction, with $1,040,000 carried forward"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "The deduction is limited to business taxable income of $2,100,000. The elected amount above the limit ($2,560,000 - $2,100,000 = $460,000) is carried forward.",
+    "B": "This is what the worksheet claims, ignoring the taxable income limit on line 8.",
+    "C": "Applies the income limit but loses the disallowed amount. The excess carries forward.",
+    "D": "Ignores the income limit and treats the cost above the dollar limit as the carryforward. That amount is simply depreciated under MACRS."
+   },
+   "steps": [
+    "Elected cost = 2,560,000",
+    "Taxable income limit = 2,100,000",
+    "Deduction = 2,100,000",
+    "Carryforward = 2,560,000 - 2,100,000 = 460,000"
+   ],
+   "calc_check": {
+    "expr": "2560000-2100000",
+    "value": 460000
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§179(b)(3)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.179-3"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA raised the section 179 limit and phase-out threshold for tax years beginning after 2024 (indexed thereafter); testable from 2026-07-01. The stem supplies the dollar amounts.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area3_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "aa1c022",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1
+  }
+ ]
+}

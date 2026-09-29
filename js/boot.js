@@ -10,9 +10,20 @@
   var P = {};
   try { P = JSON.parse(localStorage.getItem("te.pref.v1") || "{}"); } catch (e) {}
   var R = window.READY || {};
+  /* Keep the saved subject list in step with the catalog (subjects were renamed when REG moved to Blueprint Areas),
+     so a returning learner never lands on a subject that no longer exists and start.html never has to reload itself. */
+  var CT = window.CATALOG;
+  if (CT && P.exam && CT.exam(P.exam)) {
+    var want0 = CT.subsOf(P.exam, P.series);
+    if (want0.length && (P.subs || []).join() !== want0.join()) {
+      P.subs = want0;
+      try { localStorage.setItem("te.pref.v1", JSON.stringify(P)); } catch (e) {}
+    }
+  }
   var want = new URLSearchParams(location.search).get("s");
   var cur = want && R[want] ? want : P.cur;
-  if (!R[cur]) cur = (P.subs || []).filter(function (s) { return R[s]; })[0] || Object.keys(R)[0];
+  var mine = (P.subs || []).filter(function (s) { return R[s]; });
+  if (!R[cur] || (P.subs && P.subs.length && P.subs.indexOf(cur) < 0 && !(want && R[want]))) cur = mine[0] || Object.keys(R)[0];
   if (want && R[want] && P.cur !== want) {
     P.cur = want;
     try { localStorage.setItem("te.pref.v1", JSON.stringify(P)); } catch (e) {}

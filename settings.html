@@ -38,6 +38,8 @@
     <div class="f"><label>Test date <span class="chip" id="gm"></span></label><input type="date" id="goal"></div>
     <div class="f"><label>Minutes per day</label><div class="seg" id="min"></div></div>
     <div class="f"><label>What should we call you?</label><input type="text" id="nm" maxlength="12" placeholder="Nickname"></div>
+    <div class="f"><label>Confidence step before each answer</label><div class="seg" id="conf"></div></div>
+    <div class="f"><label>Question bank</label><p class="muted" id="bank" style="margin:0;font-size:15px"></p></div>
   </div></details>
 
   <details><summary>Display</summary><div class="in">
@@ -82,6 +84,8 @@
   seg($("min"), [10, 15, 20, 30].map(function (m) { return { v: m, n: m + " min" }; }), GB.minutes(), function (v) { GB.setMinutes(+v); });
   $("nm").value = GB.name();
   $("nm").onchange = function () { GB.setName(this.value); };
+  seg($("conf"), [{ v: "1", n: "Show" }, { v: "0", n: "Hide" }], GB.confOn() ? "1" : "0", function (v) { GB.setConf(v === "1"); });
+  $("bank").textContent = "Terra Prep original questions aligned to the 2026 AICPA Blueprint." + (GB.T.law_asof ? " Law as of " + GB.T.law_asof + "." : "");
   seg($("tier"), [{ v: "1", n: "Show" }, { v: "0", n: "Hide" }], GB.tierOn() ? "1" : "0", function (v) { GB.setTierOn(v === "1"); });
   seg($("skin"), GB.SKINS.map(function (s) { return { v: s.v, n: s.n, c: s.c }; }), GB.skin(), function (v) { GB.setSkin(v); });
 

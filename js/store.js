@@ -25,7 +25,7 @@
   function write(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 
   var S = read(KEY, null) || {};
-  S.ans = S.ans || {}; S.days = S.days || {}; S.pairs = S.pairs || {};
+  S.ans = S.ans || {}; S.days = S.days || {}; S.pairs = S.pairs || {}; S.flags = S.flags || {};
   var P = read(PREF, null) || {};
   function save() { S.at = Date.now(); write(KEY, S); }
   function savePref() { write(PREF, P); }
@@ -93,20 +93,43 @@
      A confident correct answer moves up one box; a half-sure/guessed
      correct answer stays at box 1; any miss resets to box 0 (seen again today). */
   var GAP = [0, 1, 3, 7, 14, 30];
-  function answer(id, ok, x) {
+  function applyAnswer(St, id, ok, x) {
     x = x || {};
-    var a = S.ans[id] || { n: 0, box: 0 };
+    var a = St.ans[id] || { n: 0, box: 0 };
     a.n = (a.n || 0) + 1;
     a.ok = !!ok; a.at = Date.now(); a.conf = x.conf || null; a.ms = x.ms || 0;
+    if (x.pick != null) a.pick = x.pick;
     if (ok) a.box = x.conf === "sure" ? Math.min(5, (a.box || 0) + 1) : Math.max(1, Math.min(a.box || 0, 1));
     else a.box = 0;
     a.due = TODAYN + GAP[a.box];
     if (x.kind) a.kind = x.kind;
-    S.ans[id] = a;
-    var d = S.days[TODAY] || (S.days[TODAY] = { n: 0, ok: 0, ms: 0 });
+    St.ans[id] = a;
+    St.days = St.days || {};
+    var d = St.days[TODAY] || (St.days[TODAY] = { n: 0, ok: 0, ms: 0 });
     d.n++; if (ok) d.ok++; d.ms += Math.min(x.ms || 0, 60000);
-    save();
     return a;
+  }
+  function answer(id, ok, x) { var a = applyAnswer(S, id, ok, x); save(); return a; }
+  /* Write to another subject's saved history (the mock exam and placement check span every Area) */
+  function curKey() { return T.key || T.subject; }
+  function stateOf(key) {
+    if (!key || key === curKey()) return S;
+    var o = read("te." + key + ".v1", null) || {};
+    o.ans = o.ans || {}; o.days = o.days || {}; o.pairs = o.pairs || {}; o.flags = o.flags || {};
+    return o;
+  }
+  function commit(key, St) { if (St === S) { save(); return; } St.at = Date.now(); write("te." + key + ".v1", St); }
+  function answerIn(key, id, ok, x) { var St = stateOf(key), a = applyAnswer(St, id, ok, x); commit(key, St); return a; }
+  /* flag — the learner's own mark on a question */
+  function flagged(id, key) { var St = stateOf(key); return !!(St.flags && St.flags[id]); }
+  function setFlag(id, on, key) {
+    var St = stateOf(key);
+    St.flags = St.flags || {};
+    if (on) St.flags[id] = Date.now(); else delete St.flags[id];
+    commit(key || curKey(), St);
+  }
+  function flagList() {
+    return Object.keys(S.flags || {}).filter(function (id) { return ITEM[id]; }).sort(function (a, b) { return S.flags[b] - S.flags[a]; });
   }
   function pairAnswer(pid, ok) {
     S.pairs[pid] = { ok: !!ok, at: Date.now() };
@@ -115,7 +138,7 @@
     save();
   }
   function answered(id) { return S.ans[id] || null; }
-  function reset() { S = { ans: {}, days: {}, pairs: {} }; save(); }
+  function reset() { S = { ans: {}, days: {}, pairs: {}, flags: {} }; save(); }
 
   /* ── mastery — same formula as the sister apps: 55 for how much you've done + 45 for how well ── */
   function nodeStat(no) {
@@ -129,9 +152,23 @@
     var prog = n ? Math.round(solved / n * 100) : 0;
     /* ★ the accuracy weight is damped until 10 sentences are solved — otherwise one correct answer alone reads as 46% mastery */
     var achieve = n ? Math.round(prog * 0.55 + (pct === null ? 0 : pct) * 0.45 * Math.min(1, solved / 10)) : 0;
-    return { no: no, n: n, solved: solved, correct: correct, pct: pct, prog: prog, achieve: achieve, lastAt: last,
+    var rec = list.filter(function (q) { return S.ans[q.i]; }).sort(function (a, b) { return S.ans[b.i].at - S.ans[a.i].at; }).slice(0, 20);
+    var acc = rec.length ? Math.round(rec.filter(function (q) { return S.ans[q.i].ok; }).length / rec.length * 100) : null;
+    return { no: no, n: n, solved: solved, correct: correct, pct: pct, acc: acc, prog: prog, achieve: achieve, lastAt: last,
              mastery: solved ? correct / solved : null,
              state: !n ? "empty" : achieve >= 80 ? "done" : solved ? "wip" : "none" };
+  }
+  /* accuracy by skill level across this subject's answered questions */
+  function skillStats() {
+    var out = {};
+    Object.keys(QB).forEach(function (no) {
+      QB[no].forEach(function (q) {
+        var a = S.ans[q.i]; if (!a || !q.mc || !q.mc.tags) return;
+        var k = q.mc.tags.skill, o = out[k] || (out[k] = { n: 0, ok: 0 });
+        o.n++; if (a.ok) o.ok++;
+      });
+    });
+    return out;
   }
   function agg(nos) {
     var n = 0, solved = 0, correct = 0, ach = 0, cnt = 0, last = null, vol = 0;
@@ -169,19 +206,21 @@
     if (q.c === "A") s += 1;
     return s;
   }
+  /* True/False sentences are not part of the REG bank any more (concept checks only) — REG sessions are multiple choice */
+  function usable(q) { return !(q.ox && /^reg_/.test(T.key || "")); }
   function freshOf(no, k) {
-    return qs(no).filter(function (q) { return !S.ans[q.i]; })
+    return qs(no).filter(function (q) { return usable(q) && !S.ans[q.i]; })
       .sort(function (a, b) { return rank(b) - rank(a); }).slice(0, k);
   }
   /* today's review — items whose due date has arrived. Misses (box 0) come first */
   function dueList() {
     return Object.keys(S.ans).filter(function (id) {
-      var a = S.ans[id]; return ITEM[id] && a.due != null && a.due <= TODAYN && !(a.at && ymd(new Date(a.at)) === TODAY && a.ok);
+      var a = S.ans[id]; return ITEM[id] && usable(ITEM[id]) && a.due != null && a.due <= TODAYN && !(a.at && ymd(new Date(a.at)) === TODAY && a.ok);
     }).sort(function (a, b) { return (S.ans[a].box - S.ans[b].box) || (S.ans[a].at - S.ans[b].at); });
   }
   function wrongList() {
     return Object.keys(S.ans).filter(function (id) { return ITEM[id] && !S.ans[id].ok; })
-      .sort(function (a, b) { return S.ans[b].at - S.ans[a].at; });
+      .sort(function (a, b) { return ((ITEM[b].mc ? 1 : 0) - (ITEM[a].mc ? 1 : 0)) || (S.ans[b].at - S.ans[a].at); });
   }
 
   /* today's focus topics — lots of past questions (q), still not mastered. Weak areas from the placement test get extra weight */
@@ -276,47 +315,81 @@
   function days() { return S.days; }
   function todayCount() { return (S.days[TODAY] || { n: 0 }).n; }
 
-  /* ── 20-question placement test ──
-     One question from each of 20 topics — favoring topics with more past
-     questions, spread evenly across areas. Only sentences short enough to
-     read in the time allowed (≤90 characters). Mixed by date so the same
-     set doesn't repeat every day. */
-  function placementSet(k) {
-    k = k || 20;
-    var byPart = {};
-    T.nodes.filter(function (n) { return n.q >= 8; }).sort(function (a, b) { return b.q - a.q; })
-      .forEach(function (n) { (byPart[n.part] = byPart[n.part] || []).push(n); });
-    var picks = [], parts = Object.keys(byPart), r = 0;
-    while (picks.length < k && r < 40) {
-      parts.forEach(function (p) { if (picks.length < k && byPart[p][r]) picks.push(byPart[p][r]); });
-      r++;
+  /* ── multi-subject helpers ──
+     Each data file defines window.TREE / QBANK; the current subject is already loaded. To draw questions from
+     every ready Area (placement check, mock exam) the other files are loaded one by one and snapshotted. */
+  var POOL = null;
+  function loadPool(cb) {
+    if (POOL) return cb(POOL);
+    var R = window.READY || {}, keys = Object.keys(R).filter(function (k) { return /^reg_/.test(k) && (!window.CATALOG || CATALOG.subsOf(P.exam, P.series).indexOf(k) >= 0); });
+    if (!keys.length) keys = [curKey()];
+    var out = [], saved = { T: window.TREE, Q: window.QBANK, P: window.PAIRS }, i = 0;
+    function done() { window.TREE = saved.T; window.QBANK = saved.Q; window.PAIRS = saved.P; POOL = out; cb(out); }
+    function next() {
+      if (i >= keys.length) return done();
+      var k = keys[i++];
+      if (k === curKey()) { out.push({ key: k, tree: T, qbank: QB }); return next(); }
+      var el = document.createElement("script");
+      el.src = "data/" + k + ".js?v=" + ((R[k] && R[k].v) || "");
+      el.onload = function () { out.push({ key: k, tree: window.TREE, qbank: window.QBANK }); next(); };
+      el.onerror = function () { next(); };
+      document.head.appendChild(el);
     }
-    var seed = TODAYN;
-    /* ★ balance True and False — the pool skews True, so a naive pick lets learners ace it by answering "True" every time */
-    return picks.map(function (n, i) {
-      var want = i % 2 ? "X" : "O";
-      var c = qs(n.no).filter(function (q) { return q.c === "A" && !q.sa && !q.mc && q.t.length <= 90 && q.t.length >= 25; });
-      if (!c.length) c = qs(n.no).filter(function (q) { return !q.mc; });
-      if (!c.length) return null;            /* subjects that are nothing but past-question solving skip the placement test */
-      var w = c.filter(function (q) { return q.ox === want; });
-      if (w.length) c = w;
-      return c[(seed + n.no * 7) % c.length];
-    }).filter(Boolean);
+    next();
   }
+  function poolItems(pool) {
+    var all = [];
+    pool.forEach(function (p) {
+      Object.keys(p.qbank).forEach(function (no) {
+        var node = p.tree.nodes.filter(function (n) { return n.no === +no; })[0];
+        p.qbank[no].forEach(function (q) { if (q.mc) all.push({ key: p.key, area: p.tree.area || "", no: +no, q: q, node: node, subject: p.tree.subject }); });
+      });
+    });
+    return all;
+  }
+  function seededShuffle(a, seed) {
+    var s2 = seed || 1;
+    for (var i = a.length - 1; i > 0; i--) { s2 = (s2 * 9301 + 49297) % 233280; var j = Math.floor(s2 / 233280 * (i + 1)); var x = a[i]; a[i] = a[j]; a[j] = x; }
+    return a;
+  }
+  /* Blueprint-weighted draw: n questions spread over the ready Areas by weight (largest remainder),
+     mixing skill levels inside an Area. The same seed gives the same set. */
+  var AREA_W = { I: 15, II: 20, III: 10, IV: 27, V: 28 };
+  function weightedSet(pool, n, seed, only) {
+    var all = poolItems(pool).filter(function (x) { return !only || only(x); }), byA = {};
+    all.forEach(function (x) { (byA[x.area] = byA[x.area] || []).push(x); });
+    var areas = Object.keys(byA), tot = areas.reduce(function (t, k) { return t + (AREA_W[k] || 10); }, 0), alloc = {}, used = 0;
+    areas.forEach(function (k) { var e = n * (AREA_W[k] || 10) / tot; alloc[k] = { c: Math.floor(e), r: e - Math.floor(e) }; used += alloc[k].c; });
+    areas.slice().sort(function (a, b) { return alloc[b].r - alloc[a].r; }).forEach(function (k) { if (used < n) { alloc[k].c++; used++; } });
+    var pick = [];
+    areas.forEach(function (k) {
+      var l = seededShuffle(byA[k].slice(), seed + k.charCodeAt(k.length - 1) * 31 + k.length);
+      var by = {}; l.forEach(function (x) { var sk = x.q.mc.tags ? x.q.mc.tags.skill : "-"; (by[sk] = by[sk] || []).push(x); });
+      var ks = Object.keys(by), got = [], r = 0;
+      while (got.length < Math.min(alloc[k].c, l.length) && r < 1000) { ks.forEach(function (sk) { if (got.length < alloc[k].c && by[sk][r]) got.push(by[sk][r]); }); r++; }
+      pick = pick.concat(got);
+    });
+    return seededShuffle(pick, seed + 7);
+  }
+  /* ── placement check ──
+     A short check across every ready Area: 4-choice questions without exhibit tables, mixed by date. */
+  function placementSet(pool, k) {
+    return weightedSet(pool, k || 20, TODAYN, function (x) { return x.q.mc.o.length === 4 && !x.q.mc.tb && x.q.mc.s.length <= 420; });
+  }
+  function mockSet(pool, n, seed) { return weightedSet(pool, n, seed || (Date.now() % 100000)); }
   function setPlacement(rec) {
-    /* rec = [{id, ok, ms, to}] */
+    /* rec = [{id, key, area, ok, ms, to}] — kept in the shared preferences (it spans every Area) */
     var per = {};
     rec.forEach(function (r) {
-      var q = ITEM[r.id]; if (!q) return;
-      var p = NODE[q.n].part;
-      per[p] = per[p] || { n: 0, ok: 0 }; per[p].n++; if (r.ok) per[p].ok++;
+      var o = per[r.area] || (per[r.area] = { n: 0, ok: 0 }); o.n++; if (r.ok) o.ok++;
     });
     var weak = Object.keys(per).sort(function (a, b) { return per[a].ok / per[a].n - per[b].ok / per[b].n; })[0];
-    S.place = { at: Date.now(), n: rec.length, ok: rec.filter(function (r) { return r.ok; }).length,
-                per: per, weakPart: weak ? +weak : null };
-    delete S.today;
-    save();
-    return S.place;
+    P.place = { at: Date.now(), n: rec.length, ok: rec.filter(function (r) { return r.ok; }).length, per: per, weakArea: weak || null };
+    var C2 = window.CATALOG, wk = null;
+    if (C2 && weak) C2.subsOf(P.exam, P.series).forEach(function (k) { if (C2.area(k) === weak && window.READY && window.READY[k]) wk = k; });
+    if (wk) P.cur = wk;                      /* home opens on the weakest Area */
+    savePref();
+    return P.place;
   }
 
   /* ── where two sentences diverge ──
@@ -386,7 +459,15 @@
     return String(t == null ? "" : t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
   function num(n) { return (n || 0).toLocaleString("en-US"); }
-  function src(q) { return (q.y ? q.y + " " : "") + (q.e || "") + (q.qn ? " Q" + q.qn : "") + (q.m ? " " + q.m : ""); }
+  /* chip text: "Area IV · Application" for Terra Prep questions; older sentence data keeps its own source label */
+  function src(q) {
+    var t = q.mc && q.mc.tags;
+    if (t) return "Area " + t.area + " · " + t.skill;
+    return (q.y ? q.y + " " : "") + (q.e || "") + (q.qn ? " Q" + q.qn : "") + (q.m ? " " + q.m : "");
+  }
+  function confOn() { return P.conf != null ? !!P.conf : false; }
+  function setConf(v) { P.conf = !!v; savePref(); }
+  function placement() { return P.place || null; }
 
   function exportData() { return JSON.stringify({ v: 1, pref: P, rec: S }); }
   function importData(txt) {
@@ -407,7 +488,9 @@
     answer: answer, pairAnswer: pairAnswer, answered: answered, reset: reset,
     dueList: dueList, wrongList: wrongList, focusNodes: focusNodes, freshOf: freshOf,
     today: today, markToday: markToday, streak: streak, todayCount: todayCount, tier: tier, tierOn: tierOn, setTierOn: setTierOn, days: days, SEC_PER: SEC_PER,
-    placementSet: placementSet, setPlacement: setPlacement, placement: function () { return S.place || null; },
+    placementSet: placementSet, setPlacement: setPlacement, placement: placement,
+    loadPool: loadPool, mockSet: mockSet, poolItems: poolItems, answerIn: answerIn, stateOf: stateOf,
+    flagged: flagged, setFlag: setFlag, flagList: flagList, skillStats: skillStats, confOn: confOn, setConf: setConf,
     track: track, setTrack: setTrack, exam: exam, setExam: setExam, subs: subs, cur: cur, setCur: setCur, seriesName: seriesName, goal: goal, goalMark: goalMark, setGoal: setGoal, dday: dday,
     minutes: minutes, setMinutes: setMinutes, name: name, setName: setName,
     onboarded: onboarded, setOnboarded: setOnboarded,

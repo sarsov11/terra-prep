@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>True/False — {{BRAND}}</title>
+<title>Practice — {{BRAND}}</title>
 <link rel="icon" href="icons/favicon.svg">
 <link rel="manifest" href="manifest.webmanifest">
 <script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
@@ -23,7 +23,7 @@
 </head>
 <body class="focus">
 <div class="page">
-  <div class="hd"><h1 id="ttl">True/False</h1><span class="cnt num" id="cnt"></span><a class="x" href="index.html" title="Quit">✕</a></div>
+  <div class="hd"><h1 id="ttl">Practice</h1><span class="cnt num" id="cnt"></span><a class="x" href="index.html" title="Quit">✕</a></div>
   <div class="stones" id="prog"></div>
   <div id="stage"></div>
 </div>
@@ -55,12 +55,22 @@
   } else if (mode === "node") {
     var nd = GB.node(nodeNo);
     var wrong = GB.qs(nodeNo).filter(function (q) { var a = GB.answered(q.i); return a && !a.ok; });
-    seq = wrong.concat(GB.freshOf(nodeNo, 10)).slice(0, 10).map(function (q) { return { k: "ox", id: q.i }; });
+    var want = +(qsp.get("n") || 10); if ([10, 20, 30].indexOf(want) < 0) want = 10;
+    var pool = wrong.concat(GB.freshOf(nodeNo, want));
+    if (pool.length < want) {      /* everything seen — top up with the rest of the unit so a set is always full */
+      var have = {}; pool.forEach(function (q) { have[q.i] = 1; });
+      pool = pool.concat(shuffle(GB.qs(nodeNo).filter(function (q) { return !have[q.i]; }), TODAYN_SEED()));
+    }
+    seq = pool.slice(0, want).map(function (q) { return { k: "ox", id: q.i }; });
     GB.pairs(nodeNo).slice(0, 2).forEach(function (p, i) { seq.splice(3 + i * 4, 0, { k: "pair", id: p.id }); });
-    $("ttl").textContent = nd ? nd.name : "True/False";
+    $("ttl").textContent = nd ? nd.name : "Practice";
   } else if (mode === "wrong") {
-    seq = GB.wrongList().slice(0, 15).map(function (id) { return { k: "ox", id: id }; });
-    $("ttl").textContent = "Retry missed sentences";
+    var wl = GB.wrongList();
+    seq = wl.slice(0, 15).map(function (id) { return { k: "ox", id: id, retry: 1 }; });
+    $("ttl").textContent = wl.length && GB.item(wl[0]).mc && GB.item(wl[0]).mc.tags ? "Retry missed MCQs" : "Retry missed sentences";
+  } else if (mode === "flag") {
+    seq = GB.flagList().slice(0, 30).map(function (id) { return { k: "ox", id: id, retry: 1 }; });
+    $("ttl").textContent = "Flagged questions";
   } else if (mode === "pair") {
     var pl = (nodeNo ? GB.pairs(nodeNo) : GB.pairs()).filter(function (p) { return !GB.state().pairs[p.id] || !GB.state().pairs[p.id].ok; });
     shuffle(pl, 17);
@@ -79,6 +89,7 @@
     $("ttl").textContent = "60-second sprint";
   }
 
+  function TODAYN_SEED() { return Math.round(Date.now() / 86400000); }
   function shuffle(a, seed) {
     var s = seed || 1;
     for (var i = a.length - 1; i > 0; i--) { s = (s * 9301 + 49297) % 233280; var j = Math.floor(s / 233280 * (i + 1)); var x = a[i]; a[i] = a[j]; a[j] = x; }
@@ -193,7 +204,7 @@
                '<p><b style="color:var(--no)">False</b> ' + d[1] + "</p></div>";
         } else if (!mc && q.ox === "X") {
           var o = nearestO(q);
-          if (o) expl += '<div class="pair"><div class="lab">A true past sentence on the same topic — ' + esc(GB.src(o)) + "</div><p>" + GB.markDiff(o.t, q.t)[0] + "</p></div>";
+          if (o) expl += '<div class="pair"><div class="lab">A true sentence on the same topic — ' + esc(GB.src(o)) + "</div><p>" + GB.markDiff(o.t, q.t)[0] + "</p></div>";
         }
         if (expl) h += '<div class="expl" id="expl"><button type="button">Show explanation</button><div class="body">' + expl + "</div></div>";
         if (extra) h += '<p class="more">Added one more on ' + esc(GB.node(q.n).name) + " right after this one.</p>";
@@ -211,6 +222,112 @@
     });
   }
 
+  /* ── one multiple-choice question: explanations for every choice, basis, flag ── */
+  function tableHTML(tb) {
+    return '<div class="tbwrap"><table class="exh">' + tb.map(function (r, i) {
+      return "<tr>" + r.map(function (c) { return (i ? "<td>" : "<th>") + esc(c) + (i ? "</td>" : "</th>"); }).join("") + "</tr>";
+    }).join("") + "</table></div>";
+  }
+  function exItem(q, i, cls, tag) {
+    var mc = q.mc;
+    return '<div class="exi ' + cls + '"><div class="exh2"><b>' + LETTERS[i] + "</b>" + (tag ? '<span class="tg">' + tag + "</span>" : "") +
+      '<span class="ot">' + esc(mc.o[i]) + "</span></div><p>" + esc(mc.ex[i]) + "</p></div>";
+  }
+  function explainHTML(q, pick, ok, prevPick) {
+    var mc = q.mc, a = mc.a - 1, h = "";
+    if (!mc.ex) return "";
+    var same = !ok && prevPick != null && prevPick === pick && prevPick !== a;
+    h += '<div class="exs">';
+    if (same) h += '<p class="samepick">You chose this same choice last time. Read why it does not work first.</p>';
+    if (same) h += exItem(q, pick, "no", "Your answer");
+    h += exItem(q, a, "ok", "Correct answer");
+    if (!ok && !same) h += exItem(q, pick, "no", "Your answer");
+    var others = [0, 1, 2, 3, 4].filter(function (i) { return i < mc.o.length && i !== a && i !== pick; });
+    if (others.length) h += '<details class="exo"><summary>Other choices</summary>' + others.map(function (i) { return exItem(q, i, "other", ""); }).join("") + "</details>";
+    if (mc.steps && mc.steps.length) h += '<div class="steps"><b>Solution</b><ol>' + mc.steps.map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ol></div>";
+    if (mc.cite) h += '<p class="basis"><b>Basis</b> ' + esc(mc.cite) + "</p>";
+    if (mc.asof) h += '<p class="asof">Law as of ' + esc(mc.asof) + "</p>";
+    return h + "</div>";
+  }
+  function showMC(s) {
+    var q = GB.item(s.id);
+    if (!q || !q.mc) { next(); return; }
+    var mc = q.mc, tg = mc.tags, ask = GB.confOn() || !tg, conf = null, t0 = Date.now(), done = false;
+    var prev = GB.answered(q.i), prevPick = prev && prev.pick != null ? prev.pick : null;
+    var fl = GB.flagged(q.i);
+    $("stage").innerHTML =
+      '<div class="qcard"><div class="src">' + nodeChip(q.n) + '<span class="chip">' + esc(GB.src(q)) + "</span>" +
+        (tg ? '<span class="chip">Level ' + tg.diff + "</span>" : "") +
+        (s.re ? '<span class="chip cta">Review</span>' : "") +
+        (tg ? '<button type="button" class="flagbtn" id="flg" aria-pressed="' + fl + '">' + (fl ? "Flagged" : "Flag") + "</button>" : "") + "</div>" +
+        '<p class="sent" id="sent">' + esc(mc.s) + "</p>" +
+        (mc.d ? '<div class="case mcdata" style="margin:12px 0 0">' + esc(mc.d) + "</div>" : "") +
+        (mc.tb ? tableHTML(mc.tb) : "") + "</div>" +
+      (ask ? '<div class="step"><h3>How confident are you?</h3><div class="conf" id="conf">' +
+        [{ v: "sure", name: "Certain" }, { v: "half", name: "Not sure" }].map(function (c) { return '<button type="button" data-v="' + c.v + '" aria-pressed="false">' + c.name + "</button>"; }).join("") + "</div></div>" : "") +
+      '<div class="mcb' + (ask ? " lock" : "") + '" id="oxb">' + mc.o.map(function (o, i) {
+        return '<button type="button" data-a="' + (i + 1) + '"><b>' + LETTERS[i] + "</b><span>" + esc(o) + "</span></button>"; }).join("") + "</div>" +
+      '<p class="hint" id="hint">' + (ask ? "Choose your confidence first" : "") + "</p>" +
+      '<div id="after"></div>';
+    if ($("flg")) $("flg").onclick = function () {
+      var on = !GB.flagged(q.i); GB.setFlag(q.i, on);
+      this.setAttribute("aria-pressed", String(on)); this.textContent = on ? "Flagged" : "Flag";
+    };
+    if (ask) {
+      var cb = $("conf").querySelectorAll("button");
+      cb.forEach(function (b) {
+        b.onclick = function () {
+          if (done) return;
+          conf = b.dataset.v;
+          cb.forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+          $("oxb").classList.remove("lock"); $("hint").textContent = "";
+        };
+      });
+    }
+    $("oxb").querySelectorAll("button").forEach(function (b) {
+      b.onclick = function () {
+        if (done || (ask && !conf)) return;
+        done = true;
+        var pick = +b.dataset.a - 1, ok = pick + 1 === mc.a, ms = Date.now() - t0;
+        $("oxb").querySelectorAll("button").forEach(function (x) {
+          x.disabled = true;
+          if (+x.dataset.a === mc.a) x.dataset.s = "ok"; else if (x === b) x.dataset.s = "no";
+        });
+        var st = GB.nodeStat(q.n);
+        var j = JUDGE.judge({ ok: ok, conf: conf, ms: ms, attempt: prev ? prev.n + 1 : 1, mastery: st.mastery,
+                             streak: streakBy[q.n] || 0, qid: q.i, leafName: GB.node(q.n).name });
+        streakBy[q.n] = ok ? 0 : (streakBy[q.n] || 0) + 1;
+        GB.answer(q.i, ok, { conf: conf, ms: ms, kind: j.kind, pick: pick });
+        results[pos] = { ok: ok, kind: j.kind, id: q.i, pick: pick };
+        document.querySelector(".qcard").classList.add(ok ? "glow-ok" : "glow-no");
+        if (mode === "today") GB.markToday(todayIdx[pos]);
+        drawProg();
+        var extra = null;
+        if ((mode === "today" || mode === "node") && (!ok || j.next === "same" || j.next === "similar")) {
+          var more = GB.freshOf(q.n, 3).filter(function (x) { return !seq.some(function (y) { return y.id === x.i; }); })[0];
+          if (more) { extra = more; seq.splice(pos + 1, 0, { k: "ox", id: more.i, add: 1 }); if (mode === "today") todayIdx.splice(pos + 1, 0, -1); drawProg(); }
+        }
+        var h = '<div class="verdict ' + j.tone + '"><div class="top"><span class="mk">' + (ok ? "✓" : "✕") + "</span>" +
+          (ok ? '<span class="reward">+1</span>' : "") + '<span class="chip">' + esc(j.label || { "retryRight": "Correct on retry", "streakWrong": "Missed repeatedly" }[j.kind] || j.kind) + "</span></div>" +
+          '<p class="say">' + esc(j.say) + "</p>" +
+          '<p class="ans">Correct answer: <b>' + LETTERS[mc.a - 1] + "</b>" + (ok ? "" : " · You chose <b>" + LETTERS[pick] + "</b>") + "</p>";
+        if (mc.ex) h += explainHTML(q, pick, ok, prevPick);
+        else if (mc.cite) h += '<p class="ans"><b>' + esc(mc.cite) + "</b> — " + esc(mc.rat) + "</p>";
+        if (extra) h += '<p class="more">Added one more on ' + esc(GB.node(q.n).name) + " right after this one.</p>";
+        h += "</div>";
+        var hasO = GB.qs(q.n).some(function (x) { return x.ox === "O"; });
+        var readBtn = ((j.next === "concept" || j.next === "lecture") && hasO)
+          ? '<button class="btn ghost" id="read">' + JUDGE.nextActions[j.next].t + "</button>" : "";
+        h += '<div class="acts">' + readBtn + '<button class="btn" id="nx">Next</button></div>';
+        $("after").innerHTML = h;
+        $("nx").onclick = next;
+        if ($("read")) $("read").onclick = function () { showRead(q.n, true); };
+        $("nx").focus({ preventScroll: true });
+        $("after").scrollIntoView({ behavior: "smooth", block: "nearest" });
+      };
+    });
+  }
+
   /* ── confusable pair — pick the true sentence of the two ── */
   function showPair(s) {
     var p = GB.pair(s.id);
@@ -219,7 +336,7 @@
     var A = flip ? [p.x, p.o] : [p.o, p.x], done = false;
     $("stage").innerHTML =
       '<div class="qcard"><div class="src">' + nodeChip(p.n) + '<span class="chip cta">Confusable pair</span></div>' +
-      '<p class="sent" style="font-size:17px">Of these two past-question sentences, pick the <b>true</b> one.</p>' +
+      '<p class="sent" style="font-size:17px">Of these two sentences, pick the <b>true</b> one.</p>' +
       '<div class="two" id="two">' + A.map(function (x, i) {
         return '<button type="button" data-i="' + x.i + '"><b>' + "AB"[i] + '</b><span class="tx">' + esc(x.t) + "</span></button>";
       }).join("") + "</div></div><div id=\"after\"></div>";
@@ -252,8 +369,8 @@
     var nd = GB.node(no);
     var os = GB.qs(no).filter(function (q) { return q.ox === "O"; })
       .sort(function (a, b) { return (b.y || 0) - (a.y || 0); }).slice(0, 12);
-    var h = '<div class="readhd"><h2>' + esc(nd.name) + " — true past-question sentences</h2></div>" +
-      '<p class="muted" style="margin:4px 0 0;font-size:14.5px">Only sentences the exam tested as true, newest first.</p>' +
+    var h = '<div class="readhd"><h2>' + esc(nd.name) + " — true sentences</h2></div>" +
+      '<p class="muted" style="margin:4px 0 0;font-size:14.5px">True sentences for this topic.</p>' +
       '<div class="readlist">' + os.map(function (q) { return "<p>" + esc(q.t) + "<small>" + esc(GB.src(q)) + "</small></p>"; }).join("") + "</div>" +
       '<div class="acts">' + (back ? '<button class="btn" id="nx">Keep solving</button>'
                                    : '<a class="btn" href="ox.html?node=' + no + '">Solve this topic’s True/False</a>') + "</div>";
@@ -301,7 +418,8 @@
     drawProg();
     if (pos >= seq.length) return finish();
     var s = seq[pos];
-    if (s.k === "pair") showPair(s); else showOX(s);
+    var qq = s.k === "pair" ? null : GB.item(s.id);
+    if (s.k === "pair") showPair(s); else if (qq && qq.mc) showMC(s); else showOX(s);
     window.scrollTo(0, 0);
   }
 
@@ -311,13 +429,28 @@
     var tomorrow = GB.dueList().length;
     $("prog").innerHTML = ""; $("cnt").textContent = "";
     var todayDone = mode === "today";
+    var mcRes = results.filter(function (r) { return r && GB.item(r.id) && GB.item(r.id).mc && GB.item(r.id).mc.tags; });
+    var brk = "";
+    if (mcRes.length) {
+      var byN = {}, byS = {};
+      mcRes.forEach(function (r) {
+        var q = GB.item(r.id), nn = GB.node(q.n).name, sk = q.mc.tags.skill;
+        (byN[nn] = byN[nn] || { n: 0, ok: 0 }).n++; (byS[sk] = byS[sk] || { n: 0, ok: 0 }).n++;
+        if (r.ok) { byN[nn].ok++; byS[sk].ok++; }
+      });
+      function rows(o) { return Object.keys(o).map(function (k) { return "<li><span>" + esc(k) + '</span><b class="num">' + o[k].ok + " / " + o[k].n + " · " + Math.round(o[k].ok / o[k].n * 100) + "%</b></li>"; }).join(""); }
+      brk = '<div class="brk"><h3>By unit</h3><ul>' + rows(byN) + "</ul><h3>By skill</h3><ul>" + rows(byS) + "</ul></div>";
+    }
+    var missedNow = results.filter(function (r) { return r && !r.ok; }).length;
     $("stage").innerHTML = '<div class="done">' +
       (n ? '<div class="big num">' + ok + " / " + n + "</div>" : '<div class="big">Done</div>') +
       '<p class="muted">' + (todayDone ? "You’ve finished today’s work." : "You’ve finished this set.") + "</p>" +
-      '<div class="grid3"><div><b class="num">' + ok + "</b><span>Correct</span></div><div><b class=\"num\" style=\"color:var(--warn)\">" + mis +
-      '</b><span>Confident but wrong</span></div><div><b class="num">' + GB.streak() + "</b><span>Day streak</span></div></div>" +
+      '<div class="grid3"><div><b class="num">' + ok + "</b><span>Correct</span></div><div><b class=\"num\">" + (n - ok) +
+      '</b><span>Missed</span></div><div><b class="num">' + GB.streak() + "</b><span>Day streak</span></div></div>" +
+      brk +
       '<div class="acts" style="margin-top:22px"><a class="btn ghost" href="index.html">Home</a>' +
-      (mis ? '<a class="btn" href="ox.html?mode=hard">Hard True/False</a>' : '<a class="btn" href="ox.html?mode=wrong">Retry missed sentences</a>') + "</div></div>";
+      (mcRes.length ? (missedNow ? '<a class="btn" href="ox.html?mode=wrong">Retry missed MCQs</a>' : '<a class="btn" href="drill.html">Training</a>')
+        : mis ? '<a class="btn" href="ox.html?mode=hard">Hard True/False</a>' : '<a class="btn" href="ox.html?mode=wrong">Retry missed sentences</a>') + "</div></div>";
   }
 
   /* keyboard — 1/2 for confidence, O/X for True/False, Enter for Next */
@@ -325,6 +458,10 @@
     if (e.target.tagName === "INPUT") return;
     var k = e.key.toLowerCase();
     if (k === "1" || k === "2") { var b = document.querySelectorAll("#conf button")[+k - 1]; if (b) b.click(); }
+    else if ("abcd".indexOf(k) >= 0 && k.length === 1 && $("oxb") && $("oxb").classList.contains("mcb")) {
+      var mb = document.querySelector('#oxb [data-a="' + ("abcd".indexOf(k) + 1) + '"]'); if (mb) mb.click();
+    }
+    else if (k === "f" && $("flg")) { $("flg").click(); }
     else if (k === "o") { var o = document.querySelector('#oxb [data-a="O"]'); if (o) o.click(); }
     else if (k === "x") { var x = document.querySelector('#oxb [data-a="X"]'); if (x) x.click(); }
     else if (k === "enter") { var n = $("nx"); if (n) { e.preventDefault(); n.click(); } }
@@ -334,7 +471,7 @@
   if (mode === "speed") { runSpeed(); return; }
   if (!seq.length) {
     $("stage").innerHTML = '<div class="empty">' + (mode === "today" ? "You’ve finished today’s work. See you tomorrow." :
-      mode === "wrong" ? "No missed sentences." : "There’s nothing to solve here.") +
+      mode === "wrong" ? "No missed questions." : mode === "flag" ? "No flagged questions. Use Flag on a question to keep it here." : "There’s nothing to solve here.") +
       '<div class="acts" style="justify-content:center;margin-top:18px"><a class="btn" href="index.html">Home</a></div></div>';
     return;
   }

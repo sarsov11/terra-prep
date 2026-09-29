@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mock exam — {{BRAND}}</title>
+<link rel="icon" href="icons/favicon.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
+<link rel="stylesheet" href="css/app.css">
+<style>
+  .hd{display:flex;align-items:center;gap:10px;padding:18px 0 0}
+  .hd h1{font-size:20px;flex:1;min-width:0}
+  .hd .cnt{font-size:15px;color:var(--ink-3)}
+  .hd a.x{color:var(--ink-4);text-decoration:none;font-size:22px;line-height:1;padding:4px}
+  .timer{font-weight:900;font-size:17px;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+  .timer.low{color:var(--no)}
+  .sizes{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
+  .sizes button,.seg2 button{appearance:none;border:1.5px solid var(--line-2);background:var(--surface);color:var(--ink);border-radius:var(--r2);
+    padding:12px 4px;font-size:17px;font-weight:800;cursor:pointer}
+  .sizes button[aria-pressed="true"],.seg2 button[aria-pressed="true"]{border:2px solid var(--ink);background:var(--surface-3)}
+  .seg2{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .seg2 button{padding:10px 14px;font-size:15px}
+  .lab{font-size:14px;font-weight:700;color:var(--ink-3);margin-top:22px}
+  .setup .note{font-size:14.5px;color:var(--ink-3);margin:10px 0 0}
+  .nav2{display:flex;gap:8px;margin-top:16px}
+  .nav2 .btn{flex:1}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));gap:6px;margin-top:12px}
+  .grid button{appearance:none;position:relative;border:1.5px solid var(--line-2);background:var(--surface);color:var(--ink-2);
+    border-radius:var(--r1);height:44px;font-weight:800;font-size:15px;cursor:pointer}
+  .grid button.a{background:var(--surface-3);border-color:var(--ink-4);color:var(--ink)}
+  .grid button.now{outline:2px solid var(--ink);outline-offset:1px}
+  .grid button.fl::after{content:"";position:absolute;top:3px;right:3px;width:8px;height:8px;background:var(--ink);border-radius:50% 50% 50% 0}
+  .legend{display:flex;flex-wrap:wrap;gap:12px;font-size:13.5px;color:var(--ink-3);margin-top:10px}
+  .sumline{display:flex;gap:16px;flex-wrap:wrap;font-size:15px;margin-top:14px}
+  .sumline b{font-weight:900}
+  .mcb button[data-sel="1"]{border:3px solid var(--ink);background:var(--surface-3)}
+  .misslist{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+  .misslist details{border:1px solid var(--line);border-radius:var(--r2);background:var(--surface);padding:10px 14px}
+  .misslist summary{cursor:pointer;font-weight:700;font-size:15px}
+  .empty{padding:40px 8px;text-align:center;color:var(--ink-3)}
+</style>
+</head>
+<body class="focus">
+<div class="page">
+  <div class="hd"><h1 id="ttl">Mock exam</h1><span class="timer" id="tmr"></span><span class="cnt num" id="cnt"></span><a class="x" href="drill.html" title="Quit">✕</a></div>
+  <div id="stage"></div>
+</div>
+
+<script src="js/brand.js"></script>
+<script src="js/catalog.js"></script>
+<script src="data/ready.js"></script>
+<script src="js/boot.js"></script>
+<script src="js/judge.js"></script>
+<script src="js/store.js"></script>
+<script>
+(function () {
+  "use strict";
+  GB.mountNav("drill.html");
+  var $ = function (id) { return document.getElementById(id); }, esc = GB.esc, LETTERS = "ABCDE";
+  var HKEY = "te.exams.v1";
+  var set = [], picks = [], flags = [], spent = [], cur = 0, endAt = 0, tick = null, t0q = 0, size = 24, mins = 36, submitted = false;
+
+  function areaName(ar) {
+    var nm = "Area " + ar;
+    GB.subs().forEach(function (k) { if (CATALOG.area(k) === ar) nm = CATALOG.name(k); });
+    return nm;
+  }
+
+  /* ── setup ── */
+  function setup() {
+    $("ttl").textContent = "Mock exam"; $("tmr").textContent = ""; $("cnt").textContent = "";
+    $("stage").innerHTML = '<div class="setup"><p class="lead muted" style="margin:16px 0 0">Questions are drawn across the Areas in proportion to the 2026 AICPA Blueprint weights. Nothing is explained until you submit.</p>' +
+      '<div class="lab">Number of questions</div><div class="sizes" id="sz">' + [12, 24, 36, 72].map(function (n) {
+        return '<button type="button" data-n="' + n + '" aria-pressed="' + (n === size) + '">' + n + "</button>"; }).join("") + "</div>" +
+      '<div class="lab">Time limit</div><div class="seg2" id="tm"></div>' +
+      '<p class="note" id="note"></p>' +
+      '<div class="acts" style="margin-top:22px"><a class="btn ghost" href="drill.html">Back</a><button class="btn" id="go" disabled>Loading…</button></div></div>';
+    function drawTm() {
+      var opts = [Math.round(size * 1.5), Math.round(size * 1.75), Math.round(size * 2), 0];
+      opts = opts.filter(function (v, i) { return opts.indexOf(v) === i; });
+      if (opts.indexOf(mins) < 0) mins = opts[0];
+      $("tm").innerHTML = opts.map(function (m) { return '<button type="button" data-m="' + m + '" aria-pressed="' + (m === mins) + '">' + (m ? m + " min" : "No timer") + "</button>"; }).join("");
+      $("tm").querySelectorAll("button").forEach(function (b) { b.onclick = function () { mins = +b.dataset.m; drawTm(); }; });
+    }
+    $("sz").querySelectorAll("button").forEach(function (b) {
+      b.onclick = function () {
+        size = +b.dataset.n; mins = Math.round(size * 1.5);
+        $("sz").querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+        drawTm();
+      };
+    });
+    mins = Math.round(size * 1.5); drawTm();
+    GB.loadPool(function (pool) {
+      var have = GB.poolItems(pool).length, ar = {};
+      GB.poolItems(pool).forEach(function (x) { ar[x.area] = 1; });
+      $("note").textContent = "The time split for the real exam’s multiple-choice section is not fixed here, so the limit is your own setting. " +
+        have + " questions in " + Object.keys(ar).length + " Area" + (Object.keys(ar).length === 1 ? "" : "s") + " are available.";
+      $("go").disabled = !have; $("go").textContent = "Start";
+      $("go").onclick = function () {
+        var n = Math.min(size, have);
+        set = GB.mockSet(pool, n);
+        picks = set.map(function () { return null; }); flags = set.map(function (x) { return GB.flagged(x.q.i, x.key); });
+        spent = set.map(function () { return 0; });
+        cur = 0; submitted = false;
+        endAt = mins ? Date.now() + mins * 60000 : 0;
+        clearInterval(tick); tick = setInterval(drawTimer, 500); drawTimer();
+        show();
+      };
+    });
+  }
+
+  function drawTimer() {
+    if (!endAt || submitted) { $("tmr").textContent = ""; return; }
+    var l = Math.max(0, Math.round((endAt - Date.now()) / 1000));
+    $("tmr").textContent = Math.floor(l / 60) + ":" + ("0" + (l % 60)).slice(-2);
+    $("tmr").classList.toggle("low", l < 300);
+    if (l <= 0) submit(true);
+  }
+
+  function leave() { spent[cur] += Date.now() - t0q; }
+
+  /* ── one question, no feedback ── */
+  function show() {
+    var x = set[cur], mc = x.q.mc; t0q = Date.now();
+    $("ttl").textContent = "Mock exam"; $("cnt").textContent = (cur + 1) + " / " + set.length;
+    $("stage").innerHTML = '<div class="qcard" style="margin-top:14px"><div class="src"><span class="chip">Question ' + (cur + 1) + "</span>" +
+      '<button type="button" class="flagbtn" id="flg" aria-pressed="' + flags[cur] + '">' + (flags[cur] ? "Flagged" : "Flag") + "</button></div>" +
+      '<p class="sent">' + esc(mc.s) + "</p>" + (mc.d ? '<div class="case mcdata" style="margin:12px 0 0">' + esc(mc.d) + "</div>" : "") + (mc.tb ? tableHTML(mc.tb) : "") + "</div>" +
+      '<div class="mcb" id="opts">' + mc.o.map(function (o, i) {
+        return '<button type="button" data-a="' + i + '"' + (picks[cur] === i ? ' data-sel="1"' : "") + "><b>" + LETTERS[i] + "</b><span>" + esc(o) + "</span></button>"; }).join("") + "</div>" +
+      '<div class="nav2"><button class="btn ghost" id="pv"' + (cur ? "" : " disabled") + '>Previous</button>' +
+      '<button class="btn ghost" id="rv">Review</button>' +
+      (cur < set.length - 1 ? '<button class="btn" id="nx">Next</button>' : '<button class="btn" id="nx">Review</button>') + "</div>";
+    $("flg").onclick = function () {
+      flags[cur] = !flags[cur]; GB.setFlag(x.q.i, flags[cur], x.key);
+      this.setAttribute("aria-pressed", String(flags[cur])); this.textContent = flags[cur] ? "Flagged" : "Flag";
+    };
+    $("opts").querySelectorAll("button").forEach(function (b) {
+      b.onclick = function () {
+        var i = +b.dataset.a; picks[cur] = picks[cur] === i ? null : i;      /* tap again to clear */
+        $("opts").querySelectorAll("button").forEach(function (y) { if (+y.dataset.a === picks[cur]) y.dataset.sel = "1"; else y.removeAttribute("data-sel"); });
+      };
+    });
+    $("pv").onclick = function () { leave(); cur--; show(); window.scrollTo(0, 0); };
+    $("rv").onclick = function () { leave(); review(); };
+    $("nx").onclick = function () { leave(); if (cur < set.length - 1) { cur++; show(); window.scrollTo(0, 0); } else review(); };
+  }
+  function tableHTML(tb) {
+    return '<div class="tbwrap"><table class="exh">' + tb.map(function (r, i) {
+      return "<tr>" + r.map(function (c) { return (i ? "<td>" : "<th>") + esc(c) + (i ? "</td>" : "</th>"); }).join("") + "</tr>";
+    }).join("") + "</table></div>";
+  }
+
+  /* ── review screen: answered / unanswered / flagged ── */
+  function review() {
+    var un = picks.filter(function (p) { return p == null; }).length, fl = flags.filter(Boolean).length;
+    $("cnt").textContent = "Review";
+    $("stage").innerHTML = '<h2 style="font-size:19px;margin-top:18px">Review before you submit</h2>' +
+      '<div class="sumline"><span><b class="num">' + (set.length - un) + "</b> answered</span><span><b class=\"num\">" + un + "</b> unanswered</span><span><b class=\"num\">" + fl + "</b> flagged</span></div>" +
+      '<div class="grid" id="gr">' + set.map(function (x, i) {
+        return '<button type="button" data-i="' + i + '" class="' + (picks[i] != null ? "a" : "") + (flags[i] ? " fl" : "") + '">' + (i + 1) + "</button>"; }).join("") + "</div>" +
+      '<div class="legend"><span>Filled: answered</span><span>Corner mark: flagged</span></div>' +
+      '<div class="nav2" style="margin-top:22px">' +
+      (un ? '<button class="btn ghost" id="fu">Go to first unanswered</button>' : "") + (fl ? '<button class="btn ghost" id="ff">Go to first flagged</button>' : "") + "</div>" +
+      '<div class="acts" style="margin-top:12px"><button class="btn ghost" id="bk">Back to exam</button><button class="btn" id="sb">Submit exam</button></div>';
+    $("gr").querySelectorAll("button").forEach(function (b) { b.onclick = function () { cur = +b.dataset.i; show(); window.scrollTo(0, 0); }; });
+    if ($("fu")) $("fu").onclick = function () { cur = picks.findIndex(function (p) { return p == null; }); show(); };
+    if ($("ff")) $("ff").onclick = function () { cur = flags.indexOf(true); show(); };
+    $("bk").onclick = function () { show(); };
+    var armed = false;
+    $("sb").onclick = function () {
+      if (un && !armed) { armed = true; this.textContent = "Submit with " + un + " unanswered"; return; }
+      submit(false);
+    };
+    window.scrollTo(0, 0);
+  }
+
+  /* ── results ── */
+  function submit(timeUp) {
+    if (submitted) return; submitted = true; clearInterval(tick); $("tmr").textContent = "";
+    var byA = {}, byS = {}, ok = 0, ans = 0, wrong = [];
+    set.forEach(function (x, i) {
+      var mc = x.q.mc, tg = mc.tags || {}, p = picks[i];
+      var A = byA[x.area] = byA[x.area] || { n: 0, ok: 0, un: 0 }, Sk = byS[tg.skill || "-"] = byS[tg.skill || "-"] || { n: 0, ok: 0 };
+      A.n++; Sk.n++;
+      if (p == null) { A.un++; wrong.push(i); return; }
+      ans++;
+      var good = p + 1 === mc.a; if (good) { ok++; A.ok++; Sk.ok++; } else wrong.push(i);
+      GB.answerIn(x.key, x.q.i, good, { ms: spent[i], kind: good ? "right" : "wrong", pick: p });
+    });
+    try {
+      var H = JSON.parse(localStorage.getItem(HKEY) || "[]");
+      H.push({ at: Date.now(), n: set.length, ok: ok, per: byA }); localStorage.setItem(HKEY, JSON.stringify(H.slice(-20)));
+    } catch (e) {}
+    $("ttl").textContent = "Results"; $("cnt").textContent = "";
+    function rows(o, nameFn) {
+      return Object.keys(o).map(function (k) {
+        var r = o[k]; return "<li><span>" + esc(nameFn(k)) + '</span><b class="num">' + r.ok + " / " + r.n + " · " + Math.round(r.ok / r.n * 100) + "%</b></li>";
+      }).join("");
+    }
+    var pct = Math.round(ok / set.length * 100);
+    $("stage").innerHTML = '<div class="done"><div class="big num">' + ok + " / " + set.length + '</div><p class="muted">' + pct + "% correct" +
+      (timeUp ? " · time ran out" : "") + (ans < set.length ? " · " + (set.length - ans) + " unanswered" : "") + "</p></div>" +
+      '<div class="brk"><h3>By Area</h3><ul>' + rows(byA, areaName) + "</ul><h3>By skill</h3><ul>" + rows(byS, function (k) { return k; }) + "</ul></div>" +
+      (wrong.length ? '<h3 style="font-size:15px;color:var(--ink-3);margin:22px 0 0">Missed and unanswered</h3><div class="misslist">' + wrong.map(function (i) {
+        var mc = set[i].q.mc, p = picks[i], a = mc.a - 1;
+        return "<details><summary>" + (i + 1) + ". " + esc(mc.s.length > 110 ? mc.s.slice(0, 110) + "…" : mc.s) + "</summary>" +
+          '<p style="margin:8px 0 4px;font-size:14.5px">' + (p == null ? "You did not answer." : "You chose <b>" + LETTERS[p] + "</b>.") + " Correct answer: <b>" + LETTERS[a] + "</b>. " + esc(mc.o[a]) + "</p>" +
+          (mc.ex ? '<div class="exs">' + (p != null ? exItem(mc, p, "no", "Your answer") : "") + exItem(mc, a, "ok", "Correct answer") + "</div>" : "") +
+          (mc.cite ? '<p class="basis" style="margin-top:8px"><b>Basis</b> ' + esc(mc.cite) + "</p>" : "") + "</details>";
+      }).join("") + "</div>" : "") +
+      '<div class="acts" style="margin-top:22px"><a class="btn ghost" href="drill.html">Training</a><a class="btn" href="exam.html">New mock exam</a></div>';
+    window.scrollTo(0, 0);
+  }
+  function exItem(mc, i, cls, tag) {
+    return '<div class="exi ' + cls + '"><div class="exh2"><b>' + LETTERS[i] + '</b><span class="tg">' + tag + '</span><span class="ot">' + esc(mc.o[i]) + "</span></div><p>" + esc(mc.ex[i]) + "</p></div>";
+  }
+
+  document.addEventListener("keydown", function (e) {
+    var k = e.key.toLowerCase(), o = $("opts");
+    if (o && "abcd".indexOf(k) >= 0 && k.length === 1) { var b = o.querySelector('[data-a="' + "abcd".indexOf(k) + '"]'); if (b) b.click(); }
+  });
+
+  setup();
+})();
+</script>
+</body>
+</html>
