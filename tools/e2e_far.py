@@ -42,7 +42,7 @@ def part_a(br, tag, viewport, mobile):
     pg.click("#n")                                             # intro
     pg.wait_for_selector("#op button")
     labels = pg.locator("#op button").all_inner_texts()
-    check(tag + " exam list has REG, FAR, TCP, CFA", len(labels) == 4 and "FAR" in labels[1] and "TCP" in labels[2], labels[1][:60])
+    check(tag + " exam list has REG, FAR, TCP, AUD, CFA", len(labels) == 5 and "FAR" in labels[1] and "TCP" in labels[2], labels[1][:60])
     shot(pg, tag, "1_choose_exam")
     pg.click('#op button[data-v="cpa_far"]')
     pg.wait_for_selector("text=what you’ll cover")
@@ -70,7 +70,7 @@ def part_a(br, tag, viewport, mobile):
     pg.click("#n")
     pg.wait_for_selector("#todo")
     body = pg.inner_text("body")
-    check(tag + " home shows section switch with FAR selected", pg.locator('#secs a.on').inner_text() == "FAR" and pg.locator("#secs a").count() == 3)
+    check(tag + " home shows section switch with FAR selected", pg.locator('#secs a.on').inner_text() == "FAR" and pg.locator("#secs a").count() == 4)
     alt = pg.locator("#alt .row b").all_inner_texts()
     check(tag + " journal entry drill is the first extra row", alt and alt[0] == "Journal entry drill", alt)
     check(tag + " no REG-only rows on FAR home", "Task-based simulations" not in body and "Concept cards" not in body)

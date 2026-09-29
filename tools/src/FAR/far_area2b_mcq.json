@@ -95,7 +95,21 @@
     "A": "calc",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the note worth at the start at the market rate?",
+     "reveal": "200,000 / 1.10^2 = 165,289."
+    },
+    {
+     "ask": "What is the amortized cost after one year of accretion, and the allowance on it?",
+     "reveal": "165,289 x 1.10 = 181,818; 4% of it is 7,273."
+    },
+    {
+     "ask": "What is the net carrying amount?",
+     "reveal": "181,818 - 7,273 = 174,545."
+    }
+   ]
   },
   {
    "id": "FAR-II-B-1002",
@@ -183,7 +197,17 @@
     "A": "concept",
     "B": "trap",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Can the bank pledge or exchange the receivables under the agreement?",
+     "reveal": "No, which fails one of the sale conditions."
+    },
+    {
+     "ask": "How is the transfer then accounted for, and what are the two current totals?",
+     "reveal": "A secured borrowing: current assets 100,000 + 480,000 + 600,000 = 1,180,000; current liabilities 400,000 + 480,000 = 880,000. Ratio 1.34."
+    }
+   ]
   },
   {
    "id": "FAR-II-C-1001",
@@ -271,7 +295,17 @@
     "A": "trap",
     "B": "trap",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a change in cost-flow method applied retrospectively?",
+     "reveal": "Yes."
+    },
+    {
+     "ask": "What is the opening inventory difference, and its effect after tax?",
+     "reveal": "200,000 - 180,000 = 20,000 lower under average cost; x 0.75 = 15,000 decrease in retained earnings."
+    }
+   ]
   },
   {
    "id": "FAR-II-C-1002",
@@ -338,7 +372,17 @@
     "B": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does the opening overstated inventory affect the year's cost of goods sold?",
+     "reveal": "It raises cost of goods sold by 30,000, understating income."
+    },
+    {
+     "ask": "Add the ending understatement, and consider the cumulative balance.",
+     "reveal": "Income is 40,000 low; the prior-year error reversed, leaving only the 10,000 ending error in retained earnings."
+    }
+   ]
   },
   {
    "id": "FAR-II-C-1003",
@@ -422,7 +466,21 @@
     "A": "concept",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is ending inventory at retail?",
+     "reveal": "500,000 + 40,000 - 60,000 - 380,000 = 100,000."
+    },
+    {
+     "ask": "What are the two cost ratios?",
+     "reveal": "Average cost: 300,000 / 480,000 = 0.6250; conventional excludes markdowns: 300,000 / 540,000 = 0.5556."
+    },
+    {
+     "ask": "What is the difference in cost?",
+     "reveal": "62,500 - 55,556 = 6,944."
+    }
+   ]
   },
   {
    "id": "FAR-II-C-1004",
@@ -510,7 +568,21 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are ending inventories at base-year cost each year?",
+     "reveal": "2026: 242,000 / 1.10 = 220,000; 2027: 273,000 / 1.30 = 210,000."
+    },
+    {
+     "ask": "What happens to the layers when base-year cost falls?",
+     "reveal": "The 2026 layer shrinks by 10,000."
+    },
+    {
+     "ask": "Price what remains.",
+     "reveal": "200,000 + 10,000 x 1.10 = 211,000."
+    }
+   ]
   },
   {
    "id": "FAR-II-C-1005",
@@ -598,7 +670,17 @@
     "A": "calc",
     "B": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Under perpetual LIFO, which layers does the April 15 sale take?",
+     "reveal": "The newest first: 200 at 12 and 50 at 10, cost 2,900."
+    },
+    {
+     "ask": "Which layer does the November sale take?",
+     "reveal": "The newest, September's 100 at 14: 80 x 14 = 1,120; total 4,020."
+    }
+   ]
   },
   {
    "id": "FAR-II-D-1001",
@@ -686,7 +768,21 @@
     "A": "concept",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the asset recoverable, and what is the impairment?",
+     "reveal": "Carrying amount 630,000 exceeds cash flows 600,000, so loss = 630,000 - 480,000 = 150,000."
+    },
+    {
+     "ask": "What depreciation follows, and the carrying amount at the sale date?",
+     "reveal": "480,000 / 7 = 68,571 a year; 2027 plus half of 2028 leaves 377,143."
+    },
+    {
+     "ask": "Compare to proceeds.",
+     "reveal": "350,000 - 377,143 = 27,143 loss."
+    }
+   ]
   },
   {
    "id": "FAR-II-D-1002",
@@ -774,7 +870,21 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the original layer accrete at, and what is its balance?",
+     "reveal": "The original 8%: 400,000 x 1.08^3 = 503,885; accretion 40,311."
+    },
+    {
+     "ask": "How is the upward revision measured and accreted?",
+     "reveal": "At the current 10% rate: 100,000 / 1.10^7 = 51,316; accretion 5,132."
+    },
+    {
+     "ask": "Total.",
+     "reveal": "40,311 + 5,132 = 45,442."
+    }
+   ]
   },
   {
    "id": "FAR-II-D-1003",
@@ -861,7 +971,17 @@
     "A": "calc",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the exchange have commercial substance?",
+     "reveal": "No."
+    },
+    {
+     "ask": "What is the new press's cost when boot is paid and no gain is recognized?",
+     "reveal": "Old carrying amount 60,000 plus cash 20,000 = 80,000."
+    }
+   ]
   },
   {
    "id": "FAR-II-D-1004",
@@ -949,7 +1069,17 @@
     "A": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the carrying amount before classification, and what depreciation was skipped?",
+     "reveal": "500,000, less six months of depreciation 20,000 = 480,000."
+    },
+    {
+     "ask": "Compare to fair value at the decision date.",
+     "reveal": "Lower of 480,000 and 450,000 is 450,000."
+    }
+   ]
   },
   {
    "id": "FAR-II-D-1005",
@@ -1036,7 +1166,17 @@
     "A": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which costs are capitalized?",
+     "reveal": "Contract payments, architect fees and qualifying interest; not training or advertising. => 1,850,000 + 90,000 + 120,000 = 2,060,000."
+    },
+    {
+     "ask": "How much depreciation for the months in service?",
+     "reveal": "2,060,000 / 20 x 3/12 = 25,750."
+    }
+   ]
   },
   {
    "id": "FAR-II-D-1006",
@@ -1124,7 +1264,21 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the 2025 depreciation based on the old estimates?",
+     "reveal": "Yes: (1,200,000 - 120,000) x 180,000 / 900,000 = 216,000, leaving 984,000."
+    },
+    {
+     "ask": "What is the remaining depreciable amount and remaining units?",
+     "reveal": "984,000 - 60,000 = 924,000 over 750,000 - 180,000 = 570,000 units."
+    },
+    {
+     "ask": "Apply to 2026 output.",
+     "reveal": "924,000 x 240,000 / 570,000 = 389,053."
+    }
+   ]
   },
   {
    "id": "FAR-II-E-1001",
@@ -1212,7 +1366,21 @@
     "B": "concept",
     "C": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the excess and its portion to equipment?",
+     "reveal": "900,000 - 30% x 2,000,000 = 300,000; equipment part 180,000 over 8 years is 22,500 a year; goodwill is not amortized."
+    },
+    {
+     "ask": "How much intra-entity profit remains unrealized for the investor?",
+     "reveal": "30% x 50% x 80,000 = 12,000."
+    },
+    {
+     "ask": "Combine all items.",
+     "reveal": "900,000 + 150,000 - 22,500 - 12,000 - 30,000 = 985,500."
+    }
+   ]
   },
   {
    "id": "FAR-II-E-1002",
@@ -1299,7 +1467,17 @@
     "A": "trap",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What happens to the carrying amount after the other-than-temporary impairment?",
+     "reveal": "Written down to 900,000; the loss is not reversed."
+    },
+    {
+     "ask": "What does 2027 add?",
+     "reveal": "35% x 200,000 = 70,000, for 970,000; the fair value recovery is ignored."
+    }
+   ]
   },
   {
    "id": "FAR-II-E-1003",
@@ -1387,7 +1565,17 @@
     "A": "concept",
     "C": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What allowance is recorded for a held-to-maturity security?",
+     "reveal": "The full expected credit loss, 35,000."
+    },
+    {
+     "ask": "What limit applies to an available-for-sale allowance, and what is the difference?",
+     "reveal": "It cannot exceed the fair value shortfall 800,000 - 780,000 = 20,000; 35,000 - 20,000 = 15,000 lower."
+    }
+   ]
   },
   {
    "id": "FAR-II-E-1004",
@@ -1475,7 +1663,17 @@
     "A": "trap",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the carrying amount of the portion sold, and the gain on it?",
+     "reveal": "25% x 1,000,000 = 250,000; 310,000 - 250,000 = 60,000."
+    },
+    {
+     "ask": "Does the investor's share of AOCI have to be reclassified?",
+     "reveal": "Yes, proportionately: 25% x 60,000 = 15,000; total gain 75,000."
+    }
+   ]
   },
   {
    "id": "FAR-II-E-1005",
@@ -1563,7 +1761,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "For a callable premium debt security, which date is the premium amortized to?",
+     "reveal": "The earliest call date, so use the 5.0% yield."
+    },
+    {
+     "ask": "Compute the first-year income, amortization and carrying amount.",
+     "reveal": "1,044,509 x 5.0% = 52,225; 60,000 - 52,225 = 7,775; 1,044,509 - 7,775 = 1,036,734."
+    }
+   ]
   },
   {
    "id": "FAR-II-F-1001",
@@ -1651,7 +1859,21 @@
     "A": "concept",
     "B": "calc",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is goodwill allocated on selling part of a unit?",
+     "reveal": "By relative fair value of the part sold and the part retained."
+    },
+    {
+     "ask": "Compute the share and the goodwill allocated.",
+     "reveal": "300,000 / 1,500,000 = 20%; 20% x 600,000 = 120,000."
+    },
+    {
+     "ask": "What is the result of the sale?",
+     "reveal": "300,000 - 250,000 - 120,000 = -70,000."
+    }
+   ]
   },
   {
    "id": "FAR-II-F-1002",
@@ -1739,7 +1961,17 @@
     "B": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which asset is tested first, and does it pass recoverability?",
+     "reveal": "The customer list; 280,000 is below 300,000, so it is impaired to fair value: 60,000 loss."
+    },
+    {
+     "ask": "Recompute the unit's carrying amount and goodwill impairment.",
+     "reveal": "2,000,000 - 60,000 = 1,940,000; 1,940,000 - 1,850,000 = 90,000."
+    }
+   ]
   },
   {
    "id": "FAR-II-F-1003",
@@ -1827,7 +2059,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which costs are capitalized in a hosting arrangement?",
+     "reveal": "Application development stage costs, over the expected term including reasonably certain renewal."
+    },
+    {
+     "ask": "What is the amortization, and which other items are expensed?",
+     "reveal": "150,000 / 5 x 6/12 = 15,000; training, data conversion and preliminary costs 60,000 and six months of hosting 30,000. Total 105,000."
+    }
+   ]
   },
   {
    "id": "FAR-II-G-1001",
@@ -1910,7 +2152,17 @@
     "B": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the bonus computed after both itself and tax?",
+     "reveal": "Yes: bonus = 10% x (800,000 - bonus) x 0.75."
+    },
+    {
+     "ask": "Solve.",
+     "reveal": "1.075 x bonus = 0.075 x 800,000, so bonus = 55,814."
+    }
+   ]
   },
   {
    "id": "FAR-II-G-1002",
@@ -1998,7 +2250,17 @@
     "A": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "For which shipments had title passed at year-end?",
+     "reveal": "FOB shipping point goods shipped December 29 (add 36,000); the FOB destination goods had not passed (subtract 24,000)."
+    },
+    {
+     "ask": "What about freight and returns?",
+     "reveal": "Add the 4,500 freight and subtract the 9,000 return: 407,500."
+    }
+   ]
   },
   {
    "id": "FAR-II-H-1001",
@@ -2086,7 +2348,21 @@
     "A": "calc",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the carrying amount at the retirement date?",
+     "reveal": "Issue price 1,840,292 grows to 1,867,515 and then 1,896,916."
+    },
+    {
+     "ask": "What is the loss on retiring 40%?",
+     "reveal": "Carrying 758,766 against price 824,000: loss 65,234."
+    },
+    {
+     "ask": "What is 2028 interest on the remaining 60%?",
+     "reveal": "60% x 1,896,916 x 8% = 91,052."
+    }
+   ]
   },
   {
    "id": "FAR-II-H-1002",
@@ -2174,7 +2450,17 @@
     "A": "concept",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the extra 5,000 shares an expense?",
+     "reveal": "Yes, an inducement expense at fair value: 5,000 x 40 = 200,000."
+    },
+    {
+     "ask": "Combine net carrying amount, the expense and par.",
+     "reveal": "988,000 + 200,000 - 25,000 = 1,163,000."
+    }
+   ]
   },
   {
    "id": "FAR-II-H-1003",
@@ -2262,7 +2548,17 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the balance after the first installment?",
+     "reveal": "500,000 x 1.08 - 125,228 = 414,772."
+    },
+    {
+     "ask": "What is the principal portion due in 2027?",
+     "reveal": "125,228 - 8% x 414,772 = 125,228 - 33,182 = 92,046."
+    }
+   ]
   },
   {
    "id": "FAR-II-H-1004",
@@ -2330,7 +2626,17 @@
     "A": "concept",
     "B": "concept",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the total change in fair value of the liability?",
+     "reveal": "A decrease of 60,000, a gain."
+    },
+    {
+     "ask": "How is it split between instrument-specific credit risk and the rest?",
+     "reveal": "25,000 to OCI and 35,000 to net income."
+    }
+   ]
   },
   {
    "id": "FAR-II-H-1005",
@@ -2418,7 +2724,17 @@
     "A": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the interest expense for the first three months at the effective rate?",
+     "reveal": "918,891 x 4% = 36,756 for six months, so 18,378."
+    },
+    {
+     "ask": "What is the accrued coupon, and the discount amortized?",
+     "reveal": "1,000,000 x 3% x 3/6 = 15,000; 18,378 - 15,000 = 3,378. New carrying amount 918,891 + 3,378 = 922,269."
+    }
+   ]
   },
   {
    "id": "FAR-II-I-1001",
@@ -2506,7 +2822,17 @@
     "B": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What goes to preferred first, and to common at par?",
+     "reveal": "Preferred arrears 30,000 plus current 30,000; common 6% of 1,000,000 par = 60,000."
+    },
+    {
+     "ask": "How is the remainder shared, and what does common get in total?",
+     "reveal": "280,000 split by par 500,000 : 1,000,000, so common gets 186,667 more: 246,667."
+    }
+   ]
   },
   {
    "id": "FAR-II-I-1002",
@@ -2594,7 +2920,17 @@
     "B": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are cash-settled awards remeasured?",
+     "reveal": "Yes, as liabilities each reporting date at fair value, with the accrued portion of service."
+    },
+    {
+     "ask": "Compute the liability each year-end and the difference.",
+     "reveal": "2026: 50,000 x 10 x 1/4 = 125,000; 2027: 50,000 x 14 x 2/4 = 350,000; expense 225,000."
+    }
+   ]
   }
  ]
 }

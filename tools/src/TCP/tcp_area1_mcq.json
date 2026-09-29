@@ -79,7 +79,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Gross income items / Remembering & Understanding"
+   "blueprint_tag": "TCP Area I / Group A / Gross income items / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "For each option type, is the spread taxed when exercised or when the shares are sold?",
+     "reveal": "The nonqualified type is taxed on the spread at exercise as wages; the incentive type is treated differently for regular tax."
+    },
+    {
+     "ask": "With the holding periods met, how is the incentive type's gain taxed on sale?",
+     "reveal": "Not at exercise for regular tax, and the whole gain is long-term capital gain at sale."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0002",
@@ -192,7 +202,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application"
+   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application",
+   "guide": [
+    {
+     "ask": "Because the spread was wages at exercise, what is Priya's basis per share?",
+     "reveal": "Fair market value at exercise, $58 (strike $32 plus the $26 spread already taxed)."
+    },
+    {
+     "ask": "What is the gain per share and in total?",
+     "reveal": "$71 - $58 = $13 per share, so 1,500 x $13 = $19,500."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0003",
@@ -304,7 +324,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / AMT / Application"
+   "blueprint_tag": "TCP Area I / Group A / AMT / Application",
+   "guide": [
+    {
+     "ask": "Is an incentive option's spread regular income at exercise, and does it matter for AMT?",
+     "reveal": "Not regular income, but the spread is an AMT adjustment once the shares are held and vested."
+    },
+    {
+     "ask": "Compute the spread.",
+     "reveal": "$55 - $20 = $35 per share, so 2,000 x $35 = $70,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0004",
@@ -371,7 +401,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / AMT / Remembering & Understanding"
+   "blueprint_tag": "TCP Area I / Group A / AMT / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "Which item is taxed for regular tax only later, or is not deductible in the AMT system?",
+     "reveal": "Look for the item that is excluded from regular income at exercise but counted for AMT."
+    },
+    {
+     "ask": "Which listed item is that?",
+     "reveal": "The unsold incentive stock option spread; the deduction and interest items are not added back this way."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0005",
@@ -494,7 +534,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / AMT / Application"
+   "blueprint_tag": "TCP Area I / Group A / AMT / Application",
+   "guide": [
+    {
+     "ask": "What AMTI remains after the exemption?",
+     "reveal": "$400,000 - $90,100 = $309,900."
+    },
+    {
+     "ask": "Apply the two rates to the two layers.",
+     "reveal": "26% x $244,500 = $63,570 plus 28% x $65,400 = $18,312, so $81,882."
+    },
+    {
+     "ask": "How does regular tax enter?",
+     "reveal": "AMT is only the excess: $81,882 - $70,000 = $11,882."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0006",
@@ -609,7 +663,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application"
+   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application",
+   "guide": [
+    {
+     "ask": "Do the exceptions to the below-market loan rules apply to a $250,000 gift loan?",
+     "reveal": "No; it is over $100,000, so the investment income cap does not limit the imputed interest."
+    },
+    {
+     "ask": "Compute imputed interest for the months outstanding.",
+     "reveal": "$250,000 x 4.0% x 9/12 = $7,500."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0007",
@@ -721,7 +785,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application"
+   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application",
+   "guide": [
+    {
+     "ask": "How much of her earnings can Naomi exclude?",
+     "reveal": "The lesser of earned income and the limit, here $132,900."
+    },
+    {
+     "ask": "What is included in gross income?",
+     "reveal": "Wages left over $150,000 - $132,900 = $17,100, plus $10,000 of U.S. interest: $27,100."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0008",
@@ -845,7 +919,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Kiddie tax / Application"
+   "blueprint_tag": "TCP Area I / Group A / Kiddie tax / Application",
+   "guide": [
+    {
+     "ask": "How much of the $10,000 is taxed at the parents' rate?",
+     "reveal": "Everything above $2,700: $10,000 - $2,700 = $7,300, taxed at 32% = $2,336."
+    },
+    {
+     "ask": "What remains at her own rate?",
+     "reveal": "Taxable income left is $2,700 - $1,350 = $1,350, taxed at 10% = $135; total $2,471."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0009",
@@ -974,7 +1058,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Kiddie tax / Analysis"
+   "blueprint_tag": "TCP Area I / Group A / Kiddie tax / Analysis",
+   "guide": [
+    {
+     "ask": "What tax does Hana pay on the interest now?",
+     "reveal": "$12,000 x 35% = $4,200."
+    },
+    {
+     "ask": "What does the son pay on the same interest?",
+     "reveal": "35% x ($12,000 - $2,700) = $3,255 plus 10% x $1,350 = $135, so $3,390."
+    },
+    {
+     "ask": "What is the saving?",
+     "reveal": "$4,200 - $3,390 = $810."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0010",
@@ -1087,7 +1185,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Timing planning / Analysis"
+   "blueprint_tag": "TCP Area I / Group A / Timing planning / Analysis",
+   "guide": [
+    {
+     "ask": "What is the rate spread between the two years?",
+     "reveal": "35% - 24% = 11 percentage points."
+    },
+    {
+     "ask": "Apply it to the deferred income and the accelerated deduction.",
+     "reveal": "11% x $40,000 = $4,400 and 11% x $25,000 = $2,750, so $7,150."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0011",
@@ -1154,7 +1262,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Timing planning / Application"
+   "blueprint_tag": "TCP Area I / Group A / Timing planning / Application",
+   "guide": [
+    {
+     "ask": "When does a cash-basis taxpayer report income?",
+     "reveal": "When it is actually or constructively received, meaning available without restriction."
+    },
+    {
+     "ask": "Which action leaves payment neither received nor available in 2026?",
+     "reveal": "Billing after the year ends, so no payment is made or offered in 2026."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0012",
@@ -1266,7 +1384,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / FSA/HSA / Application"
+   "blueprint_tag": "TCP Area I / Group A / FSA/HSA / Application",
+   "guide": [
+    {
+     "ask": "Does Tom qualify for a catch-up contribution, and what is his contribution?",
+     "reveal": "No, he is under 55, so the family limit of $8,750 applies."
+    },
+    {
+     "ask": "Which taxes does a cafeteria-plan contribution avoid?",
+     "reveal": "Both federal income tax and FICA, so $8,750 x (24% + 7.65%) = $2,769."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0013",
@@ -1333,7 +1461,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / FSA/HSA / Remembering & Understanding"
+   "blueprint_tag": "TCP Area I / Group A / FSA/HSA / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "What kind of other coverage does a general-purpose health FSA count as?",
+     "reveal": "Disqualifying other health coverage for HSA purposes."
+    },
+    {
+     "ask": "Does it matter that the FSA is the spouse's?",
+     "reveal": "No, because it can reimburse Mia's expenses, so it applies to her."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0014",
@@ -1462,7 +1600,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Itemized vs standard deduction / Application"
+   "blueprint_tag": "TCP Area I / Group A / Itemized vs standard deduction / Application",
+   "guide": [
+    {
+     "ask": "How much of the church gifts is deductible?",
+     "reveal": "$6,000 - 0.5% x $200,000 = $5,000."
+    },
+    {
+     "ask": "What is the itemized total compared with the standard deduction?",
+     "reveal": "$15,000 + $19,000 taxes + $5,000 = $39,000, which exceeds $32,200 by $6,800."
+    },
+    {
+     "ask": "Convert to tax.",
+     "reveal": "$6,800 x 22% = $1,496."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0015",
@@ -1605,7 +1757,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Itemized vs standard deduction / Analysis"
+   "blueprint_tag": "TCP Area I / Group A / Itemized vs standard deduction / Analysis",
+   "guide": [
+    {
+     "ask": "What is the deduction each year without bunching?",
+     "reveal": "Itemized is $22,000 + ($8,000 - $750) = $29,250, below $32,200, so they take $32,200 twice: $64,400."
+    },
+    {
+     "ask": "What is the two-year deduction with bunching?",
+     "reveal": "2026: $22,000 + ($16,000 - $750) = $37,250; 2027: $32,200; total $69,450."
+    },
+    {
+     "ask": "Convert the extra deduction to tax.",
+     "reveal": "$5,050 x 22% = $1,111."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0016",
@@ -1738,7 +1904,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Estimated tax / Application"
+   "blueprint_tag": "TCP Area I / Group A / Estimated tax / Application",
+   "guide": [
+    {
+     "ask": "Which prior-year safe harbor percentage applies when 2025 AGI is above $150,000?",
+     "reveal": "110% of the 2025 tax, $41,800."
+    },
+    {
+     "ask": "Compare with the current-year test and pick the smaller.",
+     "reveal": "90% x $52,000 = $46,800, so the required payment is $41,800."
+    },
+    {
+     "ask": "Subtract withholding and divide.",
+     "reveal": "($41,800 - $10,000) / 4 = $7,950."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0017",
@@ -1805,7 +1985,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Estimated tax / Application"
+   "blueprint_tag": "TCP Area I / Group A / Estimated tax / Application",
+   "guide": [
+    {
+     "ask": "How does the penalty test treat tax withheld during the year?",
+     "reveal": "Withholding is treated as if paid evenly over the year, regardless of when it was actually withheld."
+    },
+    {
+     "ask": "Which action uses that rule for the missed early installments?",
+     "reveal": "Raising withholding on the remaining pay, which also cures the earlier shortfalls, unlike a late estimate or an extension."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0018",
@@ -1868,7 +2058,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Estimated tax / Application"
+   "blueprint_tag": "TCP Area I / Group A / Estimated tax / Application",
+   "guide": [
+    {
+     "ask": "What special exception exists based on the prior year?",
+     "reveal": "No penalty if the prior year was a full 12-month year and she owed no tax, as a citizen or resident."
+    },
+    {
+     "ask": "Do her 2025 facts meet it?",
+     "reveal": "Yes, she owed no 2025 tax for a 12-month year, so her 2026 income does not create a penalty."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0019",
@@ -1996,7 +2196,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Charitable giving / Analysis"
+   "blueprint_tag": "TCP Area I / Group A / Charitable giving / Analysis",
+   "guide": [
+    {
+     "ask": "What does giving appreciated long-term stock directly produce?",
+     "reveal": "A deduction at full fair market value, $40,000 x 35% = $14,000, with no gain tax."
+    },
+    {
+     "ask": "What happens under the sell-first path?",
+     "reveal": "Tax of 15% x $30,000 = $4,500, leaving $35,500 to give, a deduction worth $12,425, so net $7,925."
+    },
+    {
+     "ask": "Compare.",
+     "reveal": "$14,000 - $7,925 = $6,075."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0020",
@@ -2108,7 +2322,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Charitable giving / Analysis"
+   "blueprint_tag": "TCP Area I / Group A / Charitable giving / Analysis",
+   "guide": [
+    {
+     "ask": "Does giving loss stock let Lucas use the $12,000 built-in loss?",
+     "reveal": "No; the deduction is limited to fair market value and the loss disappears."
+    },
+    {
+     "ask": "What does selling first recognize, and what does it offset?",
+     "reveal": "A $12,000 long-term loss against gains taxed at 15%, saving $12,000 x 15% = $1,800."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0021",
@@ -2226,7 +2450,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Charitable giving / Application"
+   "blueprint_tag": "TCP Area I / Group A / Charitable giving / Application",
+   "guide": [
+    {
+     "ask": "How is a gift of tangible property valued when the charity keeps using it for its exempt purpose?",
+     "reveal": "At fair market value, $60,000."
+    },
+    {
+     "ask": "What is the deduction if the charity sells it?",
+     "reveal": "Only basis, $8,000. Increase = ($60,000 - $8,000) x 35% = $18,200."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0022",
@@ -2344,7 +2578,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application"
+   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application",
+   "guide": [
+    {
+     "ask": "Is this a qualifying sale or a disqualifying one?",
+     "reveal": "Disqualifying, since the shares were sold within one year of exercise."
+    },
+    {
+     "ask": "What limits the compensation income?",
+     "reveal": "The lesser of the spread at exercise ($30,000) and the gain on sale ($22,000), so $22,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0023",
@@ -2457,7 +2701,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application"
+   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application",
+   "guide": [
+    {
+     "ask": "What is taxed as ordinary income at grant if the election is made?",
+     "reveal": "5,000 x $4 = $20,000."
+    },
+    {
+     "ask": "What is ordinary income at vesting without the election?",
+     "reveal": "5,000 x $15 = $75,000. Reduction = $55,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0024",
@@ -2569,7 +2823,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application"
+   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application",
+   "guide": [
+    {
+     "ask": "Does Nadia meet the two-year ownership and use tests?",
+     "reveal": "No, only 12 months, but a job-related move allows a reduced exclusion."
+    },
+    {
+     "ask": "Compute the reduced exclusion and the taxable part.",
+     "reveal": "$250,000 x 12/24 = $125,000; taxable gain is $180,000 - $125,000 = $55,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0025",
@@ -2636,7 +2900,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application"
+   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application",
+   "guide": [
+    {
+     "ask": "Is a transfer between former spouses under a divorce decree a sale?",
+     "reveal": "No; it is treated like a gift, so no gain or loss is recognized."
+    },
+    {
+     "ask": "What basis does the recipient take?",
+     "reveal": "The transferor's basis, so $20,000 carries over."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0026",
@@ -2747,7 +3021,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / FSA/HSA / Application"
+   "blueprint_tag": "TCP Area I / Group A / FSA/HSA / Application",
+   "guide": [
+    {
+     "ask": "Which taxes does a dependent care account contribution avoid?",
+     "reveal": "Federal income tax and payroll tax both."
+    },
+    {
+     "ask": "Compute.",
+     "reveal": "$7,500 x (24% + 7.65%) = $2,374."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0027",
@@ -2860,7 +3144,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Timing planning / Application"
+   "blueprint_tag": "TCP Area I / Group A / Timing planning / Application",
+   "guide": [
+    {
+     "ask": "What is the holding period on a December 15 sale, and on a January 12 sale?",
+     "reveal": "Bought January 10, 2026: short-term in December, more than one year after January 10, 2027."
+    },
+    {
+     "ask": "Compare taxes.",
+     "reveal": "35% x $30,000 = $10,500 versus 15% x $30,000 = $4,500, a saving of $6,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0028",
@@ -3008,7 +3302,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / AMT / Analysis"
+   "blueprint_tag": "TCP Area I / Group A / AMT / Analysis",
+   "guide": [
+    {
+     "ask": "What is AMTI and AMT if all 20,000 shares are exercised in 2026?",
+     "reveal": "AMTI $400,000 less $90,100 = $309,900, tentative tax $81,882, AMT $81,882 - $45,000 = $36,882."
+    },
+    {
+     "ask": "What happens if 10,000 shares are exercised each year?",
+     "reveal": "AMTI $300,000, base $209,900 x 26% = $54,574, AMT $9,574 a year, $19,148 total."
+    },
+    {
+     "ask": "Saving?",
+     "reveal": "$36,882 - $19,148 = $17,734."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0029",
@@ -3126,7 +3434,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application"
+   "blueprint_tag": "TCP Area I / Group A / Gross income items / Application",
+   "guide": [
+    {
+     "ask": "How much of the coverage is tax-free?",
+     "reveal": "The first $50,000, leaving $200,000 taxable."
+    },
+    {
+     "ask": "Compute the imputed cost and the net inclusion.",
+     "reveal": "$200,000 / $1,000 x $0.15 x 12 = $360; less the $100 he paid gives $260."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0030",
@@ -3193,7 +3511,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group A / Gross income items / Remembering & Understanding"
+   "blueprint_tag": "TCP Area I / Group A / Gross income items / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "What does the physical presence test require besides a foreign tax home?",
+     "reveal": "At least 330 full days abroad in a 12-month period."
+    },
+    {
+     "ask": "Which person meets both conditions?",
+     "reveal": "Look for a foreign tax home together with a day count of 330 or more."
+    }
+   ]
   },
   {
    "id": "TCP-I-B-0001",
@@ -3305,7 +3633,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group B / At-risk limitation / Application"
+   "blueprint_tag": "TCP Area I / Group B / At-risk limitation / Application",
+   "guide": [
+    {
+     "ask": "Which debt types count as at risk for a limited partner?",
+     "reveal": "Cash contributed, debt he is personally liable for, and qualified nonrecourse financing from an unrelated commercial lender secured by real estate."
+    },
+    {
+     "ask": "Add them and compare with the loss.",
+     "reveal": "$30,000 + $20,000 + $50,000 = $100,000, less than $140,000; the loan from another partner is excluded."
+    }
+   ]
   },
   {
    "id": "TCP-I-B-0002",
@@ -3422,7 +3760,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group B / At-risk limitation / Application"
+   "blueprint_tag": "TCP Area I / Group B / At-risk limitation / Application",
+   "guide": [
+    {
+     "ask": "What is her at-risk amount before deducting suspended losses?",
+     "reveal": "$0 + $25,000 contribution + $10,000 income = $35,000."
+    },
+    {
+     "ask": "Are the suspended losses fully allowed, and what is left?",
+     "reveal": "Yes, since $15,000 is below $35,000; ending amount is $20,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-B-0003",
@@ -3544,7 +3892,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group B / Passive activity loss / Application"
+   "blueprint_tag": "TCP Area I / Group B / Passive activity loss / Application",
+   "guide": [
+    {
+     "ask": "What is the net disallowed passive loss after using Activity X's income?",
+     "reveal": "$25,000 + $18,000 - $30,000 = $13,000."
+    },
+    {
+     "ask": "How is it spread among the loss activities?",
+     "reveal": "In proportion to each loss: $13,000 x $25,000 / $43,000 = $7,558 for Y."
+    }
+   ]
   },
   {
    "id": "TCP-I-B-0004",
@@ -3667,7 +4025,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group B / Passive activity loss / Application"
+   "blueprint_tag": "TCP Area I / Group B / Passive activity loss / Application",
+   "guide": [
+    {
+     "ask": "How much of the rental loss is absorbed by the passive income?",
+     "reveal": "$8,000, leaving a $22,000 net passive loss."
+    },
+    {
+     "ask": "What does the rental allowance allow at her income level?",
+     "reveal": "$25,000 - 50% x ($138,000 - $100,000) = $6,000."
+    },
+    {
+     "ask": "How much is suspended?",
+     "reveal": "$22,000 - $6,000 = $16,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-B-0005",
@@ -3779,7 +4151,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group B / Suspended losses / Application"
+   "blueprint_tag": "TCP Area I / Group B / Suspended losses / Application",
+   "guide": [
+    {
+     "ask": "Does a fully taxable sale of the entire interest release the suspended losses?",
+     "reveal": "Yes, all suspended and current losses become deductible."
+    },
+    {
+     "ask": "Net the losses against the gain.",
+     "reveal": "$6,000 + $40,000 = $46,000 of losses less $25,000 of gain reduces AGI by $21,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-B-0006",
@@ -3846,7 +4228,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group B / Suspended losses / Application"
+   "blueprint_tag": "TCP Area I / Group B / Suspended losses / Application",
+   "guide": [
+    {
+     "ask": "Is a gift of the property a taxable disposition that frees suspended losses?",
+     "reveal": "No, a gift does not free them for the donor."
+    },
+    {
+     "ask": "Where do the suspended losses go instead?",
+     "reveal": "They are added to the donee's basis, so the son's basis rises."
+    }
+   ]
   },
   {
    "id": "TCP-I-B-0007",
@@ -3913,7 +4305,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group B / Passive activity loss / Application"
+   "blueprint_tag": "TCP Area I / Group B / Passive activity loss / Application",
+   "guide": [
+    {
+     "ask": "What two tests must a real estate professional meet?",
+     "reveal": "More than half of personal service time in real property businesses, and more than 750 hours in them."
+    },
+    {
+     "ask": "Which person meets both?",
+     "reveal": "Compare each real property share with total hours, and check the 750 threshold."
+    }
+   ]
   },
   {
    "id": "TCP-I-B-0008",
@@ -4031,7 +4433,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group B / At-risk limitation / Analysis"
+   "blueprint_tag": "TCP Area I / Group B / At-risk limitation / Analysis",
+   "guide": [
+    {
+     "ask": "In what order are the limits applied?",
+     "reveal": "Basis first, then at-risk, then passive activity rules."
+    },
+    {
+     "ask": "What amount remains after the first two, and how much can offset passive income?",
+     "reveal": "$45,000 remains after basis and at-risk, of which $20,000 can be used, so $25,000 is suspended by the passive rules."
+    }
+   ]
   },
   {
    "id": "TCP-I-B-0009",
@@ -4098,7 +4510,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group B / At-risk limitation / Remembering & Understanding"
+   "blueprint_tag": "TCP Area I / Group B / At-risk limitation / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "Which loans are excluded from at-risk amounts?",
+     "reveal": "Borrowings from a person with an interest in the activity other than as a creditor."
+    },
+    {
+     "ask": "Which statement matches that rule?",
+     "reveal": "The one about amounts borrowed from an interested owner; the other statements misstate the order or the scope of the rules."
+    }
+   ]
   },
   {
    "id": "TCP-I-B-0010",
@@ -4211,7 +4633,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group B / Passive activity loss / Application"
+   "blueprint_tag": "TCP Area I / Group B / Passive activity loss / Application",
+   "guide": [
+    {
+     "ask": "How is Xavier's loss classified?",
+     "reveal": "Nonpassive, since he works full time in the business, so all $50,000 offsets other income."
+    },
+    {
+     "ask": "How much of Yara's loss can she deduct, and what is the gap?",
+     "reveal": "Passive, limited to her $10,000 of passive income, so the difference is $50,000 - $10,000 = $40,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-C-0001",
@@ -4278,7 +4710,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group C / Gift tax deductions/exclusions / Remembering & Understanding"
+   "blueprint_tag": "TCP Area I / Group C / Gift tax deductions/exclusions / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "Which payments to a school are excluded regardless of amount?",
+     "reveal": "Tuition paid directly to the educational institution."
+    },
+    {
+     "ask": "Which choice matches this?",
+     "reveal": "The one where the payer sends the tuition directly to the college, not through family members."
+    }
+   ]
   },
   {
    "id": "TCP-I-C-0002",
@@ -4345,7 +4787,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group C / Unified transfer tax system / Remembering & Understanding"
+   "blueprint_tag": "TCP Area I / Group C / Unified transfer tax system / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "What is the annual exclusion per donee limited to?",
+     "reveal": "Present-interest gifts only, per donee each year, not a lifetime cap."
+    },
+    {
+     "ask": "What about gifts to a spouse?",
+     "reveal": "Outright gifts to a U.S. citizen spouse qualify for the unlimited marital deduction."
+    }
+   ]
   },
   {
    "id": "TCP-I-C-0003",
@@ -4473,7 +4925,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group C / Taxable gifts / Application"
+   "blueprint_tag": "TCP Area I / Group C / Taxable gifts / Application",
+   "guide": [
+    {
+     "ask": "Which of the four gifts are not taxable at all?",
+     "reveal": "The direct tuition payment and the gift to his citizen wife."
+    },
+    {
+     "ask": "Compute the taxable ones.",
+     "reveal": "($80,000 - $19,000) + ($30,000 - $19,000) = $61,000 + $11,000 = $72,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-C-0004",
@@ -4586,7 +5048,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group C / Taxable gifts / Application"
+   "blueprint_tag": "TCP Area I / Group C / Taxable gifts / Application",
+   "guide": [
+    {
+     "ask": "How is a split gift treated?",
+     "reveal": "Each spouse is treated as giving half, $50,000 each."
+    },
+    {
+     "ask": "Apply the exclusion and combine.",
+     "reveal": "$50,000 - $19,000 = $31,000 each, so $62,000 combined."
+    }
+   ]
   },
   {
    "id": "TCP-I-C-0005",
@@ -4704,7 +5176,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group C / Taxable gifts / Application"
+   "blueprint_tag": "TCP Area I / Group C / Taxable gifts / Application",
+   "guide": [
+    {
+     "ask": "What are her cumulative taxable gifts?",
+     "reveal": "$9,000,000 + $6,900,000 = $15,900,000."
+    },
+    {
+     "ask": "How much exceeds the exclusion, and what is the tax?",
+     "reveal": "$900,000 over $15,000,000, taxed at 40% = $360,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-C-0006",
@@ -4822,7 +5304,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group C / Gifting for planning / Analysis"
+   "blueprint_tag": "TCP Area I / Group C / Gifting for planning / Analysis",
+   "guide": [
+    {
+     "ask": "What basis does the daughter take in a gift versus an inheritance?",
+     "reveal": "Gift: the donor's basis of $20,000. Inheritance: fair market value at death, $100,000."
+    },
+    {
+     "ask": "Compute the difference in tax.",
+     "reveal": "Gain of $80,000 under a gift, none under a bequest; $80,000 x 20% = $16,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-C-0007",
@@ -4951,7 +5443,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group C / Gifting for planning / Application"
+   "blueprint_tag": "TCP Area I / Group C / Gifting for planning / Application",
+   "guide": [
+    {
+     "ask": "What is the starting basis for the niece?",
+     "reveal": "The donor's basis of $65,000."
+    },
+    {
+     "ask": "How much of the gift tax is added?",
+     "reveal": "$18,000 x $65,000 / $111,000 = $10,541, where $111,000 is the gift less the exclusion. Basis = $75,541."
+    }
+   ]
   },
   {
    "id": "TCP-I-C-0008",
@@ -5018,7 +5520,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group C / Gift tax deductions/exclusions / Remembering & Understanding"
+   "blueprint_tag": "TCP Area I / Group C / Gift tax deductions/exclusions / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "Which gifts are ignored for return purposes?",
+     "reveal": "Gifts within the exclusion, marital deduction gifts, and direct tuition payments."
+    },
+    {
+     "ask": "Which gift exceeds the annual exclusion as a present interest?",
+     "reveal": "The one above $19,000 to a single person other than a spouse."
+    }
+   ]
   },
   {
    "id": "TCP-I-C-0009",
@@ -5130,7 +5642,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group C / Gift tax deductions/exclusions / Application"
+   "blueprint_tag": "TCP Area I / Group C / Gift tax deductions/exclusions / Application",
+   "guide": [
+    {
+     "ask": "How many years of exclusion can one donor front-load into a 529 contribution?",
+     "reveal": "Five years, so $19,000 x 5 = $95,000."
+    },
+    {
+     "ask": "What does gift splitting add for a married couple?",
+     "reveal": "Both spouses can do it: $95,000 x 2 = $190,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-C-0010",
@@ -5248,7 +5770,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group C / Gifting for planning / Analysis"
+   "blueprint_tag": "TCP Area I / Group C / Gifting for planning / Analysis",
+   "guide": [
+    {
+     "ask": "What are the taxable gifts if she gives all $100,000 in cash?",
+     "reveal": "$100,000 - $19,000 = $81,000."
+    },
+    {
+     "ask": "What changes with direct payments to the providers?",
+     "reveal": "Tuition and medical payments are excluded, leaving $48,000 - $19,000 = $29,000; the reduction is $52,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0001",
@@ -5315,7 +5847,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Remembering & Understanding"
+   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "Does Ellen meet the age and five-year requirements for a Roth distribution?",
+     "reveal": "Yes, she is over 59 1/2 and the account is eight years old."
+    },
+    {
+     "ask": "What does that make the distribution?",
+     "reveal": "A qualified one, so neither contributions nor earnings are in gross income and no additional tax applies."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0002",
@@ -5427,7 +5969,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Application"
+   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Application",
+   "guide": [
+    {
+     "ask": "In what order does a nonqualified deferred annuity pay out before annuitization?",
+     "reveal": "Earnings come out first, then the investment in the contract."
+    },
+    {
+     "ask": "Compare the gain with the withdrawal.",
+     "reveal": "The gain is $130,000 - $100,000 = $30,000, more than $20,000, so the whole withdrawal is taxable."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0003",
@@ -5539,7 +6091,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Application"
+   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Application",
+   "guide": [
+    {
+     "ask": "What share of the IRA is nondeductible basis?",
+     "reveal": "$9,000 / $90,000 = 10%."
+    },
+    {
+     "ask": "Apply it to the conversion.",
+     "reveal": "The taxable part is 90% x $30,000 = $27,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0004",
@@ -5645,7 +6207,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Analysis"
+   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Analysis",
+   "guide": [
+    {
+     "ask": "What does the traditional path leave after tax?",
+     "reveal": "$7,000 doubles to $14,000, then 32% tax leaves $9,520."
+    },
+    {
+     "ask": "What does the Roth path leave?",
+     "reveal": "$7,000 x 76% = $5,320, doubled to $10,640 tax-free."
+    },
+    {
+     "ask": "Compare.",
+     "reveal": "$10,640 - $9,520 = $1,120 in favor of the Roth."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0005",
@@ -5756,7 +6332,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Application"
+   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Application",
+   "guide": [
+    {
+     "ask": "Which year-end balance and which age factor drive the 2026 distribution?",
+     "reveal": "The balance at December 31, 2025 and the factor for the age reached in 2026, which is 74."
+    },
+    {
+     "ask": "Compute.",
+     "reveal": "$1,000,000 / 25.5 = $39,216."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0006",
@@ -5869,7 +6455,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Application"
+   "blueprint_tag": "TCP Area I / Group D / Retirement plans / Application",
+   "guide": [
+    {
+     "ask": "How much of the withdrawal is taxable?",
+     "reveal": "All $20,000, since it is pre-tax money, giving $4,800 at 24%."
+    },
+    {
+     "ask": "Which part is exposed to the 10% additional tax?",
+     "reveal": "Only the $10,000 that does not qualify for the first-home exception: $1,000. Total $5,800."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0007",
@@ -5932,7 +6528,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group D / Investment risk / Remembering & Understanding"
+   "blueprint_tag": "TCP Area I / Group D / Investment risk / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "Which risks can be diversified away and which cannot?",
+     "reveal": "Risk specific to one issuer can be diversified away, but risk that affects the whole market cannot."
+    },
+    {
+     "ask": "Which statement matches?",
+     "reveal": "The one about holding many unrelated companies."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0008",
@@ -6044,7 +6650,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group D / Investment ROI / Application"
+   "blueprint_tag": "TCP Area I / Group D / Investment ROI / Application",
+   "guide": [
+    {
+     "ask": "Which taxes apply to the corporate bond interest?",
+     "reveal": "Ordinary rate of 35% plus the 3.8% net investment income tax, 38.8% in all."
+    },
+    {
+     "ask": "Compute the after-tax yield.",
+     "reveal": "5.6% x (1 - 0.388) = 3.43%."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0009",
@@ -6165,7 +6781,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group D / Investment ROI / Analysis"
+   "blueprint_tag": "TCP Area I / Group D / Investment ROI / Analysis",
+   "guide": [
+    {
+     "ask": "What does Investment X earn after tax?",
+     "reveal": "Dividends 3 x $1,500 x 85% = $3,825 plus gain of $18,000 x 85% = $15,300, or $19,125 (38.25% of cost)."
+    },
+    {
+     "ask": "What does Investment Y earn after tax?",
+     "reveal": "3 x $2,600 x 68% = $5,304, or 10.61% of cost."
+    },
+    {
+     "ask": "Compare.",
+     "reveal": "38.25% - 10.61% = 27.64 points in favor of X."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0010",
@@ -6282,7 +6912,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group D / Education funding / Application"
+   "blueprint_tag": "TCP Area I / Group D / Education funding / Application",
+   "guide": [
+    {
+     "ask": "Which uses of a scholarship stay tax-free for a degree candidate?",
+     "reveal": "Tuition, required fees and required books."
+    },
+    {
+     "ask": "What remains taxable?",
+     "reveal": "The $2,000 for room and board."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0011",
@@ -6400,7 +7040,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group D / Education funding / Application"
+   "blueprint_tag": "TCP Area I / Group D / Education funding / Application",
+   "guide": [
+    {
+     "ask": "What part of a nonqualified 529 withdrawal is taxed?",
+     "reveal": "Only the earnings: 30% x $10,000 = $3,000."
+    },
+    {
+     "ask": "What do income tax and the additional tax come to?",
+     "reveal": "24% x $3,000 = $720 plus 10% x $3,000 = $300, so $1,020."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0012",
@@ -6467,7 +7117,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group D / Insurance planning / Remembering & Understanding"
+   "blueprint_tag": "TCP Area I / Group D / Insurance planning / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "Is life insurance paid at death taxed to the beneficiary as income?",
+     "reveal": "No, death benefits are generally excluded from the recipient's income."
+    },
+    {
+     "ask": "What about the insured's estate when the insured owned the policy?",
+     "reveal": "The proceeds are included in the gross estate."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0013",
@@ -6534,7 +7194,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area I / Group D / Asset ownership & beneficiary / Remembering & Understanding"
+   "blueprint_tag": "TCP Area I / Group D / Asset ownership & beneficiary / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "What document controls who receives a retirement account?",
+     "reveal": "The beneficiary designation form on file with the plan."
+    },
+    {
+     "ask": "Does the will override it?",
+     "reveal": "No, the account passes outside the will to the named beneficiary."
+    }
+   ]
   }
  ]
 }

@@ -70,7 +70,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which two characteristics does the framework label as the fundamental ones?",
+     "reveal": "Relevance and one that concerns whether the information depicts what it claims to depict."
+    },
+    {
+     "ask": "Of the candidates listed, which one is the second of those two?",
+     "reveal": "Faithful representation; the others are enhancing characteristics."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0002",
@@ -124,7 +134,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the owner's personal spending doing inside the company's books?",
+     "reveal": "Mixing the owner's private affairs with the business's records."
+    },
+    {
+     "ask": "Which basic assumption requires the business to be kept separate from its owner?",
+     "reveal": "The economic entity assumption."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0003",
@@ -178,7 +198,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Was the land sale part of Cedar Point's central, ongoing operations?",
+     "reveal": "No, it was a one-time disposal of an asset held for future use."
+    },
+    {
+     "ask": "What does the framework call a net increase from a peripheral or incidental transaction?",
+     "reveal": "A gain, reported in net income here."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0004",
@@ -232,7 +262,17 @@
     "A": "trap",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Management's going concern evaluation looks forward from which reference point, the balance sheet date or the issuance date?",
+     "reveal": "From the date the statements are issued or available to be issued."
+    },
+    {
+     "ask": "How far past that date must the evaluation extend, and what date results?",
+     "reveal": "One year, so March 10, 2028."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0005",
@@ -286,7 +326,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Do management's plans alleviate the doubt in this case?",
+     "reveal": "No, the plan is not probable of being effectively implemented."
+    },
+    {
+     "ask": "Given that, what must the notes say besides the conditions and plans?",
+     "reveal": "A statement that substantial doubt exists, along with management's evaluation."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0006",
@@ -364,7 +414,21 @@
     "A": "concept",
     "B": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which listed liabilities are ordinary current items?",
+     "reveal": "Accounts payable, accrued wages, current maturities and dividends payable."
+    },
+    {
+     "ask": "The $600,000 note is due within a year; was long-term refinancing completed before issuance?",
+     "reveal": "Yes, bonds were issued on January 20 before March 5, so the note is excluded."
+    },
+    {
+     "ask": "What is the sum of the ordinary items?",
+     "reveal": "250,000 + 40,000 + 100,000 + 30,000 = 420,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0007",
@@ -447,7 +511,21 @@
     "B": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items are cash-like or receivable and current, net of the allowance?",
+     "reveal": "Unrestricted cash 80,000 and receivables net 210,000 - 10,000 = 200,000."
+    },
+    {
+     "ask": "How much of the 18-month prepaid insurance is current, and what about the restricted cash and equity investment?",
+     "reveal": "12/18 of 45,000 = 30,000 is current; the restricted cash for 2028 and the equity-method investment are noncurrent."
+    },
+    {
+     "ask": "What is the total with inventory and trading securities?",
+     "reveal": "80,000 + 200,000 + 150,000 + 30,000 + 40,000 = 500,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0008",
@@ -526,7 +604,21 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much revenue is recognized per month?",
+     "reveal": "1,200,000 / 24 = 50,000 per month."
+    },
+    {
+     "ask": "How much remains unearned at December 31 after six months?",
+     "reveal": "1,200,000 - 300,000 = 900,000."
+    },
+    {
+     "ask": "How much of that is due within the next 12 months, and what is left as noncurrent?",
+     "reveal": "600,000 is current, so 900,000 - 600,000 = 300,000 is noncurrent."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0009",
@@ -584,7 +676,17 @@
     "A": "concept",
     "B": "concept",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Do deferred tax assets and liabilities of one jurisdiction stay separate or get combined?",
+     "reveal": "They are netted, since they relate to the same taxing authority."
+    },
+    {
+     "ask": "How are net deferred taxes classified, and what is the net amount?",
+     "reveal": "Noncurrent; 100,000 - 40,000 = 60,000 net liability."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0010",
@@ -661,7 +763,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Can the Second Bank overdraft be offset against the First Bank balance?",
+     "reveal": "No, there is no right of offset between different banks."
+    },
+    {
+     "ask": "Where does the overdraft go, and what stays in cash?",
+     "reveal": "It is a current liability; cash remains 85,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0011",
@@ -719,7 +831,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which disclosures are the summary of significant accounting policies meant to explain?",
+     "reveal": "Policies management picked where acceptable alternatives exist."
+    },
+    {
+     "ask": "Which listed item is such a selected policy?",
+     "reveal": "The inventory cost-flow assumption when several methods are acceptable."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0012",
@@ -773,7 +895,17 @@
     "A": "trap",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Was the covenant violation waived, and for how long from the balance sheet date?",
+     "reveal": "Yes, in writing before issuance, for 15 months from December 31, 2026."
+    },
+    {
+     "ask": "When is a callable debt still noncurrent?",
+     "reveal": "When the creditor has waived the right to demand repayment for more than one year from the balance sheet date, which 15 months exceeds."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0013",
@@ -827,7 +959,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Has any transaction or event already occurred that obligates Fenwick to pay?",
+     "reveal": "No, there is no signed order and no goods received."
+    },
+    {
+     "ask": "What does the definition of a liability require, and does this plan meet it?",
+     "reveal": "A present obligation from a past event; it does not, so nothing is recognized."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0014",
@@ -910,7 +1052,21 @@
     "A": "concept",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is net sales?",
+     "reveal": "900,000 - 30,000 - 20,000 = 850,000."
+    },
+    {
+     "ask": "After cost of goods sold and selling and administrative expenses, what is left?",
+     "reveal": "850,000 - 510,000 - 140,000 = 200,000."
+    },
+    {
+     "ask": "Which other items stay in continuing operations, and which is excluded?",
+     "reveal": "Interest, the equipment loss and the unusual gain all stay; only the discontinued component is excluded. Result 200,000 - 25,000 + 5,000 - 12,000 + 18,000 = 186,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0015",
@@ -988,7 +1144,17 @@
     "B": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the division's operating income and the disposal loss reported together?",
+     "reveal": "Yes, both belong in discontinued operations, before tax."
+    },
+    {
+     "ask": "What is the pretax net, and what is it after the 30% tax?",
+     "reveal": "180,000 - 60,000 = 120,000; 120,000 x 0.70 = 84,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0016",
@@ -1042,7 +1208,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which situations are just routine replacements or small closures with no major effect?",
+     "reveal": "A single store, a single production line and a headquarters move."
+    },
+    {
+     "ask": "Which disposal ends a whole line of business with a large share of revenue and a strategic shift?",
+     "reveal": "The sale of the entire European division producing 35% of revenue."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0017",
@@ -1120,7 +1296,21 @@
     "A": "calc",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What measurement rule applies to a disposal group held for sale?",
+     "reveal": "Lower of carrying amount or fair value less costs to sell."
+    },
+    {
+     "ask": "What is fair value less costs to sell?",
+     "reveal": "780,000 - 40,000 = 740,000."
+    },
+    {
+     "ask": "What loss results against the carrying amount?",
+     "reveal": "900,000 - 740,000 = 160,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0018",
@@ -1174,7 +1364,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the tornado loss unusual or infrequent, and does GAAP still allow an extraordinary category?",
+     "reveal": "It is unusual and infrequent, but the extraordinary item category has been eliminated."
+    },
+    {
+     "ask": "Where do unusual or infrequent items go?",
+     "reveal": "Within continuing operations, separately identified on the face or in the notes."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0019",
@@ -1256,7 +1456,17 @@
     "B": "calc",
     "C": "trap",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which of the listed items are other comprehensive income?",
+     "reveal": "Available-for-sale gain, translation loss and pension actuarial loss; the equity gain is already in net income."
+    },
+    {
+     "ask": "What is total OCI and total comprehensive income?",
+     "reveal": "30,000 - 20,000 - 15,000 = -5,000; 500,000 - 5,000 = 495,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0020",
@@ -1339,7 +1549,21 @@
     "A": "concept",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Before the sale, what happens to the 2026 increase in fair value from $125,000 to $140,000?",
+     "reveal": "The $15,000 holding gain is recorded in OCI, so AOCI rises from 25,000 to 40,000."
+    },
+    {
+     "ask": "When the securities are sold, how much of the accumulated gain leaves AOCI?",
+     "reveal": "All of it: the whole 40,000 is reclassified, and AOCI ends at zero."
+    },
+    {
+     "ask": "Check against the realized gain in net income.",
+     "reveal": "140,000 - 100,000 = 40,000, the same amount."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0021",
@@ -1393,7 +1617,17 @@
     "B": "concept",
     "C": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does GAAP require OCI to be shown in notes or equity only, or as a performance statement?",
+     "reveal": "It must appear in a performance statement, not just in the notes or equity statement."
+    },
+    {
+     "ask": "What formats are permitted, and how must two statements be arranged?",
+     "reveal": "One continuous statement, or two statements presented consecutively with the income statement first."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0022",
@@ -1472,7 +1706,17 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are cost of goods available for sale?",
+     "reveal": "180,000 + 900,000 - 40,000 + 30,000 = 1,070,000."
+    },
+    {
+     "ask": "Subtract ending inventory for cost of goods sold, then subtract from sales.",
+     "reveal": "1,070,000 - 220,000 = 850,000; 1,250,000 - 850,000 = 400,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0023",
@@ -1549,7 +1793,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does a 5% stock dividend count as small, and at what amount is it charged?",
+     "reveal": "Small (under 20-25%), so it is charged to retained earnings at fair value, 50,000."
+    },
+    {
+     "ask": "Combine all changes to retained earnings.",
+     "reveal": "640,000 + 210,000 - 80,000 - 50,000 = 720,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0024",
@@ -1626,7 +1880,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items increase equity and which decrease it?",
+     "reveal": "Income, stock issuance raise it; OCI loss, dividends and treasury purchases lower it."
+    },
+    {
+     "ask": "Compute the ending total.",
+     "reveal": "2,000,000 + 300,000 - 40,000 - 120,000 + 250,000 - 90,000 = 2,300,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0025",
@@ -1684,7 +1948,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which securities have their unrealized changes run through net income?",
+     "reveal": "Trading debt securities and equity securities with readily determinable fair values; realized building gains also hit income."
+    },
+    {
+     "ask": "Which remaining item bypasses net income into OCI?",
+     "reveal": "Unrealized gains on available-for-sale debt securities."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0026",
@@ -1763,7 +2037,17 @@
     "B": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the net pretax OCI for the year after the reclassification?",
+     "reveal": "60,000 - 25,000 = 35,000."
+    },
+    {
+     "ask": "What is it after 25% tax, and what is the ending AOCI?",
+     "reveal": "35,000 x 0.75 = 26,250; 120,000 + 26,250 = 146,250."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0027",
@@ -1842,7 +2126,21 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which nonoperating items must be reversed out of net income?",
+     "reveal": "Add back depreciation and the equipment loss; remove the investment gain. 320,000 + 90,000 + 15,000 - 20,000 = 405,000."
+    },
+    {
+     "ask": "What is the effect of working capital changes?",
+     "reveal": "-40,000 + 25,000 + 30,000 - 12,000 = 3,000."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "405,000 + 3,000 = 408,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0028",
@@ -1919,7 +2217,17 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which direction do write-offs move receivables, and do they involve cash?",
+     "reveal": "They reduce gross receivables without any cash coming in."
+    },
+    {
+     "ask": "Set up the receivables rollforward and solve for collections.",
+     "reveal": "150,000 + 1,200,000 - 10,000 - 190,000 = 1,150,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0029",
@@ -1997,7 +2305,17 @@
     "A": "calc",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What purchases are needed given cost of goods sold and the inventory change?",
+     "reveal": "800,000 + 30,000 = 830,000."
+    },
+    {
+     "ask": "How does the drop in payables change cash paid?",
+     "reveal": "The reduction means 20,000 more cash left than was purchased on credit: 830,000 + 20,000 = 850,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0030",
@@ -2075,7 +2393,17 @@
     "A": "calc",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which part of expenses involved no cash?",
+     "reveal": "Depreciation of 40,000, leaving 260,000 of cash-type expenses."
+    },
+    {
+     "ask": "How do prepaids and accruals adjust that?",
+     "reveal": "Add the prepaid increase 8,000 and the accrual decrease 12,000: 260,000 + 20,000 = 280,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0031",
@@ -2156,7 +2484,17 @@
     "A": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which listed flows are not financing?",
+     "reveal": "Interest paid is operating and equipment proceeds are investing."
+    },
+    {
+     "ask": "Add the remaining flows with proper signs.",
+     "reveal": "300,000 - 80,000 - 55,000 - 120,000 = 45,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0032",
@@ -2233,7 +2571,17 @@
     "A": "concept",
     "B": "calc",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does a prepayment penalty on debt retirement count as operating or financing?",
+     "reveal": "Financing, as a cost of extinguishing the debt."
+    },
+    {
+     "ask": "What is the total outflow?",
+     "reveal": "500,000 + 45,000 = 545,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0033",
@@ -2287,7 +2635,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which listed flows relate to investing or financing sources?",
+     "reveal": "Equipment sale is investing; dividends and bond proceeds are financing."
+    },
+    {
+     "ask": "Which flow is a return on a loan to a customer?",
+     "reveal": "Interest received, which is operating."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0034",
@@ -2341,7 +2699,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What defines a noncash investing and financing transaction?",
+     "reveal": "Exchanges of assets or claims where no cash changes hands."
+    },
+    {
+     "ask": "Which listed transaction involves no cash at all?",
+     "reveal": "Land acquired by issuing common stock."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0035",
@@ -2423,7 +2791,17 @@
     "A": "calc",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What total does the statement reconcile once restricted cash is included?",
+     "reveal": "Cash, equivalents and restricted cash together: beginning 250,000, ending 340,000, change 90,000."
+    },
+    {
+     "ask": "Solve for financing.",
+     "reveal": "90,000 - 300,000 + 410,000 = 200,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0036",
@@ -2543,7 +2921,21 @@
     "A": "concept",
     "B": "concept",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How do you get net income from retained earnings?",
+     "reveal": "Change in retained earnings plus dividends: 610,000 - 500,000 + 90,000 = 200,000."
+    },
+    {
+     "ask": "Which noncash and working capital adjustments apply?",
+     "reveal": "Depreciation +70,000; receivables -30,000; inventory +20,000; prepaids -5,000."
+    },
+    {
+     "ask": "Finish with liabilities and total.",
+     "reveal": "Payables +15,000; taxes payable -8,000; total 262,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0037",
@@ -2625,7 +3017,17 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much equipment was bought, given the gross balance and the disposal?",
+     "reveal": "950,000 - 800,000 + 90,000 = 240,000."
+    },
+    {
+     "ask": "Combine the purchase with sale proceeds.",
+     "reveal": "-240,000 + 50,000 = -190,000 used."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0038",
@@ -2706,7 +3108,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items are reversed from net income, and which part of the investee's earnings is cash?",
+     "reveal": "Depreciation is added; the 50,000 equity earnings are removed and the 20,000 dividends received are added."
+    },
+    {
+     "ask": "Calculate.",
+     "reveal": "400,000 + 60,000 - 50,000 + 20,000 = 430,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0039",
@@ -2783,7 +3195,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items are noncash and add back, and which reduces?",
+     "reveal": "Discount amortization, deferred tax, stock compensation and impairment add back; premium amortization subtracts."
+    },
+    {
+     "ask": "Calculate.",
+     "reveal": "250,000 + 12,000 - 8,000 + 20,000 + 15,000 + 40,000 = 329,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0040",
@@ -2864,7 +3286,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Do all the listed items belong in operating activities under the direct method?",
+     "reveal": "Yes, including interest paid, taxes paid and interest received."
+    },
+    {
+     "ask": "Net them.",
+     "reveal": "1,150,000 - 700,000 - 280,000 - 25,000 - 60,000 + 10,000 = 95,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0041",
@@ -2942,7 +3374,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the investing amount for a sale of equipment under the indirect method?",
+     "reveal": "The cash proceeds only, not the cost or the gain."
+    },
+    {
+     "ask": "What is done with the gain of 62,000 - (120,000 - 70,000) = 12,000?",
+     "reveal": "It is subtracted in operating activities, so investing shows 62,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0042",
@@ -2996,7 +3438,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which listed items are dealings between the entity and insiders outside normal employment?",
+     "reveal": "The warehouse sale to the spouse's company, the director loan and the purchases from the chair's supplier."
+    },
+    {
+     "ask": "Which is a routine compensation arrangement?",
+     "reveal": "The CEO's salary and expense allowances under her employment agreement, which are excluded."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0043",
@@ -3050,7 +3502,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Did the concentration exist at the balance sheet date, and could its loss be severe soon?",
+     "reveal": "Yes, 70% of output was sold to one buyer, and losing it would be a severe near-term hit."
+    },
+    {
+     "ask": "What does GAAP require for such a concentration?",
+     "reveal": "Disclosure, regardless of related party status or collection problems."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0044",
@@ -3104,7 +3566,17 @@
     "A": "limit",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What two features of a change in estimate trigger disclosure of an uncertainty?",
+     "reveal": "Timing in the near term and materiality of the effect."
+    },
+    {
+     "ask": "What probability level is enough for that timing feature?",
+     "reveal": "At least reasonably possible, not necessarily probable."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0045",
@@ -3158,7 +3630,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Under the indirect method, which two cash payments are supplemental disclosures?",
+     "reveal": "Interest paid (net of capitalized interest) and income taxes paid."
+    },
+    {
+     "ask": "Are payroll, utilities or dividends among the required ones?",
+     "reveal": "No, those are not required supplemental items."
+    }
+   ]
   },
   {
    "id": "FAR-I-A-0046",
@@ -3212,7 +3694,17 @@
     "A": "concept",
     "B": "concept",
     "C": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How many years after the balance sheet date does the maturity disclosure cover?",
+     "reveal": "Five years."
+    },
+    {
+     "ask": "Which years does that include here?",
+     "reveal": "2027 through 2031, each shown separately; 2032 is not separately shown."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0001",
@@ -3266,7 +3758,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Under the current standards, what is the basis for classifying net assets?",
+     "reveal": "Only whether donors imposed restrictions."
+    },
+    {
+     "ask": "How many classes result?",
+     "reveal": "Two: with and without donor restrictions."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0002",
@@ -3324,7 +3826,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Who set aside the funds, a donor or the board?",
+     "reveal": "The board, and no donor imposed conditions."
+    },
+    {
+     "ask": "Does a board designation create a donor restriction?",
+     "reveal": "No; the net assets stay without donor restrictions, with the designation disclosed."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0003",
@@ -3408,7 +3920,17 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the promise unconditional, and what measurement is required for multi-year promises?",
+     "reveal": "Unconditional, so recognize the present value of the future payments."
+    },
+    {
+     "ask": "Discount each 100,000 payment at 6% for one, two and three years.",
+     "reveal": "94,340 + 89,000 + 83,962, about 267,301."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0004",
@@ -3490,7 +4012,17 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the grant have a barrier and a right of return?",
+     "reveal": "Yes, allowable costs must be incurred and unspent funds are recoverable, so it is conditional."
+    },
+    {
+     "ask": "When is revenue recognized, and what happens to the advance?",
+     "reveal": "As costs are incurred, so 220,000; the 150,000 advance is a refundable advance until then."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0005",
@@ -3568,7 +4100,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much did the guests receive in return for the payment?",
+     "reveal": "Dinner and entertainment worth 3,000, which is an exchange."
+    },
+    {
+     "ask": "What is the contribution portion?",
+     "reveal": "10,000 - 3,000 = 7,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0006",
@@ -3646,7 +4188,17 @@
     "A": "calc",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which volunteer services qualify for recognition?",
+     "reveal": "Those requiring specialized skills that the entity would otherwise buy."
+    },
+    {
+     "ask": "Which hours qualify and what is their value?",
+     "reveal": "Only the CPA hours: 1,200 x 60 = 72,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0007",
@@ -3704,7 +4256,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Under what conditions may art be left off the statements?",
+     "reveal": "When the collection meets the preservation, public exhibition and restricted-proceeds criteria."
+    },
+    {
+     "ask": "Does this museum's policy meet them, and what is then required?",
+     "reveal": "Yes, so it is not capitalized and no revenue is recorded, but the policy is disclosed."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0008",
@@ -3782,7 +4344,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the gross investment return including realized and unrealized gains?",
+     "reveal": "60,000 + 25,000 + 65,000 = 150,000."
+    },
+    {
+     "ask": "Which costs are netted against it?",
+     "reveal": "External fees and direct internal costs: 150,000 - 12,000 - 8,000 = 130,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0009",
@@ -3860,7 +4432,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is a restriction to acquire equipment considered met, absent other stipulations?",
+     "reveal": "When the equipment is placed in service."
+    },
+    {
+     "ask": "How much is released then?",
+     "reveal": "The full 200,000, not spread over the useful life."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0010",
@@ -3938,7 +4520,17 @@
     "A": "concept",
     "B": "concept",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Was the mailing audience chosen for its ability to give, and does that pass the audience test for program cost allocation?",
+     "reveal": "Yes it was selected for giving likelihood, so the audience criterion is not met."
+    },
+    {
+     "ask": "How much can then be allocated to education?",
+     "reveal": "None; the whole 100,000 is fundraising."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0011",
@@ -4022,7 +4614,21 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which cash is free of donor limits?",
+     "reveal": "300,000 - 40,000 = 260,000."
+    },
+    {
+     "ask": "Which investments are available, excluding endowment and the illiquid partnership?",
+     "reveal": "500,000 - 150,000 - 100,000 = 250,000."
+    },
+    {
+     "ask": "Add receivables.",
+     "reveal": "260,000 + 80,000 + 250,000 = 590,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0012",
@@ -4076,7 +4682,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does Harbor have variance power, and is it a named beneficiary?",
+     "reveal": "No to both."
+    },
+    {
+     "ask": "What role does that make Harbor play, and what is recorded?",
+     "reveal": "An agent, so a liability to the shelter is recorded, not revenue."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0013",
@@ -4154,7 +4770,17 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the deficiency of the fund relative to the original gift?",
+     "reveal": "1,000,000 - 940,000 = 60,000."
+    },
+    {
+     "ask": "Where is the deficiency reported, and what remains in the class?",
+     "reveal": "It reduces net assets with donor restrictions, leaving the fair value of 940,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0014",
@@ -4208,7 +4834,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "For which cash flow category is cash restricted to a permanent endowment classified?",
+     "reveal": "Financing, because it is for long-term purposes."
+    },
+    {
+     "ask": "Does immediately investing it change that?",
+     "reveal": "No; the receipt is a financing inflow and the purchase is a separate investing outflow."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0015",
@@ -4286,7 +4922,17 @@
     "A": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "At what amount is donated stock recognized?",
+     "reveal": "Its fair value on the gift date, 80,000, not the donor's cost."
+    },
+    {
+     "ask": "How is the later sale reported?",
+     "reveal": "The 85,000 - 80,000 = 5,000 gain is investment return, separate from revenue."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0016",
@@ -4363,7 +5009,17 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What share of rent belongs to management and general?",
+     "reveal": "25%."
+    },
+    {
+     "ask": "Compute it.",
+     "reveal": "120,000 x 25% = 30,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0017",
@@ -4441,7 +5097,17 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the program services share of total expenses?",
+     "reveal": "Program services divided by all expenses."
+    },
+    {
+     "ask": "Compute it.",
+     "reveal": "780,000 / 1,000,000 = 78.0%."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0018",
@@ -4525,7 +5191,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which of the three items are recognized in 2026?",
+     "reveal": "The unconditional promise and the restricted cash gift; the matching-condition promise is not recognized."
+    },
+    {
+     "ask": "What is the net change in the restricted class?",
+     "reveal": "200,000 + (150,000 - 90,000) = 260,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0019",
@@ -4583,7 +5259,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does this requirement apply to all not-for-profits or only certain types?",
+     "reveal": "All not-for-profits."
+    },
+    {
+     "ask": "What analysis of expenses is required, and where can it be shown?",
+     "reveal": "By nature and function, in a separate statement, the notes or the statement of activities."
+    }
+   ]
   },
   {
    "id": "FAR-I-B-0020",
@@ -4637,7 +5323,17 @@
     "A": "trap",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Was the restriction met in the same period as the gift?",
+     "reveal": "Yes, the camp was held and the money spent within 2026."
+    },
+    {
+     "ask": "Given the entity's consistent policy, how is it reported?",
+     "reveal": "Directly as revenue without donor restrictions, with no release entry."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0001",
@@ -4691,7 +5387,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which components make up the basic financial statements of a general-purpose government?",
+     "reveal": "Government-wide statements, fund statements and the notes."
+    },
+    {
+     "ask": "Where do MD&A and budgetary schedules fall?",
+     "reveal": "They are required supplementary information, outside the basic statements."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0002",
@@ -4745,7 +5451,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which measurement focus applies to governmental funds?",
+     "reveal": "Current financial resources."
+    },
+    {
+     "ask": "Which basis goes with it?",
+     "reveal": "Modified accrual."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0003",
@@ -4799,7 +5515,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Whom does the internal service fund serve mainly?",
+     "reveal": "City departments that are mostly governmental."
+    },
+    {
+     "ask": "How is such a fund presented in the government-wide statements?",
+     "reveal": "Consolidated into governmental activities."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0004",
@@ -4853,7 +5579,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the fund hold sources restricted or committed for specified purposes?",
+     "reveal": "Yes, apart from debt service and major capital projects."
+    },
+    {
+     "ask": "Which governmental fund type has that role?",
+     "reveal": "The special revenue fund."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0005",
@@ -4936,7 +5672,17 @@
     "A": "trap",
     "B": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the two thresholds for a fund to be major?",
+     "reveal": "At least 10% of its category's revenues and at least 5% of combined governmental plus enterprise revenues."
+    },
+    {
+     "ask": "Which non-general funds meet both?",
+     "reveal": "Governmental total 40M gives 4M; combined 100M gives 5M. Only Capital Projects C at 6M passes both."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0006",
@@ -5020,7 +5766,17 @@
     "C": "concept",
     "D": "concept"
    },
-   "cite_note": "재산세 가용성 기준(60일 관행)은 NCGA 1/Codification 1600 계열이며 GASB 34 ¶16 인용은 참고용. 문단 번호 미확인."
+   "cite_note": "재산세 가용성 기준(60일 관행)은 NCGA 1/Codification 1600 계열이며 GASB 34 ¶16 인용은 참고용. 문단 번호 미확인.",
+   "guide": [
+    {
+     "ask": "Which collections count as available under the 60-day rule?",
+     "reveal": "Those collected in the year and the first 60 days after year-end."
+    },
+    {
+     "ask": "Add the two collections.",
+     "reveal": "3,600,000 + 250,000 = 3,850,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0007",
@@ -5102,7 +5858,17 @@
     "A": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the net receivable at year-end after uncollectible and collections?",
+     "reveal": "4,000,000 - 40,000 - 3,600,000 = 360,000."
+    },
+    {
+     "ask": "How much is available and how much is deferred?",
+     "reveal": "250,000 is available; 360,000 - 250,000 = 110,000 is deferred."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0008",
@@ -5179,7 +5945,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which of the payments are expenditures on the modified accrual basis?",
+     "reveal": "Salaries, supplies, capital outlay, principal and interest."
+    },
+    {
+     "ask": "Which items are excluded, and what is the total?",
+     "reveal": "Depreciation and the noncurrent compensated absences increase; 1,200,000 + 300,000 + 250,000 + 400,000 + 120,000 = 2,270,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0009",
@@ -5257,7 +6033,17 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is an expenditure recorded for ordered goods?",
+     "reveal": "When the goods are received, at the invoice amount."
+    },
+    {
+     "ask": "Which part of the orders qualifies?",
+     "reveal": "Only the received portion at 62,000; the 20,000 unreceived is an encumbrance."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0010",
@@ -5334,7 +6120,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which parts of fund balance fall into nonspendable, restricted, committed and assigned?",
+     "reveal": "Inventory 30,000; grant 100,000; ordinance 250,000; manager earmark 60,000."
+    },
+    {
+     "ask": "What is left unassigned?",
+     "reveal": "640,000 - 30,000 - 100,000 - 250,000 - 60,000 = 200,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0011",
@@ -5388,7 +6184,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Who took the action, and how can it be reversed?",
+     "reveal": "The highest decision-making authority, and only by an equal formal action."
+    },
+    {
+     "ask": "Which fund balance class fits that binding formal action?",
+     "reveal": "Committed."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0012",
@@ -5442,7 +6248,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the transfer a repayment or a purchase of something for the general fund?",
+     "reveal": "No, it is a one-way resource shift between funds."
+    },
+    {
+     "ask": "How are such transfers presented?",
+     "reveal": "As other financing uses for the sender, after revenues over expenditures."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0013",
@@ -5496,7 +6312,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Whose cost were the expenditures, and did the general fund keep the cost?",
+     "reveal": "They belonged to the water fund, and the general fund was repaid."
+    },
+    {
+     "ask": "How is a reimbursement of another fund's cost reported?",
+     "reveal": "As an expense in the water fund and a reduction of the general fund's expenditures."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0014",
@@ -5579,7 +6405,17 @@
     "A": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How are bond proceeds, including premium, classified in a governmental fund?",
+     "reveal": "As other financing sources, 5,000,000 + 100,000."
+    },
+    {
+     "ask": "How are issuance costs treated, and what is the net effect?",
+     "reveal": "Expenditures of 45,000; net 5,055,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0015",
@@ -5658,7 +6494,21 @@
     "A": "calc",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Start with fund balances and add items not in fund statements that increase net position.",
+     "reveal": "6,000,000 + 22,000,000 = 28,000,000."
+    },
+    {
+     "ask": "Subtract the long-term liabilities and accruals.",
+     "reveal": "28,000,000 - 9,000,000 - 120,000 - 300,000 = 18,580,000."
+    },
+    {
+     "ask": "Add back the deferred inflow that is revenue on the full accrual basis.",
+     "reveal": "18,580,000 + 110,000 = 18,690,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0016",
@@ -5736,7 +6586,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which fund expenditures are not expenses of the period?",
+     "reveal": "Capital outlay and debt principal: 8,000,000 - 1,500,000 - 600,000 = 5,900,000."
+    },
+    {
+     "ask": "Which amounts are added on full accrual?",
+     "reveal": "Depreciation 900,000, compensated absences 40,000, accrued interest 15,000, giving 6,855,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0017",
@@ -5813,7 +6673,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which revenues are program revenues of public safety?",
+     "reveal": "Charges for services, operating grants and capital grants tied to it."
+    },
+    {
+     "ask": "Compute the net cost, leaving out general taxes.",
+     "reveal": "900,000 - 120,000 - 80,000 - 50,000 = 650,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0018",
@@ -5891,7 +6761,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which part of the debt is capital-asset related?",
+     "reveal": "Debt for spent proceeds, 12,000,000 - 2,000,000 = 10,000,000."
+    },
+    {
+     "ask": "Subtract it from net capital assets.",
+     "reveal": "30,000,000 - 10,000,000 = 20,000,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0019",
@@ -5945,7 +6825,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are the fund statements and the government-wide statements part of RSI or of the basic statements?",
+     "reveal": "Basic statements, as are notes."
+    },
+    {
+     "ask": "Which schedule is supplementary and compares original budget, final budget and actual?",
+     "reveal": "The budgetary comparison schedule for the general fund and major budgeted special revenue funds."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0020",
@@ -6022,7 +6912,17 @@
     "B": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is the employer's net pension liability defined?",
+     "reveal": "Total pension liability minus the plan's fiduciary net position."
+    },
+    {
+     "ask": "Compute it.",
+     "reveal": "90,000,000 - 62,000,000 = 28,000,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0021",
@@ -6076,7 +6976,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Did the contribution happen before or after the measurement date?",
+     "reveal": "After, between July 1 and year-end."
+    },
+    {
+     "ask": "How are such contributions reported until the next measurement?",
+     "reveal": "As a deferred outflow of resources, not a reduction of the liability yet."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0022",
@@ -6154,7 +7064,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Discount the five payments at the implicit rate.",
+     "reveal": "100,000 x 4.212364 = 421,236."
+    },
+    {
+     "ask": "How does the general fund record a lease commencement?",
+     "reveal": "A capital outlay expenditure and an equal other financing source of 421,236."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0023",
@@ -6232,7 +7152,17 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What interest accrues in the first year on the opening liability?",
+     "reveal": "421,236 x 6% = 25,274."
+    },
+    {
+     "ask": "Apply the payment.",
+     "reveal": "421,236 + 25,274 - 100,000 = 346,510."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0024",
@@ -6286,7 +7216,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the test for an enterprise fund required by GAAP?",
+     "reveal": "Debt backed solely by the fees and charges of the activity, among other criteria."
+    },
+    {
+     "ask": "Which listed activity is funded with revenue bonds repaid only from user fees?",
+     "reveal": "The parking garage."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0025",
@@ -6340,7 +7280,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which four categories exist for proprietary fund cash flows?",
+     "reveal": "Operating, noncapital financing, capital and related financing, and investing."
+    },
+    {
+     "ask": "Sort the subsidy, bond interest and investment interest into different categories.",
+     "reveal": "Subsidy is noncapital financing, bond interest is capital and related financing, investment interest is investing."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0026",
@@ -6394,7 +7344,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the county keep any interest in the money it collects for the districts?",
+     "reveal": "No, it only holds and distributes it."
+    },
+    {
+     "ask": "Which fiduciary fund type covers assets held for others outside a trust?",
+     "reveal": "A custodial fund."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0027",
@@ -6473,7 +7433,17 @@
     "B": "concept",
     "D": "calc"
    },
-   "cite_note": "공정가치 변동을 투자수익으로 인식하는 규정은 GASB 31 ¶13-14 이며, GASB 72 Basis for Conclusions B69 가 이를 확인한다(GASB 72 자체에는 투자수익 인식 규정 없음). 작성 당시 인용 GASB 72 ¶64 는 오기라 교체."
+   "cite_note": "공정가치 변동을 투자수익으로 인식하는 규정은 GASB 31 ¶13-14 이며, GASB 72 Basis for Conclusions B69 가 이를 확인한다(GASB 72 자체에는 투자수익 인식 규정 없음). 작성 당시 인용 GASB 72 ¶64 는 오기라 교체.",
+   "guide": [
+    {
+     "ask": "What is the change in fair value over the year?",
+     "reveal": "512,000 - 505,000 = 7,000."
+    },
+    {
+     "ask": "Which items make up investment income?",
+     "reveal": "Interest plus that change: 20,000 + 7,000 = 27,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0028",
@@ -6527,7 +7497,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the trade-off under the modified approach?",
+     "reveal": "No depreciation, in exchange for maintaining a set condition level."
+    },
+    {
+     "ask": "What must the government do to keep that treatment?",
+     "reveal": "Keep the roads at or above its stated condition level and document it."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0029",
@@ -6606,7 +7586,17 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What triggers revenue on a cost-reimbursement grant?",
+     "reveal": "Incurring allowable costs."
+    },
+    {
+     "ask": "Is the receivable available soon enough?",
+     "reveal": "Yes, billed in December and paid within 30 days, so revenue is 350,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-C-0030",
@@ -6688,7 +7678,17 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "For which months has interest accrued after the last payment date?",
+     "reveal": "September 1 through December 31, four months."
+    },
+    {
+     "ask": "Compute the amount that only the full-accrual statements show.",
+     "reveal": "2,000,000 x 6% x 4/12 = 40,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0001",
@@ -6771,7 +7771,17 @@
     "A": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the weighted shares given issuance and treasury purchases?",
+     "reveal": "500,000 + 120,000 x 9/12 - 30,000 x 3/12 = 582,500."
+    },
+    {
+     "ask": "Which dividend reduces the numerator when undeclared?",
+     "reveal": "Cumulative preferred dividends of 100,000 are deducted even if undeclared; 1,100,000 / 582,500 = 1.89."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0002",
@@ -6850,7 +7860,17 @@
     "B": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the weighted-average before the split?",
+     "reveal": "400,000 + 60,000 x 6/12 = 430,000."
+    },
+    {
+     "ask": "How does a split declared before issuance affect it?",
+     "reveal": "It is applied retroactively: 860,000 shares; 960,000 / 860,000 = 1.12."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0003",
@@ -6929,7 +7949,17 @@
     "A": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much interest is saved after tax if the bonds convert?",
+     "reveal": "1,000,000 x 5% x 0.75 = 37,500."
+    },
+    {
+     "ask": "Add to the numerator and the shares.",
+     "reveal": "837,500 / 420,000 = 1.99."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0004",
@@ -7012,7 +8042,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How many shares could be repurchased with exercise proceeds at the average price?",
+     "reveal": "60,000 x 30 / 40 = 45,000."
+    },
+    {
+     "ask": "What are the incremental shares, and the resulting EPS?",
+     "reveal": "15,000; 1,000,000 / 515,000 = 1.94."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0005",
@@ -7094,7 +8134,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which option tranche has an exercise price below the average price?",
+     "reveal": "Only the 25 dollar options; the 45 dollar options are antidilutive."
+    },
+    {
+     "ask": "Compute incremental shares and diluted EPS.",
+     "reveal": "50,000 - 50,000 x 25/35 = 14,286; 700,000 / 364,286 = 1.92."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0006",
@@ -7171,7 +8221,17 @@
     "A": "concept",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a dividend on noncumulative preferred deducted when not declared?",
+     "reveal": "No."
+    },
+    {
+     "ask": "Compute EPS with the full net income.",
+     "reveal": "600,000 / 300,000 = 2.00."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0007",
@@ -7229,7 +8289,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are dilutive securities added in the order issued, or by their incremental effect?",
+     "reveal": "By incremental effect."
+    },
+    {
+     "ask": "Which securities go first, and when do you stop?",
+     "reveal": "The most dilutive first, stopping before EPS would increase."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0008",
@@ -7310,7 +8380,17 @@
     "A": "concept",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which income line does the requested per-share measure use?",
+     "reveal": "Income from continuing operations, without the discontinued loss."
+    },
+    {
+     "ask": "What is deducted, and what is the result?",
+     "reveal": "Preferred dividends of 100,000: 900,000 / 400,000 = 2.25."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0009",
@@ -7433,7 +8513,21 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the three 10% thresholds?",
+     "reveal": "Revenue 10 million, profit test 10% of the greater of total profits or absolute losses (1.37 million) and assets 12 million."
+    },
+    {
+     "ask": "Which segments pass each test?",
+     "reveal": "Revenue and asset: A, B, C; profit test: A, B, D, E."
+    },
+    {
+     "ask": "How many segments pass at least one test?",
+     "reveal": "A, B, C, D and E: five."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0010",
@@ -7487,7 +8581,17 @@
     "B": "concept",
     "C": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What minimum share of consolidated revenue must reportable segments cover?",
+     "reveal": "75%."
+    },
+    {
+     "ask": "With only 68% covered, what must the company do?",
+     "reveal": "Add more segments, even below the 10% tests, until 75% is reached."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0011",
@@ -7545,7 +8649,17 @@
     "A": "concept",
     "B": "concept",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Do segment disclosures apply only to entities with several segments?",
+     "reveal": "No, they also apply to an entity with one reportable segment."
+    },
+    {
+     "ask": "Which items are required in that case?",
+     "reveal": "Significant segment expenses given to the chief operating decision maker and that person's title and position."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0012",
@@ -7622,7 +8736,17 @@
     "B": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Start from the segment profit total and remove items not in consolidated income.",
+     "reveal": "13,700,000 - 2,900,000 for unallocated corporate costs = 10,800,000."
+    },
+    {
+     "ask": "Which other item is eliminated?",
+     "reveal": "Intersegment profit of 400,000, giving 10,400,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0013",
@@ -7680,7 +8804,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What approach governs segment measures, and can an internal non-GAAP measure be used?",
+     "reveal": "The management approach; the measure the chief operating decision maker uses is what is reported."
+    },
+    {
+     "ask": "What must accompany it?",
+     "reveal": "An explanation of the measurement and a reconciliation of total segment profit to consolidated income before taxes."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0014",
@@ -7759,7 +8893,17 @@
     "A": "concept",
     "C": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the 10% threshold in dollars?",
+     "reveal": "10% x 180 million = 18 million."
+    },
+    {
+     "ask": "Which customers or groups exceed it, treating entities under common control as one?",
+     "reveal": "X at 22 million and the group at 9 + 10 = 19 million; Y at 17 million falls short. Two customers."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0015",
@@ -7836,7 +8980,17 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does a yearly cost benefit a single quarter or the whole year?",
+     "reveal": "The whole year, so it is allocated to interim periods."
+    },
+    {
+     "ask": "Divide by the number of quarters.",
+     "reveal": "240,000 / 4 = 60,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0016",
@@ -7914,7 +9068,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the total year-to-date tax under the revised rate?",
+     "reveal": "900,000 x 28% = 252,000."
+    },
+    {
+     "ask": "Subtract what was already recorded.",
+     "reveal": "252,000 - 120,000 = 132,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0017",
@@ -7968,7 +9132,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are interim periods treated as separate years or as parts of the annual period?",
+     "reveal": "Parts of the annual period."
+    },
+    {
+     "ask": "Which rate then applies?",
+     "reveal": "The estimated annual effective tax rate."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0018",
@@ -8045,7 +9219,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the flood loss a recurring seasonal cost to spread or a discrete event?",
+     "reveal": "A discrete unusual event."
+    },
+    {
+     "ask": "How much goes to the quarter in which it occurred?",
+     "reveal": "All 80,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0019",
@@ -8103,7 +9287,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is interim revenue recognition different from annual recognition?",
+     "reveal": "No, the same principles apply."
+    },
+    {
+     "ask": "What is done about seasonality?",
+     "reveal": "Revenue is recognized when earned and the seasonal nature is disclosed, not smoothed."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0020",
@@ -8180,7 +9374,17 @@
     "A": "concept",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the LIFO liquidation expected to be replaced by year-end?",
+     "reveal": "Yes."
+    },
+    {
+     "ask": "At what cost is cost of goods sold then reported for those units?",
+     "reveal": "Replacement cost: 10,000 x 20 = 200,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0021",
@@ -8257,7 +9461,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which filer category is described?",
+     "reveal": "Large accelerated filer."
+    },
+    {
+     "ask": "What is its 10-K deadline?",
+     "reveal": "60 days after fiscal year-end."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0022",
@@ -8334,7 +9548,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which filer category is described?",
+     "reveal": "Non-accelerated filer."
+    },
+    {
+     "ask": "What is its 10-Q deadline?",
+     "reveal": "45 days after quarter-end."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0023",
@@ -8388,7 +9612,17 @@
     "A": "limit",
     "B": "limit",
     "C": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the 8-K deadline counted in calendar days or business days?",
+     "reveal": "Business days, four of them."
+    },
+    {
+     "ask": "Count from Monday June 1.",
+     "reveal": "June 2, 3, 4 and 5, so Friday June 5."
+    }
+   ]
   },
   {
    "id": "FAR-I-D-0024",
@@ -8442,7 +9676,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Beyond percentage size, which qualitative factors matter?",
+     "reveal": "Whether the error masks a trend, flips a loss to profit or helps meet expectations."
+    },
+    {
+     "ask": "Which listed misstatement does that?",
+     "reveal": "The 200,000 overstatement that turns a quarterly loss into a profit meeting consensus."
+    }
+   ]
   },
   {
    "id": "FAR-I-E-0001",
@@ -8519,7 +9763,17 @@
     "A": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does a receivable increase change cash-basis revenue?",
+     "reveal": "It lowers it, since revenue was earned but not collected: 800,000 - 30,000."
+    },
+    {
+     "ask": "How does the increase in unearned revenue change it?",
+     "reveal": "It raises it, since cash came in early: 770,000 + 12,000 = 782,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-E-0002",
@@ -8596,7 +9850,17 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is depreciation a cash-basis expense here?",
+     "reveal": "No, because the equipment was bought in prior years. Subtract 50,000."
+    },
+    {
+     "ask": "How do payables and prepaids change cash paid?",
+     "reveal": "Payables up reduce cash paid by 20,000; prepaids up increase it by 15,000. 550,000 - 20,000 + 15,000 = 545,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-E-0003",
@@ -8673,7 +9937,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which changes increase accrual income relative to cash income?",
+     "reveal": "Receivable increase and the drop in unearned revenue: +30,000 and +10,000."
+    },
+    {
+     "ask": "Which changes decrease it or reverse the cash effect?",
+     "reveal": "Payables +25,000 and salaries +12,000 lower it; prepaids +8,000 raise it. Net 131,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-E-0004",
@@ -8727,7 +10001,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which listed bases are U.S. GAAP for some reporting group?",
+     "reveal": "Private company alternatives, governmental GAAP and public company GAAP are all GAAP."
+    },
+    {
+     "ask": "Which one is a special purpose framework?",
+     "reveal": "The income tax basis."
+    }
+   ]
   },
   {
    "id": "FAR-I-E-0005",
@@ -8781,7 +10065,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "For a tax-basis statement, what must the notes describe?",
+     "reveal": "The basis of presentation and how it differs from GAAP."
+    },
+    {
+     "ask": "Must the differences be quantified?",
+     "reveal": "No, they only need to be described."
+    }
+   ]
   },
   {
    "id": "FAR-I-E-0006",
@@ -8858,7 +10152,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items reduce taxable income relative to book income?",
+     "reveal": "Extra tax depreciation 40,000 and exempt interest 10,000."
+    },
+    {
+     "ask": "Which item raises it?",
+     "reveal": "Nondeductible fines 5,000: 500,000 - 40,000 - 10,000 + 5,000 = 455,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-E-0007",
@@ -8937,7 +10241,21 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are total assets at estimated current value?",
+     "reveal": "50,000 + 400,000 + 600,000 = 1,050,000."
+    },
+    {
+     "ask": "What appreciation is taxed, and at what amount?",
+     "reveal": "(400,000 - 250,000) + (600,000 - 200,000) = 550,000; x 25% = 137,500."
+    },
+    {
+     "ask": "Compute net worth.",
+     "reveal": "1,050,000 - 120,000 - 137,500 = 792,500."
+    }
+   ]
   },
   {
    "id": "FAR-I-E-0008",
@@ -9014,7 +10332,17 @@
     "A": "concept",
     "B": "concept",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "At what basis are assets shown in personal statements?",
+     "reveal": "Estimated current value."
+    },
+    {
+     "ask": "So what amount is the portfolio, and where do estimated taxes go?",
+     "reveal": "340,000; the taxes are shown separately."
+    }
+   ]
   },
   {
    "id": "FAR-I-E-0009",
@@ -9091,7 +10419,17 @@
     "B": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the equipment capitalized under this basis?",
+     "reveal": "Yes, and depreciated straight-line."
+    },
+    {
+     "ask": "How many months of use in 2026?",
+     "reveal": "Six. 90,000 / 10 x 6/12 = 4,500."
+    }
+   ]
   },
   {
    "id": "FAR-I-E-0010",
@@ -9145,7 +10483,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "For whom and under whose rules is the statement prepared?",
+     "reveal": "Only for the lender, using the lender's contractual definitions."
+    },
+    {
+     "ask": "Which special purpose framework fits a contract requirement?",
+     "reveal": "The contractual basis."
+    }
+   ]
   },
   {
    "id": "FAR-I-E-0011",
@@ -9222,7 +10570,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does a rise in receivables relate to cash collected versus revenue earned?",
+     "reveal": "Revenue exceeds collections by the increase: +30,000."
+    },
+    {
+     "ask": "How does a rise in unearned revenue relate?",
+     "reveal": "Some cash was for future service: -15,000. 950,000 + 30,000 - 15,000 = 965,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-E-0012",
@@ -9276,7 +10634,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What must a statement title signal for a non-GAAP basis?",
+     "reveal": "The basis used, so readers do not assume GAAP."
+    },
+    {
+     "ask": "Which title avoids balance sheet or GAAP wording and names the basis?",
+     "reveal": "Statement of assets, liabilities and equity - cash basis."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0001",
@@ -9354,7 +10722,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which current assets count as quick assets?",
+     "reveal": "Cash, marketable securities and net receivables; not inventory or prepaids."
+    },
+    {
+     "ask": "Compute the ratio.",
+     "reveal": "(80,000 + 40,000 + 120,000) / 250,000 = 0.96."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0002",
@@ -9432,7 +10810,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does paying a payable with cash change current assets and current liabilities?",
+     "reveal": "Both fall by 100,000."
+    },
+    {
+     "ask": "Compute the new ratio.",
+     "reveal": "500,000 / 200,000 = 2.50."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0003",
@@ -9486,7 +10874,17 @@
     "A": "concept",
     "B": "trap",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "The ratio starts below 1; what does adding the same amount to both parts do?",
+     "reveal": "It moves the ratio toward 1, upward."
+    },
+    {
+     "ask": "Which transaction adds equal amounts to current assets and current liabilities?",
+     "reveal": "Buying inventory on account."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0004",
@@ -9565,7 +10963,17 @@
     "A": "calc",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which sales feed the collection period?",
+     "reveal": "Credit sales only: 2,700,000 - 300,000 = 2,400,000."
+    },
+    {
+     "ask": "Use average receivables and 365 days.",
+     "reveal": "300,000 / 2,400,000 x 365 = 45.6, about 46 days."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0005",
@@ -9643,7 +11051,17 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which numerator goes with inventory turnover?",
+     "reveal": "Cost of goods sold, not sales."
+    },
+    {
+     "ask": "Divide by average inventory.",
+     "reveal": "1,800,000 / 240,000 = 7.5."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0006",
@@ -9723,7 +11141,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is each of the three day measures calculated?",
+     "reveal": "Receivables and inventory and payables each over the proper base, times 365."
+    },
+    {
+     "ask": "Compute the three and combine.",
+     "reveal": "DSO 30, DIO 60, DPO 40; 30 + 60 - 40 = 50."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0007",
@@ -9800,7 +11228,17 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which two amounts make up this ratio?",
+     "reveal": "Total liabilities over stockholders' equity."
+    },
+    {
+     "ask": "Compute it.",
+     "reveal": "900,000 / 600,000 = 1.50."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0008",
@@ -9878,7 +11316,17 @@
     "A": "concept",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the earnings figure before interest and taxes?",
+     "reveal": "240,000 + 80,000 + 60,000 = 380,000."
+    },
+    {
+     "ask": "Divide by interest.",
+     "reveal": "380,000 / 60,000 = 6.33."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0009",
@@ -9956,7 +11404,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What earnings belong to common holders?",
+     "reveal": "180,000 - 20,000 = 160,000."
+    },
+    {
+     "ask": "What is average common equity, and the return?",
+     "reveal": "800,000; 160,000 / 800,000 = 20.0%."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0010",
@@ -10036,7 +11494,17 @@
     "A": "calc",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the three DuPont components?",
+     "reveal": "Net margin, asset turnover and equity multiplier."
+    },
+    {
+     "ask": "Compute each and multiply.",
+     "reveal": "8.0% x 1.5 x 2.5 = 30.0%."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0011",
@@ -10090,7 +11558,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the equity multiplier before and after, using ROE = margin x turnover x multiplier?",
+     "reveal": "15% / (6% x 1.5) = 1.67 and 18% / (5% x 1.6) = 2.25."
+    },
+    {
+     "ask": "Which component drove the change?",
+     "reveal": "Leverage rose enough to outweigh the lower margin."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0012",
@@ -10168,7 +11646,17 @@
     "B": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the net income steps?",
+     "reveal": "2,000,000 - 1,300,000 - 450,000 - 30,000 - 50,000 = 170,000."
+    },
+    {
+     "ask": "Divide by sales.",
+     "reveal": "170,000 / 2,000,000 = 8.5%."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0013",
@@ -10245,7 +11733,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the two inputs for this ratio?",
+     "reveal": "Market price per share and earnings per share."
+    },
+    {
+     "ask": "Divide.",
+     "reveal": "42.00 / 3.50 = 12.0."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0014",
@@ -10323,7 +11821,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much equity belongs to common holders?",
+     "reveal": "2,400,000 - 400,000 = 2,000,000."
+    },
+    {
+     "ask": "How many shares are outstanding, and what is the per-share amount?",
+     "reveal": "520,000 - 20,000 = 500,000; 2,000,000 / 500,000 = 4.00."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0015",
@@ -10377,7 +11885,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does a falling receivables turnover imply about collections?",
+     "reveal": "They slowed or credit terms loosened."
+    },
+    {
+     "ask": "What does a rising inventory turnover imply, and which pattern combines both?",
+     "reveal": "Inventory moves faster, tighter management, so slower collections with tighter inventory."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0016",
@@ -10454,7 +11972,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items define the requested measure?",
+     "reveal": "Operating cash flow less capital expenditures, without dividends."
+    },
+    {
+     "ask": "Compute.",
+     "reveal": "500,000 - 300,000 = 200,000."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0017",
@@ -10532,7 +12060,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is interest after tax?",
+     "reveal": "40,000 x 0.75 = 30,000."
+    },
+    {
+     "ask": "Divide the adjusted income by average assets, not ending.",
+     "reveal": "230,000 / 2,000,000 = 11.5%."
+    }
+   ]
   },
   {
    "id": "FAR-I-F-0018",
@@ -10611,7 +12149,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is operating income in each year?",
+     "reveal": "4,000,000 - 3,600,000 = 400,000 and 4,600,000 - 4,300,000 = 300,000."
+    },
+    {
+     "ask": "What is the percentage change?",
+     "reveal": "(300,000 - 400,000) / 400,000 = -25.0%."
+    }
+   ]
   }
  ]
 }

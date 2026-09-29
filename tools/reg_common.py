@@ -68,10 +68,25 @@ TCP_SUBJECTS = {
     "IV":  ("tcp_area4_property", "Area IV · Property Transactions", "--mint"),
 }
 TCP_WEIGHT = {"I": 35, "II": 35, "III": 15, "IV": 15}
+# ---------------------------------------------------------------------------
+# AUD section (Auditing and Attestation; source folder tools/src/AUD/aud_area<N>_mcq.json, Areas I-IV, items carry group_name).
+# Blueprint weights = midpoint of the 2026 ranges (I 15-25, II 25-35, III 30-40, IV 10-20 -> 20/30/35/15, see AUD_SPEC.md).
+# ---------------------------------------------------------------------------
+AUD_DEFAULT_SRC = os.path.join(HERE, "src", "AUD")
+AUD_AREAS = ["I", "II", "III", "IV"]
+AUD_SUBJECTS = {
+    "I":   ("aud_area1_ethics_responsibilities", "Area I · Ethics and Professional Responsibilities", "--fam-geo"),
+    "II":  ("aud_area2_risk_assessment", "Area II · Risk Assessment and Planned Response", "--fam-soc"),
+    "III": ("aud_area3_evidence", "Area III · Further Procedures and Evidence", "--fam-eth"),
+    "IV":  ("aud_area4_reporting", "Area IV · Conclusions and Reporting", "--mint"),
+}
+AUD_WEIGHT = {"I": 20, "II": 30, "III": 35, "IV": 15}
+AUD_SKILLS = SKILLS + ["Evaluation", "Remembering and Understanding"]     # source files spell the first skill "Remembering and Understanding"
 SECTIONS = {
     "REG": {"areas": AREAS, "subjects": SUBJECTS, "weight": WEIGHT, "src": DEFAULT_SRC, "prefix": "reg", "tool": "build_reg.py"},
     "FAR": {"areas": FAR_AREAS, "subjects": FAR_SUBJECTS, "weight": FAR_WEIGHT, "src": FAR_DEFAULT_SRC, "prefix": "far", "tool": "build_far.py"},
     "TCP": {"areas": TCP_AREAS, "subjects": TCP_SUBJECTS, "weight": TCP_WEIGHT, "src": TCP_DEFAULT_SRC, "prefix": "tcp", "tool": "build_tcp.py"},
+    "AUD": {"areas": AUD_AREAS, "subjects": AUD_SUBJECTS, "weight": AUD_WEIGHT, "src": AUD_DEFAULT_SRC, "prefix": "aud", "tool": "build_aud.py"},
 }
 
 
@@ -82,6 +97,8 @@ def find_files(src, area, sec="REG"):
     n = {"I": "1", "II": "2", "III": "3", "IV": "4", "V": "5"}[area]
     if sec == "TCP":
         return sorted(glob.glob(os.path.join(src, "tcp_*_mcq.json")))
+    if sec == "AUD":
+        return sorted(glob.glob(os.path.join(src, "aud_area%s*_mcq.json" % n)))
     if sec == "FAR":
         return sorted(glob.glob(os.path.join(src, "far_area%s*_mcq.json" % n)))
     found = sorted(glob.glob(os.path.join(src, "area%s*_mcq.json" % n)))
@@ -109,7 +126,7 @@ def load_area(src, area, sec="REG"):
 def group_names(area, meta, items, sec="REG"):
     """Group letter -> name. Blueprint names are read from meta.blueprint when present (FAR items carry group_name)."""
     names = dict(GROUP_NAMES.get(area, {})) if sec == "REG" else {}
-    if sec in ("FAR", "TCP"):
+    if sec in ("FAR", "TCP", "AUD"):
         for i in items:
             if i.get("group_name"):
                 names.setdefault(i["group"], i["group_name"])
@@ -192,6 +209,29 @@ def far_cite(it):
 def far_cite_is_paragraph(text):
     """True when a displayed citation string carries an ASC paragraph number."""
     return re.search(r"\d{3}-\d{2}-\d{2}", text) is not None
+
+
+# ---------------------------------------------------------------------------
+# AUD display rule (same idea as FAR): a citation is shown as written only when verify.cite_ok is true. Otherwise the reference is cut back to the
+# topic: "(... not opened)" notes are dropped and a paragraph number stays only when cite_ok names that paragraph (public-checked ... AU-C 530.A27).
+# ---------------------------------------------------------------------------
+def aud_cite(it):
+    ok = (it.get("verify") or {}).get("cite_ok")
+    okt = str(ok or "")
+    out, have = [], []
+    for c in it.get("cite") or []:
+        src, ref = (c.get("src") or "").strip(), (c.get("ref") or "").strip()
+        if ok is not True:
+            ref = re.sub(r"\s*\([^)]*(not opened|topic level)[^)]*\)", "", ref)
+            ref = re.sub(r";.*$", "", ref).strip()
+            m = re.match(r"^(\d+)\.(\S+)$", ref)
+            if m and src in ("AU-C", "AT-C", "AR-C") and not (okt.startswith("public-checked") and re.search(r"%s\.%s" % (m.group(1), re.escape(m.group(2).split("-")[-1].lstrip("."))), okt)):
+                ref = m.group(1)
+        if (src, ref) not in have:
+            have.append((src, ref))
+    conf = [r for s_, r in have if "." in r]
+    out = [{"src": s_, "ref": r} for s_, r in have if not ("." not in r and any(x.startswith(r + ".") for x in conf))]
+    return out
 
 
 def accepted(items, include_draft=False):
@@ -307,11 +347,11 @@ def question(it):
         "d": ex if isinstance(ex, str) else "",
         "o": list(it["options"]),
         "a": "ABCD".index(it["answer"]) + 1,
-        "cite": cite_text(it["cite"]),
+        "cite": cite_text(aud_cite(it) if it["id"].startswith("AUD-") else it["cite"]),
         "rat": first_sentence(it["why"][it["answer"]]),
         "ex": [clean(it["why"][k]) for k in "ABCD"],
         "wt": tag_wrong_options(it),
-        "tags": {"area": it["area"], "group": it["group"], "skill": it["skill"], "diff": it["difficulty"]},
+        "tags": {"area": it["area"], "group": it["group"], "skill": it["skill"].replace("Remembering and Understanding", "Remembering & Understanding"), "diff": it["difficulty"]},
         "asof": it.get("law_asof") or "",
     }
     if it.get("rule_line"):
@@ -347,9 +387,9 @@ def read_ready():
 
 
 def write_ready(R):
-    """Fixed key order (other subjects, then reg_*, far_*, tcp_*), so a rebuild of one section never reorders the others."""
+    """Fixed key order (other subjects, then reg_*, far_*, tcp_*, aud_*), so a rebuild of one section never reorders the others."""
     def rank(k):
-        return 1 if k.startswith("reg_") else 2 if k.startswith("far_") else 3 if k.startswith("tcp_") else 0
+        return 1 if k.startswith("reg_") else 2 if k.startswith("far_") else 3 if k.startswith("tcp_") else 4 if k.startswith("aud_") else 0
     R = {k: R[k] for k in sorted(R, key=rank)}          # stable sort keeps the order inside a group
     with open(os.path.join(ROOT, "data", "ready.js"), "w", encoding="utf-8", newline="\n") as f:
         f.write("/* Auto-generated — pipeline artifact */\nwindow.READY=" + json.dumps(R, ensure_ascii=False) + ";\n")

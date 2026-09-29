@@ -75,7 +75,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group A / Entity type identification / Remembering & Understanding"
+   "blueprint_tag": "TCP Area III / Group A / Entity type identification / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "Which entity type gives owners limited liability and passes income through by stock ownership?",
+     "reveal": "A corporation that has made a pass-through election, with restrictions on shareholders and classes of stock."
+    },
+    {
+     "ask": "Which choice matches all the facts?",
+     "reveal": "The S corporation, since it has eligible shareholders and one class of stock."
+    }
+   ]
   },
   {
    "id": "TCP-III-A-0002",
@@ -198,7 +208,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group A / Entity selection/formation comparison / Analysis"
+   "blueprint_tag": "TCP Area III / Group A / Entity selection/formation comparison / Analysis",
+   "guide": [
+    {
+     "ask": "What gain results on a contribution to the corporation?",
+     "reveal": "Liabilities of $250,000 exceed basis of $100,000, so $150,000."
+    },
+    {
+     "ask": "What gain results on the partnership side?",
+     "reveal": "Debt relief net of his share is $250,000 - $125,000 = $125,000, deemed distribution; gain is $125,000 - $100,000 = $25,000."
+    },
+    {
+     "ask": "Difference?",
+     "reveal": "$150,000 - $25,000 = $125,000."
+    }
+   ]
   },
   {
    "id": "TCP-III-A-0003",
@@ -332,7 +356,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group A / Entity liquidation comparison / Analysis"
+   "blueprint_tag": "TCP Area III / Group A / Entity liquidation comparison / Analysis",
+   "guide": [
+    {
+     "ask": "What is the total tax if liquidated as a C corporation?",
+     "reveal": "Corporate tax 21% x $600,000 = $126,000, then owner gain ($874,000 - $400,000) = $474,000 taxed at 20% = $94,800; total $220,800."
+    },
+    {
+     "ask": "What is it as an S corporation?",
+     "reveal": "Gain passes through at 20%: $120,000, and basis rises so nothing more is taxed. Difference $100,800."
+    }
+   ]
   },
   {
    "id": "TCP-III-A-0004",
@@ -449,7 +483,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group A / NOL/capital loss carryover savings / Application"
+   "blueprint_tag": "TCP Area III / Group A / NOL/capital loss carryover savings / Application",
+   "guide": [
+    {
+     "ask": "What limits the deduction of a post-2020 net operating loss?",
+     "reveal": "80% of taxable income before the deduction: 80% x $350,000 = $280,000."
+    },
+    {
+     "ask": "Convert to tax.",
+     "reveal": "$280,000 x 21% = $58,800."
+    }
+   ]
   },
   {
    "id": "TCP-III-A-0005",
@@ -562,7 +606,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group A / SALT optimization / Analysis"
+   "blueprint_tag": "TCP Area III / Group A / SALT optimization / Analysis",
+   "guide": [
+    {
+     "ask": "What is State M's apportionment factor?",
+     "reveal": "Average of the three: (40% + 40% + 10%) / 3 = 30%."
+    },
+    {
+     "ask": "Compute each state's tax.",
+     "reveal": "M: $1,000,000 x 30% x 7% = $21,000; N: 10% gives $7,000. Difference $14,000."
+    }
+   ]
   },
   {
    "id": "TCP-III-A-0006",
@@ -674,7 +728,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group A / SALT optimization / Analysis"
+   "blueprint_tag": "TCP Area III / Group A / SALT optimization / Analysis",
+   "guide": [
+    {
+     "ask": "Was Dee's individual state tax payment deductible at the federal level?",
+     "reveal": "No additional deduction, since her limit is already used by the property tax."
+    },
+    {
+     "ask": "What does the entity-level election change?",
+     "reveal": "The partnership deducts $60,000 in computing income, so her federal tax falls by $60,000 x 37% = $22,200."
+    }
+   ]
   },
   {
    "id": "TCP-III-A-0007",
@@ -791,7 +855,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group A / NOL/capital loss carryover savings / Application"
+   "blueprint_tag": "TCP Area III / Group A / NOL/capital loss carryover savings / Application",
+   "guide": [
+    {
+     "ask": "What can a corporate capital loss carryover offset?",
+     "reveal": "Only capital gains."
+    },
+    {
+     "ask": "How much does it absorb and save?",
+     "reveal": "$60,000 of the $90,000, saving 21% x $60,000 = $12,600."
+    }
+   ]
   },
   {
    "id": "TCP-III-A-0008",
@@ -919,7 +993,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group A / Entity selection/formation comparison / Analysis"
+   "blueprint_tag": "TCP Area III / Group A / Entity selection/formation comparison / Analysis",
+   "guide": [
+    {
+     "ask": "What is total tax for the C corporation and its owner?",
+     "reveal": "Corporate tax $63,000, then 23.8% x $237,000 = $56,406 on dividends; total $119,406."
+    },
+    {
+     "ask": "What is the S corporation's tax?",
+     "reveal": "Income after the 20% deduction is $240,000, taxed at 37% = $88,800. Difference $30,606."
+    }
+   ]
   },
   {
    "id": "TCP-III-B-0001",
@@ -1033,7 +1117,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group B / Timing of income/expense for planning / Analysis"
+   "blueprint_tag": "TCP Area III / Group B / Timing of income/expense for planning / Analysis",
+   "guide": [
+    {
+     "ask": "Which year has the higher rate, and how should income and deductions move?",
+     "reveal": "2027 is higher at 25%, so pull income into 2026 and push deductions into 2027."
+    },
+    {
+     "ask": "Compute each effect.",
+     "reveal": "$400,000 x 4% = $16,000 and $150,000 x 4% = $6,000, total $22,000."
+    }
+   ]
   },
   {
    "id": "TCP-III-B-0002",
@@ -1145,7 +1239,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group B / C corp estimated tax / Application"
+   "blueprint_tag": "TCP Area III / Group B / C corp estimated tax / Application",
+   "guide": [
+    {
+     "ask": "Is Bramble a large corporation?",
+     "reveal": "Yes, because taxable income reached $1,000,000 in a preceding year."
+    },
+    {
+     "ask": "What can prior-year tax be used for, and how much?",
+     "reveal": "Only the first installment: 25% x $420,000 = $105,000."
+    }
+   ]
   },
   {
    "id": "TCP-III-B-0003",
@@ -1268,7 +1372,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group B / Proposed formation transaction / Analysis"
+   "blueprint_tag": "TCP Area III / Group B / Proposed formation transaction / Analysis",
+   "guide": [
+    {
+     "ask": "What does Kira recognize as gain?",
+     "reveal": "The note as boot, $50,000, plus liabilities over basis, $150,000 - $100,000 = $50,000; total $100,000."
+    },
+    {
+     "ask": "What is the corporation's basis?",
+     "reveal": "Her basis plus gain recognized: $100,000 + $100,000 = $200,000."
+    }
+   ]
   },
   {
    "id": "TCP-III-B-0004",
@@ -1335,7 +1449,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group B / Timing of income/expense for planning / Application"
+   "blueprint_tag": "TCP Area III / Group B / Timing of income/expense for planning / Application",
+   "guide": [
+    {
+     "ask": "What conditions let an accrual-basis corporation deduct a year-end bonus in that year?",
+     "reveal": "The liability is fixed at year end and paid within 2 1/2 months after year end; related-party rules also apply."
+    },
+    {
+     "ask": "Which bonus meets all of them?",
+     "reveal": "The one fixed at year end, paid March 1 to non-owner employees; payment after April 15 or a contingency fails."
+    }
+   ]
   },
   {
    "id": "TCP-III-B-0005",
@@ -1452,7 +1576,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group B / C corp estimated tax / Application"
+   "blueprint_tag": "TCP Area III / Group B / C corp estimated tax / Application",
+   "guide": [
+    {
+     "ask": "Which amount limits the required annual payment for a corporation that is not large?",
+     "reveal": "The lesser of 100% of the current tax or 100% of prior-year tax."
+    },
+    {
+     "ask": "Compute the installment.",
+     "reveal": "Lesser of $200,000 and $80,000 is $80,000; divided by 4 = $20,000."
+    }
+   ]
   },
   {
    "id": "TCP-III-B-0006",
@@ -1564,7 +1698,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group B / Proposed formation transaction / Application"
+   "blueprint_tag": "TCP Area III / Group B / Proposed formation transaction / Application",
+   "guide": [
+    {
+     "ask": "What is the shareholder's stock basis in a tax-free formation?",
+     "reveal": "The carryover basis of the property, $200,000."
+    },
+    {
+     "ask": "Why does the corporation's basis differ?",
+     "reveal": "With a net built-in loss its basis in the equipment is reduced to fair market value, $120,000."
+    }
+   ]
   },
   {
    "id": "TCP-III-C-0001",
@@ -1687,7 +1831,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group C / Built-in gains tax planning / Application"
+   "blueprint_tag": "TCP Area III / Group C / Built-in gains tax planning / Application",
+   "guide": [
+    {
+     "ask": "Is the 2026 sale within the recognition period after a 2022 conversion?",
+     "reveal": "Yes, within five years of the conversion date."
+    },
+    {
+     "ask": "How much of the gain is taxed?",
+     "reveal": "Only the lesser of the total gain ($370,000) and built-in gain at conversion ($400,000 - $150,000 = $250,000); 21% x $250,000 = $52,500."
+    }
+   ]
   },
   {
    "id": "TCP-III-C-0002",
@@ -1804,7 +1958,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group C / Built-in gains tax planning / Application"
+   "blueprint_tag": "TCP Area III / Group C / Built-in gains tax planning / Application",
+   "guide": [
+    {
+     "ask": "What caps the net recognized built-in gain?",
+     "reveal": "The corporation's taxable income computed as if it were a C corporation."
+    },
+    {
+     "ask": "Compute the tax.",
+     "reveal": "Lesser of $180,000 and $120,000 is $120,000; 21% x $120,000 = $25,200."
+    }
+   ]
   },
   {
    "id": "TCP-III-C-0003",
@@ -1921,7 +2085,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group C / Terminating S election / Application"
+   "blueprint_tag": "TCP Area III / Group C / Terminating S election / Application",
+   "guide": [
+    {
+     "ask": "With no closing election, how is income assigned to the C short year?",
+     "reveal": "By days: $730,000 x 92/365 = $184,000."
+    },
+    {
+     "ask": "Compute the tax.",
+     "reveal": "21% x $184,000 = $38,640."
+    }
+   ]
   },
   {
    "id": "TCP-III-C-0004",
@@ -1988,7 +2162,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group C / Terminating S election / Application"
+   "blueprint_tag": "TCP Area III / Group C / Terminating S election / Application",
+   "guide": [
+    {
+     "ask": "When does a termination by an ineligible shareholder take effect?",
+     "reveal": "On the date of the terminating event, not the start of the year."
+    },
+    {
+     "ask": "What restriction follows?",
+     "reveal": "A five-year wait to re-elect unless the IRS consents."
+    }
+   ]
   },
   {
    "id": "TCP-III-C-0005",
@@ -2111,7 +2295,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group C / S corp formation/distribution/loan planning / Analysis"
+   "blueprint_tag": "TCP Area III / Group C / S corp formation/distribution/loan planning / Analysis",
+   "guide": [
+    {
+     "ask": "How is Zack's debt basis restored at year end?",
+     "reveal": "$20,000 + $15,000 = $35,000, still below the $60,000 face."
+    },
+    {
+     "ask": "What fraction of each repayment is gain?",
+     "reveal": "($60,000 - $35,000) / $60,000, so $30,000 x that fraction = $12,500."
+    }
+   ]
   },
   {
    "id": "TCP-III-C-0006",
@@ -2229,7 +2423,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group C / AEP vs AAA distribution election / Analysis"
+   "blueprint_tag": "TCP Area III / Group C / AEP vs AAA distribution election / Analysis",
+   "guide": [
+    {
+     "ask": "Without the election, how much of the $100,000 is a taxable dividend?",
+     "reveal": "$100,000 - $40,000 from the AAA = $60,000, taxed at 23.8% = $14,280."
+    },
+    {
+     "ask": "What if the election is made?",
+     "reveal": "All $100,000 is a dividend: $23,800. Additional tax $9,520."
+    }
+   ]
   },
   {
    "id": "TCP-III-C-0007",
@@ -2347,7 +2551,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group C / S corp formation/distribution/loan planning / Analysis"
+   "blueprint_tag": "TCP Area III / Group C / S corp formation/distribution/loan planning / Analysis",
+   "guide": [
+    {
+     "ask": "What tax applies with the election, and without it?",
+     "reveal": "Election: $100,000 x 37% + $400,000 x 20% = $117,000; no election: $500,000 x 20% = $100,000."
+    },
+    {
+     "ask": "Difference?",
+     "reveal": "$17,000 extra, in return for the buyer's stepped-up basis."
+    }
+   ]
   },
   {
    "id": "TCP-III-D-0001",
@@ -2470,7 +2684,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group D / Contribution of appreciated/depreciated property / Application"
+   "blueprint_tag": "TCP Area III / Group D / Contribution of appreciated/depreciated property / Application",
+   "guide": [
+    {
+     "ask": "Who bears the built-in loss on contributed property?",
+     "reveal": "Only the contributing partner, Ira: $200,000 - $120,000 = $80,000."
+    },
+    {
+     "ask": "How is the later decline shared?",
+     "reveal": "$120,000 - $100,000 = $20,000 split equally, so $10,000 to Ira. Total $90,000."
+    }
+   ]
   },
   {
    "id": "TCP-III-D-0002",
@@ -2598,7 +2822,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group D / Payments to partner / Application"
+   "blueprint_tag": "TCP Area III / Group D / Payments to partner / Application",
+   "guide": [
+    {
+     "ask": "What does Nell report with a guaranteed payment?",
+     "reveal": "The $60,000 plus 25% of the remaining income $140,000 = $35,000, so $95,000."
+    },
+    {
+     "ask": "What does she report with a distribution?",
+     "reveal": "25% x $200,000 = $50,000 and the distribution itself is not income. Difference $45,000."
+    }
+   ]
   },
   {
    "id": "TCP-III-D-0003",
@@ -2721,7 +2955,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group D / Proposed partnership transaction / Analysis"
+   "blueprint_tag": "TCP Area III / Group D / Proposed partnership transaction / Analysis",
+   "guide": [
+    {
+     "ask": "How is a payment to a contributor soon after contribution treated?",
+     "reveal": "As a disguised sale of part of the property."
+    },
+    {
+     "ask": "What part is sold and what is the gain?",
+     "reveal": "$150,000 / $400,000 = 37.5%, basis $37,500, gain $150,000 - $37,500 = $112,500."
+    }
+   ]
   },
   {
    "id": "TCP-III-D-0004",
@@ -2836,7 +3080,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group D / Proposed partnership transaction / Application"
+   "blueprint_tag": "TCP Area III / Group D / Proposed partnership transaction / Application",
+   "guide": [
+    {
+     "ask": "What rule applies when contributed property is distributed to another partner within seven years?",
+     "reveal": "The contributor recognizes the built-in gain from the contribution date."
+    },
+    {
+     "ask": "Compute it.",
+     "reveal": "$200,000 - $50,000 = $150,000; later appreciation is not included."
+    }
+   ]
   },
   {
    "id": "TCP-III-D-0005",
@@ -2954,7 +3208,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group D / Proposed partnership transaction / Analysis"
+   "blueprint_tag": "TCP Area III / Group D / Proposed partnership transaction / Analysis",
+   "guide": [
+    {
+     "ask": "What is the partnership's tax loss on the sale?",
+     "reveal": "$200,000 - $150,000 = $50,000."
+    },
+    {
+     "ask": "How is Hugo's share limited?",
+     "reveal": "His basis is treated as $120,000, so he reports half of a $30,000 gain, $15,000."
+    },
+    {
+     "ask": "Ivy's loss?",
+     "reveal": "$50,000 + $15,000 = $65,000."
+    }
+   ]
   },
   {
    "id": "TCP-III-D-0006",
@@ -3021,7 +3289,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area III / Group D / Payments to partner / Application"
+   "blueprint_tag": "TCP Area III / Group D / Payments to partner / Application",
+   "guide": [
+    {
+     "ask": "For which partner tax year is a partnership year included?",
+     "reveal": "The partner's year in which the partnership year ends."
+    },
+    {
+     "ask": "Which partnership year do the payments belong to?",
+     "reveal": "The one ending June 30, 2027, so all $60,000 falls in his 2027 year."
+    }
+   ]
   }
  ]
 }

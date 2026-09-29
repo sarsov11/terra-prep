@@ -1,0 +1,3344 @@
+{
+ "meta": {
+  "area": "II",
+  "title": "AUD Area II - Assessing Risk and Developing a Planned Response",
+  "allocation": "25-35%",
+  "law_asof": "2026-09-29",
+  "count": 45,
+  "status": "verified",
+  "blueprint": "AICPA Uniform CPA Examination Blueprints, AUD (Approved by the Board of Examiners Aug. 18, 2025; effective Jan. 2026); copy hosted at dokoblog.com (third party host of the AICPA PDF)",
+  "provenance": "terra-original (no commercial question text used)"
+ },
+ "items": [
+  {
+   "id": "AUD-II-A-0001",
+   "type": "mcq",
+   "area": "II",
+   "group": "A",
+   "group_name": "Planning an engagement",
+   "blueprint": "AUD.II.A Planning an engagement [II.A.1]",
+   "topic": "Overall audit strategy versus audit plan",
+   "task": "Explain the purpose and significance of the overall engagement strategy for an engagement.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Perrin & Cole, CPAs, are starting to plan the 2026 audit of Dunmore Bakeries, a nonissuer. Which statement best describes the overall audit strategy the firm must establish?",
+   "exhibit": "",
+   "options": [
+    "It sets the scope, timing and direction of the audit and guides development of the audit plan.",
+    "It records the results of tests performed and the conclusions reached on each significant account.",
+    "It is the written communication of significant audit findings to those charged with governance.",
+    "It lists the nature, timing and extent of each further audit procedure planned at the assertion level."
+   ],
+   "answer": "A",
+   "rule_line": "The overall audit strategy sets scope, timing and direction; the audit plan details the procedures.",
+   "why": {
+    "A": "Correct. The overall audit strategy sets scope, timing and direction, and guides the more detailed audit plan.",
+    "B": "Results and conclusions belong in the audit documentation prepared as procedures are performed.",
+    "C": "Communication of findings happens near the end of the audit and is not the strategy.",
+    "D": "That describes the audit plan, which is more detailed than the strategy."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "300.07-.09"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What does the overall audit strategy set for the engagement?",
+     "reveal": "The scope, timing and direction of the audit."
+    },
+    {
+     "ask": "How does it relate to the audit plan?",
+     "reveal": "It guides the development of the more detailed audit plan; it is not a record of results or a communication."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-A-0002",
+   "type": "mcq",
+   "area": "II",
+   "group": "A",
+   "group_name": "Planning an engagement",
+   "blueprint": "AUD.II.A Planning an engagement [II.A.2]",
+   "topic": "Preliminary engagement activities",
+   "task": "Prepare a draft engagement plan considering the prior period and changes in the current period.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Perrin & Cole, CPAs, have audited Dunmore Bakeries, a nonissuer, for five years. Which activities must the firm undertake at the beginning of the current audit engagement?",
+   "exhibit": "",
+   "options": [
+    "Obtain written representations from management about the completeness of the information provided to the auditor",
+    "Draft the auditor's report and decide on the report date so that fieldwork can be scheduled backward from it",
+    "Select the customer accounts for confirmation and prepare the confirmation requests to be mailed to customers",
+    "Perform acceptance and continuance procedures, evaluate ethical requirements, and establish an understanding of the terms"
+   ],
+   "answer": "D",
+   "rule_line": "At the start of each audit: acceptance and continuance, ethics and independence evaluation, and terms of engagement.",
+   "why": {
+    "A": "Written representations are obtained near the end of the audit, close to the report date.",
+    "B": "The report is prepared at the end of the audit, after the evidence has been evaluated.",
+    "C": "Selecting confirmation items is a further audit procedure performed after risks are assessed.",
+    "D": "Correct. The beginning-of-engagement activities are acceptance and continuance, evaluation of ethical requirements including independence, and establishing an understanding of the terms of engagement."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "300.06"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "C": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Which activities belong at the start of an engagement?",
+     "reveal": "Decisions about whether to accept or continue, and ethics checks."
+    },
+    {
+     "ask": "Which choice lists them together with terms of engagement?",
+     "reveal": "Acceptance and continuance, ethical requirements including independence, and an understanding of terms."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-A-0003",
+   "type": "mcq",
+   "area": "II",
+   "group": "A",
+   "group_name": "Planning an engagement",
+   "blueprint": "AUD.II.A Planning an engagement [II.A.2]",
+   "topic": "Engagement team discussion",
+   "task": "Prepare a draft engagement plan for specific processes, accounts or classes of transactions.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Before completing risk assessment for Ellery Lighting, a nonissuer, the engagement partner meets with the manager and senior. What must the required team discussion cover?",
+   "exhibit": "",
+   "options": [
+    "Only the results of prior-year controls testing, because the current-year risk assessment is already complete and approved",
+    "How management should correct the misstatements found during interim work and when it should record them",
+    "The engagement fee, billing schedule and expected realization for the audit engagement, based on the budget hours",
+    "The application of the reporting framework and the susceptibility of the financial statements to material misstatement"
+   ],
+   "answer": "D",
+   "rule_line": "Key team members discuss framework application and the susceptibility of the statements to material misstatement.",
+   "why": {
+    "A": "The discussion is part of the risk assessment and is not limited to prior-year results.",
+    "B": "Correcting misstatements is addressed later, when misstatements are communicated to management.",
+    "C": "Fees and billing are business matters and not part of the required risk assessment discussion.",
+    "D": "Correct. The engagement partner and key team members must discuss application of the framework and the susceptibility of the statements to material misstatement."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "315.17"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "C": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What must the required planning discussion among the engagement team address?",
+     "reveal": "How the reporting framework applies and how susceptible the statements are to material misstatement."
+    },
+    {
+     "ask": "Is it about fees or interim corrections?",
+     "reveal": "No, it concerns the risk assessment content, not budget or management's corrections."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-B-0001",
+   "type": "mcq",
+   "area": "II",
+   "group": "B",
+   "group_name": "Understanding an entity and its environment",
+   "blueprint": "AUD.II.B Understanding an entity and its environment [II.B.1]",
+   "topic": "Price elasticity of demand",
+   "task": "Understand supply and demand and elasticity measures.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GN",
+   "regime_name": "general / cross-regime",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Marlowe Cycles, a nonissuer client, raised its e-bike price from $2,000 to $2,200 in 2025, and unit sales fell from 5,000 to 4,000. Using simple percentage changes, the auditor evaluates how the price change affected demand and revenue. Which conclusion is correct?",
+   "exhibit": "",
+   "options": [
+    "Demand is elastic, and total revenue decreased.",
+    "Demand is inelastic, and total revenue increased.",
+    "Demand is inelastic, and total revenue decreased.",
+    "Demand is elastic, and total revenue increased."
+   ],
+   "answer": "A",
+   "rule_line": "Elasticity equals percent change in quantity divided by percent change in price; above 1 means elastic and revenue falls when price rises.",
+   "why": {
+    "A": "Correct. The quantity fell 20% while price rose 10%, an elasticity of 2.0. Revenue moved from $10,000,000 to $8,800,000.",
+    "B": "Both parts are wrong: demand is elastic and revenue fell.",
+    "C": "The quantity change exceeded the price change, so demand is elastic, not inelastic.",
+    "D": "An elasticity above 1 means a price increase lowers revenue. Revenue fell, not rose."
+   },
+   "steps": [
+    "Price change = (2,200 - 2,000) / 2,000 = +10%",
+    "Quantity change = (4,000 - 5,000) / 5,000 = -20%",
+    "Elasticity = 20% / 10% = 2.0 (elastic)",
+    "Revenue: 2,000 x 5,000 = 10,000,000 before; 2,200 x 4,000 = 8,800,000 after"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "abs((4000-5000)/5000)/((2200-2000)/2000)",
+      "value": 2.0
+     },
+     {
+      "expr": "2000*5000",
+      "value": 10000000
+     },
+     {
+      "expr": "2200*4000",
+      "value": 8800000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "Blueprint",
+     "ref": "AUD II.B (supply and demand, elasticity); economics concept, no standard cited"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": "n/a (경제 개념)",
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "경제학 개념(탄력성 = %Δ수량/%Δ가격 = 2.0, 매출 10.0M→8.8M 감소)을 직접 계산 재확인. 기준서 무관.",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "calc"
+   },
+   "guide": [
+    {
+     "ask": "What are the percentage changes in price and quantity?",
+     "reveal": "Price +10%, quantity -20%."
+    },
+    {
+     "ask": "What elasticity and revenue effect follow?",
+     "reveal": "20% / 10% = 2.0, so demand is elastic; revenue falls from $10,000,000 to $8,800,000."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-B-0002",
+   "type": "mcq",
+   "area": "II",
+   "group": "B",
+   "group_name": "Understanding an entity and its environment",
+   "blueprint": "AUD.II.B Understanding an entity and its environment [II.B.1]",
+   "topic": "Business cycle indicators",
+   "task": "Understand the business cycles and leading, coincident and lagging indicators of economic activity.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GN",
+   "regime_name": "general / cross-regime",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "The auditor of Tallgrass Homes, a nonissuer homebuilder, uses economic indicators to anticipate where the economy is in the business cycle and how that may affect risk. Which is generally a leading indicator?",
+   "exhibit": "",
+   "options": [
+    "The unemployment rate in the economy",
+    "Building permits for new housing",
+    "The consumer price index for all items",
+    "Industrial production output index"
+   ],
+   "answer": "B",
+   "rule_line": "Leading indicators turn before the economy does; unemployment and consumer prices trail it.",
+   "why": {
+    "A": "The unemployment rate generally changes after the economy turns, so it is a lagging indicator.",
+    "B": "Correct. Building permits change before the broader economy and are a commonly used leading indicator.",
+    "C": "The consumer price index generally trails economic activity and is a lagging indicator.",
+    "D": "Industrial production moves with the economy and is a coincident indicator."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "Blueprint",
+     "ref": "AUD II.B (business cycles and leading, coincident, lagging indicators); economics concept"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": "n/a (경제 개념)",
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "경제학 개념(건축허가 선행, 실업률·CPI 후행, 산업생산 동행). 기준서 무관.",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What does a leading indicator do?",
+     "reveal": "Changes before the broader economy does."
+    },
+    {
+     "ask": "Which listed indicator behaves this way?",
+     "reveal": "New housing building permits; unemployment, price index and output tend to lag or move with the cycle."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-B-0003",
+   "type": "mcq",
+   "area": "II",
+   "group": "B",
+   "group_name": "Understanding an entity and its environment",
+   "blueprint": "AUD.II.B Understanding an entity and its environment [II.B.2]",
+   "topic": "Issuer responsibilities under the Sarbanes-Oxley Act",
+   "task": "Understand the entity's responsibilities under the corporate governance provisions of the Sarbanes-Oxley Act of 2002.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Auditors of issuers evaluate an entity's corporate governance responsibilities under the Sarbanes-Oxley Act of 2002. Which is a responsibility of an issuer's management?",
+   "exhibit": "",
+   "options": [
+    "Making personal loans to directors and executive officers when the audit committee approves them",
+    "Having only the chief executive officer certify the periodic financial reports, since the chief financial officer's role is administrative",
+    "Having the external auditor prepare management's assessment report on internal control over financial reporting",
+    "Assessing the effectiveness of internal control over financial reporting each year and including the assessment in the annual report"
+   ],
+   "answer": "D",
+   "rule_line": "Issuer management assesses ICFR annually and certifies reports; loans to executives are prohibited.",
+   "why": {
+    "A": "The Act generally prohibits issuers from extending personal loans to directors and executive officers, whatever the audit committee decides.",
+    "B": "Both the chief executive officer and the chief financial officer must certify the periodic reports.",
+    "C": "The auditor does not prepare management's assessment; doing so would impair independence and shift management's responsibility.",
+    "D": "Correct. Management is responsible for assessing and reporting on the effectiveness of internal control over financial reporting each year."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "PCAOB",
+     "ref": "AS 2201 (management's responsibility for ICFR assessment)"
+    },
+    {
+     "src": "SOX",
+     "ref": "Sections 302 (15 USC 7241), 402 (15 USC 78m(k)), 404"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "medium",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "SOX 원문 확인: §302(15 USC 7241) 대표이사·재무책임자 모두 인증, §402(15 USC 78m(k)) 임원 개인대출 금지, §404 경영진 ICFR 평가. 정답 D 유효.",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Who is responsible for internal control over financial reporting under Sarbanes-Oxley?",
+     "reveal": "Management, which assesses its effectiveness."
+    },
+    {
+     "ask": "What is management's annual duty?",
+     "reveal": "Assess ICFR effectiveness and include the assessment in the annual report; the auditor may not prepare it."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-B-0004",
+   "type": "mcq",
+   "area": "II",
+   "group": "B",
+   "group_name": "Understanding an entity and its environment",
+   "blueprint": "AUD.II.B Understanding an entity and its environment [II.B.2]",
+   "topic": "Inherent risk factors for an estimate",
+   "task": "Identify relevant factors that define the nature of an entity and their impact on the risk of material misstatement.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Quillfeather Holdings, a nonissuer, recorded a goodwill impairment charge based on ten-year cash flow projections and a discount rate produced by a valuation model that management built. Executive bonuses depend on reported earnings. Which combination identifies the inherent risk factors that most increase the inherent risk for this estimate?",
+   "exhibit": "",
+   "options": [
+    "Segregation of duties, physical safeguards and restricted access to the valuation model",
+    "Tight audit deadlines, limited staff experience and an unsophisticated sampling plan",
+    "Subjectivity, estimation uncertainty and susceptibility to management bias",
+    "Low transaction volume, routine processing and stable product lines"
+   ],
+   "answer": "C",
+   "rule_line": "Inherent risk factors: complexity, subjectivity, change, uncertainty and susceptibility to management bias or fraud.",
+   "why": {
+    "A": "Segregation of duties, safeguards and access restrictions are controls, which affect control risk rather than inherent risk factors.",
+    "B": "Deadlines, staffing and sampling plans relate to the audit process and detection risk, not inherent risk of the estimate.",
+    "C": "Correct. Long-range projections and judgmental discount rates create subjectivity and uncertainty, and the bonus link creates susceptibility to management bias.",
+    "D": "Low volume and routine processing would reduce complexity and subjectivity, lowering rather than raising inherent risk."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "315.12 (definition of inherent risk factors)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What features of a goodwill estimate raise inherent risk?",
+     "reveal": "Long-range projections and a judgmental discount rate."
+    },
+    {
+     "ask": "What does the bonus link add?",
+     "reveal": "Susceptibility to management bias, so subjectivity, estimation uncertainty and bias are the factors."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0001",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.1]",
+   "topic": "Components of internal control",
+   "task": "Identify and define the components, principles and underlying structure of the COSO internal control framework.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GN",
+   "regime_name": "general / cross-regime",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Under the COSO Internal Control - Integrated Framework, which list correctly identifies the five components of internal control?",
+   "exhibit": "",
+   "options": [
+    "Control environment, risk assessment, control activities, information and communication, monitoring",
+    "Control environment, risk assessment, control activities, segregation of duties, monitoring activities",
+    "Control environment, risk assessment, control activities, information and communication, internal audit",
+    "Control environment, detection risk, control activities, information and communication, monitoring activities"
+   ],
+   "answer": "A",
+   "rule_line": "COSO components: control environment, risk assessment, control activities, information and communication, monitoring.",
+   "why": {
+    "A": "Correct. These are the five components of the COSO framework.",
+    "B": "Segregation of duties is a type of control activity, not a component; information and communication is the component.",
+    "C": "Internal audit is a function that may perform monitoring; the component is monitoring activities.",
+    "D": "Detection risk is an audit risk concept, not a COSO component; the component is risk assessment."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "COSO",
+     "ref": "Internal Control - Integrated Framework (2013) (framework text not opened)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": "public-checked (COSO 원문은 유료, 공개 요약으로 확인)",
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "COSO 2013 5개 구성요소·원칙 1(진실성·윤리)·원칙 16(감시활동)을 공개 요약으로 확인. 정답 유효.",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Which concepts are not components, such as a control type, a risk component or a function?",
+     "reveal": "Segregation of duties, detection risk and internal audit are not components."
+    },
+    {
+     "ask": "Which list contains only genuine components?",
+     "reveal": "The one that names the environment, risk assessment, activities, information and communication, and ongoing evaluation."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0002",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.1]",
+   "topic": "Classifying an activity within COSO components",
+   "task": "Define internal control within the context of the COSO framework, including purpose, objectives and limitations.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Bayfield Services, a nonissuer, has an internal audit function that each quarter separately evaluates whether key controls are present and functioning, and it reports deficiencies to management. Under the COSO framework, which component does this activity primarily represent?",
+   "exhibit": "",
+   "options": [
+    "Monitoring activities",
+    "Control activities over transaction processing",
+    "Risk assessment of business objectives",
+    "Control environment and tone at the top"
+   ],
+   "answer": "A",
+   "rule_line": "Ongoing or separate evaluations of whether controls are present and functioning are monitoring activities.",
+   "why": {
+    "A": "Correct. Separate evaluations that ascertain whether controls are present and functioning are the core of monitoring activities.",
+    "B": "Control activities are the policies and procedures that carry out management's directives, such as approvals and reconciliations.",
+    "C": "Risk assessment involves identifying and analyzing risks to achieving objectives, not evaluating controls already in place.",
+    "D": "The control environment is the foundation of tone, integrity, oversight and structure; it is not a periodic evaluation."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "COSO",
+     "ref": "Internal Control - Integrated Framework (2013), monitoring activities (text not opened)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": "public-checked",
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "COSO 2013 감시활동 정의(지속·개별 평가) 공개 요약으로 확인. 정답 유효.",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What is the internal audit function doing quarterly?",
+     "reveal": "Separately evaluating whether key controls are present and functioning, and reporting deficiencies."
+    },
+    {
+     "ask": "Which component does that describe?",
+     "reveal": "Monitoring activities."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0003",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.1]",
+   "topic": "COSO principle within the control environment",
+   "task": "Identify and define the components, principles and underlying structure of the COSO internal control framework.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GN",
+   "regime_name": "general / cross-regime",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Which is a principle of the control environment component in the COSO Internal Control - Integrated Framework?",
+   "exhibit": "",
+   "options": [
+    "The organization selects and develops general control activities over technology.",
+    "The organization performs ongoing or separate evaluations of internal control.",
+    "The organization identifies and assesses significant changes affecting internal control.",
+    "The organization demonstrates a commitment to integrity and ethical values."
+   ],
+   "answer": "D",
+   "rule_line": "Control environment principles cover integrity, board oversight, structure, competence and accountability.",
+   "why": {
+    "A": "This principle belongs to the control activities component.",
+    "B": "This principle belongs to the monitoring activities component.",
+    "C": "This principle belongs to the risk assessment component.",
+    "D": "Correct. Commitment to integrity and ethical values is the first control environment principle."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "COSO",
+     "ref": "Internal Control - Integrated Framework (2013), principle 1 (text not opened)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": "public-checked",
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "COSO 2013 통제환경 원칙 1 확인. 정답 유효.",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Which COSO component includes integrity and ethical values?",
+     "reveal": "The control environment."
+    },
+    {
+     "ask": "Which principle matches?",
+     "reveal": "The commitment to integrity and ethical values; the others belong to control activities, monitoring or risk assessment."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0004",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.2]",
+   "topic": "Identifying general IT controls",
+   "task": "Perform procedures to obtain an understanding of how an entity has responded to risks arising from the use of IT, including IT general controls.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "In understanding the IT environment of Redwater Distribution, a nonissuer, the auditor lists the controls below. Which is a general IT control?",
+   "exhibit": "",
+   "options": [
+    "An automated three-way match of the purchase order, receiving report and vendor invoice before payment approval",
+    "Role-based access provisioning and a quarterly review of user access to the ERP production environment",
+    "An automated edit check that rejects invoices with dates after the current period-end",
+    "A supervisor's weekly review of the accounts receivable aging report"
+   ],
+   "answer": "B",
+   "rule_line": "General IT controls cover access, program changes and IT operations; application controls sit inside applications.",
+   "why": {
+    "A": "An automated match embedded in an application is an information-processing (application) control, not a general IT control.",
+    "B": "Correct. Managing access to the IT environment is a general IT control, supporting the reliable operation of applications.",
+    "C": "An edit check inside an application is an automated application control.",
+    "D": "A supervisor's review of a report is a manual control, not a general IT control."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "315.29"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What do general IT controls cover?",
+     "reveal": "The IT environment as a whole, such as access, program changes and operations."
+    },
+    {
+     "ask": "Which listed control is about the environment rather than one transaction?",
+     "reveal": "Role-based access provisioning and review of user access to the ERP."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0005",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.2]",
+   "topic": "Effect of ineffective general IT controls",
+   "task": "Conclude whether relevant automated and manual transaction-level controls are effectively designed and placed in operation.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Evaluation",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Tri-County Plastics, a nonissuer, uses an ERP module to compute inventory costs. The auditor planned to rely on the module's automated costing control. Testing shows that program change controls over the module are not operating effectively, and several unauthorized changes were made during the year. Which conclusion is most appropriate?",
+   "exhibit": "",
+   "options": [
+    "The deficiency means every manual control in the inventory cycle is also ineffective, so the auditor should assess control risk as high for all inventory assertions.",
+    "The auditor should disclaim an opinion on the financial statements because controls over a significant system failed.",
+    "The auditor should not rely on the automated costing control without more evidence, and should raise substantive procedures over inventory costing.",
+    "The deficiency has no effect on the audit, because general IT controls do not address risks at the assertion level of financial statements."
+   ],
+   "answer": "C",
+   "rule_line": "Ineffective general IT controls limit reliance on dependent automated controls and call for more substantive work.",
+   "why": {
+    "A": "The deficiency affects controls that depend on the module; it does not automatically make independent manual controls ineffective.",
+    "B": "A control deficiency alone does not require a disclaimer; the auditor adjusts procedures and evaluates the evidence obtained.",
+    "C": "Correct. Ineffective program change controls undermine reliance on automated controls that depend on them, so the auditor revises the risk assessment and responds with more substantive evidence.",
+    "D": "General IT controls support the continued operation of automated controls, so their failure can affect assertion-level risks."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "315.29-.30"
+    },
+    {
+     "src": "AU-C",
+     "ref": "330.08-.09"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What do failed program change controls mean for an automated control?",
+     "reveal": "They undermine reliance on it, because it could have been altered without authorization."
+    },
+    {
+     "ask": "What should the auditor do?",
+     "reveal": "Not rely on the automated costing without more evidence, and increase substantive procedures."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0006",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.3]",
+   "topic": "General IT control areas",
+   "task": "Perform procedures to obtain an understanding of the IT environment and identify relevant IT general controls.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "An auditor of Fernhill Staffing, a nonissuer, tests whether new versions of the payroll application are tested, authorized by management and approved before they are moved into production. Which area of general IT controls is being tested?",
+   "exhibit": "",
+   "options": [
+    "Data center physical security",
+    "Program change management",
+    "Logical access security",
+    "IT operations and job scheduling"
+   ],
+   "answer": "B",
+   "rule_line": "The IT processes are managing access, program changes and IT operations.",
+   "why": {
+    "A": "Physical security protects facilities and equipment, not the approval of code changes.",
+    "B": "Correct. Controls that ensure changes to applications are tested, authorized and approved before release address program change management.",
+    "C": "Logical access security controls who can log in to and use systems and data.",
+    "D": "IT operations controls address job scheduling, monitoring and backup and recovery."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "315.12 (definition of IT environment)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Which activity is being tested in the payroll application versions?",
+     "reveal": "Testing, authorization and approval of changes before release."
+    },
+    {
+     "ask": "Which area of general IT controls is that?",
+     "reveal": "Program change management."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0007",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.3]",
+   "topic": "Evaluating implementation of a control",
+   "task": "Perform tests of the design and implementation of relevant automated and manual transaction-level internal controls.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "The auditor of Sagebrush Health, a nonissuer, has concluded that a control requiring the controller to review and approve manual journal entries above $25,000 is effectively designed. To determine whether the control has been implemented, which procedure in addition to inquiry is most appropriate?",
+   "exhibit": "",
+   "options": [
+    "Ask the chief financial officer and the controller separately whether the review happens",
+    "Read the accounting policy manual that describes the review requirement and the approval thresholds",
+    "Observe the controller performing the review, or inspect documents showing that it occurred",
+    "Inquire of internal audit staff how often they believe the review is performed"
+   ],
+   "answer": "C",
+   "rule_line": "Implementation requires procedures beyond inquiry, such as observation or inspection.",
+   "why": {
+    "A": "Asking two people is still inquiry, so it does not meet the requirement for procedures in addition to inquiry.",
+    "B": "A manual describes how the control should work but does not show that it has been put in place.",
+    "C": "Correct. To determine implementation, the auditor performs procedures beyond inquiry, such as observation or inspection of the control being carried out.",
+    "D": "Asking others how often it is believed to occur is again inquiry, and second-hand."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "315.30b"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Is inquiry alone enough to conclude a control is implemented?",
+     "reveal": "No, other procedures are needed."
+    },
+    {
+     "ask": "Which procedures fit?",
+     "reveal": "Observing the review or inspecting documents showing it occurred."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0008",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.3]",
+   "topic": "Controls the auditor must identify",
+   "task": "Identify and document the relevant automated and manual controls within the flow of an entity's transactions.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Under AICPA standards, which controls must an auditor identify as part of understanding the entity's system of internal control?",
+   "exhibit": "",
+   "options": [
+    "Every control in each significant business process, whether or not it relates to a risk of misstatement",
+    "Only automated controls, since manual controls cannot be evaluated for design",
+    "Only entity-level controls, because transaction-level controls are handled through substantive procedures",
+    "Controls over journal entries and other adjustments, and controls that address significant risks"
+   ],
+   "answer": "D",
+   "rule_line": "Identify controls over significant risks, journal entries, planned tests of controls, and other appropriate controls.",
+   "why": {
+    "A": "The requirement is targeted to controls that address risks of material misstatement, not every control.",
+    "B": "Manual controls can be identified and evaluated; the requirement is not limited to automated controls.",
+    "C": "Transaction-level controls that address significant risks and journal entries must also be identified.",
+    "D": "Correct. The auditor identifies controls addressing significant risks, controls over journal entries and adjustments, controls planned for testing, and others judged appropriate."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "315.27"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Which controls must the auditor identify to understand internal control?",
+     "reveal": "Those tied to risks, not every control."
+    },
+    {
+     "ask": "Which list matches?",
+     "reveal": "Controls over journal entries and adjustments and those addressing significant risks, plus controls planned for testing."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0009",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.3]",
+   "topic": "Concluding on control design",
+   "task": "Conclude whether relevant automated and manual transaction-level internal controls are effectively designed and placed in operation.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "In a walkthrough of cash disbursements at Oakridge Supply, a nonissuer, the auditor observes that the accounts payable clerk creates new vendors in the master file, enters vendor invoices, and prints checks. The treasurer signs the checks after reviewing only the check total. Which conclusion is best supported?",
+   "exhibit": "",
+   "options": [
+    "The controls are not effectively designed to detect fictitious vendor payments, because incompatible duties are combined.",
+    "No conclusion about design is possible until the operating effectiveness of the controls has been tested.",
+    "The controls are effectively designed, because the treasurer's signature provides an independent check of each disbursement.",
+    "The design is effective if a sample of checks tested by the auditor shows no exceptions."
+   ],
+   "answer": "A",
+   "rule_line": "A control cannot be effectively designed if incompatible duties allow undetected fictitious disbursements.",
+   "why": {
+    "A": "Correct. One person can create a vendor, record invoices and produce payments, and the signer reviews only totals, so the design does not address the risk of fictitious vendors.",
+    "B": "Design is evaluated separately from operating effectiveness and can be judged from the walkthrough.",
+    "C": "A review of only the total does not verify vendors or invoices, so the signature does not compensate for the combined duties.",
+    "D": "Tests of operating effectiveness show whether a control works as designed; they do not cure a design flaw."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "315.30a"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Which duties does the accounts payable clerk combine?",
+     "reveal": "Creating vendors, entering invoices and printing checks."
+    },
+    {
+     "ask": "What does the signer check, and what does that mean for fictitious vendors?",
+     "reveal": "Only the check total, so one person could run a fictitious vendor scheme undetected; the design is deficient."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0010",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.4]",
+   "topic": "Type 1 and type 2 service organization reports",
+   "task": "Understand the differences between SOC 1 and SOC 2 engagements and the reports available.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GN",
+   "regime_name": "general / cross-regime",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Which statement correctly distinguishes a type 1 report from a type 2 report issued by a service auditor?",
+   "exhibit": "",
+   "options": [
+    "A type 1 report covers operating effectiveness over a period, while a type 2 report covers only design as of a specified date.",
+    "Both report on operating effectiveness, differing only in whether complementary user entity controls are included.",
+    "A type 2 report adds operating effectiveness over a period; a type 1 report covers design as of a date.",
+    "A type 2 report covers the service organization's legal compliance, while a type 1 report covers its financial statements."
+   ],
+   "answer": "C",
+   "rule_line": "Type 1: description and design as of a date; type 2 adds operating effectiveness over a period.",
+   "why": {
+    "A": "The descriptions are reversed.",
+    "B": "Only a type 2 report includes tests of operating effectiveness. Complementary user entity controls are not the distinguishing feature.",
+    "C": "Correct. A type 1 report addresses the description and suitability of design as of a date. A type 2 report adds tests of operating effectiveness over a period.",
+    "D": "Neither report is about legal compliance or the service organization's financial statements."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "402.08"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What does a type 1 report cover?",
+     "reveal": "The description and design of controls as of a specific date."
+    },
+    {
+     "ask": "What does a type 2 report add?",
+     "reveal": "Tests of operating effectiveness over a period."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0011",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.4]",
+   "topic": "Using a type 2 report that does not cover the full year",
+   "task": "Use a SOC 1 Type 2 report to determine the nature and extent of testing procedures in an audit.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "The auditor of Kestrel Retail, a nonissuer with a December 31, 2025 year-end, plans to reduce substantive testing of payroll based on controls at the service organization that processes payroll. The service auditor's type 2 report covers January 1 through September 30, 2025. What should the user auditor do?",
+   "exhibit": "",
+   "options": [
+    "Refer to the service auditor's work in the auditor's report so that responsibility for the opinion is shared",
+    "Evaluate whether the period is appropriate and get additional evidence for October 1 through December 31",
+    "Rely on the report for the whole year, because a type 2 report covers a period of time rather than a single date",
+    "Reperform all of the service auditor's tests of controls at the service organization"
+   ],
+   "answer": "B",
+   "rule_line": "Evaluate whether a type 2 report's period is appropriate, and cover any gap to year-end with additional evidence.",
+   "why": {
+    "A": "The user auditor should not refer to the work of a service auditor in an unmodified report; responsibility for the opinion is not shared.",
+    "B": "Correct. The user auditor evaluates whether the report's period is appropriate and considers additional evidence for the remaining period, such as inquiries and other procedures.",
+    "C": "The report period ends before year-end, so the remaining three months are not covered and cannot be assumed effective.",
+    "D": "Reperforming all tests is not required; the auditor evaluates the report's tests and results for relevance and sufficiency."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "402.17"
+    },
+    {
+     "src": "AU-C",
+     "ref": "402.21"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Which part of the year does the type 2 report cover, and which does it not?",
+     "reveal": "January 1 to September 30; October through December is not covered."
+    },
+    {
+     "ask": "What should the user auditor do about the gap?",
+     "reveal": "Evaluate whether the period is appropriate and obtain additional evidence for the remaining period."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0012",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.4]",
+   "topic": "SOC 1 reports for user auditors",
+   "task": "Understand the differences between SOC 1 and SOC 2 engagements.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "AT",
+   "regime_name": "attestation (SSAE)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "The auditor of Harbor Lane Foods, a nonissuer, wants a service auditor's report on a payroll processor's controls that are relevant to Harbor Lane's internal control over financial reporting. Which report is designed for that purpose?",
+   "exhibit": "",
+   "options": [
+    "A SOC 2 report on controls relevant to security, availability, processing integrity, confidentiality or privacy",
+    "A SOC for Supply Chain report on controls in a production, manufacturing or distribution system",
+    "A report on an entity's cybersecurity risk management program and controls",
+    "A SOC 1 report on controls relevant to user entities' internal control over financial reporting"
+   ],
+   "answer": "D",
+   "rule_line": "SOC 1 reports serve user auditors; SOC 2 reports address trust services criteria.",
+   "why": {
+    "A": "A SOC 2 report addresses trust services criteria, not the ICFR of user entities, so it is not designed for the user auditor's financial statement audit.",
+    "B": "A SOC for Supply Chain report addresses controls in production, manufacturing or distribution systems.",
+    "C": "A cybersecurity report addresses an entity's risk management program, not controls relevant to financial reporting.",
+    "D": "Correct. A SOC 1 report addresses controls at a service organization relevant to user entities' internal control over financial reporting."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AT-C",
+     "ref": "320 and list of AICPA SOC engagements (contents pages)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Which report type is designed for controls relevant to user entities' financial reporting?",
+     "reveal": "SOC 1."
+    },
+    {
+     "ask": "Why not the others?",
+     "reveal": "SOC 2, supply chain and cybersecurity reports address other subject matter."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0013",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.5]",
+   "topic": "Inherent limitations of internal control",
+   "task": "Understand the limitations of internal controls and the potential impact on the risk of material misstatement.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GN",
+   "regime_name": "general / cross-regime",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Which statement describes an inherent limitation of internal control that the auditor considers when assessing risks of material misstatement?",
+   "exhibit": "",
+   "options": [
+    "Controls can be circumvented by collusion or by management override.",
+    "Well-designed controls will continue to operate as designed once implemented.",
+    "The auditor's tests of controls eliminate the remaining risk of management override.",
+    "Effective internal control removes the risk of fraud as long as management is honest."
+   ],
+   "answer": "A",
+   "rule_line": "Internal control gives reasonable, not absolute, assurance because of human error, collusion and management override.",
+   "why": {
+    "A": "Correct. Collusion and management override are inherent limitations, so internal control provides reasonable rather than absolute assurance.",
+    "B": "Controls can break down through human error or changed conditions after implementation.",
+    "C": "The auditor's tests cannot eliminate the risk of management override, which is present in all entities.",
+    "D": "Internal control reduces but cannot remove fraud risk, and management's honesty is not a limitation-free assumption."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "240.31"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What can defeat even a well-designed control?",
+     "reveal": "Human actions such as collusion or override by management."
+    },
+    {
+     "ask": "What does that mean for assurance?",
+     "reveal": "Internal control gives reasonable, not absolute, assurance."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-C-0014",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Understanding an entity's control environment and business processes, including IT systems",
+   "blueprint": "AUD.II.C Understanding an entity's control environment and business processes, including IT systems [II.C.5]",
+   "topic": "Responding to the risk of management override",
+   "task": "Identify and document the risks associated with management override of internal controls.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "In the 2025 audit of Sable Ridge Storage, a nonissuer, the auditor identifies no specific fraud risks, and controls appear well designed. Which statement about the risk of management override of controls is correct?",
+   "exhibit": "",
+   "options": [
+    "The auditor should address it through inquiry of management and those charged with governance alone, documented in the file.",
+    "The auditor needs to address it only if specific fraud risk factors have been identified in the risk assessment.",
+    "The auditor may rely on the results of testing controls to conclude that management override is not a concern for the audit.",
+    "The auditor must still test journal entries, review estimates for bias, and evaluate unusual transactions."
+   ],
+   "answer": "D",
+   "rule_line": "Test journal entries, review estimates for bias and evaluate unusual transactions regardless of identified fraud risks.",
+   "why": {
+    "A": "Inquiry alone does not address the risk; the required procedures include testing and evaluating.",
+    "B": "The requirement applies even if specific risks of material misstatement due to fraud are not identified.",
+    "C": "Management can override controls that appear effective, so test results do not remove the risk.",
+    "D": "Correct. Management override is a risk in all entities, and the auditor must perform the required procedures apart from any specifically identified fraud risks."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "240.31-.32"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "C": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Is management override a risk only when specific fraud factors are found?",
+     "reveal": "No, it exists in all entities."
+    },
+    {
+     "ask": "What must the auditor perform regardless?",
+     "reveal": "Journal entry testing, review of estimates for bias and evaluation of unusual transactions."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-D-0001",
+   "type": "mcq",
+   "area": "II",
+   "group": "D",
+   "group_name": "Materiality",
+   "blueprint": "AUD.II.D Materiality [II.D.1]",
+   "topic": "Materiality using a normalized benchmark",
+   "task": "Calculate materiality for an entity's financial statements as a whole.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Copperfield Retail, a nonissuer, is a profit-oriented entity. Its profit before tax from continuing operations was $2,100,000 in 2023, $500,000 in 2024 and $2,400,000 in 2025. The auditor concludes that 2025 profit is not representative and, following firm guidance, applies 5% to the three-year average profit before tax as the starting point for materiality for the financial statements as a whole. What is the resulting materiality?",
+   "exhibit": "",
+   "options": [
+    "$25,000",
+    "$83,333",
+    "$112,500",
+    "$120,000"
+   ],
+   "answer": "B",
+   "rule_line": "A normalized benchmark, such as a multi-year average, may replace an exceptional current-year figure before applying the percentage.",
+   "why": {
+    "A": "This applies 5% to the 2024 profit only, ignoring the other two years.",
+    "B": "Correct. Average profit before tax is ($2,100,000 + $500,000 + $2,400,000) / 3 = $1,666,667; 5% of that is $83,333.",
+    "C": "This averages only 2023 and 2025 ($2,250,000) and omits the low year.",
+    "D": "This applies 5% to the current-year profit, which the auditor judged unrepresentative."
+   },
+   "steps": [
+    "Average PBT = (2,100,000 + 500,000 + 2,400,000) / 3 = 1,666,667",
+    "Materiality = 5% x 1,666,667 = 83,333"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0.05*(2100000+500000+2400000)/3",
+      "value": 83333.33
+     },
+     {
+      "expr": "0.05*500000",
+      "value": 25000
+     },
+     {
+      "expr": "0.05*(2100000+2400000)/2",
+      "value": 112500
+     },
+     {
+      "expr": "0.05*2400000",
+      "value": 120000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "320.A7-.A8"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
+   },
+   "guide": [
+    {
+     "ask": "What base does the firm's guidance use when 2025 is not representative?",
+     "reveal": "The three-year average profit before tax."
+    },
+    {
+     "ask": "Compute the average and materiality.",
+     "reveal": "($2,100,000 + $500,000 + $2,400,000) / 3 = $1,666,667; 5% is $83,333."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-D-0002",
+   "type": "mcq",
+   "area": "II",
+   "group": "D",
+   "group_name": "Materiality",
+   "blueprint": "AUD.II.D Materiality [II.D.2]",
+   "topic": "Performance materiality",
+   "task": "Calculate the materiality level to be applied to classes of transactions and performance materiality.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Materiality for the financial statements of Harlan Steel, a nonissuer, is $200,000. Firm policy sets performance materiality between 50% and 75% of materiality and uses the low end when prior audits found several uncorrected misstatements. The prior-year audit found uncorrected misstatements in inventory, receivables and accruals. What performance materiality should the auditor set?",
+   "exhibit": "",
+   "options": [
+    "$50,000",
+    "$100,000",
+    "$150,000",
+    "$200,000"
+   ],
+   "answer": "B",
+   "rule_line": "Performance materiality is set below materiality, lower where prior misstatements suggest more undetected misstatement.",
+   "why": {
+    "A": "$50,000 is 25% of materiality, below the range in firm policy.",
+    "B": "Correct. The history of misstatements calls for the low end of the range: 50% x $200,000 = $100,000.",
+    "C": "$150,000 is 75%, the high end, which suits entities with few prior misstatements.",
+    "D": "Performance materiality must be less than materiality, so it cannot equal $200,000."
+   },
+   "steps": [
+    "Range 50% to 75% of 200,000: 100,000 to 150,000",
+    "Prior misstatements found: use low end, 50% x 200,000 = 100,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0.5*200000",
+      "value": 100000
+     },
+     {
+      "expr": "0.25*200000",
+      "value": 50000
+     },
+     {
+      "expr": "0.75*200000",
+      "value": 150000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "320.11"
+    },
+    {
+     "src": "AU-C",
+     "ref": "320.A15"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "limit",
+    "C": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What is the allowed range for performance materiality?",
+     "reveal": "50% to 75% of $200,000, so $100,000 to $150,000."
+    },
+    {
+     "ask": "Which end applies after prior misstatements?",
+     "reveal": "The low end: 50% x $200,000 = $100,000."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-D-0003",
+   "type": "mcq",
+   "area": "II",
+   "group": "D",
+   "group_name": "Materiality",
+   "blueprint": "AUD.II.D Materiality [II.D.2]",
+   "topic": "Tolerable misstatement in an issuer audit",
+   "task": "Understand materiality and the amount set below it for planning and performing procedures.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "In an audit of an issuer, the auditor sets an amount below materiality for the financial statements as a whole to reduce the probability that total uncorrected and undetected misstatements would be material. The auditor applies it to account and disclosure level procedures. What term do PCAOB standards use for this amount?",
+   "exhibit": "",
+   "options": [
+    "Particular-item materiality",
+    "Tolerable misstatement",
+    "Performance materiality",
+    "Clearly trivial threshold"
+   ],
+   "answer": "B",
+   "rule_line": "In PCAOB audits the amount below materiality used for account-level procedures is tolerable misstatement.",
+   "why": {
+    "A": "Particular-item materiality applies when smaller misstatements would influence users; it is not the amount set below overall materiality.",
+    "B": "Correct. PCAOB standards use tolerable misstatement for the amount applied at the account or disclosure level, set below materiality.",
+    "C": "Performance materiality is the AICPA term for a similar concept; PCAOB standards use tolerable misstatement.",
+    "D": "A clearly trivial amount is the level below which misstatements need not be accumulated, which is a different concept."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "PCAOB",
+     "ref": "AS 2105.08"
+    },
+    {
+     "src": "AU-C",
+     "ref": "320.09 definitions (performance materiality)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What is the amount below materiality for assessing account-level misstatements called in PCAOB standards?",
+     "reveal": "Tolerable misstatement."
+    },
+    {
+     "ask": "How does it differ from the AICPA term?",
+     "reveal": "The AICPA calls the similar amount performance materiality, but PCAOB uses tolerable misstatement."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-D-0004",
+   "type": "mcq",
+   "area": "II",
+   "group": "D",
+   "group_name": "Materiality",
+   "blueprint": "AUD.II.D Materiality [II.D.1]",
+   "topic": "Revising materiality as the audit progresses",
+   "task": "Understand materiality as it relates to the financial statements and calculate materiality.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "In planning the audit of Woodhaven Textiles, a nonissuer, the auditor set materiality at 5% of budgeted profit before tax of $3,000,000, or $150,000, and performance materiality at $112,500. After year-end, actual profit before tax is $1,600,000. Which action is required?",
+   "exhibit": "",
+   "options": [
+    "Revise materiality to reflect actual results, about $80,000, and reconsider performance materiality and further procedures",
+    "Revise materiality to $80,000 but leave performance materiality and procedures unchanged, since planned procedures were already performed",
+    "Keep materiality at $150,000, because materiality is fixed at planning to avoid hindsight bias",
+    "Revise materiality only if actual profit exceeds the budget, because lower profit makes misstatements less significant"
+   ],
+   "answer": "A",
+   "rule_line": "Revise materiality when actual results differ; then reconsider performance materiality and the planned procedures.",
+   "why": {
+    "A": "Correct. Materiality must be revised when information becomes available that would have led to a different amount, and the effect on performance materiality and procedures must be considered.",
+    "B": "A lower materiality requires the auditor to determine whether performance materiality and the nature, timing and extent of procedures remain appropriate.",
+    "C": "The auditor must revise materiality when circumstances differ from the plan; it is not fixed at planning.",
+    "D": "Lower profit makes the same misstatement more significant relative to results, and revision is required in either direction."
+   },
+   "steps": [
+    "Planning: 5% x 3,000,000 = 150,000",
+    "Actual: 5% x 1,600,000 = 80,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0.05*3000000",
+      "value": 150000
+     },
+     {
+      "expr": "0.05*1600000",
+      "value": 80000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "320.12-.13"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What was the planning materiality and what does actual profit imply?",
+     "reveal": "5% x $3,000,000 = $150,000 planned; 5% x $1,600,000 = $80,000 on actual results."
+    },
+    {
+     "ask": "What must the auditor do when information would have led to a different amount?",
+     "reveal": "Revise materiality and reconsider performance materiality and further procedures."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-D-0005",
+   "type": "mcq",
+   "area": "II",
+   "group": "D",
+   "group_name": "Materiality",
+   "blueprint": "AUD.II.D Materiality [II.D.1]",
+   "topic": "Qualitative considerations and materiality",
+   "task": "Understand materiality, including qualitative considerations.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Evaluation",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Materiality for the 2025 audit of Northlake Freight, a nonissuer, is $200,000, and performance materiality is $150,000. The auditor accumulates an uncorrected $60,000 overstatement of revenue. With it, reported EBITDA is $4,020,000; without it, EBITDA is $3,960,000. A loan covenant requires EBITDA of at least $4,000,000. Which conclusion is most appropriate?",
+   "exhibit": "",
+   "options": [
+    "The misstatement is material only if it exceeds performance materiality of $150,000.",
+    "The misstatement can be offset against an unrelated $60,000 overstatement of inventory expense, so no further evaluation is needed.",
+    "The misstatement may be material by nature because it affects a debt covenant; evaluate it qualitatively and request correction.",
+    "The misstatement is not material because it is below materiality for the financial statements as a whole, so no further evaluation is needed."
+   ],
+   "answer": "C",
+   "rule_line": "A misstatement below materiality can be material by nature, for example when it affects a debt covenant.",
+   "why": {
+    "A": "Performance materiality is a planning tool for procedures, not the threshold for evaluating whether a misstatement is material.",
+    "B": "A material misstatement is unlikely to be offset by another; offsetting across unrelated accounts does not address the covenant effect.",
+    "C": "Correct. Circumstances such as effect on compliance with debt covenants can make a misstatement material even when it is below the quantitative threshold.",
+    "D": "Below-threshold amounts still require qualitative evaluation; the circumstances here bear on covenant compliance."
+   },
+   "steps": [
+    "EBITDA reported 4,020,000; corrected 4,020,000 - 60,000 = 3,960,000",
+    "Covenant minimum 4,000,000: corrected amount falls short by 40,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "4020000-60000",
+      "value": 3960000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "450.A26"
+    },
+    {
+     "src": "AU-C",
+     "ref": "450.A28"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Is the misstatement below the quantitative thresholds?",
+     "reveal": "Yes, $60,000 is below both $200,000 and $150,000."
+    },
+    {
+     "ask": "Does the covenant matter?",
+     "reveal": "Yes; corrected EBITDA of $3,960,000 misses the $4,000,000 covenant, so it may be material by nature and needs qualitative evaluation."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-E-0001",
+   "type": "mcq",
+   "area": "II",
+   "group": "E",
+   "group_name": "Assessing and responding to risks of material misstatement, whether due to fraud or error",
+   "blueprint": "AUD.II.E Assessing and responding to risks of material misstatement, whether due to fraud or error [II.E]",
+   "topic": "Audit risk model and detection risk",
+   "task": "Assess and respond to risks of material misstatement using inherent and control risk assessments.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In planning the audit of Alderbrook Mills, a nonissuer, the auditor accepts audit risk of 4%. For a particular assertion the auditor assesses inherent risk at 80% and control risk at 50%. What level of detection risk is needed to hold audit risk at 4%?",
+   "exhibit": "",
+   "options": [
+    "1.6%",
+    "4%",
+    "10%",
+    "40%"
+   ],
+   "answer": "C",
+   "rule_line": "Audit risk equals the risk of material misstatement times detection risk, so detection risk equals audit risk divided by the risk of material misstatement.",
+   "why": {
+    "A": "This multiplies audit risk by the risk of material misstatement (4% x 40%) instead of dividing.",
+    "B": "This sets detection risk equal to audit risk, ignoring the risk of material misstatement.",
+    "C": "Correct. Risk of material misstatement = 80% x 50% = 40%. Detection risk = 4% / 40% = 10%.",
+    "D": "This uses the risk of material misstatement itself as the detection risk."
+   },
+   "steps": [
+    "RMM = inherent risk x control risk = 0.80 x 0.50 = 0.40",
+    "Detection risk = audit risk / RMM = 0.04 / 0.40 = 0.10"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0.04/(0.8*0.5)",
+      "value": 0.1
+     },
+     {
+      "expr": "0.04*0.4",
+      "value": 0.016
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "315.02-.04"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "D": "calc"
+   },
+   "guide": [
+    {
+     "ask": "How is risk of material misstatement built from its parts?",
+     "reveal": "Inherent risk times control risk: 80% x 50% = 40%."
+    },
+    {
+     "ask": "Solve for detection risk.",
+     "reveal": "Audit risk / RMM = 4% / 40% = 10%."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-E-0002",
+   "type": "mcq",
+   "area": "II",
+   "group": "E",
+   "group_name": "Assessing and responding to risks of material misstatement, whether due to fraud or error",
+   "blueprint": "AUD.II.E Assessing and responding to risks of material misstatement, whether due to fraud or error [II.E]",
+   "topic": "Risks that are always significant risks",
+   "task": "Identify and assess risks of material misstatement, whether due to fraud or error.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "In its risk assessment for Ferndale Pharma, a nonissuer, the auditor identifies several risks of material misstatement. Which one must the auditor treat as a significant risk?",
+   "exhibit": "",
+   "options": [
+    "Any financial-statement-level risk of misstatement",
+    "Any risk relating to an accounting estimate",
+    "Any risk in a class of transactions above materiality",
+    "A risk of material misstatement due to fraud"
+   ],
+   "answer": "D",
+   "rule_line": "Assessed risks of material misstatement due to fraud are treated as significant risks.",
+   "why": {
+    "A": "Financial statement level risks are pervasive and addressed through overall responses; they are not automatically significant risks.",
+    "B": "Estimates vary in risk; only those close to the upper end of the spectrum of inherent risk are significant.",
+    "C": "Size alone does not make a risk significant; significance depends on the degree of inherent risk and on whether the risk requires special audit consideration.",
+    "D": "Correct. The auditor treats assessed risks of material misstatement due to fraud as significant risks."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "240.27"
+    },
+    {
+     "src": "AU-C",
+     "ref": "315.12"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Which risks does the auditor always treat as significant?",
+     "reveal": "Assessed risks of material misstatement due to fraud."
+    },
+    {
+     "ask": "Do estimates or large classes qualify automatically?",
+     "reveal": "No; only the fraud risk choice is automatic."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-E-0003",
+   "type": "mcq",
+   "area": "II",
+   "group": "E",
+   "group_name": "Assessing and responding to risks of material misstatement, whether due to fraud or error",
+   "blueprint": "AUD.II.E Assessing and responding to risks of material misstatement, whether due to fraud or error [II.E]",
+   "topic": "Fraud risk factors",
+   "task": "Identify and assess risks of material misstatement due to fraud.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "The chief financial officer of Halcyon Devices, a nonissuer, tells the auditor that adjusting revenue estimates upward at year-end is just what everyone in the industry does to keep lenders comfortable. The CFO's bonus depends on meeting a lender covenant. Which category of fraud risk factor does the CFO's statement best illustrate?",
+   "exhibit": "",
+   "options": [
+    "Attitude or rationalization",
+    "Incentive or pressure",
+    "Opportunity to override controls",
+    "Detection risk of the audit team"
+   ],
+   "answer": "A",
+   "rule_line": "Fraud risk factors indicate incentive or pressure, opportunity, or attitude and rationalization.",
+   "why": {
+    "A": "Correct. The statement justifies adjusting estimates as normal practice, which is rationalization.",
+    "B": "The bonus tied to a covenant is an incentive or pressure, but the statement itself is a justification.",
+    "C": "Opportunity refers to a perceived ability to commit fraud, such as overriding controls, which the statement does not describe.",
+    "D": "Detection risk is an audit risk concept, not a category of fraud risk factor."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "240.11"
+    },
+    {
+     "src": "AU-C",
+     "ref": "240.A1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "trap",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Which side of the fraud triangle is the CFO's remark about?",
+     "reveal": "Justifying the act as normal practice, not the pressure or the opening."
+    },
+    {
+     "ask": "What is that element called?",
+     "reveal": "Attitude or rationalization."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-E-0004",
+   "type": "mcq",
+   "area": "II",
+   "group": "E",
+   "group_name": "Assessing and responding to risks of material misstatement, whether due to fraud or error",
+   "blueprint": "AUD.II.E Assessing and responding to risks of material misstatement, whether due to fraud or error [II.E]",
+   "topic": "Presumed fraud risk in revenue recognition",
+   "task": "Identify and assess risks of material misstatement due to fraud.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "The auditor of Pinecrest Dental Supply, a nonissuer, concludes that the presumption of a fraud risk in revenue recognition does not apply to the company's over-the-counter cash sales. What must the auditor do?",
+   "exhibit": "",
+   "options": [
+    "Obtain management's written representation that no revenue fraud risks exist and treat it as sufficient support",
+    "Apply the presumption to every type of revenue and document nothing, since revenue is a significant risk for each entity",
+    "Evaluate which revenue types, transactions or assertions give rise to fraud risks, and document why the presumption does not apply",
+    "Nothing further, because the presumption is optional and documentation is needed only when the auditor applies it"
+   ],
+   "answer": "C",
+   "rule_line": "Presume fraud risk in revenue, evaluate by revenue type, and document any conclusion that the presumption does not apply.",
+   "why": {
+    "A": "A representation cannot replace the auditor's own evaluation and documentation.",
+    "B": "The evaluation is by type of revenue and assertion, and the auditor may conclude the presumption does not apply, with documentation.",
+    "C": "Correct. The auditor starts from the presumption, evaluates which revenue types or assertions give rise to fraud risk, and documents the reasons if concluding the presumption does not apply.",
+    "D": "The presumption is a requirement; concluding it does not apply carries a documentation requirement."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "240.26"
+    },
+    {
+     "src": "AU-C",
+     "ref": "240.46"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What is the starting position on revenue recognition?",
+     "reveal": "A presumed fraud risk."
+    },
+    {
+     "ask": "What must the auditor do to rebut it for some revenue?",
+     "reveal": "Evaluate which types, transactions or assertions give rise to fraud risk and document why it does not apply."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-E-0005",
+   "type": "mcq",
+   "area": "II",
+   "group": "E",
+   "group_name": "Assessing and responding to risks of material misstatement, whether due to fraud or error",
+   "blueprint": "AUD.II.E Assessing and responding to risks of material misstatement, whether due to fraud or error [II.E]",
+   "topic": "Top-down approach in an integrated audit",
+   "task": "Identify and assess risks of material misstatement and design responses.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Which describes the top-down approach that an auditor of an issuer uses in an audit of internal control over financial reporting integrated with the audit of financial statements?",
+   "exhibit": "",
+   "options": [
+    "Begin with substantive tests of significant accounts, then work upward to conclude on whether related controls were effective",
+    "Begin at the financial statement level with overall risks and entity-level controls, then work down to significant accounts and assertions",
+    "Begin by testing individual transaction-level controls in every process, then aggregate the results to reach a conclusion on entity-level controls",
+    "Begin with management's assessment of internal control and accept its scope without independently identifying risks"
+   ],
+   "answer": "B",
+   "rule_line": "The top-down approach moves from overall risks and entity-level controls to accounts, assertions and selected controls.",
+   "why": {
+    "A": "The approach identifies risks and controls first; it does not derive control conclusions from substantive tests.",
+    "B": "Correct. A top-down approach starts at the financial statement level and entity-level controls and works down to accounts, disclosures and assertions.",
+    "C": "That describes a bottom-up approach, which is not how the auditor selects controls to test.",
+    "D": "The auditor independently identifies risks and selects controls to test; management's assessment does not set the scope."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "PCAOB",
+     "ref": "AS 2201.21"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Where does a top-down approach start?",
+     "reveal": "At the financial statement level with overall risks and entity-level controls."
+    },
+    {
+     "ask": "Where does it end?",
+     "reveal": "Working down to significant accounts, disclosures and assertions."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-E-0006",
+   "type": "mcq",
+   "area": "II",
+   "group": "E",
+   "group_name": "Assessing and responding to risks of material misstatement, whether due to fraud or error",
+   "blueprint": "AUD.II.E Assessing and responding to risks of material misstatement, whether due to fraud or error [II.E]",
+   "topic": "Risks where substantive procedures alone are insufficient",
+   "task": "Respond to risks for which substantive procedures alone do not provide sufficient appropriate evidence.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Evaluation",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Nimbus Apps, a nonissuer, sells subscriptions through its website. Thousands of small transactions are initiated, billed and recorded automatically each day, with no paper documents and minimal manual intervention. The auditor concludes that substantive procedures alone cannot provide sufficient appropriate evidence about revenue. What is the appropriate response?",
+   "exhibit": "",
+   "options": [
+    "Assess control risk at the maximum and increase the sample sizes for substantive tests of details of revenue",
+    "Obtain a written representation from management that the revenue system is reliable and processes accurately",
+    "Perform substantive analytical procedures at a high level of aggregation only, because individual amounts are small",
+    "Test the operating effectiveness of the relevant controls, including the general IT controls they rely on"
+   ],
+   "answer": "D",
+   "rule_line": "Where substantive procedures alone are insufficient, the auditor tests the operating effectiveness of controls.",
+   "why": {
+    "A": "That approach assumes substantive procedures can provide the evidence, which the auditor has concluded they cannot.",
+    "B": "A representation is not sufficient appropriate audit evidence to replace testing controls.",
+    "C": "High-level analytics alone would not resolve the insufficiency of substantive evidence for highly automated processing.",
+    "D": "Correct. When substantive procedures alone cannot provide sufficient appropriate evidence, the auditor must test the operating effectiveness of the relevant controls."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "315.37"
+    },
+    {
+     "src": "AU-C",
+     "ref": "330.08b"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "C": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What does the situation say about the sufficiency of substantive evidence?",
+     "reveal": "Substantive procedures alone cannot provide enough evidence for a fully automated revenue process."
+    },
+    {
+     "ask": "What must the auditor do then?",
+     "reveal": "Test the operating effectiveness of the relevant controls, including the general IT controls they depend on."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-E-0007",
+   "type": "mcq",
+   "area": "II",
+   "group": "E",
+   "group_name": "Assessing and responding to risks of material misstatement, whether due to fraud or error",
+   "blueprint": "AUD.II.E Assessing and responding to risks of material misstatement, whether due to fraud or error [II.E]",
+   "topic": "Overall responses to pervasive risks",
+   "task": "Assess and respond to risks of material misstatement at the financial statement level.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "In planning the audit of Cormorant Marine, a nonissuer, the auditor assesses the risks of material misstatement at the financial statement level as high because of concerns about management's integrity and aggressive earnings targets. Which overall response is most appropriate?",
+   "exhibit": "",
+   "options": [
+    "Increase reliance on tests of controls in the control environment to offset the concerns about management's integrity",
+    "Reduce the extent of substantive testing, because the risk is pervasive rather than specific to individual assertions",
+    "Assign more experienced staff, increase supervision and review, and add unpredictability to the procedures selected",
+    "Perform more of the substantive testing at interim dates so that it is completed before year-end pressures arise"
+   ],
+   "answer": "C",
+   "rule_line": "Overall responses to high financial-statement-level risk include staffing, supervision, unpredictability and period-end testing.",
+   "why": {
+    "A": "Concerns about management's integrity weaken the control environment, so more reliance on controls would be inappropriate.",
+    "B": "Pervasive risk calls for more persuasive evidence, not less testing.",
+    "C": "Correct. Assigning more experienced staff, increasing supervision, and adding unpredictability are overall responses to pervasive risk.",
+    "D": "Higher risk calls for performing substantive procedures at or near period-end rather than earlier."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "330.05"
+    },
+    {
+     "src": "AU-C",
+     "ref": "330.A1"
+    },
+    {
+     "src": "AU-C",
+     "ref": "240.29"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Is the risk specific to one assertion or pervasive?",
+     "reveal": "Pervasive, arising from management's integrity and pressure."
+    },
+    {
+     "ask": "What overall responses fit a pervasive risk?",
+     "reveal": "More experienced staff, more supervision and review, and unpredictability in procedures."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-E-0008",
+   "type": "mcq",
+   "area": "II",
+   "group": "E",
+   "group_name": "Assessing and responding to risks of material misstatement, whether due to fraud or error",
+   "blueprint": "AUD.II.E Assessing and responding to risks of material misstatement, whether due to fraud or error [II.E]",
+   "topic": "Revising the risk assessment during the audit",
+   "task": "Assess and respond to risks of material misstatement.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Evaluation",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "The auditor of Bridgeport Metals, a nonissuer, assessed control risk for revenue as low and planned to rely on controls. In testing, the auditor finds that approval of sales credit memos was not evidenced for 9 of 25 items tested. What should the auditor do?",
+   "exhibit": "",
+   "options": [
+    "Reassess control risk and modify the planned further procedures, including the planned substantive procedures",
+    "Expand the tests of controls until enough items show the control operating to support the original assessment",
+    "Note the deviations in the working papers but make no change, because no misstatement has yet been found",
+    "Complete the planned procedures unchanged, because the risk assessment made at planning cannot be revised"
+   ],
+   "answer": "A",
+   "rule_line": "New evidence inconsistent with the risk assessment requires revising it and the planned further procedures.",
+   "why": {
+    "A": "Correct. Evidence inconsistent with the original risk assessment requires the auditor to revise the assessment and modify planned procedures.",
+    "B": "Adding items in order to reach the original conclusion would be biased toward corroborative evidence.",
+    "C": "Deviations affect the control risk assessment even before any misstatement is found.",
+    "D": "The assessment is iterative and must be revised when new information conflicts with it."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "315.41"
+    },
+    {
+     "src": "AU-C",
+     "ref": "330.06"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What does a 9 out of 25 deviation rate say about the low control risk assessment?",
+     "reveal": "It is inconsistent with the assessment."
+    },
+    {
+     "ask": "What must the auditor do?",
+     "reveal": "Reassess control risk and modify the planned further procedures, including substantive procedures."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-F-0001",
+   "type": "mcq",
+   "area": "II",
+   "group": "F",
+   "group_name": "Planning for and using the work of others",
+   "blueprint": "AUD.II.F Planning for and using the work of others [II.F]",
+   "topic": "Using the work of the internal audit function",
+   "task": "Plan for and use the work of others, including internal auditors.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Evaluation",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Westbrook Utilities, a nonissuer, has an internal audit function that reports to the chief financial officer and whose work is inconsistently reviewed. The auditor wants to use internal audit's work on revenue estimates, an area assessed as a significant risk that involves considerable judgment. Which approach is most appropriate?",
+   "exhibit": "",
+   "options": [
+    "Use the work without further evaluation, because internal auditors are part of the entity's own control system",
+    "Evaluate objectivity, competence and approach, and use less of the function's work and perform more directly in this area",
+    "Let internal audit make the significant judgments about the estimates to keep audit fees down",
+    "Use the function's work extensively, because doing so reduces the auditor's responsibility for the opinion on the estimates"
+   ],
+   "answer": "B",
+   "rule_line": "Use less internal audit work where judgment and assessed risk are higher, and never delegate significant judgments.",
+   "why": {
+    "A": "The auditor must evaluate objectivity, competence and a systematic and disciplined approach before using the work.",
+    "B": "Correct. The auditor evaluates the function and, because of the high risk and judgment, uses less of its work and performs more directly.",
+    "C": "The external auditor makes all significant judgments in the audit, including when using internal audit's work.",
+    "D": "The external auditor has sole responsibility for the opinion; using internal audit's work does not reduce it."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "610.13-.18"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "How much reliance is suitable for a high-risk, judgmental area?",
+     "reveal": "Less, since the risk is significant and judgment is high."
+    },
+    {
+     "ask": "What must the auditor evaluate first, and what does the auditor do about the extent?",
+     "reveal": "Objectivity, competence and approach, then use less of the function's work and perform more directly."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-F-0002",
+   "type": "mcq",
+   "area": "II",
+   "group": "F",
+   "group_name": "Planning for and using the work of others",
+   "blueprint": "AUD.II.F Planning for and using the work of others [II.F]",
+   "topic": "Reference to an auditor's specialist in the report",
+   "task": "Plan for and use the work of auditor's specialists.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "The auditor of Tanglewood Mining, a nonissuer, engaged an outside geologist as an auditor's specialist to evaluate mineral reserve estimates. The auditor concluded that the geologist's work was adequate and will issue an unmodified opinion. Which statement is correct about the auditor's report?",
+   "exhibit": "",
+   "options": [
+    "The auditor should refer to the specialist in an emphasis-of-matter paragraph.",
+    "A reference is required whenever the specialist's work covers a significant estimate.",
+    "The auditor should name the geologist in the report to show shared responsibility.",
+    "The auditor should not refer to the specialist's work in the report."
+   ],
+   "answer": "D",
+   "rule_line": "The auditor does not refer to the auditor's specialist in an unmodified report.",
+   "why": {
+    "A": "An emphasis-of-matter paragraph is used for matters already presented in the financial statements, not to reference a specialist.",
+    "B": "Significance of the estimate does not create a reference requirement for an unmodified report.",
+    "C": "Responsibility for the opinion rests with the auditor alone, so naming the specialist does not share it.",
+    "D": "Correct. The auditor does not refer to an auditor's specialist in a report with an unmodified opinion."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "620.14-.15"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "C": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Does using an outside expert change who owns the opinion?",
+     "reveal": "No, the auditor alone is responsible for it."
+    },
+    {
+     "ask": "Does the unmodified report mention the geologist?",
+     "reveal": "The report leaves the specialist out entirely."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-F-0003",
+   "type": "mcq",
+   "area": "II",
+   "group": "F",
+   "group_name": "Planning for and using the work of others",
+   "blueprint": "AUD.II.F Planning for and using the work of others [II.F]",
+   "topic": "Using the work of others in an audit of ICFR",
+   "task": "Plan for and use the work of others, including internal auditors.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Evaluation",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "In an integrated audit of an issuer, the auditor considers using the work of the company's internal auditors on two controls: one over the period-end financial reporting process, which the auditor assesses as higher risk, and one over physical safeguarding of low-value supplies, which is lower risk. Which approach is appropriate?",
+   "exhibit": "",
+   "options": [
+    "Use more of the internal auditors' work on the higher-risk control, because it requires the most testing",
+    "Use more of the internal auditors' work on the lower-risk control, and perform more of the work directly on the higher-risk control",
+    "Use the same proportion of the internal auditors' work on both controls, because competence is assessed for the function as a whole",
+    "Avoid using the internal auditors' work on either control, because the standard prohibits it in an integrated audit"
+   ],
+   "answer": "B",
+   "rule_line": "The higher the risk associated with a control, the more the auditor must perform directly.",
+   "why": {
+    "A": "The higher the risk, the less the auditor may rely on others, so more direct work is needed there.",
+    "B": "Correct. As the risk associated with a control increases, the need for the auditor to perform his or her own work increases.",
+    "C": "The extent of use depends on the risk associated with each control, not only on the competence of the function.",
+    "D": "The standard permits using the work of internal auditors and others in an audit of internal control."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "PCAOB",
+     "ref": "AS 2201.16-.19"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "How does the need for the auditor's own work vary with risk?",
+     "reveal": "It rises with the risk associated with the control."
+    },
+    {
+     "ask": "Which control gets more internal auditor work?",
+     "reveal": "The lower-risk one, while the auditor does more directly on the period-end reporting control."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-G-0001",
+   "type": "mcq",
+   "area": "II",
+   "group": "G",
+   "group_name": "Specific areas of engagement risk",
+   "blueprint": "AUD.II.G Specific areas of engagement risk [II.G.1]",
+   "topic": "Procedures for laws with an indirect effect",
+   "task": "Assess the entity's compliance with laws and regulations as an area of engagement risk.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Cedarwood Chemicals, a nonissuer, is subject to environmental regulations that affect its operations but do not directly determine amounts in its financial statements. The auditor has identified no noncompliance. Which procedures must the auditor perform for these regulations?",
+   "exhibit": "",
+   "options": [
+    "Test compliance with each provision of the regulations through detailed tests of operating records and inspections",
+    "Obtain an opinion from legal counsel on the company's compliance with all applicable environmental regulations",
+    "Inquire of management and those charged with governance about compliance, and inspect regulatory correspondence",
+    "No procedures, unless management reports a violation to the auditor"
+   ],
+   "answer": "C",
+   "rule_line": "For laws with an indirect effect, inquire and inspect regulatory correspondence; more only if noncompliance arises.",
+   "why": {
+    "A": "Absent identified or suspected noncompliance, the auditor is not required to test compliance beyond the specified procedures.",
+    "B": "The auditor is not required to obtain a legal opinion on compliance absent identified or suspected noncompliance.",
+    "C": "Correct. For laws with an indirect effect, the auditor inquires and inspects regulatory correspondence, and does more only if noncompliance is identified or suspected.",
+    "D": "Inquiry and inspection of regulatory correspondence are required even if no violation is reported."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "250.14-.16"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Do these regulations directly determine financial statement amounts?",
+     "reveal": "No, their effect is indirect."
+    },
+    {
+     "ask": "What are the required procedures for indirect laws?",
+     "reveal": "Inquiry of management and those charged with governance, and inspection of regulatory correspondence."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-G-0002",
+   "type": "mcq",
+   "area": "II",
+   "group": "G",
+   "group_name": "Specific areas of engagement risk",
+   "blueprint": "AUD.II.G Specific areas of engagement risk [II.G.1]",
+   "topic": "Suspected noncompliance involving senior management",
+   "task": "Assess the entity's compliance with laws and regulations as an area of engagement risk.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Evaluation",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "While auditing Zenith Freight, a nonissuer, the auditor suspects the CEO authorized improper payments to a foreign official, and the amounts could be material. The CEO denies wrongdoing and provides no supporting information. What is the most appropriate response?",
+   "exhibit": "",
+   "options": [
+    "Communicate to the next higher authority, consider legal advice, and evaluate the effect on the audit and representations",
+    "Report the matter directly to a regulator before communicating with those charged with governance",
+    "Accept the CEO's denial and document it, because management is responsible for the entity's compliance with laws and regulations",
+    "Withdraw from the engagement at once, without evaluating the effect on the audit"
+   ],
+   "answer": "A",
+   "rule_line": "If management may be involved in noncompliance, communicate to a higher authority and evaluate the implications.",
+   "why": {
+    "A": "Correct. When senior management may be involved, the auditor communicates with the next higher authority, considers legal advice, and evaluates implications for risk assessment and representations.",
+    "B": "The auditor's duty of confidentiality generally requires communication with those charged with governance rather than a direct regulator report.",
+    "C": "The auditor cannot accept a denial that lacks sufficient supporting information when the effect may be material.",
+    "D": "The auditor first evaluates the implications for the audit; withdrawal is not the first required step."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "250.18"
+    },
+    {
+     "src": "AU-C",
+     "ref": "250.20"
+    },
+    {
+     "src": "AU-C",
+     "ref": "250.23"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Who is possibly involved in the suspected act?",
+     "reveal": "The CEO, so management cannot be relied on to resolve it."
+    },
+    {
+     "ask": "What should the auditor do?",
+     "reveal": "Communicate to the next higher authority, consider legal advice, and evaluate the effect on the audit and representations."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-G-0003",
+   "type": "mcq",
+   "area": "II",
+   "group": "G",
+   "group_name": "Specific areas of engagement risk",
+   "blueprint": "AUD.II.G Specific areas of engagement risk [II.G.2]",
+   "topic": "Retrospective review of prior-year estimates",
+   "task": "Assess accounting estimates as an area of engagement risk.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "In the 2025 audit of Lakemont Insurance, a nonissuer, the auditor reviews the outcome of prior-year accounting estimates, such as loss reserves. What is the primary purpose of this review?",
+   "exhibit": "",
+   "options": [
+    "To determine that management's prior estimates were precisely correct",
+    "To relieve the auditor of testing the current-year estimates when prior estimates were reasonably accurate",
+    "To provide information about management's estimation process and possible bias, informing the current risk assessment",
+    "To allow the auditor to restate prior-period financial statements for any differences between the estimates and actual outcomes"
+   ],
+   "answer": "C",
+   "rule_line": "Reviewing prior estimate outcomes informs the risk assessment about the estimation process and management bias.",
+   "why": {
+    "A": "Estimates involve uncertainty, so precise correctness is not the standard.",
+    "B": "Prior accuracy does not remove the need to obtain evidence about current-year estimates.",
+    "C": "Correct. Reviewing prior outcomes informs the auditor about estimation processes and possible bias and supports the risk assessment for current estimates.",
+    "D": "The review is not a basis for restating prior periods; differences between estimates and outcomes are not necessarily errors."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "540.13"
+    },
+    {
+     "src": "AU-C",
+     "ref": "240.32b"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Is the review of prior estimate outcomes meant to prove they were exact?",
+     "reveal": "No, differences are normal."
+    },
+    {
+     "ask": "What is its purpose?",
+     "reveal": "To inform the auditor about the estimation process and possible bias for the current risk assessment."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-G-0004",
+   "type": "mcq",
+   "area": "II",
+   "group": "G",
+   "group_name": "Specific areas of engagement risk",
+   "blueprint": "AUD.II.G Specific areas of engagement risk [II.G.3]",
+   "topic": "Related party transactions and significant risk",
+   "task": "Assess related parties as an area of engagement risk.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "The auditor of Stonebridge Farms, a nonissuer, learns that the company sold land outside its normal course of business to an entity owned by the CEO's brother at a price above the appraised value. How should the auditor assess this transaction?",
+   "exhibit": "",
+   "options": [
+    "As a significant risk, because it is a significant unusual transaction with a related party",
+    "As a risk relating only to disclosure, with no risk to the measurement of the transaction",
+    "As a significant risk only if the amount exceeds materiality for the financial statements as a whole",
+    "As a routine transaction, because the stated price is supported by a third-party appraisal"
+   ],
+   "answer": "A",
+   "rule_line": "Significant unusual related party transactions are significant risks.",
+   "why": {
+    "A": "Correct. Related party transactions that are also significant unusual transactions give rise to significant risks.",
+    "B": "Related party transactions may be misstated in measurement, classification and disclosure.",
+    "C": "Treatment as a significant risk does not depend on exceeding overall materiality.",
+    "D": "A sale outside the normal course to a related party at an unexplained premium is not routine; the price supports no conclusion about business purpose."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "550.20"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "limit",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What two features does the land sale have?",
+     "reveal": "It is outside the normal course of business and with a related party."
+    },
+    {
+     "ask": "How does the auditor classify a transaction with both features?",
+     "reveal": "As a significant risk."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-G-0005",
+   "type": "mcq",
+   "area": "II",
+   "group": "G",
+   "group_name": "Specific areas of engagement risk",
+   "blueprint": "AUD.II.G Specific areas of engagement risk [II.G.3]",
+   "topic": "Records that indicate undisclosed related parties",
+   "task": "Assess related parties as an area of engagement risk.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "During the audit of Greenfield Packaging, a nonissuer, the auditor remains alert for undisclosed related party relationships. Which records must the auditor specifically inspect for such indications?",
+   "exhibit": "",
+   "options": [
+    "Management's list of related parties, which is sufficient without inspecting any other records",
+    "The fixed asset register and depreciation schedules",
+    "The entity's federal tax returns for the last three years",
+    "Bank and legal confirmations, and minutes of shareholder and governance meetings"
+   ],
+   "answer": "D",
+   "rule_line": "Inspect bank and legal confirmations and governance minutes for undisclosed related party information.",
+   "why": {
+    "A": "The auditor cannot rely only on management's list; the required inspection exists because management may not have disclosed everything.",
+    "B": "The fixed asset register is not one of the records specified for this purpose.",
+    "C": "Tax returns are not among the records the standard specifies for this inspection.",
+    "D": "Correct. The auditor inspects bank and legal confirmations and minutes of shareholder and governance meetings for undisclosed related parties."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "550.17"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "C": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Is management's list enough to identify related parties?",
+     "reveal": "No, the auditor inspects other records."
+    },
+    {
+     "ask": "Which records must be inspected?",
+     "reveal": "Bank and legal confirmations, and minutes of shareholder and governance meetings."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-G-0006",
+   "type": "mcq",
+   "area": "II",
+   "group": "G",
+   "group_name": "Specific areas of engagement risk",
+   "blueprint": "AUD.II.G Specific areas of engagement risk [II.G.4]",
+   "topic": "Internal control over federal programs in a single audit",
+   "task": "Understand requirements for single audits in accordance with the Uniform Guidance.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GV",
+   "regime_name": "government (GAGAS / Single Audit)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "In a single audit of Riverton County, the auditor obtains an understanding of internal control over federal programs. Which requirement applies to the auditor's testing of internal control over compliance for major programs?",
+   "exhibit": "",
+   "options": [
+    "Test internal control only if the auditor decides to reduce the extent of substantive compliance testing for those programs",
+    "Plan and perform control testing to support a low assessed control risk, unless controls are likely ineffective",
+    "Obtain an understanding of internal control, but testing is optional for all major programs",
+    "Test internal control only for the major programs with the largest expenditures"
+   ],
+   "answer": "B",
+   "rule_line": "In a single audit, plan and perform control testing over major programs to support low control risk, unless controls are likely ineffective.",
+   "why": {
+    "A": "Testing is required in a single audit whether or not the auditor plans to reduce compliance testing.",
+    "B": "Correct. The auditor plans and performs testing of internal control over compliance to support a low assessed control risk, unless controls are likely ineffective.",
+    "C": "Testing is required, not optional, except where controls are likely ineffective, in which case a deficiency is reported.",
+    "D": "The requirement applies to compliance requirements of each major program, not only the largest."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "2 CFR",
+     "ref": "200.514(c)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "limit"
+   },
+   "guide": [
+    {
+     "ask": "What is the goal of testing internal control over compliance for major programs?",
+     "reveal": "Supporting a low assessed control risk."
+    },
+    {
+     "ask": "When is testing not performed?",
+     "reveal": "Only when controls are likely ineffective."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-G-0007",
+   "type": "mcq",
+   "area": "II",
+   "group": "G",
+   "group_name": "Specific areas of engagement risk",
+   "blueprint": "AUD.II.G Specific areas of engagement risk [II.G.4]",
+   "topic": "Type A program threshold",
+   "task": "Determine major programs under the Uniform Guidance.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GV",
+   "regime_name": "government (GAGAS / Single Audit)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Waverly School District expended $40,000,000 in total federal awards during its fiscal year. In determining major programs for the single audit, the auditor identifies Type A programs. Federal programs whose expenditures exceed what amount are Type A?",
+   "exhibit": "",
+   "options": [
+    "$120,000",
+    "$1,000,000",
+    "$1,200,000",
+    "$3,000,000"
+   ],
+   "answer": "C",
+   "rule_line": "Type A threshold: $1 million up to $34 million of awards; 3% from $34 million to $100 million; then flat or lower percentages.",
+   "why": {
+    "A": "This applies 0.3% instead of 3% of total awards expended.",
+    "B": "$1,000,000 is the Type A threshold for total awards of $34 million or less.",
+    "C": "Correct. For total awards over $34 million up to $100 million, the Type A threshold is 3% of total awards expended: 3% x $40,000,000 = $1,200,000.",
+    "D": "$3,000,000 is the flat threshold for total awards over $100 million up to $1 billion."
+   },
+   "steps": [
+    "$40,000,000 is over $34 million and up to $100 million",
+    "Type A threshold = 0.03 x 40,000,000 = 1,200,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0.03*40000000",
+      "value": 1200000
+     },
+     {
+      "expr": "0.003*40000000",
+      "value": 120000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "2 CFR",
+     "ref": "200.518(b)(1) Table 1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "2 CFR 200.518(b)(1) eCFR 표 확인: 연방자금 $34M 초과~$100M 이하는 총액×0.03 = $1,200,000. 정답 C 유효.",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "limit"
+   },
+   "guide": [
+    {
+     "ask": "Which total-awards band contains $40,000,000?",
+     "reveal": "Over $34 million up to $100 million."
+    },
+    {
+     "ask": "What is the Type A threshold in that band?",
+     "reveal": "3% x $40,000,000 = $1,200,000."
+    }
+   ]
+  },
+  {
+   "id": "AUD-II-G-0008",
+   "type": "mcq",
+   "area": "II",
+   "group": "G",
+   "group_name": "Specific areas of engagement risk",
+   "blueprint": "AUD.II.G Specific areas of engagement risk [II.G.4]",
+   "topic": "Percentage of coverage for major programs",
+   "task": "Determine major programs under the Uniform Guidance.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GV",
+   "regime_name": "government (GAGAS / Single Audit)",
+   "skill": "Evaluation",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "In a single audit of Kestrel Public Health, the auditor identifies the Type A programs that are not low-risk and the high-risk Type B programs. Together they represent 27% of total federal awards expended. Kestrel does not qualify as a low-risk auditee. What must the auditor do?",
+   "exhibit": "",
+   "options": [
+    "Nothing more, because 20% coverage is enough once the required programs are audited",
+    "Audit additional programs so that the major programs cover at least 50% of total federal awards expended",
+    "Audit additional programs so that the major programs cover at least 30% of total federal awards expended",
+    "Audit additional programs so that the major programs cover at least 40% of total federal awards expended"
+   ],
+   "answer": "D",
+   "rule_line": "Major programs must cover at least 40% of awards expended, or 20% for a low-risk auditee.",
+   "why": {
+    "A": "The 20% coverage applies only when the auditee meets the criteria for a low-risk auditee, which Kestrel does not.",
+    "B": "The required coverage is 40%, not 50%.",
+    "C": "The required coverage is 40%, not 30%.",
+    "D": "Correct. An auditee that is not low-risk requires coverage of at least 40% of total federal awards expended."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "2 CFR",
+     "ref": "200.518(e)-(f)"
+    },
+    {
+     "src": "2 CFR",
+     "ref": "200.520"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "2 CFR 200.518(f): 저위험이면 20%, 아니면 40%. 정답 D 유효.",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "limit",
+    "C": "limit"
+   },
+   "guide": [
+    {
+     "ask": "What coverage does a low-risk auditee need, and what applies otherwise?",
+     "reveal": "Lower coverage for low-risk auditees; a higher coverage percentage for others."
+    },
+    {
+     "ask": "What is it for Kestrel?",
+     "reveal": "At least 40% of total federal awards expended, so more programs must be audited."
+    }
+   ]
+  }
+ ]
+}

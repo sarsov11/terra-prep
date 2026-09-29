@@ -73,7 +73,17 @@
     "B": "trap",
     "C": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which credentials carry unlimited representation rights before every IRS function?",
+     "reveal": "Attorneys, CPAs and enrolled agents."
+    },
+    {
+     "ask": "What can a holder of only a PTIN and an Annual Filing Season Program Record of Completion do?",
+     "reveal": "Limited representation only, and only for returns that person prepared and signed."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0002",
@@ -135,7 +145,17 @@
     "A": "concept",
     "B": "concept",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which credentials or record give a preparer the right to represent a client in an examination?",
+     "reveal": "CPA, attorney, enrolled agent, or an Annual Filing Season Program Record of Completion."
+    },
+    {
+     "ask": "Does Mira hold any of these?",
+     "reveal": "No, she holds only a PTIN, so she has no representation rights in the exam."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0003",
@@ -197,7 +217,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does Form 8821 authorize compared with Form 2848?",
+     "reveal": "Form 8821 lets the named person receive tax information; Form 2848 is the power of attorney for representation."
+    },
+    {
+     "ask": "Given that, which actions can the CPA take on Form 8821 alone?",
+     "reveal": "Receive information only, with no representing, signing or negotiating for the client."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0004",
@@ -255,7 +285,17 @@
     "A": "trap",
     "B": "trap",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which relationships let a non-credentialed person represent a taxpayer under Circular 230?",
+     "reveal": "The taxpayer personally, family members, corporate officers or employees, partners and fiduciaries."
+    },
+    {
+     "ask": "Is friendship on that list?",
+     "reveal": "No, so an unpaid friend with no tie is not covered."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0005",
@@ -313,7 +353,17 @@
     "B": "limit",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does Circular 230 require of a practitioner who knows of a client's omission?",
+     "reveal": "Advise the client promptly of the omission and its consequences."
+    },
+    {
+     "ask": "Must the practitioner report it to the IRS or amend the return alone?",
+     "reveal": "No, the duty is to advise the client, not to report or unilaterally amend."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0006",
@@ -367,7 +417,17 @@
     "A": "trap",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When must a practitioner give the IRS records it properly requests?",
+     "reveal": "Promptly, unless he reasonably and in good faith believes the records are privileged."
+    },
+    {
+     "ask": "Do these records qualify as privileged, and does the client's instruction change the duty?",
+     "reveal": "They are not privileged and the client's instruction does not excuse refusal, so Rafael must submit them promptly."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0007",
@@ -421,7 +481,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is a contingent fee allowed under Circular 230?",
+     "reveal": "When the services relate to an IRS examination of, or challenge to, an original return."
+    },
+    {
+     "ask": "Which of the four arrangements involves such services?",
+     "reveal": "The percentage fee for representing the client in an examination of a filed return."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0008",
@@ -479,7 +549,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which contingent fees does Circular 230 allow?",
+     "reveal": "Those tied to representation in an examination or challenge of a return."
+    },
+    {
+     "ask": "Which of those does the AICPA Code also allow for a CPA?",
+     "reveal": "Representation before a taxing authority in an examination; original-return preparation and fees for an attest client are not allowed."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0009",
@@ -541,7 +621,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does a fee dispute let a practitioner keep client records the client needs?",
+     "reveal": "No, a practitioner must return client records on request when the client needs them for tax obligations."
+    },
+    {
+     "ask": "May the practitioner keep anything?",
+     "reveal": "Copies only; the records themselves go back promptly."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0010",
@@ -595,7 +685,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What conflict standard must the firm meet to continue with directly adverse clients?",
+     "reveal": "It must reasonably believe it can provide competent and diligent representation to each."
+    },
+    {
+     "ask": "What consent is required and by when?",
+     "reveal": "Informed written consent from each affected client within 30 days of learning of the conflict."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0011",
@@ -649,7 +749,17 @@
     "A": "trap",
     "B": "trap",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What may a practitioner do with a Treasury refund check issued to a client?",
+     "reveal": "Nothing that negotiates it; the check must go to the client."
+    },
+    {
+     "ask": "Which action would endorse or negotiate the check?",
+     "reveal": "Endorsing it and depositing it in the firm's account."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0012",
@@ -707,7 +817,17 @@
     "B": "trap",
     "C": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "May a practitioner rely on client information without verification?",
+     "reveal": "Yes in good faith, but he may not ignore what he knows."
+    },
+    {
+     "ask": "What must he do when meals of $45,000 on $60,000 of receipts looks off?",
+     "reveal": "Make reasonable inquiries because the information looks inconsistent or incomplete."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0013",
@@ -769,7 +889,17 @@
     "B": "concept",
     "C": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What authority level does the position have?",
+     "reveal": "Reasonable basis but not substantial authority."
+    },
+    {
+     "ask": "What must happen before a preparer signs a position with only reasonable basis?",
+     "reveal": "It must be adequately disclosed on the return."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0014",
@@ -823,7 +953,17 @@
     "A": "concept",
     "C": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What must a practitioner tell a client about an aggressive position?",
+     "reveal": "The potential penalties that may apply."
+    },
+    {
+     "ask": "What else must be explained?",
+     "reveal": "The opportunity to avoid penalties through disclosure and the disclosure requirements."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0015",
@@ -877,7 +1017,17 @@
     "A": "trap",
     "B": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "May a practitioner rely on facts he has reason to believe are reasonable and state assumptions openly?",
+     "reveal": "Yes, reasonable factual assumptions and reasonable reliance are permitted."
+    },
+    {
+     "ask": "Which consideration is forbidden in written advice?",
+     "reveal": "Assuming the return will not be audited or the issue will not be raised."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0016",
@@ -931,7 +1081,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What duty does a person with principal authority over a firm's practice have?",
+     "reveal": "Take reasonable steps to ensure the firm has adequate compliance procedures."
+    },
+    {
+     "ask": "What happens when a firm shows a pattern of noncompliance and no procedures exist?",
+     "reveal": "That person may be sanctioned, so Elena is exposed."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0017",
@@ -986,7 +1146,17 @@
     "A": "limit",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does Circular 230 say about published fees for routine services?",
+     "reveal": "The practitioner must adhere to the published fee for a minimum period after last publication."
+    },
+    {
+     "ask": "How long is that period?",
+     "reveal": "30 calendar days."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0018",
@@ -1067,7 +1237,21 @@
     "A": "calc",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which preparer penalty applies to an unreasonable position without willfulness?",
+     "reveal": "Greater of $1,000 or 50% of income derived from the return."
+    },
+    {
+     "ask": "What is 50% of the $3,400 fee?",
+     "reveal": "50% x 3,400 = 1,700."
+    },
+    {
+     "ask": "Which amount is larger?",
+     "reveal": "1,700 exceeds 1,000, so the penalty is 1,700."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0019",
@@ -1144,7 +1328,21 @@
     "A": "limit",
     "B": "calc",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which preparer penalty applies to willful or reckless understatement?",
+     "reveal": "Greater of $5,000 or 75% of income derived."
+    },
+    {
+     "ask": "What is 75% of $9,200?",
+     "reveal": "75% x 9,200 = 6,900."
+    },
+    {
+     "ask": "Which is larger?",
+     "reveal": "6,900 exceeds 5,000, so the penalty is 6,900."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0020",
@@ -1202,7 +1400,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Who counts as a tax return preparer?",
+     "reveal": "Anyone who prepares all or a substantial portion of a return for compensation."
+    },
+    {
+     "ask": "Does signing the return matter?",
+     "reveal": "No, a nonsigning preparer who prepares a substantial portion for pay is still a preparer, unlike a typist, an employer's own staff or an unpaid volunteer."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0021",
@@ -1260,7 +1468,17 @@
     "A": "concept",
     "C": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What standard applies to a position in a reportable transaction?",
+     "reveal": "Substantial authority is not enough; the preparer must reasonably believe the position is more likely than not sustainable."
+    },
+    {
+     "ask": "Does Mateo meet that standard?",
+     "reveal": "No, he lacks that belief, so the unreasonable-position penalty may apply."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0022",
@@ -1318,7 +1536,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What must a preparer give the taxpayer, and when?",
+     "reveal": "A copy of the completed return no later than when it is presented for signature."
+    },
+    {
+     "ask": "Which penalty covers failing to do that?",
+     "reveal": "The per-return penalty for not furnishing the taxpayer a copy."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0023",
@@ -1380,7 +1608,17 @@
     "A": "trap",
     "B": "concept",
     "C": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "On what does the due diligence penalty depend?",
+     "reveal": "On whether the preparer met the due diligence requirements such as Form 8867, worksheets and inquiries."
+    },
+    {
+     "ask": "Does a correct credit cure the failure?",
+     "reveal": "No, so a penalty may apply even though the credits were allowed correctly."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0024",
@@ -1442,7 +1680,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "May a preparer share return information with another U.S. preparer helping prepare the return?",
+     "reveal": "Yes, without client consent."
+    },
+    {
+     "ask": "What about disclosure for marketing, lending or sale?",
+     "reveal": "Those need written consent, so only the helping-preparer disclosure is exempt."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0025",
@@ -1523,7 +1771,21 @@
     "A": "calc",
     "B": "limit",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the disclosure penalty structure?",
+     "reveal": "250 per disclosure or use with a 10,000 annual cap."
+    },
+    {
+     "ask": "What is the uncapped total for 60 disclosures?",
+     "reveal": "60 x 250 = 15,000."
+    },
+    {
+     "ask": "What applies after the cap?",
+     "reveal": "min(15,000, 10,000) = 10,000."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0026",
@@ -1581,7 +1843,17 @@
     "A": "limit",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does a preparer have to retain for each return prepared?",
+     "reveal": "A copy of the return or a list of taxpayers' names and identification numbers."
+    },
+    {
+     "ask": "For how long after the return period closes?",
+     "reveal": "3 years."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0027",
@@ -1643,7 +1915,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which offenses are felonies and which are misdemeanors or civil matters?",
+     "reveal": "Willful failure to file and unauthorized disclosure are misdemeanors, and negligence is only a civil penalty."
+    },
+    {
+     "ask": "Which conduct is the felony carrying up to three years in prison?",
+     "reveal": "Willfully aiding or assisting in a return known to be false on a material matter."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0028",
@@ -1702,7 +1984,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Under AICPA standards, whom must a member tell about a discovered error in a prior return?",
+     "reveal": "The client, promptly, with the consequences of the error."
+    },
+    {
+     "ask": "What must the member recommend, and is disclosure to the IRS required?",
+     "reveal": "Recommend corrective action and weigh whether to continue the engagement; disclosure to the IRS is not required."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0029",
@@ -1761,7 +2053,17 @@
     "B": "trap",
     "C": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When may a member use client estimates?",
+     "reveal": "When exact data are impractical to obtain and the estimates are reasonable."
+    },
+    {
+     "ask": "How must the estimates be presented?",
+     "reveal": "Not as precise amounts."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0030",
@@ -1820,7 +2122,17 @@
     "A": "trap",
     "C": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are valid reasons for leaving an answer blank?",
+     "reveal": "Unavailable information where the answer is not significant, genuine uncertainty about the question, or immaterial effect."
+    },
+    {
+     "ask": "Is a client's wish to reduce audit risk among them?",
+     "reveal": "No, avoiding audit risk is never a valid reason."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0031",
@@ -1879,7 +2191,17 @@
     "A": "concept",
     "B": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "May a member use prior-year returns as a reference?",
+     "reveal": "Yes, but should inquire when information looks incomplete or inconsistent."
+    },
+    {
+     "ask": "What should Wei do about rental income that vanished without explanation?",
+     "reveal": "Ask the client about the change from the prior year."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0032",
@@ -1938,7 +2260,17 @@
     "A": "trap",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does a member owe a duty to update advice after a later law change?",
+     "reveal": "Not by default."
+    },
+    {
+     "ask": "When would that duty arise?",
+     "reveal": "Only if the member agreed to update or is assisting in implementing the advice; otherwise no duty exists."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0033",
@@ -1998,7 +2330,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a member bound by a prior-year administrative result?",
+     "reveal": "No, unless a doctrine such as a closing agreement or estoppel applies."
+    },
+    {
+     "ask": "What position may be taken for 2025?",
+     "reveal": "The one the 2025 facts support, about 40% business use."
+    }
+   ]
   },
   {
    "id": "REG-I-A-0034",
@@ -2056,7 +2398,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which disclosures of client information does the AICPA Code allow without consent?",
+     "reveal": "Those needed to comply with legal process or other legal requirements."
+    },
+    {
+     "ask": "Which of these situations is legal process?",
+     "reveal": "A valid, enforceable subpoena or summons."
+    }
+   ]
   },
   {
    "id": "REG-I-B-0001",
@@ -2110,7 +2462,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which sanctions remove the right to practice?",
+     "reveal": "Suspension and disbarment."
+    },
+    {
+     "ask": "Which sanction is only a public reprimand?",
+     "reveal": "Censure."
+    }
+   ]
   },
   {
    "id": "REG-I-B-0002",
@@ -2168,7 +2530,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which IRS office interprets Circular 230 and pursues practitioner discipline?",
+     "reveal": "The Office of Professional Responsibility."
+    },
+    {
+     "ask": "Are TIGTA, Taxpayer Advocate or Criminal Investigation responsible for that role?",
+     "reveal": "No, their functions are oversight, taxpayer assistance and criminal cases."
+    }
+   ]
   },
   {
    "id": "REG-I-B-0003",
@@ -2222,7 +2594,17 @@
     "B": "concept",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What limits a monetary penalty in a Circular 230 disciplinary proceeding?",
+     "reveal": "The gross income derived, or to be derived, from the sanctionable conduct."
+    },
+    {
+     "ask": "What is that ceiling for $12,000 of fees?",
+     "reveal": "12,000."
+    }
+   ]
   },
   {
    "id": "REG-I-B-0004",
@@ -2276,7 +2658,17 @@
     "A": "trap",
     "C": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which conduct does Circular 230 list as disreputable?",
+     "reveal": "Items like willful failure to file one's own return and evasion of federal tax."
+    },
+    {
+     "ask": "Which of the four scenarios matches?",
+     "reveal": "The willful failure to file the practitioner's own federal return."
+    }
+   ]
   },
   {
    "id": "REG-I-B-0005",
@@ -2331,7 +2723,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What conviction types support expedited suspension?",
+     "reveal": "Certain crimes within the prior five years, including dishonesty or breach of trust."
+    },
+    {
+     "ask": "Does the IRS have to wait for appeals or use the full hearing process?",
+     "reveal": "No, the expedited suspension procedure is available."
+    }
+   ]
   },
   {
    "id": "REG-I-B-0006",
@@ -2389,7 +2791,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Who reviews an administrative law judge's disciplinary decision?",
+     "reveal": "The Secretary of the Treasury on appeal."
+    },
+    {
+     "ask": "Where can that decision then be taken?",
+     "reveal": "Federal court, so the Tax Court and Appeals are not the first step."
+    }
+   ]
   },
   {
    "id": "REG-I-B-0007",
@@ -2443,7 +2855,17 @@
     "B": "limit",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Can a disbarred practitioner seek reinstatement at once?",
+     "reveal": "No, a waiting period applies."
+    },
+    {
+     "ask": "How long is it?",
+     "reveal": "5 years."
+    }
+   ]
   },
   {
    "id": "REG-I-B-0008",
@@ -2501,7 +2923,17 @@
     "A": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What do CPAs need in order to practice before the IRS?",
+     "reveal": "To remain in good standing with their state licensing authority."
+    },
+    {
+     "ask": "What happens once the license is revoked for fraud?",
+     "reveal": "She can no longer practice as a CPA before the IRS, and the revocation may itself support sanction."
+    }
+   ]
   },
   {
    "id": "REG-I-B-0009",
@@ -2561,7 +2993,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which events trigger automatic AICPA membership action under the bylaws?",
+     "reveal": "Convictions for certain crimes, including crimes involving false tax returns."
+    },
+    {
+     "ask": "Do penalties on clients, arrests ending in acquittal or settled suits count?",
+     "reveal": "No, only the conviction for aiding a false return does."
+    }
+   ]
   },
   {
    "id": "REG-I-B-0010",
@@ -2615,7 +3057,17 @@
     "A": "trap",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "May a practitioner accept help from a disbarred person in an IRS matter?",
+     "reveal": "Not knowingly, if the help relates to a matter before the IRS."
+    },
+    {
+     "ask": "Do client consent, lack of IRS payment or non-appearance change that?",
+     "reveal": "No, none of them cures the prohibition."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0001",
@@ -2669,7 +3121,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What kind of communication does the federally authorized tax practitioner privilege cover?",
+     "reveal": "Tax advice in noncriminal tax matters before the IRS or in federal court proceedings involving the United States."
+    },
+    {
+     "ask": "Which listed proceeding is that?",
+     "reveal": "A civil IRS examination; criminal, state and SEC matters are outside it."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0002",
@@ -2727,7 +3189,17 @@
     "A": "trap",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the privilege reach return preparation?",
+     "reveal": "No, it covers tax advice only."
+    },
+    {
+     "ask": "How are the client's inputs for the return classified?",
+     "reveal": "As return-preparation information, which is not tax advice, so not privileged."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0003",
@@ -2789,7 +3261,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which privilege might cover an accountant's work?",
+     "reveal": "The attorney-client privilege when the accountant helps counsel give legal advice."
+    },
+    {
+     "ask": "Which arrangement sets that up?",
+     "reveal": "The client's attorney hires the accountant to help the attorney give legal advice."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0004",
@@ -2843,7 +3325,17 @@
     "A": "trap",
     "B": "limit",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Whose possession are the records in when the IRS summons them?",
+     "reveal": "The accountant's, not Karen's."
+    },
+    {
+     "ask": "Does the Fifth Amendment then protect her?",
+     "reveal": "No, there is no Fifth Amendment claim against a summons served on her accountant."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0005",
@@ -2897,7 +3389,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is there a federal accountant-client privilege?",
+     "reveal": "No."
+    },
+    {
+     "ask": "Did the Supreme Court create a work-product protection for an auditor's tax accrual workpapers?",
+     "reveal": "No, so the IRS may obtain them."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0006",
@@ -2955,7 +3457,17 @@
     "A": "concept",
     "C": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which privilege law governs a federal tax matter?",
+     "reveal": "Federal law."
+    },
+    {
+     "ask": "Does a state accountant privilege bind the IRS summons?",
+     "reveal": "No, only the limited federal tax practitioner privilege applies."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0007",
@@ -3013,7 +3525,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What duty of care does a professional owe a client?",
+     "reveal": "Reasonable care and competence."
+    },
+    {
+     "ask": "What is the claim when a missed deadline breaches that duty and causes a loss?",
+     "reveal": "Negligence, with damages for the harm; no deception or crime is involved."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0008",
@@ -3067,7 +3589,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Whom does the Restatement (Second) of Torts approach protect from negligent professional information?",
+     "reveal": "A known limited class of persons for whose benefit and guidance the information is supplied."
+    },
+    {
+     "ask": "Are the identified investors within that group?",
+     "reveal": "Yes, Halcyon knew they would rely, so it may be liable to them."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0009",
@@ -3129,7 +3661,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What three elements does tax evasion require?",
+     "reveal": "A tax deficiency, an affirmative act, and willfulness."
+    },
+    {
+     "ask": "Which scenario has an affirmative act of concealment?",
+     "reveal": "Hiding cash in nominee accounts to keep the IRS from collecting; merely not paying is a misdemeanor at most."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0010",
@@ -3183,7 +3725,17 @@
     "A": "limit",
     "B": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the general limitation period for most criminal tax offenses?",
+     "reveal": "A single fixed charging period after the offense."
+    },
+    {
+     "ask": "How long is it for evasion and false returns?",
+     "reveal": "6 years."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0011",
@@ -3241,7 +3793,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What must the government prove for willfulness?",
+     "reveal": "That the defendant knew of a legal duty and voluntarily violated it."
+    },
+    {
+     "ask": "Can a sincere but unreasonable belief about the law negate that?",
+     "reveal": "Yes, a genuine good-faith misunderstanding can negate willfulness even if unreasonable."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0012",
@@ -3295,7 +3857,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What civil remedy can the government seek against a repeat abusive preparer?",
+     "reveal": "A court injunction against specified conduct, including continual or flagrant misconduct."
+    },
+    {
+     "ask": "What can the injunction do?",
+     "reveal": "Bar the person from acting as a return preparer."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0013",
@@ -3349,7 +3921,17 @@
     "A": "trap",
     "B": "trap",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What limits the tax practitioner privilege even for tax advice in a civil matter?",
+     "reveal": "Written communications tied to promoting participation in a tax shelter are excluded."
+    },
+    {
+     "ask": "Which listed communication is that?",
+     "reveal": "The written communication promoting a tax shelter."
+    }
+   ]
   },
   {
    "id": "REG-I-D-0014",
@@ -3407,7 +3989,17 @@
     "B": "trap",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Who owns the records after a summons, and may they be destroyed?",
+     "reveal": "The summoned records must be preserved; destroying them is not a free choice."
+    },
+    {
+     "ask": "What follows if Lena shreds them?",
+     "reveal": "It may be felony obstruction and can lead to Circular 230 sanctions."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0001",
@@ -3465,7 +4057,17 @@
     "A": "concept",
     "C": "concept",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is an IRS summons self-enforcing?",
+     "reveal": "No."
+    },
+    {
+     "ask": "Who must the IRS ask to compel compliance?",
+     "reveal": "A U.S. district court, and disobeying its order may lead to contempt."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0002",
@@ -3519,7 +4121,17 @@
     "A": "limit",
     "C": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How long does a taxpayer have to begin a proceeding to quash a third-party summons?",
+     "reveal": "A short fixed period counted from the date notice was given."
+    },
+    {
+     "ask": "How many days?",
+     "reveal": "20 days."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0003",
@@ -3585,7 +4197,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "May a taxpayer record an in-person IRS interview?",
+     "reveal": "Yes, at his own expense."
+    },
+    {
+     "ask": "What notice is needed?",
+     "reveal": "At least 10 days advance written notice."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0004",
@@ -3652,7 +4274,21 @@
     "A": "calc",
     "B": "limit",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a return filed before its due date treated for the assessment period?",
+     "reveal": "As filed on the due date, April 15, 2024."
+    },
+    {
+     "ask": "What is the general assessment period?",
+     "reveal": "3 years."
+    },
+    {
+     "ask": "Where does the period end?",
+     "reveal": "April 15, 2027."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0005",
@@ -3715,7 +4351,21 @@
     "B": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What omission threshold extends the assessment period to 6 years?",
+     "reveal": "Omission of more than 25% of gross income shown on the return."
+    },
+    {
+     "ask": "What is 25% of $200,000?",
+     "reveal": "0.25 x 200,000 = 50,000."
+    },
+    {
+     "ask": "How does the $60,000 omission compare?",
+     "reveal": "60,000 exceeds 50,000, so the period is 6 years."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0006",
@@ -3773,7 +4423,17 @@
     "A": "concept",
     "C": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does a notice of deficiency allow the taxpayer to do?",
+     "reveal": "Petition the Tax Court without first paying."
+    },
+    {
+     "ask": "How long does the taxpayer have, and may the IRS assess sooner?",
+     "reveal": "90 days, and the IRS may not assess before that period ends."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0007",
@@ -3836,7 +4496,17 @@
     "A": "limit",
     "B": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How long does a U.S. resident have to petition after a notice of deficiency?",
+     "reveal": "90 days from the mailing date."
+    },
+    {
+     "ask": "What is September 15, 2026 plus 90 days?",
+     "reveal": "December 14, 2026."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0008",
@@ -3894,7 +4564,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which forum offers a jury trial?",
+     "reveal": "Only a U.S. district court."
+    },
+    {
+     "ask": "What must be done before suing there?",
+     "reveal": "Pay the tax in full and sue for refund."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0009",
@@ -3948,7 +4628,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which court hears an appeal from a regular Tax Court decision?",
+     "reveal": "The court of appeals for the circuit of the taxpayer's residence."
+    },
+    {
+     "ask": "Which circuit covers Ohio?",
+     "reveal": "The Sixth Circuit."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0010",
@@ -4011,7 +4701,17 @@
     "A": "limit",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the deadline for a notice of appeal from a Tax Court decision?",
+     "reveal": "90 days after the decision is entered."
+    },
+    {
+     "ask": "What is February 4, 2026 plus 90 days?",
+     "reveal": "May 5, 2026."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0011",
@@ -4069,7 +4769,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Can the IRS issue a second notice for the same year after a Tax Court petition?",
+     "reveal": "Generally not."
+    },
+    {
+     "ask": "How can the IRS raise the additional understatement?",
+     "reveal": "By claiming an increased deficiency in the pending Tax Court case."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0012",
@@ -4127,7 +4837,17 @@
     "A": "limit",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is needed for an Appeals conference on a 30-day letter?",
+     "reveal": "A small case request at $25,000 or less, otherwise a formal written protest."
+    },
+    {
+     "ask": "Where does the $60,000 proposal fall?",
+     "reveal": "Above $25,000, so a formal written protest is required."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0013",
@@ -4185,7 +4905,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What can disclosure do in the substantial understatement test?",
+     "reveal": "Reduce the understatement for an adequately disclosed item with a reasonable basis."
+    },
+    {
+     "ask": "Does that relief extend to tax shelter items?",
+     "reveal": "No, so relief is limited to non-shelter items."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0014",
@@ -4239,7 +4969,17 @@
     "A": "trap",
     "C": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What sources count as authority for substantial authority?",
+     "reveal": "Statutes, regulations, rulings, notices, court cases and similar official materials."
+    },
+    {
+     "ask": "Which of these listed sources is not authority?",
+     "reveal": "Conclusions in treatises, legal periodicals and opinions of tax professionals."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0015",
@@ -4297,7 +5037,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is disclosure still needed although substantial authority exists?",
+     "reveal": "For positions contrary to a regulation."
+    },
+    {
+     "ask": "Which listed position is contrary to a regulation, and on which form is it disclosed?",
+     "reveal": "The good-faith position against a Treasury regulation, disclosed on Form 8275-R."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0016",
@@ -4359,7 +5109,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which expense categories face strict substantiation of amount, time, place and business purpose?",
+     "reveal": "Travel away from home, gifts, and listed property."
+    },
+    {
+     "ask": "Which listed expense is travel away from home?",
+     "reveal": "Lodging on an overnight business trip."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0017",
@@ -4417,7 +5177,17 @@
     "B": "trap",
     "C": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Can a contemporaneous log alone substantiate every travel expense?",
+     "reveal": "Not always; documentary evidence is needed above a threshold and for certain items."
+    },
+    {
+     "ask": "Which item requires a receipt whatever the amount?",
+     "reveal": "Lodging, since the $75 exception does not apply to it."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0018",
@@ -4479,7 +5249,17 @@
     "A": "limit",
     "B": "limit",
     "C": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which deduction types call for a longer record retention period?",
+     "reveal": "Worthless securities and bad debt deductions."
+    },
+    {
+     "ask": "How long should supporting records be kept?",
+     "reveal": "7 years."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0019",
@@ -4550,7 +5330,21 @@
     "A": "concept",
     "C": "concept",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What test decides whether an FBAR is required?",
+     "reveal": "The aggregate of the maximum values of all foreign financial accounts exceeding $10,000 at any time in the year."
+    },
+    {
+     "ask": "What is the aggregate for Iris?",
+     "reveal": "6,000 + 5,500 = 11,500."
+    },
+    {
+     "ask": "How does it compare with the threshold?",
+     "reveal": "11,500 exceeds 10,000, so an FBAR is required."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0020",
@@ -4612,7 +5406,17 @@
     "A": "limit",
     "B": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the civil fraud penalty rate and base?",
+     "reveal": "75% of the underpayment attributable to fraud."
+    },
+    {
+     "ask": "Who carries the burden and how heavy is it?",
+     "reveal": "The IRS, by clear and convincing evidence."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0021",
@@ -4670,7 +5474,17 @@
     "A": "limit",
     "B": "limit",
     "C": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the failure-to-file monthly rate and cap?",
+     "reveal": "5% per month or part of a month, up to 25%."
+    },
+    {
+     "ask": "How does it interact with the failure-to-pay addition?",
+     "reveal": "The failure-to-file amount is reduced by the failure-to-pay addition for the same months."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0022",
@@ -4756,7 +5570,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How many months late is a return filed 2 months and 14 days after the due date?",
+     "reveal": "Any part of a month counts, so 3 months."
+    },
+    {
+     "ask": "What are the combined monthly rates when both additions apply?",
+     "reveal": "4.5% failure to file plus 0.5% failure to pay, so 5% a month."
+    },
+    {
+     "ask": "What is 15% of $10,000?",
+     "reveal": "15% x 10,000 = 1,500."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0023",
@@ -4814,7 +5642,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is filing on time the taxpayer's own duty?",
+     "reveal": "Yes, it is nondelegable."
+    },
+    {
+     "ask": "Does reliance on an agent to file on time show reasonable cause?",
+     "reveal": "No, so under Boyle Hollis has no reasonable cause."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0024",
@@ -4898,7 +5736,17 @@
     "A": "limit",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the accuracy-related penalty rate for negligence?",
+     "reveal": "20% of the attributable underpayment."
+    },
+    {
+     "ask": "What is 20% of $30,000?",
+     "reveal": "20% x 30,000 = 6,000."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0025",
@@ -4984,7 +5832,21 @@
     "A": "limit",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the understatement?",
+     "reveal": "73,000 - 64,000 = 9,000."
+    },
+    {
+     "ask": "What is the substantial understatement threshold?",
+     "reveal": "Greater of 10% x 73,000 = 7,300 or 5,000, so 7,300."
+    },
+    {
+     "ask": "Does the understatement exceed it, and what is the penalty?",
+     "reveal": "9,000 exceeds 7,300, so the penalty is 20% x 9,000 = 1,800."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0026",
@@ -5038,7 +5900,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "On a joint return, whose fraud triggers the civil fraud penalty?",
+     "reveal": "The penalty applies to a spouse only if part of the underpayment is due to that spouse's fraud."
+    },
+    {
+     "ask": "Which spouse committed fraud here?",
+     "reveal": "Malcolm only, so the penalty reaches him on that portion and not Dawn."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0027",
@@ -5118,7 +5990,17 @@
     "A": "limit",
     "B": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What penalty rate applies to an undisclosed transaction lacking economic substance?",
+     "reveal": "40% of the underpayment."
+    },
+    {
+     "ask": "What is 40% of $100,000?",
+     "reveal": "40% x 100,000 = 40,000."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0028",
@@ -5199,7 +6081,21 @@
     "A": "limit",
     "C": "limit",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does the reported basis compare with the correct basis?",
+     "reveal": "500,000 / 100,000 = 500%, at or above 200%."
+    },
+    {
+     "ask": "What penalty rate does that misstatement level carry?",
+     "reveal": "Gross valuation misstatement, 40%."
+    },
+    {
+     "ask": "What is 40% of $60,000?",
+     "reveal": "40% x 60,000 = 24,000."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0029",
@@ -5257,7 +6153,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What administrative relief exists for a taxpayer with a clean history?",
+     "reveal": "First-time penalty abatement."
+    },
+    {
+     "ask": "Which of the taxpayer's facts meet its conditions?",
+     "reveal": "No penalties in the prior three years, all required returns filed, and the tax paid."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0030",
@@ -5319,7 +6225,17 @@
     "A": "concept",
     "B": "concept",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What elements make reliance on an adviser reasonable cause?",
+     "reveal": "Complete information given, a competent adviser, and good-faith reliance."
+    },
+    {
+     "ask": "Does Gavin meet each element?",
+     "reveal": "Yes, so he may avoid the penalty even though the position was disallowed."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0031",
@@ -5377,7 +6293,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What ranks highest among the authorities: statute, regulation, ruling or case?",
+     "reveal": "Statute enacted by Congress."
+    },
+    {
+     "ask": "What is that source in federal tax law?",
+     "reveal": "The Internal Revenue Code."
+    }
+   ]
   },
   {
    "id": "REG-I-C-0032",
@@ -5431,7 +6357,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which IRS guidance is issued to a single taxpayer?",
+     "reveal": "A private letter ruling."
+    },
+    {
+     "ask": "May other taxpayers cite it as precedent?",
+     "reveal": "No, only the taxpayer to whom it was issued may rely on it."
+    }
+   ]
   }
  ]
 }

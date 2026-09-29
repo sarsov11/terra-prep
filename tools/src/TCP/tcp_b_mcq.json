@@ -148,7 +148,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which part of the gain is taxable no matter when he sells?",
+     "reveal": "The $48,000 of gain equal to depreciation claimed."
+    },
+    {
+     "ask": "How is the remaining $300,000 split between rental use and home use?",
+     "reveal": "By months owned: rental months 48 over 108 in 2026, or 48 over 132 in 2028."
+    },
+    {
+     "ask": "Compute the difference.",
+     "reveal": "$300,000 x (48/108 - 48/132) = $133,333 - $109,091 = $24,242, since the home-use part is under the $250,000 exclusion either way."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0032",
@@ -282,7 +296,17 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the deferral save directly?",
+     "reveal": "$20,000 x 35% = $7,000."
+    },
+    {
+     "ask": "How does it change the state and local tax cap?",
+     "reveal": "Modified AGI falls to $545,000, so the cap rises from $22,400 to $28,400, a $6,000 larger deduction, worth $2,100. Total $9,100."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0033",
@@ -383,7 +407,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "How long is the wash sale window after a sale, and where do the repurchase dates fall?",
+     "reveal": "Thirty days after the sale ends January 9, so a repurchase on December 20 is inside and one on January 15 is outside."
+    },
+    {
+     "ask": "If the loss counts, how does it net against the gain?",
+     "reveal": "The short-term loss of $15,000 offsets long-term gain, leaving $15,000 taxed at 15%: $2,250 instead of $4,500."
+    },
+    {
+     "ask": "Compare the plans.",
+     "reveal": "Only the plan whose repurchase falls outside the window gets the $2,250 reduction."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0034",
@@ -505,7 +543,17 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the SEP contribution do to taxable income directly?",
+     "reveal": "It lowers AGI and taxable income by $30,000."
+    },
+    {
+     "ask": "What is the side effect on the 20% deduction?",
+     "reveal": "Qualified business income falls by $30,000, so the deduction falls by $6,000; net taxable income drop is $24,000, saving 24% x $24,000 = $5,760."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0035",
@@ -627,7 +675,17 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does she get any medical deduction paying with after-tax dollars?",
+     "reveal": "No: the 7.5% floor is $6,000 and her itemized total is below the standard deduction anyway."
+    },
+    {
+     "ask": "What does salary reduction into the HSA avoid?",
+     "reveal": "Income tax, $6,000 x 22% = $1,320, and FICA, $6,000 x 7.65% = $459. Total $1,779."
+    }
+   ]
   },
   {
    "id": "TCP-I-A-0036",
@@ -785,7 +843,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is his AGI and itemized total when he gives cash?",
+     "reveal": "AGI $195,000; the gift is deductible above $975, so $9,025; itemized $12,000 + $9,025 = $21,025."
+    },
+    {
+     "ask": "What happens when the gift is a direct transfer from the IRA?",
+     "reveal": "AGI falls to $185,000 and the $12,000 itemized total is below the $18,150 standard deduction, so taxable income is $166,850 versus $173,975."
+    },
+    {
+     "ask": "Compute the tax difference.",
+     "reveal": "$7,125 x 24% = $1,710."
+    }
+   ]
   },
   {
    "id": "TCP-I-B-0011",
@@ -882,7 +954,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What two hour tests must a real estate professional pass?",
+     "reveal": "More than 750 hours in real property trades, and more than half of all personal service hours in them."
+    },
+    {
+     "ask": "Which test does Jonah pass now, and which does he fail?",
+     "reveal": "900 hours passes the first; at 1,500 engineering hours his share is 900 / 2,400 = 37.5%, which fails."
+    },
+    {
+     "ask": "What engineering level gives a share above half with 900 rental hours, and what does the combining election add?",
+     "reveal": "Fewer than 900 engineering hours, so the second test passes and material participation follows: the loss is nonpassive and saves $60,000 x 37% = $22,200."
+    }
+   ]
   },
   {
    "id": "TCP-I-B-0012",
@@ -1005,7 +1091,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "In what order do basis, at-risk and passive limits apply?",
+     "reveal": "Basis first, then at-risk, then the passive rules."
+    },
+    {
+     "ask": "What does the passive limit allow here regardless of the contribution?",
+     "reveal": "Her $35,000 of other passive income, so the at-risk limit of $50,000 is not the binding one."
+    },
+    {
+     "ask": "Increase from the contribution?",
+     "reveal": "Deductible is $35,000 both ways, so $0."
+    }
+   ]
   },
   {
    "id": "TCP-I-C-0011",
@@ -1106,7 +1206,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What happens if she gives the appreciated stock, and if she gives the loss stock?",
+     "reveal": "The son takes her basis: gain of $160,000 for the first ($24,000 tax); for the loss stock the son's loss basis falls to value, so no loss is ever used."
+    },
+    {
+     "ask": "What does selling the loss stock first produce, and what happens to the stock she keeps?",
+     "reveal": "A $60,000 loss that saves $9,000, and the appreciated stock keeps its step-up at death."
+    },
+    {
+     "ask": "Lowest combined tax?",
+     "reveal": "The sell-first plan, a net saving of $9,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-C-0012",
@@ -1244,7 +1358,17 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does gift splitting change the amounts?",
+     "reveal": "Each spouse gives half: $100,000 to Ada and $7,500 to Ben."
+    },
+    {
+     "ask": "How does the five-year election apply, and what about the tuition?",
+     "reveal": "Each spouse excludes 5 x $19,000 = $95,000 for Ada, leaving $5,000 taxable each; Ben's $7,500 is under the exclusion and direct tuition is excluded. Total taxable gifts are $10,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-C-0013",
@@ -1346,7 +1470,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "In the plan where the son assumes the mortgage, is the transfer entirely a gift?",
+     "reveal": "No, it is part gift and part sale; the debt assumed is treated as the sale price."
+    },
+    {
+     "ask": "What is Gwen's gain and the son's basis and gain?",
+     "reveal": "Gwen: $150,000 - $100,000 = $50,000; son's basis is the greater of debt assumed or her basis, $150,000, so his gain is $250,000."
+    },
+    {
+     "ask": "Combine and compare with the payoff plan.",
+     "reveal": "Combined gain is $300,000, the same as the son's $400,000 - $100,000 there; the gift is $250,000 versus $400,000."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0014",
@@ -1470,7 +1608,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the conversion investment income for the net investment income tax?",
+     "reveal": "No, it is ordinary income taxed at 24%: $80,000 x 24% = $19,200."
+    },
+    {
+     "ask": "How does it interact with the tax's threshold?",
+     "reveal": "It raises modified AGI to $295,000, which is $45,000 over $250,000."
+    },
+    {
+     "ask": "What does the 3.8% apply to, and what is the total?",
+     "reveal": "The lesser of $70,000 and $45,000: 3.8% x $45,000 = $1,710. Total $20,910."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0015",
@@ -1629,7 +1781,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is taxed now if the employer stock is taken in kind?",
+     "reveal": "Only the $100,000 cost basis, as ordinary income: $24,000."
+    },
+    {
+     "ask": "How is the appreciation taxed later?",
+     "reveal": "The $300,000 of unrealized appreciation and the $50,000 of later growth are long-term gain at 15%: $52,500. Total $76,500."
+    },
+    {
+     "ask": "What does the rollover path cost?",
+     "reveal": "$450,000 x 24% = $108,000, so the difference is $31,500."
+    }
+   ]
   },
   {
    "id": "TCP-I-D-0016",
@@ -1746,7 +1912,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the tax on each source?",
+     "reveal": "IRA money is ordinary income, so $100,000 less $16,100 = $83,900 is taxed through the 10%, 12% and 22% brackets."
+    },
+    {
+     "ask": "What does a stock sale produce?",
+     "reveal": "Gain of $100,000 - $10,000 = $90,000, taxable $73,900 after the deduction, of which $49,450 falls in the 0% band and $24,450 in 15%: about $3,668."
+    },
+    {
+     "ask": "Compare with the mixed plan and the IRA-only tax.",
+     "reveal": "IRA-only is about $13,170 and the mixed plan about $8,238, so the sale-only plan is lowest."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0028",
@@ -1879,7 +2059,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "Can a corporation deduct a loss on distributing Asset Y in kind?",
+     "reveal": "No, a loss on a distribution of property is not recognized."
+    },
+    {
+     "ask": "What is the tax under the distribute-both plan?",
+     "reveal": "Gain of $100,000 on X is taxed: $21,000."
+    },
+    {
+     "ask": "What changes if Y is sold to an unrelated buyer first?",
+     "reveal": "The $60,000 loss offsets the gain: 21% x $40,000 = $8,400. Difference $12,600."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0029",
@@ -2011,7 +2205,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a 55% purchase an ownership change, and a 45% purchase?",
+     "reveal": "More than 50 points is a change; 45 is not."
+    },
+    {
+     "ask": "What is the deduction if there is a change?",
+     "reveal": "Limit $2,000,000 x 3.5% = $70,000, saving $14,700."
+    },
+    {
+     "ask": "What if there is no change?",
+     "reveal": "The 80% limit allows 80% x $600,000 = $480,000, saving $100,800. Difference $86,100."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0030",
@@ -2098,7 +2306,17 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is a loss disallowed under the related-party rules and when is it not recognized at all?",
+     "reveal": "A sale to a more-than-50% owner is disallowed; a distribution of loss property is not recognized."
+    },
+    {
+     "ask": "Which path gives a deductible loss?",
+     "reveal": "Only the sale to an unrelated buyer: $200,000 - $120,000 = $80,000, saving 21% x $80,000 = $16,800."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0031",
@@ -2193,7 +2411,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does family attribution affect a redemption of Ray's shares with no agreement?",
+     "reveal": "Ray is treated as owning Sam's shares, so he still holds 100% and the payment is a dividend: 20% x $500,000 = $100,000."
+    },
+    {
+     "ask": "What does a waiver of attribution do?",
+     "reveal": "It allows a complete termination, so exchange treatment: gain $500,000 - $100,000 = $400,000, tax $80,000."
+    },
+    {
+     "ask": "What about a direct sale to Sam?",
+     "reveal": "A sale, with the same $400,000 gain and $80,000 tax."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0014",
@@ -2340,7 +2572,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is Ava's share of income under the per-day method?",
+     "reveal": "$400,000 x 50% x 181/365 = $99,178."
+    },
+    {
+     "ask": "What does the closing election change?",
+     "reveal": "Her income is $200,000, $100,822 more, taxed at 37%, but her basis rises by the same amount and her gain falls by it, saving 20%."
+    },
+    {
+     "ask": "Net cost?",
+     "reveal": "$100,822 x (37% - 20%) = $17,140."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0015",
@@ -2453,7 +2699,17 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which reduces basis first, distributions or losses?",
+     "reveal": "Distributions first, in the same year."
+    },
+    {
+     "ask": "Compare the two timings.",
+     "reveal": "A November distribution leaves basis of $20,000 before the loss, so only $20,000 is deductible; a January distribution leaves $70,000, so the full $60,000 is deductible. Difference $40,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0016",
@@ -2586,7 +2842,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does each plan affect the S corporation basis and the deductible loss?",
+     "reveal": "Contributing the stock adds only her stock basis: $10,000 + $30,000 = $40,000. Contributing cash adds $80,000, so basis is $90,000 and the full loss is usable."
+    },
+    {
+     "ask": "What is the net benefit of each plan?",
+     "reveal": "Stock: $40,000 x 37% = $14,800. Cash: $90,000 x 37% = $33,300 less 20% x $50,000 gain = $10,000, so $23,300."
+    },
+    {
+     "ask": "Difference?",
+     "reveal": "$23,300 - $14,800 = $8,500."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0014",
@@ -2683,7 +2953,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is each partner's book share of depreciation, and what is the tax depreciation?",
+     "reveal": "Book $10,000 a year, $5,000 each; tax depreciation is $40,000 / 10 = $4,000."
+    },
+    {
+     "ask": "What does the traditional method do with the $4,000?",
+     "reveal": "The ceiling rule gives all $4,000 to Beta, still $1,000 short of Beta's book share, and Alpha gets none."
+    },
+    {
+     "ask": "What does the remedial method add?",
+     "reveal": "A $1,000 extra deduction for Beta and $1,000 of offsetting income for Alpha."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0015",
@@ -2785,7 +3069,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items raise basis before distributions are applied?",
+     "reveal": "Income and contributions: $50,000 + $10,000 = $60,000."
+    },
+    {
+     "ask": "What reduces it?",
+     "reveal": "The $40,000 distribution and the $35,000 deemed distribution from the liability decrease, $75,000 in all, $15,000 more than basis before any contribution."
+    },
+    {
+     "ask": "Which contribution timing fixes the shortfall?",
+     "reveal": "A contribution made within 2026, which raises basis to $80,000; one in January 2027 is too late."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0016",
@@ -2904,7 +3202,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What limits the gain when the contributing partner receives other property within seven years?",
+     "reveal": "The lesser of the value received over his basis and his net precontribution gain."
+    },
+    {
+     "ask": "Compute for 2026.",
+     "reveal": "$180,000 - $100,000 = $80,000, and net precontribution gain is $150,000, so the gain is $80,000."
+    },
+    {
+     "ask": "What changes in 2031?",
+     "reveal": "The seven-year period has passed, and a distribution within basis produces no gain, so the reduction is $80,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0017",
@@ -3031,7 +3343,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a payment for goodwill treated if the agreement is silent, in a service partnership?",
+     "reveal": "As an ordinary payment to a retiring partner, taxed to her as ordinary income and deductible by the partnership."
+    },
+    {
+     "ask": "What does the amended agreement change?",
+     "reveal": "The payment becomes a distribution for her interest, so it is capital gain to her and not deductible."
+    },
+    {
+     "ask": "Compare combined tax.",
+     "reveal": "Silent agreement: $74,000 paid by Dina, $74,000 saved by the others, net $0. Amended: 20% x $200,000 = $40,000 with no deduction, a $40,000 increase."
+    }
+   ]
   },
   {
    "id": "TCP-II-D-0007",
@@ -3178,7 +3504,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the election for the February 2027 payment change?",
+     "reveal": "It lets the trust count the payment as a 2026 distribution."
+    },
+    {
+     "ask": "What are the two outcomes?",
+     "reveal": "No election: trust taxed on $40,000 ($14,800) and Beth on $10,000 ($2,200), $17,000. Election: distribution deduction $40,000, trust tax $3,700, Beth's tax $8,800, $12,500."
+    },
+    {
+     "ask": "Savings?",
+     "reveal": "$17,000 - $12,500 = $4,500."
+    }
+   ]
   },
   {
    "id": "TCP-II-E-0005",
@@ -3330,7 +3670,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is debt-financed income determined?",
+     "reveal": "Net income from the property multiplied by average acquisition debt over average adjusted basis; interest is deducted in the same proportion."
+    },
+    {
+     "ask": "Compute each plan.",
+     "reveal": "Full loan: 60% x ($220,000 - $60,000 - $72,000) = $52,800; less $1,000, tax 21% = $10,878. Reduced loan: 30% x ($220,000 - $60,000 - $36,000) = $37,200; less $1,000, tax $7,602."
+    },
+    {
+     "ask": "Saving?",
+     "reveal": "$10,878 - $7,602 = $3,276."
+    }
+   ]
   },
   {
    "id": "TCP-II-E-0006",
@@ -3454,7 +3808,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are readership costs fully deductible against advertising income?",
+     "reveal": "Only to the extent they exceed circulation income: $100,000 - $40,000 = $60,000, and no more than net advertising income."
+    },
+    {
+     "ask": "What is UBTI now and after the campaign?",
+     "reveal": "Now: net advertising $60,000 less $60,000 = $0. After: net advertising $110,000 less $60,000 = $50,000."
+    },
+    {
+     "ask": "Increase?",
+     "reveal": "$50,000."
+    }
+   ]
   },
   {
    "id": "TCP-III-A-0009",
@@ -3622,7 +3990,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the S corporation structure leave after all taxes?",
+     "reveal": "Employer Medicare $2,175, S income $247,825, deduction limited to $49,565, taxable income $348,260, tax $121,891; after-tax cash $273,759."
+    },
+    {
+     "ask": "What do the partnership form and the C corporation form leave?",
+     "reveal": "Partnership: self-employment tax $10,713, tax $138,125, cash $251,162. C corporation: cash $244,511."
+    },
+    {
+     "ask": "Which two are highest, and what is the gap?",
+     "reveal": "S corporation and partnership: $273,759 - $251,162 = $22,597."
+    }
+   ]
   },
   {
    "id": "TCP-III-A-0010",
@@ -3770,7 +4152,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much of the Year 1 loss can the S corporation shareholder deduct?",
+     "reveal": "Only up to basis, $120,000, saving 35% x $120,000 = $42,000; $80,000 is suspended."
+    },
+    {
+     "ask": "What happens in Year 2 under each structure?",
+     "reveal": "S: the suspended $80,000 is deducted once income raises basis, saving $28,000, total $70,000. C: the loss carries forward and the 80% limit allows $160,000, saving $33,600."
+    },
+    {
+     "ask": "Difference?",
+     "reveal": "$70,000 - $33,600 = $36,400."
+    }
+   ]
   },
   {
    "id": "TCP-III-B-0007",
@@ -3911,7 +4307,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What bonus fits inside a $100,000 total cost that includes employer Medicare?",
+     "reveal": "The bonus B solves B + 1.45% x B = $100,000, so B = $98,571 and employer Medicare is $1,429."
+    },
+    {
+     "ask": "What is the combined tax on the bonus path?",
+     "reveal": "Owner pays 37% + 1.45% + 0.9% = 39.35% on $98,571, $38,788, plus employer Medicare $1,429, about $40,217 in all."
+    },
+    {
+     "ask": "What about the dividend path, and which is lower?",
+     "reveal": "Corporate tax $21,000 plus 23.8% x $79,000 = $18,802, total $39,802, about $415 less."
+    }
+   ]
   },
   {
    "id": "TCP-III-C-0008",
@@ -4048,7 +4458,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What tax applies to a plain stock sale?",
+     "reveal": "Gain of $1,000,000 - $200,000 = $800,000 at 20% = $160,000."
+    },
+    {
+     "ask": "What happens with the joint election?",
+     "reveal": "The deemed asset sale passes through $150,000 ordinary (37%, $55,500) and $650,000 capital gain (20%, $130,000), $185,500; the deemed liquidation adds nothing since basis rose."
+    },
+    {
+     "ask": "Extra tax?",
+     "reveal": "$185,500 - $160,000 = $25,500."
+    }
+   ]
   },
   {
    "id": "TCP-III-C-0009",
@@ -4216,7 +4640,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the lower salary leave after payroll and income tax?",
+     "reveal": "Employer tax $4,590, S income $235,410, deduction capped at $30,000, taxable income $265,410, tax $92,894, after-tax cash $197,927."
+    },
+    {
+     "ask": "And the higher salary?",
+     "reveal": "Employer tax $9,180, S income $170,820, deduction $34,164, taxable income $256,656, tax $89,830, cash $191,810."
+    },
+    {
+     "ask": "Difference?",
+     "reveal": "$197,927 - $191,810 = $6,116."
+    }
+   ]
   },
   {
    "id": "TCP-III-D-0007",
@@ -4343,7 +4781,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a vested capital interest received for services taxed?",
+     "reveal": "As compensation at its value, $100,000 x 37% = $37,000, with basis of $100,000."
+    },
+    {
+     "ask": "How is a safe-harbor profits interest taxed?",
+     "reveal": "Not on receipt, with zero basis."
+    },
+    {
+     "ask": "Compare the totals over the sale.",
+     "reveal": "Capital interest: $37,000 + 20% x $30,000 = $43,000. Profits interest: 20% x $130,000 = $26,000. Difference $17,000."
+    }
+   ]
   },
   {
    "id": "TCP-IV-A-0007",
@@ -4424,7 +4876,17 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is Ola's realized gain, and what does a related-party exchange add?",
+     "reveal": "$700,000 - $200,000 = $500,000; if a related person sells within two years, deferral is lost."
+    },
+    {
+     "ask": "Which plan involves a related party?",
+     "reveal": "The exchange with her brother, so his sale at 14 months triggers recognition in that year; the unrelated exchange is unaffected."
+    }
+   ]
   },
   {
    "id": "TCP-IV-A-0008",
@@ -4558,7 +5020,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is Lena's basis after her husband's death?",
+     "reveal": "Only his half is stepped up: $100,000 + $300,000 = $400,000, so gain is $800,000 - $400,000 = $400,000."
+    },
+    {
+     "ask": "What exclusion applies by sale date?",
+     "reveal": "$500,000 if sold within two years of death, $250,000 after."
+    },
+    {
+     "ask": "Difference in taxable gain?",
+     "reveal": "March 5: $0. March 20: $400,000 - $250,000 = $150,000."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0014",
@@ -4702,7 +5178,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the gain and how much is recaptured?",
+     "reveal": "$300,000 - $100,000 = $200,000; recapture is $150,000 ordinary, recognized in the year of sale, leaving $50,000 of capital gain."
+    },
+    {
+     "ask": "How much capital gain is reported in the sale year on installments?",
+     "reveal": "$50,000 / $300,000 x $60,000 = $10,000."
+    },
+    {
+     "ask": "Compare the sale-year tax.",
+     "reveal": "Full sale: $62,500. Installment: $52,500 + $2,000 = $54,500. Difference $8,000."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0015",
@@ -4814,7 +5304,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "How are net gains treated when earlier net losses were ordinary?",
+     "reveal": "As ordinary income up to the nonrecaptured losses of the prior five years."
+    },
+    {
+     "ask": "What are the results for selling both in 2026, and for selling the gain first?",
+     "reveal": "Both in 2026: net gain $30,000 ordinary, tax $11,100. Gain first: $30,000 ordinary and $70,000 capital gain, $25,100; then a 2027 loss of $70,000 saves $25,900, net saving $800."
+    },
+    {
+     "ask": "What about selling the loss first?",
+     "reveal": "Saves $25,900 in 2026 but the 2027 gain of $100,000 is fully ordinary: net $11,100 tax. Lowest is the gain-first plan."
+    }
+   ]
   },
   {
    "id": "TCP-IV-C-0009",
@@ -4937,7 +5441,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which bonus is deductible in 2026 if paid within 2 1/2 months?",
+     "reveal": "The one to unrelated employees, $90,000."
+    },
+    {
+     "ask": "What about Mira's bonus, and what does paying in December change?",
+     "reveal": "Mira owns more than 50% and uses the cash method, so it is deductible only when she includes it: paying in 2026 makes it deductible in 2026."
+    },
+    {
+     "ask": "Compute.",
+     "reveal": "Extra deduction $60,000 x 21% = $12,600."
+    }
+   ]
   },
   {
    "id": "TCP-IV-C-0010",
@@ -5061,7 +5579,21 @@
     "date": "2026-09-29",
     "commit": "0610780",
     "match": true
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the gross profit percentage, and what is the gain when only the down payment is received?",
+     "reveal": "($500,000 - $100,000) / $500,000 = 80%; the down payment gives $100,000 x 80% = $80,000."
+    },
+    {
+     "ask": "What does a quick resale by the related buyer do?",
+     "reveal": "It is treated as a payment to Ann of the smaller of the resale price and contract price, less amounts already received: $400,000 more, so all gain is recognized: 80% x $500,000 = $400,000."
+    },
+    {
+     "ask": "Difference?",
+     "reveal": "$400,000 - $80,000 = $320,000."
+    }
+   ]
   }
  ]
 }

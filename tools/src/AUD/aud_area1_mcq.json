@@ -1,0 +1,2215 @@
+{
+ "meta": {
+  "area": "I",
+  "title": "AUD Area I - Ethics, Professional Responsibilities and General Principles",
+  "allocation": "15-25%",
+  "law_asof": "2026-09-29",
+  "count": 30,
+  "status": "verified",
+  "blueprint": "AICPA Uniform CPA Examination Blueprints, AUD (Approved by the Board of Examiners Aug. 18, 2025; effective Jan. 2026); copy hosted at dokoblog.com (third party host of the AICPA PDF)",
+  "provenance": "terra-original (no commercial question text used)"
+ },
+ "items": [
+  {
+   "id": "AUD-I-A-0001",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.1]",
+   "topic": "Contingent fees for tax return preparation",
+   "task": "Understand and apply the AICPA Code of Professional Conduct rules to situations.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Delgado & Park, CPAs, are auditing the December 31, 2025 financial statements of Larkspur Foods, a nonissuer, under AICPA standards. Larkspur asks the firm to also prepare its amended 2024 federal income tax return and proposes that the firm's fee be 20% of any refund the IRS allows. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "The arrangement is permitted if the fee is disclosed in writing to Larkspur's board of directors and the board consents to it.",
+    "The firm may not prepare an amended tax return for a contingent fee for any client, so the proposed arrangement is prohibited.",
+    "The arrangement is prohibited only because Larkspur is an audit client; a client with no attest services could be charged this fee.",
+    "The arrangement is permitted if a partner who is not on the audit engagement team prepares the amended return."
+   ],
+   "answer": "B",
+   "rule_line": "A member may not prepare an original or amended tax return or refund claim for a contingent fee, for any client.",
+   "why": {
+    "A": "Disclosure and consent do not cure a prohibited contingent fee. The rule is a flat prohibition, not a threat that can be managed with safeguards.",
+    "B": "Correct. A member in public practice may not prepare an original or amended tax return, or a refund claim, for a contingent fee for any client. The prohibition does not depend on the attest relationship.",
+    "C": "The tax return prong of the contingent fee rule applies to any client. Only the audit, review and certain compilation prongs depend on an attest relationship.",
+    "D": "Using a partner outside the audit team is a safeguard idea, but the rule contains no safeguard exception. The fee itself is what is prohibited."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "ET",
+     "ref": "1.510.001.01b"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "C": "concept",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What does the code say about contingent fees for preparing a tax return or refund claim?",
+     "reveal": "It restricts them for tax returns and refund claims regardless of who the client is."
+    },
+    {
+     "ask": "Does the attest relationship drive the result?",
+     "reveal": "No, the prohibition applies to any client, so the percentage-of-refund fee is not allowed for the amended return."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0002",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.1]",
+   "topic": "Unpaid fees threat to independence",
+   "task": "Apply the conceptual framework for independence and the independence interpretations.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Halloran & Wu, CPAs, will issue the auditor's report on Birchwood Manufacturing, a nonissuer, on March 20, 2026. Which unpaid fee situation at that date means threats to the firm's independence are NOT at an acceptable level?",
+   "exhibit": "",
+   "options": [
+    "A $4,000 note receivable for October 2025 services, clearly insignificant to the firm",
+    "An unbilled $2,500 for services performed in February 2026, which is clearly insignificant to the firm",
+    "$3,500 billed for services performed in January 2026, which is clearly insignificant to the firm",
+    "$340,000 for services performed in November 2024, which is significant to the firm"
+   ],
+   "answer": "D",
+   "rule_line": "Unpaid fees both significant to the firm and older than one year at the report date are not at an acceptable level.",
+   "why": {
+    "A": "Unpaid fees include a note receivable arising from fees, but this one is clearly insignificant and less than one year old. Threats are at an acceptable level.",
+    "B": "Unpaid fees include unbilled fees, but this amount is clearly insignificant and relates to services less than one year old. Threats are at an acceptable level.",
+    "C": "This amount is clearly insignificant and relates to services less than one year old. Threats are at an acceptable level.",
+    "D": "Correct. Unpaid fees that are significant to the firm and relate to services provided more than one year before the report date are not at an acceptable level. Time and size together drive the conclusion."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "ET",
+     "ref": "1.230.010.01-.03"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "limit",
+    "C": "limit"
+   },
+   "guide": [
+    {
+     "ask": "Which two factors make an unpaid fee a threat to independence?",
+     "reveal": "How old the unpaid services are and how significant the amount is to the firm."
+    },
+    {
+     "ask": "Which case has both an old date and a large amount?",
+     "reveal": "The fee for services from more than a year before the report date that is significant to the firm."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0003",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.1]",
+   "topic": "Direct financial interest in an attest client",
+   "task": "Apply the independence interpretations of the AICPA Code to situations.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Tanaka & Reyes, CPAs, audit Cobalt Freight, a nonissuer. In November 2025, a staff accountant assigned to the Cobalt engagement team bought 200 shares of Cobalt stock for $3,600, an amount immaterial to her net worth. Which statement about the firm's independence is correct?",
+   "exhibit": "",
+   "options": [
+    "Independence is impaired, because a covered member may not hold any direct financial interest in an attest client.",
+    "Independence is impaired only if the shares are material to the staff accountant's net worth.",
+    "Independence is impaired only if the staff accountant and her immediate family together own more than 5% of Cobalt's equity.",
+    "Independence is not impaired if she sells the shares before the auditor's report is issued."
+   ],
+   "answer": "A",
+   "rule_line": "A covered member with any direct financial interest in an attest client during the engagement period impairs independence.",
+   "why": {
+    "A": "Correct. Any direct financial interest held during the period of the professional engagement impairs independence. No safeguard reduces the self-interest threat, and materiality does not matter.",
+    "B": "Materiality matters for material indirect interests, not for direct interests. Even an immaterial direct interest impairs independence.",
+    "C": "The 5% test is a separate rule for partners, professional employees and their immediate family. It does not limit the direct interest prohibition.",
+    "D": "The interest existed during the period of the professional engagement, so a later sale does not remove the impairment."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "ET",
+     "ref": "1.240.010.01"
+    },
+    {
+     "src": "ET",
+     "ref": "1.240.010.03"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "limit",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What does the code say about a direct financial interest of a team member in an attest client?",
+     "reveal": "It impairs independence, and no safeguard reduces the threat."
+    },
+    {
+     "ask": "Does size relative to her net worth or a later sale change this?",
+     "reveal": "No; holding the shares during the engagement period is enough."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0004",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.1]",
+   "topic": "Close relative in a key position",
+   "task": "Apply the independence interpretations of the AICPA Code to situations.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Nkemelu & Associates, CPAs, audit Ridgeline Logistics, a nonissuer. Aisha, a senior associate on the engagement team, learns that her brother was appointed Ridgeline's controller in 2025. Her brother owns no Ridgeline shares. The firm wants to keep Aisha on the 2025 audit team. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "Independence would not be impaired if the engagement partner personally reviews all of Aisha's work.",
+    "Independence would not be impaired, because a sibling is a close relative rather than an immediate family member.",
+    "Independence would be impaired only if Aisha's brother also holds a material financial interest in Ridgeline.",
+    "Independence would be impaired, because a close relative of a team member holds a key position with the client."
+   ],
+   "answer": "D",
+   "rule_line": "A close relative of a team member in a key position at the client impairs independence; no safeguard reduces the threat.",
+   "why": {
+    "A": "Additional review is a safeguard, but the code states that no safeguard can reduce this threat to an acceptable level.",
+    "B": "Close relatives are covered by their own interpretation. A key position for a close relative of a team member impairs independence even though siblings are not immediate family.",
+    "C": "The key position and the financial interest are separate prongs. Either one is enough; a financial interest is not required.",
+    "D": "Correct. A close relative in a key position (a controller is an example) impairs independence when the relative of a team member holds it during the period covered by the report or the engagement. No safeguard is available."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "ET",
+     "ref": "1.270.100.02"
+    },
+    {
+     "src": "ET",
+     "ref": "0.400.29"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "C": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What kind of relative is a sibling, and what position does the client's controller hold?",
+     "reveal": "A close relative, in a key position because the controller has significant influence over financial reporting."
+    },
+    {
+     "ask": "Can a safeguard fix it?",
+     "reveal": "No, so keeping her on the team impairs independence."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0005",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.1]",
+   "topic": "Bookkeeping services for an attest client",
+   "task": "Apply the independence interpretations of the AICPA Code to situations.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Marlow & Finch, CPAs, audit Summit Dental Group, a nonissuer, and also provide bookkeeping services under a signed nonattest engagement letter. Which activity would impair the firm's independence?",
+   "exhibit": "",
+   "options": [
+    "Choosing account coding for unusual transactions and recording them without management's approval",
+    "Posting transactions that Summit's staff have already coded and approved to the general ledger",
+    "Proposing adjusting entries after confirming that management has reviewed them and understands their effect",
+    "Preparing a bank reconciliation that lists reconciling items for management to evaluate"
+   ],
+   "answer": "A",
+   "rule_line": "Bookkeeping is permitted only when management approves account coding and entries; deciding coding alone impairs independence.",
+   "why": {
+    "A": "Correct. Determining or changing account coding or classification without the client's approval is a management responsibility. It cannot be safeguarded, so independence is impaired.",
+    "B": "Posting client-coded transactions is a permitted bookkeeping activity when the general requirements for nonattest services are met.",
+    "C": "Proposing entries is permitted when management reviews them and understands the effect before the firm posts them.",
+    "D": "Preparing a reconciliation that identifies reconciling items for the client's evaluation is expressly permitted."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "ET",
+     "ref": "1.295.120.02"
+    },
+    {
+     "src": "ET",
+     "ref": "1.295.120.03a"
+    },
+    {
+     "src": "ET",
+     "ref": "1.295.030.01"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Which bookkeeping tasks are management responsibilities?",
+     "reveal": "Determining or changing classifications and account coding without the client's approval, or making decisions."
+    },
+    {
+     "ask": "Which task is done without management approval?",
+     "reveal": "The one where the firm chooses coding for unusual transactions and records them itself."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0006",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.1]",
+   "topic": "Valuation services and significant subjectivity",
+   "task": "Apply the independence interpretations of the AICPA Code to situations.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Whitcomb LLP audits Brantley Holdings, a nonissuer, and is considering four nonattest services for Brantley. Assume that the general requirements for nonattest services are otherwise met. Which service would impair the firm's independence?",
+   "exhibit": "",
+   "options": [
+    "Recommending improvements to Brantley's business risk control processes and helping management implement them",
+    "Valuing contingent consideration and intangible assets acquired in a business combination that is material to Brantley",
+    "Recording transactions to Brantley's general ledger after management has approved the account classifications",
+    "Performing an actuarial valuation of Brantley's pension liability using data and assumptions that management reviewed and approved"
+   ],
+   "answer": "B",
+   "rule_line": "An appraisal or valuation with significant subjectivity and material results for the attest client impairs independence.",
+   "why": {
+    "A": "Recommending and helping implement business risk control improvements is permitted when management makes the decisions.",
+    "B": "Correct. A valuation involving a significant degree of subjectivity whose result is material to the financial statements impairs independence. Business combination valuations are an example.",
+    "C": "Recording transactions whose classification management approved is permitted bookkeeping.",
+    "D": "Actuarial valuations of pension liabilities generally do not involve a significant degree of subjectivity, so threats are at an acceptable level."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "ET",
+     "ref": "1.295.110.02"
+    },
+    {
+     "src": "ET",
+     "ref": "1.295.110.04-.05"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "ET 1.295.110: 연금·퇴직후급여 부채의 계리평가는 통상 주관성이 크지 않아 위협이 허용 수준(공개 요약 확인). 사업결합 평가는 중요·주관성 커서 훼손. 정답 B 유효.",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "C": "trap",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What makes a valuation service impair independence?",
+     "reveal": "A significant degree of subjectivity and a result material to the financial statements."
+    },
+    {
+     "ask": "Which service matches?",
+     "reveal": "The valuation tied to a material business combination, since contingent consideration and intangibles are subjective."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0007",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.1]",
+   "topic": "Confidentiality and third-party or AI tools",
+   "task": "Apply the AICPA Code to confidentiality when using automated or third-party tools, including AI.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Kessler Audit Group, a CPA firm, plans to upload a nonissuer client's customer contracts and general ledger detail to a generative AI tool run by an outside vendor to speed up audit procedures. The client has not been told about the tool. What must the firm do before disclosing the information to the vendor?",
+   "exhibit": "",
+   "options": [
+    "Notify the client after the audit is complete, provided the vendor agrees to delete the uploaded data within 30 days of the report",
+    "Nothing further, because information used only to perform the audit engagement is not treated as confidential client information under the code",
+    "Remove the client's name from the files, since anonymized data ends the firm's confidentiality obligation for that information",
+    "Sign a confidentiality contract with the vendor and obtain reasonable assurance about its safeguards, or get the client's specific consent"
+   ],
+   "answer": "D",
+   "rule_line": "Before sharing confidential client data with a third-party provider, obtain a confidentiality contract with assurance, or client consent.",
+   "why": {
+    "A": "The code requires action before the disclosure, not notice afterward. A deletion promise does not replace a confidentiality agreement or consent.",
+    "B": "The confidentiality rule covers client information used in providing professional services; there is no exception for information used only in the audit.",
+    "C": "Removing a name does not end the obligation; contract terms and safeguards or client consent are what the code requires.",
+    "D": "Correct. Before disclosing confidential client information to a third-party service provider, the member must either contract for confidentiality with reasonable assurance about safeguards or obtain the client's specific consent."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "ET",
+     "ref": "1.700.040.02"
+    },
+    {
+     "src": "ET",
+     "ref": "1.700.001.01"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "C": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Is information used in the audit confidential client information?",
+     "reveal": "Yes, so disclosure to an outside vendor needs a basis."
+    },
+    {
+     "ask": "Which two routes are acceptable before disclosing it?",
+     "reveal": "A confidentiality contract with reasonable assurance of safeguards, or the client's specific consent."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0008",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.1]",
+   "topic": "Conflict of interest, safeguards and consent",
+   "task": "Apply the principles of integrity and objectivity of the AICPA Code to situations.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GN",
+   "regime_name": "general / cross-regime",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Brightwater Advisory, a CPA firm, is asked by two nonattest clients, Alder Retail and Fenwick Stores, to help each prepare a competing bid for the same regional chain. The firm concludes that the resulting threats can be reduced to an acceptable level. What should the firm do before performing both engagements?",
+   "exhibit": "",
+   "options": [
+    "Accept both engagements without disclosure to either client, because no attest service that requires independence is involved",
+    "Perform both engagements with one combined team, so that information about the two bids can be coordinated efficiently",
+    "Apply safeguards such as separate teams and confidentiality policies, and disclose the conflict to both clients for consent",
+    "Disclose the conflict only if the firm concludes that threats remain not at an acceptable level even after applying safeguards"
+   ],
+   "answer": "C",
+   "rule_line": "Identify conflicts, apply safeguards, and disclose the conflict to affected clients for consent even when threats are acceptable.",
+   "why": {
+    "A": "The conflict of interest guidance applies to engagements that do not require independence too. The absence of an attest service does not remove the disclosure expectation.",
+    "B": "A combined team defeats the safeguard. Separate teams with confidentiality policies prevent one client's information from reaching the other.",
+    "C": "Correct. The firm should apply safeguards and also disclose the conflict and obtain consent, even when it concludes the threats are at an acceptable level.",
+    "D": "Disclosure and consent are expected even when the member concludes threats are at an acceptable level, not only when they are not."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "ET",
+     "ref": "1.110.010.10"
+    },
+    {
+     "src": "ET",
+     "ref": "1.110.010.12"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What must a firm do when it concludes threats from a conflict are at an acceptable level?",
+     "reveal": "Apply safeguards and also disclose the conflict and obtain consent."
+    },
+    {
+     "ask": "Which choice does both?",
+     "reveal": "The one with separate teams and confidentiality policies plus disclosure to both clients."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0009",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.2]",
+   "topic": "SEC prohibited nonaudit services",
+   "task": "Apply the SEC and PCAOB independence rules to situations during an audit of an issuer.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Voss & Amari LLP audits Cedar Ridge Energy, an issuer. Cedar Ridge's audit committee is considering engaging the firm for additional services, and the results of each service would be subject to audit procedures. Which service would be consistent with SEC auditor independence rules?",
+   "exhibit": "",
+   "options": [
+    "Preparing the corporate income tax returns after audit committee pre-approval, with management making all decisions",
+    "Designing and implementing the system that generates significant financial statement information for Cedar Ridge",
+    "Determining the fair value of Cedar Ridge's acquired assets, which management will record in the financial statements",
+    "Operating the internal audit function that tests Cedar Ridge's internal accounting controls and financial systems"
+   ],
+   "answer": "A",
+   "rule_line": "SEC rules prohibit bookkeeping, systems design, valuation, internal audit outsourcing and similar services whose results are audited.",
+   "why": {
+    "A": "Correct. Tax compliance services are not on the SEC's list of prohibited nonaudit services and are allowed with audit committee pre-approval and management's decision-making.",
+    "B": "Designing or implementing a system that aggregates source data or generates significant financial information is a prohibited financial information systems service.",
+    "C": "Appraisal and valuation services whose results will be subject to audit procedures are prohibited.",
+    "D": "Outsourced internal audit services relating to internal accounting controls, financial systems or financial statements are prohibited when results are subject to audit procedures."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "17 CFR",
+     "ref": "210.2-01(c)(4)(i)-(v)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Which services do SEC rules prohibit for an issuer audit client?",
+     "reveal": "Ones like system design, valuations that feed the statements, and internal audit outsourcing."
+    },
+    {
+     "ask": "Which service is not on the prohibited list?",
+     "reveal": "Tax compliance, with pre-approval and management decisions."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0010",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.2]",
+   "topic": "Audit partner rotation and time-out",
+   "task": "Apply the SEC and PCAOB independence rules to situations during an audit of an issuer.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Marisol Ortega served as lead audit partner on Redwood Energy, an issuer, for each of the five consecutive years ended December 31, 2021 through 2025. Her firm proposes that for 2026 she become the engagement quality reviewer on the Redwood audit. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "Independence would not be impaired, because the seven-year limit applies to engagement quality reviewers and she has served only five years.",
+    "Independence would be impaired, because she cannot serve as lead or review partner during the five years after her fifth year.",
+    "Independence would not be impaired, because the engagement quality reviewer role is not subject to the partner rotation requirements at all.",
+    "Independence would be impaired only until a one-year period has passed since she last served as lead partner."
+   ],
+   "answer": "B",
+   "rule_line": "Lead and engagement quality review partners rotate after five years and sit out five years; other audit partners seven and two.",
+   "why": {
+    "A": "The seven-year limit applies to other audit partners, such as the lead partner of a subsidiary with 20% or more of the issuer's assets or revenues, not to lead or review partners.",
+    "B": "Correct. A partner who served as lead partner or engagement quality reviewer for five consecutive years must sit out five consecutive years from either role. Moving to the review role does not reset the count.",
+    "C": "The engagement quality reviewer is subject to the same five-year limit and time-out as the lead partner.",
+    "D": "The time-out for a lead partner or engagement quality reviewer is five consecutive years, not one."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "17 CFR",
+     "ref": "210.2-01(c)(6)(i)(A)-(B)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "limit",
+    "C": "concept",
+    "D": "limit"
+   },
+   "guide": [
+    {
+     "ask": "How long can a lead partner serve, and what follows the limit?",
+     "reveal": "Five consecutive years, then a five-year cooling-off."
+    },
+    {
+     "ask": "Does moving to the review role reset the count?",
+     "reveal": "No, the cooling-off applies to both roles, so she cannot serve."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0011",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.2]",
+   "topic": "Audit committee pre-approval and the insignificant-services waiver",
+   "task": "Apply the SEC and PCAOB independence rules to situations during an audit of an issuer.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "During 2025, Northgate Systems, an issuer, paid its audit firm $2,000,000 in total fees, including $70,000 for tax consulting that management engaged the firm to perform without audit committee approval. Neither party recognized the services as nonaudit services when the engagement began. The firm brought them to the audit committee's attention in January 2026, before the 2025 audit was complete, and the committee approved them promptly. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "Independence is impaired, because every nonaudit service must be approved by the audit committee before the engagement begins.",
+    "Independence is not impaired, because tax services do not require audit committee pre-approval.",
+    "Independence is impaired, because the nonaudit fees exceeded 3% of total fees paid to the firm for the year.",
+    "Independence is not impaired, because the fees are under 5% of total fees paid and the waiver's other conditions were met."
+   ],
+   "answer": "D",
+   "rule_line": "Insignificant nonaudit services (5% or less of fees, unrecognized at engagement) may be approved before audit completion.",
+   "why": {
+    "A": "Pre-approval is the general rule, but the waiver for insignificant services not recognized as nonaudit at the time of engagement lets approval come later, before audit completion.",
+    "B": "Tax services also require audit committee pre-approval; the waiver, not an exemption for tax services, resolves this situation.",
+    "C": "The waiver threshold is 5% of total fees paid to the accountant, not 3%. The fees are 3.5%, so they qualify.",
+    "D": "Correct. The waiver applies when nonaudit services are no more than 5% of fees paid, were not recognized as nonaudit services at engagement, and are promptly approved by the audit committee before the audit is completed. Here $70,000 / $2,000,000 = 3.5%."
+   },
+   "steps": [
+    "Nonaudit fees 70,000 / total fees 2,000,000 = 3.5%",
+    "3.5% <= 5%, so the fee test is met",
+    "Other conditions met: unrecognized at engagement, prompt approval before audit completion"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "70000/2000000*100",
+      "value": 3.5
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "17 CFR",
+     "ref": "210.2-01(c)(7)(i)(C)"
+    },
+    {
+     "src": "PCAOB",
+     "ref": "Rule 3524"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "limit"
+   },
+   "guide": [
+    {
+     "ask": "What conditions must be met for the nonaudit services waiver?",
+     "reveal": "Under 5% of fees paid, not recognized as nonaudit at engagement, and promptly approved before the audit is completed."
+    },
+    {
+     "ask": "Test the percentage.",
+     "reveal": "$70,000 / $2,000,000 = 3.5%, under 5%, and the other conditions were met."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0012",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.2]",
+   "topic": "Annual independence communication with the audit committee",
+   "task": "Understand the ethical and independence requirements of the SEC and the PCAOB.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Hartwell & Lin LLP audits Meridian Devices, an issuer. Which action must the firm take at least annually to satisfy PCAOB requirements on independence communications with the audit committee?",
+   "exhibit": "",
+   "options": [
+    "Communicate relationships that bear on independence only in years in which a new relationship with the client has arisen",
+    "Obtain a written representation from management that no relationship exists that would impair the firm's independence",
+    "Describe relationships in writing, discuss their potential effects, and affirm the firm's independence in writing",
+    "Confirm the firm's independence orally to the audit committee at the exit conference, with no written communication required"
+   ],
+   "answer": "C",
+   "rule_line": "Annually describe relationships bearing on independence in writing, discuss them, and affirm independence in writing.",
+   "why": {
+    "A": "The communication is required at least annually for each audit client, not only when something changes.",
+    "B": "The communication runs from the auditor to the audit committee. A management representation does not satisfy it.",
+    "C": "Correct. The firm must describe relationships in writing, discuss potential effects, affirm independence in writing, and document the discussion.",
+    "D": "The requirement calls for written description and written affirmation, not an oral confirmation."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "PCAOB",
+     "ref": "Rule 3526(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "limit",
+    "B": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What must the firm communicate to the audit committee about independence?",
+     "reveal": "Relationships bearing on independence, discussed and affirmed at least annually."
+    },
+    {
+     "ask": "In what form?",
+     "reveal": "In writing, with the discussion documented."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0013",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.2]",
+   "topic": "Partner compensation tied to selling nonaudit services",
+   "task": "Understand the ethical and independence requirements of the SEC and the PCAOB.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Blackwell Partners LLP audits Orion Pharma, an issuer. The firm's compensation plan gives an audit partner on the Orion engagement a bonus equal to 10% of the fees for any tax advisory work that partner sells to Orion. What is the effect on independence?",
+   "exhibit": "",
+   "options": [
+    "Independence is impaired only if the bonus exceeds 5% of the partner's total compensation.",
+    "Independence is impaired, because the partner is paid for procuring nonaudit services from the audit client.",
+    "Independence is not impaired, because tax advisory services are among the nonaudit services permitted for issuer audit clients.",
+    "Independence is not impaired if the audit committee pre-approves the tax advisory work."
+   ],
+   "answer": "B",
+   "rule_line": "An audit partner paid for selling nonaudit services to the audit client is not independent of that client.",
+   "why": {
+    "A": "The rule has no percentage threshold for the bonus. Compensation based on procuring nonaudit engagements is the problem.",
+    "B": "Correct. An audit partner who is compensated for procuring products or services other than audit, review or attest services from the audit client is not independent.",
+    "C": "Whether the service is permitted is a separate question. The compensation arrangement itself impairs independence.",
+    "D": "Audit committee pre-approval addresses the service, not the compensation arrangement, so it does not cure the impairment."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "17 CFR",
+     "ref": "210.2-01(c)(8)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "limit",
+    "C": "trap",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Which compensation arrangement affects an audit partner's independence?",
+     "reveal": "Pay tied to selling other services to the audit client."
+    },
+    {
+     "ask": "Does the size of the bonus or pre-approval matter?",
+     "reveal": "No, the partner is not independent whenever compensated for procuring nonaudit services from the audit client."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0014",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.3]",
+   "topic": "GAGAS independence and management responsibilities",
+   "task": "Understand the ethical and independence requirements of GAO Government Auditing Standards.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GV",
+   "regime_name": "government (GAGAS / Single Audit)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Pruitt & Vale, CPAs, are engaged to perform a financial audit of Marlin County, a local government, in accordance with Government Auditing Standards. Marlin County asks the firm to provide additional nonaudit services. Which service would the firm be unable to perform without impairing its independence?",
+   "exhibit": "",
+   "options": [
+    "Approving and authorizing the county's payroll and vendor transactions on management's behalf",
+    "Proposing adjusting entries that county management reviews, understands and approves",
+    "Answering county staff questions about how a new accounting standard applies to the county",
+    "Advising county management on options for improving its internal control, leaving the decisions to management"
+   ],
+   "answer": "A",
+   "rule_line": "GAGAS auditors may not assume management responsibilities such as authorizing transactions or making decisions for the entity.",
+   "why": {
+    "A": "Correct. Making decisions and authorizing transactions on behalf of the audited entity is a management responsibility that auditors performing GAGAS audits may not assume.",
+    "B": "Proposing entries that management reviews and approves is advice, not a management responsibility, when management makes the decisions.",
+    "C": "Routine advice and answering questions do not require the firm to assume management responsibilities.",
+    "D": "Advice about internal control improvements is permitted when management decides whether to implement the recommendations."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "GAO",
+     "ref": "Government Auditing Standards (2024), ch. 3 (topic level; text not opened)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": false,
+    "confidence": "medium",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "GAGAS 2024 원문(gao.gov 403)은 열지 못함. 공개 요약(경영진 책임 수행 시 독립성 훼손)과 AICPA ET 1.295.030 원리와 일치. 정답 A 유효, 원문 확인은 보류.",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "trap",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What does GAGAS say about management responsibilities?",
+     "reveal": "Auditors may not perform them, such as making decisions or authorizing transactions."
+    },
+    {
+     "ask": "Which service is a management responsibility?",
+     "reveal": "Approving and authorizing payroll and vendor transactions for the county."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-A-0015",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "group_name": "Ethics, independence and professional responsibilities",
+   "blueprint": "AUD.I.A Ethics, independence and professional responsibilities [I.A.3]",
+   "topic": "DOL independence for employee benefit plan audits",
+   "task": "Understand and apply the independence rules of the Department of Labor to employee benefit plan audits.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GV",
+   "regime_name": "government (GAGAS / Single Audit)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Sutter & Nguyen, CPAs, are engaged to audit the financial statements of the Redfield Manufacturing 401(k) Plan, a plan subject to ERISA. A partner on the engagement owns shares of Redfield Manufacturing, the plan sponsor. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "The firm is independent for DOL purposes as long as the partner's shares are not more than 5% of the sponsor's outstanding stock.",
+    "The firm is independent for DOL purposes, because the partner's shares are in the plan sponsor rather than in the plan itself.",
+    "The firm is independent for DOL purposes if the plan's trustees approve the engagement in writing.",
+    "The firm would not be independent of the plan under DOL rules because of the partner's financial interest in the sponsor."
+   ],
+   "answer": "D",
+   "rule_line": "For plan audits, DOL independence guidance treats a financial interest in the plan or sponsor as impairing independence.",
+   "why": {
+    "A": "The DOL guidance does not set a 5% safe harbor for an interest in the plan sponsor.",
+    "B": "The DOL guidance covers the plan sponsor as well as the plan, so an interest in the sponsor counts.",
+    "C": "Trustee approval does not cure a financial interest that impairs independence.",
+    "D": "Correct. The DOL independence guidance treats a direct or material indirect financial interest in the plan or plan sponsor as impairing independence for the plan audit."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "DOL",
+     "ref": "29 CFR 2509.2022-01 (accountant not independent with direct or material indirect financial interest in the plan or plan sponsor)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "medium",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "DOL 원문 확인: 29 CFR 2509.2022-01(law.cornell.edu)이 '회계사·소속 법인·구성원이 plan 또는 plan sponsor 에 직접 재무이해관계 또는 중요한 간접 재무이해관계'를 가지면 비독립. 정답 D 유효. 현행 조문은 2509.2022-01(구 2509.75-9 를 대체한 개정 IB, 전문 대조는 2509.2022-01 만).",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "C": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Whose independence does the DOL guidance cover for an ERISA plan audit?",
+     "reveal": "Interests in the plan or the plan sponsor."
+    },
+    {
+     "ask": "Does the shares being in the sponsor rather than the plan matter?",
+     "reveal": "No; a direct or material indirect interest in the sponsor also impairs independence."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-B-0001",
+   "type": "mcq",
+   "area": "I",
+   "group": "B",
+   "group_name": "Professional skepticism and professional judgment",
+   "blueprint": "AUD.I.B Professional skepticism and professional judgment [I.B]",
+   "topic": "Professional skepticism when evidence is questionable",
+   "task": "Understand the concepts of professional skepticism and professional judgment.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "During the 2025 audit of Tidewater Marine, a nonissuer, an auditor notices that a customer confirmation reply returned by fax carries a transmission header showing the fax number of Tidewater's own sales office. Which response best reflects professional skepticism?",
+   "exhibit": "",
+   "options": [
+    "Accept the reply as reliable, because the audit team has found management honest in prior years",
+    "Assume management is dishonest and expand procedures on every account in the financial statements",
+    "Investigate further and modify or add procedures, because the information questions the reliability of the reply",
+    "Ask the sales manager whether the reply is genuine and treat the manager's explanation as sufficient evidence"
+   ],
+   "answer": "C",
+   "rule_line": "Skepticism means investigating doubts about reliability, neither assuming honesty nor assuming dishonesty.",
+   "why": {
+    "A": "Belief that management is honest does not relieve the auditor of maintaining professional skepticism or allow acceptance of less than persuasive evidence.",
+    "B": "The auditor neither assumes management is dishonest nor assumes unquestioned honesty. Expanding every account is not a proportionate response.",
+    "C": "Correct. Professional skepticism includes being alert to information that questions the reliability of documents and responses. In cases of doubt the auditor must investigate further and modify procedures.",
+    "D": "An explanation from the person whose office is involved is not independent corroboration and cannot resolve doubt about the reply's reliability."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "200.A25-.A27"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What does professional skepticism call for when information questions the reliability of a response?",
+     "reveal": "Staying alert to it and investigating rather than accepting it or jumping to accusations."
+    },
+    {
+     "ask": "Which reaction fits a fax that carries the client's own header?",
+     "reveal": "Investigate further and modify or add procedures, not rely on management's explanation alone."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-B-0002",
+   "type": "mcq",
+   "area": "I",
+   "group": "B",
+   "group_name": "Professional skepticism and professional judgment",
+   "blueprint": "AUD.I.B Professional skepticism and professional judgment [I.B]",
+   "topic": "Unconscious auditor biases",
+   "task": "Understand unconscious auditor biases and impediments to acting with professional skepticism.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GN",
+   "regime_name": "general / cross-regime",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "An audit senior evaluating management's allowance for credit losses starts from the prior-year balance and adjusts it only slightly, even though the company's customer base changed significantly this year and new information suggests a much larger change. Which unconscious bias is most clearly illustrated?",
+   "exhibit": "",
+   "options": [
+    "Anchoring bias, relying on an initial value as a reference against which later information is inadequately assessed",
+    "Availability bias, giving more weight to events or experiences that come readily to mind than to those that do not",
+    "Groupthink, making decisions as a group in a way that discourages creativity or individual responsibility",
+    "Automation bias, favoring output generated by automated systems even when contradictory information questions its reliability"
+   ],
+   "answer": "A",
+   "rule_line": "Anchoring bias: an initial value is inadequately adjusted for later information.",
+   "why": {
+    "A": "Correct. The prior-year balance served as an anchor, and later information was not weighed adequately against it.",
+    "B": "Availability bias concerns weighting readily recalled events; the facts describe reliance on a starting number, not vivid recall.",
+    "C": "Groupthink involves team decision-making that suppresses dissent, which is not described.",
+    "D": "Automation bias involves trusting system output, and no system output is mentioned."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "220.A37"
+    },
+    {
+     "src": "AU-C",
+     "ref": "200.A28"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What is the auditor doing with the prior-year balance?",
+     "reveal": "Starting from it and barely moving despite significant new information."
+    },
+    {
+     "ask": "Which bias is defined by relying on an initial value as a reference?",
+     "reveal": "Anchoring; the other biases involve memorable events, group settings or automation."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-C-0001",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "group_name": "Nature and scope",
+   "blueprint": "AUD.I.C Nature and scope [I.C.1]",
+   "topic": "Objectives of an audit of a nonissuer",
+   "task": "Identify the nature, scope and objectives of the different types of audit engagements for issuers and nonissuers.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Which statement correctly describes the overall objectives of the auditor in an audit of a nonissuer's financial statements conducted under AICPA standards?",
+   "exhibit": "",
+   "options": [
+    "Express an opinion on the operating effectiveness of the entity's internal control as part of every audit of financial statements",
+    "Obtain reasonable assurance that the statements as a whole are free from material misstatement, and report on them accordingly",
+    "Prepare the financial statements and design the internal control needed to keep them free from misstatement",
+    "Obtain absolute assurance that the financial statements are free from all misstatement, whether due to fraud or error"
+   ],
+   "answer": "B",
+   "rule_line": "The auditor obtains reasonable assurance about material misstatement and reports on the statements; management prepares them.",
+   "why": {
+    "A": "An opinion on internal control effectiveness is not part of an ordinary audit of a nonissuer; internal control is considered to design procedures.",
+    "B": "Correct. The overall objectives are to obtain reasonable assurance about whether the statements as a whole are free from material misstatement, and to report in accordance with the auditor's findings.",
+    "C": "Preparing the statements and designing internal control are management's responsibilities, not the auditor's.",
+    "D": "Reasonable assurance is a high but not absolute level of assurance, so absolute assurance is not an objective."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "200.12"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What level of assurance does an auditor provide?",
+     "reveal": "Reasonable, not absolute."
+    },
+    {
+     "ask": "Which statement also covers reporting?",
+     "reveal": "The one saying statements as a whole are free from material misstatement and the auditor reports accordingly; internal control opinions and preparing statements are not audit objectives."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-C-0002",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "group_name": "Nature and scope",
+   "blueprint": "AUD.I.C Nature and scope [I.C.2]",
+   "topic": "Single audit threshold",
+   "task": "Identify the nature, scope and objectives of engagements performed under GAO Government Auditing Standards, including single audits.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GV",
+   "regime_name": "government (GAGAS / Single Audit)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Each entity below has a fiscal year beginning January 1, 2025. Which entity must have a single audit conducted for that fiscal year?",
+   "exhibit": "",
+   "options": [
+    "Dunmore Arts Council, a nonprofit organization, expended $800,000 of federal awards, which exceeds the former $750,000 threshold",
+    "Cardinal Transit Authority, a local government, expended $600,000 of federal awards and earned $500,000 as a contractor",
+    "Bellamy Health Center, a nonprofit organization, expended $940,000 of federal awards but received $1,200,000 in federal cash payments",
+    "Ashwood Youth Services, a nonprofit organization, expended $1,050,000 of federal awards across three programs"
+   ],
+   "answer": "D",
+   "rule_line": "A single audit is required when federal awards expended in the fiscal year total $1,000,000 or more.",
+   "why": {
+    "A": "The $750,000 threshold applied to earlier years. For this fiscal year the threshold is $1,000,000.",
+    "B": "Payments received as a contractor for goods or services are not federal awards subject to the audit requirement, so only $600,000 counts.",
+    "C": "The test is federal awards expended, not cash received. $940,000 expended is below the threshold.",
+    "D": "Correct. The threshold is $1,000,000 or more of federal awards expended in the fiscal year; $1,050,000 meets it."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "2 CFR",
+     "ref": "200.501(a)-(b), (g)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "limit",
+    "B": "trap",
+    "C": "limit"
+   },
+   "guide": [
+    {
+     "ask": "What is the single audit threshold for federal awards expended?",
+     "reveal": "$1,000,000 or more in the fiscal year."
+    },
+    {
+     "ask": "Which entity expended at least that much, counting only awards?",
+     "reveal": "The one with $1,050,000 across three programs; contractor payments and cash received do not count as expended awards."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-C-0003",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "group_name": "Nature and scope",
+   "blueprint": "AUD.I.C Nature and scope [I.C.3]",
+   "topic": "Types of attestation engagements",
+   "task": "Identify the nature, scope and objectives of attestation engagements.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "AT",
+   "regime_name": "attestation (SSAE)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Kilburn Foods asks its CPA to perform procedures specified by a distributor on trade promotion payments and to report only the findings, without an opinion or conclusion. Which type of engagement is this?",
+   "exhibit": "",
+   "options": [
+    "A review engagement",
+    "An agreed-upon procedures engagement",
+    "A direct examination engagement",
+    "An assertion-based examination engagement"
+   ],
+   "answer": "B",
+   "rule_line": "Agreed-upon procedures report findings only; examinations give an opinion and reviews give a conclusion.",
+   "why": {
+    "A": "A review provides limited assurance and results in a conclusion about whether modifications are needed.",
+    "B": "Correct. In an agreed-upon procedures engagement the practitioner performs specific procedures and reports findings without an opinion or conclusion.",
+    "C": "A direct examination also provides reasonable assurance and an opinion; the practitioner measures or evaluates the subject matter directly.",
+    "D": "An examination provides reasonable assurance and results in an opinion."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AT-C",
+     "ref": "Glossary (types of attestation engagements)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Does the practitioner give an opinion or conclusion here?",
+     "reveal": "No, only findings from specified procedures."
+    },
+    {
+     "ask": "Which engagement type is that?",
+     "reveal": "An agreed-upon procedures engagement."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-D-0001",
+   "type": "mcq",
+   "area": "I",
+   "group": "D",
+   "group_name": "Terms of engagement",
+   "blueprint": "AUD.I.D Terms of engagement [I.D.1]",
+   "topic": "Preconditions for an audit",
+   "task": "Identify the preconditions needed for accepting or continuing an engagement.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Vega & Company, CPAs, are asked to audit Harborview Marine, a nonissuer, under AICPA standards. Harborview's owner will give full access to records but refuses to acknowledge responsibility for designing and maintaining internal control, saying the auditors should do that as part of the audit. What should the firm do?",
+   "exhibit": "",
+   "options": [
+    "Not accept the engagement unless law requires it, because management's acknowledgment of responsibilities is a precondition",
+    "Accept the engagement but plan to disclaim an opinion because of the owner's refusal to acknowledge responsibility",
+    "Accept the engagement because the owner has agreed to give the auditors full access to all of the company's records",
+    "Accept the engagement and state in the engagement letter that responsibility for internal control rests with the auditor"
+   ],
+   "answer": "A",
+   "rule_line": "Without management's acknowledgment of its responsibilities, the auditor should not accept the audit engagement.",
+   "why": {
+    "A": "Correct. Management's acknowledgment of its responsibility for the financial statements, internal control and access to information is a precondition. Without it the auditor should not accept the engagement unless law requires it.",
+    "B": "The disclaimer route relates to scope limitations. Without the agreement on responsibilities the audit engagement should not be accepted.",
+    "C": "Access is one of the three acknowledgments. Agreeing to access alone does not satisfy the precondition.",
+    "D": "Internal control is management's responsibility. Shifting it to the auditor would also impair independence."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "210.06b"
+    },
+    {
+     "src": "AU-C",
+     "ref": "210.08b"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What is a precondition to accepting an audit?",
+     "reveal": "Management's acknowledgment of its responsibilities for the statements, internal control and access."
+    },
+    {
+     "ask": "What follows from the refusal?",
+     "reveal": "The firm should not accept unless law requires it; access to records does not replace the acknowledgment."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-D-0002",
+   "type": "mcq",
+   "area": "I",
+   "group": "D",
+   "group_name": "Terms of engagement",
+   "blueprint": "AUD.I.D Terms of engagement [I.D.2]",
+   "topic": "Communication with a predecessor auditor",
+   "task": "Identify the factors affecting acceptance or continuance, including communication with predecessor auditors.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Carrow & Lyle, CPAs, are considering the initial audit of Sable Textiles, a nonissuer, for 2026. Sable's management refuses to authorize the predecessor auditor to respond to the firm's inquiries. What should Carrow & Lyle do?",
+   "exhibit": "",
+   "options": [
+    "Accept the engagement, because communication with a predecessor auditor is optional when management objects to it",
+    "Decline the engagement immediately without asking management why it refused",
+    "Inquire about management's reasons and consider the implications of the refusal in deciding whether to accept",
+    "Contact the predecessor auditor without authorization, because professionals must cooperate with one another"
+   ],
+   "answer": "C",
+   "rule_line": "If management will not authorize predecessor contact, ask why and weigh the implications before accepting.",
+   "why": {
+    "A": "The successor must request authorization. A refusal is a red flag to weigh, not permission to skip the step.",
+    "B": "The required response is to inquire about the reasons and consider the implications, not to decline automatically.",
+    "C": "Correct. When management refuses to authorize the predecessor's response, the successor inquires about the reasons and considers the implications of the refusal in deciding whether to accept.",
+    "D": "The predecessor may respond only when management authorizes it. The cooperation duty does not override client confidentiality."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "210.11"
+    },
+    {
+     "src": "AU-C",
+     "ref": "210.14"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "If management refuses to let the predecessor respond, may the successor contact anyway?",
+     "reveal": "No, it needs authorization."
+    },
+    {
+     "ask": "What should the successor do?",
+     "reveal": "Ask why management refused and consider the implications in deciding whether to accept."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-D-0003",
+   "type": "mcq",
+   "area": "I",
+   "group": "D",
+   "group_name": "Terms of engagement",
+   "blueprint": "AUD.I.D Terms of engagement [I.D.2]",
+   "topic": "Change in the terms of an audit engagement",
+   "task": "Recall when it is acceptable to agree to management's request for a change in the type of engagement.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Partway through the 2025 audit of Yardley Tools, a nonissuer, management asks the firm to change the engagement to a review. The auditors had asked for more evidence supporting inventory, and management does not want to provide it. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "The change is acceptable if Yardley agrees in writing to pay for the audit work completed to date.",
+    "The change is reasonable, because management may switch to any lower level of service at any time before the report is issued.",
+    "The change is acceptable if the review report describes the audit procedures already performed on inventory.",
+    "The change is not justified, because the request appears to relate to evidence management would rather not provide"
+   ],
+   "answer": "D",
+   "rule_line": "The auditor should not agree to a lower-assurance service without reasonable justification for the change.",
+   "why": {
+    "A": "Payment for work to date does not provide justification for the change.",
+    "B": "The auditor must determine whether reasonable justification exists. Management does not have an unrestricted right to reduce the level of service.",
+    "C": "When a change is justified, the report on the new service does not refer to the original audit or its procedures, apart from agreed-upon procedures.",
+    "D": "Correct. A change is not reasonable if it appears to relate to information that is incorrect, incomplete or otherwise unsatisfactory. The auditor should not agree without reasonable justification."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "210.17-.18"
+    },
+    {
+     "src": "AU-C",
+     "ref": "210.A40-.A42"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "C": "trap"
+   },
+   "guide": [
+    {
+     "ask": "When is a request to reduce audit to review reasonable?",
+     "reveal": "When there is reasonable justification, not one tied to information that is incorrect, incomplete or unsatisfactory."
+    },
+    {
+     "ask": "What does this request relate to?",
+     "reveal": "Evidence management would rather not provide, so the change is not justified."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-E-0001",
+   "type": "mcq",
+   "area": "I",
+   "group": "E",
+   "group_name": "Requirements for engagement documentation",
+   "blueprint": "AUD.I.E Requirements for engagement documentation [I.E]",
+   "topic": "Assembling the audit file for a nonissuer",
+   "task": "Identify the requirements for the assembly and retention of documentation.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Ashford & Rowe, CPAs, released their auditor's report on a nonissuer's financial statements on March 12, 2026. By what date must the firm complete the administrative process of assembling the final audit file?",
+   "exhibit": "",
+   "options": [
+    "March 26, 2026",
+    "April 26, 2026",
+    "May 11, 2026",
+    "June 10, 2026"
+   ],
+   "answer": "C",
+   "rule_line": "AICPA standards require the final audit file to be assembled within 60 days after the report release date.",
+   "why": {
+    "A": "This counts 14 days, the PCAOB documentation completion period for issuers, not the AICPA period.",
+    "B": "This counts 45 days, which is not the period in either the AICPA or the PCAOB standard.",
+    "C": "Correct. Assembly must be completed no later than 60 days after the report release date: 19 days remain in March, plus 30 in April, plus 11 in May gives May 11.",
+    "D": "This counts 90 days, which is longer than the 60-day limit."
+   },
+   "steps": [
+    "Days left in March after March 12: 31 - 12 = 19",
+    "60 - 19 = 41 days into April and May; April has 30, so 41 - 30 = 11",
+    "Deadline May 11, 2026"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "60-(31-12)-30",
+      "value": 11
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "230.16"
+    },
+    {
+     "src": "PCAOB",
+     "ref": "AS 1215.15"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "D": "limit"
+   },
+   "guide": [
+    {
+     "ask": "How many days after the report release date does assembly of the file have to be done?",
+     "reveal": "60 days."
+    },
+    {
+     "ask": "Count from March 12, 2026.",
+     "reveal": "19 days remain in March, 30 in April, so 11 more in May: May 11, 2026."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-E-0002",
+   "type": "mcq",
+   "area": "I",
+   "group": "E",
+   "group_name": "Requirements for engagement documentation",
+   "blueprint": "AUD.I.E Requirements for engagement documentation [I.E]",
+   "topic": "Retention of audit documentation for an issuer",
+   "task": "Identify the requirements for the assembly and retention of documentation.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Lakeshore & Tran LLP granted permission to use its report on the December 31, 2025 financial statements of Vantage Bio, an issuer, on February 27, 2026. Absent a longer legal requirement, what is the earliest date the firm may discard the audit documentation for that engagement?",
+   "exhibit": "",
+   "options": [
+    "February 27, 2029",
+    "February 27, 2031",
+    "February 27, 2033",
+    "February 27, 2036"
+   ],
+   "answer": "C",
+   "rule_line": "PCAOB standards require issuer audit documentation to be retained for seven years from report release.",
+   "why": {
+    "A": "This is a three-year period, the minimum retention period for a single audit, not for an issuer audit.",
+    "B": "This is the five-year minimum in AICPA standards for nonissuers, not the PCAOB seven-year period.",
+    "C": "Correct. PCAOB standards require retention for seven years from the date the auditor grants permission to use the report.",
+    "D": "This is a ten-year period, which is longer than any of these standards requires."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "PCAOB",
+     "ref": "AS 1215.14"
+    },
+    {
+     "src": "AU-C",
+     "ref": "230.17"
+    },
+    {
+     "src": "2 CFR",
+     "ref": "200.517(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "D": "limit"
+   },
+   "guide": [
+    {
+     "ask": "How long must an issuer audit's documentation be retained under PCAOB standards, and from what date?",
+     "reveal": "Seven years from the date permission to use the report is granted."
+    },
+    {
+     "ask": "Compute.",
+     "reveal": "February 27, 2026 plus 7 years is February 27, 2033."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-F-0001",
+   "type": "mcq",
+   "area": "I",
+   "group": "F",
+   "group_name": "Communication with management and those charged with governance",
+   "blueprint": "AUD.I.F Communication with management and those charged with governance [I.F.1]",
+   "topic": "Communicating planned scope and timing to those charged with governance",
+   "task": "Identify the matters related to the planned scope and timing that should be communicated to those charged with governance.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "In planning the 2025 audit of Corbin Freight, a nonissuer, the auditor prepares to communicate with those charged with governance about the planned scope and timing of the audit. Which communication is required?",
+   "exhibit": "",
+   "options": [
+    "The auditor's preliminary opinion on whether the financial statements are fairly presented",
+    "The specific audit procedures, sample sizes and items the auditor will select for testing",
+    "An overview of the planned scope and timing, including significant risks identified",
+    "The auditor's fee arrangement and the names of every engagement team member"
+   ],
+   "answer": "C",
+   "rule_line": "Communicate an overview of planned scope and timing, including significant risks, without operational detail.",
+   "why": {
+    "A": "The opinion is formed at the end of the audit. A preliminary opinion is not part of the planning communication.",
+    "B": "The overview should not include details that would compromise the effectiveness of the audit procedures.",
+    "C": "Correct. The auditor must communicate an overview of the planned scope and timing, including significant risks identified.",
+    "D": "Fees and staffing are engagement terms, not the planned scope communication."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "260.11"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What does the auditor communicate about planning to those charged with governance?",
+     "reveal": "An overview of the planned scope and timing, including significant risks."
+    },
+    {
+     "ask": "What is not communicated?",
+     "reveal": "Preliminary opinions, detailed sample sizes and fee arrangements."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-F-0002",
+   "type": "mcq",
+   "area": "I",
+   "group": "F",
+   "group_name": "Communication with management and those charged with governance",
+   "blueprint": "AUD.I.F Communication with management and those charged with governance [I.F.2]",
+   "topic": "Communicating remediated material weaknesses",
+   "task": "Identify the matters related to deficiencies and material weaknesses that should be communicated and the timing.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "During the 2025 audit of Blue Harbor Bakeries, a nonissuer, the auditor identifies a material weakness in controls over revenue cutoff. Management remediates it in November 2025, before year-end, and the auditor concludes that the new control works. The auditor's report is released on March 6, 2026. What is the auditor required to do?",
+   "exhibit": "",
+   "options": [
+    "Communicate the material weakness in writing no later than March 6, 2026, the report release date",
+    "Communicate it in writing to those charged with governance by May 5, 2026, even though it was remediated",
+    "Communicate the material weakness orally to those charged with governance, because it no longer exists after remediation",
+    "Make no communication, because a deficiency remediated before year-end need not be reported"
+   ],
+   "answer": "B",
+   "rule_line": "Communicate identified significant deficiencies and material weaknesses in writing, even if remediated, within 60 days after report release.",
+   "why": {
+    "A": "The deadline is 60 days after the report release date, not the release date itself.",
+    "B": "Correct. Significant deficiencies and material weaknesses identified during the audit, including those remediated, must be communicated in writing to those charged with governance within 60 days after the report release date. March 6 plus 60 days is May 5.",
+    "C": "The requirement is for written communication of significant deficiencies and material weaknesses; oral communication is for other deficiencies.",
+    "D": "Remediated significant deficiencies and material weaknesses must still be communicated in writing."
+   },
+   "steps": [
+    "Days left in March after March 6: 31 - 6 = 25",
+    "60 - 25 = 35; April has 30, so 35 - 30 = 5",
+    "Deadline May 5, 2026"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "60-(31-6)-30",
+      "value": 5
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "265.11"
+    },
+    {
+     "src": "AU-C",
+     "ref": "265.13"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "AU-C 265.11(remediated 포함 서면 소통)·.13(보고서 공표일 후 60일) 원문(AICPA AU-C 265 PDF) 직접 확인. 정답 B 유효.",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "limit",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Do remediated material weaknesses still get reported?",
+     "reveal": "Yes, deficiencies identified during the audit are reported even if remediated."
+    },
+    {
+     "ask": "What are the form and deadline?",
+     "reveal": "In writing within 60 days after the report release date; March 6 plus 60 days is May 5, 2026."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-F-0003",
+   "type": "mcq",
+   "area": "I",
+   "group": "F",
+   "group_name": "Communication with management and those charged with governance",
+   "blueprint": "AUD.I.F Communication with management and those charged with governance [I.D.2]",
+   "topic": "Engagement letter for an issuer audit committee",
+   "task": "Perform procedures to confirm a common understanding of the terms of an engagement with management and those charged with governance.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Fairmont Instruments is an issuer. Its auditor, Rao & Sterling LLP, is documenting the terms of the 2026 audit. Which is required by PCAOB standards?",
+   "exhibit": "",
+   "options": [
+    "The auditor records the audit terms in an engagement letter and provides it to the audit committee annually",
+    "The auditor gives the audit committee the engagement letter only after the audit report is issued",
+    "Terms are communicated in writing only for an initial engagement; in later years management's oral confirmation is enough",
+    "The engagement letter may be signed only by the audit committee chair, and management may not execute it"
+   ],
+   "answer": "A",
+   "rule_line": "Issuer auditors record audit terms in an engagement letter and provide it to the audit committee annually.",
+   "why": {
+    "A": "Correct. The auditor should record the understanding in an engagement letter and provide it to the audit committee annually, with the audit committee acknowledging the terms if others execute it.",
+    "B": "The understanding is established with the audit committee before the audit, not after the report.",
+    "C": "The requirement is annual, not just for initial engagements.",
+    "D": "The letter is executed by the appropriate party; if that is not the audit committee, the auditor determines the committee acknowledged the terms."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "PCAOB",
+     "ref": "AS 1301.05-.06"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "trap",
+    "C": "limit",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What do PCAOB standards require for the terms of an issuer audit?",
+     "reveal": "An engagement letter recorded by the auditor."
+    },
+    {
+     "ask": "To whom and how often?",
+     "reveal": "Provided to the audit committee annually."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-G-0001",
+   "type": "mcq",
+   "area": "I",
+   "group": "G",
+   "group_name": "Audit and assurance quality",
+   "blueprint": "AUD.I.G Audit and assurance quality [I.G]",
+   "topic": "Engagement partner responsibility for quality",
+   "task": "Explain procedures and responsibilities for managing engagement quality.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "On the audit of Sedgewick Plastics, a nonissuer, the engagement partner assigns a manager to review working papers and monitor the team's compliance with independence requirements. Which statement describes the engagement partner's responsibility?",
+   "exhibit": "",
+   "options": [
+    "The engagement partner needs only to review the financial statements and the report at the end of the audit",
+    "The firm's quality management leader, not the engagement partner, is responsible for quality at the engagement level",
+    "Responsibility for quality on the assigned tasks transfers to the manager once the partner delegates them",
+    "The engagement partner remains responsible for engagement quality and must stay sufficiently involved"
+   ],
+   "answer": "D",
+   "rule_line": "The engagement partner keeps overall responsibility for engagement quality even when assigning tasks to others.",
+   "why": {
+    "A": "The partner must be involved throughout the engagement so that significant judgments and conclusions can be judged appropriate.",
+    "B": "The firm has responsibilities under its system of quality management, but the engagement partner is responsible at the engagement level.",
+    "C": "Assigning tasks does not transfer overall responsibility.",
+    "D": "Correct. The engagement partner takes overall responsibility for managing and achieving quality and continues to do so through direction, supervision and review when tasks are assigned."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "220.13"
+    },
+    {
+     "src": "AU-C",
+     "ref": "220.15"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "C": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Who is responsible for quality at the engagement level?",
+     "reveal": "The engagement partner."
+    },
+    {
+     "ask": "Does delegating tasks to the manager transfer that responsibility?",
+     "reveal": "No; the partner must stay sufficiently involved through direction, supervision and review."
+    }
+   ]
+  },
+  {
+   "id": "AUD-I-G-0002",
+   "type": "mcq",
+   "area": "I",
+   "group": "G",
+   "group_name": "Audit and assurance quality",
+   "blueprint": "AUD.I.G Audit and assurance quality [I.G]",
+   "topic": "Engagement quality review for an issuer",
+   "task": "Explain procedures and responsibilities for managing engagement quality.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Redstone Analytics is an issuer audited by Tamsin & Cole LLP. Which must occur before the firm grants Redstone permission to use the auditor's report?",
+   "exhibit": "",
+   "options": [
+    "The engagement quality reviewer must provide concurring approval of issuance",
+    "Another registered firm must complete a peer review of the engagement",
+    "The firm's managing partner must co-sign the report with the engagement partner",
+    "The audit committee must certify that the engagement team is independent"
+   ],
+   "answer": "A",
+   "rule_line": "In an issuer audit, the engagement quality reviewer's concurring approval is required before report release.",
+   "why": {
+    "A": "Correct. In an audit, the firm may grant permission to use the report only after the engagement quality reviewer provides concurring approval of issuance.",
+    "B": "A peer review is a separate program and is not a condition for releasing the report.",
+    "C": "PCAOB standards do not require a managing partner co-signature.",
+    "D": "The auditor, not the audit committee, is responsible for independence, and the auditor communicates it to the committee."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "PCAOB",
+     "ref": "AS 1220.12-.13"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Who must approve before the firm grants permission to use the report on an issuer audit?",
+     "reveal": "The engagement quality reviewer."
+    },
+    {
+     "ask": "What must the reviewer give?",
+     "reveal": "Concurring approval of issuance."
+    }
+   ]
+  }
+ ]
+}

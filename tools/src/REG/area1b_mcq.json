@@ -118,7 +118,17 @@
     "A": "trap",
     "B": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "May written advice rely on a projection or an assumption?",
+     "reveal": "Only if the reliance is reasonable and the practitioner does not ignore facts he knows."
+    },
+    {
+     "ask": "Which draft statement conflicts with the workpapers showing about 60% occupancy?",
+     "reveal": "The acceptance of the promoter's 95% projection without testing it."
+    }
+   ]
   },
   {
    "id": "REG-I-A-1002",
@@ -172,7 +182,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When are two clients directly adverse in a conflict of interest?",
+     "reveal": "When helping one shifts liability or advantage away from the other."
+    },
+    {
+     "ask": "In which pairing does relief for the wife shift liability to the husband on the same return?",
+     "reveal": "The joint-return examination for the husband alongside the wife's relief request; the firm needs each client's informed written consent and a reasonable belief it can serve both."
+    }
+   ]
   },
   {
    "id": "REG-I-A-1003",
@@ -226,7 +246,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What makes a fee contingent under Circular 230?",
+     "reveal": "Its amount depends on the result, including a fee that is refunded if a position is not sustained."
+    },
+    {
+     "ask": "Which arrangement is fixed at $4,000 yet reimbursed if the IRS disallows the position?",
+     "reveal": "That one, because the reimbursement guarantee ties the fee to the outcome."
+    }
+   ]
   },
   {
    "id": "REG-I-A-1004",
@@ -280,7 +310,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are the records within the control of Jorge or the client?",
+     "reveal": "No, a former payroll company holds them and will not release them to the client."
+    },
+    {
+     "ask": "What must the practitioner do after reasonable inquiry of the client?",
+     "reveal": "Promptly tell the agent that neither has the records and name the holder as the client reports."
+    }
+   ]
   },
   {
    "id": "REG-I-A-1005",
@@ -342,7 +382,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the duty for a known prior-year error?",
+     "reveal": "Advise the client of the error and its consequences; there is no duty to notify the IRS or amend."
+    },
+    {
+     "ask": "May Carlos sign a 2025 return that claims a carryover he knows is unsupported?",
+     "reveal": "No, a practitioner may not sign a position lacking a reasonable basis."
+    }
+   ]
   },
   {
    "id": "REG-I-A-1006",
@@ -419,7 +469,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which positions escape the preparer penalty?",
+     "reveal": "Those with substantial authority, or with a reasonable basis and adequate disclosure."
+    },
+    {
+     "ask": "Which preparer disclosed and which did not, given the same reasonable-basis position?",
+     "reveal": "Lena disclosed, so she is protected; Tomas did not disclose and had no reasonable cause, so he is exposed."
+    }
+   ]
   },
   {
    "id": "REG-I-A-1007",
@@ -481,7 +541,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What kind of act by a tax adviser impairs independence for an audit client?",
+     "reveal": "Assuming a management responsibility."
+    },
+    {
+     "ask": "Which listed service has the firm making a decision that belongs to management without its approval?",
+     "reveal": "Deciding which return position Kestrel will take and directing staff to file it."
+    }
+   ]
   },
   {
    "id": "REG-I-A-1008",
@@ -535,7 +605,17 @@
     "A": "trap",
     "B": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When may a CPA disclose confidential client information without specific consent?",
+     "reveal": "For legal process, licensing or disciplinary inquiries, and peer review."
+    },
+    {
+     "ask": "Which of the listed disclosures fits none of these?",
+     "reveal": "The informal answer to a banker friend about the client's creditworthiness."
+    }
+   ]
   },
   {
    "id": "REG-I-B-1001",
@@ -589,7 +669,17 @@
     "B": "concept",
     "C": "concept",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "May a monetary penalty be imposed on the firm?",
+     "reveal": "Yes, if the firm knew or reasonably should have known of the conduct."
+    },
+    {
+     "ask": "What caps it?",
+     "reveal": "The gross income derived from the conduct, here $30,000."
+    }
+   ]
   },
   {
    "id": "REG-I-B-1002",
@@ -651,7 +741,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are IRS and state licensing discipline independent?",
+     "reveal": "Yes, each authority may act separately."
+    },
+    {
+     "ask": "What does the state suspension mean for the IRS?",
+     "reveal": "The IRS may still assess preparer penalties and seek sanctions, and the state action can itself support discipline."
+    }
+   ]
   },
   {
    "id": "REG-I-C-1001",
@@ -713,7 +813,17 @@
     "A": "limit",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which circumstance leaves the assessment period open indefinitely?",
+     "reveal": "A false or fraudulent return filed with intent to evade tax."
+    },
+    {
+     "ask": "Do a 25% omission, an extension or an amended return do that?",
+     "reveal": "No, they only lengthen or leave the period unchanged, so the intent-to-evade fact is decisive."
+    }
+   ]
   },
   {
    "id": "REG-I-C-1002",
@@ -779,7 +889,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which expenses may not be estimated when records are missing?",
+     "reveal": "Travel, gifts and listed property, which face strict substantiation."
+    },
+    {
+     "ask": "Which listed expense falls outside those rules and can be estimated under Cohan?",
+     "reveal": "Office supplies used in the consulting business."
+    }
+   ]
   },
   {
    "id": "REG-I-C-1003",
@@ -851,7 +971,21 @@
     "A": "limit",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How are an early return and withholding treated for the refund claim period?",
+     "reveal": "Both are treated as filed and paid on the due date, April 15, 2024."
+    },
+    {
+     "ask": "What is the claim period?",
+     "reveal": "The later of 3 years from filing or 2 years from payment, so 3 years."
+    },
+    {
+     "ask": "What date is 3 years after April 15, 2024?",
+     "reveal": "April 15, 2027."
+    }
+   ]
   },
   {
    "id": "REG-I-C-1004",
@@ -943,7 +1077,21 @@
     "A": "limit",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How long does a taxpayer with a notice addressed outside the United States have?",
+     "reveal": "150 days."
+    },
+    {
+     "ask": "What is October 7, 2026 plus 150 days?",
+     "reveal": "Saturday, March 6, 2027."
+    },
+    {
+     "ask": "What happens when the deadline falls on a Saturday?",
+     "reveal": "It moves to the next business day, Monday, March 8, 2027."
+    }
+   ]
   },
   {
    "id": "REG-I-C-1005",
@@ -1016,7 +1164,17 @@
     "A": "calc",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the small tax case limit apply per year, and does it count penalties?",
+     "reveal": "Yes to both."
+    },
+    {
+     "ask": "What are the year totals against the limit?",
+     "reveal": "2023 totals 52,800, which exceeds 50,000, and 2024 totals 25,200, which does not; only the lower year qualifies."
+    }
+   ]
   },
   {
    "id": "REG-I-C-1006",
@@ -1082,7 +1240,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Has Paolo lost the prepayment Tax Court route?",
+     "reveal": "Yes, the petition deadline passed and the tax was assessed."
+    },
+    {
+     "ask": "What judicial route remains?",
+     "reveal": "Pay the tax in full, file a timely refund claim, and sue for refund in a district court or the Court of Federal Claims."
+    }
+   ]
   },
   {
    "id": "REG-I-C-1007",
@@ -1148,7 +1316,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is Form 870 a final closing agreement?",
+     "reveal": "No, it waives restrictions on assessment so the IRS can assess now, and does not bar a later refund claim."
+    },
+    {
+     "ask": "How final is Form 866?",
+     "reveal": "It is a closing agreement, final and conclusive except for fraud, malfeasance or misrepresentation of a material fact."
+    }
+   ]
   },
   {
    "id": "REG-I-C-1008",
@@ -1254,7 +1432,21 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What penalty applies to the $80,000 the IRS proves is fraud?",
+     "reveal": "75% x 80,000 = 60,000."
+    },
+    {
+     "ask": "What applies to the $40,000 Alberto proves is not fraud?",
+     "reveal": "The 20% accuracy-related penalty: 20% x 40,000 = 8,000."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "60,000 + 8,000 = 68,000."
+    }
+   ]
   },
   {
    "id": "REG-I-C-1009",
@@ -1373,7 +1565,21 @@
     "B": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the $20,000 item penalized, given disclosure and reasonable basis?",
+     "reveal": "No, adequate disclosure with a reasonable basis removes it."
+    },
+    {
+     "ask": "What is the remaining understatement and does it exceed the threshold?",
+     "reveal": "90,000 - 20,000 = 70,000, above the greater of 10% x 150,000 = 15,000 or 5,000."
+    },
+    {
+     "ask": "Do negligence and substantial understatement stack, and what is the penalty?",
+     "reveal": "No, one 20% rate applies: 20% x 70,000 = 14,000."
+    }
+   ]
   },
   {
    "id": "REG-I-C-1010",
@@ -1435,7 +1641,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What three elements support reasonable cause based on an adviser?",
+     "reveal": "A competent adviser, complete and accurate information given, and actual good-faith reliance."
+    },
+    {
+     "ask": "Which taxpayer supplied all the facts to an experienced CPA and followed that advice?",
+     "reveal": "The one who gave an experienced CPA all the relevant facts and took the recommended position."
+    }
+   ]
   },
   {
    "id": "REG-I-C-1011",
@@ -1528,7 +1744,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When does the failure-to-file addition apply?",
+     "reveal": "On unpaid tax at the due date when the return is filed late without a valid extension."
+    },
+    {
+     "ask": "Which of the four had no extension, a late return and tax unpaid at the due date?",
+     "reveal": "The taxpayer with no extension who filed July 20 with a $3,000 balance due; a refund, a valid extension or full prepayment leaves no unpaid tax."
+    }
+   ]
   },
   {
    "id": "REG-I-C-1012",
@@ -1586,7 +1812,17 @@
     "B": "limit",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What penalty may the IRS assess on a frivolous return?",
+     "reveal": "$5,000."
+    },
+    {
+     "ask": "What may the Tax Court award against a frivolous or groundless position in a case?",
+     "reveal": "Up to $25,000, so both penalties may apply."
+    }
+   ]
   },
   {
    "id": "REG-I-C-1013",
@@ -1644,7 +1880,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does ignoring the 30-day letter bar all Appeals review?",
+     "reveal": "No."
+    },
+    {
+     "ask": "What happens to a docketed case Appeals has never considered?",
+     "reveal": "Chief Counsel generally refers it to Appeals for settlement, unless an exception such as designation for litigation applies."
+    }
+   ]
   },
   {
    "id": "REG-I-D-1001",
@@ -1710,7 +1956,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which approach protects a limited group of known intended users for a specific transaction?",
+     "reveal": "Restatement (Second) of Torts Section 552."
+    },
+    {
+     "ask": "Which claimant fits that group and which does not?",
+     "reveal": "The bank the firm knew Tarn would approach for the loan fits; an open-market stock buyer does not."
+    }
+   ]
   },
   {
    "id": "REG-I-D-1002",
@@ -1764,7 +2020,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does privity matter under Ultramares for ordinary negligence?",
+     "reveal": "Yes, ordinary negligence needs privity."
+    },
+    {
+     "ask": "What conduct supports liability to a third party without privity?",
+     "reveal": "Gross negligence so serious it implies fraud, and Mira's unmodified opinion with no confirmations despite flagged sales meets that standard."
+    }
+   ]
   },
   {
    "id": "REG-I-D-1003",
@@ -1826,7 +2092,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does a 1934 Act antifraud claim require beyond a material misstatement?",
+     "reveal": "Scienter, meaning intent to deceive or reckless disregard, and reliance."
+    },
+    {
+     "ask": "Does a 1933 Act registration statement claim require those?",
+     "reveal": "Generally not, so those are the extra items Ben must prove."
+    }
+   ]
   },
   {
    "id": "REG-I-D-1004",
@@ -1880,7 +2156,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What defense do auditors have in a 1933 Act suit over a registration statement?",
+     "reveal": "Due diligence."
+    },
+    {
+     "ask": "What must they show?",
+     "reveal": "A reasonable investigation and reasonable ground to believe, and actual belief, that the statements were true when the registration became effective."
+    }
+   ]
   },
   {
    "id": "REG-I-D-1005",
@@ -1934,7 +2220,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What waives the tax practitioner privilege?",
+     "reveal": "Voluntary disclosure of the privileged advice to an outsider."
+    },
+    {
+     "ask": "Which event discloses the memorandum outside the company and its advisers?",
+     "reveal": "Handing a copy to the outside lender; internal sharing and IRS inquiries do not waive."
+    }
+   ]
   },
   {
    "id": "REG-I-D-1006",
@@ -1988,7 +2284,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the criminal aiding statute cover?",
+     "reveal": "Anyone who willfully aids or assists in preparing a false return."
+    },
+    {
+     "ask": "Does it matter that the client was unaware and signed?",
+     "reveal": "No, the taxpayer's knowledge is not required, so Reese may be convicted."
+    }
+   ]
   },
   {
    "id": "REG-I-D-1007",
@@ -2046,7 +2352,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does joint and several liability require under the Private Securities Litigation Reform Act?",
+     "reveal": "A knowing violation."
+    },
+    {
+     "ask": "Was the auditor's conduct knowing or reckless, and what follows?",
+     "reveal": "Reckless, so liability is generally limited to its own 30% share."
+    }
+   ]
   }
  ]
 }

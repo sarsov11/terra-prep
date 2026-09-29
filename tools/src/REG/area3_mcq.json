@@ -91,7 +91,21 @@
     "A": "calc",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which costs are needed to place the press in service?",
+     "reveal": "Invoice price, sales tax, freight and installation and testing."
+    },
+    {
+     "ask": "What about employee training?",
+     "reveal": "It is an operating expense, not capitalized."
+    },
+    {
+     "ask": "What is the total basis?",
+     "reveal": "60,000 + 3,900 + 1,800 + 2,300 = 68,000."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0002",
@@ -178,7 +192,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the total cost to allocate?",
+     "reveal": "900,000 + 6,000 + 4,000 + 8,000 = 918,000, since seller-owed taxes paid by the buyer are added to cost."
+    },
+    {
+     "ask": "What share of value is the building?",
+     "reveal": "750,000 / (250,000 + 750,000) = 75%."
+    },
+    {
+     "ask": "What is the building basis?",
+     "reveal": "918,000 x 75% = 688,500."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0003",
@@ -262,7 +290,17 @@
     "A": "calc",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items make up the cost basis of the duplex?",
+     "reveal": "Cash paid, the mortgage assumed, and capitalized closing costs."
+    },
+    {
+     "ask": "What is the sum?",
+     "reveal": "40,000 + 160,000 + 5,000 = 205,000."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0004",
@@ -326,7 +364,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does financing change the oven's basis?",
+     "reveal": "No, debt used to buy an asset is part of cost from the start, so basis is the full 50,000."
+    },
+    {
+     "ask": "How is the 3,200 of interest treated?",
+     "reveal": "As interest expense, the price of borrowing, not part of the oven's cost."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0005",
@@ -409,7 +457,17 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What reduces basis: depreciation claimed or allowed or allowable?",
+     "reveal": "Allowed or allowable, whichever is greater in effect."
+    },
+    {
+     "ask": "What is the adjusted basis?",
+     "reveal": "90,000 + 6,000 - 42,000 = 54,000."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0006",
@@ -469,7 +527,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which costs are capitalized into the basis of purchased property?",
+     "reveal": "Settlement costs tied to acquiring title, such as title search, recording and legal fees."
+    },
+    {
+     "ask": "Are financing costs, insurance premiums and stub-period interest capitalized?",
+     "reveal": "No, so only the title search and recording fees are added."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0007",
@@ -556,7 +624,21 @@
     "B": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the depreciation basis for converted property?",
+     "reveal": "The lower of adjusted basis or fair market value at conversion, land excluded."
+    },
+    {
+     "ask": "What are the building's two figures?",
+     "reveal": "Adjusted basis 310,000 - 60,000 = 250,000; FMV 280,000 - 70,000 = 210,000."
+    },
+    {
+     "ask": "Which is lower?",
+     "reveal": "210,000."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0008",
@@ -626,7 +708,21 @@
     "A": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How many bases does converted property have when FMV is below adjusted basis?",
+     "reveal": "Two: a gain basis and a loss basis."
+    },
+    {
+     "ask": "What are they after 9,000 of depreciation?",
+     "reveal": "Gain basis 50,000 - 9,000 = 41,000; loss basis 36,000 - 9,000 = 27,000."
+    },
+    {
+     "ask": "Where does 38,000 fall?",
+     "reveal": "Between 27,000 and 41,000, so neither gain nor loss."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0009",
@@ -709,7 +805,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the depreciation basis for a personal asset converted to business?",
+     "reveal": "The lower of adjusted basis or FMV at conversion."
+    },
+    {
+     "ask": "Compare the two figures.",
+     "reveal": "Adjusted basis 28,000 and FMV 17,000, so 17,000."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0010",
@@ -765,7 +871,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is property placed in service?",
+     "reveal": "When it is ready and available for its specific use."
+    },
+    {
+     "ask": "When was the house ready and offered for rent?",
+     "reveal": "June 15, so the month is that one, not the move-in or first-rent month."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0011",
@@ -847,7 +963,17 @@
     "A": "concept",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which basis applies when the gift-date FMV exceeds the donor's basis?",
+     "reveal": "The donor's carryover basis of 20,000."
+    },
+    {
+     "ask": "What is the gain?",
+     "reveal": "60,000 - 20,000 = 40,000."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0012",
@@ -930,7 +1056,21 @@
     "A": "concept",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much appreciation existed at the gift date?",
+     "reveal": "100,000 - 40,000 = 60,000."
+    },
+    {
+     "ask": "How much gift tax adds to basis?",
+     "reveal": "40,000 x 60,000 / 100,000 = 24,000."
+    },
+    {
+     "ask": "What is the basis?",
+     "reveal": "40,000 + 24,000 = 64,000."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0013",
@@ -990,7 +1130,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does Tara take carryover basis?",
+     "reveal": "Yes, because FMV at gift exceeded the donor's cost."
+    },
+    {
+     "ask": "What follows for the holding period?",
+     "reveal": "It includes the uncle's holding period, so the gain is long-term."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0014",
@@ -1050,7 +1200,21 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What basis do inherited shares get?",
+     "reveal": "FMV at death, 75,000."
+    },
+    {
+     "ask": "What is the holding period of inherited property?",
+     "reveal": "Long-term regardless of how long the heir holds it."
+    },
+    {
+     "ask": "What is the gain?",
+     "reveal": "80,000 - 75,000 = 5,000 long-term."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0015",
@@ -1132,7 +1296,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which valuation date applies with a valid alternate valuation election for property still held?",
+     "reveal": "Six months after death."
+    },
+    {
+     "ask": "What was the FMV then?",
+     "reveal": "430,000, which is the beneficiary's basis."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0016",
@@ -1211,7 +1385,17 @@
     "B": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the gift back to the donor within one year of death get a step-up?",
+     "reveal": "No, the special rule denies the step-up on appreciated property returning to the donor."
+    },
+    {
+     "ask": "What basis does Corin use?",
+     "reveal": "The decedent's adjusted basis just before death, Corin's carryover 20,000."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0017",
@@ -1279,7 +1463,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does basis step up for community property at the first spouse's death?",
+     "reveal": "Both halves step up to full FMV, so 600,000."
+    },
+    {
+     "ask": "How does it work for spousal joint tenancy in a common-law state?",
+     "reveal": "Only the decedent's half steps up: 300,000 plus the survivor's 100,000 cost half is 400,000."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0018",
@@ -1335,7 +1529,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What basis do heirs take even when FMV is below the decedent's cost?",
+     "reveal": "FMV at death, 60,000."
+    },
+    {
+     "ask": "What is the result of selling at 65,000?",
+     "reveal": "65,000 - 60,000 = 5,000 gain."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0019",
@@ -1395,7 +1599,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What basis does a donee get when FMV exceeds the donor's cost?",
+     "reveal": "Carryover basis of 20,000, so Ben's gain is 80,000 - 20,000 = 60,000."
+    },
+    {
+     "ask": "What basis does an heir get?",
+     "reveal": "FMV at death, 80,000, so Cara's gain is 0."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0020",
@@ -1473,7 +1687,21 @@
     "A": "calc",
     "B": "concept",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the loss on the December 10 sale allowed when identical shares are bought within 30 days?",
+     "reveal": "No, it is a wash sale and the loss is disallowed."
+    },
+    {
+     "ask": "What is the disallowed loss?",
+     "reveal": "30,000 - 24,000 = 6,000."
+    },
+    {
+     "ask": "What is the replacement basis?",
+     "reveal": "25,000 + 6,000 = 31,000."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0021",
@@ -1556,7 +1784,21 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the total loss on the sale?",
+     "reveal": "40,000 - 30,000 = 10,000."
+    },
+    {
+     "ask": "Which part is disallowed as a wash sale?",
+     "reveal": "Only the loss on the 200 replaced shares: 10,000 x 200 / 500 = 4,000."
+    },
+    {
+     "ask": "What is allowed?",
+     "reveal": "10,000 - 4,000 = 6,000."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0022",
@@ -1617,7 +1859,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does buying identical stock inside an IRA trigger the wash sale rule?",
+     "reveal": "Yes."
+    },
+    {
+     "ask": "Does the disallowed loss add to the IRA basis?",
+     "reveal": "No, so the 8,000 loss is permanently lost."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0023",
@@ -1673,7 +1925,17 @@
     "A": "limit",
     "B": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the wash sale window?",
+     "reveal": "30 days before through 30 days after the sale date."
+    },
+    {
+     "ask": "Which purchase date lands inside the window for a June 15 sale?",
+     "reveal": "The one exactly 30 days after, July 15; a purchase a day beyond that or two days before the start of the window is outside it."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0024",
@@ -1743,7 +2005,21 @@
     "B": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the 2026 loss and what happens to it?",
+     "reveal": "10,000 - 7,000 = 3,000, disallowed and added to the new basis."
+    },
+    {
+     "ask": "What is the new basis and the 2027 result?",
+     "reveal": "6,500 + 3,000 = 9,500, so 9,000 - 9,500 = a 500 loss."
+    },
+    {
+     "ask": "What is the holding period?",
+     "reveal": "It tacks back to January 2, 2026, so long-term."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0025",
@@ -1828,7 +2104,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much of the 5,000 immediate deduction survives?",
+     "reveal": "54,000 - 50,000 = 4,000 excess, so 5,000 - 4,000 = 1,000."
+    },
+    {
+     "ask": "What is left to amortize and over what period?",
+     "reveal": "54,000 - 1,000 = 53,000 over 180 months."
+    },
+    {
+     "ask": "How much is amortized in 2026 and what is the total?",
+     "reveal": "September to December is 4 months: 53,000 x 4 / 180 = 1,178, plus 1,000 gives 2,178."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0026",
@@ -1913,7 +2203,21 @@
     "A": "calc",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much of the 5,000 immediate deduction survives?",
+     "reveal": "52,000 - 50,000 = 2,000 excess, so 5,000 - 2,000 = 3,000."
+    },
+    {
+     "ask": "What is amortized and for how many months in 2026?",
+     "reveal": "49,000 over 180 months, October to December is 3 months."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "49,000 x 3 / 180 = 817, plus 3,000 gives 3,817."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0027",
@@ -1973,7 +2277,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which formation costs are deductible or amortizable for a partnership?",
+     "reveal": "Legal, accounting and state filing fees for organizing the entity."
+    },
+    {
+     "ask": "Which category is capitalized permanently?",
+     "reveal": "Syndication costs, such as commissions for selling interests."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0028",
@@ -2056,7 +2370,21 @@
     "A": "limit",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How are loan costs recovered?",
+     "reveal": "Ratably over the loan term, starting when the loan begins."
+    },
+    {
+     "ask": "How many months in the term and in 2026?",
+     "reveal": "120 months in total and 9 months, April through December."
+    },
+    {
+     "ask": "What is the 2026 amount?",
+     "reveal": "12,000 x 9 / 120 = 900."
+    }
+   ]
   },
   {
    "id": "REG-III-A-0029",
@@ -2140,7 +2468,21 @@
     "A": "calc",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does each cost type have its own 5,000 immediate deduction?",
+     "reveal": "Yes, organizational and start-up costs separately."
+    },
+    {
+     "ask": "What is amortized?",
+     "reveal": "Org 8,000 - 5,000 = 3,000 and start-up 12,000 - 5,000 = 7,000, so 10,000 over 180 months."
+    },
+    {
+     "ask": "What is the 2026 total from August 1?",
+     "reveal": "10,000 x 5 / 180 = 278, plus 10,000 immediate gives 10,278."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0001",
@@ -2196,7 +2538,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the standard members of MACRS 5-year property?",
+     "reveal": "Computers and peripherals, cars and light trucks."
+    },
+    {
+     "ask": "Which listed asset is among them?",
+     "reveal": "Computers and peripheral equipment; furniture is 7-year and buildings are 27.5 or 39-year."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0002",
@@ -2266,7 +2618,21 @@
     "A": "calc",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which property is included in the 40% test?",
+     "reveal": "Personal property only, so the 39-year warehouse is excluded."
+    },
+    {
+     "ask": "What is the depreciable basis after section 179 and what is the fourth-quarter share?",
+     "reveal": "Milling machine 400,000 - 250,000 = 150,000; Q4 is 220,000 / (150,000 + 220,000) = 59.5%."
+    },
+    {
+     "ask": "Which convention follows?",
+     "reveal": "More than 40%, so mid-quarter."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0003",
@@ -2362,7 +2728,21 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What share of the year's personal property basis was placed in service in the fourth quarter?",
+     "reveal": "100%, more than 40%."
+    },
+    {
+     "ask": "Which convention and percentage apply?",
+     "reveal": "Mid-quarter, Q4 year-1 percentage 3.57%."
+    },
+    {
+     "ask": "What is the deduction?",
+     "reveal": "150,000 x 3.57% = 5,355."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0004",
@@ -2441,7 +2821,21 @@
     "B": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the depreciable basis?",
+     "reveal": "480,000 - 80,000 = 400,000, because land is not depreciable."
+    },
+    {
+     "ask": "Which percentage applies?",
+     "reveal": "1.061% for September in year 1."
+    },
+    {
+     "ask": "What is the deduction?",
+     "reveal": "400,000 x 1.061% = 4,244."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0005",
@@ -2497,7 +2891,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What class and method apply to nonresidential real property?",
+     "reveal": "39-year property, straight-line."
+    },
+    {
+     "ask": "Which convention is used?",
+     "reveal": "Mid-month."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0006",
@@ -2581,7 +2985,21 @@
     "B": "calc",
     "C": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the business-use basis?",
+     "reveal": "62,500 x 60% = 37,500."
+    },
+    {
+     "ask": "What is the first-year cap after business-use reduction?",
+     "reveal": "20,000 x 60% = 12,000."
+    },
+    {
+     "ask": "Which amount is allowed?",
+     "reveal": "The lesser of 37,500 and 12,000, so 12,000."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0007",
@@ -2641,7 +3059,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What happens to a car used 50% or less for business?",
+     "reveal": "It cannot use accelerated MACRS, section 179 or bonus depreciation."
+    },
+    {
+     "ask": "What method applies to the business portion?",
+     "reveal": "Straight-line under ADS."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0008",
@@ -2741,7 +3169,21 @@
     "A": "calc",
     "B": "calc",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What share was placed in service in the fourth quarter?",
+     "reveal": "200,000 / 500,000 = 40.0%."
+    },
+    {
+     "ask": "Does it exceed 40%?",
+     "reveal": "No, so the half-year convention applies."
+    },
+    {
+     "ask": "What is the deduction?",
+     "reveal": "500,000 x 20.00% = 100,000."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0009",
@@ -2829,7 +3271,21 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What depreciation percentages were allowed in years 1 to 3?",
+     "reveal": "14.29 + 24.49 + 17.49 = 56.27%."
+    },
+    {
+     "ask": "How much of year 4 is allowed in the year of sale under the half-year convention?",
+     "reveal": "12.49% / 2 = 6.245%."
+    },
+    {
+     "ask": "What is the adjusted basis?",
+     "reveal": "62.515% x 100,000 = 62,515 depreciation, so 100,000 - 62,515 = 37,485."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0010",
@@ -2889,7 +3345,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is this kind of improvement called?",
+     "reveal": "Qualified improvement property, an interior improvement to nonresidential real property placed in service after the building."
+    },
+    {
+     "ask": "What recovery period does it have?",
+     "reveal": "15 years."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0011",
@@ -2953,7 +3419,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which depreciation system does the election out of the interest limitation require?",
+     "reveal": "ADS."
+    },
+    {
+     "ask": "What is the ADS recovery period for residential rental property placed in service after 2017?",
+     "reveal": "30 years."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0012",
@@ -3031,7 +3507,17 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "By how much do the purchases exceed the phase-out threshold?",
+     "reveal": "4,500,000 - 4,090,000 = 410,000."
+    },
+    {
+     "ask": "What is the reduced dollar limit?",
+     "reveal": "2,560,000 - 410,000 = 2,150,000."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0013",
@@ -3114,7 +3600,17 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What caps the section 179 deduction besides the dollar limit?",
+     "reveal": "Taxable income from the active trade or business."
+    },
+    {
+     "ask": "What is the deduction and what happens to the rest?",
+     "reveal": "The lesser of 300,000 and 210,000, so 210,000, and 90,000 carries forward."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0014",
@@ -3174,7 +3670,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which property is eligible for section 179?",
+     "reveal": "Tangible personal property, off-the-shelf software, and specified improvements to nonresidential buildings."
+    },
+    {
+     "ask": "Which purchase is the building structure itself?",
+     "reveal": "The existing warehouse building, which is not eligible."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0015",
@@ -3258,7 +3764,21 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is property acquired for the bonus percentage?",
+     "reveal": "When the binding written contract is signed, January 10, 2025, before the January 20 cutoff."
+    },
+    {
+     "ask": "What is the bonus at 40%?",
+     "reveal": "500,000 x 40% = 200,000."
+    },
+    {
+     "ask": "What is regular MACRS on the remainder and the total?",
+     "reveal": "300,000 x 14.29% = 42,870, so 200,000 + 42,870 = 242,870."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0016",
@@ -3337,7 +3857,21 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which property qualifies for bonus depreciation?",
+     "reveal": "Property with a recovery period of 20 years or less, including used property first acquired from an unrelated party."
+    },
+    {
+     "ask": "Which of the three purchases qualify?",
+     "reveal": "Equipment 45,000 and land improvements 30,000; the 39-year building does not."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "45,000 + 30,000 = 75,000."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0017",
@@ -3393,7 +3927,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "At what level is the election out of bonus made?",
+     "reveal": "By class of property."
+    },
+    {
+     "ask": "What follows for assets in that class placed in service that year?",
+     "reveal": "All of them are affected; assets in other classes are not."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0018",
@@ -3481,7 +4025,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which comes first, section 179 or regular MACRS?",
+     "reveal": "Section 179, which reduces the basis."
+    },
+    {
+     "ask": "What is the MACRS basis and amount?",
+     "reveal": "200,000 - 60,000 = 140,000, and 140,000 x 20% = 28,000."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "60,000 + 28,000 = 88,000."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0019",
@@ -3569,7 +4127,21 @@
     "A": "concept",
     "B": "calc",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the section 179 cap for this heavy SUV?",
+     "reveal": "31,000."
+    },
+    {
+     "ask": "What basis is left for bonus, and do passenger-automobile caps apply over 6,000 pounds?",
+     "reveal": "70,000 - 31,000 = 39,000 at 100% bonus; the caps do not apply."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "31,000 + 39,000 = 70,000."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0020",
@@ -3625,7 +4197,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What happens when business use of listed property falls to 50% or less after accelerated depreciation?",
+     "reveal": "Excess depreciation is recaptured as income."
+    },
+    {
+     "ask": "How much and what method afterward?",
+     "reveal": "The excess of accelerated over straight-line ADS depreciation, with ADS used from then on."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0021",
@@ -3685,7 +4267,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Can a section 179 election be made on an amended return?",
+     "reveal": "Yes."
+    },
+    {
+     "ask": "Is IRS consent needed?",
+     "reveal": "No, the election can be made or revoked on an amended return for that year without consent."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0022",
@@ -3768,7 +4360,21 @@
     "A": "calc",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are goodwill and an acquisition covenant section 197 intangibles?",
+     "reveal": "Yes, both, amortized over 15 years or 180 months from the month acquired."
+    },
+    {
+     "ask": "How many 2026 months and what is the base?",
+     "reveal": "August to December is 5 months on 300,000 + 90,000 = 390,000."
+    },
+    {
+     "ask": "What is the amortization?",
+     "reveal": "390,000 x 5 / 180 = 10,833."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0023",
@@ -3824,7 +4430,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which intangibles are section 197 intangibles?",
+     "reveal": "Goodwill, going-concern value, and trademarks and trade names acquired with a business."
+    },
+    {
+     "ask": "Which listed asset is such an acquisition-related intangible?",
+     "reveal": "The trademark acquired as part of the purchase of a business."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0024",
@@ -3884,7 +4500,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a loss allowed on abandoning one section 197 intangible while others from the acquisition are kept?",
+     "reveal": "No."
+    },
+    {
+     "ask": "Where does the unamortized basis go?",
+     "reveal": "Added to the remaining section 197 intangibles."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0025",
@@ -3972,7 +4598,21 @@
     "A": "calc",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a patent bought separately a section 197 intangible?",
+     "reveal": "No, it is amortized over its remaining life."
+    },
+    {
+     "ask": "What is the monthly amount?",
+     "reveal": "84,000 / (14 x 12) = 500."
+    },
+    {
+     "ask": "What is 2026 amortization for October to December?",
+     "reveal": "500 x 3 = 1,500."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0026",
@@ -4083,7 +4723,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the total basis and the Q4 share?",
+     "reveal": "50,000 + 30,000 + 60,000 + 220,000 = 360,000; 220,000 / 360,000 = 61%."
+    },
+    {
+     "ask": "Does that exceed the test and which assets does the convention affect?",
+     "reveal": "More than 40%, so mid-quarter applies to all assets placed in service that year."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0027",
@@ -4164,7 +4814,17 @@
     "A": "trap",
     "C": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the MACRS class of office furniture, computers and fencing?",
+     "reveal": "Furniture 7-year, computers 5-year and land improvements such as fencing 15-year."
+    },
+    {
+     "ask": "Which class does heavy general-purpose trucks have?",
+     "reveal": "5-year, so the 7-year entry is wrong."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0028",
@@ -4250,7 +4910,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How are acquisition-related covenants amortized?",
+     "reveal": "As section 197 intangibles over 15 years, no matter how short the covenant term."
+    },
+    {
+     "ask": "Which entry uses a shorter period?",
+     "reveal": "The covenant not to compete at 36 months, which should be 180."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0029",
@@ -4358,7 +5028,21 @@
     "B": "limit",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "By how much do the costs exceed 50,000?",
+     "reveal": "62,000 - 50,000 = 12,000."
+    },
+    {
+     "ask": "What is left of the 5,000 immediate deduction?",
+     "reveal": "5,000 - 12,000 is below zero, so none."
+    },
+    {
+     "ask": "What is amortized for 6 months?",
+     "reveal": "62,000 x 6 / 180 = 2,067."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0030",
@@ -4444,7 +5128,17 @@
     "A": "trap",
     "B": "trap",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which flagged item is inconsistent with its support?",
+     "reveal": "The one where the closing statement splits off a nondepreciable component."
+    },
+    {
+     "ask": "What does the support show for the building?",
+     "reveal": "200,000 is land, so depreciable basis is 1,050,000, not 1,250,000."
+    }
+   ]
   },
   {
    "id": "REG-III-B-0031",
@@ -4560,7 +5254,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What limits the deduction below the elected 2,560,000?",
+     "reveal": "Business taxable income of 2,100,000."
+    },
+    {
+     "ask": "What is carried forward?",
+     "reveal": "2,560,000 - 2,100,000 = 460,000."
+    }
+   ]
   }
  ]
 }

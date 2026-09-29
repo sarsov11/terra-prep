@@ -70,7 +70,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which receipts are excluded from gross income by statute?",
+     "reveal": "Gifts, life insurance death proceeds, and state and local bond interest."
+    },
+    {
+     "ask": "Which listed receipt has no exclusion even though it is a government benefit?",
+     "reveal": "Unemployment compensation, which is taxable."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0002",
@@ -156,7 +166,21 @@
     "A": "calc",
     "B": "limit",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the salary fully included?",
+     "reveal": "Yes, 58,000."
+    },
+    {
+     "ask": "How much tuition assistance is excluded and how much is included?",
+     "reveal": "Exclusion capped at 5,250, so 7,000 - 5,250 = 1,750 is wages."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "58,000 + 1,750 = 59,750."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0003",
@@ -248,7 +272,21 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is the guaranteed payment treated?",
+     "reveal": "Ordinary income of 40,000."
+    },
+    {
+     "ask": "What about the distributive share and the cash distribution?",
+     "reveal": "The 15,000 share is taxed as earned; the 30,000 distribution is a basis recovery, not income."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "40,000 + 15,000 = 55,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0004",
@@ -336,7 +374,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which of the three interest items is taxable for regular tax?",
+     "reveal": "Only the bank interest of 900."
+    },
+    {
+     "ask": "What about the school district bond and the private activity bond?",
+     "reveal": "Both are excluded for regular tax; the private activity bond is only an AMT preference item."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0005",
@@ -418,7 +466,21 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the exclusion ratio?",
+     "reveal": "48,000 / 80,000 = 60%."
+    },
+    {
+     "ask": "How much of the 9,600 is excluded?",
+     "reveal": "9,600 x 60% = 5,760."
+    },
+    {
+     "ask": "What is taxable?",
+     "reveal": "9,600 - 5,760 = 3,840."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0006",
@@ -501,7 +563,21 @@
     "A": "calc",
     "B": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is provisional income?",
+     "reveal": "30,000 + 2,000 + 50% x 20,000 = 42,000."
+    },
+    {
+     "ask": "What is the first-tier amount for a single filer and the second tier?",
+     "reveal": "4,500 for the first tier, and 85% x (42,000 - 34,000) = 6,800."
+    },
+    {
+     "ask": "What is the taxable benefit?",
+     "reveal": "4,500 + 6,800 = 11,300, below the 17,000 cap."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0007",
@@ -587,7 +663,21 @@
     "A": "limit",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is Dan's insolvency amount?",
+     "reveal": "162,000 - 150,000 = 12,000."
+    },
+    {
+     "ask": "How much may be excluded?",
+     "reveal": "The lesser of 20,000 canceled or 12,000 insolvency, so 12,000."
+    },
+    {
+     "ask": "What is included?",
+     "reveal": "20,000 - 12,000 = 8,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0008",
@@ -645,7 +735,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which settlement amounts are excluded?",
+     "reveal": "Damages received on account of personal physical injury or physical sickness."
+    },
+    {
+     "ask": "Which listed receipt is that?",
+     "reveal": "Compensatory damages for medical costs and pain from a car-accident injury; punitive, back pay and non-physical emotional distress are taxable."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0009",
@@ -731,7 +831,21 @@
     "A": "calc",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which parts of the judgment are excluded?",
+     "reveal": "Compensatory damages for physical injury, 60,000."
+    },
+    {
+     "ask": "Which parts are taxable?",
+     "reveal": "Punitive damages 25,000 and interest 15,000."
+    },
+    {
+     "ask": "What is the total inclusion?",
+     "reveal": "25,000 + 15,000 = 40,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0010",
@@ -794,7 +908,17 @@
     "A": "limit",
     "B": "concept",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How long was the stock held?",
+     "reveal": "From January 20, 2025 to March 25, 2026, more than a year."
+    },
+    {
+     "ask": "What is the gain and its character?",
+     "reveal": "28,000 - 20,000 = 8,000, long-term."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0011",
@@ -857,7 +981,21 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What basis does an heir take?",
+     "reveal": "Date-of-death value, 50,000."
+    },
+    {
+     "ask": "What is the holding period treatment?",
+     "reveal": "Long-term regardless of how long the heir held it."
+    },
+    {
+     "ask": "What is the result?",
+     "reveal": "54,000 - 50,000 = 4,000 long-term gain."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0012",
@@ -944,7 +1082,17 @@
     "B": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which basis applies to a loss on gift property when FMV is below the donor's basis?",
+     "reveal": "The lower of the donor's basis or FMV at the gift date, 30,000."
+    },
+    {
+     "ask": "What is the loss?",
+     "reveal": "30,000 - 26,000 = 4,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0013",
@@ -1034,7 +1182,21 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is virtual currency for tax purposes and what is the basis of the unit spent?",
+     "reveal": "Property; 10,000 / 2 = 5,000."
+    },
+    {
+     "ask": "What is the amount realized in buying furniture?",
+     "reveal": "The unit's FMV, 9,000."
+    },
+    {
+     "ask": "What is the gain and its character?",
+     "reveal": "9,000 - 5,000 = 4,000, long-term."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0014",
@@ -1097,7 +1259,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is inherited property itself income?",
+     "reveal": "No, it is excluded."
+    },
+    {
+     "ask": "Is the rent it produces income?",
+     "reveal": "Yes, the 8,000 of rent is taxable."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0015",
@@ -1179,7 +1351,21 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much of each installment is the excluded death benefit?",
+     "reveal": "90,000 / 10 = 9,000."
+    },
+    {
+     "ask": "What is the interest element in the first installment?",
+     "reveal": "10,000 - 9,000 = 1,000."
+    },
+    {
+     "ask": "What is included in 2026?",
+     "reveal": "1,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0016",
@@ -1265,7 +1451,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does a cash-basis decedent's final return report?",
+     "reveal": "Income actually or constructively received before death, 70,000."
+    },
+    {
+     "ask": "How is the later wage payment classified?",
+     "reveal": "Income in respect of a decedent, reported by the estate or heir, so 6,000 stays off the final return."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0017",
@@ -1328,7 +1524,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the installment note gain when collected by an estate called?",
+     "reveal": "Income in respect of a decedent."
+    },
+    {
+     "ask": "What character does it keep?",
+     "reveal": "The character it would have had for the decedent, so long-term capital gain."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0018",
@@ -1414,7 +1620,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is alimony taxable under a decree executed after 2018?",
+     "reveal": "No, neither deductible by the payer nor income to the recipient."
+    },
+    {
+     "ask": "What about child support?",
+     "reveal": "Never income, so the included amount is 0."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0019",
@@ -1472,7 +1688,17 @@
     "A": "concept",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is barter income?",
+     "reveal": "Yes."
+    },
+    {
+     "ask": "How is the amount measured?",
+     "reveal": "At the FMV of what is received, 1,200 of dental work."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0020",
@@ -1530,7 +1756,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which scholarship uses are excluded for a degree candidate?",
+     "reveal": "Tuition, fees, books and required supplies."
+    },
+    {
+     "ask": "How do the two students' uses compare?",
+     "reveal": "Ann used it all for tuition and books, so she excludes it; Bob used it for room and board, so he includes it."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0021",
@@ -1592,7 +1828,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What makes a fringe benefit de minimis?",
+     "reveal": "Occasional, low-value property or services that are hard to account for."
+    },
+    {
+     "ask": "Which item can never be de minimis?",
+     "reveal": "Cash and cash equivalents such as a general gift card, which are taxable wages; the holiday turkey is de minimis."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0022",
@@ -1654,7 +1900,17 @@
     "A": "trap",
     "B": "trap",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which receipts are excluded?",
+     "reveal": "Gifts, inheritances, and accountable plan reimbursements."
+    },
+    {
+     "ask": "Which receipt is a prize with no exclusion?",
+     "reveal": "The game show prize, included at FMV."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0023",
@@ -1716,7 +1972,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the constructive receipt test for a cash-basis taxpayer?",
+     "reveal": "Income is reported when credited or set apart and available without substantial restriction."
+    },
+    {
+     "ask": "Was the check available on December 30?",
+     "reveal": "Yes, and Owen simply chose not to pick it up, so the income belongs to 2026."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0024",
@@ -1778,7 +2044,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is virtual currency received for services treated?",
+     "reveal": "As income at its FMV on the date received."
+    },
+    {
+     "ask": "What type of income is it for a self-employed designer?",
+     "reveal": "Self-employment income of 2,000, and that value becomes the basis in the currency."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0025",
@@ -1866,7 +2142,17 @@
     "A": "trap",
     "B": "trap",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which source document shows a taxable item missing from the draft?",
+     "reveal": "The 1099-G showing 4,000 in box 1 that the draft omits."
+    },
+    {
+     "ask": "Are the tax-exempt interest and the 401(k) deferral to be added?",
+     "reveal": "No, both are outside taxable interest and already excluded from box 1 wages, so the unemployment compensation must be added."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0026",
@@ -1949,7 +2235,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does code G in box 7 mean?",
+     "reveal": "A direct rollover to an IRA or another eligible plan."
+    },
+    {
+     "ask": "What is the taxable amount?",
+     "reveal": "0, since a direct rollover is not a taxable distribution and no additional tax applies."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0027",
@@ -2035,7 +2331,17 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which proceeds and basis figures apply?",
+     "reveal": "Proceeds of 48,000 from the 1099-B and basis of 40,000 from her own records, since basis is not reported for a noncovered security."
+    },
+    {
+     "ask": "What is the gain and character?",
+     "reveal": "48,000 - 40,000 = 8,000 long-term."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0028",
@@ -2121,7 +2427,21 @@
     "A": "concept",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is Aaron's gain?",
+     "reveal": "Donor basis 20,000, so 65,000 - 20,000 = 45,000."
+    },
+    {
+     "ask": "What is Bella's gain?",
+     "reveal": "Date-of-death basis 60,000, so 65,000 - 60,000 = 5,000."
+    },
+    {
+     "ask": "What is the difference?",
+     "reveal": "45,000 - 5,000 = 40,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0029",
@@ -2183,7 +2503,17 @@
     "A": "concept",
     "B": "calc",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much cancelled debt may an insolvent taxpayer exclude?",
+     "reveal": "Up to the amount of insolvency."
+    },
+    {
+     "ask": "How do the two compare?",
+     "reveal": "Anna's 30,000 insolvency covers all 20,000, so she excludes it; Ben is solvent and includes all 20,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0030",
@@ -2262,7 +2592,17 @@
     "A": "concept",
     "B": "limit",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a Form 1099-NEC for freelance services reported?",
+     "reveal": "On Schedule C as self-employment income."
+    },
+    {
+     "ask": "Does the lack of withholding matter and what tax follows?",
+     "reveal": "No, and self-employment tax applies to the net profit."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0031",
@@ -2345,7 +2685,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is interest earned by a cash-basis decedent but not received before death classified?",
+     "reveal": "Income in respect of a decedent."
+    },
+    {
+     "ask": "Who reports it?",
+     "reveal": "The person who receives it, so it is correctly left off the final return."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0032",
@@ -2419,7 +2769,17 @@
     "A": "limit",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When does the holding period start and how long must it be?",
+     "reveal": "The day after acquisition, and more than one year for long-term."
+    },
+    {
+     "ask": "Compare the two stocks.",
+     "reveal": "The first was held from January 15, 2025 to March 3, 2026, more than a year; the second was sold exactly one year after purchase, so it was not held more than a year."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0033",
@@ -2506,7 +2866,21 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the exclusion ratio?",
+     "reveal": "30,000 / 60,000 = 50%."
+    },
+    {
+     "ask": "How much of the 10,000 is excluded, and is enough basis left?",
+     "reveal": "10,000 x 50% = 5,000, and 30,000 - 12,000 = 18,000 of unrecovered basis remains."
+    },
+    {
+     "ask": "What is taxable?",
+     "reveal": "10,000 - 5,000 = 5,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-A-0034",
@@ -2613,7 +2987,17 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What exclusion is allowed for a job transfer after 18 months?",
+     "reveal": "A reduced exclusion of 250,000 x 18/24 = 187,500."
+    },
+    {
+     "ask": "What is the taxable gain?",
+     "reveal": "320,000 - 187,500 = 132,500."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0001",
@@ -2675,7 +3059,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What must a partnership pass through separately?",
+     "reveal": "Items that could affect partners differently, such as capital gains and losses."
+    },
+    {
+     "ask": "Which listed item is that rather than an ordinary operating deduction?",
+     "reveal": "Long-term capital gain from selling investment securities."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0002",
@@ -2761,7 +3155,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does a partner report from ordinary income?",
+     "reveal": "Her distributive share."
+    },
+    {
+     "ask": "What is the share?",
+     "reveal": "150,000 x 20% = 30,000, regardless of the 10,000 distribution."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0003",
@@ -2852,7 +3256,21 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items increase S corporation stock basis?",
+     "reveal": "Ordinary income, capital gain and tax-exempt income."
+    },
+    {
+     "ask": "What is the basis before distributions?",
+     "reveal": "20,000 + 15,000 + 4,000 + 1,000 = 40,000."
+    },
+    {
+     "ask": "What reduces it, and what remains?",
+     "reveal": "Distributions of 30,000 and nondeductible expenses of 2,000, leaving 8,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0004",
@@ -2942,7 +3360,17 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What limits a shareholder's S corporation loss deduction?",
+     "reveal": "Stock basis plus loan basis."
+    },
+    {
+     "ask": "What is Dario's limit and what happens to the excess?",
+     "reveal": "8,000, and the excess 5,000 is suspended and carried forward."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0005",
@@ -3032,7 +3460,21 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which basis absorbs the loss first?",
+     "reveal": "Stock basis, 3,000."
+    },
+    {
+     "ask": "How much loss reaches the loan?",
+     "reveal": "8,000 - 3,000 = 5,000."
+    },
+    {
+     "ask": "What is the loan basis afterward?",
+     "reveal": "10,000 - 5,000 = 5,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0006",
@@ -3094,7 +3536,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a single-member LLC with no election classified?",
+     "reveal": "As a disregarded entity."
+    },
+    {
+     "ask": "Where does the owner report a business's income?",
+     "reveal": "On Schedule C of her own return, with self-employment tax."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0007",
@@ -3183,7 +3635,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items increase outside basis?",
+     "reveal": "Contribution 50,000, share of recourse liabilities 20,000, and share of income 10,000."
+    },
+    {
+     "ask": "What is the sum before the distribution?",
+     "reveal": "50,000 + 20,000 + 10,000 = 80,000."
+    },
+    {
+     "ask": "What is the basis after the distribution?",
+     "reveal": "80,000 - 15,000 = 65,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0008",
@@ -3268,7 +3734,21 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which K-1 items are self-employment earnings for a general partner?",
+     "reveal": "Ordinary business income and guaranteed payments for services."
+    },
+    {
+     "ask": "Which are excluded?",
+     "reveal": "Interest and capital gain."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "40,000 + 25,000 = 65,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0009",
@@ -3330,7 +3810,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What must an S corporation pay a shareholder who works full time?",
+     "reveal": "Reasonable compensation as wages."
+    },
+    {
+     "ask": "What may the IRS do with distributions instead of a reasonable salary?",
+     "reveal": "Recharacterize them as wages subject to payroll tax."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0010",
@@ -3396,7 +3886,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which limit looks first at stock and debt basis?",
+     "reveal": "The basis limitation."
+    },
+    {
+     "ask": "What follows and what comes last?",
+     "reveal": "The at-risk rules, then the passive activity rules."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0011",
@@ -3486,7 +3986,21 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the sole proprietor's tax?",
+     "reveal": "100,000 x 0.9235 x 0.153 = 14,130."
+    },
+    {
+     "ask": "What is the S corporation tax on the 40,000 salary?",
+     "reveal": "40,000 x 0.153 = 6,120."
+    },
+    {
+     "ask": "What is the saving?",
+     "reveal": "14,130 - 6,120 = about 8,010."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0012",
@@ -3589,7 +4103,17 @@
     "A": "trap",
     "B": "trap",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which K-1 item is missing from the draft return?",
+     "reveal": "The guaranteed payment of 12,000 in box 4."
+    },
+    {
+     "ask": "How is it treated?",
+     "reveal": "As ordinary income and, for a general partner, self-employment earnings; the other items are already reported on the right forms."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0013",
@@ -3679,7 +4203,21 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is Priya's basis?",
+     "reveal": "10,000 + 30,000 of allocated recourse liabilities = 40,000, so she deducts the full 25,000."
+    },
+    {
+     "ask": "What is Sam's basis?",
+     "reveal": "10,000, since corporate debt owed to others does not add to it, so he deducts 10,000."
+    },
+    {
+     "ask": "What is the difference?",
+     "reveal": "25,000 - 10,000 = 15,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0014",
@@ -3794,7 +4332,21 @@
     "B": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does basis change before a loss is applied?",
+     "reveal": "Distributions reduce it first."
+    },
+    {
+     "ask": "What basis remains and how much loss is allowed?",
+     "reveal": "6,000 - 4,000 = 2,000, so 2,000 of loss is allowed."
+    },
+    {
+     "ask": "What happens to the remainder?",
+     "reveal": "9,000 - 2,000 = 7,000 is suspended."
+    }
+   ]
   },
   {
    "id": "REG-IV-B-0015",
@@ -3856,7 +4408,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much of the 30,000 is tax-free?",
+     "reveal": "Up to stock basis, 22,000."
+    },
+    {
+     "ask": "How is the excess treated with no earnings and profits?",
+     "reveal": "As gain from the sale of stock, long-term after five years, so 8,000 long-term capital gain."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0001",
@@ -3942,7 +4504,21 @@
     "A": "limit",
     "B": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How far into the phase-out range is Nora?",
+     "reveal": "86,000 - 81,000 = 5,000 of a 10,000 range."
+    },
+    {
+     "ask": "What is the reduction?",
+     "reveal": "7,500 x 5,000 / 10,000 = 3,750."
+    },
+    {
+     "ask": "What is the deduction?",
+     "reveal": "7,500 - 3,750 = 3,750."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0002",
@@ -4024,7 +4600,21 @@
     "B": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is Carl's annual limit including catch-up?",
+     "reveal": "8,750 + 1,000 = 9,750."
+    },
+    {
+     "ask": "How does the employer contribution affect it?",
+     "reveal": "9,750 - 2,000 = 7,750."
+    },
+    {
+     "ask": "What is the deduction?",
+     "reveal": "The lesser of 9,000 or 7,750, so 7,750, with the excess subject to tax unless withdrawn."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0003",
@@ -4083,7 +4673,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What must an HSA-eligible individual have and not have?",
+     "reveal": "Qualifying HDHP coverage, no other disqualifying coverage, no Medicare enrollment, and not claimable as a dependent."
+    },
+    {
+     "ask": "Which person meets all of those?",
+     "reveal": "The one with only a qualifying HDHP who cannot be claimed as a dependent; an FSA, Medicare or dependent status each disqualify."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0004",
@@ -4170,7 +4770,17 @@
     "B": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the SE tax base and tax?",
+     "reveal": "80,000 x 92.35% = 73,880, then 73,880 x 15.3% = 11,303."
+    },
+    {
+     "ask": "What is deductible?",
+     "reveal": "Half, 5,652, as an adjustment to income."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0005",
@@ -4252,7 +4862,17 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the phase-out fraction remaining?",
+     "reveal": "(100,000 - 90,000) / 15,000 = 2/3."
+    },
+    {
+     "ask": "What is the deduction?",
+     "reveal": "2,500 x 2/3 = 1,667."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0006",
@@ -4338,7 +4958,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is alimony under a 2016 decree deductible?",
+     "reveal": "Yes, since the instrument was executed before 2019 and not modified."
+    },
+    {
+     "ask": "What is the annual amount, and child support?",
+     "reveal": "1,000 x 12 = 12,000; child support is never deductible."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0007",
@@ -4424,7 +5054,21 @@
     "B": "calc",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is half of the self-employment tax?",
+     "reveal": "100,000 x 0.9235 x 0.153 / 2 = 7,065."
+    },
+    {
+     "ask": "What are the net earnings for the plan?",
+     "reveal": "100,000 - 7,065 = 92,935."
+    },
+    {
+     "ask": "What is the contribution at 20%?",
+     "reveal": "92,935 x 20% = 18,587."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0008",
@@ -4506,7 +5150,21 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is half of the SE tax on 30,000?",
+     "reveal": "30,000 x 0.9235 x 0.153 / 2 = 2,119."
+    },
+    {
+     "ask": "What is the earnings limit?",
+     "reveal": "30,000 - 2,119 = 27,881."
+    },
+    {
+     "ask": "Which is smaller, the premiums or the limit?",
+     "reveal": "27,881 is less than 35,000, so the deduction is 27,881."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0009",
@@ -4568,7 +5226,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is an above-the-line deduction?",
+     "reveal": "An adjustment in arriving at AGI, such as forfeited early-withdrawal penalties."
+    },
+    {
+     "ask": "Which listed item is it?",
+     "reveal": "The penalty on early withdrawal of a certificate of deposit; employee expenses, return prep fees and moving costs for a private-sector job are not adjustments."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0010",
@@ -4651,7 +5319,21 @@
     "A": "limit",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which expenses qualify as medical?",
+     "reveal": "Premiums, prescriptions, dental and hospital: 5,000 + 1,800 + 3,000 + 2,500 = 12,300."
+    },
+    {
+     "ask": "Which are excluded?",
+     "reveal": "Cosmetic surgery not medically necessary and general fitness membership."
+    },
+    {
+     "ask": "What is the floor and the deduction?",
+     "reveal": "7.5% x 60,000 = 4,500, so 12,300 - 4,500 = 7,800."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0011",
@@ -4734,7 +5416,21 @@
     "A": "calc",
     "B": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What debt limit applies to a mortgage taken out after December 15, 2017?",
+     "reveal": "750,000 of acquisition debt."
+    },
+    {
+     "ask": "What fraction of interest is deductible?",
+     "reveal": "750,000 / 900,000 = 5/6."
+    },
+    {
+     "ask": "What is the amount?",
+     "reveal": "54,000 x 5/6 = 45,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0012",
@@ -4796,7 +5492,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which taxes are deductible on Schedule A?",
+     "reveal": "State and local income or property taxes, subject to the cap."
+    },
+    {
+     "ask": "Which listed item is such a tax?",
+     "reveal": "State income tax withheld from wages; federal income tax, special improvement assessments and association dues are not."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0013",
@@ -4880,7 +5586,21 @@
     "A": "limit",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much does MAGI exceed the threshold?",
+     "reveal": "560,000 - 505,000 = 55,000."
+    },
+    {
+     "ask": "What is the reduced limit?",
+     "reveal": "40,400 - 30% x 55,000 = 40,400 - 16,500 = 23,900, above the 10,000 floor."
+    },
+    {
+     "ask": "Which is smaller, taxes paid or the limit?",
+     "reveal": "42,000 exceeds 23,900, so 23,900."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0014",
@@ -4963,7 +5683,21 @@
     "A": "limit",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the reduction?",
+     "reveal": "30% x (640,000 - 505,000) = 40,500."
+    },
+    {
+     "ask": "What does that do to the limit?",
+     "reveal": "40,400 - 40,500 falls below zero, so the 10,000 floor applies."
+    },
+    {
+     "ask": "What is the deduction?",
+     "reveal": "10,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0015",
@@ -5046,7 +5780,21 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which is smaller, basis or the decline in value?",
+     "reveal": "Decline 140,000 - 105,000 = 35,000, less than basis 100,000."
+    },
+    {
+     "ask": "What is the loss after insurance?",
+     "reveal": "35,000 - 5,000 = 30,000."
+    },
+    {
+     "ask": "What are the reductions and the result?",
+     "reveal": "Less 100 and less 10% of AGI, 9,000: 30,000 - 100 - 9,000 = 20,900."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0016",
@@ -5106,7 +5854,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is a personal casualty loss deductible?",
+     "reveal": "Only if attributable to a federally declared disaster or certain state-declared disasters."
+    },
+    {
+     "ask": "Which listed loss meets that?",
+     "reveal": "Hurricane damage in a declared disaster area; burglary, a collision and a lost ring do not."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0017",
@@ -5189,7 +5947,21 @@
     "A": "concept",
     "C": "limit",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What percentage of losses may be deducted in 2026?",
+     "reveal": "90% x 18,000 = 16,200."
+    },
+    {
+     "ask": "What is the winnings limit?",
+     "reveal": "20,000."
+    },
+    {
+     "ask": "What is the deduction?",
+     "reveal": "The lesser of 16,200 and 20,000, so 16,200."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0018",
@@ -5247,7 +6019,17 @@
     "A": "limit",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is required for a contribution of 250 or more?",
+     "reveal": "A written acknowledgment from the charity."
+    },
+    {
+     "ask": "What else is needed for a cash gift?",
+     "reveal": "A bank record of the payment."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0019",
@@ -5306,7 +6088,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Who may deduct moving expenses now?",
+     "reveal": "Active-duty Armed Forces members moving under a military order, and certain intelligence personnel."
+    },
+    {
+     "ask": "Which listed taxpayer is that?",
+     "reveal": "The service member with a permanent change of station order."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0020",
@@ -5368,7 +6160,17 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What limits investment interest deductions?",
+     "reveal": "Net investment income."
+    },
+    {
+     "ask": "What is deductible and what carries forward?",
+     "reveal": "6,000 is deductible; 10,000 - 6,000 = 4,000 carries forward indefinitely."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0021",
@@ -5451,7 +6253,21 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the total itemized deductions?",
+     "reveal": "19,000 + 22,000 = 41,000."
+    },
+    {
+     "ask": "How much do they exceed the standard deduction?",
+     "reveal": "41,000 - 32,200 = 8,800."
+    },
+    {
+     "ask": "What is the tax saving at 22%?",
+     "reveal": "8,800 x 22% = 1,936."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0022",
@@ -5534,7 +6350,17 @@
     "A": "calc",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the basic single amount and the additions?",
+     "reveal": "16,100, plus 2,050 for age 65 or older and 2,050 for blindness."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "16,100 + 4,100 = 20,200."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0023",
@@ -5622,7 +6448,21 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the reduction per individual?",
+     "reveal": "6% x (170,000 - 150,000) = 1,200."
+    },
+    {
+     "ask": "What is the deduction per spouse?",
+     "reveal": "6,000 - 1,200 = 4,800."
+    },
+    {
+     "ask": "What is the total for two?",
+     "reveal": "2 x 4,800 = 9,600."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0024",
@@ -5704,7 +6544,17 @@
     "B": "concept",
     "C": "concept",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which portion of overtime pay is deductible?",
+     "reveal": "Only the premium above the regular rate."
+    },
+    {
+     "ask": "What is the premium per hour and the total?",
+     "reveal": "45 - 30 = 15, so 15 x 100 = 1,500, below the 12,500 cap."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0025",
@@ -5787,7 +6637,21 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the two figures compared for the QBI deduction?",
+     "reveal": "QBI 80,000 and taxable income minus net capital gain, 120,000 - 10,000 = 110,000."
+    },
+    {
+     "ask": "Which is lower?",
+     "reveal": "80,000."
+    },
+    {
+     "ask": "What is 20% of it?",
+     "reveal": "16,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0026",
@@ -5870,7 +6734,17 @@
     "A": "limit",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are 20% of QBI and 20% of taxable income?",
+     "reveal": "20% x 100,000 = 20,000 and 20% x 60,000 = 12,000."
+    },
+    {
+     "ask": "Which is smaller?",
+     "reveal": "12,000, so that is the deduction."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0027",
@@ -5957,7 +6831,21 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is half of the SE tax?",
+     "reveal": "90,000 x 0.9235 x 0.153 / 2 = 6,358."
+    },
+    {
+     "ask": "What is QBI after business-attributable deductions?",
+     "reveal": "90,000 - 6,358 - 12,000 = 71,642."
+    },
+    {
+     "ask": "What is 20% of it?",
+     "reveal": "14,328."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0028",
@@ -6040,7 +6928,21 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is 20% of QBI?",
+     "reveal": "20% x 400,000 = 80,000."
+    },
+    {
+     "ask": "What is the wage and property limit above the phase-in?",
+     "reveal": "The greater of 50% x 60,000 = 30,000 or 25% x 60,000 + 2.5% x 100,000 = 17,500, so 30,000."
+    },
+    {
+     "ask": "Which amount controls?",
+     "reveal": "30,000 is below 80,000 and below 20% of taxable income, 120,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0029",
@@ -6103,7 +7005,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which fields are specified service trades?",
+     "reveal": "Health, law, accounting, consulting and similar personal-service fields."
+    },
+    {
+     "ask": "Which listed business is one?",
+     "reveal": "The medical practice; engineering, bakeries and hardware stores are not."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0030",
@@ -6190,7 +7102,17 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Do specified-service limits apply below the threshold?",
+     "reveal": "No, it is treated like any other business."
+    },
+    {
+     "ask": "What is the deduction?",
+     "reveal": "20% x 70,000 = 14,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0031",
@@ -6282,7 +7204,17 @@
     "B": "trap",
     "C": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which itemized deductions are allowed for 2026?",
+     "reveal": "State and local taxes within the cap, qualified mortgage interest, and medical over 7.5% of AGI."
+    },
+    {
+     "ask": "Which proposed entry falls under an unallowed category?",
+     "reveal": "The employee business expense entry, since that category of itemized deduction is suspended for 2026."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0032",
@@ -6365,7 +7297,21 @@
     "A": "concept",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the 2025 cap for this couple?",
+     "reveal": "40,000 - 30% x 20,000 = 34,000."
+    },
+    {
+     "ask": "What is the 2026 cap?",
+     "reveal": "40,400 - 30% x 15,000 = 35,900."
+    },
+    {
+     "ask": "Are both below the 50,000 paid, and what is the difference?",
+     "reveal": "Yes, so 35,900 - 34,000 = 1,900."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0033",
@@ -6452,7 +7398,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is QBI compared with Schedule C profit?",
+     "reveal": "QBI is net of deductions attributable to the business."
+    },
+    {
+     "ask": "Which deductions does Kai's 90,000 need to reduce by?",
+     "reveal": "Half of SE tax, the SEP contribution and self-employed health insurance."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0034",
@@ -6535,7 +7491,21 @@
     "A": "concept",
     "B": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does Kim's law practice get above the phase-in range?",
+     "reveal": "Nothing, since a specified service business gets no deduction there."
+    },
+    {
+     "ask": "What is Lou's deduction?",
+     "reveal": "The lesser of 20% x 300,000 = 60,000 or 50% x 100,000 = 50,000, so 50,000."
+    },
+    {
+     "ask": "What is the difference?",
+     "reveal": "50,000 - 0 = 50,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0035",
@@ -6622,7 +7592,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is Grace covered by an employer plan, and which range applies?",
+     "reveal": "Yes, so the 81,000 to 91,000 range for a single covered filer applies."
+    },
+    {
+     "ask": "Where does her MAGI of 95,000 fall?",
+     "reveal": "Above the top of the range, so no deduction is allowed."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0036",
@@ -6708,7 +7688,21 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the HSA limit include employer contributions?",
+     "reveal": "Yes."
+    },
+    {
+     "ask": "What is Ron's own deductible amount?",
+     "reveal": "4,400 - 1,500 = 2,900."
+    },
+    {
+     "ask": "What happens to the rest?",
+     "reveal": "The remaining 2,000 is an excess contribution subject to a 6% excise tax unless withdrawn."
+    }
+   ]
   },
   {
    "id": "REG-IV-C-0037",
@@ -6767,7 +7761,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is home mortgage interest deductible?",
+     "reveal": "On acquisition debt within 750,000, or home equity debt used to buy, build or improve the home."
+    },
+    {
+     "ask": "How do the two homeowners compare?",
+     "reveal": "Ann's loan bought the home so its interest qualifies; Ben's loan bought a boat and vacation, so his does not."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0001",
@@ -6830,7 +7834,17 @@
     "A": "limit",
     "B": "concept",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the annual limit on net capital loss against ordinary income?",
+     "reveal": "3,000."
+    },
+    {
+     "ask": "What happens to the excess and its character?",
+     "reveal": "9,000 carries forward indefinitely and keeps its short-term or long-term character."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0002",
@@ -6888,7 +7902,17 @@
     "B": "limit",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the general net capital loss limit per year?",
+     "reveal": "3,000."
+    },
+    {
+     "ask": "What is it for a married person filing separately?",
+     "reveal": "1,500."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0003",
@@ -6946,7 +7970,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What two tests define a real estate professional?",
+     "reveal": "More than half of personal service time and more than 750 hours in real property trades in which she materially participates."
+    },
+    {
+     "ask": "Who meets both?",
+     "reveal": "The person with 900 hours that exceeded half of her 1,600 total; the others fail on hours, time share or ownership."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0004",
@@ -7005,7 +8039,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Up to what amount can a partner deduct a partnership loss?",
+     "reveal": "His outside basis at year end."
+    },
+    {
+     "ask": "What happens to the excess?",
+     "reveal": "It is not deductible now and carries forward indefinitely until basis exists."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0005",
@@ -7063,7 +8107,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which losses are deductible for an individual?",
+     "reveal": "Losses on property held for investment or business, as capital losses subject to limits."
+    },
+    {
+     "ask": "Which listed loss is on investment property?",
+     "reveal": "The stock held for two years; personal-use property losses are not deductible."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0006",
@@ -7125,7 +8179,17 @@
     "A": "concept",
     "B": "limit",
     "C": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the wash sale rule cover?",
+     "reveal": "A purchase of substantially identical stock within 30 days before or after the loss sale."
+    },
+    {
+     "ask": "Which listed purchase falls in the window and involves the same stock?",
+     "reveal": "A purchase by her IRA of ABC shares on December 27; a different company, a date beyond 30 days, or a purchase 30 days later than the window are out."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0007",
@@ -7189,7 +8253,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is hobby income taxable?",
+     "reveal": "Yes, 8,000 is included."
+    },
+    {
+     "ask": "Are hobby expenses deductible?",
+     "reveal": "No, they are miscellaneous itemized deductions that are not allowed, so no loss arises."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0008",
@@ -7276,7 +8350,21 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the net capital loss?",
+     "reveal": "10,000 - 4,000 = 6,000."
+    },
+    {
+     "ask": "How much is deducted in 2026?",
+     "reveal": "3,000."
+    },
+    {
+     "ask": "What carries forward?",
+     "reveal": "6,000 - 3,000 = 3,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0009",
@@ -7359,7 +8447,21 @@
     "A": "limit",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the special allowance and how is it reduced?",
+     "reveal": "25,000 reduced by 50% of MAGI above 100,000."
+    },
+    {
+     "ask": "What is the reduction?",
+     "reveal": "50% x (120,000 - 100,000) = 10,000."
+    },
+    {
+     "ask": "What is deductible and what is suspended?",
+     "reveal": "25,000 - 10,000 = 15,000 deductible and 30,000 - 15,000 = 15,000 suspended."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0010",
@@ -7446,7 +8548,21 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "In what order do loss limits apply?",
+     "reveal": "Basis first, then at risk."
+    },
+    {
+     "ask": "What are the two limits?",
+     "reveal": "Basis 60,000 and at risk 50,000."
+    },
+    {
+     "ask": "What is the deduction?",
+     "reveal": "The lesser of 70,000, 60,000 and 50,000, so 50,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0011",
@@ -7529,7 +8645,17 @@
     "A": "concept",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the loss on the first sale?",
+     "reveal": "20,000 - 16,000 = 4,000, disallowed as a wash sale."
+    },
+    {
+     "ask": "What is the replacement basis?",
+     "reveal": "15,500 + 4,000 = 19,500."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0012",
@@ -7611,7 +8737,21 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the total loss?",
+     "reveal": "20,000 - 16,000 = 4,000."
+    },
+    {
+     "ask": "How much is disallowed for the 60 replaced shares?",
+     "reveal": "4,000 x 60/100 = 2,400."
+    },
+    {
+     "ask": "What is allowed?",
+     "reveal": "4,000 - 2,400 = 1,600."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0013",
@@ -7697,7 +8837,21 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the sister's loss on a sale to a related person allowed?",
+     "reveal": "No, the 6,000 loss is disallowed."
+    },
+    {
+     "ask": "What is the brother's realized gain on his later sale?",
+     "reveal": "24,000 - 14,000 = 10,000."
+    },
+    {
+     "ask": "How is it reduced?",
+     "reveal": "By the disallowed 6,000 loss, so 10,000 - 6,000 = 4,000 recognized."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0014",
@@ -7759,7 +8913,21 @@
     "A": "limit",
     "B": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What limit applies to post-2017 NOL deductions?",
+     "reveal": "80% of taxable income before the NOL."
+    },
+    {
+     "ask": "What is the deduction?",
+     "reveal": "80% x 70,000 = 56,000."
+    },
+    {
+     "ask": "What remains?",
+     "reveal": "100,000 - 56,000 = 44,000, carried forward indefinitely."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0015",
@@ -7818,7 +8986,17 @@
     "A": "concept",
     "B": "calc",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the excess business loss limit do?",
+     "reveal": "Disallows business losses above the threshold, here 256,000."
+    },
+    {
+     "ask": "How much is disallowed and how is it treated?",
+     "reveal": "300,000 - 256,000 = 44,000, carried forward as an NOL."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0016",
@@ -7900,7 +9078,21 @@
     "A": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What happens to suspended passive losses on a fully taxable sale of the entire interest to an unrelated party?",
+     "reveal": "They are released and deductible, here 20,000."
+    },
+    {
+     "ask": "What happens on a gift?",
+     "reveal": "Nothing is released; the losses are added to the donee's basis."
+    },
+    {
+     "ask": "What is the difference?",
+     "reveal": "20,000 - 0 = 20,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0017",
@@ -8011,7 +9203,21 @@
     "A": "concept",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the net capital loss?",
+     "reveal": "9,000 - 2,000 = 7,000."
+    },
+    {
+     "ask": "How much can be deducted against ordinary income?",
+     "reveal": "3,000."
+    },
+    {
+     "ask": "What carries forward?",
+     "reveal": "7,000 - 3,000 = 4,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0018",
@@ -8118,7 +9324,21 @@
     "B": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does the special allowance phase out?",
+     "reveal": "25,000 reduced by 50% of MAGI above 100,000."
+    },
+    {
+     "ask": "What is the reduction?",
+     "reveal": "50% x (135,000 - 100,000) = 17,500."
+    },
+    {
+     "ask": "What is allowed?",
+     "reveal": "25,000 - 17,500 = 7,500."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0019",
@@ -8200,7 +9420,17 @@
     "A": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much of the 8,000 loss does the wash sale disallow?",
+     "reveal": "3,000."
+    },
+    {
+     "ask": "What loss is reported?",
+     "reveal": "8,000 - 3,000 = 5,000, with the disallowed 3,000 added to the replacement shares' basis."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0020",
@@ -8287,7 +9517,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is Shawn's result as a business?",
+     "reveal": "8,000 - 12,000 = a 4,000 loss that reduces income."
+    },
+    {
+     "ask": "What is Tara's result as a hobby?",
+     "reveal": "8,000 of income with no deduction for the 12,000."
+    },
+    {
+     "ask": "What is the difference?",
+     "reveal": "8,000 - (-4,000) = 12,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0021",
@@ -8377,7 +9621,21 @@
     "A": "calc",
     "C": "calc",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much of Vic's loss is ordinary?",
+     "reveal": "50,000, the ordinary loss limit for a single filer on eligible small business stock."
+    },
+    {
+     "ask": "What is Vic's total deduction?",
+     "reveal": "Ordinary 50,000 plus capital loss limited to 3,000, so 53,000."
+    },
+    {
+     "ask": "What is Wade's and the difference?",
+     "reveal": "Wade only deducts 3,000, so 53,000 - 3,000 = 50,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0022",
@@ -8467,7 +9725,21 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the deduction after the basis limit?",
+     "reveal": "min(45,000, 40,000) = 40,000."
+    },
+    {
+     "ask": "What follows after the at-risk limit?",
+     "reveal": "min(40,000, 30,000) = 30,000."
+    },
+    {
+     "ask": "What does the passive limit allow?",
+     "reveal": "Only passive income, min(30,000, 12,000) = 12,000."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0023",
@@ -8529,7 +9801,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does a wash sale apply to a purchase by the taxpayer's IRA?",
+     "reveal": "Yes, the loss is disallowed for both."
+    },
+    {
+     "ask": "Where does the disallowed loss go for each account?",
+     "reveal": "It adds to the replacement stock basis in the taxable account but cannot add to IRA basis, so it is lost."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0024",
@@ -8611,7 +9893,21 @@
     "A": "concept",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What limits the NOL deduction for a 2025 loss?",
+     "reveal": "80% of taxable income before the NOL."
+    },
+    {
+     "ask": "What is the limit?",
+     "reveal": "80% x 100,000 = 80,000."
+    },
+    {
+     "ask": "Which is smaller, that or the 90,000 carryforward?",
+     "reveal": "80,000, with 10,000 carried forward."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0025",
@@ -8690,7 +9986,17 @@
     "A": "trap",
     "B": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which losses are deductible?",
+     "reveal": "Losses on investment or business property, including worthless stock."
+    },
+    {
+     "ask": "Which entry is a personal-use loss?",
+     "reveal": "The family car sale; a coin gain is only income to report."
+    }
+   ]
   },
   {
    "id": "REG-IV-D-0026",
@@ -8772,7 +10078,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the joint-return result?",
+     "reveal": "8,000 - 10,000 = a 2,000 net loss, fully deductible."
+    },
+    {
+     "ask": "What is the separate-return result?",
+     "reveal": "Alex deducts 1,500 and Bea reports 8,000, net 6,500 of income."
+    },
+    {
+     "ask": "What is the difference?",
+     "reveal": "6,500 - (-2,000) = 8,500."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0001",
@@ -8835,7 +10155,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Who may file jointly in the year of a spouse's death?",
+     "reveal": "A survivor who has not remarried by year end."
+    },
+    {
+     "ask": "What is the status for Keiko in 2026?",
+     "reveal": "Married filing jointly with the deceased spouse."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0002",
@@ -8894,7 +10224,17 @@
     "B": "concept",
     "C": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does head of household require?",
+     "reveal": "Unmarried, paying more than half the cost of a home that is the main home of a qualifying person for more than half the year."
+    },
+    {
+     "ask": "Which person meets that?",
+     "reveal": "The one whose 8-year-old son lived with her all year; friends, short stays and a non-qualifying adult son fail."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0003",
@@ -8953,7 +10293,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which relatives qualify as qualifying relatives without living in the taxpayer's home?",
+     "reveal": "Parents, in-laws, children and certain other close relatives."
+    },
+    {
+     "ask": "Which listed person is in that group?",
+     "reveal": "The father-in-law living in his own apartment."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0004",
@@ -9016,7 +10366,17 @@
     "A": "limit",
     "B": "concept",
     "C": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What must a child meet to be a qualifying child?",
+     "reveal": "Relationship, residence for more than half the year, age, and not providing more than half of own support."
+    },
+    {
+     "ask": "Which child meets all tests?",
+     "reveal": "The full-time student under 24 who lived with the taxpayer all year and provided 30% of his own support."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0005",
@@ -9079,7 +10439,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "For how many years after the year of death can a qualifying surviving spouse status be used?",
+     "reveal": "Two years."
+    },
+    {
+     "ask": "Does Rosa meet the conditions and what does it give?",
+     "reveal": "She has a dependent child and has not remarried, so she gets joint rates and the joint standard deduction."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0006",
@@ -9138,7 +10508,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a taxpayer legally separated under a decree of separate maintenance treated at year end?",
+     "reveal": "As unmarried."
+    },
+    {
+     "ask": "Which status does Nadia use with no children?",
+     "reveal": "Single."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0007",
@@ -9200,7 +10580,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What lets a married taxpayer be treated as unmarried?",
+     "reveal": "The spouse did not live in the home for the last six months, she pays more than half the cost, and a qualifying child lives with her."
+    },
+    {
+     "ask": "Which status does that allow?",
+     "reveal": "Head of household."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0008",
@@ -9262,7 +10652,17 @@
     "B": "concept",
     "C": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does Form 8332 release?",
+     "reveal": "The child tax credit and dependency claim to the noncustodial parent."
+    },
+    {
+     "ask": "Who can still claim head of household status?",
+     "reveal": "Only the custodial parent, so Pia keeps it."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0009",
@@ -9320,7 +10720,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What rule covers a dependent supported by several people none of whom pays over half?",
+     "reveal": "A multiple support agreement."
+    },
+    {
+     "ask": "Who may claim the mother and what is needed?",
+     "reveal": "One contributor of more than 10%, with written statements from the others who could have claimed her."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0010",
@@ -9382,7 +10792,17 @@
     "A": "concept",
     "B": "concept",
     "C": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the self-employment filing threshold?",
+     "reveal": "Net earnings from self-employment of 400 or more."
+    },
+    {
+     "ask": "Does Kira meet it?",
+     "reveal": "Yes, so she must file even though her gross income is below the standard deduction."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0011",
@@ -9465,7 +10885,21 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is Drew's AGI?",
+     "reveal": "4,000 + 1,200 = 5,200."
+    },
+    {
+     "ask": "What is his standard deduction?",
+     "reveal": "The greater of 1,350 or 4,000 + 450 = 4,450, so 4,450."
+    },
+    {
+     "ask": "What is taxable income?",
+     "reveal": "5,200 - 4,450 = 750."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0012",
@@ -9527,7 +10961,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is nontaxable Social Security counted in gross income for the dependency test?",
+     "reveal": "No."
+    },
+    {
+     "ask": "What is the mother's gross income and does it meet the limit?",
+     "reveal": "3,000 + 1,500 = 4,500, below 5,300, so she is a qualifying relative."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0013",
@@ -9609,7 +11053,17 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the extra standard deduction for head of household?",
+     "reveal": "24,150 - 16,100 = 8,050."
+    },
+    {
+     "ask": "What is the tax reduction at 22%?",
+     "reveal": "8,050 x 22% = 1,771."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0014",
@@ -9675,7 +11129,17 @@
     "A": "concept",
     "B": "concept",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Must married-filing-separately spouses use the same deduction method?",
+     "reveal": "Yes, both itemize or both take the standard deduction."
+    },
+    {
+     "ask": "Which listed statement is that?",
+     "reveal": "If one spouse itemizes, the other cannot claim the standard deduction."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0015",
@@ -9762,7 +11226,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What must be true of the child's residence for head of household?",
+     "reveal": "The qualifying child lives with the taxpayer for more than half the year."
+    },
+    {
+     "ask": "Did the son live with Ted more than half the year?",
+     "reveal": "No, only 5 of 12 months, so Ted files as single."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0016",
@@ -9853,7 +11327,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the age test for a student qualifying child?",
+     "reveal": "Under age 24."
+    },
+    {
+     "ask": "Where does Lea, age 24, stand, and what alternative remains?",
+     "reveal": "She fails as a qualifying child but may be a qualifying relative if Jo provides more than half her support and gross income is under the limit."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0017",
@@ -9915,7 +11399,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "For divorced parents without Form 8332, who is the custodial parent?",
+     "reveal": "The parent with whom the child lived more nights."
+    },
+    {
+     "ask": "Who is that here?",
+     "reveal": "Mia, with 200 nights against 165."
+    }
+   ]
   },
   {
    "id": "REG-IV-E-0018",
@@ -9994,7 +11488,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does qualifying surviving spouse status require besides a recent death and no remarriage?",
+     "reveal": "A dependent child."
+    },
+    {
+     "ask": "Does Nora have one?",
+     "reveal": "No, so she files as single."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0001",
@@ -10064,7 +11568,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is a refundable credit?",
+     "reveal": "One that pays out above the tax liability."
+    },
+    {
+     "ask": "Which listed credit is fully refundable?",
+     "reveal": "The earned income credit; the others only reduce tax to zero."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0002",
@@ -10123,7 +11637,17 @@
     "A": "limit",
     "B": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the four installment dates?",
+     "reveal": "April 15, June 15, September 15 of the tax year, and a date in January of the next year."
+    },
+    {
+     "ask": "Which date is the fourth?",
+     "reveal": "January 15, 2027."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0003",
@@ -10182,7 +11706,17 @@
     "A": "limit",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is Aaron's prior-year AGI and what does that trigger?",
+     "reveal": "210,000, above 150,000."
+    },
+    {
+     "ask": "What safe harbor percentage applies?",
+     "reveal": "110% of the 2025 tax."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0004",
@@ -10241,7 +11775,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the tax due after withholding?",
+     "reveal": "8,400 - 7,500 = 900."
+    },
+    {
+     "ask": "Is it below the penalty threshold?",
+     "reveal": "Yes, under 1,000, so no addition to tax applies."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0005",
@@ -10304,7 +11848,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which rates and standard deduction does a qualifying surviving spouse use?",
+     "reveal": "The joint return rates and joint standard deduction."
+    },
+    {
+     "ask": "Which schedule is that?",
+     "reveal": "Married filing jointly."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0006",
@@ -10362,7 +11916,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does net investment income include?",
+     "reveal": "Interest, dividends, capital gains, rents and royalties outside an active business."
+    },
+    {
+     "ask": "Which listed item is that?",
+     "reveal": "Gain on the sale of investment stock; wages, Social Security and home-state bond interest are excluded."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0007",
@@ -10424,7 +11988,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the ISO bargain element in the year of exercise?",
+     "reveal": "The excess of stock value over exercise price, not regular income if shares are unsold."
+    },
+    {
+     "ask": "How is it treated for AMT?",
+     "reveal": "It is an AMT adjustment that increases alternative minimum taxable income."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0008",
@@ -10482,7 +12056,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What kind of AMT item is an incentive stock option exercise?",
+     "reveal": "A deferral item."
+    },
+    {
+     "ask": "How is AMT on deferral items recovered?",
+     "reveal": "Through the minimum tax credit carried forward indefinitely against regular tax."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0009",
@@ -10544,7 +12128,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Who is subject to the kiddie tax?",
+     "reveal": "A child under 19, or a full-time student under 24 in certain cases, with unearned income above the threshold."
+    },
+    {
+     "ask": "Which listed child fits?",
+     "reveal": "The 15-year-old dependent of his parents."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0010",
@@ -10603,7 +12197,17 @@
     "B": "limit",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the child tax credit require?",
+     "reveal": "A qualifying child under 17 at year end with a valid Social Security number."
+    },
+    {
+     "ask": "Which dependent meets both conditions and residence?",
+     "reveal": "The 16-year-old with a Social Security number living with the taxpayer all year."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0011",
@@ -10661,7 +12265,17 @@
     "A": "limit",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the earned income credit require?",
+     "reveal": "Earned income, a valid Social Security number, and investment income within the limit."
+    },
+    {
+     "ask": "Which taxpayer meets all of these?",
+     "reveal": "The married couple filing jointly with two children, 30,000 of earned income and only 1,000 of interest; the others have excess investment income, no earned income, or nonresident alien status."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0012",
@@ -10719,7 +12333,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the American opportunity credit count as qualified expenses?",
+     "reveal": "Tuition, required fees, and books, supplies and equipment required for the courses."
+    },
+    {
+     "ask": "Which listed expenses are excluded?",
+     "reveal": "Room and board, loan interest and transportation, so only tuition and required materials qualify."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0013",
@@ -10785,7 +12409,17 @@
     "B": "concept",
     "C": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "May foreign income tax be both credited and deducted for the same year?",
+     "reveal": "No, one or the other."
+    },
+    {
+     "ask": "What limits the credit?",
+     "reveal": "The U.S. tax on the foreign source income; the alternative is an itemized deduction."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0014",
@@ -10911,7 +12545,21 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the bracket widths through 24%?",
+     "reveal": "12,400 at 10%, 38,000 at 12%, 55,300 at 22%, and the remaining 145,000 - 105,700 = 39,300 at 24%."
+    },
+    {
+     "ask": "What is each bracket's tax?",
+     "reveal": "1,240, 4,560, 12,166 and 9,432."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "27,398."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0015",
@@ -11036,7 +12684,21 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the ordinary tax on 40,050?",
+     "reveal": "1,240 + 12% x 27,650 = 4,558."
+    },
+    {
+     "ask": "How much of the 0% band is left for the gain?",
+     "reveal": "49,450 - 40,050 = 9,400."
+    },
+    {
+     "ask": "What is the tax on the rest of the gain and the total?",
+     "reveal": "20,000 - 9,400 = 10,600 x 15% = 1,590, so 4,558 + 1,590 = 6,148."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0016",
@@ -11123,7 +12785,21 @@
     "B": "calc",
     "C": "limit",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the two figures compared for the NIIT?",
+     "reveal": "Net investment income 50,000 and MAGI over 200,000, which is 35,000."
+    },
+    {
+     "ask": "Which is lower?",
+     "reveal": "35,000."
+    },
+    {
+     "ask": "What is the tax?",
+     "reveal": "3.8% x 35,000 = 1,330."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0017",
@@ -11208,7 +12884,17 @@
     "B": "limit",
     "C": "calc",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "On what amount does the additional Medicare tax apply?",
+     "reveal": "Wages above 200,000."
+    },
+    {
+     "ask": "What is the excess and the tax?",
+     "reveal": "260,000 - 200,000 = 60,000, and 0.9% x 60,000 = 540."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0018",
@@ -11291,7 +12977,21 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which children get the larger credit?",
+     "reveal": "Those under 17: the 8- and 15-year-olds, 2 x 2,200 = 4,400."
+    },
+    {
+     "ask": "What does the 18-year-old dependent get?",
+     "reveal": "The 500 credit for other dependents."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "4,400 + 500 = 4,900."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0019",
@@ -11374,7 +13074,21 @@
     "B": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the earned income above the base?",
+     "reveal": "12,500 - 2,500 = 10,000, and 15% of it is 1,500."
+    },
+    {
+     "ask": "What is the per-child refundable cap?",
+     "reveal": "1,700."
+    },
+    {
+     "ask": "Which is smaller?",
+     "reveal": "1,500."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0020",
@@ -11457,7 +13171,21 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the full credit?",
+     "reveal": "2,000 + 25% x 2,000 = 2,500."
+    },
+    {
+     "ask": "How much is left after the phase-out at 170,000?",
+     "reveal": "Halfway through the 20,000 range, so 1,250."
+    },
+    {
+     "ask": "What are the refundable and nonrefundable parts?",
+     "reveal": "40% x 1,250 = 500 refundable, so 1,250 - 500 = 750 nonrefundable."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0021",
@@ -11542,7 +13270,21 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What limits the foreign tax credit?",
+     "reveal": "U.S. tax x foreign source income / taxable income."
+    },
+    {
+     "ask": "What is the limit?",
+     "reveal": "20,000 x 25,000 / 100,000 = 5,000."
+    },
+    {
+     "ask": "Which is smaller than the 8,000 paid?",
+     "reveal": "5,000, so that is the credit."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0022",
@@ -11668,7 +13410,21 @@
     "B": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which schedule applies to joint filers?",
+     "reveal": "The married filing jointly schedule with a 24,800 first bracket."
+    },
+    {
+     "ask": "What are the bracket amounts?",
+     "reveal": "2,480, 9,120, 24,332 and 6,864."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "42,796."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0023",
@@ -11772,7 +13528,21 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How far over the threshold is MAGI?",
+     "reveal": "412,300 - 400,000 = 12,300, or 13 increments of 1,000."
+    },
+    {
+     "ask": "What is the reduction?",
+     "reveal": "13 x 50 = 650."
+    },
+    {
+     "ask": "What is the credit?",
+     "reveal": "4,400 - 650 = 3,750."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0024",
@@ -11897,7 +13667,21 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items are added to regular taxable income for AMTI?",
+     "reveal": "State and local taxes 40,400, the option bargain element 60,000 and private activity bond interest 5,000."
+    },
+    {
+     "ask": "What are AMTI and the AMT base?",
+     "reveal": "300,000 + 40,400 + 60,000 + 5,000 = 405,400, less exemption 90,100 = 315,300."
+    },
+    {
+     "ask": "What is the tentative tax and the AMT?",
+     "reveal": "26% x 244,500 + 28% x 70,800 = 83,394, so 83,394 - 73,769 = 9,625."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0025",
@@ -12001,7 +13785,21 @@
     "A": "calc",
     "C": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much does AMTI exceed the threshold?",
+     "reveal": "560,000 - 500,000 = 60,000."
+    },
+    {
+     "ask": "What is the reduction?",
+     "reveal": "50% x 60,000 = 30,000."
+    },
+    {
+     "ask": "What is the exemption?",
+     "reveal": "90,100 - 30,000 = 60,100."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0026",
@@ -12083,7 +13881,21 @@
     "B": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the American opportunity credit on 6,000 of expenses?",
+     "reveal": "2,000 + 25% x 2,000 = 2,500."
+    },
+    {
+     "ask": "What is the lifetime learning credit?",
+     "reveal": "20% x 6,000 = 1,200."
+    },
+    {
+     "ask": "What is the difference?",
+     "reveal": "2,500 - 1,200 = 1,300."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0027",
@@ -12165,7 +13977,21 @@
     "B": "limit",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the current-year safe harbor?",
+     "reveal": "90% x 55,000 = 49,500."
+    },
+    {
+     "ask": "What is the prior-year safe harbor?",
+     "reveal": "110% x 40,000 = 44,000."
+    },
+    {
+     "ask": "What is the gap?",
+     "reveal": "49,500 - 44,000 = 5,500."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0028",
@@ -12251,7 +14077,17 @@
     "B": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which part of the gain counts as net investment income?",
+     "reveal": "Only what a deemed asset sale would produce from passive or investment assets, 20,000."
+    },
+    {
+     "ask": "What is the tax?",
+     "reveal": "3.8% x 20,000 = 760."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0029",
@@ -12357,7 +14193,17 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much of the son's income is net unearned income?",
+     "reveal": "6,500 - 2,700 = 3,800."
+    },
+    {
+     "ask": "At whose rate is it taxed?",
+     "reveal": "The parent's marginal rate."
+    }
+   ]
   },
   {
    "id": "REG-IV-F-0030",
@@ -12465,7 +14311,21 @@
     "A": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are net earnings from self-employment?",
+     "reveal": "60,000 x 0.9235 = 55,410."
+    },
+    {
+     "ask": "How much is subject to the 12.4% Social Security tax given the wage base?",
+     "reveal": "184,500 - 150,000 = 34,500, so 4,278."
+    },
+    {
+     "ask": "What is Medicare and the total?",
+     "reveal": "2.9% x 55,410 = 1,607, so 4,278 + 1,607 = 5,885."
+    }
+   ]
   }
  ]
 }

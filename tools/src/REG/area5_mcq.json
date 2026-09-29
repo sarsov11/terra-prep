@@ -67,7 +67,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What makes a book-tax difference permanent?",
+     "reveal": "It never reverses in a later year."
+    },
+    {
+     "ask": "Which listed item is recorded in book income but never taxed?",
+     "reveal": "Interest on state government bonds; depreciation, reserves and prepaid rent are timing items."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0002",
@@ -159,7 +169,21 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which book items are added back?",
+     "reveal": "Federal income tax 86,000, the disallowed half of meals 30,000 x 50% = 15,000, and fines 4,000."
+    },
+    {
+     "ask": "Which items are subtracted?",
+     "reveal": "Tax-exempt interest 9,000 and excess tax depreciation 22,000."
+    },
+    {
+     "ask": "What is taxable income?",
+     "reveal": "412,000 + 86,000 + 15,000 + 4,000 - 9,000 - 22,000 = 486,000."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0003",
@@ -250,7 +274,17 @@
     "A": "calc",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items are added back to book income?",
+     "reveal": "Federal income tax 60,000, capital loss over capital gains 12,000, and officer life insurance premiums 5,000."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "250,000 + 60,000 + 12,000 + 5,000 = 327,000."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0004",
@@ -351,7 +385,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does excess tax depreciation raise or lower taxable income relative to book?",
+     "reveal": "It lowers it, so it is subtracted."
+    },
+    {
+     "ask": "What is the correct line 10?",
+     "reveal": "300,000 + 70,000 + 8,000 - 6,000 - 40,000 = 332,000."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0005",
@@ -410,7 +454,17 @@
     "A": "limit",
     "B": "limit",
     "C": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What asset size triggers Schedule M-3?",
+     "reveal": "Total assets of 10 million or more at year end."
+    },
+    {
+     "ask": "Which corporation has that?",
+     "reveal": "The one with 12.4 million; the others fall below it."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0006",
@@ -497,7 +551,17 @@
     "A": "calc",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which listed differences reverse in later years?",
+     "reveal": "Depreciation timing and the warranty accrual."
+    },
+    {
+     "ask": "What is their sum?",
+     "reveal": "20,000 + 14,000 = 34,000, while penalties, state bond interest and disallowed meals are permanent."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0007",
@@ -585,7 +649,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the add-backs and adjustments to book income?",
+     "reveal": "Add federal tax 105,000, reserve provision 18,000, and prepaid income 30,000."
+    },
+    {
+     "ask": "What is subtracted?",
+     "reveal": "Actual specific write-offs of 11,000."
+    },
+    {
+     "ask": "What is taxable income?",
+     "reveal": "500,000 + 105,000 + 18,000 + 30,000 - 11,000 = 642,000."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0008",
@@ -644,7 +722,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items are added to book income on Schedule M-1?",
+     "reveal": "Expenses recorded in books that are not deductible or not yet deductible."
+    },
+    {
+     "ask": "Which listed item is such an expense?",
+     "reveal": "Federal income tax expense; the others are subtractions."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0009",
@@ -704,7 +792,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are club dues deductible?",
+     "reveal": "No, not at all."
+    },
+    {
+     "ask": "How is the book deduction handled on Schedule M-1?",
+     "reveal": "The full 3,000 is added back."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0010",
@@ -764,7 +862,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What class is an apartment building?",
+     "reveal": "Residential rental property."
+    },
+    {
+     "ask": "What period and method apply?",
+     "reveal": "27.5 years straight-line."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0011",
@@ -796,9 +904,9 @@
    },
    "steps": [
     "Taxable income before charity = 180,000 + 47,000 + 30,000 = 257,000",
-    "Floor 1% x 257,000 = 2,570, so 30,000 - 2,570 = 27,430 is eligible",
-    "Ceiling 10% x 257,000 = 25,700 is lower, so deduction = 25,700",
-    "Taxable income = 257,000 - 25,700 = 231,300"
+    "Floor 1% x 257,000 = 2,570; ceiling 10% x 257,000 = 25,700",
+    "Contributions 30,000 exceed the ceiling, so deduction = 25,700 - 2,570 = 23,130 (section 170(b)(2)(A))",
+    "Taxable income = 257,000 - 23,130 = 233,870"
    ],
    "calc_check": {
     "expr": "(180000+47000+30000)-(0.10*(180000+47000+30000)-0.01*(180000+47000+30000))",
@@ -856,7 +964,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is taxable income before the charitable deduction?",
+     "reveal": "180,000 + 47,000 + 30,000 = 257,000."
+    },
+    {
+     "ask": "What are the ceiling and the floor?",
+     "reveal": "10% x 257,000 = 25,700 and 1% x 257,000 = 2,570."
+    },
+    {
+     "ask": "What is the deduction and taxable income?",
+     "reveal": "25,700 - 2,570 = 23,130, so 257,000 - 23,130 = 233,870."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0012",
@@ -942,7 +1064,17 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much tax depreciation exceeds book depreciation?",
+     "reveal": "300,000 - 30,000 = 270,000."
+    },
+    {
+     "ask": "What is taxable income?",
+     "reveal": "600,000 + 126,000 - 270,000 = 456,000."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0013",
@@ -1022,7 +1154,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which classification pairs a never-deductible item with the wrong label?",
+     "reveal": "Penalties paid to a government agency, which never become deductible."
+    },
+    {
+     "ask": "What is the right classification?",
+     "reveal": "Permanent, because nothing reverses."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0014",
@@ -1110,7 +1252,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which trial balance accounts have not been adjusted yet?",
+     "reveal": "Officer life insurance premiums of 7,000, bad debts and salaries."
+    },
+    {
+     "ask": "Which one is nondeductible when the corporation is beneficiary?",
+     "reveal": "The 7,000 of premiums, which must be added back."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0015",
@@ -1142,8 +1294,9 @@
    },
    "steps": [
     "Income before charity = 900,000 - 480,000 = 420,000",
-    "Floor 1% x 420,000 = 4,200, so 55,800 is eligible; ceiling 10% x 420,000 = 42,000 is lower",
-    "Corrected taxable income = 420,000 - 42,000 = 378,000; carryforward 60,000 - 42,000 = 18,000"
+    "Floor 1% x 420,000 = 4,200; ceiling 10% x 420,000 = 42,000",
+    "Deduction = 42,000 - 4,200 = 37,800; corrected taxable income = 420,000 - 37,800 = 382,200",
+    "Carryforward = 60,000 - 37,800 = 22,200 (18,000 over the ceiling + 4,200 floor amount, section 170(d)(2)(A), (C))"
    ],
    "calc_check": {
     "expr": "(900000-480000)-(0.10*(900000-480000)-0.01*(900000-480000))",
@@ -1187,7 +1340,21 @@
     "B": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is income before the charitable deduction?",
+     "reveal": "900,000 - 480,000 = 420,000."
+    },
+    {
+     "ask": "What are the ceiling, floor and deductible band?",
+     "reveal": "42,000 and 4,200, so 42,000 - 4,200 = 37,800."
+    },
+    {
+     "ask": "What is taxable income and the carryforward?",
+     "reveal": "420,000 - 37,800 = 382,200, and 60,000 - 37,800 = 22,200 carries forward."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0016",
@@ -1270,7 +1437,21 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does Kiln deduct?",
+     "reveal": "200,000 with bonus."
+    },
+    {
+     "ask": "What does Larch deduct with regular MACRS?",
+     "reveal": "20% x 200,000 = 40,000."
+    },
+    {
+     "ask": "What is the difference in taxable income?",
+     "reveal": "200,000 - 40,000 = 160,000."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0017",
@@ -1337,7 +1518,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are the corporation's premiums on a policy it benefits from deductible?",
+     "reveal": "No, so 9,000 is added back."
+    },
+    {
+     "ask": "Are the death proceeds taxable?",
+     "reveal": "No, so 500,000 is subtracted; both are permanent."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0018",
@@ -1420,7 +1611,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the filed return already reconcile to?",
+     "reveal": "300,000 + 63,000 - 8,000 - 24,000 = 331,000."
+    },
+    {
+     "ask": "What else must be added?",
+     "reveal": "Nondeductible fines of 10,000."
+    },
+    {
+     "ask": "What is the corrected income?",
+     "reveal": "341,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0001",
@@ -1503,7 +1708,17 @@
     "A": "concept",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What rate applies to a domestic C corporation?",
+     "reveal": "A flat 21%."
+    },
+    {
+     "ask": "What is the tax?",
+     "reveal": "21% x 500,000 = 105,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0002",
@@ -1590,7 +1805,21 @@
     "A": "limit",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What ownership percentage does Bristol hold and which range is it in?",
+     "reveal": "25%, which is at least 20% and under 80%."
+    },
+    {
+     "ask": "What dividends-received rate applies?",
+     "reveal": "65%."
+    },
+    {
+     "ask": "What is the deduction?",
+     "reveal": "65% x 100,000 = 65,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0003",
@@ -1681,7 +1910,17 @@
     "A": "calc",
     "C": "limit",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the two amounts compared for the dividends-received deduction at 50%?",
+     "reveal": "50% of dividends, 50% x 200,000 = 100,000, and 50% of taxable income before the deduction, 50% x 150,000 = 75,000."
+    },
+    {
+     "ask": "Would the full deduction create a loss?",
+     "reveal": "No, 150,000 - 100,000 = 50,000, so the income limit applies and the deduction is 75,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0004",
@@ -1740,7 +1979,17 @@
     "B": "limit",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What holding period does the deduction require?",
+     "reveal": "More than 45 days within the 91-day period around the ex-dividend date."
+    },
+    {
+     "ask": "Does 30 days satisfy that?",
+     "reveal": "No, so no deduction is allowed."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0005",
@@ -1840,7 +2089,21 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is taxable income before charity and DRD?",
+     "reveal": "2,400,000 - 1,300,000 - 500,000 - 120,000 + 40,000 = 520,000, with state bond interest excluded."
+    },
+    {
+     "ask": "What are the charitable deduction and the DRD?",
+     "reveal": "25,000 - 1% x 520,000 = 25,000 - 5,200 = 19,800, and 50% x 40,000 = 20,000."
+    },
+    {
+     "ask": "What are taxable income and tax?",
+     "reveal": "520,000 - 19,800 - 20,000 = 480,200, and 21% x 480,200 = 100,842."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0006",
@@ -1899,7 +2162,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What election lets an accrual-basis corporation deduct a gift in the authorizing year?",
+     "reveal": "Treat a board-authorized gift as paid in that year."
+    },
+    {
+     "ask": "What payment deadline applies?",
+     "reveal": "The 15th day of the fourth month after year end, so a March 10 payment qualifies and the deduction falls in 2026."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0007",
@@ -1992,7 +2265,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What DRD rate applies by ownership: under 20%, 20% to under 80%, 80% or more?",
+     "reveal": "50%, 65% and 100%."
+    },
+    {
+     "ask": "Which claimed rate is off?",
+     "reveal": "Delta at 25% ownership should be 65%, not 50%."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0008",
@@ -2076,7 +2359,21 @@
     "A": "calc",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the immediate deduction?",
+     "reveal": "5,000, since total costs are under 50,000."
+    },
+    {
+     "ask": "What remains to amortize and for how many months in 2026?",
+     "reveal": "12,000 - 5,000 = 7,000 over 180 months, July to December is 6 months."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "7,000 / 180 x 6 = 233, so 5,000 + 233 = 5,233."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0009",
@@ -2139,7 +2436,17 @@
     "A": "limit",
     "B": "limit",
     "C": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "On which months of the tax year are corporate installments due?",
+     "reveal": "The fourth, sixth, ninth and twelfth months, on the 15th."
+    },
+    {
+     "ask": "What is the first date for a calendar-year corporation?",
+     "reveal": "April 15."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0010",
@@ -2202,7 +2509,17 @@
     "B": "limit",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is a calendar-year corporation's return due?",
+     "reveal": "The 15th day of the fourth month, April 15, 2027."
+    },
+    {
+     "ask": "How long is the automatic extension?",
+     "reveal": "Six months, to October 15, 2027."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0011",
@@ -2289,7 +2606,21 @@
     "A": "concept",
     "C": "calc",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What limit applies to a post-2017 NOL deduction?",
+     "reveal": "80% of taxable income."
+    },
+    {
+     "ask": "What is it here?",
+     "reveal": "80% x 400,000 = 320,000."
+    },
+    {
+     "ask": "What is taxable income?",
+     "reveal": "400,000 - 320,000 = 80,000, with 180,000 of NOL carried forward."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0012",
@@ -2349,7 +2680,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "May a post-2020 NOL of a C corporation be carried back?",
+     "reveal": "No."
+    },
+    {
+     "ask": "How is the carryforward treated?",
+     "reveal": "Indefinitely, subject to the 80% taxable income limit."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0013",
@@ -2409,7 +2750,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Against what can a corporation deduct capital losses?",
+     "reveal": "Only capital gains."
+    },
+    {
+     "ask": "What happens to the 25,000 net capital loss?",
+     "reveal": "Carried back three years and forward five years as short-term."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0014",
@@ -2492,7 +2843,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What can the 50,000 capital loss offset?",
+     "reveal": "Only the 20,000 capital gain, leaving a 30,000 net loss that is not deductible now."
+    },
+    {
+     "ask": "What is taxable income?",
+     "reveal": "300,000 + 20,000 - 20,000 = 300,000."
+    },
+    {
+     "ask": "What is the tax?",
+     "reveal": "21% x 300,000 = 63,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0015",
@@ -2576,7 +2941,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the 2025 NOL deduction?",
+     "reveal": "Limited to 80% x 150,000 = 120,000, leaving 200,000 - 120,000 = 80,000."
+    },
+    {
+     "ask": "What is the 2026 deduction?",
+     "reveal": "The full 80,000, below the 240,000 limit."
+    },
+    {
+     "ask": "What is 2026 taxable income?",
+     "reveal": "300,000 - 80,000 = 220,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0016",
@@ -2670,7 +3049,21 @@
     "A": "concept",
     "B": "limit",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What caps the NOL deduction?",
+     "reveal": "80% of taxable income before the NOL."
+    },
+    {
+     "ask": "What is the cap and taxable income?",
+     "reveal": "80% x 400,000 = 320,000, so 400,000 - 320,000 = 80,000."
+    },
+    {
+     "ask": "What carries forward?",
+     "reveal": "500,000 - 320,000 = 180,000 with no expiration."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0017",
@@ -2725,7 +3118,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which year is used first for a corporate capital loss carryback?",
+     "reveal": "The third preceding year, then the second and first."
+    },
+    {
+     "ask": "What happens to the excess?",
+     "reveal": "It carries forward five years, treated as short-term."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0018",
@@ -2814,7 +3217,21 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the tax over 25,000?",
+     "reveal": "200,000 - 25,000 = 175,000."
+    },
+    {
+     "ask": "What is 25% of it and the limit?",
+     "reveal": "43,750, so the limit is 200,000 - 43,750 = 156,250."
+    },
+    {
+     "ask": "What is allowed?",
+     "reveal": "The lesser of 250,000 and 156,250, so 156,250, with 93,750 carried over."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0019",
@@ -2874,7 +3291,17 @@
     "A": "limit",
     "B": "limit",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Where do unused general business credits go?",
+     "reveal": "To another year rather than being refunded."
+    },
+    {
+     "ask": "How many years back and forward?",
+     "reveal": "Back one year and forward up to 20 years."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0020",
@@ -2961,7 +3388,21 @@
     "B": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is U.S. tax before credit?",
+     "reveal": "21% x 1,000,000 = 210,000."
+    },
+    {
+     "ask": "What is the foreign tax credit limit?",
+     "reveal": "210,000 x 300,000 / 1,000,000 = 63,000."
+    },
+    {
+     "ask": "Which is smaller than the 80,000 paid?",
+     "reveal": "63,000, so that is the credit."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0021",
@@ -3021,7 +3462,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the general business credit?",
+     "reveal": "A combination of several business credits."
+    },
+    {
+     "ask": "Which listed credit is a component?",
+     "reveal": "The research credit; the foreign tax credit, prior-year AMT credit and wage withholding credit are separate."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0022",
@@ -3120,7 +3571,21 @@
     "A": "calc",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the limit on the general business credit?",
+     "reveal": "Net income tax less 25% of the tax over 25,000."
+    },
+    {
+     "ask": "What is the limit here?",
+     "reveal": "200,000 - 25% x 175,000 = 156,250."
+    },
+    {
+     "ask": "What remains payable and carried forward?",
+     "reveal": "200,000 - 156,250 = 43,750 tax due, and 250,000 - 156,250 = 93,750 carried forward."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0023",
@@ -3179,7 +3644,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the federal statute protect for sellers of tangible goods?",
+     "reveal": "Mere solicitation of orders that are approved and shipped from outside the state."
+    },
+    {
+     "ask": "Which listed activity goes beyond solicitation?",
+     "reveal": "Employees repairing products at customers' sites, which can create nexus."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0024",
@@ -3238,7 +3713,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What did Wayfair allow states to require?",
+     "reveal": "Tax collection by remote sellers above a reasonable economic threshold."
+    },
+    {
+     "ask": "Does Mira pass the threshold and does it need a physical presence?",
+     "reveal": "350,000 exceeds 100,000, and no physical presence is needed, so it has economic nexus."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0025",
@@ -3297,7 +3782,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is business income divided among states?",
+     "reveal": "Apportioned by a formula of factors."
+    },
+    {
+     "ask": "How is nonbusiness income such as unrelated interest assigned?",
+     "reveal": "Allocated to a specific state, often the commercial domicile."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0026",
@@ -3379,7 +3874,21 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which factor does a single sales factor state use?",
+     "reveal": "Sales only."
+    },
+    {
+     "ask": "What is the factor?",
+     "reveal": "2,000,000 / 10,000,000 = 20%."
+    },
+    {
+     "ask": "What is apportioned income?",
+     "reveal": "20% x 800,000 = 160,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0027",
@@ -3462,7 +3971,21 @@
     "A": "concept",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a double-weighted sales formula computed?",
+     "reveal": "Sales counts twice, so divide the weighted sum by 4."
+    },
+    {
+     "ask": "What is the weighted average?",
+     "reveal": "(2 x 20% + 25% + 40%) / 4 = 26.25%."
+    },
+    {
+     "ask": "What is apportioned income?",
+     "reveal": "26.25% x 800,000 = 210,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0028",
@@ -3545,7 +4068,21 @@
     "A": "calc",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much business income is apportioned to State U?",
+     "reveal": "25% x 600,000 = 150,000."
+    },
+    {
+     "ask": "How is the rent treated?",
+     "reveal": "Allocated entirely to State U, 40,000."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "150,000 + 40,000 = 190,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0029",
@@ -3615,7 +4152,21 @@
     "B": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is State A's tax with a single sales factor?",
+     "reveal": "500,000 x 10% x 5% = 2,500."
+    },
+    {
+     "ask": "What is State B's factor and tax?",
+     "reveal": "(10% + 40% + 40%) / 3 = 30%, so 500,000 x 30% x 4% = 6,000."
+    },
+    {
+     "ask": "What is the difference?",
+     "reveal": "6,000 - 2,500 = 3,500."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0030",
@@ -3678,7 +4229,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "May a corporation deduct state income taxes?",
+     "reveal": "Yes, as ordinary business expenses."
+    },
+    {
+     "ask": "Does the individual state and local tax cap apply?",
+     "reveal": "No, it applies only to individuals."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0031",
@@ -3761,7 +4322,21 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the realized gain?",
+     "reveal": "(90,000 + 10,000) - 40,000 = 60,000."
+    },
+    {
+     "ask": "What is the boot?",
+     "reveal": "Cash of 10,000."
+    },
+    {
+     "ask": "What is recognized?",
+     "reveal": "The lesser of 60,000 and 10,000, so 10,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0032",
@@ -3841,7 +4416,21 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the property basis and how does cash received change it?",
+     "reveal": "40,000 less cash received 10,000."
+    },
+    {
+     "ask": "What does recognized gain do?",
+     "reveal": "Adds 10,000."
+    },
+    {
+     "ask": "What is the stock basis?",
+     "reveal": "40,000 - 10,000 + 10,000 = 40,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0033",
@@ -3924,7 +4513,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When do liabilities assumed create gain in a controlled exchange?",
+     "reveal": "When they exceed the total adjusted basis of the property transferred."
+    },
+    {
+     "ask": "What is the excess here?",
+     "reveal": "35,000 - 20,000 = 15,000 gain."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0034",
@@ -3983,7 +4582,17 @@
     "A": "concept",
     "B": "concept",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What control test applies?",
+     "reveal": "Transferors of property or cash together hold at least 80% of the stock immediately after the exchange."
+    },
+    {
+     "ask": "Which arrangement meets it?",
+     "reveal": "The one where both transferors give property or cash for 100% of the stock; stock for services, a binding prior sale and stock for no consideration break it."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0035",
@@ -4047,7 +4656,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What basis does the corporation take in a tax-free controlled transfer?",
+     "reveal": "The transferors' carryover basis, plus any gain recognized."
+    },
+    {
+     "ask": "What is it here?",
+     "reveal": "40,000, since no gain was recognized."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0036",
@@ -4110,7 +4729,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is stock received for services treated?",
+     "reveal": "As compensation at fair market value."
+    },
+    {
+     "ask": "What are the income and the basis?",
+     "reveal": "30,000 of ordinary income and a 30,000 basis."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0037",
@@ -4192,7 +4821,17 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is a distribution a dividend if accumulated E&P is negative?",
+     "reveal": "To the extent of current E&P."
+    },
+    {
+     "ask": "What is the dividend and the remainder?",
+     "reveal": "50,000, with 80,000 - 50,000 = 30,000 as a return of capital."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0038",
@@ -4275,7 +4914,21 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is the first 20,000 treated?",
+     "reveal": "As a dividend up to total E&P."
+    },
+    {
+     "ask": "What reduces basis?",
+     "reveal": "The next 50,000."
+    },
+    {
+     "ask": "What is the capital gain?",
+     "reveal": "90,000 - 20,000 - 50,000 = 20,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0039",
@@ -4352,7 +5005,17 @@
     "A": "concept",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does a corporation recognize gain on distributing appreciated property?",
+     "reveal": "Yes, as if it sold at fair market value."
+    },
+    {
+     "ask": "What is the gain?",
+     "reveal": "150,000 - 60,000 = 90,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0040",
@@ -4429,7 +5092,17 @@
     "A": "concept",
     "B": "concept",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is a shareholder's basis in distributed property?",
+     "reveal": "Its fair market value on the distribution date."
+    },
+    {
+     "ask": "What is it here?",
+     "reveal": "150,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0041",
@@ -4517,7 +5190,21 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What items are added to taxable income to reach E&P?",
+     "reveal": "Tax-exempt interest 15,000 and the dividends-received deduction 30,000."
+    },
+    {
+     "ask": "What items are subtracted?",
+     "reveal": "Federal tax 84,000, penalties 5,000 and disallowed meals 6,000."
+    },
+    {
+     "ask": "What is E&P?",
+     "reveal": "400,000 + 15,000 + 30,000 - 84,000 - 5,000 - 6,000 = 350,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0042",
@@ -4586,7 +5273,17 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the order for a distribution over E&P?",
+     "reveal": "Dividend to the extent of E&P, then reduction of basis, then capital gain."
+    },
+    {
+     "ask": "What are the amounts here?",
+     "reveal": "Dividend 20,000, basis reduction 50,000, gain 90,000 - 20,000 - 50,000 = 20,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0043",
@@ -4649,7 +5346,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a corporate payment of a shareholder's personal expense treated?",
+     "reveal": "As a distribution, not a business expense."
+    },
+    {
+     "ask": "What follows for Jill and the corporation?",
+     "reveal": "A constructive dividend to the extent of E&P, with no corporate deduction."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0044",
@@ -4730,7 +5437,17 @@
     "A": "concept",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a shareholder treated in a complete liquidation?",
+     "reveal": "As selling the stock."
+    },
+    {
+     "ask": "What is the gain?",
+     "reveal": "250,000 - 80,000 = 170,000 long-term capital gain."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0045",
@@ -4798,7 +5515,17 @@
     "A": "concept",
     "B": "concept",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the corporation recognize on distributing land in a complete liquidation?",
+     "reveal": "Gain as if sold at fair market value, 400,000 - 100,000 = 300,000."
+    },
+    {
+     "ask": "What basis do shareholders take?",
+     "reveal": "Fair market value, 400,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0046",
@@ -4884,7 +5611,17 @@
     "B": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the parent own at least 80% of the subsidiary?",
+     "reveal": "Yes, 100%."
+    },
+    {
+     "ask": "What follows for gain and basis?",
+     "reveal": "No gain, and the parent takes the subsidiary's carryover basis of 200,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0047",
@@ -4951,7 +5688,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is the 90% parent's share treated in the liquidation?",
+     "reveal": "Tax-free as an 80% parent liquidation."
+    },
+    {
+     "ask": "How is the 10% owner's share treated?",
+     "reveal": "Taxable to the subsidiary on the land distributed to Ray and to Ray on his stock."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0048",
@@ -5010,7 +5757,17 @@
     "B": "limit",
     "C": "concept",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What ownership does a common parent need for an affiliated group?",
+     "reveal": "At least 80% of both total voting power and total value of each includible subsidiary."
+    },
+    {
+     "ask": "Do majority-vote or 20% tests suffice?",
+     "reveal": "No."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0049",
@@ -5069,7 +5826,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How are intercompany distributions treated in a consolidated group?",
+     "reveal": "Excluded from income."
+    },
+    {
+     "ask": "What happens to the parent's basis in the subsidiary?",
+     "reveal": "It is reduced by the distribution."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0001",
@@ -5133,7 +5900,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Who may hold S corporation stock?",
+     "reveal": "Individuals who are U.S. citizens or residents, estates, and certain trusts."
+    },
+    {
+     "ask": "Which listed holder is permitted?",
+     "reveal": "The estate of a deceased shareholder; partnerships, nonresident aliens and C corporations are not."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0002",
@@ -5203,7 +5980,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How are family members counted toward the 100 limit?",
+     "reveal": "All lineal descendants of a common ancestor and their spouses count as one shareholder."
+    },
+    {
+     "ask": "What is the total count?",
+     "reveal": "95 + 1 = 96, not over 100."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0003",
@@ -5263,7 +6050,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What creates a second class of stock?",
+     "reveal": "Different rights to distributions or liquidation proceeds."
+    },
+    {
+     "ask": "Which arrangement gives one class twice the liquidation proceeds?",
+     "reveal": "The Class B shares with double per-share liquidation proceeds; voting differences, unauthorized one-time disproportion and safe-harbor debt do not."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0004",
@@ -5319,7 +6116,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which types of corporations cannot elect S status?",
+     "reveal": "Ineligible corporations such as insurance companies taxed under subchapter L."
+    },
+    {
+     "ask": "Which listed corporation is that?",
+     "reveal": "The domestic insurance company taxed under insurance rules."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0005",
@@ -5386,7 +6193,17 @@
     "B": "limit",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "By when must the election be made to apply to the first year?",
+     "reveal": "The 15th day of the third month of the tax year."
+    },
+    {
+     "ask": "What date is that for a February 1 start?",
+     "reveal": "April 15, 2026."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0006",
@@ -5456,7 +6273,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What consent is needed to revoke an S election?",
+     "reveal": "Shareholders holding more than half of all shares, voting and nonvoting."
+    },
+    {
+     "ask": "How many shares do Carla and Dev each hold and together?",
+     "reveal": "400 of 1,000 each, so 800 or 80% together."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0007",
@@ -5516,7 +6343,17 @@
     "A": "limit",
     "B": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What conditions trigger termination for passive income?",
+     "reveal": "Accumulated E&P and excess passive income in three consecutive years."
+    },
+    {
+     "ask": "When does termination take effect?",
+     "reveal": "The first day of the first tax year after the third year, January 1, 2027."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0008",
@@ -5575,7 +6412,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What effect does a partnership becoming a shareholder have?",
+     "reveal": "The corporation ceases to be a small business corporation."
+    },
+    {
+     "ask": "When does the election terminate?",
+     "reveal": "On the day of the event, September 10, 2026, splitting the year into S and C short years."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0009",
@@ -5631,7 +6478,17 @@
     "A": "limit",
     "B": "limit",
     "C": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is immediate re-election allowed after termination?",
+     "reveal": "No, a waiting period applies without IRS consent."
+    },
+    {
+     "ask": "Which year is the earliest?",
+     "reveal": "The fifth taxable year after the first C corporation year, 2031."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0010",
@@ -5715,7 +6572,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which entities can hold S stock?",
+     "reveal": "U.S. citizen or resident individuals and grantor trusts, but not partnerships."
+    },
+    {
+     "ask": "Which shareholder is disqualifying?",
+     "reveal": "The LLC taxed as a partnership."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0011",
@@ -5802,7 +6669,17 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is ordinary business income?",
+     "reveal": "Revenue less COGS, wages and depreciation: 900,000 - 400,000 - 200,000 - 50,000 = 250,000."
+    },
+    {
+     "ask": "Which items are separately stated?",
+     "reveal": "Immediate expensing, charity, interest, tax-exempt interest and capital gain."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0012",
@@ -5885,7 +6762,21 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is S corporation income allocated to a shareholder who sells?",
+     "reveal": "Per share per day of ownership."
+    },
+    {
+     "ask": "What is daily income and the days owned?",
+     "reveal": "365,000 / 365 = 1,000 and 90 days from January 1 to March 31."
+    },
+    {
+     "ask": "What is Wes's share?",
+     "reveal": "40% x 90,000 = 36,000."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0013",
@@ -5944,7 +6835,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What can an S corporation deduct in computing ordinary income?",
+     "reveal": "Ordinary and necessary business expenses."
+    },
+    {
+     "ask": "Which listed item is such an expense?",
+     "reveal": "Wages; the DRD, NOL deduction and entity-level income tax are not allowed."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0014",
@@ -6004,7 +6905,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items are included in ordinary business income?",
+     "reveal": "Ordinary operating items such as wages, COGS and regular depreciation."
+    },
+    {
+     "ask": "Which listed item is separately stated and why?",
+     "reveal": "Charitable contributions, because each shareholder's deduction depends on individual limits."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0015",
@@ -6071,7 +6982,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How are health premiums for a more-than-2% shareholder-employee treated?",
+     "reveal": "As wages for income tax but not FICA, deductible by the corporation."
+    },
+    {
+     "ask": "What can Grace claim?",
+     "reveal": "The self-employed health insurance deduction on Schedule 1."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0016",
@@ -6156,7 +7077,17 @@
     "B": "trap",
     "C": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items are separately stated?",
+     "reveal": "Charitable contributions, capital gains and interest income."
+    },
+    {
+     "ask": "Which draft entry treats a separately stated item as ordinary?",
+     "reveal": "The 5,000 charitable contribution deducted in box 1."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0017",
@@ -6229,7 +7160,17 @@
     "A": "trap",
     "B": "trap",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is each shareholder's share of 200,000?",
+     "reveal": "Amy 50% = 100,000, Ben 30% = 60,000 and Cal 20% = 40,000."
+    },
+    {
+     "ask": "Which K-1 does not match?",
+     "reveal": "Cal's shows 30,000, a 10,000 shortfall, so it is changed to 40,000."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0018",
@@ -6313,7 +7254,21 @@
     "B": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What increases AAA?",
+     "reveal": "Ordinary income 120,000 and capital gain 10,000."
+    },
+    {
+     "ask": "What decreases it?",
+     "reveal": "Nondeductible expenses 3,000, charity 4,000 and distributions 50,000."
+    },
+    {
+     "ask": "What is the balance?",
+     "reveal": "40,000 + 130,000 - 57,000 = 113,000."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0019",
@@ -6396,7 +7351,17 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is AAA figured for distributions?",
+     "reveal": "Without the net negative adjustment for the year."
+    },
+    {
+     "ask": "How much is treated as from AAA?",
+     "reveal": "The lesser of 25,000 and 20,000, so 20,000."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0020",
@@ -6479,7 +7444,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much of the distribution comes from AAA?",
+     "reveal": "30,000, tax-free and reducing basis."
+    },
+    {
+     "ask": "What comes next and how is it taxed?",
+     "reveal": "50,000 - 30,000 = 20,000 from accumulated E&P as a dividend."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0021",
@@ -6539,7 +7514,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items adjust AAA?",
+     "reveal": "Ordinary income, capital gains and nondeductible expenses."
+    },
+    {
+     "ask": "Which item is tracked in a separate account?",
+     "reveal": "Tax-exempt interest, in the other adjustments account."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0022",
@@ -6595,7 +7580,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the year's net loss reduce AAA for testing distributions?",
+     "reveal": "No."
+    },
+    {
+     "ask": "What rule applies?",
+     "reveal": "AAA for distributions is determined without regard to a net negative adjustment."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0023",
@@ -6696,7 +7691,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does tax-exempt income adjust AAA?",
+     "reveal": "No, it goes to the other adjustments account."
+    },
+    {
+     "ask": "What is the correct ending balance?",
+     "reveal": "40,000 + 120,000 + 10,000 - 3,000 - 50,000 = 117,000."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0024",
@@ -6774,7 +7779,17 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Without accumulated E&P, how far is a distribution tax-free?",
+     "reveal": "To the extent of stock basis, 30,000."
+    },
+    {
+     "ask": "What is the gain?",
+     "reveal": "45,000 - 30,000 = 15,000 capital gain."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0025",
@@ -6842,7 +7857,17 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What happens for the corporation with accumulated E&P?",
+     "reveal": "60,000 comes from AAA and the next 20,000 from E&P as a dividend."
+    },
+    {
+     "ask": "What happens for the corporation with none?",
+     "reveal": "The entire 80,000 reduces basis with no dividend."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0026",
@@ -6897,7 +7922,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Can an S corporation with E&P change the distribution order?",
+     "reveal": "Yes, by election."
+    },
+    {
+     "ask": "Who must consent?",
+     "reveal": "All affected shareholders."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0027",
@@ -6982,7 +8017,21 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items increase basis?",
+     "reveal": "Ordinary income 30,000, capital gain 6,000 and tax-exempt interest 4,000."
+    },
+    {
+     "ask": "Which decrease it?",
+     "reveal": "Distributions 20,000 and nondeductible expenses 2,000."
+    },
+    {
+     "ask": "What is year-end basis?",
+     "reveal": "50,000 + 40,000 - 22,000 = 68,000."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0028",
@@ -7065,7 +8114,17 @@
     "A": "concept",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What limits a shareholder's loss deduction?",
+     "reveal": "Stock plus debt basis."
+    },
+    {
+     "ask": "What is deductible and what is suspended?",
+     "reveal": "25,000 deductible and 40,000 - 25,000 = 15,000 suspended."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0029",
@@ -7148,7 +8207,21 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which basis is reduced first?",
+     "reveal": "Stock basis, 20,000."
+    },
+    {
+     "ask": "How much reaches debt basis?",
+     "reveal": "45,000 - 20,000 = 25,000."
+    },
+    {
+     "ask": "What is the debt basis afterward?",
+     "reveal": "30,000 - 25,000 = 5,000."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0030",
@@ -7231,7 +8304,21 @@
     "A": "concept",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What portion of the note was repaid?",
+     "reveal": "25,000 / 50,000 = 50%."
+    },
+    {
+     "ask": "What basis is in the repaid part?",
+     "reveal": "30,000 x 50% = 15,000."
+    },
+    {
+     "ask": "What is the gain?",
+     "reveal": "25,000 - 15,000 = 10,000."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0031",
@@ -7310,7 +8397,21 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is net income applied after prior losses reduced debt basis?",
+     "reveal": "First to restore debt basis to its original amount."
+    },
+    {
+     "ask": "How much is restored?",
+     "reveal": "40,000 - 10,000 = 30,000."
+    },
+    {
+     "ask": "What increases stock basis?",
+     "reveal": "50,000 - 30,000 = 20,000."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0032",
@@ -7366,7 +8467,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items increase basis?",
+     "reveal": "Income items including tax-exempt interest and capital gains, and contributions of capital."
+    },
+    {
+     "ask": "Which listed item decreases it?",
+     "reveal": "The share of nondeductible expenses such as fines."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0033",
@@ -7448,7 +8559,17 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much of the donated property's basis does the shareholder's stock basis absorb?",
+     "reveal": "His pro rata share of the property's adjusted basis."
+    },
+    {
+     "ask": "What is the reduction?",
+     "reveal": "50% x 20,000 = 10,000."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0034",
@@ -7535,7 +8656,21 @@
     "A": "concept",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is Xavier's basis?",
+     "reveal": "Stock 10,000 plus his direct loan 40,000 = 50,000."
+    },
+    {
+     "ask": "Does Yara's guarantee create basis?",
+     "reveal": "No, so she has only 10,000."
+    },
+    {
+     "ask": "What is the difference in deductible loss?",
+     "reveal": "50,000 - 10,000 = 40,000."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0035",
@@ -7631,7 +8766,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does tax-exempt income affect stock basis?",
+     "reveal": "Yes, it increases it."
+    },
+    {
+     "ask": "What is the correct ending basis?",
+     "reveal": "50,000 + 30,000 + 6,000 + 4,000 - 20,000 - 2,000 = 68,000."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0036",
@@ -7694,7 +8839,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What limit applies first to an S shareholder's loss?",
+     "reveal": "Basis."
+    },
+    {
+     "ask": "What follows?",
+     "reveal": "The at-risk rules and then the passive activity limits."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0037",
@@ -7775,7 +8930,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does a property contribution affect stock basis?",
+     "reveal": "It increases it by the shareholder's adjusted basis in the property."
+    },
+    {
+     "ask": "What is the increase?",
+     "reveal": "12,000, not the value."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0038",
@@ -7857,7 +9022,17 @@
     "A": "concept",
     "C": "limit",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the sale within the built-in gains recognition period?",
+     "reveal": "Yes, five years after the 2023 conversion."
+    },
+    {
+     "ask": "What is the rate and the tax?",
+     "reveal": "21% x 200,000 = 42,000."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0039",
@@ -7912,7 +9087,17 @@
     "A": "concept",
     "B": "limit",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How long is the built-in gains recognition period?",
+     "reveal": "Five years."
+    },
+    {
+     "ask": "Has it ended for a January 1, 2020 conversion?",
+     "reveal": "Yes, after 2024, so the 2026 sale is outside it."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0040",
@@ -7996,7 +9181,21 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is net passive income?",
+     "reveal": "120,000 - 20,000 = 100,000."
+    },
+    {
+     "ask": "What is excess passive investment income over 25% of receipts?",
+     "reveal": "120,000 - 75,000 = 45,000."
+    },
+    {
+     "ask": "What is excess net passive income and the tax?",
+     "reveal": "100,000 x 45,000 / 120,000 = 37,500, and 21% x 37,500 = 7,875."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0041",
@@ -8055,7 +9254,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What must an S corporation pay a working shareholder?",
+     "reveal": "Reasonable compensation."
+    },
+    {
+     "ask": "What can the IRS do with a 20,000 salary against 120,000 of comparable pay?",
+     "reveal": "Recharacterize part of the distributions as wages subject to employment taxes."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0042",
@@ -8147,7 +9356,21 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the C corporation total?",
+     "reveal": "Corporate tax 21% x 100,000 = 21,000, then dividend 79,000 taxed at 23.8% = 18,802, total 39,802."
+    },
+    {
+     "ask": "What is the S corporation tax?",
+     "reveal": "32% x 100,000 = 32,000."
+    },
+    {
+     "ask": "What is the difference?",
+     "reveal": "39,802 - 32,000 = 7,802."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0001",
@@ -8238,7 +9461,21 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items reduce ordinary business income?",
+     "reveal": "COGS, wages, guaranteed payments and regular depreciation."
+    },
+    {
+     "ask": "What is the result?",
+     "reveal": "800,000 - 300,000 - 150,000 - 60,000 - 40,000 = 250,000."
+    },
+    {
+     "ask": "Which items are separately stated?",
+     "reveal": "Charity, capital gain, expensing and interest."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0002",
@@ -8326,7 +9563,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is the guaranteed payment reported?",
+     "reveal": "As ordinary income of 60,000."
+    },
+    {
+     "ask": "What is her distributive share?",
+     "reveal": "25% x 250,000 = 62,500."
+    },
+    {
+     "ask": "What is the total and is the cash distribution income?",
+     "reveal": "60,000 + 62,500 = 122,500, and the distribution is not income."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0003",
@@ -8386,7 +9637,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items are deducted in ordinary business income?",
+     "reveal": "Rent, wages to non-partners and guaranteed payments."
+    },
+    {
+     "ask": "Which item is separately stated?",
+     "reveal": "Charitable contributions, because partners have different limits."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0004",
@@ -8442,7 +9703,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does a guaranteed payment for services compare with a payment to an outsider?",
+     "reveal": "It is treated like one for income and deduction purposes."
+    },
+    {
+     "ask": "What does it mean for Roy and the partnership?",
+     "reveal": "Ordinary income to Roy and a deduction or capitalized cost to the partnership."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0005",
@@ -8502,7 +9773,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items are separately stated on K-1?",
+     "reveal": "Items whose treatment depends on each partner, such as capital gains and losses."
+    },
+    {
+     "ask": "Which listed item is that?",
+     "reveal": "Long-term capital gain on investment securities; wages, advertising and repairs are ordinary."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0006",
@@ -8565,7 +9846,17 @@
     "B": "limit",
     "C": "limit",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is a calendar-year partnership return due?",
+     "reveal": "The 15th day of the third month, March 15, 2027."
+    },
+    {
+     "ask": "What is the automatic extension?",
+     "reveal": "Six months, to September 15, 2027."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0007",
@@ -8624,7 +9915,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a limited partner's distributive share self-employment income?",
+     "reveal": "No, it is excluded."
+    },
+    {
+     "ask": "What about guaranteed payments for services?",
+     "reveal": "Included, so 20,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0008",
@@ -8716,7 +10017,21 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a payment to a partner for services regardless of income treated?",
+     "reveal": "As a guaranteed payment, deductible by the partnership."
+    },
+    {
+     "ask": "What is the corrected ordinary income?",
+     "reveal": "310,000 - 60,000 = 250,000."
+    },
+    {
+     "ask": "Where is it also reported?",
+     "reveal": "On Nia's Schedule K-1 as a guaranteed payment."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0009",
@@ -8784,7 +10099,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What do the agreement percentages total?",
+     "reveal": "50% + 30% + 20% = 100%."
+    },
+    {
+     "ask": "Which K-1 differs from the agreement?",
+     "reveal": "Bea's 35%, so it should be 30%."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0010",
@@ -8871,7 +10196,21 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is Plan 1 income?",
+     "reveal": "60,000 + 25% x 250,000 = 122,500."
+    },
+    {
+     "ask": "What is Plan 2 income?",
+     "reveal": "25% x 310,000 = 77,500, since the distribution is not income."
+    },
+    {
+     "ask": "What is the difference?",
+     "reveal": "122,500 - 77,500 = 45,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0011",
@@ -8956,7 +10295,21 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items increase basis?",
+     "reveal": "Ordinary income 30,000, tax-exempt interest 2,000 and liability increase 15,000."
+    },
+    {
+     "ask": "Which decrease it?",
+     "reveal": "Charity 5,000 and distribution 20,000."
+    },
+    {
+     "ask": "What is year-end basis?",
+     "reveal": "60,000 + 47,000 - 25,000 = 82,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0012",
@@ -9043,7 +10396,21 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does Sid deduct given entity borrowing gives an S shareholder no basis?",
+     "reveal": "His stock basis, 20,000."
+    },
+    {
+     "ask": "What is Pat's basis and deduction?",
+     "reveal": "20,000 + 30,000 = 50,000, so the full 35,000."
+    },
+    {
+     "ask": "What is the difference?",
+     "reveal": "35,000 - 20,000 = 15,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0013",
@@ -9125,7 +10492,17 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a decrease in a partner's share of liabilities treated?",
+     "reveal": "As a cash distribution."
+    },
+    {
+     "ask": "What are the total deemed distributions and the excess over basis?",
+     "reveal": "12,000 + 25,000 = 37,000, and 37,000 - 30,000 = 7,000 gain."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0014",
@@ -9185,7 +10562,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is an increase in a partner's share of liabilities treated?",
+     "reveal": "As a contribution of money."
+    },
+    {
+     "ask": "What is the effect on basis?",
+     "reveal": "It increases outside basis."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0015",
@@ -9263,7 +10650,17 @@
     "A": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does a partner's basis include for contributed property?",
+     "reveal": "Cash plus the adjusted basis of property."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "40,000 + 25,000 = 65,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0016",
@@ -9346,7 +10743,17 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What reduces basis in a current distribution?",
+     "reveal": "Cash and the partnership's adjusted basis in property."
+    },
+    {
+     "ask": "What is the reduction and the result?",
+     "reveal": "10,000 + 25,000 = 35,000, so 70,000 - 35,000 = 35,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0017",
@@ -9428,7 +10835,17 @@
     "A": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How are nonrecourse liabilities shared when there is no minimum gain or contributed property?",
+     "reveal": "According to profits interests."
+    },
+    {
+     "ask": "What is Zed's share and basis increase?",
+     "reveal": "40% x 100,000 = 40,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0018",
@@ -9524,7 +10941,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Do contributed services create basis?",
+     "reveal": "No, they are not property."
+    },
+    {
+     "ask": "What is the correct ending basis?",
+     "reveal": "30,000 + 10,000 + 15,000 - 12,000 = 43,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0019",
@@ -9592,7 +11019,21 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "In what order is basis adjusted?",
+     "reveal": "Increases for income and decreases for charity first, then distributions."
+    },
+    {
+     "ask": "What is basis before the distribution?",
+     "reveal": "40,000 + 30,000 + 10,000 + 5,000 - 2,000 = 83,000."
+    },
+    {
+     "ask": "What is the result after 60,000?",
+     "reveal": "83,000 - 60,000 = 23,000, with no gain."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0020",
@@ -9684,7 +11125,21 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the starting basis from the land?",
+     "reveal": "30,000."
+    },
+    {
+     "ask": "How do the liability share and liabilities assumed adjust it?",
+     "reveal": "Plus 25,000 and less 50,000."
+    },
+    {
+     "ask": "What is the basis?",
+     "reveal": "30,000 + 25,000 - 50,000 = 5,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0021",
@@ -9743,7 +11198,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the capital account reflect on partnership books?",
+     "reveal": "Fair market value of the contribution, 60,000."
+    },
+    {
+     "ask": "What does outside basis reflect?",
+     "reveal": "Adjusted basis of the property, 25,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0022",
@@ -9828,7 +11293,17 @@
     "A": "concept",
     "B": "concept",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is a purchaser's outside basis?",
+     "reveal": "Cost plus his share of liabilities."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "90,000 + 10,000 = 100,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0023",
@@ -9917,7 +11392,17 @@
     "A": "concept",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What basis does an heir get in a partnership interest?",
+     "reveal": "Fair market value at death plus her share of liabilities."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "200,000 + 20,000 = 220,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0024",
@@ -10000,7 +11485,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the partner's basis in property in a current distribution?",
+     "reveal": "The partnership's adjusted basis, limited to outside basis."
+    },
+    {
+     "ask": "What is the basis here?",
+     "reveal": "20,000, below the 50,000 outside basis, so outside basis falls to 30,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0025",
@@ -10078,7 +11573,17 @@
     "A": "concept",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What limits a partner's basis in distributed property?",
+     "reveal": "Her outside basis."
+    },
+    {
+     "ask": "What is the land basis and outside basis afterward?",
+     "reveal": "15,000 instead of 20,000, and outside basis drops to 0."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0026",
@@ -10155,7 +11660,17 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is a loss recognized in a liquidation?",
+     "reveal": "Only when the partner receives just money, unrealized receivables and inventory."
+    },
+    {
+     "ask": "What is the loss?",
+     "reveal": "60,000 - 45,000 = 15,000 capital loss."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0027",
@@ -10242,7 +11757,21 @@
     "A": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the amount realized including liability relief?",
+     "reveal": "80,000 + 20,000 = 100,000."
+    },
+    {
+     "ask": "What is the total gain?",
+     "reveal": "100,000 - 50,000 = 50,000."
+    },
+    {
+     "ask": "What part is capital gain?",
+     "reveal": "50,000 - 15,000 ordinary from receivables = 35,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0028",
@@ -10301,7 +11830,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which part of a sale of a partnership interest is ordinary income?",
+     "reveal": "The part attributable to hot assets."
+    },
+    {
+     "ask": "Which listed component is that?",
+     "reveal": "Unrealized receivables; goodwill and liabilities are not ordinary."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0029",
@@ -10382,7 +11921,17 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What does the basis adjustment election compare?",
+     "reveal": "The buyer's cost against her share of inside basis."
+    },
+    {
+     "ask": "What is the adjustment?",
+     "reveal": "150,000 - 100,000 = 50,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0030",
@@ -10441,7 +11990,17 @@
     "A": "limit",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is an adjustment mandatory without an election?",
+     "reveal": "On a transfer where the partnership has a substantial built-in loss over 250,000."
+    },
+    {
+     "ask": "Which transfer meets that?",
+     "reveal": "The purchase when inside basis exceeds asset value by 300,000; the 200,000 case, a gift and a contribution do not."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0031",
@@ -10526,7 +12085,17 @@
     "B": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is liability relief part of the amount realized?",
+     "reveal": "Yes."
+    },
+    {
+     "ask": "What is the amount realized and the gain?",
+     "reveal": "80,000 + 20,000 = 100,000, so 100,000 - 50,000 = 50,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0032",
@@ -10589,7 +12158,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does a corporation recognize gain on distributing appreciated property?",
+     "reveal": "Yes, including an S corporation."
+    },
+    {
+     "ask": "How does a partnership treat a current distribution?",
+     "reveal": "Generally with no gain, so only the S corporation recognizes the 70,000 that passes through."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0033",
@@ -10670,7 +12249,17 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is Ray's basis in the land in a liquidation?",
+     "reveal": "His remaining outside basis after the cash."
+    },
+    {
+     "ask": "What is it?",
+     "reveal": "80,000 - 20,000 = 60,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0034",
@@ -10738,7 +12327,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the cash exceed her basis?",
+     "reveal": "No, 20,000 is below 25,000, so no gain."
+    },
+    {
+     "ask": "What is the land basis?",
+     "reveal": "25,000 - 20,000 = 5,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0035",
@@ -10821,7 +12420,21 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the total gain and the built-in gain?",
+     "reveal": "130,000 - 40,000 = 90,000 total and 100,000 - 40,000 = 60,000 built-in, allocated to Ann."
+    },
+    {
+     "ask": "What remains to share?",
+     "reveal": "90,000 - 60,000 = 30,000 split 50/50."
+    },
+    {
+     "ask": "What does Ben get?",
+     "reveal": "15,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0036",
@@ -10880,7 +12493,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What makes a special allocation respected?",
+     "reveal": "Substantial economic effect: it follows capital accounts, liquidation by capital accounts and deficit restoration."
+    },
+    {
+     "ask": "Which allocation has those features?",
+     "reveal": "The depreciation allocation with capital accounts maintained and deficit restoration; bracket-shifting or mismatched allocations fail."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0037",
@@ -10935,7 +12558,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which partners set the partnership's tax year?",
+     "reveal": "Those owning more than 50% of profits and capital."
+    },
+    {
+     "ask": "Who is that here and what year do they use?",
+     "reveal": "Lin at 55%, so the June 30 year."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0038",
@@ -10998,7 +12631,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a capital interest received for services treated?",
+     "reveal": "As compensation at its value, 30,000."
+    },
+    {
+     "ask": "How is a profits interest generally treated?",
+     "reveal": "Not taxed on receipt if the safe harbor conditions are met."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0039",
@@ -11079,7 +12722,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What basis does the partnership take in contributed property?",
+     "reveal": "The contributing partner's adjusted basis."
+    },
+    {
+     "ask": "What is it?",
+     "reveal": "20,000, with no gain to either."
+    }
+   ]
   },
   {
    "id": "REG-V-E-0001",
@@ -11139,7 +12792,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a domestic single-member LLC with no election classified?",
+     "reveal": "As a disregarded entity."
+    },
+    {
+     "ask": "How does the owner report its income?",
+     "reveal": "Directly on his own return, such as Schedule C."
+    }
+   ]
   },
   {
    "id": "REG-V-E-0002",
@@ -11204,7 +12867,17 @@
     "A": "limit",
     "B": "limit",
     "C": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How far back may a classification election be effective?",
+     "reveal": "Up to 75 days before filing."
+    },
+    {
+     "ask": "What is the earliest date for a May 20, 2026 filing?",
+     "reveal": "March 6, 2026."
+    }
+   ]
   },
   {
    "id": "REG-V-E-0003",
@@ -11263,7 +12936,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Can an LLC taxed as a partnership elect S status?",
+     "reveal": "Yes, if eligible, by filing Form 2553."
+    },
+    {
+     "ask": "What does the S election also do regarding classification?",
+     "reveal": "It is treated as a deemed election to be classified as a corporation."
+    }
+   ]
   },
   {
    "id": "REG-V-E-0004",
@@ -11322,7 +13005,17 @@
     "A": "concept",
     "B": "concept",
     "D": "limit"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a change of classification allowed soon after an election?",
+     "reveal": "Generally not."
+    },
+    {
+     "ask": "How long is the bar?",
+     "reveal": "60 months after the effective date, so 2028 is too early."
+    }
+   ]
   },
   {
    "id": "REG-V-E-0005",
@@ -11381,7 +13074,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a single-member LLC treated for income tax?",
+     "reveal": "Disregarded."
+    },
+    {
+     "ask": "How is it treated for employment taxes on its employees?",
+     "reveal": "As a separate corporation."
+    }
+   ]
   },
   {
    "id": "REG-V-F-0001",
@@ -11441,7 +13144,17 @@
     "A": "trap",
     "B": "trap",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What must be true of net earnings of an exempt organization?",
+     "reveal": "None may inure to a private shareholder or individual."
+    },
+    {
+     "ask": "Which listed situation breaks that?",
+     "reveal": "Part of net earnings benefiting the founder; reasonable fees, salaries and insubstantial lobbying are fine."
+    }
+   ]
   },
   {
    "id": "REG-V-F-0002",
@@ -11497,7 +13210,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which exempt category covers chambers of commerce?",
+     "reveal": "Business leagues."
+    },
+    {
+     "ask": "Are charities, social clubs and social welfare groups the type?",
+     "reveal": "No, the chamber promotes area businesses as a business league."
+    }
+   ]
   },
   {
    "id": "REG-V-F-0003",
@@ -11553,7 +13276,17 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which category describes labor unions?",
+     "reveal": "Labor, agricultural or horticultural organizations."
+    },
+    {
+     "ask": "Do business leagues or social welfare groups fit?",
+     "reveal": "No."
+    }
+   ]
   },
   {
    "id": "REG-V-F-0004",
@@ -11640,7 +13373,17 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is UBTI before the specific deduction?",
+     "reveal": "90,000 - 50,000 = 40,000."
+    },
+    {
+     "ask": "What is the specific deduction and the result?",
+     "reveal": "1,000, so 40,000 - 1,000 = 39,000."
+    }
+   ]
   },
   {
    "id": "REG-V-F-0005",
@@ -11703,7 +13446,17 @@
     "B": "limit",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the gross unrelated income filing threshold?",
+     "reveal": "1,000."
+    },
+    {
+     "ask": "Does 1,500 meet it and which form applies?",
+     "reveal": "Yes, so Form 990-T must be filed."
+    }
+   ]
   },
   {
    "id": "REG-V-F-0006",
@@ -11762,7 +13515,17 @@
     "A": "limit",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the size limits for the short annual information return?",
+     "reveal": "Gross receipts under 200,000 and total assets under 500,000."
+    },
+    {
+     "ask": "Does Arbor meet both and which form results?",
+     "reveal": "Yes, 150,000 and 300,000, so Form 990-EZ."
+    }
+   ]
   },
   {
    "id": "REG-V-F-0007",
@@ -11821,7 +13584,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which activities are excluded from unrelated business income?",
+     "reveal": "Sales of donated merchandise and activities run by volunteers."
+    },
+    {
+     "ask": "How do the two shops compare?",
+     "reveal": "Haven sells donated goods with volunteers and is excluded; Crest buys goods and uses paid staff, so its sales are generally unrelated."
+    }
+   ]
   },
   {
    "id": "REG-V-F-0008",
@@ -11914,7 +13687,21 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are dividends part of unrelated business income?",
+     "reveal": "No, they are excluded."
+    },
+    {
+     "ask": "What is gross income after that?",
+     "reveal": "80,000 - 10,000 = 70,000."
+    },
+    {
+     "ask": "What is UBTI after expenses and the specific deduction?",
+     "reveal": "70,000 - 45,000 - 1,000 = 24,000."
+    }
+   ]
   },
   {
    "id": "REG-V-G-0001",
@@ -12000,7 +13787,17 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the trust's distributable net income?",
+     "reveal": "Income less fees, 40,000 - 3,000 = 37,000, with the principal gain excluded."
+    },
+    {
+     "ask": "What does the simple trust beneficiary report?",
+     "reveal": "Income required to be distributed, limited to DNI, so 37,000."
+    }
+   ]
   },
   {
    "id": "REG-V-G-0002",
@@ -12055,7 +13852,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the estate's exemption?",
+     "reveal": "600."
+    },
+    {
+     "ask": "What are the simple and complex trust exemptions?",
+     "reveal": "300 and 100."
+    }
+   ]
   },
   {
    "id": "REG-V-G-0003",
@@ -12114,7 +13921,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Who may choose a fiscal year?",
+     "reveal": "An estate, up to 12 months after death."
+    },
+    {
+     "ask": "What year does a non-exempt trust generally use?",
+     "reveal": "The calendar year."
+    }
+   ]
   },
   {
    "id": "REG-V-G-0004",
@@ -12197,7 +14014,21 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Who is served first from DNI?",
+     "reveal": "The beneficiary with required distributions, A with 30,000."
+    },
+    {
+     "ask": "How much DNI remains for B?",
+     "reveal": "50,000 - 30,000 = 20,000."
+    },
+    {
+     "ask": "What is taxable to B?",
+     "reveal": "The lesser of 40,000 and 20,000, so 20,000."
+    }
+   ]
   },
   {
    "id": "REG-V-G-0005",
@@ -12256,7 +14087,17 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which three features mark a simple trust?",
+     "reveal": "Current distribution of all income, no charitable payments, and no principal distributions."
+    },
+    {
+     "ask": "Which listed trust has all three?",
+     "reveal": "The one that pays out all income currently and does nothing else."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0050",
@@ -12338,7 +14179,21 @@
     "A": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is current E&P allocated among distributions?",
+     "reveal": "Pro rata by amount."
+    },
+    {
+     "ask": "How much goes to each distribution?",
+     "reveal": "30,000 x 20,000 / 40,000 = 15,000."
+    },
+    {
+     "ask": "Does the accumulated deficit reduce it?",
+     "reveal": "No, so the December distribution has 15,000 of dividend."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0043",
@@ -12421,7 +14276,21 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is basis after income?",
+     "reveal": "5,000 + 30,000 = 35,000."
+    },
+    {
+     "ask": "What is basis after the distribution?",
+     "reveal": "35,000 - 10,000 = 25,000."
+    },
+    {
+     "ask": "What does the suspended loss do?",
+     "reveal": "Reduces basis by 12,000 to 13,000."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0040",
@@ -12500,7 +14369,21 @@
     "A": "concept",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is each partner's loss share?",
+     "reveal": "80,000 / 2 = 40,000."
+    },
+    {
+     "ask": "What does each deduct given basis?",
+     "reveal": "Abe min(40,000, 10,000) = 10,000; Bea min(40,000, 50,000) = 40,000."
+    },
+    {
+     "ask": "What is the total?",
+     "reveal": "10,000 + 40,000 = 50,000."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0051",
@@ -12576,7 +14459,21 @@
     "A": "concept",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When does the taxable-income limit not apply to the DRD?",
+     "reveal": "When the full deduction would create or increase an NOL."
+    },
+    {
+     "ask": "What is Lark's outcome?",
+     "reveal": "Full 100,000 would leave 50,000 of income, so the 75,000 limit applies."
+    },
+    {
+     "ask": "What is Moss's outcome?",
+     "reveal": "100,000 exceeds its 60,000 income, so it creates a loss and Moss takes the full 100,000."
+    }
+   ]
   },
   {
    "id": "REG-V-A-0019",
@@ -12664,7 +14561,17 @@
     "B": "trap",
     "C": "trap",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which book expenses are nondeductible and added back?",
+     "reveal": "Federal income tax, disallowed meals and fines."
+    },
+    {
+     "ask": "Is state income tax an addition?",
+     "reveal": "No, corporations deduct state income taxes, so the 12,000 add-back is wrong."
+    }
+   ]
   },
   {
    "id": "REG-V-C-0044",
@@ -12723,7 +14630,17 @@
     "A": "limit",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When is a Form 2553 timely for an election effective from the start of the year?",
+     "reveal": "By the 15th day of the third month."
+    },
+    {
+     "ask": "Is a July 10 filing timely and what is needed?",
+     "reveal": "No, it is late, so the election needs late-election relief with reasonable cause and a timely request."
+    }
+   ]
   },
   {
    "id": "REG-V-B-0052",
@@ -12790,7 +14707,17 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is a shareholder treated in a complete liquidation?",
+     "reveal": "As exchanging stock, computing gain or loss."
+    },
+    {
+     "ask": "What is the gain and its character?",
+     "reveal": "250,000 - 80,000 = 170,000 long-term capital gain, not a dividend."
+    }
+   ]
   },
   {
    "id": "REG-V-D-0041",
@@ -12858,7 +14785,17 @@
     "A": "concept",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is cash over basis in a partnership distribution treated?",
+     "reveal": "As gain from the sale of the interest."
+    },
+    {
+     "ask": "What is the excess and its character?",
+     "reveal": "45,000 - 30,000 = 15,000 capital gain."
+    }
+   ]
   },
   {
    "id": "REG-V-G-0006",
@@ -12917,7 +14854,17 @@
     "B": "concept",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What exemption does a decedent's estate have?",
+     "reveal": "600."
+    },
+    {
+     "ask": "Which correction does the 100 draft need?",
+     "reveal": "Claim the 600 estate exemption."
+    }
+   ]
   }
  ]
 }

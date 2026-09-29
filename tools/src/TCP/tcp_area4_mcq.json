@@ -121,7 +121,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application"
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application",
+   "guide": [
+    {
+     "ask": "What is the realized gain, and what triggers recognition in a like-kind exchange?",
+     "reveal": "$500,000 - $200,000 = $300,000; cash received is boot and is recognized to the extent of gain."
+    },
+    {
+     "ask": "How much is deferred?",
+     "reveal": "$300,000 - $50,000 = $250,000."
+    }
+   ]
   },
   {
    "id": "TCP-IV-A-0002",
@@ -239,7 +249,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application"
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application",
+   "guide": [
+    {
+     "ask": "What does a reduction in Neal's mortgage count as?",
+     "reveal": "Boot received, since net liability relief is $200,000 - $100,000 = $100,000."
+    },
+    {
+     "ask": "Compare with the realized gain.",
+     "reveal": "Realized gain is $350,000, so recognized gain is the smaller amount, $100,000."
+    }
+   ]
   },
   {
    "id": "TCP-IV-A-0003",
@@ -352,7 +372,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application"
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application",
+   "guide": [
+    {
+     "ask": "What is the realized gain?",
+     "reveal": "$400,000 - $150,000 = $250,000."
+    },
+    {
+     "ask": "How much of the award was not reinvested?",
+     "reveal": "$400,000 - $340,000 = $60,000 recognized, so $250,000 - $60,000 = $190,000 is deferred."
+    }
+   ]
   },
   {
    "id": "TCP-IV-A-0004",
@@ -475,7 +505,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application"
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application",
+   "guide": [
+    {
+     "ask": "What tax results if she sells for cash?",
+     "reveal": "23.8% x $600,000 = $142,800."
+    },
+    {
+     "ask": "What tax results on the exchange?",
+     "reveal": "Only the $100,000 of cash boot: 23.8% x $100,000 = $23,800. Deferred: $119,000."
+    }
+   ]
   },
   {
    "id": "TCP-IV-A-0005",
@@ -561,7 +601,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application"
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Application",
+   "guide": [
+    {
+     "ask": "What are the two deadlines in a deferred exchange?",
+     "reveal": "A 45-day identification period and an exchange period ending at the earlier of 180 days or the return due date."
+    },
+    {
+     "ask": "Which comes first for a transfer on December 15, 2026?",
+     "reveal": "Day 180 is June 13, 2027, but the unextended return due date for 2026 is April 15, 2027, which is earlier."
+    }
+   ]
   },
   {
    "id": "TCP-IV-A-0006",
@@ -628,7 +678,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Remembering & Understanding"
+   "blueprint_tag": "TCP Area IV / Group A / Like-kind exchange / involuntary conversion / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "What is the replacement period for condemned business real property?",
+     "reveal": "Three years, measured from the end of the first year in which any gain was realized."
+    },
+    {
+     "ask": "Apply it.",
+     "reveal": "Gain first realized in 2026, so the period ends December 31, 2029."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0001",
@@ -695,7 +755,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group B / Character of gain/loss / Application"
+   "blueprint_tag": "TCP Area IV / Group B / Character of gain/loss / Application",
+   "guide": [
+    {
+     "ask": "Which listed assets are capital assets held over one year?",
+     "reveal": "Investments; inventory and self-created copyrights are excluded from capital treatment."
+    },
+    {
+     "ask": "Which sale is a long-term capital gain?",
+     "reveal": "The stock held as an investment for 13 months."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0002",
@@ -807,7 +877,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group B / Section 1231 netting / Application"
+   "blueprint_tag": "TCP Area IV / Group B / Section 1231 netting / Application",
+   "guide": [
+    {
+     "ask": "What is recaptured from a net section 1231 gain?",
+     "reveal": "Nonrecaptured net section 1231 losses of the prior five years, $40,000, taxed as ordinary income."
+    },
+    {
+     "ask": "What is left as long-term capital gain?",
+     "reveal": "$100,000 - $40,000 = $60,000."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0003",
@@ -924,7 +1004,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group B / Section 1231 netting / Application"
+   "blueprint_tag": "TCP Area IV / Group B / Section 1231 netting / Application",
+   "guide": [
+    {
+     "ask": "How are section 1231 gains and losses combined?",
+     "reveal": "Netted together in the year."
+    },
+    {
+     "ask": "What is the net result?",
+     "reveal": "An ordinary loss of $130,000 - $80,000 = $50,000, not subject to the capital loss limit."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0004",
@@ -1047,7 +1137,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group B / Section 1245/1250 recapture / Application"
+   "blueprint_tag": "TCP Area IV / Group B / Section 1245/1250 recapture / Application",
+   "guide": [
+    {
+     "ask": "What is the adjusted basis and gain on the machine?",
+     "reveal": "Basis $100,000 - $70,000 = $30,000; gain $85,000 - $30,000 = $55,000."
+    },
+    {
+     "ask": "How much is recaptured as ordinary?",
+     "reveal": "The lesser of the gain and the depreciation taken: $55,000."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0005",
@@ -1181,7 +1281,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group B / Unrecaptured Section 1250 gain / Application"
+   "blueprint_tag": "TCP Area IV / Group B / Unrecaptured Section 1250 gain / Application",
+   "guide": [
+    {
+     "ask": "What is the gain on the building?",
+     "reveal": "$600,000 - ($500,000 - $120,000) = $220,000."
+    },
+    {
+     "ask": "How is it split by rate?",
+     "reveal": "Prior depreciation of $120,000 at 25% = $30,000; the other $100,000 at 20% = $20,000. Total $50,000."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0006",
@@ -1293,7 +1403,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group B / Unrecaptured Section 1250 gain / Application"
+   "blueprint_tag": "TCP Area IV / Group B / Unrecaptured Section 1250 gain / Application",
+   "guide": [
+    {
+     "ask": "What limits the 25% portion?",
+     "reveal": "The lesser of the prior straight-line depreciation and the gain."
+    },
+    {
+     "ask": "Compare here.",
+     "reveal": "Depreciation $120,000 exceeds the $90,000 gain, so all of it is taxed at that rate."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0007",
@@ -1410,7 +1530,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group B / Section 1244 stock loss / Application"
+   "blueprint_tag": "TCP Area IV / Group B / Section 1244 stock loss / Application",
+   "guide": [
+    {
+     "ask": "What is the loss on the stock?",
+     "reveal": "$150,000 - $30,000 = $120,000."
+    },
+    {
+     "ask": "How much is ordinary?",
+     "reveal": "Limited to $100,000 for a joint return; the other $20,000 is a capital loss."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0008",
@@ -1533,7 +1663,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group B / Installment sale gain / Application"
+   "blueprint_tag": "TCP Area IV / Group B / Installment sale gain / Application",
+   "guide": [
+    {
+     "ask": "Does the mortgage count as a payment to Uma?",
+     "reveal": "No, since it is below her basis."
+    },
+    {
+     "ask": "Compute the contract price, gross profit and gain in 2026.",
+     "reveal": "Contract price $650,000, gross profit $600,000; gain $100,000 x $600,000/$650,000 = $92,308."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0009",
@@ -1656,7 +1796,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group B / Installment sale gain / Application"
+   "blueprint_tag": "TCP Area IV / Group B / Installment sale gain / Application",
+   "guide": [
+    {
+     "ask": "What part of an installment sale gain is recognized in the year of sale regardless of payments?",
+     "reveal": "Depreciation recapture, $60,000."
+    },
+    {
+     "ask": "How is the rest reported?",
+     "reveal": "The remaining $30,000 at the payment ratio 20% = $6,000. Total $66,000."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0010",
@@ -1783,7 +1933,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group B / Character of gain/loss / Application"
+   "blueprint_tag": "TCP Area IV / Group B / Character of gain/loss / Application",
+   "guide": [
+    {
+     "ask": "Which parts of the sale are ordinary by nature?",
+     "reveal": "The inventory gain of $60,000 - $40,000 = $20,000."
+    },
+    {
+     "ask": "What about the equipment?",
+     "reveal": "Gain is $90,000 - $30,000 = $60,000, all recapture up to the $70,000 depreciation. Land and goodwill are not ordinary; total $80,000."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0011",
@@ -1894,7 +2054,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group B / Section 1231 netting / Application"
+   "blueprint_tag": "TCP Area IV / Group B / Section 1231 netting / Application",
+   "guide": [
+    {
+     "ask": "How is a net section 1231 gain treated when there are no prior losses?",
+     "reveal": "As long-term capital gain."
+    },
+    {
+     "ask": "Net it against the short-term loss.",
+     "reveal": "$40,000 - $25,000 = $15,000."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0012",
@@ -2022,7 +2192,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group B / Unrecaptured Section 1250 gain / Application"
+   "blueprint_tag": "TCP Area IV / Group B / Unrecaptured Section 1250 gain / Application",
+   "guide": [
+    {
+     "ask": "What is the gain on the rental building?",
+     "reveal": "$380,000 - ($300,000 - $90,000) = $170,000."
+    },
+    {
+     "ask": "How much of it is taxed at 25%, and what tax is that?",
+     "reveal": "The lesser of gain and depreciation, $90,000; 25% x $90,000 = $22,500."
+    }
+   ]
   },
   {
    "id": "TCP-IV-B-0013",
@@ -2089,7 +2269,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group B / Section 1244 stock loss / Application"
+   "blueprint_tag": "TCP Area IV / Group B / Section 1244 stock loss / Application",
+   "guide": [
+    {
+     "ask": "Who can take an ordinary loss on small business stock?",
+     "reveal": "Only the individual or partnership that originally received the stock from the corporation for money or property."
+    },
+    {
+     "ask": "Which taxpayer fits?",
+     "reveal": "The individual who paid cash directly to the corporation; corporations, later buyers and service recipients do not."
+    }
+   ]
   },
   {
    "id": "TCP-IV-C-0001",
@@ -2156,7 +2346,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group C / Related parties definition / Remembering & Understanding"
+   "blueprint_tag": "TCP Area IV / Group C / Related parties definition / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "Who counts as family under the related-party rules?",
+     "reveal": "Spouse, ancestors, lineal descendants, and brothers and sisters."
+    },
+    {
+     "ask": "Which pair is on that list?",
+     "reveal": "The individual and his brother; uncles, cousins and in-laws are not."
+    }
+   ]
   },
   {
    "id": "TCP-IV-C-0002",
@@ -2268,7 +2468,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group C / Ownership percentage calc / Application"
+   "blueprint_tag": "TCP Area IV / Group C / Ownership percentage calc / Application",
+   "guide": [
+    {
+     "ask": "Whose stock is attributed to Al?",
+     "reveal": "His spouse's, his brother's, and other family members on the list."
+    },
+    {
+     "ask": "Add up.",
+     "reveal": "30% + 10% + 15% = 55%; the uncle's 20% is not attributed."
+    }
+   ]
   },
   {
    "id": "TCP-IV-C-0003",
@@ -2380,7 +2590,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group C / Related parties definition / Application"
+   "blueprint_tag": "TCP Area IV / Group C / Related parties definition / Application",
+   "guide": [
+    {
+     "ask": "Is Ted related to Elm, and how is a related cash-basis payee treated?",
+     "reveal": "Yes, he owns more than 50%, so the deduction waits until the payee includes the amount in income."
+    },
+    {
+     "ask": "When is the interest included by Ted, and so deductible?",
+     "reveal": "When paid in 2027, so the 2026 deduction is $0."
+    }
+   ]
   },
   {
    "id": "TCP-IV-C-0004",
@@ -2492,7 +2712,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group C / Subsequent disposition to unrelated party / Application"
+   "blueprint_tag": "TCP Area IV / Group C / Subsequent disposition to unrelated party / Application",
+   "guide": [
+    {
+     "ask": "What is Ivo's basis after buying at $70,000?",
+     "reveal": "His cost, $70,000."
+    },
+    {
+     "ask": "What loss does he recognize on the sale at $50,000?",
+     "reveal": "$70,000 - $50,000 = $20,000; Nan's disallowed loss does not add to it."
+    }
+   ]
   },
   {
    "id": "TCP-IV-C-0005",
@@ -2603,7 +2833,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group C / Imputed interest / Application"
+   "blueprint_tag": "TCP Area IV / Group C / Imputed interest / Application",
+   "guide": [
+    {
+     "ask": "What is the foregone interest on a below-market employer loan?",
+     "reveal": "The interest the lender did not charge: $200,000 x 4.0% = $8,000."
+    },
+    {
+     "ask": "How is it treated?",
+     "reveal": "As compensation paid to the employee, who is treated as paying it back as interest."
+    }
+   ]
   },
   {
    "id": "TCP-IV-C-0006",
@@ -2720,7 +2960,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group C / Imputed interest / Application"
+   "blueprint_tag": "TCP Area IV / Group C / Imputed interest / Application",
+   "guide": [
+    {
+     "ask": "What price is used when no interest is stated?",
+     "reveal": "Present value of the payment: $500,000 / 1.04^2 = $462,278."
+    },
+    {
+     "ask": "What interest accrues in the first year?",
+     "reveal": "$462,278 x 4.0% = $18,491."
+    }
+   ]
   },
   {
    "id": "TCP-IV-C-0007",
@@ -2787,7 +3037,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group C / Ownership percentage calc / Application"
+   "blueprint_tag": "TCP Area IV / Group C / Ownership percentage calc / Application",
+   "guide": [
+    {
+     "ask": "What ownership level makes an individual and a corporation related?",
+     "reveal": "More than 50% of the value, direct or constructive."
+    },
+    {
+     "ask": "Which case exceeds it?",
+     "reveal": "The one where the seller owns 60%; exactly 50% and 45% + 5% do not exceed it, and cousins are not attributed."
+    }
+   ]
   },
   {
    "id": "TCP-IV-C-0008",
@@ -2872,7 +3132,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area IV / Group C / Ownership percentage calc / Application"
+   "blueprint_tag": "TCP Area IV / Group C / Ownership percentage calc / Application",
+   "guide": [
+    {
+     "ask": "Is Ana related to the buyer for the ordinary income rule?",
+     "reveal": "Yes, she owns more than 50%."
+    },
+    {
+     "ask": "What are the gain and its character?",
+     "reveal": "$100,000 - $60,000 = $40,000, ordinary because the property is depreciable in the buyer's hands."
+    }
+   ]
   }
  ]
 }

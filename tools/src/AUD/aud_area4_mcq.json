@@ -1,0 +1,1586 @@
+{
+ "meta": {
+  "area": "IV",
+  "title": "AUD Area IV - Forming Conclusions and Reporting",
+  "allocation": "10-20%",
+  "law_asof": "2026-09-29",
+  "count": 22,
+  "status": "verified",
+  "blueprint": "AICPA Uniform CPA Examination Blueprints, AUD (Approved by the Board of Examiners Aug. 18, 2025; effective Jan. 2026); copy hosted at dokoblog.com (third party host of the AICPA PDF)",
+  "provenance": "terra-original (no commercial question text used)"
+ },
+ "items": [
+  {
+   "id": "AUD-IV-A-0001",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "group_name": "Reporting on audit engagements",
+   "blueprint": "AUD.IV.A Reporting on audit engagements [IV.A]",
+   "topic": "Structure of an unmodified auditor's report (nonissuer)",
+   "task": "Identify the appropriate form and content of an auditor's report.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "In an unmodified report on the financial statements of a nonissuer under AICPA standards, which sections come first and second?",
+   "exhibit": "",
+   "options": [
+    "A Responsibilities of Management section first, then Auditor's Responsibilities",
+    "An introductory paragraph first, followed by a scope paragraph and then the opinion",
+    "A Basis for Opinion section first, followed by an Opinion section",
+    "An Opinion section first, followed by a Basis for Opinion section"
+   ],
+   "answer": "D",
+   "rule_line": "The current report begins with the Opinion section, then Basis for Opinion, then other sections.",
+   "why": {
+    "A": "The management and auditor responsibility sections follow the opinion and basis sections.",
+    "B": "That describes the older report format, not the current format.",
+    "C": "The order is reversed; the opinion is presented first.",
+    "D": "Correct. The first section contains the opinion, and the second is the basis for opinion."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "700.24-.28"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "C": "concept"
+   },
+   "guide": [
+    {
+     "ask": "In the current unmodified report format, what leads the report?",
+     "reveal": "The opinion itself."
+    },
+    {
+     "ask": "What follows it?",
+     "reveal": "The basis for opinion, so the opinion section is first and the basis second."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-A-0002",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "group_name": "Reporting on audit engagements",
+   "blueprint": "AUD.IV.A Reporting on audit engagements [IV.A]",
+   "topic": "Qualified opinion for a material but not pervasive misstatement",
+   "task": "Identify the types of opinions and the form and content of a modified report.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "The auditor of Redcliff Tools, a nonissuer, concludes that inventory is overstated by an amount that is material to the balance sheet and income statement but is not pervasive to the financial statements. Management will not correct it. Which opinion is appropriate?",
+   "exhibit": "",
+   "options": [
+    "A disclaimer of opinion, stating that the auditor does not express an opinion",
+    "A qualified opinion, worded as except for the effects of the matter described in the basis section",
+    "An unmodified opinion with an emphasis-of-matter paragraph describing the inventory error",
+    "An adverse opinion, stating that the financial statements do not present fairly"
+   ],
+   "answer": "B",
+   "rule_line": "Material but not pervasive misstatement: qualified opinion; material and pervasive: adverse opinion.",
+   "why": {
+    "A": "A disclaimer applies when the auditor cannot obtain sufficient appropriate evidence and the possible effects are pervasive.",
+    "B": "Correct. A material but not pervasive misstatement results in a qualified opinion, worded as except for the effects of the matter.",
+    "C": "An emphasis-of-matter paragraph cannot be used to avoid modifying the opinion for a material misstatement.",
+    "D": "An adverse opinion applies when misstatements are both material and pervasive."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "705.08a"
+    },
+    {
+     "src": "AU-C",
+     "ref": "705.18"
+    },
+    {
+     "src": "AU-C",
+     "ref": "706.08a"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "trap",
+    "D": "limit"
+   },
+   "guide": [
+    {
+     "ask": "Is the inventory misstatement material and pervasive?",
+     "reveal": "Material, but not pervasive."
+    },
+    {
+     "ask": "Which opinion follows?",
+     "reveal": "A qualified opinion, worded as except for the effects of the matter."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-A-0003",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "group_name": "Reporting on audit engagements",
+   "blueprint": "AUD.IV.A Reporting on audit engagements [IV.A]",
+   "topic": "Disclaimer of opinion for pervasive scope limitation",
+   "task": "Identify the types of opinions and the appropriate report for a scope limitation.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "A fire destroyed the accounting records of Sierra Freight, a nonissuer, and the auditor cannot obtain sufficient appropriate evidence about revenue, receivables, inventory and payables. The auditor concludes that the possible effects of undetected misstatements could be both material and pervasive. What should the auditor do?",
+   "exhibit": "",
+   "options": [
+    "Disclaim an opinion on the financial statements, or withdraw from the audit when practicable",
+    "Express an adverse opinion, because the financial statements cannot be relied upon",
+    "Express a qualified opinion, using the phrase except for the possible effects of the matters described",
+    "Express an unmodified opinion and add an emphasis-of-matter paragraph about the fire"
+   ],
+   "answer": "A",
+   "rule_line": "Inability to obtain evidence with material and pervasive possible effects leads to a disclaimer or withdrawal.",
+   "why": {
+    "A": "Correct. When the auditor cannot obtain evidence and the possible effects are material and pervasive, the auditor disclaims an opinion or withdraws when practicable.",
+    "B": "An adverse opinion is for misstatements the auditor has concluded exist and are material and pervasive, not for an inability to obtain evidence.",
+    "C": "A qualified opinion is for possible effects that are material but not pervasive.",
+    "D": "An emphasis-of-matter paragraph cannot be used in place of modifying the opinion."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "705.10"
+    },
+    {
+     "src": "AU-C",
+     "ref": "705.13"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "limit",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Can the auditor obtain sufficient evidence on the affected accounts?",
+     "reveal": "No, the records were destroyed."
+    },
+    {
+     "ask": "What follows when possible effects are material and pervasive?",
+     "reveal": "Disclaim an opinion, or withdraw when practicable."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-A-0004",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "group_name": "Reporting on audit engagements",
+   "blueprint": "AUD.IV.A Reporting on audit engagements [IV.A]",
+   "topic": "Emphasis-of-matter paragraph",
+   "task": "Identify when to include emphasis-of-matter and other-matter paragraphs.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Note 12 to the financial statements of Cobalt Freight, a nonissuer, appropriately discloses a major plant fire after year-end that is fundamental to users' understanding of the statements. The auditor concludes that no modification of the opinion is needed. What should the auditor include in the report?",
+   "exhibit": "",
+   "options": [
+    "An emphasis-of-matter paragraph in a separate section, referring to note 12 and stating the opinion is not modified",
+    "A qualified opinion, because an event this significant to users of the financial statements requires a modification",
+    "An other-matter paragraph describing the fire in detail using information that is not in the notes",
+    "A statement in the Basis for Opinion section only, with no separate section or reference"
+   ],
+   "answer": "A",
+   "rule_line": "An emphasis-of-matter paragraph refers only to matters disclosed in the statements and states that the opinion is not modified.",
+   "why": {
+    "A": "Correct. An emphasis-of-matter paragraph draws attention to a matter properly disclosed, refers to the note, and states that the opinion is not modified.",
+    "B": "A properly disclosed matter does not require a modified opinion.",
+    "C": "An emphasis-of-matter paragraph may refer only to information presented or disclosed in the financial statements.",
+    "D": "The paragraph must be in a separate section with an appropriate heading."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "706.08-.09"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Is the fire properly disclosed, and does it require modifying the opinion?",
+     "reveal": "Properly disclosed and no modification needed."
+    },
+    {
+     "ask": "What does the report add to draw attention to it?",
+     "reveal": "A separate emphasis-of-matter paragraph that refers to note 12 and states the opinion is not modified."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-A-0005",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "group_name": "Reporting on audit engagements",
+   "blueprint": "AUD.IV.A Reporting on audit engagements [IV.A]",
+   "topic": "Reporting on substantial doubt about going concern (nonissuer)",
+   "task": "Report on an entity's ability to continue as a going concern.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "The auditor of Harbor Lane Foods, a nonissuer, concludes that substantial doubt about the entity's ability to continue as a going concern remains after considering management's plans, and the financial statement disclosures are adequate. What should the auditor's report include?",
+   "exhibit": "",
+   "options": [
+    "A disclaimer of opinion, because future events cannot be predicted",
+    "A separate section about substantial doubt that draws attention to the note and states the opinion is not modified",
+    "A sentence in the Basis for Opinion section that does not refer to the note",
+    "An adverse opinion, because substantial doubt exists about the entity's ability to continue as a going concern for a year"
+   ],
+   "answer": "B",
+   "rule_line": "Remaining substantial doubt with adequate disclosure: separate section, attention to the note, opinion not modified.",
+   "why": {
+    "A": "A disclaimer is not required when the auditor can form an opinion on the statements.",
+    "B": "Correct. With adequate disclosure and remaining substantial doubt, the report has a separate section that draws attention to the note and states the opinion is not modified.",
+    "C": "The section must draw attention to the note that discloses the conditions and management's plans.",
+    "D": "An adverse opinion applies if the going concern basis is inappropriate, not when doubt exists and the basis is appropriate."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "570.23-.25"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Are the disclosures adequate despite the doubt?",
+     "reveal": "Yes, so no modification is needed."
+    },
+    {
+     "ask": "What does the report contain?",
+     "reveal": "A separate section on substantial doubt that draws attention to the note and states the opinion is not modified."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-A-0006",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "group_name": "Reporting on audit engagements",
+   "blueprint": "AUD.IV.A Reporting on audit engagements [IV.A]",
+   "topic": "Critical audit matters in an issuer's report",
+   "task": "Identify the form and content of an auditor's report for an issuer.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "In the audit of an issuer, which matter is a critical audit matter under PCAOB standards?",
+   "exhibit": "",
+   "options": [
+    "A departure from GAAP that caused the auditor to qualify the opinion on the financial statements",
+    "A properly disclosed matter that the auditor believes is fundamental to users' understanding of the statements",
+    "A matter communicated to the audit committee, relating to material items, that involved especially challenging judgment",
+    "Any matter discussed with management during the audit that led to a significant adjustment to the financial statements"
+   ],
+   "answer": "C",
+   "rule_line": "A critical audit matter was communicated to the audit committee, relates to material items, and involved especially challenging judgment.",
+   "why": {
+    "A": "Critical audit matters are not a substitute for a modified opinion, which addresses departures from GAAP.",
+    "B": "That describes an emphasis paragraph, not a critical audit matter.",
+    "C": "Correct. This is the definition of a critical audit matter.",
+    "D": "Discussion with management and adjustments do not define a critical audit matter; the matter must have been communicated to the audit committee and involve challenging judgment."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "PCAOB",
+     "ref": "AS 3101.11"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What is a critical audit matter?",
+     "reveal": "A matter communicated to the audit committee, relating to material accounts or disclosures, that involved especially challenging, subjective or complex judgment."
+    },
+    {
+     "ask": "Which choice matches that definition?",
+     "reveal": "The one describing a communicated matter with especially challenging judgment."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-A-0007",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "group_name": "Reporting on audit engagements",
+   "blueprint": "AUD.IV.A Reporting on audit engagements [IV.A]",
+   "topic": "Key audit matters in a nonissuer report",
+   "task": "Identify the appropriate form and content of a report, including key audit matters.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "When must the auditor of a nonissuer communicate key audit matters in the auditor's report under AICPA standards?",
+   "exhibit": "",
+   "options": [
+    "In every audit of the financial statements of any nonissuer client",
+    "Only when the auditor expresses a modified opinion on the statements",
+    "Only when the client is a not-for-profit organization or a plan",
+    "When the auditor has been engaged to communicate key audit matters"
+   ],
+   "answer": "D",
+   "rule_line": "For nonissuers, key audit matters are communicated when the auditor is engaged to do so.",
+   "why": {
+    "A": "Key audit matters are not required in every nonissuer audit.",
+    "B": "Key audit matters and modified opinions are unrelated; a modification does not trigger the requirement.",
+    "C": "The nature of the entity does not determine the requirement; the engagement does.",
+    "D": "Correct. Communication of key audit matters is required when the auditor is engaged to do so."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "700.30"
+    },
+    {
+     "src": "AU-C",
+     "ref": "701"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   },
+   "guide": [
+    {
+     "ask": "When are key audit matters communicated under AICPA standards?",
+     "reveal": "Only when the auditor is engaged to do so."
+    },
+    {
+     "ask": "Is it required in every audit or modified opinion?",
+     "reveal": "No."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-A-0008",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "group_name": "Reporting on audit engagements",
+   "blueprint": "AUD.IV.A Reporting on audit engagements [IV.A]",
+   "topic": "Dating the auditor's report",
+   "task": "Determine the date of the auditor's report.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Fieldwork for the audit of Bellamy Corp., a nonissuer, ended on February 18, 2026. The financial statements and all notes were completed on February 22, and management asserted that it took responsibility for them on February 24. The representation letter is dated February 24. Which is the earliest date the auditor may date the report?",
+   "exhibit": "",
+   "options": [
+    "February 18, 2026",
+    "February 22, 2026",
+    "February 24, 2026",
+    "February 26, 2026"
+   ],
+   "answer": "C",
+   "rule_line": "The report date is no earlier than the date sufficient evidence exists, including that statements are complete and management has taken responsibility.",
+   "why": {
+    "A": "This is the end of fieldwork, before the statements were completed and management took responsibility.",
+    "B": "The statements were complete on this date, but management had not yet asserted responsibility.",
+    "C": "Correct. The report may not be dated before the auditor has evidence that all statements and disclosures were prepared and that management asserted responsibility for them, which occurred on February 24.",
+    "D": "This date is later than necessary; nothing requires waiting beyond February 24."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "700.43"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "D": "limit"
+   },
+   "guide": [
+    {
+     "ask": "What must the auditor have before dating the report?",
+     "reveal": "Evidence that all statements and disclosures were prepared and that management asserted responsibility for them."
+    },
+    {
+     "ask": "Which is the first date when both are met?",
+     "reveal": "February 24, 2026."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-B-0001",
+   "type": "mcq",
+   "area": "IV",
+   "group": "B",
+   "group_name": "Reporting on attestation engagements",
+   "blueprint": "AUD.IV.B Reporting on attestation engagements [IV.B.1]",
+   "topic": "Conclusion in an examination report",
+   "task": "Identify the factors for reporting on examination and review engagements.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "AT",
+   "regime_name": "attestation (SSAE)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "A practitioner performs an assertion-based examination of Everly Energy's statement of greenhouse gas emissions under the attestation standards. What does the practitioner's report express?",
+   "exhibit": "",
+   "options": [
+    "A conclusion, based on limited assurance, about whether material modifications are needed",
+    "An opinion based on reasonable assurance about whether the statement meets the criteria",
+    "A statement that no assurance is provided on the statement of emissions and that no procedures were performed",
+    "A summary of procedures performed and findings, with no opinion or conclusion on the subject matter at all"
+   ],
+   "answer": "B",
+   "rule_line": "An examination gives an opinion based on reasonable assurance; a review gives a conclusion based on limited assurance.",
+   "why": {
+    "A": "That describes a review engagement.",
+    "B": "Correct. An examination provides reasonable assurance and results in an opinion.",
+    "C": "That describes a preparation-type service without assurance, not an attest examination.",
+    "D": "That describes an agreed-upon procedures engagement."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AT-C",
+     "ref": "Glossary (types of attestation engagements)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What level of assurance does an examination provide?",
+     "reveal": "Reasonable assurance."
+    },
+    {
+     "ask": "What does the report express?",
+     "reveal": "An opinion."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-B-0002",
+   "type": "mcq",
+   "area": "IV",
+   "group": "B",
+   "group_name": "Reporting on attestation engagements",
+   "blueprint": "AUD.IV.B Reporting on attestation engagements [IV.B.2]",
+   "topic": "Content of an agreed-upon procedures report",
+   "task": "Identify factors for reporting on agreed-upon procedures engagements.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "AT",
+   "regime_name": "attestation (SSAE)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "A practitioner completes an agreed-upon procedures engagement for Kilburn Foods on trade promotion payments. Which must the report include?",
+   "exhibit": "",
+   "options": [
+    "The procedures performed and the findings from each, and a statement that the report may not suit other purposes",
+    "Management's assertion about the trade promotion payments, with the practitioner's assurance on that assertion",
+    "An opinion on whether the trade promotion payment schedule is fairly stated in all material respects",
+    "An overall conclusion on whether the payments conform to the specified criteria for trade promotion payments"
+   ],
+   "answer": "A",
+   "rule_line": "An agreed-upon procedures report describes procedures and findings and gives no opinion or conclusion.",
+   "why": {
+    "A": "Correct. The report is in the form of procedures and findings and states the purpose and that it may not be suitable for other purposes.",
+    "B": "The report does not provide assurance on management's assertion.",
+    "C": "An opinion is provided by an examination, not by agreed-upon procedures.",
+    "D": "The practitioner may not express an opinion or conclusion in an agreed-upon procedures report."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AT-C",
+     "ref": "215.26"
+    },
+    {
+     "src": "AT-C",
+     "ref": "215.32-.33"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "trap",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What form does an agreed-upon procedures report take?",
+     "reveal": "Procedures performed and findings from each, with no opinion."
+    },
+    {
+     "ask": "What else must it state?",
+     "reveal": "Its purpose and that it may not suit other purposes."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-B-0003",
+   "type": "mcq",
+   "area": "IV",
+   "group": "B",
+   "group_name": "Reporting on attestation engagements",
+   "blueprint": "AUD.IV.B Reporting on attestation engagements [IV.B.2]",
+   "topic": "Independence in an agreed-upon procedures engagement",
+   "task": "Identify factors for reporting on agreed-upon procedures engagements.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "AT",
+   "regime_name": "attestation (SSAE)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "A CPA who is not independent of a client is asked to perform an agreed-upon procedures engagement under the attestation standards. No law or regulation requires the CPA to accept the engagement. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "The CPA may perform the engagement if the CPA is objective, whether or not independent",
+    "The CPA may perform the engagement if the report states that the CPA is not independent, even though no law requires it",
+    "The CPA may perform the engagement, because independence is not required in agreed-upon procedures engagements",
+    "The CPA may not perform it, because independence is required unless law or regulation requires acceptance"
+   ],
+   "answer": "D",
+   "rule_line": "A practitioner must be independent for an attest engagement unless law or regulation requires the engagement, in which case the report says so.",
+   "why": {
+    "A": "Objectivity does not replace the independence requirement.",
+    "B": "A statement of nonindependence is permitted only when law or regulation requires the engagement.",
+    "C": "Independence is required in attestation engagements, including agreed-upon procedures.",
+    "D": "Correct. The practitioner must be independent unless required by law or regulation to accept the engagement, in which case the report states the lack of independence."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AT-C",
+     "ref": "215.10"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": false,
+    "note": "풀이자는 B 를 골랐음(AT-C 215 를 잘못 기억: 비독립 시 보고서에 명시하면 된다고 봄). 검색 결과로 SSAE 19 는 법·규정이 수임을 요구하는 경우를 제외하면 독립성을 요구한다고 확인, 정답 D 유효(풀이자 실수).",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "C": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Is independence required for an agreed-upon procedures engagement?",
+     "reveal": "Yes, unless law or regulation requires acceptance of the engagement."
+    },
+    {
+     "ask": "What if not required by law?",
+     "reveal": "The CPA may not perform it while not independent."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-C-0001",
+   "type": "mcq",
+   "area": "IV",
+   "group": "C",
+   "group_name": "Accounting and review service engagements",
+   "blueprint": "AUD.IV.C Accounting and review service engagements [IV.C.1]",
+   "topic": "Reporting on a preparation engagement",
+   "task": "Identify the considerations for preparation engagements.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "AR",
+   "regime_name": "accounting and review services (SSARS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Accountant Yu is engaged to prepare financial statements for a small client. She is not engaged to audit, review or compile them. What must she do regarding assurance?",
+   "exhibit": "",
+   "options": [
+    "Nothing, because no report is issued in a preparation engagement and no assurance is given",
+    "Issue a compilation report that describes the procedures she performed on the client's records",
+    "Include a no-assurance statement on each page, or else disclaim, compile, or withdraw",
+    "Issue a review report expressing limited assurance on the financial statements"
+   ],
+   "answer": "C",
+   "rule_line": "Prepared statements carry a no-assurance statement on each page (or a disclaimer), otherwise compile or withdraw.",
+   "why": {
+    "A": "A no-assurance statement is required even though a report is not issued.",
+    "B": "A compilation report is issued only when a compilation engagement is performed.",
+    "C": "Correct. The accountant ensures a no-assurance statement appears on each page; if that cannot be done, she disclaims, compiles or withdraws.",
+    "D": "A review report requires a review engagement and independence."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AR-C",
+     "ref": "70.14"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Does a preparation engagement provide any assurance?",
+     "reveal": "No, but the accountant must not let the statements imply otherwise."
+    },
+    {
+     "ask": "What is the required step?",
+     "reveal": "A no-assurance statement on each page; if that cannot be done, disclaim, compile or withdraw."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-C-0002",
+   "type": "mcq",
+   "area": "IV",
+   "group": "C",
+   "group_name": "Accounting and review service engagements",
+   "blueprint": "AUD.IV.C Accounting and review service engagements [IV.C.2]",
+   "topic": "Content of a compilation report",
+   "task": "Identify factors for reporting on compilation engagements.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "AR",
+   "regime_name": "accounting and review services (SSARS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "An accountant completes a compilation of the financial statements of Larkin Bakery under the accounting and review standards. Which statement must appear in the compilation report?",
+   "exhibit": "",
+   "options": [
+    "That the accountant did not audit or review the statements and provides no opinion, conclusion or assurance",
+    "That the accountant is independent of the entity under the AICPA Code",
+    "That the accountant performed limited procedures and is not aware of any material modifications to make",
+    "That the accountant expresses an opinion on whether the statements are presented fairly"
+   ],
+   "answer": "A",
+   "rule_line": "A compilation report disclaims any opinion, conclusion or assurance.",
+   "why": {
+    "A": "Correct. The compilation report states that no audit or review was performed and that no opinion, conclusion or assurance is provided.",
+    "B": "Independence is not required for a compilation; a lack of independence is disclosed if it exists.",
+    "C": "That describes the conclusion in a review report.",
+    "D": "A compilation does not provide an opinion."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AR-C",
+     "ref": "80.17"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "trap",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What does a compilation report say about work performed and assurance?",
+     "reveal": "That no audit or review was performed."
+    },
+    {
+     "ask": "What else?",
+     "reveal": "That no opinion, conclusion or assurance is provided."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-C-0003",
+   "type": "mcq",
+   "area": "IV",
+   "group": "C",
+   "group_name": "Accounting and review service engagements",
+   "blueprint": "AUD.IV.C Accounting and review service engagements [IV.C.2]",
+   "topic": "Compilation when the accountant is not independent",
+   "task": "Identify factors for reporting on compilation engagements.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "AR",
+   "regime_name": "accounting and review services (SSARS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Accountant Kim performs a compilation of the financial statements of Larkin Bakery, in which she owns a 10% interest. Which is required?",
+   "exhibit": "",
+   "options": [
+    "Decline the engagement, because independence is required for a compilation",
+    "Say nothing about independence, because a compilation gives no assurance",
+    "Indicate the lack of independence in a final paragraph of the report",
+    "Issue a review report instead, because a review permits a lack of independence"
+   ],
+   "answer": "C",
+   "rule_line": "In a compilation, a lack of independence is stated in the report's final paragraph.",
+   "why": {
+    "A": "Independence is not a requirement for a compilation, so Kim need not decline it.",
+    "B": "The lack of independence must be indicated in the report.",
+    "C": "Correct. A compilation may be performed by an accountant who is not independent, if the report indicates the lack of independence in a final paragraph.",
+    "D": "A review requires the accountant to be independent."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AR-C",
+     "ref": "80.22-.23"
+    },
+    {
+     "src": "AR-C",
+     "ref": "90.10"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Is independence required for a compilation?",
+     "reveal": "No, an accountant who is not independent may compile."
+    },
+    {
+     "ask": "What must the report show?",
+     "reveal": "The lack of independence, in a final paragraph."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-C-0004",
+   "type": "mcq",
+   "area": "IV",
+   "group": "C",
+   "group_name": "Accounting and review service engagements",
+   "blueprint": "AUD.IV.C Accounting and review service engagements [IV.C.3]",
+   "topic": "Assurance and independence in a review engagement",
+   "task": "Identify factors for reporting on review engagements.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "AR",
+   "regime_name": "accounting and review services (SSARS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "An accountant is engaged to review the financial statements of Halden Motors, a nonissuer, under the accounting and review standards. Which statement about the engagement is correct?",
+   "exhibit": "",
+   "options": [
+    "The accountant obtains reasonable assurance through analytical procedures and inquiries, and must be independent of the entity",
+    "The accountant obtains limited assurance, mainly through analytical procedures and inquiries, and must be independent",
+    "The accountant obtains limited assurance, and independence is not required for a review",
+    "The accountant obtains no assurance and independence is not required"
+   ],
+   "answer": "B",
+   "rule_line": "A review gives limited assurance through analytical procedures and inquiries and requires independence.",
+   "why": {
+    "A": "Reasonable assurance is the level provided by an audit, not a review.",
+    "B": "Correct. A review provides limited assurance, mainly through analytical procedures and inquiries, and requires independence.",
+    "C": "Independence is required for a review, unlike a compilation.",
+    "D": "A review provides limited assurance, not none."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AR-C",
+     "ref": "90.04"
+    },
+    {
+     "src": "AR-C",
+     "ref": "90.10"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What assurance does a review provide?",
+     "reveal": "Limited assurance, mainly through analytical procedures and inquiries."
+    },
+    {
+     "ask": "Is independence required?",
+     "reveal": "Yes."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-D-0001",
+   "type": "mcq",
+   "area": "IV",
+   "group": "D",
+   "group_name": "Reporting on compliance",
+   "blueprint": "AUD.IV.D Reporting on compliance [IV.D]",
+   "topic": "Reports in a single audit",
+   "task": "Report on compliance in an audit of an entity receiving federal awards.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GV",
+   "regime_name": "government (GAGAS / Single Audit)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Which set of reports and schedules must the auditor's reports in a single audit of a local government include under the Uniform Guidance?",
+   "exhibit": "",
+   "options": [
+    "An opinion on the financial statements and a report on internal control over financial reporting only, with no report on major programs",
+    "An opinion on the financial statements, a GAGAS report on internal control and compliance, and a report on compliance for each nonmajor program, without a findings schedule",
+    "An opinion on the financial statements only, with compliance with major program requirements addressed in the notes to the financial statements",
+    "An opinion on the statements and schedule, a GAGAS report on internal control and compliance, major program compliance reports, and a findings schedule"
+   ],
+   "answer": "D",
+   "rule_line": "A single audit report package covers the statements, GAGAS internal control and compliance, major program compliance, and findings.",
+   "why": {
+    "A": "Compliance reporting for major programs and the schedule of findings are also required.",
+    "B": "The compliance opinions are for major programs, not nonmajor programs.",
+    "C": "A report on major program compliance is required in addition to the statement opinion.",
+    "D": "Correct. The reports must cover the statements and the schedule, internal control and compliance under GAGAS, major program compliance and internal control, and the schedule of findings."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "2 CFR",
+     "ref": "200.515(a)-(d)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Which reports does a single audit require?",
+     "reveal": "Financial statement and schedule opinion, a GAGAS report on internal control and compliance, major program compliance and internal control reports."
+    },
+    {
+     "ask": "What else accompanies them?",
+     "reveal": "A schedule of findings."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-D-0002",
+   "type": "mcq",
+   "area": "IV",
+   "group": "D",
+   "group_name": "Reporting on compliance",
+   "blueprint": "AUD.IV.D Reporting on compliance [IV.D]",
+   "topic": "Likely questioned costs in forming a compliance opinion",
+   "task": "Report on compliance in an audit of an entity receiving federal awards.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "GV",
+   "regime_name": "government (GAGAS / Single Audit)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "In a compliance audit of a major program at Cedar County, the auditor finds known questioned costs of $18,000 for allowable costs. Projecting a sample gives likely questioned costs of $210,000, and the materiality level for that compliance requirement is $150,000. Which conclusion is most appropriate?",
+   "exhibit": "",
+   "options": [
+    "Evaluate only the known questioned costs of $18,000, which are below materiality, and issue an unmodified opinion on compliance",
+    "Exclude questioned costs from the evaluation and rely on management's corrective action plan for the program",
+    "Evaluate likely as well as known questioned costs; likely costs exceed materiality, so consider modifying the opinion",
+    "Modify the opinion on the financial statements rather than the opinion on compliance for the program"
+   ],
+   "answer": "C",
+   "rule_line": "Compliance opinions consider likely questioned costs, not only known questioned costs.",
+   "why": {
+    "A": "The auditor must evaluate likely questioned costs, not just known questioned costs.",
+    "B": "A corrective action plan does not replace the auditor's evaluation of noncompliance for the audit period.",
+    "C": "Correct. In forming a compliance opinion, the auditor evaluates likely questioned costs as well as known questioned costs.",
+    "D": "The compliance opinion, not the financial statement opinion, addresses noncompliance with program requirements."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "935.33"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "Which questioned costs are evaluated in forming the compliance opinion?",
+     "reveal": "Both known and likely questioned costs."
+    },
+    {
+     "ask": "Compare the likely amount with the materiality level.",
+     "reveal": "$210,000 exceeds $150,000, so consider modifying the opinion."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-E-0001",
+   "type": "mcq",
+   "area": "IV",
+   "group": "E",
+   "group_name": "Other reporting considerations",
+   "blueprint": "AUD.IV.E Other reporting considerations [IV.E.1]",
+   "topic": "Reporting a change in accounting principle",
+   "task": "Report on consistency of financial statements.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Marlow Co., a nonissuer, changed its inventory method from FIFO to average cost. The auditor concludes that the new method is acceptable and preferable, is properly accounted for and disclosed, and has a material effect. How should the auditor report?",
+   "exhibit": "",
+   "options": [
+    "Include no paragraph, because the change is adequately disclosed in the notes to the financial statements",
+    "Express an adverse opinion because the statements are not comparable between the two periods presented",
+    "Express a qualified opinion because of the inconsistency in accounting principle between the periods presented",
+    "Add an emphasis-of-matter paragraph describing the change and referring to the disclosure; opinion unmodified"
+   ],
+   "answer": "D",
+   "rule_line": "A justified, properly disclosed, material change in principle requires an emphasis-of-matter paragraph.",
+   "why": {
+    "A": "A material change in principle requires the emphasis paragraph even when it is disclosed.",
+    "B": "An adverse opinion would apply only for a material and pervasive misstatement.",
+    "C": "A justified, properly disclosed change does not require a qualified opinion.",
+    "D": "Correct. When the criteria are met and the effect is material, the auditor adds an emphasis-of-matter paragraph on the change."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "708.07-.08"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "C": "trap"
+   },
+   "guide": [
+    {
+     "ask": "Is the change in principle acceptable, preferable and properly disclosed?",
+     "reveal": "Yes, and the effect is material."
+    },
+    {
+     "ask": "How does the report reflect it?",
+     "reveal": "An emphasis-of-matter paragraph on the change, referring to the disclosure, with the opinion unmodified."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-E-0002",
+   "type": "mcq",
+   "area": "IV",
+   "group": "E",
+   "group_name": "Other reporting considerations",
+   "blueprint": "AUD.IV.E Other reporting considerations [IV.E.2]",
+   "topic": "Responsibility for other information",
+   "task": "Report on other information in documents containing audited financial statements.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Whitcomb Steel, a nonissuer, includes a letter from the CEO and a discussion of results in an annual report containing audited financial statements. What is the auditor's responsibility for this other information?",
+   "exhibit": "",
+   "options": [
+    "Read it, consider material inconsistencies with the statements, and stay alert for misstatements of fact",
+    "Search for omitted information to determine that the other information is complete and accurate",
+    "Audit the other information and express an opinion on it, in addition to the opinion on the statements",
+    "None, because the auditor's opinion covers only the audited financial statements themselves"
+   ],
+   "answer": "A",
+   "rule_line": "The auditor reads and considers other information for inconsistency but does not audit it.",
+   "why": {
+    "A": "Correct. The auditor reads the other information, considers material inconsistencies, and remains alert for inconsistencies with the auditor's knowledge and misstatements of fact.",
+    "B": "The auditor is not responsible for searching for omitted information or for its completeness.",
+    "C": "The auditor does not audit other information or express an opinion on it.",
+    "D": "The auditor has responsibilities for reading and considering other information even though the opinion covers only the financial statements."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "720.16-.18"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "trap",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What is the auditor's duty for other information in the annual report?",
+     "reveal": "Not to audit it or search for omissions."
+    },
+    {
+     "ask": "What does the auditor do with it?",
+     "reveal": "Read it, consider material inconsistencies with the statements and remain alert for misstatements of fact."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-E-0003",
+   "type": "mcq",
+   "area": "IV",
+   "group": "E",
+   "group_name": "Other reporting considerations",
+   "blueprint": "AUD.IV.E Other reporting considerations [IV.E.4]",
+   "topic": "Supplementary information in relation to the financial statements",
+   "task": "Report on supplementary information.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Application",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Pine Ridge Farms, a nonissuer, presents a supplementary schedule of production costs with its audited financial statements, and the auditor is engaged to report on whether it is fairly stated in relation to the financial statements as a whole. Which condition must be met?",
+   "exhibit": "",
+   "options": [
+    "The supplementary information must cover a different period from the financial statements",
+    "It was derived from, and relates directly to, the accounting records used to prepare the statements",
+    "The auditor's report on the financial statements must contain an adverse opinion or disclaimer",
+    "The auditor must audit the supplementary information separately using a lower materiality level"
+   ],
+   "answer": "B",
+   "rule_line": "Supplementary information must derive from the accounting records, cover the same period, and be assessed with the audit's materiality level.",
+   "why": {
+    "A": "The supplementary information must relate to the same period as the financial statements.",
+    "B": "Correct. One condition is that the supplementary information was derived from and relates directly to the underlying accounting records used for the statements.",
+    "C": "The report on the financial statements must contain neither an adverse opinion nor a disclaimer.",
+    "D": "The auditor uses the same materiality level as in the audit of the financial statements."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "725.05"
+    },
+    {
+     "src": "AU-C",
+     "ref": "725.07"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "C": "trap",
+    "D": "trap"
+   },
+   "guide": [
+    {
+     "ask": "What must be true of supplementary information for an in-relation-to opinion?",
+     "reveal": "Its source must connect to the records behind the statements."
+    },
+    {
+     "ask": "Which condition states that?",
+     "reveal": "It was derived from, and relates directly to, the underlying accounting records used to prepare the statements."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-E-0004",
+   "type": "mcq",
+   "area": "IV",
+   "group": "E",
+   "group_name": "Other reporting considerations",
+   "blueprint": "AUD.IV.E Other reporting considerations [IV.E.3]",
+   "topic": "Review of interim financial information for an issuer",
+   "task": "Report on review of interim financial information.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "IS",
+   "regime_name": "issuer (PCAOB)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 1,
+   "calc": false,
+   "stem": "Which statement correctly describes a review of interim financial information performed for an issuer under PCAOB standards?",
+   "exhibit": "",
+   "options": [
+    "It gives a basis for reporting whether material modifications are needed, but not for an opinion",
+    "It applies the same procedures as an audit but to the interim period only, and results in an opinion",
+    "It provides a basis for expressing an opinion on the annual financial statements taken as a whole",
+    "It includes tests of internal control and confirmations to the same extent as an audit of annual statements"
+   ],
+   "answer": "A",
+   "rule_line": "An interim review is much narrower than an audit and does not support an opinion.",
+   "why": {
+    "A": "Correct. The objective of a review is a basis for reporting on whether the accountant is aware of material modifications needed, unlike an audit.",
+    "B": "A review differs significantly from an audit in objective and scope, and does not result in an opinion.",
+    "C": "A review of interim information does not provide a basis for an opinion on the annual statements.",
+    "D": "A review is substantially less in scope than an audit and does not include audit-level testing."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "PCAOB",
+     "ref": "AS 4105.07"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What does a review of interim information support?",
+     "reveal": "Only reporting on whether modifications are needed, not an opinion."
+    },
+    {
+     "ask": "How does it differ from an audit?",
+     "reveal": "It has narrower procedures without the tests of controls and confirmations of an audit."
+    }
+   ]
+  },
+  {
+   "id": "AUD-IV-E-0005",
+   "type": "mcq",
+   "area": "IV",
+   "group": "E",
+   "group_name": "Other reporting considerations",
+   "blueprint": "AUD.IV.E Other reporting considerations [IV.E.6]",
+   "topic": "Report on financial statements prepared under a special purpose framework",
+   "task": "Report on special purpose frameworks.",
+   "task_source": "AICPA Uniform CPA Examination Blueprints (Approved Aug. 18, 2025; effective Jan. 2026), AUD; wording paraphrased",
+   "regime": "NI",
+   "regime_name": "nonissuer (AICPA GAAS)",
+   "skill": "Remembering and Understanding",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "The auditor of Willow Farms, a nonissuer, audits financial statements prepared on the cash basis, which is a special purpose framework, for a lender. What must the auditor's report include in addition to the standard elements?",
+   "exhibit": "",
+   "options": [
+    "A qualified opinion, because the cash basis statements do not follow generally accepted accounting principles",
+    "An adverse opinion on the statements, since the cash basis is not an acceptable financial reporting framework",
+    "An emphasis-of-matter paragraph alerting users that the basis of accounting is a special purpose framework",
+    "No additional paragraph is needed, because the framework is already described in the notes to the statements"
+   ],
+   "answer": "C",
+   "rule_line": "Reports on special purpose framework statements include an emphasis paragraph alerting users to the basis of accounting.",
+   "why": {
+    "A": "A special purpose framework can be acceptable, so departure from GAAP alone does not require a qualified opinion.",
+    "B": "The cash basis can be an acceptable special purpose framework.",
+    "C": "Correct. Reports on special purpose statements include an emphasis-of-matter paragraph that alerts users, refers to the note, and says the basis is other than GAAP.",
+    "D": "The alerting paragraph is required even when the note describes the framework."
+   },
+   "steps": [],
+   "calc_check": {},
+   "cite": [
+    {
+     "src": "AU-C",
+     "ref": "800.20"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original (no commercial question text used)",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-2 (aud_독립풀이.json)",
+    "cite_ok": true,
+    "confidence": "high",
+    "date": "2026-09-30",
+    "match": true,
+    "note": "",
+    "commit": "155bff3"
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   },
+   "guide": [
+    {
+     "ask": "What kind of framework is the cash basis in this report?",
+     "reveal": "A special purpose framework."
+    },
+    {
+     "ask": "What does the auditor add to alert users?",
+     "reveal": "An emphasis-of-matter paragraph that refers to the note and says the basis is other than GAAP."
+    }
+   ]
+  }
+ ]
+}

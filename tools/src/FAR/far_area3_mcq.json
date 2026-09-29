@@ -66,7 +66,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which changes replace one accepted principle with another accepted principle?",
+     "reveal": "Those moving between GAAP-permitted methods, with justification of preferability."
+    },
+    {
+     "ask": "Which listed situation switches an inventory cost-flow assumption from one acceptable method to another?",
+     "reveal": "The switch from FIFO to weighted-average."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0002",
@@ -125,7 +135,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does a voluntary change in principle apply to the past or only forward?",
+     "reveal": "It is applied retrospectively to prior periods presented."
+    },
+    {
+     "ask": "Where does the cumulative effect of earlier periods go?",
+     "reveal": "Into the opening retained earnings of the earliest period presented."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0003",
@@ -205,7 +225,17 @@
     "A": "calc",
     "B": "concept",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the carrying amount at the start of 2026?",
+     "reveal": "120,000 - 3 x 12,000 = 84,000."
+    },
+    {
+     "ask": "How many years remain under the revised life, and what is the depreciation?",
+     "reveal": "8 - 3 = 5 years; 84,000 / 5 = 16,800."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0004",
@@ -285,7 +315,17 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the carrying amount at the start of 2026?",
+     "reveal": "250,000 - 3 x 30,000 = 160,000."
+    },
+    {
+     "ask": "Apply the revised salvage and the remaining life.",
+     "reveal": "(160,000 - 20,000) / (10 - 3) = 20,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0005",
@@ -365,7 +405,17 @@
     "A": "calc",
     "C": "trap",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the pretax difference in prior cumulative income?",
+     "reveal": "Higher FIFO inventory of 80,000."
+    },
+    {
+     "ask": "Net of tax, what is the retained earnings increase?",
+     "reveal": "80,000 - 25% x 80,000 = 60,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0006",
@@ -445,7 +495,17 @@
     "A": "calc",
     "C": "trap",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much depreciation would 2025 have had?",
+     "reveal": "90,000 / 5 = 18,000."
+    },
+    {
+     "ask": "What is the pretax overstatement of prior expense, and its after-tax amount?",
+     "reveal": "90,000 - 18,000 = 72,000; x 0.80 = 57,600."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0007",
@@ -529,7 +589,17 @@
     "A": "calc",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does an overstated opening inventory affect the year's income?",
+     "reveal": "It raises cost of goods sold, so income is understated by 30,000."
+    },
+    {
+     "ask": "How does the understated ending inventory affect it, and what is the corrected income?",
+     "reveal": "Also raises cost of goods sold, income understated by 10,000; 400,000 + 30,000 + 10,000 = 440,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0008",
@@ -609,7 +679,17 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which year's wages were paid and wrongly expensed in 2026?",
+     "reveal": "The 12,000 of 2025 wages."
+    },
+    {
+     "ask": "Which year-end wages were omitted?",
+     "reveal": "The 18,000 of 2026 wages; net effect +12,000 - 18,000 = -6,000, so 244,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0009",
@@ -668,7 +748,17 @@
     "A": "concept",
     "B": "concept",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a material error in issued statements corrected in the current year or by restating?",
+     "reveal": "By restating the prior-period statements."
+    },
+    {
+     "ask": "What happens to opening retained earnings?",
+     "reveal": "It is adjusted for the earliest period presented."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0010",
@@ -723,7 +813,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What kind of change is adding a previously unconsolidated subsidiary because of a change in the reporting entity?",
+     "reveal": "A special type of change in principle."
+    },
+    {
+     "ask": "How is it applied?",
+     "reveal": "Retrospectively, recasting all prior periods presented."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0011",
@@ -807,7 +907,17 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What allowance is required under the revised estimate?",
+     "reveal": "800,000 x 6% = 48,000."
+    },
+    {
+     "ask": "How does the existing balance affect the expense?",
+     "reveal": "48,000 - 10,000 = 38,000 through current expense."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0012",
@@ -887,7 +997,17 @@
     "A": "calc",
     "C": "trap",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Did the 2025 revenue belong to 2025?",
+     "reveal": "No, the services were performed in 2026, so 2025 income was overstated by 50,000."
+    },
+    {
+     "ask": "How does tax change the retained earnings effect?",
+     "reveal": "50,000 - 30% x 50,000 = 35,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0013",
@@ -971,7 +1091,17 @@
     "B": "trap",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much did the FIFO-LIFO inventory difference change during 2025?",
+     "reveal": "100,000 - 60,000 = 40,000, lowering 2025 cost of goods sold."
+    },
+    {
+     "ask": "After tax, what is restated 2025 income?",
+     "reveal": "210,000 + 40,000 x 0.75 = 240,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0014",
@@ -1030,7 +1160,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What must a company show to justify a voluntary change in principle?",
+     "reveal": "That the new principle is preferable."
+    },
+    {
+     "ask": "What must it also do?",
+     "reveal": "Disclose the reason for the change."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0015",
@@ -1085,7 +1225,17 @@
     "A": "trap",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does an ending inventory error carry over to the next year?",
+     "reveal": "Yes, it reverses in the following year's income."
+    },
+    {
+     "ask": "What is left in retained earnings at the end of the second year?",
+     "reveal": "Nothing; the balance is correct."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0016",
@@ -1169,7 +1319,17 @@
     "A": "concept",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the carrying amount after two years?",
+     "reveal": "480,000 - 2 x 40,000 = 400,000."
+    },
+    {
+     "ask": "Divide by the remaining life of 8 - 2 years.",
+     "reveal": "400,000 / 6 = 66,667."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0017",
@@ -1253,7 +1413,17 @@
     "A": "concept",
     "B": "calc",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a change in depreciation method applied retrospectively or prospectively?",
+     "reveal": "Prospectively."
+    },
+    {
+     "ask": "Find the carrying amount and apply the double-declining rate for 7 remaining years.",
+     "reveal": "260,000 - 3 x 26,000 = 182,000; 182,000 x 2/7 = 52,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0018",
@@ -1333,7 +1503,17 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is the opening balance affected by the correction?",
+     "reveal": "Restated to 900,000 - 60,000 = 840,000."
+    },
+    {
+     "ask": "Add income and subtract dividends.",
+     "reveal": "840,000 + 300,000 - 100,000 = 1,040,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0019",
@@ -1392,7 +1572,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Can prior LIFO layers be recreated when records are unavailable?",
+     "reveal": "No, retrospective application is impracticable."
+    },
+    {
+     "ask": "How is the change made in that case?",
+     "reveal": "Prospectively, with opening inventory as the base layer."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0020",
@@ -1447,7 +1637,17 @@
     "A": "concept",
     "B": "concept",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which situations arise from new information or judgment?",
+     "reveal": "Warranty rate, allowance and sale gains are estimates or ordinary events."
+    },
+    {
+     "ask": "Which one arises from overlooking existing information?",
+     "reveal": "The omitted supplier invoice because of a filing mistake."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0021",
@@ -1506,7 +1706,17 @@
     "A": "concept",
     "B": "concept",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is omitted depreciation a mistake, or a revision of a forecast?",
+     "reveal": "A mistake, corrected by restatement."
+    },
+    {
+     "ask": "What about the machine's longer expected life?",
+     "reveal": "A change in estimate, applied prospectively."
+    }
+   ]
   },
   {
    "id": "FAR-III-A-0022",
@@ -1561,7 +1771,17 @@
     "A": "concept",
     "B": "concept",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "For a material change in estimate, what must the period of change disclose?",
+     "reveal": "Its effect on the current period's results."
+    },
+    {
+     "ask": "Which measures must be shown?",
+     "reveal": "Income from continuing operations, net income and related per-share amounts."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0001",
@@ -1616,7 +1836,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What two conditions are needed for accrual of a loss contingency?",
+     "reveal": "The outcome must be probable and the amount reasonably estimable."
+    },
+    {
+     "ask": "Does filing of a suit alone meet them?",
+     "reveal": "No; both conditions must hold at the statement date."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0002",
@@ -1700,7 +1930,17 @@
     "B": "calc",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the loss probable and estimable?",
+     "reveal": "Probable, in a range of 400,000 to 900,000."
+    },
+    {
+     "ask": "With no best estimate within the range, what is accrued?",
+     "reveal": "The minimum, 400,000, with the additional exposure disclosed."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0003",
@@ -1759,7 +1999,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a reasonably possible loss accrued?",
+     "reveal": "No, only a probable one is."
+    },
+    {
+     "ask": "What is required instead?",
+     "reveal": "Disclosure of the nature and an estimate or range of the loss."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0004",
@@ -1843,7 +2093,17 @@
     "B": "trap",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which likelihood levels trigger accrual?",
+     "reveal": "Only probable and estimable."
+    },
+    {
+     "ask": "Sort the three suits.",
+     "reveal": "Suit 1 accrued at 200,000; suit 2 disclosed only; suit 3 remote and not accrued."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0005",
@@ -1927,7 +2187,17 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the 2026 warranty accrual?",
+     "reveal": "2,000,000 x 4% = 80,000."
+    },
+    {
+     "ask": "Roll the liability forward.",
+     "reveal": "30,000 + 80,000 - 55,000 = 55,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0006",
@@ -1986,7 +2256,17 @@
     "A": "trap",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a court award under appeal a realized gain?",
+     "reveal": "No, it is a gain contingency."
+    },
+    {
+     "ask": "What may be done with it in the statements?",
+     "reveal": "Not recognized; disclosure is permitted with care about implying realization."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0007",
@@ -2055,7 +2335,17 @@
     "B": "calc",
     "C": "calc"
    },
-   "cite_note": "회수 인식은 450-30(이득 우연사항) 이 아니라 손실 회수 유추(예: 410-30-35-8 등 실무 관행)다. 인용은 참고용."
+   "cite_note": "회수 인식은 450-30(이득 우연사항) 이 아니라 손실 회수 유추(예: 410-30-35-8 등 실무 관행)다. 인용은 참고용.",
+   "guide": [
+    {
+     "ask": "How is a probable insurance recovery of a recognized loss treated?",
+     "reveal": "Recognized as an asset, up to the amount of the loss."
+    },
+    {
+     "ask": "Compute the net effect.",
+     "reveal": "300,000 - 200,000 = 100,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0008",
@@ -2114,7 +2404,17 @@
     "A": "trap",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a paid-for guarantee only a disclosure item?",
+     "reveal": "No; a guarantor also recognizes a liability at inception."
+    },
+    {
+     "ask": "At what measurement?",
+     "reveal": "The fair value of the stand-ready obligation, even if payment is not probable."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0009",
@@ -2198,7 +2498,17 @@
     "A": "trap",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the contract noncancelable and is the market price below the contract price?",
+     "reveal": "Yes, market 430,000 versus contract 500,000, with no expected recovery."
+    },
+    {
+     "ask": "Compute the loss.",
+     "reveal": "500,000 - 430,000 = 70,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0010",
@@ -2282,7 +2592,17 @@
     "B": "trap",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are the recall costs probable and estimable?",
+     "reveal": "Yes, 12,000 units at 45 each."
+    },
+    {
+     "ask": "Compute the accrual.",
+     "reveal": "12,000 x 45 = 540,000, recorded now not when repairs are made."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0011",
@@ -2341,7 +2661,17 @@
     "A": "concept",
     "B": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When may an environmental remediation liability be discounted?",
+     "reveal": "Only when the amount and timing of payments are fixed or reliably determinable."
+    },
+    {
+     "ask": "Is that the case here?",
+     "reveal": "No, so it is measured at the undiscounted best estimate of 2,400,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0012",
@@ -2425,7 +2755,17 @@
     "B": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the settlement new information about conditions at year-end?",
+     "reveal": "No, it only refines the estimate."
+    },
+    {
+     "ask": "Which period bears the extra amount?",
+     "reveal": "The settlement year: 340,000 - 300,000 = 40,000 expense."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0013",
@@ -2509,7 +2849,17 @@
     "A": "calc",
     "C": "trap",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the accrued loss deductible now or when paid?",
+     "reveal": "When paid, so a deferred tax asset arises."
+    },
+    {
+     "ask": "Compute the deferred tax and the net income effect.",
+     "reveal": "800,000 x 25% = 200,000; 800,000 - 200,000 = 600,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0014",
@@ -2564,7 +2914,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Has the claim been asserted yet?",
+     "reveal": "No, so the test is about likelihood of assertion."
+    },
+    {
+     "ask": "What two conditions require disclosure?",
+     "reveal": "Assertion is probable and an unfavorable outcome is at least reasonably possible."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0015",
@@ -2623,7 +2983,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the loss probable and can it be estimated?",
+     "reveal": "Probable but not estimable."
+    },
+    {
+     "ask": "What is the required treatment?",
+     "reveal": "No accrual; disclose the nature and state that an estimate cannot be made."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0016",
@@ -2691,7 +3061,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which amount is accrued when a best estimate exists in the range?",
+     "reveal": "The best estimate of 1,000,000, not the minimum."
+    },
+    {
+     "ask": "How is the insurance recovery presented, and what is the net loss?",
+     "reveal": "A separate receivable of 600,000, so the net loss is 400,000 with both shown gross."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0017",
@@ -2746,7 +3126,17 @@
     "A": "concept",
     "B": "concept",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which situations are only possible or remote?",
+     "reveal": "The patent claim and the contract dispute."
+    },
+    {
+     "ask": "Which of the remaining is probable and also estimated?",
+     "reveal": "The customer-injury suit at 90,000; the tax claim lacks an estimate."
+    }
+   ]
   },
   {
    "id": "FAR-III-B-0018",
@@ -2801,7 +3191,17 @@
     "A": "trap",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the take-or-pay contract recorded as a liability?",
+     "reveal": "Not before delivery."
+    },
+    {
+     "ask": "What is required for unrecorded unconditional purchase obligations?",
+     "reveal": "Disclosure of nature, term and the minimum amounts for each of the next five years."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0001",
@@ -2856,7 +3256,17 @@
     "A": "concept",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Where does the model start and end?",
+     "reveal": "It starts with the contract and ends with recognition as obligations are satisfied."
+    },
+    {
+     "ask": "Which sequence puts obligations, price and allocation in between correctly?",
+     "reveal": "Identify obligations, determine price, allocate, then recognize."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0002",
@@ -2911,7 +3321,17 @@
     "A": "trap",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the test for recognizing over time?",
+     "reveal": "One of three criteria, such as customer control of an asset as it is created or enhanced."
+    },
+    {
+     "ask": "Which listed item matches one of them?",
+     "reveal": "Performance that creates or enhances an asset the customer controls."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0003",
@@ -2995,7 +3415,17 @@
     "A": "calc",
     "B": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the total of standalone selling prices?",
+     "reveal": "600,000 + 200,000 + 200,000 = 1,000,000."
+    },
+    {
+     "ask": "How is the 900,000 price allocated to the license?",
+     "reveal": "60% of it: 540,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0004",
@@ -3079,7 +3509,17 @@
     "B": "calc",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the bonus subject to the variable consideration constraint?",
+     "reveal": "Yes, since the outcome depends on weather that often causes delay."
+    },
+    {
+     "ask": "Given a significant reversal risk, how much bonus is included?",
+     "reveal": "None; the price is 900,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0005",
@@ -3162,7 +3602,17 @@
     "A": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What portion of sales is expected not to be returned?",
+     "reveal": "100% - 8% = 92%."
+    },
+    {
+     "ask": "What revenue is recognized, and what is the remainder?",
+     "reveal": "500,000 x 92% = 460,000; 40,000 is a refund liability."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0006",
@@ -3246,7 +3696,17 @@
     "A": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What revenue and what cost of goods sold are recognized for goods not expected back?",
+     "reveal": "Revenue 460,000; cost 300,000 x 92% = 276,000."
+    },
+    {
+     "ask": "Where does the cost of goods expected back go?",
+     "reveal": "A return asset of 24,000; gross profit 460,000 - 276,000 = 184,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0007",
@@ -3329,7 +3789,17 @@
     "B": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the marketplace control the goods before transfer?",
+     "reveal": "No: no title, no inventory risk and no pricing discretion."
+    },
+    {
+     "ask": "What does that make Lumen, and what is its revenue?",
+     "reveal": "An agent earning the commission: 2,500,000 x 12% = 300,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0008",
@@ -3413,7 +3883,17 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is progress by cost-to-cost at the end of year 2?",
+     "reveal": "(720,000 + 840,000) / 2,400,000 = 65%."
+    },
+    {
+     "ask": "What are cumulative revenue and year 1 revenue?",
+     "reveal": "3,000,000 x 65% = 1,950,000; year 1 was 900,000. Year 2: 1,050,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0009",
@@ -3497,7 +3977,21 @@
     "B": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What was year 1 revenue?",
+     "reveal": "3,000,000 x 720,000 / 2,400,000 = 900,000."
+    },
+    {
+     "ask": "What is cumulative progress with the revised total cost?",
+     "reveal": "(720,000 + 900,000) / 2,700,000 = 60%; cumulative revenue 1,800,000."
+    },
+    {
+     "ask": "What is year 2?",
+     "reveal": "1,800,000 - 900,000 = 900,000 via a cumulative catch-up."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0010",
@@ -3577,7 +4071,17 @@
     "A": "concept",
     "B": "calc",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the estimated total cost exceed the price, and what is the total expected loss?",
+     "reveal": "Yes: 3,300,000 - 3,000,000 = 300,000."
+    },
+    {
+     "ask": "When is an expected contract loss recognized?",
+     "reveal": "Immediately in full, the operating part 90,000 and a provision of 210,000: 300,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0011",
@@ -3661,7 +4165,17 @@
     "A": "concept",
     "B": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What redemption is expected in total?",
+     "reveal": "200,000 x 90% = 180,000."
+    },
+    {
+     "ask": "How is breakage recognized, in proportion to what?",
+     "reveal": "To the pattern of redemption: 120,000 / 180,000 x 200,000 = 133,333."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0012",
@@ -3744,7 +4258,17 @@
     "A": "concept",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the software a right to use or a right to access, given its standalone functionality?",
+     "reveal": "A right to use as it exists."
+    },
+    {
+     "ask": "When is revenue recognized for such a license?",
+     "reveal": "At the point control transfers, so the whole 800,000 in 2026."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0013",
@@ -3827,7 +4351,17 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the licensor's ongoing activity affect the value of the brand, and does the IP have standalone functionality?",
+     "reveal": "It does affect the value, and there is no functionality."
+    },
+    {
+     "ask": "Which pattern of recognition follows, and what is the year 1 amount?",
+     "reveal": "Over time, straight-line: 600,000 / 5 = 120,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0014",
@@ -3906,7 +4440,17 @@
     "A": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the fee fixed or based on the licensee's sales?",
+     "reveal": "Based on sales."
+    },
+    {
+     "ask": "When is a sales-based royalty on IP recognized, and how much?",
+     "reveal": "As the sales occur: 5% x 4,000,000 = 200,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0015",
@@ -3990,7 +4534,17 @@
     "B": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is there a significant financing component?",
+     "reveal": "Yes, payment comes two years after delivery at a stated rate."
+    },
+    {
+     "ask": "What is revenue on delivery?",
+     "reveal": "The present value: 1,210,000 / 1.10^2 = 1,000,000, with the rest as interest income."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0016",
@@ -4074,7 +4628,17 @@
     "A": "calc",
     "B": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the added price equal to the standalone selling price?",
+     "reveal": "No, it is below."
+    },
+    {
+     "ask": "How is the modification then treated, and what is the remaining consideration?",
+     "reveal": "As a termination and new contract: 40 x 10 + 40 x 8 = 400 + 320 = 720."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0017",
@@ -4129,7 +4693,17 @@
     "B": "concept",
     "C": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are the added machines distinct, and is the price at standalone selling price?",
+     "reveal": "Yes to both."
+    },
+    {
+     "ask": "What does that make the modification?",
+     "reveal": "A separate contract, leaving the original contract unchanged."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0018",
@@ -4212,7 +4786,17 @@
     "A": "trap",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does control transfer when goods reach a consignee?",
+     "reveal": "No."
+    },
+    {
+     "ask": "When is revenue recognized, and how much?",
+     "reveal": "When the retailer sells to customers: 180,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0019",
@@ -4296,7 +4880,17 @@
     "A": "calc",
     "C": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the commission incremental and recoverable?",
+     "reveal": "Yes, so it is capitalized."
+    },
+    {
+     "ask": "Over what period is it amortized, and what is the annual amount?",
+     "reveal": "The expected benefit period including renewals, 5 years: 60,000 / 5 = 12,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0020",
@@ -4351,7 +4945,17 @@
     "B": "concept",
     "C": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the amortization period for a contract lasting eight months?",
+     "reveal": "Less than one year."
+    },
+    {
+     "ask": "What practical expedient is available for such costs?",
+     "reveal": "Expense the incremental costs when incurred."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0021",
@@ -4435,7 +5039,17 @@
     "A": "trap",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are the loyalty points a separate obligation?",
+     "reveal": "Yes, a material right."
+    },
+    {
+     "ask": "How is the price split by relative standalone selling price, and what is revenue on the goods?",
+     "reveal": "100,000 x 100,000 / 105,000 = 95,238, with 4,762 deferred."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0022",
@@ -4494,7 +5108,17 @@
     "A": "concept",
     "B": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What two tests make a promise distinct?",
+     "reveal": "Capable of being distinct and separately identifiable in the context of the contract."
+    },
+    {
+     "ask": "Do invoicing lines, timing or relative cost decide it?",
+     "reveal": "No; the two tests decide."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0023",
@@ -4553,7 +5177,17 @@
     "A": "trap",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Do the contract criteria, including probable collectibility, exist?",
+     "reveal": "No."
+    },
+    {
+     "ask": "How is the cash received treated meanwhile?",
+     "reveal": "As a liability, because neither ending condition is met."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0024",
@@ -4633,7 +5267,17 @@
     "A": "calc",
     "B": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When does control pass under FOB shipping point versus FOB destination?",
+     "reveal": "At shipment versus on arrival."
+    },
+    {
+     "ask": "Which shipment counts in 2026?",
+     "reveal": "Only the December 28 FOB shipping point: 400,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0025",
@@ -4716,7 +5360,17 @@
     "A": "trap",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the payment to the customer for a distinct service?",
+     "reveal": "No."
+    },
+    {
+     "ask": "How is it treated?",
+     "reveal": "As a reduction of the transaction price: 500,000 - 30,000 = 470,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0026",
@@ -4795,7 +5449,17 @@
     "B": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which two items have observable standalone prices?",
+     "reveal": "Hardware 300,000 and support 150,000."
+    },
+    {
+     "ask": "What does the residual approach assign to the license?",
+     "reveal": "1,000,000 - 300,000 - 150,000 = 550,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0027",
@@ -4879,7 +5543,17 @@
     "A": "concept",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the total billed and how much of it is earned by year-end?",
+     "reveal": "600 x 240 = 144,000; three of twelve months are earned: 36,000."
+    },
+    {
+     "ask": "What remains unearned?",
+     "reveal": "144,000 - 36,000 = 108,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0028",
@@ -4963,7 +5637,17 @@
     "A": "calc",
     "C": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is the price allocated by relative standalone selling price?",
+     "reveal": "1,000,000 x 950/1,100 = 863,636 to the machine, 136,364 to the warranty."
+    },
+    {
+     "ask": "What is recognized in year 1?",
+     "reveal": "Machine at delivery plus one-third of the warranty: 863,636 + 45,455 = 909,091."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0029",
@@ -5047,7 +5731,17 @@
     "A": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the retrospective discount expected to be earned?",
+     "reveal": "Yes, per reliable data."
+    },
+    {
+     "ask": "How does that change first-quarter revenue?",
+     "reveal": "5% of 100,000 = 5,000 is a refund liability; revenue is 95,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0030",
@@ -5106,7 +5800,17 @@
     "A": "trap",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the right to payment for the first unit unconditional?",
+     "reveal": "No, it depends on delivering the second unit."
+    },
+    {
+     "ask": "What does a right conditioned on something other than time create?",
+     "reveal": "A contract asset, with revenue recognized."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0031",
@@ -5190,7 +5894,17 @@
     "A": "trap",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the joining fee a separate service?",
+     "reveal": "No, so it is part of the transaction price."
+    },
+    {
+     "ask": "Total per member and monthly revenue.",
+     "reveal": "300 + 50 x 12 = 900; 900 / 12 = 75; 3 x 400 x 75 = 90,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-C-0032",
@@ -5249,7 +5963,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the key test for principal versus agent?",
+     "reveal": "Control of the specified good or service before transfer."
+    },
+    {
+     "ask": "Which listed feature is that?",
+     "reveal": "Controlling the good, including primary responsibility for fulfilment, not a commission or title alone."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0001",
@@ -5308,7 +6032,17 @@
     "A": "concept",
     "B": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items never reverse between book and tax?",
+     "reveal": "Items included in one but never in the other."
+    },
+    {
+     "ask": "Which listed item is such an item?",
+     "reveal": "Tax-exempt municipal interest."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0002",
@@ -5388,7 +6122,17 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which adjustments start from 600,000 to get taxable income?",
+     "reveal": "Subtract exempt interest 40,000 and excess tax depreciation 90,000; add back excess warranty expense 20,000. => 490,000."
+    },
+    {
+     "ask": "Apply the rate.",
+     "reveal": "490,000 x 25% = 122,500."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0003",
@@ -5472,7 +6216,17 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the deferred tax effects of the two temporary differences?",
+     "reveal": "A liability increase of 22,500 on depreciation and an asset increase of 5,000 on warranty."
+    },
+    {
+     "ask": "Combine current and deferred tax.",
+     "reveal": "122,500 + 17,500 = 140,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0004",
@@ -5555,7 +6309,17 @@
     "A": "concept",
     "B": "calc",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the temporary difference between book and tax?",
+     "reveal": "800,000 - 500,000 = 300,000, with book above tax."
+    },
+    {
+     "ask": "Is that a liability or an asset, and its amount?",
+     "reveal": "Taxable, a deferred tax liability: 300,000 x 30% = 90,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0005",
@@ -5635,7 +6399,17 @@
     "B": "concept",
     "C": "calc",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the remeasured liability at the new rate?",
+     "reveal": "800,000 x 21% = 168,000."
+    },
+    {
+     "ask": "Where does the 32,000 change go?",
+     "reveal": "Reduces income tax expense from continuing operations in the year of enactment."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0006",
@@ -5718,7 +6492,17 @@
     "B": "trap",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What portion of the asset is more likely than not unrealized?",
+     "reveal": "40%."
+    },
+    {
+     "ask": "Compute the allowance.",
+     "reveal": "300,000 x 40% = 120,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0007",
@@ -5797,7 +6581,17 @@
     "A": "calc",
     "B": "concept",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does a tax loss carryforward create a deferred tax asset or liability?",
+     "reveal": "An asset."
+    },
+    {
+     "ask": "Compute it at the enacted rate.",
+     "reveal": "400,000 x 21% = 84,000, with no allowance since realization is likely."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0008",
@@ -5856,7 +6650,17 @@
     "A": "concept",
     "B": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are deferred taxes split between current and noncurrent?",
+     "reveal": "No, all are noncurrent."
+    },
+    {
+     "ask": "How are assets and liabilities presented?",
+     "reveal": "Netted within each tax-paying component and jurisdiction."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0009",
@@ -5940,7 +6744,17 @@
     "A": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the cumulative probability at each outcome, from largest?",
+     "reveal": "100,000 at 30% and 80,000 or more at 55%."
+    },
+    {
+     "ask": "Which amount is recognized and what is the unrecognized part?",
+     "reveal": "The largest amount above 50%, 80,000; 100,000 - 80,000 = 20,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0010",
@@ -6020,7 +6834,17 @@
     "A": "calc",
     "B": "trap",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How is income tax allocated across components?",
+     "reveal": "To each component at its own result."
+    },
+    {
+     "ask": "What is tax on continuing operations?",
+     "reveal": "500,000 x 30% = 150,000; the discontinued loss gets a 30,000 benefit."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0011",
@@ -6104,7 +6928,17 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the ending deferred tax liability?",
+     "reveal": "400,000 x 25% = 100,000."
+    },
+    {
+     "ask": "What are deferred and total expense?",
+     "reveal": "100,000 - 60,000 = 40,000; 90,000 + 40,000 = 130,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0012",
@@ -6183,7 +7017,17 @@
     "B": "concept",
     "C": "calc",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the rent taxed now and recognized later in books?",
+     "reveal": "Yes."
+    },
+    {
+     "ask": "Which kind of temporary difference, and what amount of asset?",
+     "reveal": "Deductible; 120,000 x 25% = 30,000 deferred tax asset."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0013",
@@ -6267,7 +7111,17 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How much gross profit is taxed in 2026 under the installment method?",
+     "reveal": "500,000 x 30% = 150,000."
+    },
+    {
+     "ask": "What is the untaxed remainder, and the liability?",
+     "reveal": "350,000 x 20% = 70,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0014",
@@ -6347,7 +7201,17 @@
     "A": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which items adjust book income to taxable income, with no temporary differences?",
+     "reveal": "Add back the nondeductible fine and subtract exempt interest. => 800,000 + 50,000 - 60,000 = 790,000."
+    },
+    {
+     "ask": "Apply the rate.",
+     "reveal": "790,000 x 21% = 165,900."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0015",
@@ -6427,7 +7291,17 @@
     "A": "calc",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is tax expense given no temporary differences?",
+     "reveal": "790,000 x 21% = 165,900."
+    },
+    {
+     "ask": "Divide by pretax book income.",
+     "reveal": "165,900 / 800,000 = 20.7%."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0016",
@@ -6511,7 +7385,17 @@
     "A": "calc",
     "C": "trap",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Where does the tax effect of an AFS unrealized loss go?",
+     "reveal": "To OCI, together with the loss."
+    },
+    {
+     "ask": "Compute the net loss.",
+     "reveal": "50,000 - 25% x 50,000 = 37,500."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0017",
@@ -6595,7 +7479,17 @@
     "B": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is current tax on the year's income?",
+     "reveal": "500,000 x 20% = 100,000 expense."
+    },
+    {
+     "ask": "How is the allowance release treated?",
+     "reveal": "A 200,000 benefit in continuing operations; net 100,000 benefit."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0018",
@@ -6650,7 +7544,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are proposed rate changes used for measurement?",
+     "reveal": "No."
+    },
+    {
+     "ask": "Which rate is used for deferred taxes?",
+     "reveal": "The enacted rate expected to apply in the year of reversal."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0019",
@@ -6709,7 +7613,17 @@
     "A": "concept",
     "B": "calc",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Will existing taxable temporary differences reverse in the same period and jurisdiction as the deductible ones?",
+     "reveal": "Yes, 220,000 versus 150,000."
+    },
+    {
+     "ask": "What does that provide, and what allowance results?",
+     "reveal": "A source of taxable income that supports realization, so none is required."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0020",
@@ -6768,7 +7682,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are earnings of a foreign subsidiary to be reinvested indefinitely an exception?",
+     "reveal": "Yes, under the indefinite reversal exception."
+    },
+    {
+     "ask": "What is recorded and what is disclosed?",
+     "reveal": "No deferred tax liability; disclose the unrecognized amount if practicable."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0021",
@@ -6852,7 +7776,17 @@
     "A": "calc",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which difference creates a liability and which an asset?",
+     "reveal": "Excess tax depreciation a liability, excess book bad debt expense an asset."
+    },
+    {
+     "ask": "Compute each and net.",
+     "reveal": "200,000 x 30% = 60,000 and 50,000 x 30% = 15,000; 60,000 - 15,000 = 45,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0022",
@@ -6932,7 +7866,17 @@
     "A": "calc",
     "B": "calc",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "How does a lower rate affect deferred tax liabilities and assets?",
+     "reveal": "The liability falls, a tax benefit; the asset falls, a tax expense."
+    },
+    {
+     "ask": "Compute each and net.",
+     "reveal": "500,000 x 5% = 25,000 and 200,000 x 5% = 10,000; net decrease 15,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0023",
@@ -7016,7 +7960,17 @@
     "B": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the gross asset from the loss carryforward?",
+     "reveal": "250,000 x 21% = 52,500."
+    },
+    {
+     "ask": "Apply the allowance for 60%.",
+     "reveal": "52,500 x 60% = 31,500; net 21,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0024",
@@ -7080,7 +8034,17 @@
     "A": "concept",
     "B": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are deferred taxes netted across jurisdictions or within each?",
+     "reveal": "Within each jurisdiction."
+    },
+    {
+     "ask": "Compute each and the classification.",
+     "reveal": "X: 80,000 - 130,000 = 50,000 net liability; Y: 40,000 - 25,000 = 15,000 net asset; both noncurrent."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0025",
@@ -7164,7 +8128,17 @@
     "A": "calc",
     "C": "calc",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the annual differences between tax and book depreciation?",
+     "reveal": "Year 1: +60,000; year 2: -4,000."
+    },
+    {
+     "ask": "What is the cumulative amount and liability?",
+     "reveal": "56,000 x 25% = 14,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0026",
@@ -7248,7 +8222,17 @@
     "A": "calc",
     "C": "trap",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which rate applies to each reversal?",
+     "reveal": "The enacted rate for the year in which it reverses."
+    },
+    {
+     "ask": "Compute each portion and total.",
+     "reveal": "200,000 x 30% + 300,000 x 25% = 60,000 + 75,000 = 135,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0027",
@@ -7307,7 +8291,17 @@
     "A": "concept",
     "B": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which temporary differences create future taxable amounts?",
+     "reveal": "Those where book carrying amount exceeds tax basis."
+    },
+    {
+     "ask": "Which listed item does that?",
+     "reveal": "Depreciation faster for tax than for books."
+    }
+   ]
   },
   {
    "id": "FAR-III-D-0028",
@@ -7366,7 +8360,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is any of the goodwill deductible for tax?",
+     "reveal": "No, none, now or later."
+    },
+    {
+     "ask": "Then is a temporary difference created, and what happens to the effective rate?",
+     "reveal": "No, so no deferred tax benefit; it is a permanent difference that raises the effective rate."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0001",
@@ -7425,7 +8429,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is fair value an entry price or an exit price, and whose viewpoint?",
+     "reveal": "An exit price from market participants' viewpoint."
+    },
+    {
+     "ask": "Under what conditions and at what date?",
+     "reveal": "An orderly transaction at the measurement date."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0002",
@@ -7484,7 +8498,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the top level of the hierarchy based on?",
+     "reveal": "Unadjusted quoted prices."
+    },
+    {
+     "ask": "For which assets and market?",
+     "reveal": "Identical assets in an active market the entity can access."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0003",
@@ -7568,7 +8592,17 @@
     "A": "concept",
     "C": "trap",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which market is used, and what adjustment for the asset's location?",
+     "reveal": "The principal market at 50, less transport of 3 as a location adjustment."
+    },
+    {
+     "ask": "Are transaction costs deducted?",
+     "reveal": "No: 50 - 3 = 47."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0004",
@@ -7627,7 +8661,17 @@
     "A": "concept",
     "B": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Whose viewpoint decides the use of the asset?",
+     "reveal": "Market participants, not the entity's intentions."
+    },
+    {
+     "ask": "Which use gives the highest value that is permitted, possible and feasible?",
+     "reveal": "Office development at 2,400,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0005",
@@ -7710,7 +8754,17 @@
     "A": "trap",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is there a blockage discount for a Level 1 holding?",
+     "reveal": "No."
+    },
+    {
+     "ask": "Compute the value.",
+     "reveal": "1,000,000 x 20 = 20,000,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0006",
@@ -7794,7 +8848,17 @@
     "A": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which approach converts future cash flows to present value?",
+     "reveal": "The income approach."
+    },
+    {
+     "ask": "Discount three years at 10%.",
+     "reveal": "90,909 + 82,645 + 75,131 = 248,685."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0007",
@@ -7853,7 +8917,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the NAV practical expedient place the investment in a hierarchy level?",
+     "reveal": "No."
+    },
+    {
+     "ask": "How is it presented then?",
+     "reveal": "Excluded from the hierarchy, with a separate reconciling line."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0008",
@@ -7929,7 +9003,17 @@
     "A": "concept",
     "B": "concept",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which part of a liability's fair value change is tied to own credit risk?",
+     "reveal": "45,000."
+    },
+    {
+     "ask": "Where do the two parts go?",
+     "reveal": "The credit-risk part to OCI, the remaining 15,000 to net income."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0009",
@@ -7988,7 +9072,17 @@
     "A": "trap",
     "B": "concept",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What determines the level of the whole measurement?",
+     "reveal": "The lowest level input that is significant."
+    },
+    {
+     "ask": "Is the adjustment observable?",
+     "reveal": "No, it is management's estimate, so Level 3."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0010",
@@ -8047,7 +9141,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the write-down measured every period or only when needed?",
+     "reveal": "Only when needed, a nonrecurring measurement."
+    },
+    {
+     "ask": "Which level, given unobservable inputs, and what is disclosed?",
+     "reveal": "Level 3, with fair value, technique and significant unobservable inputs."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0011",
@@ -8106,7 +9210,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a liability's fair value based on settlement or transfer?",
+     "reveal": "Transfer to a market participant."
+    },
+    {
+     "ask": "What risk is reflected?",
+     "reveal": "Nonperformance risk, including the entity's own credit risk."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0012",
@@ -8161,7 +9275,17 @@
     "A": "concept",
     "B": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the transaction price always the fair value?",
+     "reveal": "No."
+    },
+    {
+     "ask": "Which conditions make them differ?",
+     "reveal": "Related parties, duress, or a different market."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0013",
@@ -8220,7 +9344,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is a switch in valuation technique a principle change?",
+     "reveal": "No, it is treated as a change in estimate."
+    },
+    {
+     "ask": "How is it applied and disclosed?",
+     "reveal": "Prospectively, with disclosure of the change and its reason."
+    }
+   ]
   },
   {
    "id": "FAR-III-E-0014",
@@ -8300,7 +9434,17 @@
     "B": "calc",
     "C": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the starting amount under the cost approach?",
+     "reveal": "Current replacement cost, 500,000."
+    },
+    {
+     "ask": "Which deductions apply?",
+     "reveal": "Physical deterioration 20% x 500,000 = 100,000 and functional obsolescence 50,000: 350,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0001",
@@ -8355,7 +9499,17 @@
     "A": "concept",
     "B": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the term threshold for a finance lease?",
+     "reveal": "The major part, 75% or more, of remaining economic life."
+    },
+    {
+     "ask": "Which listed term satisfies that without starting near the end of life?",
+     "reveal": "The 80% term; the others do not qualify alone."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0002",
@@ -8439,7 +9593,17 @@
     "A": "calc",
     "B": "calc",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the first payment discounted when due at commencement?",
+     "reveal": "No."
+    },
+    {
+     "ask": "Compute the payment now plus the remaining four discounted.",
+     "reveal": "40,000 + 40,000 x 3.31213 = 40,000 + 132,485 = 172,485."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0003",
@@ -8523,7 +9687,17 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the starting amount of the asset?",
+     "reveal": "The lease liability, 210,618."
+    },
+    {
+     "ask": "Which items add and which subtract?",
+     "reveal": "Add initial direct costs 8,000 and prepaid rent 5,000; subtract the incentive 12,000: 211,618."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0004",
@@ -8607,7 +9781,17 @@
     "A": "calc",
     "B": "calc",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the two finance lease expense components?",
+     "reveal": "Interest on the liability and amortization of the asset."
+    },
+    {
+     "ask": "Compute each and add.",
+     "reveal": "210,618 x 6% = 12,637; 210,618 / 5 = 42,124; total 54,761."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0005",
@@ -8687,7 +9871,17 @@
     "A": "calc",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is interest for the first year?",
+     "reveal": "210,618 x 6% = 12,637."
+    },
+    {
+     "ask": "How is the liability after the first payment computed?",
+     "reveal": "210,618 + 12,637 - 50,000 = 173,255."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0006",
@@ -8766,7 +9960,17 @@
     "A": "concept",
     "B": "calc",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is operating lease cost straight-line or based on each payment?",
+     "reveal": "Straight-line over the term."
+    },
+    {
+     "ask": "Sum the payments and divide.",
+     "reveal": "180,000 / 5 = 36,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0007",
@@ -8846,7 +10050,17 @@
     "A": "calc",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the interest on the liability in year 1?",
+     "reveal": "212,757 x 5% = 10,638."
+    },
+    {
+     "ask": "How is the asset reduced when single lease cost is 60,000?",
+     "reveal": "By the plug 60,000 - 10,638 = 49,362, leaving 212,757 - 49,362 = 163,395."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0008",
@@ -8901,7 +10115,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the lease term twelve months or less without a purchase option?",
+     "reveal": "Yes."
+    },
+    {
+     "ask": "What does the short-term exemption allow?",
+     "reveal": "Straight-line expense with no asset or liability recorded."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0009",
@@ -8960,7 +10184,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What makes an option period included in the lease term?",
+     "reveal": "Reasonable certainty of exercise from economic factors."
+    },
+    {
+     "ask": "Which facts point that way, and what term results?",
+     "reveal": "Significant leasehold improvements and below-market rent for the first renewal: 5 + 3 = 8 years."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0010",
@@ -9044,7 +10278,17 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What amounts make up the liability besides payments?",
+     "reveal": "Amounts probable of being owed under a residual value guarantee."
+    },
+    {
+     "ask": "Discount payments and the expected guarantee amount.",
+     "reveal": "25,000 x 3.16987 = 79,247 plus 8,000 x 0.68301 = 5,464: 84,711."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0011",
@@ -9103,7 +10347,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Was the rent increase known at commencement?",
+     "reveal": "No, it came from an index change after commencement."
+    },
+    {
+     "ask": "How is such an increase treated?",
+     "reveal": "Variable lease cost when incurred, without remeasuring the liability."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0012",
@@ -9187,7 +10441,17 @@
     "A": "calc",
     "C": "calc",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What are the revenue and cost of sales at commencement for a sales-type lessor?",
+     "reveal": "Revenue is the lease receivable, 470,000; cost is carrying cost less the unguaranteed residual's present value."
+    },
+    {
+     "ask": "Compute cost and profit.",
+     "reveal": "380,000 - 30,000 = 350,000; 470,000 - 350,000 = 120,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0013",
@@ -9267,7 +10531,17 @@
     "A": "concept",
     "C": "calc",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What total rent is earned over 24 months given three free months?",
+     "reveal": "(24 - 3) x 5,000 = 105,000."
+    },
+    {
+     "ask": "Straight-line for 12 months.",
+     "reveal": "105,000 / 24 = 4,375 per month; x 12 = 52,500."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0014",
@@ -9326,7 +10600,17 @@
     "A": "concept",
     "B": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Is the extension a separate contract?",
+     "reveal": "No, no additional right of use is granted."
+    },
+    {
+     "ask": "What must the lessee do to the liability?",
+     "reveal": "Remeasure it using the discount rate at the modification date, adjusting the right-of-use asset."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0015",
@@ -9385,7 +10669,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the leaseback classification affect whether a sale occurred?",
+     "reveal": "Yes: if the leaseback is a finance lease, the buyer does not obtain control."
+    },
+    {
+     "ask": "How is the transaction accounted for?",
+     "reveal": "As a failed sale: keep the asset and record a financial liability for the proceeds."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0016",
@@ -9468,7 +10762,17 @@
     "B": "calc",
     "C": "trap",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "At what amount is the sale recorded when the price differs from fair value?",
+     "reveal": "Adjusted to fair value, 1,100,000; the 200,000 excess is financing."
+    },
+    {
+     "ask": "Compute the gain.",
+     "reveal": "1,100,000 - 900,000 = 200,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0017",
@@ -9527,7 +10831,17 @@
     "A": "concept",
     "B": "concept",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which rate comes first for a lessee?",
+     "reveal": "The rate implicit in the lease if readily determinable."
+    },
+    {
+     "ask": "If not, what is used?",
+     "reveal": "The lessee's incremental borrowing rate for similar term and collateral."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0018",
@@ -9611,7 +10925,17 @@
     "B": "calc",
     "C": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Are nonlease components included in the lease liability when not combined?",
+     "reveal": "No."
+    },
+    {
+     "ask": "Compute the lease component and its present value.",
+     "reveal": "100,000 - 20,000 = 80,000; 80,000 x 2.72325 = 217,860."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0019",
@@ -9666,7 +10990,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which lease payments are financing outflows?",
+     "reveal": "Principal on finance leases."
+    },
+    {
+     "ask": "Where do finance lease interest and operating lease payments go?",
+     "reveal": "Operating activities."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0020",
@@ -9746,7 +11080,17 @@
     "A": "concept",
     "C": "calc",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which period do leasehold improvements use, the useful life or the lease term?",
+     "reveal": "The shorter of the two, including reasonably certain renewals."
+    },
+    {
+     "ask": "Compute.",
+     "reveal": "Term 10 years (renewal not reasonably certain): 300,000 / 10 = 30,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0021",
@@ -9801,7 +11145,17 @@
     "A": "trap",
     "B": "concept",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the term meet the 75% threshold?",
+     "reveal": "No, 7 of 10 years is 70%."
+    },
+    {
+     "ask": "Is any other classification test met on its own?",
+     "reveal": "Yes, present value of 90% or more of fair value; here 92%, so a finance lease."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0022",
@@ -9860,7 +11214,17 @@
     "A": "concept",
     "B": "trap",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the present value test count a third-party residual guarantee for the lessor?",
+     "reveal": "Yes."
+    },
+    {
+     "ask": "Which lease type follows, and is there selling profit?",
+     "reveal": "A direct financing lease; carrying amount equals fair value, so no selling profit."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0023",
@@ -9919,7 +11283,17 @@
     "A": "concept",
     "B": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Did a significant event within the lessee's control occur?",
+     "reveal": "Yes, a major addition that makes sense only if the space is used longer."
+    },
+    {
+     "ask": "What follows for the lease term and liability?",
+     "reveal": "Reassess the term, remeasure the liability with an updated discount rate, and adjust the asset."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0024",
@@ -9978,7 +11352,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Can the supplier substitute the truck easily and cheaply?",
+     "reveal": "Yes, a substantive substitution right."
+    },
+    {
+     "ask": "Then is there an identified asset, and a lease?",
+     "reveal": "No identified asset, so no lease."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0025",
@@ -10033,7 +11417,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Where are lessee lease balances presented?",
+     "reveal": "Separately from other assets and liabilities."
+    },
+    {
+     "ask": "What is distinguished, and where may it be shown?",
+     "reveal": "Operating versus finance leases, on the balance sheet or in the notes."
+    }
+   ]
   },
   {
    "id": "FAR-III-F-0026",
@@ -10112,7 +11506,17 @@
     "A": "calc",
     "B": "concept",
     "D": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "What is the liability at the start of year 2?",
+     "reveal": "173,255."
+    },
+    {
+     "ask": "Apply the rate.",
+     "reveal": "173,255 x 6% = 10,395."
+    }
+   ]
   },
   {
    "id": "FAR-III-G-0001",
@@ -10171,7 +11575,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Which subsequent events give evidence of conditions at the balance sheet date?",
+     "reveal": "Recognized ones, which adjust the statements."
+    },
+    {
+     "ask": "And events arising after that date?",
+     "reveal": "Nonrecognized ones, disclosed if material."
+    }
+   ]
   },
   {
    "id": "FAR-III-G-0002",
@@ -10251,7 +11665,17 @@
     "A": "concept",
     "B": "calc",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Did the lawsuit relate to a year-end condition?",
+     "reveal": "Yes, the accident occurred in 2026."
+    },
+    {
+     "ask": "How is the accrual updated?",
+     "reveal": "To the settlement: 450,000 - 300,000 = 150,000 more loss and liability."
+    }
+   ]
   },
   {
    "id": "FAR-III-G-0003",
@@ -10330,7 +11754,17 @@
     "A": "calc",
     "B": "calc",
     "C": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Did the customer's problems exist at year-end?",
+     "reveal": "Yes, finances deteriorated for months."
+    },
+    {
+     "ask": "Compute the loss with 10% expected recovery.",
+     "reveal": "120,000 - 12,000 = 108,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-G-0004",
@@ -10389,7 +11823,17 @@
     "A": "concept",
     "B": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Did the fire condition exist at the balance sheet date?",
+     "reveal": "No, it arose afterward."
+    },
+    {
+     "ask": "What is required?",
+     "reveal": "Disclose its nature and an estimate of the effect, with no adjustment of 2026 amounts."
+    }
+   ]
   },
   {
    "id": "FAR-III-G-0005",
@@ -10448,7 +11892,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Did the bond issuance reveal anything about year-end conditions?",
+     "reveal": "No, it arose after year-end."
+    },
+    {
+     "ask": "How is it reported?",
+     "reveal": "As a nonrecognized event disclosed in the notes."
+    }
+   ]
   },
   {
    "id": "FAR-III-G-0006",
@@ -10507,7 +11961,17 @@
     "B": "concept",
     "C": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Did the fashion demand decline exist at year-end, and did the flood?",
+     "reveal": "The decline began in the fourth quarter; the flood came in February."
+    },
+    {
+     "ask": "Which is recognized and which disclosed?",
+     "reveal": "The decline is recognized in inventory; the flood is disclosed."
+    }
+   ]
   },
   {
    "id": "FAR-III-G-0007",
@@ -10566,7 +12030,17 @@
     "A": "concept",
     "B": "trap",
     "D": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does the evaluation end at year-end or later?",
+     "reveal": "Later, through a date that depends on the filer."
+    },
+    {
+     "ask": "Which date for SEC filers and for others?",
+     "reveal": "Issuance for SEC filers; available-to-be-issued for others."
+    }
+   ]
   },
   {
    "id": "FAR-III-G-0008",
@@ -10625,7 +12099,17 @@
     "A": "concept",
     "B": "trap",
     "C": "calc"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Does a stock split after year-end affect per-share data?",
+     "reveal": "Yes, retroactively."
+    },
+    {
+     "ask": "What else is done?",
+     "reveal": "Disclose the split as a subsequent event."
+    }
+   ]
   },
   {
    "id": "FAR-III-G-0009",
@@ -10705,7 +12189,17 @@
     "A": "calc",
     "C": "calc",
     "D": "trap"
-   }
+   },
+   "guide": [
+    {
+     "ask": "Did the obsolescence exist at year-end?",
+     "reveal": "Yes, from a November competitor release."
+    },
+    {
+     "ask": "How does the February sale help, and the write-down?",
+     "reveal": "It shows net realizable value of 420,000: 500,000 - 420,000 = 80,000."
+    }
+   ]
   },
   {
    "id": "FAR-III-G-0010",
@@ -10764,7 +12258,17 @@
     "A": "concept",
     "B": "trap",
     "C": "concept"
-   }
+   },
+   "guide": [
+    {
+     "ask": "When does a dividend liability arise?",
+     "reveal": "On declaration."
+    },
+    {
+     "ask": "Was it declared before or after year-end, and the result?",
+     "reveal": "After, so no year-end liability; disclose if material."
+    }
+   ]
   }
  ]
 }

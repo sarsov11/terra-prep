@@ -75,7 +75,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / NOL ownership change limitation / Application"
+   "blueprint_tag": "TCP Area II / Group A / NOL ownership change limitation / Application",
+   "guide": [
+    {
+     "ask": "What is the ownership change threshold and the testing period?",
+     "reveal": "An increase of more than 50 percentage points by 5-percent shareholders within a three-year testing period."
+    },
+    {
+     "ask": "Add each scenario's increases.",
+     "reveal": "Only the scenario where new investors together reach more than 50 points, such as 30 + 25 = 55, qualifies; a gift to children is not a shift, and 15 + 30 or a 10-point purchase falls short."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0002",
@@ -198,7 +208,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / NOL carryforward / Application"
+   "blueprint_tag": "TCP Area II / Group A / NOL carryforward / Application",
+   "guide": [
+    {
+     "ask": "What is the 80% limit on the 2027 deduction?",
+     "reveal": "80% x $350,000 = $280,000."
+    },
+    {
+     "ask": "Which loss year is used first?",
+     "reveal": "The oldest: all $200,000 of 2025, then $80,000 of 2026."
+    },
+    {
+     "ask": "What remains?",
+     "reveal": "$300,000 - $80,000 = $220,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0003",
@@ -315,7 +339,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Capital loss carryover / Application"
+   "blueprint_tag": "TCP Area II / Group A / Capital loss carryover / Application",
+   "guide": [
+    {
+     "ask": "How is a corporation's capital loss carryforward classified in the carryover year?",
+     "reveal": "As a short-term loss, so it offsets both short-term and long-term gains."
+    },
+    {
+     "ask": "How much does the gain absorb?",
+     "reveal": "$20,000 + $10,000 = $30,000, leaving $50,000 - $30,000 = $20,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0004",
@@ -443,7 +477,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / NOL ownership change limitation / Application"
+   "blueprint_tag": "TCP Area II / Group A / NOL ownership change limitation / Application",
+   "guide": [
+    {
+     "ask": "What is the annual limit after the ownership change?",
+     "reveal": "Stock value x long-term exempt rate = $2,000,000 x 3.5% = $70,000."
+    },
+    {
+     "ask": "Is the limit lower than the 80% cap and the loss available?",
+     "reveal": "Yes: $240,000 and $900,000 are both larger."
+    },
+    {
+     "ask": "Compute the tax.",
+     "reveal": "($300,000 - $70,000) x 21% = $48,300."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0005",
@@ -576,7 +624,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / NOL carryforward / Analysis"
+   "blueprint_tag": "TCP Area II / Group A / NOL carryforward / Analysis",
+   "guide": [
+    {
+     "ask": "What is taxable income before the dividends-received deduction?",
+     "reveal": "$100,000 - $60,000 = $40,000."
+    },
+    {
+     "ask": "Does the taxable income limit apply here?",
+     "reveal": "Not when the full deduction would create or increase a loss."
+    },
+    {
+     "ask": "What is the loss?",
+     "reveal": "Full deduction 65% x $100,000 = $65,000, so the loss is $65,000 - $40,000 = $25,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0006",
@@ -699,7 +761,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Contribution to C corp / Application"
+   "blueprint_tag": "TCP Area II / Group A / Contribution to C corp / Application",
+   "guide": [
+    {
+     "ask": "Is the exchange under the corporation-formation rules despite the cash?",
+     "reveal": "Yes; Hale controls the corporation, but the cash is boot."
+    },
+    {
+     "ask": "What gain is recognized, and how does it change the corporation's basis?",
+     "reveal": "Lesser of gain $90,000 and boot $30,000, so $30,000 is recognized; basis is $60,000 + $30,000 = $90,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0007",
@@ -810,7 +882,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Contribution to C corp / Application"
+   "blueprint_tag": "TCP Area II / Group A / Contribution to C corp / Application",
+   "guide": [
+    {
+     "ask": "Are liabilities assumed by the corporation a problem in a tax-free formation?",
+     "reveal": "Yes, when they exceed the transferor's basis in the property."
+    },
+    {
+     "ask": "Compute the gain.",
+     "reveal": "$45,000 - $30,000 = $15,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0008",
@@ -923,7 +1005,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Contribution to C corp / Application"
+   "blueprint_tag": "TCP Area II / Group A / Contribution to C corp / Application",
+   "guide": [
+    {
+     "ask": "Does stock issued for services count in the 80% control group?",
+     "reveal": "No, unless the person also contributes property."
+    },
+    {
+     "ask": "What follows for Ana's 60%?",
+     "reveal": "Control fails, so the transfer is taxable and gain is $90,000 - $30,000 = $60,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0009",
@@ -1013,7 +1105,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Nonliquidating distribution / Application"
+   "blueprint_tag": "TCP Area II / Group A / Nonliquidating distribution / Application",
+   "guide": [
+    {
+     "ask": "Can the corporation deduct a loss on distributing declined property?",
+     "reveal": "No, no loss is recognized."
+    },
+    {
+     "ask": "What are the dividend and basis to Ella?",
+     "reveal": "Both equal fair market value, $60,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0010",
@@ -1113,7 +1215,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Nonliquidating distribution / Application"
+   "blueprint_tag": "TCP Area II / Group A / Nonliquidating distribution / Application",
+   "guide": [
+    {
+     "ask": "What gain does the corporation recognize on distributing appreciated land?",
+     "reveal": "$120,000 - $30,000 = $90,000, taxed at 21% = $18,900."
+    },
+    {
+     "ask": "How does the mortgage affect the shareholder's dividend?",
+     "reveal": "The distribution is fair market value less the liability assumed: $120,000 - $50,000 = $70,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0011",
@@ -1225,7 +1337,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Liquidating distribution / Application"
+   "blueprint_tag": "TCP Area II / Group A / Liquidating distribution / Application",
+   "guide": [
+    {
+     "ask": "What does Sam receive in total, and at what value?",
+     "reveal": "Cash $60,000 plus land at fair market value $90,000 = $150,000."
+    },
+    {
+     "ask": "Compute the gain.",
+     "reveal": "$150,000 - $50,000 = $100,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0012",
@@ -1348,7 +1470,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Liquidating distribution / Analysis"
+   "blueprint_tag": "TCP Area II / Group A / Liquidating distribution / Analysis",
+   "guide": [
+    {
+     "ask": "What gain does the corporation recognize, and what tax follows?",
+     "reveal": "$200,000 - $80,000 = $120,000, tax 21% = $25,200, paid from the cash."
+    },
+    {
+     "ask": "What does the shareholder get, and what gain results?",
+     "reveal": "Building $200,000 plus cash $74,800 = $274,800; gain $274,800 - $150,000 = $124,800."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0013",
@@ -1471,7 +1603,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Distributions in excess of E&P / Application"
+   "blueprint_tag": "TCP Area II / Group A / Distributions in excess of E&P / Application",
+   "guide": [
+    {
+     "ask": "How does a current-year deficit affect accumulated earnings at the distribution date?",
+     "reveal": "Prorate the deficit to the date: $40,000 x 6/12 = $20,000 reduces accumulated E&P."
+    },
+    {
+     "ask": "What is accumulated E&P then, and how much is dividend?",
+     "reveal": "$150,000 - $20,000 = $130,000; the dividend is $130,000, and the remaining $10,000 reduces basis."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0014",
@@ -1594,7 +1736,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Distributions in excess of E&P / Application"
+   "blueprint_tag": "TCP Area II / Group A / Distributions in excess of E&P / Application",
+   "guide": [
+    {
+     "ask": "How much of the distribution is a dividend?",
+     "reveal": "Current plus accumulated E&P: $70,000 + $20,000 = $90,000."
+    },
+    {
+     "ask": "What happens to the remainder?",
+     "reveal": "$30,000 returns basis, then capital gain of $135,000 - $90,000 - $30,000 = $15,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0015",
@@ -1661,7 +1813,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Shareholder loan review / Application"
+   "blueprint_tag": "TCP Area II / Group A / Shareholder loan review / Application",
+   "guide": [
+    {
+     "ask": "How is a below-market loan between a corporation and a shareholder recharacterized?",
+     "reveal": "The corporation is treated as paying a dividend and the shareholder as paying interest back."
+    },
+    {
+     "ask": "Compute the imputed amount.",
+     "reveal": "$300,000 x 4.0% = $12,000, which the corporation reports as interest income."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0016",
@@ -1728,7 +1890,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Consolidated return eligibility / Remembering & Understanding"
+   "blueprint_tag": "TCP Area II / Group A / Consolidated return eligibility / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "What ownership test defines an affiliated group?",
+     "reveal": "A common parent with at least 80% of both voting power and value of each includible subsidiary."
+    },
+    {
+     "ask": "Which choice satisfies both tests for a domestic subsidiary?",
+     "reveal": "The one with at least 80% of vote and value; 60% of vote fails and foreign or sibling companies do not qualify."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0017",
@@ -1856,7 +2028,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Consolidated taxable income / Analysis"
+   "blueprint_tag": "TCP Area II / Group A / Consolidated taxable income / Analysis",
+   "guide": [
+    {
+     "ask": "When is Parent's intercompany profit taken into account?",
+     "reveal": "As Sub resells to outsiders, in proportion to what was resold."
+    },
+    {
+     "ask": "Compute Parent's gain recognized and Sub's own gain.",
+     "reveal": "40% x $30,000 = $12,000 for Parent; Sub's gain is $52,000 - 40% x $100,000 = $12,000."
+    },
+    {
+     "ask": "Total consolidated income?",
+     "reveal": "$500,000 + $300,000 + $12,000 + $12,000 = $824,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0018",
@@ -1973,7 +2159,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Consolidated taxable income / Application"
+   "blueprint_tag": "TCP Area II / Group A / Consolidated taxable income / Application",
+   "guide": [
+    {
+     "ask": "How are member results treated in a consolidated return?",
+     "reveal": "Income and losses are combined into one taxable income."
+    },
+    {
+     "ask": "Compute the tax.",
+     "reveal": "($300,000 - $60,000) x 21% = $50,400."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0019",
@@ -2084,7 +2280,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Consolidated taxable income / Application"
+   "blueprint_tag": "TCP Area II / Group A / Consolidated taxable income / Application",
+   "guide": [
+    {
+     "ask": "What happens to a dividend paid between members?",
+     "reveal": "It is eliminated in consolidation."
+    },
+    {
+     "ask": "Total?",
+     "reveal": "$300,000 + $200,000 = $500,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0020",
@@ -2151,7 +2357,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Sourcing — US corp foreign ops / Remembering & Understanding"
+   "blueprint_tag": "TCP Area II / Group A / Sourcing — US corp foreign ops / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "What rule sources income from personal services?",
+     "reveal": "The place where the services are performed."
+    },
+    {
+     "ask": "Which item is a service fee earned abroad?",
+     "reveal": "The consulting fee for work performed in Germany; dividends, interest and rent listed are U.S. sourced."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0021",
@@ -2218,7 +2434,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Sourcing — foreign corp US ops / Application"
+   "blueprint_tag": "TCP Area II / Group A / Sourcing — foreign corp US ops / Application",
+   "guide": [
+    {
+     "ask": "How is passive U.S. source income of a foreign person taxed when no treaty applies?",
+     "reveal": "At a flat 30% of gross income, collected by withholding."
+    },
+    {
+     "ask": "Which statement fits?",
+     "reveal": "The one requiring 30% withholding on the gross royalty, with no further U.S. tax for a foreign payee without a U.S. business."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0022",
@@ -2285,7 +2511,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / CFC / Application"
+   "blueprint_tag": "TCP Area II / Group A / CFC / Application",
+   "guide": [
+    {
+     "ask": "What defines a controlled foreign corporation?",
+     "reveal": "U.S. shareholders (each owning at least 10%) together owning more than 50% of vote or value."
+    },
+    {
+     "ask": "Test each corporation.",
+     "reveal": "Only count holders with 10% or more; the pair 30% + 25% = 55% passes, while the others fail on size or on the exact 50%."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0023",
@@ -2352,7 +2588,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Permanent establishment / Remembering & Understanding"
+   "blueprint_tag": "TCP Area II / Group A / Permanent establishment / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "What creates a permanent establishment under the OECD model?",
+     "reveal": "A fixed place of business through which the enterprise conducts business, including habitual contract conclusion."
+    },
+    {
+     "ask": "Which activity is preparatory only, and which is not?",
+     "reveal": "Storage, purchasing and processing are excluded; the office where sales contracts are concluded is not."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0024",
@@ -2419,7 +2665,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Branch vs subsidiary / Application"
+   "blueprint_tag": "TCP Area II / Group A / Branch vs subsidiary / Application",
+   "guide": [
+    {
+     "ask": "Is a foreign branch a separate taxpayer?",
+     "reveal": "No; its results flow into the domestic corporation's return."
+    },
+    {
+     "ask": "Which structure gives a current deduction of the first-year loss?",
+     "reveal": "The branch; a foreign subsidiary's losses are trapped at the subsidiary level."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0025",
@@ -2533,7 +2789,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / US/foreign source income calc / Application"
+   "blueprint_tag": "TCP Area II / Group A / US/foreign source income calc / Application",
+   "guide": [
+    {
+     "ask": "How is inventory produced in the U.S. and sold abroad sourced?",
+     "reveal": "By the location of production assets, under the regulation, not by where title passes."
+    },
+    {
+     "ask": "Where are the assets?",
+     "reveal": "All in Ohio, so the whole $400,000 is U.S. source and the foreign amount is $0."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0026",
@@ -2656,7 +2922,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / US/foreign source income calc / Application"
+   "blueprint_tag": "TCP Area II / Group A / US/foreign source income calc / Application",
+   "guide": [
+    {
+     "ask": "What fraction of the shared expenses goes to foreign income?",
+     "reveal": "By gross income: $200,000 / $500,000 = 40%, so $24,000."
+    },
+    {
+     "ask": "Compute foreign taxable income.",
+     "reveal": "$200,000 - $70,000 - $24,000 = $106,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-A-0027",
@@ -2784,7 +3060,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group A / Sourcing — foreign corp US ops / Application"
+   "blueprint_tag": "TCP Area II / Group A / Sourcing — foreign corp US ops / Application",
+   "guide": [
+    {
+     "ask": "What is the effectively connected E&P?",
+     "reveal": "$1,000,000 less the $210,000 regular tax = $790,000."
+    },
+    {
+     "ask": "How is it adjusted for the change in U.S. net equity?",
+     "reveal": "An increase reduces the dividend equivalent amount: $790,000 - $200,000 = $590,000."
+    },
+    {
+     "ask": "Compute the tax.",
+     "reveal": "30% x $590,000 = $177,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0001",
@@ -2912,7 +3202,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group B / Stock basis — distribution / Application"
+   "blueprint_tag": "TCP Area II / Group B / Stock basis — distribution / Application",
+   "guide": [
+    {
+     "ask": "Which items raise S corporation stock basis?",
+     "reveal": "Income items, taxable and tax-exempt: $42,000 + $6,500 = $48,500."
+    },
+    {
+     "ask": "What lowers it, and in what order?",
+     "reveal": "Distributions of $25,000 first, then the charitable contribution and nondeductible expenses ($3,000 + $2,400)."
+    },
+    {
+     "ask": "Ending basis?",
+     "reveal": "$55,000 + $48,500 - $25,000 - $5,400 = $73,100."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0002",
@@ -3030,7 +3334,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group B / Stock basis — distribution / Application"
+   "blueprint_tag": "TCP Area II / Group B / Stock basis — distribution / Application",
+   "guide": [
+    {
+     "ask": "Which reduces basis first, the distribution or the loss?",
+     "reveal": "Distributions, so basis falls to $30,000 - $25,000 = $5,000."
+    },
+    {
+     "ask": "How much of the $20,000 loss can be used?",
+     "reveal": "$5,000, with $15,000 suspended."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0003",
@@ -3141,7 +3455,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group B / Debt basis — shareholder loan / Application"
+   "blueprint_tag": "TCP Area II / Group B / Debt basis — shareholder loan / Application",
+   "guide": [
+    {
+     "ask": "Which amounts give Lena basis to absorb losses?",
+     "reveal": "Stock basis $20,000 and the direct loan of $30,000 documented by a note."
+    },
+    {
+     "ask": "What about the guarantee of the bank loan?",
+     "reveal": "No basis until she pays under it, so the deduction is $20,000 + $30,000 = $50,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0004",
@@ -3253,7 +3577,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group B / Contribution to S corp / Application"
+   "blueprint_tag": "TCP Area II / Group B / Contribution to S corp / Application",
+   "guide": [
+    {
+     "ask": "Does the mortgage exceed Kai's basis in the building?",
+     "reveal": "Yes, $90,000 versus $80,000, so he recognizes $10,000 of gain."
+    },
+    {
+     "ask": "What is the corporation's basis?",
+     "reveal": "His basis plus recognized gain: $80,000 + $10,000 = $90,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0005",
@@ -3364,7 +3698,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group B / Stock basis — contribution / Application"
+   "blueprint_tag": "TCP Area II / Group B / Stock basis — contribution / Application",
+   "guide": [
+    {
+     "ask": "Do the liabilities assumed exceed the basis of property transferred?",
+     "reveal": "No, $40,000 is below $60,000, so no gain."
+    },
+    {
+     "ask": "Compute the stock basis.",
+     "reveal": "Property basis less liability: $60,000 - $40,000 = $20,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0006",
@@ -3481,7 +3825,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group B / Nonliquidating distribution / Application"
+   "blueprint_tag": "TCP Area II / Group B / Nonliquidating distribution / Application",
+   "guide": [
+    {
+     "ask": "How is a property distribution by an S corporation treated at the corporate level?",
+     "reveal": "As if sold at fair market value, so the gain passes through to the shareholder."
+    },
+    {
+     "ask": "Compute the gain reported.",
+     "reveal": "$100,000 - $20,000 = $80,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0007",
@@ -3592,7 +3946,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group B / Nonliquidating distribution / Application"
+   "blueprint_tag": "TCP Area II / Group B / Nonliquidating distribution / Application",
+   "guide": [
+    {
+     "ask": "Can an S corporation recognize a loss on distributing declined property?",
+     "reveal": "No."
+    },
+    {
+     "ask": "What reduces the shareholder's stock basis?",
+     "reveal": "The fair market value of the property distributed: $100,000 - $60,000 = $40,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0008",
@@ -3687,7 +4051,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group B / Liquidating distribution / Analysis"
+   "blueprint_tag": "TCP Area II / Group B / Liquidating distribution / Analysis",
+   "guide": [
+    {
+     "ask": "Is the loss on the land allowed at the corporate level in this liquidation?",
+     "reveal": "Yes, as stated, and it is a section 1231 loss that passes through."
+    },
+    {
+     "ask": "How does that change the shareholder's stock result?",
+     "reveal": "Loss of $50,000 lowers basis to $150,000; he receives $100,000 + $50,000 = $150,000, so no further gain or loss on the stock."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0009",
@@ -3804,7 +4178,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group B / Income allocation after sale / Application"
+   "blueprint_tag": "TCP Area II / Group B / Income allocation after sale / Application",
+   "guide": [
+    {
+     "ask": "Without a closing election, how is S corporation income spread?",
+     "reveal": "Per day over the year, with the seller treated as owning through the sale date."
+    },
+    {
+     "ask": "Compute Zoe's share.",
+     "reveal": "$720,000 x 130/365 x 50% = $128,219."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0010",
@@ -3922,7 +4306,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group B / Income allocation after sale / Application"
+   "blueprint_tag": "TCP Area II / Group B / Income allocation after sale / Application",
+   "guide": [
+    {
+     "ask": "What is Zoe's allocation if the books are closed at the sale?",
+     "reveal": "50% x $600,000 = $300,000."
+    },
+    {
+     "ask": "What is it under the per-day method?",
+     "reveal": "50% x $720,000 x 130/365 = $128,219. The increase is $171,781."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0011",
@@ -4060,7 +4454,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group B / Stock basis — distribution / Application"
+   "blueprint_tag": "TCP Area II / Group B / Stock basis — distribution / Application",
+   "guide": [
+    {
+     "ask": "Which items increase Kay's basis?",
+     "reveal": "Her 40% share of ordinary income and of the tax-exempt insurance proceeds: 40% x $150,000 = $60,000."
+    },
+    {
+     "ask": "Which items decrease it?",
+     "reveal": "The $20,000 distribution and 40% x $8,000 = $3,200 of nondeductible premiums, $23,200."
+    },
+    {
+     "ask": "Ending basis?",
+     "reveal": "$30,000 + $60,000 - $23,200 = $66,800."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0012",
@@ -4173,7 +4581,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group B / Stock basis — contribution / Analysis"
+   "blueprint_tag": "TCP Area II / Group B / Stock basis — contribution / Analysis",
+   "guide": [
+    {
+     "ask": "How much basis does Ned now have to absorb losses?",
+     "reveal": "The $20,000 capital he contributed."
+    },
+    {
+     "ask": "Compare with prior plus current losses.",
+     "reveal": "Losses total $12,000 + $15,000 = $27,000; $20,000 is used, leaving $7,000 suspended."
+    }
+   ]
   },
   {
    "id": "TCP-II-B-0013",
@@ -4240,7 +4658,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group B / Debt basis — shareholder loan / Application"
+   "blueprint_tag": "TCP Area II / Group B / Debt basis — shareholder loan / Application",
+   "guide": [
+    {
+     "ask": "What creates debt basis for an S corporation shareholder?",
+     "reveal": "A direct loan from the shareholder to the corporation, evidenced by a note, made in the loss year."
+    },
+    {
+     "ask": "Which action does that and is timely?",
+     "reveal": "The direct loan in 2026; a guarantee, a loan routed through another entity, or a loan next year does not."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0001",
@@ -4359,7 +4787,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group C / Partner basis — contribution / Application"
+   "blueprint_tag": "TCP Area II / Group C / Partner basis — contribution / Application",
+   "guide": [
+    {
+     "ask": "What is Amir's starting basis from contributions?",
+     "reveal": "Cash plus property basis: $50,000 + $30,000 = $80,000."
+    },
+    {
+     "ask": "How do the liabilities change it?",
+     "reveal": "Subtract the $20,000 assumed, add his 40% share of $100,000 = $40,000: $80,000 - $20,000 + $40,000 = $100,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0002",
@@ -4487,7 +4925,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group C / Partner basis — distribution / Application"
+   "blueprint_tag": "TCP Area II / Group C / Partner basis — distribution / Application",
+   "guide": [
+    {
+     "ask": "Which items raise basis?",
+     "reveal": "Income, tax-exempt interest and the debt share increase: $40,000 + $5,000 + $12,000 = $57,000."
+    },
+    {
+     "ask": "Which lower it?",
+     "reveal": "The distribution and charitable contribution: $30,000 + $3,000 = $33,000."
+    },
+    {
+     "ask": "Ending basis?",
+     "reveal": "$60,000 + $57,000 - $33,000 = $84,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0003",
@@ -4605,7 +5057,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group C / Partner basis — distribution / Application"
+   "blueprint_tag": "TCP Area II / Group C / Partner basis — distribution / Application",
+   "guide": [
+    {
+     "ask": "How are increases and decreases in liability shares combined?",
+     "reveal": "They are netted: $30,000 - $20,000 = a $10,000 net decrease, treated as a cash distribution."
+    },
+    {
+     "ask": "Total distributions versus basis?",
+     "reveal": "$10,000 deemed + $10,000 actual = $20,000, which exceeds $12,000 by $8,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0004",
@@ -4718,7 +5180,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group C / Partner basis — debt / Analysis"
+   "blueprint_tag": "TCP Area II / Group C / Partner basis — debt / Analysis",
+   "guide": [
+    {
+     "ask": "How is a nonrecourse loan allocated to a limited partner here?",
+     "reveal": "By profit percentages, so A gets 50% x $300,000 = $150,000."
+    },
+    {
+     "ask": "Who bears the loss on the recourse loan guaranteed by B?",
+     "reveal": "B alone, so A's share is $0 and the difference is $150,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0005",
@@ -4830,7 +5302,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group C / Partner basis — debt / Application"
+   "blueprint_tag": "TCP Area II / Group C / Partner basis — debt / Application",
+   "guide": [
+    {
+     "ask": "What is Ola's share of the loan repaid?",
+     "reveal": "30% x $60,000 = $18,000, treated as a cash distribution."
+    },
+    {
+     "ask": "Compare with basis.",
+     "reveal": "$18,000 - $10,000 = $8,000 of gain."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0006",
@@ -4948,7 +5430,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group C / Partner-partnership transactions / Application"
+   "blueprint_tag": "TCP Area II / Group C / Partner-partnership transactions / Application",
+   "guide": [
+    {
+     "ask": "Does the rent paid to Ari reduce partnership income?",
+     "reveal": "Yes, since payment to a partner acting outside the partner role is deductible."
+    },
+    {
+     "ask": "Compute Ari's total.",
+     "reveal": "Share of income 30% x ($200,000 - $24,000) = $52,800, plus rent $24,000 = $76,800."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0007",
@@ -5071,7 +5563,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group C / Contribution to partnership / Application"
+   "blueprint_tag": "TCP Area II / Group C / Contribution to partnership / Application",
+   "guide": [
+    {
+     "ask": "Who gets the built-in gain on contributed property?",
+     "reveal": "The contributing partner, Ben: $90,000 - $30,000 = $60,000."
+    },
+    {
+     "ask": "How is the remaining gain shared?",
+     "reveal": "$150,000 - $90,000 = $60,000 split 40%, or $24,000 to Ben. Total $84,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0008",
@@ -5183,7 +5685,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group C / Nonliquidating distribution / Application"
+   "blueprint_tag": "TCP Area II / Group C / Nonliquidating distribution / Application",
+   "guide": [
+    {
+     "ask": "How are distributed marketable securities treated for gain purposes?",
+     "reveal": "Generally like money, to the extent of fair market value."
+    },
+    {
+     "ask": "Compare with Hal's outside basis.",
+     "reveal": "$60,000 - $40,000 = $20,000 gain."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0009",
@@ -5301,7 +5813,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group C / Liquidating distribution / Application"
+   "blueprint_tag": "TCP Area II / Group C / Liquidating distribution / Application",
+   "guide": [
+    {
+     "ask": "In a liquidation, in what order is the partner's outside basis allocated?",
+     "reveal": "Reduced first by cash, then assigned to inventory at the partnership's basis, then to the remaining property."
+    },
+    {
+     "ask": "Compute the land basis.",
+     "reveal": "$60,000 - $20,000 = $40,000; less inventory $15,000 leaves $25,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0010",
@@ -5419,7 +5941,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group C / Income allocation after sale / Application"
+   "blueprint_tag": "TCP Area II / Group C / Income allocation after sale / Application",
+   "guide": [
+    {
+     "ask": "Which two periods are there, and what percentage in each?",
+     "reveal": "Nine months at 40%, then three months at 20%."
+    },
+    {
+     "ask": "Compute each and add.",
+     "reveal": "$300,000 x 9/12 x 40% = $90,000 and $300,000 x 3/12 x 20% = $15,000, so $105,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0011",
@@ -5542,7 +6074,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group C / Basis adjustment on transfer / Analysis"
+   "blueprint_tag": "TCP Area II / Group C / Basis adjustment on transfer / Analysis",
+   "guide": [
+    {
+     "ask": "What is Gus's share of inside basis, and the gap to the price?",
+     "reveal": "25% x $400,000 = $100,000; he paid $150,000, so the adjustment is $50,000."
+    },
+    {
+     "ask": "What gain does he report on the land sale with and without the election?",
+     "reveal": "Without: 25% x $200,000 = $50,000. With: the adjustment offsets it, so $0. Reduction $50,000."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0012",
@@ -5609,7 +6151,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group C / Partnership elections / Remembering & Understanding"
+   "blueprint_tag": "TCP Area II / Group C / Partnership elections / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "Who makes the election, and how long does it last?",
+     "reveal": "The partnership makes it with a timely return, and it continues for later years."
+    },
+    {
+     "ask": "Which statement matches?",
+     "reveal": "The one saying it applies to later transfers and distributions until revoked with IRS consent."
+    }
+   ]
   },
   {
    "id": "TCP-II-C-0013",
@@ -5694,7 +6246,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group C / Partner-partnership transactions / Application"
+   "blueprint_tag": "TCP Area II / Group C / Partner-partnership transactions / Application",
+   "guide": [
+    {
+     "ask": "Does Vera own more than 50% of the partnership?",
+     "reveal": "Yes, 60%, so the related-party gain rule can apply."
+    },
+    {
+     "ask": "What determines the gain's character?",
+     "reveal": "The property is inventory in the partnership's hands, so the $60,000 gain ($100,000 - $40,000) is ordinary."
+    }
+   ]
   },
   {
    "id": "TCP-II-D-0001",
@@ -5761,7 +6323,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group D / Trust types / Application"
+   "blueprint_tag": "TCP Area II / Group D / Trust types / Application",
+   "guide": [
+    {
+     "ask": "What must a simple trust do with income and principal?",
+     "reveal": "Distribute all income currently, with no principal or charitable payments, and it is not a grantor trust."
+    },
+    {
+     "ask": "Which set of facts matches?",
+     "reveal": "The instrument requires current income distribution and nothing else is paid out."
+    }
+   ]
   },
   {
    "id": "TCP-II-D-0002",
@@ -5828,7 +6400,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group D / Trust as pass-through / Remembering & Understanding"
+   "blueprint_tag": "TCP Area II / Group D / Trust as pass-through / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "What limits the trust's distribution deduction?",
+     "reveal": "Distributable net income."
+    },
+    {
+     "ask": "What is the effect on the beneficiaries?",
+     "reveal": "They include distributions in income up to that same DNI limit."
+    }
+   ]
   },
   {
    "id": "TCP-II-D-0003",
@@ -5895,7 +6477,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group D / Revocable trusts / Remembering & Understanding"
+   "blueprint_tag": "TCP Area II / Group D / Revocable trusts / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "With a retained power to revoke, whose trust is it for tax purposes?",
+     "reveal": "The grantor's; it is a grantor trust taxed to Carol."
+    },
+    {
+     "ask": "What about the estate?",
+     "reveal": "The retained power to revoke brings the assets into her gross estate."
+    }
+   ]
   },
   {
    "id": "TCP-II-D-0004",
@@ -6018,7 +6610,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group D / Income/corpus allocation / Application"
+   "blueprint_tag": "TCP Area II / Group D / Income/corpus allocation / Application",
+   "guide": [
+    {
+     "ask": "What receipts are income under the Uniform Act?",
+     "reveal": "Dividends and interest: $12,000 + $5,000 = $17,000; the gain is principal."
+    },
+    {
+     "ask": "How much of the trustee fee is charged to income?",
+     "reveal": "Half, $1,500. Accounting income = $15,500."
+    }
+   ]
   },
   {
    "id": "TCP-II-D-0005",
@@ -6147,7 +6749,21 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group D / Trust DNI/taxable income / Application"
+   "blueprint_tag": "TCP Area II / Group D / Trust DNI/taxable income / Application",
+   "guide": [
+    {
+     "ask": "What is DNI?",
+     "reveal": "Total income less fees, excluding the capital gain to corpus: $30,000 - $4,000 = $26,000."
+    },
+    {
+     "ask": "What is the distribution deduction?",
+     "reveal": "Lesser of $30,000 distributed and $26,000 DNI."
+    },
+    {
+     "ask": "Compute taxable income.",
+     "reveal": "Total income $41,000 - $26,000 - $100 = $14,900."
+    }
+   ]
   },
   {
    "id": "TCP-II-D-0006",
@@ -6260,7 +6876,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group D / Trust DNI/taxable income / Analysis"
+   "blueprint_tag": "TCP Area II / Group D / Trust DNI/taxable income / Analysis",
+   "guide": [
+    {
+     "ask": "What does the trust pay if it keeps the income?",
+     "reveal": "$3,000 + 37% x ($60,000 - $16,000) = $19,280."
+    },
+    {
+     "ask": "What does the beneficiary pay if it is distributed?",
+     "reveal": "24% x $60,000 = $14,400, with no tax at the trust level. Saving $4,880."
+    }
+   ]
   },
   {
    "id": "TCP-II-E-0001",
@@ -6327,7 +6953,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group E / 501(c)(3) requirements / Remembering & Understanding"
+   "blueprint_tag": "TCP Area II / Group E / 501(c)(3) requirements / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "What must a charitable organization be organized and operated for?",
+     "reveal": "Exclusively exempt purposes, with no private benefit to individuals."
+    },
+    {
+     "ask": "Which organization fits?",
+     "reveal": "The one serving low-income people through free services, not members, an industry, or candidates."
+    }
+   ]
   },
   {
    "id": "TCP-II-E-0002",
@@ -6394,7 +7030,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group E / Loss of tax-exempt status / Application"
+   "blueprint_tag": "TCP Area II / Group E / Loss of tax-exempt status / Application",
+   "guide": [
+    {
+     "ask": "Which prohibition can cause revocation of exemption?",
+     "reveal": "Private inurement, where net earnings benefit insiders."
+    },
+    {
+     "ask": "Which event is that?",
+     "reveal": "The board sharing net income among themselves; reasonable pay, insubstantial unrelated activity and small lobbying do not."
+    }
+   ]
   },
   {
    "id": "TCP-II-E-0003",
@@ -6461,7 +7107,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group E / UBI types / Remembering & Understanding"
+   "blueprint_tag": "TCP Area II / Group E / UBI types / Remembering & Understanding",
+   "guide": [
+    {
+     "ask": "What makes income unrelated business income?",
+     "reveal": "A trade or business regularly carried on and not substantially related to the exempt purpose."
+    },
+    {
+     "ask": "Which activity is that?",
+     "reveal": "The commercial bakery selling to the public; volunteers, related sales and investment income are excluded."
+    }
+   ]
   },
   {
    "id": "TCP-II-E-0004",
@@ -6574,7 +7230,17 @@
    },
    "status": "verified",
    "version": 1,
-   "blueprint_tag": "TCP Area II / Group E / UBI types / Application"
+   "blueprint_tag": "TCP Area II / Group E / UBI types / Application",
+   "guide": [
+    {
+     "ask": "What share of net rent is debt-financed?",
+     "reveal": "$400,000 / $1,000,000 = 40%."
+    },
+    {
+     "ask": "Compute net rent and UBTI.",
+     "reveal": "$150,000 - $50,000 = $100,000; 40% = $40,000; less the $1,000 deduction gives $39,000."
+    }
+   ]
   }
  ]
 }
