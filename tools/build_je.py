@@ -3,7 +3,7 @@
 
   py tools/build_je.py [SRC_DIR]
 
-SRC_DIR defaults to ../wt-je/jobs/terra-prep-becker/원천/FAR (the cloud-work worktree that holds je_*.json).
+SRC_DIR defaults to ../wt-tp/jobs/terra-prep-becker/원천/FAR (the cloud-work worktree that holds je_*.json).
 Reads je_coa.json (chart of accounts) and every other je_*.json (one file per topic; {topic, bp, templates[]}).
 Writes  window.JE_DATA = {v, built, coa[], topics[], tpls[]}  — templates carry the generation rules; the browser
 generates unlimited variants from them (js/je.js). Nothing is graded from stored answers: answers come from the formulas.
@@ -12,7 +12,7 @@ import glob, json, os, re, sys, datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-DEFAULT_SRC = os.path.normpath(os.path.join(ROOT, "..", "wt-je", "jobs", "terra-prep-becker", "원천", "FAR"))
+DEFAULT_SRC = os.path.normpath(os.path.join(ROOT, "..", "wt-tp", "jobs", "terra-prep-becker", "원천", "FAR"))
 src = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_SRC
 out = os.path.join(ROOT, "data", "je_far.js")
 
