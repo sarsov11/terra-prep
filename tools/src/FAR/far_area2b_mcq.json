@@ -1,0 +1,2600 @@
+{
+ "meta": {
+  "area": "II",
+  "title": "FAR Area II supplement 2b - Analysis items",
+  "law_asof": "2026-09-29",
+  "count": 30,
+  "status": "verified",
+  "blueprint": "2026 AICPA FAR Blueprint (Area II; skill Analysis 35-45%); supplement to far_area2_mcq.json",
+  "provenance": "terra-original (no Becker/UWorld/Wiley text used)"
+ },
+ "items": [
+  {
+   "id": "FAR-II-B-1001",
+   "type": "mcq",
+   "area": "II",
+   "group": "B",
+   "group_name": "Trade Receivables",
+   "topic": "Discounted note and expected credit losses",
+   "task": "Measure receivables, the allowance for credit losses, and transfers of receivables",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "On January 1, 2026, Ferncliff Machinery Inc. sold a used press to a customer in exchange for a noninterest-bearing $200,000 note due in two years. The market rate for a similar note is 10%. At December 31, 2026, Ferncliff estimates lifetime expected credit losses equal to 4% of the note's amortized cost. What is the note's net carrying amount at December 31, 2026 (rounded to the nearest dollar)?",
+   "exhibit": "",
+   "options": [
+    "$158,678",
+    "$165,289",
+    "$173,818",
+    "$174,545"
+   ],
+   "answer": "D",
+   "rule_line": "Accrete a discounted note at the effective rate to amortized cost, then deduct the lifetime expected credit loss allowance measured on amortized cost.",
+   "why": {
+    "A": "Applies the allowance to the January 1 present value. The note has accreted for a year by December 31, and the expected loss is measured on amortized cost at the reporting date.",
+    "B": "Reports the note at its January 1 present value. By December 31 the note has accreted to amortized cost, and the allowance is deducted from that amount.",
+    "C": "Measures the allowance on the $200,000 face amount. Face includes the unearned discount; expected credit losses are estimated on the amortized cost basis.",
+    "D": "Correct. Present value $165,289 accretes at 10% to an amortized cost of $181,818; the allowance is 4% of amortized cost ($7,273), so the net amount is $174,545."
+   },
+   "steps": [
+    "Present value at January 1: 200,000 / 1.10^2 = 165,289",
+    "Amortized cost at December 31: 165,289 x 1.10 = 181,818",
+    "Allowance 4% x 181,818 = 7,273; net = 174,545"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "200000/1.1**2*1.1*(1-.04)",
+      "value": 174545.45
+     },
+     {
+      "expr": "200000/1.1**2*(1-.04)",
+      "value": 158677.69
+     },
+     {
+      "expr": "200000/1.1**2*1.1-200000*.04",
+      "value": 173818.18
+     },
+     {
+      "expr": "200000/1.1**2",
+      "value": 165289.26
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "835-30-25-2"
+    },
+    {
+     "src": "ASC",
+     "ref": "326-20-30-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "D",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-B-1002",
+   "type": "mcq",
+   "area": "II",
+   "group": "B",
+   "group_name": "Trade Receivables",
+   "topic": "Transfer that fails the sale conditions",
+   "task": "Measure receivables, the allowance for credit losses, and transfers of receivables",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Halstead Wholesale Inc. reports cash of $100,000, trade receivables of $600,000 and current liabilities of $400,000, and has no other current assets. It transfers all of the receivables to a bank for $480,000 in cash. The receivables are legally isolated from Halstead and it has no right to repurchase them, but the agreement bars the bank from pledging or exchanging the receivables, which gives Halstead a more-than-trivial benefit. Any resulting obligation to the bank is due within one year. What is Halstead's current ratio immediately after the transfer?",
+   "exhibit": "",
+   "options": [
+    "1.45 to 1",
+    "1.75 to 1",
+    "2.95 to 1",
+    "1.34 to 1"
+   ],
+   "answer": "D",
+   "rule_line": "A transfer is a sale only if the transferee can pledge or exchange the assets free of constraints benefiting the transferor; else a borrowing.",
+   "why": {
+    "A": "Treats the transfer as a sale. Because the transferee is restricted from pledging or exchanging the receivables, they stay on Halstead's books and the proceeds are a liability.",
+    "B": "Shows the ratio before the transfer. Cash of $480,000 comes in and a matching $480,000 obligation is recorded, so both current assets and current liabilities change.",
+    "C": "Keeps the receivables and the cash but omits the $480,000 obligation. A secured borrowing adds a liability equal to the proceeds.",
+    "D": "Correct. The bank cannot pledge or exchange the receivables, so the transfer is a secured borrowing. Current assets are $1,180,000 and current liabilities are $880,000."
+   },
+   "steps": [
+    "Restriction on pledging or exchanging fails a sale condition, so account for a secured borrowing",
+    "Current assets: 100,000 + 480,000 + 600,000 = 1,180,000",
+    "Current liabilities: 400,000 + 480,000 = 880,000; ratio = 1.34"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(100000+480000+600000)/(400000+480000)",
+      "value": 1.34
+     },
+     {
+      "expr": "(100000+480000)/400000",
+      "value": 1.45
+     },
+     {
+      "expr": "(100000+600000)/400000",
+      "value": 1.75
+     },
+     {
+      "expr": "(100000+480000+600000)/400000",
+      "value": 2.95
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "860-10-40-5"
+    },
+    {
+     "src": "ASC",
+     "ref": "860-30-25-2"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "D",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "C": "calc"
+   }
+  },
+  {
+   "id": "FAR-II-C-1001",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Inventory",
+   "topic": "Change in cost-flow method - retrospective effect",
+   "task": "Determine inventory cost, apply cost-flow methods and subsequent measurement",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Brightwater Supply Inc. changed from FIFO to the average cost method effective January 1, 2026, and the change is preferable. Inventory at December 31, 2025 was $200,000 under FIFO and $180,000 under average cost. Inventory at December 31, 2026 was $260,000 under FIFO and $235,000 under average cost. The income tax rate is 25%. Brightwater applies the change retrospectively and presents only 2026. By what amount does the change decrease retained earnings at January 1, 2026?",
+   "exhibit": "",
+   "options": [
+    "$3,750",
+    "$5,000",
+    "$15,000",
+    "$20,000"
+   ],
+   "answer": "C",
+   "rule_line": "A voluntary change in accounting principle is applied retrospectively; the cumulative effect on prior periods adjusts opening retained earnings, net of tax.",
+   "why": {
+    "A": "This is the after-tax effect on 2026 income (cost of goods sold is $5,000 higher under average cost). The question asks for the opening retained earnings adjustment.",
+    "B": "This is the pretax 2026 change in cost of goods sold. It relates to the current year and is not the opening retained earnings adjustment.",
+    "C": "Correct. The cumulative effect through the beginning of the period is the $20,000 inventory difference, net of 25% tax: $15,000.",
+    "D": "This is the pretax inventory difference at the beginning of 2026. The adjustment to retained earnings is shown net of the tax effect."
+   },
+   "steps": [
+    "Opening inventory difference: 200,000 - 180,000 = 20,000 lower under average cost",
+    "Net of 25% tax: 20,000 x 0.75 = 15,000 decrease in retained earnings",
+    "2026 pretax cost of goods sold effect: (180,000 - 235,000) - (200,000 - 260,000) = 5,000; after tax 3,750"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(200000-180000)*(1-.25)",
+      "value": 15000
+     },
+     {
+      "expr": "((180000-235000)-(200000-260000))*(1-.25)",
+      "value": 3750
+     },
+     {
+      "expr": "200000-180000",
+      "value": 20000
+     },
+     {
+      "expr": "(260000-235000)-(200000-180000)",
+      "value": 5000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "250-10-45-5"
+    },
+    {
+     "src": "ASC",
+     "ref": "250-10-45-7"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "C",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "FAR-II-C-1002",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Inventory",
+   "topic": "Counterbalancing inventory errors",
+   "task": "Determine inventory cost, apply cost-flow methods and subsequent measurement",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Aldergate Co. discovered that its inventory at December 31, 2025 was overstated by $30,000 and its inventory at December 31, 2026 was understated by $10,000. Neither error has been corrected. Ignoring income taxes, what is the effect of the errors on reported 2026 net income and on retained earnings at December 31, 2026?",
+   "exhibit": "",
+   "options": [
+    "Net income is understated by $40,000; retained earnings is understated by $10,000",
+    "Net income is understated by $40,000; retained earnings is understated by $40,000",
+    "Net income is understated by $10,000; retained earnings is understated by $10,000",
+    "Net income is understated by $20,000; retained earnings is understated by $10,000"
+   ],
+   "answer": "A",
+   "rule_line": "An ending inventory error carries into next year's cost of goods sold through opening inventory, so the retained earnings effect counterbalances after two years.",
+   "why": {
+    "A": "Correct. The overstated opening inventory raises 2026 cost of goods sold by $30,000 and the understated ending inventory raises it by $10,000, so 2026 income is $40,000 low. The 2025 error has reversed, leaving only the $10,000 ending inventory error in retained earnings.",
+    "B": "Gets 2026 income right but adds the 2026 effect to retained earnings without reversing the 2025 overstatement. The 2025 error has counterbalanced by the end of 2026.",
+    "C": "Considers only the ending inventory error. The opening inventory overstatement also flows through 2026 cost of goods sold and reduces 2026 income by $30,000.",
+    "D": "Nets the two errors as if they offset in 2026. Both raise 2026 cost of goods sold: an overstated beginning balance and an understated ending balance each reduce 2026 income."
+   },
+   "steps": [
+    "2026 cost of goods sold is overstated by 30,000 (opening) + 10,000 (ending) = 40,000, so 2026 net income is understated by 40,000",
+    "2025 income was overstated by 30,000 and 2026 income is understated by 40,000; cumulative retained earnings effect = -10,000"
+   ],
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "250-10-45-23"
+    },
+    {
+     "src": "ASC",
+     "ref": "330-10-30-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "A",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "FAR-II-C-1003",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Inventory",
+   "topic": "Retail method - average cost versus conventional",
+   "task": "Determine inventory cost, apply cost-flow methods and subsequent measurement",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Pinegrove Stores Inc. accounts for inventory at retail. For 2026, goods available for sale, before markups and markdowns, were $300,000 at cost and $500,000 at retail. Net markups were $40,000, net markdowns were $60,000, and net sales were $380,000. By how much is ending inventory at cost lower under the conventional method (lower of average cost or market) than under the average cost retail method?",
+   "exhibit": "",
+   "options": [
+    "$2,500",
+    "$4,444",
+    "$6,944",
+    "$11,111"
+   ],
+   "answer": "C",
+   "rule_line": "Conventional retail excludes net markdowns from the cost-to-retail ratio, producing a lower ratio and a lower ending inventory than the average cost method.",
+   "why": {
+    "A": "Compares the average cost ratio with a ratio that also ignores markups. The conventional method includes net markups in the denominator and leaves out only net markdowns.",
+    "B": "Reverses the roles of the ratios: it takes the conventional ratio (which excludes markdowns) against a no-markup ratio, not against the average cost ratio.",
+    "C": "Correct. Ending inventory at retail is $100,000. The average cost ratio is 0.6250 and the conventional ratio, which leaves out markdowns, is 0.5556; the difference is $6,944.",
+    "D": "Applies the ratio difference to ending retail plus markdowns. Markdowns are already deducted in reaching ending retail of $100,000."
+   },
+   "steps": [
+    "Goods available at retail: 500,000 + 40,000 = 540,000; ending retail = 540,000 - 60,000 - 380,000 = 100,000",
+    "Average cost ratio 300,000 / 480,000 = 0.6250 -> 62,500",
+    "Conventional ratio 300,000 / 540,000 = 0.5556 -> 55,556; difference 6,944"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "100000*(300000/480000-300000/540000)",
+      "value": 6944.44
+     },
+     {
+      "expr": "100000*(300000/480000-300000/500000)",
+      "value": 2500
+     },
+     {
+      "expr": "100000*(300000/500000-300000/540000)",
+      "value": 4444.44
+     },
+     {
+      "expr": "160000*(300000/480000-300000/540000)",
+      "value": 11111.11
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "330-10-30-12"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "C",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "FAR-II-C-1004",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Inventory",
+   "topic": "Dollar-value LIFO - partial layer liquidation",
+   "task": "Determine inventory cost, apply cost-flow methods and subsequent measurement",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Kilnwood Foods Inc. adopted dollar-value LIFO on January 1, 2026, when inventory at base-year cost was $200,000. At December 31, 2026 inventory at current cost was $242,000 with a price index of 1.10. At December 31, 2027 inventory at current cost was $273,000 with a price index of 1.30. What is the LIFO inventory amount at December 31, 2027?",
+   "exhibit": "",
+   "options": [
+    "$210,000",
+    "$211,000",
+    "$222,000",
+    "$273,000"
+   ],
+   "answer": "B",
+   "rule_line": "Dollar-value LIFO removes layers in reverse order when base-year cost falls, and remaining layers stay at the index of the year they were added.",
+   "why": {
+    "A": "This is inventory at base-year cost. LIFO inventory must carry the remaining 2026 layer at its own 1.10 index, not at the base-year price.",
+    "B": "Correct. Base-year cost at 2027 is $210,000, $10,000 below 2026, so $10,000 of the 2026 layer is removed. The LIFO amount is 200,000 + $10,000 x 1.10 = $211,000.",
+    "C": "Leaves the 2026 layer untouched at its full $20,000. The 2027 base-year cost fell, so part of that layer is liquidated.",
+    "D": "This is inventory at current cost. Dollar-value LIFO states layers at the index of the year each layer was added, not at current prices."
+   },
+   "steps": [
+    "2026: 242,000 / 1.10 = 220,000 base-year cost; layer 20,000 at 1.10",
+    "2027: 273,000 / 1.30 = 210,000 base-year cost, down 10,000; the 2026 layer shrinks to 10,000",
+    "LIFO inventory = 200,000 + 10,000 x 1.10 = 211,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "200000+(273000/1.3-200000)*1.1",
+      "value": 211000
+     },
+     {
+      "expr": "273000/1.3",
+      "value": 210000
+     },
+     {
+      "expr": "200000+(242000/1.1-200000)*1.1",
+      "value": 222000
+     },
+     {
+      "expr": "273000",
+      "value": 273000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "330-10-30-9"
+    },
+    {
+     "src": "ASC",
+     "ref": "330-10-35-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "B",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-C-1005",
+   "type": "mcq",
+   "area": "II",
+   "group": "C",
+   "group_name": "Inventory",
+   "topic": "Perpetual LIFO cost of goods sold",
+   "task": "Determine inventory cost, apply cost-flow methods and subsequent measurement",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Harborview Metals Inc. uses a perpetual system. It began 2026 with 100 units at $10. Purchases and sales were: March 1, bought 200 units at $12; April 15, sold 250 units; September 1, bought 100 units at $14; November 20, sold 80 units. What is 2026 cost of goods sold if Harborview applies LIFO on a perpetual basis?",
+   "exhibit": "",
+   "options": [
+    "$2,900",
+    "$3,820",
+    "$4,020",
+    "$4,100"
+   ],
+   "answer": "C",
+   "rule_line": "Perpetual LIFO prices each sale from the newest layers on hand at the sale date, so later purchases cannot be matched against earlier sales.",
+   "why": {
+    "A": "Counts only the April sale. The November 20 sale of 80 units at $14 also belongs in 2026 cost of goods sold.",
+    "B": "This is the FIFO cost of goods sold. The question asks for LIFO applied at the date of each sale.",
+    "C": "Correct. April 15 sale: 200 x $12 + 50 x $10 = $2,900. November 20 sale comes from the newest layer: 80 x $14 = $1,120. Total $4,020.",
+    "D": "This is periodic LIFO, which applies the latest layers to total year-end sales. A perpetual system prices each sale from the layers on hand at that date, so the $14 layer is not available on April 15."
+   },
+   "steps": [
+    "April 15: 250 units = 200 at $12 + 50 at $10 = 2,900; 50 units at $10 remain",
+    "September 1 purchase of 100 at $14; November 20: 80 units at $14 = 1,120",
+    "2026 cost of goods sold = 2,900 + 1,120 = 4,020"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "200*12+50*10+80*14",
+      "value": 4020
+     },
+     {
+      "expr": "200*12+50*10",
+      "value": 2900
+     },
+     {
+      "expr": "(100*10+150*12)+(50*12+30*14)",
+      "value": 3820
+     },
+     {
+      "expr": "(100*10+200*12+100*14)-70*10",
+      "value": 4100
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "330-10-30-9"
+    },
+    {
+     "src": "ASC",
+     "ref": "330-10-35-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "C",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "D": "trap"
+   }
+  },
+  {
+   "id": "FAR-II-D-1001",
+   "type": "mcq",
+   "area": "II",
+   "group": "D",
+   "group_name": "Property, Plant and Equipment",
+   "topic": "Impairment followed by depreciation and disposal",
+   "task": "Determine cost, depreciation, impairment, disposal and asset retirement obligations",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Stillwater Fabrication Inc. bought a machine on January 1, 2024 for $900,000, with a 10-year life, no salvage value and straight-line depreciation. At December 31, 2026, a triggering event led to a recoverability test: undiscounted cash flows were $600,000 and fair value was $480,000. Stillwater recognized the impairment and estimated a remaining life of seven years with no salvage value. On July 1, 2028 it sold the machine for $350,000, after recording depreciation to the date of sale. What is the result of the sale?",
+   "exhibit": "",
+   "options": [
+    "Loss of $145,000",
+    "Gain of $5,000",
+    "Gain of $7,143",
+    "Loss of $27,143"
+   ],
+   "answer": "D",
+   "rule_line": "After an impairment the reduced carrying amount is the new depreciable basis over the remaining life; the disposal gain or loss uses that adjusted amount.",
+   "why": {
+    "A": "Ignores the impairment. The 2026 impairment loss reduced the carrying amount to $480,000 and depreciation was recomputed on that new basis.",
+    "B": "Keeps depreciating at the old $90,000 a year. After the impairment, depreciation is based on the reduced carrying amount over the remaining seven-year life.",
+    "C": "Takes a full year of depreciation in 2028. The sale was on July 1, so only six months of 2028 depreciation is recorded.",
+    "D": "Correct. Carrying amount after the impairment is $480,000. Depreciation is $68,571 for 2027 and $34,286 for half of 2028, leaving $377,143; proceeds of $350,000 give a loss of $27,143."
+   },
+   "steps": [
+    "Carrying amount at December 31, 2026: 900,000 - 3 x 90,000 = 630,000; recoverability fails (600,000 < 630,000), so impairment = 630,000 - 480,000 = 150,000",
+    "New annual depreciation 480,000 / 7 = 68,571; 2027 68,571 + 2028 (six months) 34,286",
+    "Carrying amount at July 1, 2028: 377,143; proceeds 350,000 - 377,143 = -27,143"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "350000-(480000-480000/7-480000/7/2)",
+      "value": -27142.86
+     },
+     {
+      "expr": "350000-(630000-90000-45000)",
+      "value": -145000
+     },
+     {
+      "expr": "350000-(480000-90000-45000)",
+      "value": 5000
+     },
+     {
+      "expr": "350000-(480000-480000/7-480000/7)",
+      "value": 7142.86
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "360-10-35-20"
+    },
+    {
+     "src": "ASC",
+     "ref": "360-10-40-3"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "D",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "C": "calc"
+   }
+  },
+  {
+   "id": "FAR-II-D-1002",
+   "type": "mcq",
+   "area": "II",
+   "group": "D",
+   "group_name": "Property, Plant and Equipment",
+   "topic": "Asset retirement obligation - upward revision",
+   "task": "Determine cost, depreciation, impairment, disposal and asset retirement obligations",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "On January 1, 2026, Cliffhaven Energy Corp. recognized an asset retirement obligation of $400,000 for a platform, using a credit-adjusted risk-free rate of 8%. At December 31, 2028, after recording 2028 accretion, Cliffhaven raised its estimate of the undiscounted cash outflow by $100,000, all payable at the end of the remaining seven years. The credit-adjusted risk-free rate at that date is 10%. What is the total accretion expense for 2029 (rounded to the nearest dollar)?",
+   "exhibit": "",
+   "options": [
+    "$5,132",
+    "$40,311",
+    "$44,979",
+    "$45,442"
+   ],
+   "answer": "D",
+   "rule_line": "Upward revisions of asset retirement cash flows are new layers measured at the current credit-adjusted rate; existing layers keep their original rate.",
+   "why": {
+    "A": "Accretes only the new layer. The original liability continues to accrete at 8% as well, so 2029 accretion includes both layers.",
+    "B": "Leaves out the revision. The added $100,000 estimate is a new liability layer that also accretes in 2029.",
+    "C": "Discounts the new layer at the original 8% rate. An upward revision in estimated cash flows is measured at the current credit-adjusted rate.",
+    "D": "Correct. The original liability of $503,885 keeps accreting at 8% ($40,311). The upward revision is a new layer measured at the current 10% rate, $51,316, and accretes at 10%."
+   },
+   "steps": [
+    "Liability at December 31, 2028: 400,000 x 1.08^3 = 503,885; accretion at 8% = 40,311",
+    "New layer: 100,000 / 1.10^7 = 51,316; accretion at 10% = 5,132",
+    "Total 2029 accretion = 45,442"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "400000*1.08**3*.08+100000/1.1**7*.1",
+      "value": 45442.37
+     },
+     {
+      "expr": "400000*1.08**3*.08",
+      "value": 40310.78
+     },
+     {
+      "expr": "(400000*1.08**3+100000/1.08**7)*.08",
+      "value": 44978.71
+     },
+     {
+      "expr": "100000/1.1**7*.1",
+      "value": 5131.58
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "410-20-35-8"
+    },
+    {
+     "src": "ASC",
+     "ref": "410-20-35-3"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: ARO 상향 수정은 현재 신용조정 무위험이자율로 할인한 새 층, 하향은 최초 이자율 (ASC 410-20-35-8 문단 확인; PwC Viewpoint 3.4, Deloitte DART 4.6)",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "D",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-D-1003",
+   "type": "mcq",
+   "area": "II",
+   "group": "D",
+   "group_name": "Property, Plant and Equipment",
+   "topic": "Exchange lacking commercial substance with boot paid",
+   "task": "Determine cost, depreciation, impairment, disposal and asset retirement obligations",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Northvale Tooling Inc. exchanged an old press (cost $150,000, accumulated depreciation $90,000, fair value $75,000) and paid $20,000 in cash for a similar press with a fair value of $95,000. The exchange does not have commercial substance because Northvale's future cash flows will not change significantly. At what amount does Northvale record the new press?",
+   "exhibit": "",
+   "options": [
+    "$60,000",
+    "$75,000",
+    "$80,000",
+    "$95,000"
+   ],
+   "answer": "C",
+   "rule_line": "An exchange without commercial substance is recorded at the carrying amount of the asset given up plus boot paid, with no gain recognized.",
+   "why": {
+    "A": "Records the carrying amount of the old press but omits the cash paid. Boot paid is added to the carrying amount of the asset given up.",
+    "B": "Uses the fair value of the old press. That basis applies only when the exchange has commercial substance.",
+    "C": "Correct. Without commercial substance, no gain is recognized when boot is paid. The new press is recorded at the old press's carrying amount of $60,000 plus the $20,000 cash paid.",
+    "D": "Uses the fair value of the new press, which would recognize a $15,000 gain. Exchanges lacking commercial substance are recorded at carrying amount plus boot."
+   },
+   "steps": [
+    "Carrying amount of the old press: 150,000 - 90,000 = 60,000",
+    "Cost of the new press = 60,000 + 20,000 cash = 80,000; the $15,000 unrealized gain is not recognized"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "150000-90000+20000",
+      "value": 80000
+     },
+     {
+      "expr": "150000-90000",
+      "value": 60000
+     },
+     {
+      "expr": "75000",
+      "value": 75000
+     },
+     {
+      "expr": "95000",
+      "value": 95000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "845-10-30-3"
+    },
+    {
+     "src": "ASC",
+     "ref": "845-10-30-5"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "C",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-D-1004",
+   "type": "mcq",
+   "area": "II",
+   "group": "D",
+   "group_name": "Property, Plant and Equipment",
+   "topic": "Held-for-sale plan withdrawn",
+   "task": "Determine cost, depreciation, impairment, disposal and asset retirement obligations",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "On April 1, 2026, Marlowe Print Works Inc. classified a building as held for sale. Its cost was $800,000 and accumulated depreciation was $300,000; fair value less costs to sell was $420,000, and Marlowe recorded a write-down to that amount. Depreciation would have been $40,000 a year, and none was recorded while the building was held for sale. On October 1, 2026, Marlowe decided not to sell. The building's fair value on that date is $450,000. At what amount is the building reclassified as held and used?",
+   "exhibit": "",
+   "options": [
+    "$420,000",
+    "$450,000",
+    "$480,000",
+    "$500,000"
+   ],
+   "answer": "B",
+   "rule_line": "When a sale plan is withdrawn, remeasure at the lower of the prior carrying amount adjusted for missed depreciation and fair value at that date.",
+   "why": {
+    "A": "Keeps the held-for-sale carrying amount. On reclassification the asset is remeasured to the lower of the adjusted prior carrying amount and fair value at the date of the decision.",
+    "B": "Correct. The building returns to held and used at the lower of its carrying amount before classification adjusted for depreciation that would have been recorded ($480,000) and its fair value at the decision date ($450,000).",
+    "C": "Uses the prior carrying amount adjusted for depreciation, but ignores that fair value at the decision date is lower.",
+    "D": "Restores the carrying amount before the write-down without adjusting for six months of depreciation or comparing it with fair value."
+   },
+   "steps": [
+    "Carrying amount before classification: 800,000 - 300,000 = 500,000",
+    "Less depreciation not recorded during six months: 500,000 - 20,000 = 480,000",
+    "Lower of 480,000 and fair value 450,000 = 450,000; the increase from 420,000 goes to income from continuing operations"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "min(500000-40000/2, 450000)",
+      "value": 450000
+     },
+     {
+      "expr": "420000",
+      "value": 420000
+     },
+     {
+      "expr": "500000-40000/2",
+      "value": 480000
+     },
+     {
+      "expr": "800000-300000",
+      "value": 500000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "360-10-35-44"
+    },
+    {
+     "src": "ASC",
+     "ref": "360-10-45-6"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 판매 계획 철회 시 held-and-used 재분류는 (a) 분류 전 장부금액에 누락 감가상각 반영액과 (b) 결정일 공정가치 중 낮은 금액 (ASC 360-10-35-44 문단 확인; PwC Viewpoint 5.3, Deloitte DART 3.9)",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "B",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "FAR-II-D-1005",
+   "type": "mcq",
+   "area": "II",
+   "group": "D",
+   "group_name": "Property, Plant and Equipment",
+   "topic": "Capitalized cost and first-year depreciation of a self-built asset",
+   "task": "Determine cost, depreciation, impairment, disposal and asset retirement obligations",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Ashbourne Builders Inc. constructed an office building for its own use. Contract payments were $1,850,000 and architect fees were $90,000. Interest of $120,000 met the requirements for capitalization. Ashbourne also paid $40,000 to train employees and $30,000 for grand-opening advertising. The building was ready for use on October 1, 2026, and has a 20-year life with no salvage value. Ashbourne depreciates on a straight-line basis. What is 2026 depreciation expense?",
+   "exhibit": "",
+   "options": [
+    "$24,250",
+    "$25,750",
+    "$26,625",
+    "$103,000"
+   ],
+   "answer": "B",
+   "rule_line": "Capitalized cost includes construction costs and qualifying interest but not training or advertising; depreciation starts when the asset is ready for use.",
+   "why": {
+    "A": "Leaves out the capitalized interest. Interest capitalized during construction becomes part of the building's cost and is depreciated.",
+    "B": "Correct. Capitalized cost is $2,060,000 (contract, architect fees and capitalized interest). Training and advertising are expensed. $2,060,000 / 20 x 3/12 = $25,750.",
+    "C": "Includes training and grand-opening advertising in the depreciable cost. Those costs are expensed as incurred.",
+    "D": "Records a full year of depreciation. The building was ready for use on October 1, so only three months are depreciated in 2026."
+   },
+   "steps": [
+    "Capitalized cost = 1,850,000 + 90,000 + 120,000 = 2,060,000; training 40,000 and advertising 30,000 are expensed",
+    "Depreciation = 2,060,000 / 20 x 3/12 = 25,750"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(1850000+90000+120000)/20*.25",
+      "value": 25750
+     },
+     {
+      "expr": "(1850000+90000)/20*.25",
+      "value": 24250
+     },
+     {
+      "expr": "(1850000+90000+120000+40000+30000)/20*.25",
+      "value": 26625
+     },
+     {
+      "expr": "(1850000+90000+120000)/20",
+      "value": 103000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "835-20-30-1"
+    },
+    {
+     "src": "ASC",
+     "ref": "360-10-30-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "B",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "FAR-II-D-1006",
+   "type": "mcq",
+   "area": "II",
+   "group": "D",
+   "group_name": "Property, Plant and Equipment",
+   "topic": "Units-of-production - revised estimates",
+   "task": "Determine cost, depreciation, impairment, disposal and asset retirement obligations",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Bluff Creek Mining Inc. bought equipment on January 1, 2025 for $1,200,000 with an estimated salvage value of $120,000 and total output of 900,000 units. It produced 180,000 units in 2025 and 240,000 units in 2026. On January 1, 2026, it revised its estimate of total lifetime output to 750,000 units (including the 180,000 already produced) and the salvage value to $60,000. What is depreciation expense for 2026 (rounded to the nearest dollar)?",
+   "exhibit": "",
+   "options": [
+    "$288,000",
+    "$364,800",
+    "$389,053",
+    "$422,400"
+   ],
+   "answer": "C",
+   "rule_line": "A change in estimated output or salvage is a change in estimate: spread the remaining depreciable amount over the remaining units, with no catch-up.",
+   "why": {
+    "A": "Continues the original rate of $1.20 per unit. The revised output and salvage estimates change the depreciation rate from 2026 forward.",
+    "B": "Applies the new estimates to the original cost and full lifetime units, ignoring the depreciation already recorded in 2025.",
+    "C": "Correct. Change in estimate is prospective. Carrying amount $984,000 less new salvage $60,000 is spread over the 570,000 remaining units, a rate of 1.6211 per unit.",
+    "D": "Includes a catch-up adjustment for 2025. A change in estimate is applied prospectively, without restating or catching up prior periods."
+   },
+   "steps": [
+    "2025 depreciation = (1,200,000 - 120,000) x 180,000 / 900,000 = 216,000; carrying amount 984,000",
+    "Remaining depreciable amount = 984,000 - 60,000 = 924,000; remaining units = 750,000 - 180,000 = 570,000",
+    "2026 depreciation = 924,000 x 240,000 / 570,000 = 389,053"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(1200000-(1200000-120000)*180000/900000-60000)/(750000-180000)*240000",
+      "value": 389052.63
+     },
+     {
+      "expr": "(1200000-120000)/900000*240000",
+      "value": 288000
+     },
+     {
+      "expr": "(1200000-60000)*240000/750000",
+      "value": 364800
+     },
+     {
+      "expr": "(1200000-60000)*(180000+240000)/750000-(1200000-120000)*180000/900000",
+      "value": 422400
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "250-10-45-17"
+    },
+    {
+     "src": "ASC",
+     "ref": "360-10-35-4"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "C",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-E-1001",
+   "type": "mcq",
+   "area": "II",
+   "group": "E",
+   "group_name": "Investments",
+   "topic": "Equity method - basis difference and intra-entity profit",
+   "task": "Account for equity securities, debt securities and equity-method investments",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "On January 1, 2026, Quillon Holdings Inc. paid $900,000 for 30% of Tern Co.'s stock and has significant influence. Tern's net assets had a book value of $2,000,000. The excess of cost over Quillon's share of book value is attributable to equipment with an eight-year remaining life ($180,000) and goodwill (the rest). During 2026, Quillon sold inventory to Tern at a profit of $80,000; half of it remained in Tern's inventory at year-end. Tern reported 2026 net income of $500,000 and paid dividends of $100,000. What is the investment balance at December 31, 2026?",
+   "exhibit": "",
+   "options": [
+    "$985,500",
+    "$997,500",
+    "$1,008,000",
+    "$1,015,500"
+   ],
+   "answer": "A",
+   "rule_line": "Equity method: add the share of income, then subtract basis-difference amortization, the share of unrealized intra-entity profit and dividends received.",
+   "why": {
+    "A": "Correct. $900,000 + 30% of $500,000 income ($150,000) - equipment amortization $22,500 - 30% of the unrealized profit ($12,000) - 30% of dividends ($30,000) = $985,500.",
+    "B": "Omits the elimination of the intra-entity profit. Quillon's share of profit on inventory still held by Tern is deferred until the inventory is sold.",
+    "C": "Omits the amortization of the equipment basis difference. The excess attributed to depreciable equipment reduces the equity pickup over its life; goodwill is not amortized.",
+    "D": "Leaves out dividends. Dividends received from an equity method investee reduce the investment balance."
+   },
+   "steps": [
+    "Excess = 900,000 - 30% x 2,000,000 = 300,000; equipment 180,000 / 8 = 22,500 a year; goodwill 120,000 is not amortized",
+    "Unrealized profit eliminated = 30% x 50% x 80,000 = 12,000",
+    "900,000 + 150,000 - 22,500 - 12,000 - 30,000 = 985,500"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "900000+.3*500000-180000/8-.3*.5*80000-.3*100000",
+      "value": 985500
+     },
+     {
+      "expr": "900000+.3*500000-180000/8-.3*100000",
+      "value": 997500
+     },
+     {
+      "expr": "900000+.3*500000-.3*.5*80000-.3*100000",
+      "value": 1008000
+     },
+     {
+      "expr": "900000+.3*500000-180000/8-.3*.5*80000",
+      "value": 1015500
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "323-10-35-7"
+    },
+    {
+     "src": "ASC",
+     "ref": "323-10-35-13"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "A",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "trap"
+   }
+  },
+  {
+   "id": "FAR-II-E-1002",
+   "type": "mcq",
+   "area": "II",
+   "group": "E",
+   "group_name": "Investments",
+   "topic": "Other-than-temporary decline of an equity method investment",
+   "task": "Account for equity securities, debt securities and equity-method investments",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "At December 31, 2026, Merrimac Ventures Inc. carries a 35% equity method investment at $1,200,000. Its fair value is $900,000, and Merrimac concludes that the decline is other than temporary. In 2027, the investee reports net income of $200,000 and pays no dividends, and at December 31, 2027 the investment's fair value has recovered to $1,100,000. What is the investment's carrying amount at December 31, 2027?",
+   "exhibit": "",
+   "options": [
+    "$900,000",
+    "$970,000",
+    "$1,100,000",
+    "$1,270,000"
+   ],
+   "answer": "B",
+   "rule_line": "An other-than-temporary loss in value of an equity method investment is recognized in income and not reversed; the equity method continues on the new basis.",
+   "why": {
+    "A": "Stops accruing the share of earnings after the impairment. The equity method continues, so Merrimac still records its share of 2027 income.",
+    "B": "Correct. The $300,000 loss written off in 2026 is not reversed. The 2027 balance is $900,000 plus 35% of $200,000 income ($70,000).",
+    "C": "Writes the investment up to its recovered fair value. An equity method investment is not remeasured to fair value, and a recognized impairment loss is not reversed.",
+    "D": "Ignores the 2026 impairment. Once the decline is judged other than temporary, the loss is recognized and the reduced amount becomes the new basis."
+   },
+   "steps": [
+    "Impairment at December 31, 2026: 1,200,000 - 900,000 = 300,000 loss; new carrying amount 900,000",
+    "2027: 900,000 + 35% x 200,000 = 970,000; the recovery in fair value is not recognized"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "900000+.35*200000",
+      "value": 970000
+     },
+     {
+      "expr": "1100000",
+      "value": 1100000
+     },
+     {
+      "expr": "1200000+.35*200000",
+      "value": 1270000
+     },
+     {
+      "expr": "900000",
+      "value": 900000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "323-10-35-32"
+    },
+    {
+     "src": "ASC",
+     "ref": "323-10-35-32A"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 지분법 투자 일시적이 아닌 손상은 인식하고 이후 회복은 되돌리지 않음 (ASC 323-10-35-32 문단 확인; PwC Viewpoint 4.8, Deloitte DART 5.5)",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "B",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-E-1003",
+   "type": "mcq",
+   "area": "II",
+   "group": "E",
+   "group_name": "Investments",
+   "topic": "Credit losses - held-to-maturity versus available-for-sale",
+   "task": "Account for equity securities, debt securities and equity-method investments",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "At December 31, 2026, Dovecote Partners Inc. holds a debt security with an amortized cost of $800,000 and a fair value of $780,000. Dovecote does not intend to sell it, and expects credit losses of $35,000 based on the present value of cash flows. If the security is classified as available-for-sale rather than held-to-maturity, by how much is the 2026 credit loss expense lower?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$15,000",
+    "$20,000",
+    "$35,000"
+   ],
+   "answer": "B",
+   "rule_line": "The allowance on an available-for-sale debt security is limited to the amount fair value is below amortized cost; held-to-maturity has no such floor.",
+   "why": {
+    "A": "Assumes the classification does not matter. An available-for-sale allowance is capped at the amount fair value is below amortized cost, which lowers the expense here.",
+    "B": "Correct. Held-to-maturity records the full $35,000 allowance. For available-for-sale the allowance cannot exceed the $20,000 by which fair value is below amortized cost, so the expense is $20,000, $15,000 lower.",
+    "C": "This is the available-for-sale credit loss expense itself, not the difference from the held-to-maturity amount.",
+    "D": "This is the held-to-maturity credit loss expense. The question asks how much lower the available-for-sale expense is."
+   },
+   "steps": [
+    "Held-to-maturity: allowance = expected credit loss = 35,000",
+    "Available-for-sale: fair value shortfall = 800,000 - 780,000 = 20,000, so the allowance is capped at 20,000",
+    "Difference = 35,000 - 20,000 = 15,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "35000-min(35000,800000-780000)",
+      "value": 15000
+     },
+     {
+      "expr": "0",
+      "value": 0
+     },
+     {
+      "expr": "min(35000,800000-780000)",
+      "value": 20000
+     },
+     {
+      "expr": "35000",
+      "value": 35000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "326-30-35-6"
+    },
+    {
+     "src": "ASC",
+     "ref": "326-20-30-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: AFS 신용손실 충당금은 공정가치 미달액을 상한으로 함 (Deloitte DART 7.2, PwC Viewpoint 9.7). 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "B",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "trap",
+    "D": "trap"
+   }
+  },
+  {
+   "id": "FAR-II-E-1004",
+   "type": "mcq",
+   "area": "II",
+   "group": "E",
+   "group_name": "Investments",
+   "topic": "Partial sale of an equity method investment",
+   "task": "Account for equity securities, debt securities and equity-method investments",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Tamsin Capital Inc. owns 40% of an investee and applies the equity method. The carrying amount is $1,000,000, which includes Tamsin's share of the investee's accumulated other comprehensive income of $60,000 (unrealized gains on the investee's available-for-sale securities). Tamsin sells one-quarter of its holding for $310,000 and keeps significant influence over the investee. What gain is recognized in net income on the sale?",
+   "exhibit": "",
+   "options": [
+    "$15,000",
+    "$60,000",
+    "$75,000",
+    "$120,000"
+   ],
+   "answer": "C",
+   "rule_line": "On a partial sale that keeps significant influence, recognize the gain on the shares sold plus the proportionate share of investee OCI reclassified to earnings.",
+   "why": {
+    "A": "Shows only the reclassified accumulated other comprehensive income. The gain on the shares sold is recognized as well.",
+    "B": "Counts only the difference between proceeds and the carrying amount sold. The proportionate share of accumulated other comprehensive income is reclassified to earnings on the sale.",
+    "C": "Correct. Gain on the shares sold is $310,000 - $250,000 = $60,000. The proportionate $15,000 of accumulated other comprehensive income is also reclassified into earnings, for a total of $75,000.",
+    "D": "Reclassifies all $60,000 of accumulated other comprehensive income. Only the proportion attributable to the shares sold is recycled because significant influence continues."
+   },
+   "steps": [
+    "Carrying amount sold = 25% x 1,000,000 = 250,000; gain = 310,000 - 250,000 = 60,000",
+    "Proportionate accumulated other comprehensive income = 25% x 60,000 = 15,000",
+    "Total gain = 60,000 + 15,000 = 75,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "310000-.25*1000000+.25*60000",
+      "value": 75000
+     },
+     {
+      "expr": "310000-.25*1000000",
+      "value": 60000
+     },
+     {
+      "expr": "310000-.25*1000000+60000",
+      "value": 120000
+     },
+     {
+      "expr": ".25*60000",
+      "value": 15000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "323-10-35-39"
+    },
+    {
+     "src": "ASC",
+     "ref": "323-10-40-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 지분법 일부 처분 시 AOCI 를 처분 비율만큼 손익 재분류 (PwC Viewpoint 5.4, Deloitte DART 5.6, finquery). 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "C",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "FAR-II-E-1005",
+   "type": "mcq",
+   "area": "II",
+   "group": "E",
+   "group_name": "Investments",
+   "topic": "Premium on a callable debt security",
+   "task": "Account for equity securities, debt securities and equity-method investments",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "On January 1, 2026, Ravenscar Capital Inc. bought $1,000,000 par value, 6% bonds for $1,044,509. Interest is paid each December 31. The bonds mature on December 31, 2035, but the issuer can call them at 102 on December 31, 2028, the earliest call date. Ravenscar classifies the bonds as held-to-maturity and uses the effective interest method. The yield to the earliest call date is 5.0% and the yield to maturity is 5.4%. What is the carrying amount of the bonds at December 31, 2026 (rounded to the nearest dollar)?",
+   "exhibit": "",
+   "options": [
+    "$1,036,734",
+    "$1,040,058",
+    "$1,040,912",
+    "$1,044,509"
+   ],
+   "answer": "A",
+   "rule_line": "A premium on a callable debt security is amortized to the earliest call date, using the effective interest method at the yield to that date.",
+   "why": {
+    "A": "Correct. A premium on a callable debt security is amortized to the earliest call date. Interest income is $1,044,509 x 5.0% = $52,225, so amortization is $7,775 and the carrying amount is $1,036,734.",
+    "B": "Amortizes the premium straight-line over the ten years to maturity. The effective interest method applies, and the premium is amortized to the earliest call date.",
+    "C": "Amortizes to maturity using the 5.4% yield to maturity. Premium on a callable security is amortized to the earliest call date, using the yield to that date.",
+    "D": "Records no amortization in the first year. A premium on a held-to-maturity debt security is amortized to interest income each period."
+   },
+   "steps": [
+    "Interest income 2026 = 1,044,509 x 5.0% = 52,225",
+    "Cash interest 60,000; premium amortization = 60,000 - 52,225 = 7,775",
+    "Carrying amount = 1,044,509 - 7,775 = 1,036,734"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "1044509*1.05-60000",
+      "value": 1036734.45
+     },
+     {
+      "expr": "1044509-(1044509-1000000)/10",
+      "value": 1040058.1
+     },
+     {
+      "expr": "1044509*(1+0.054)-60000",
+      "value": 1040912.49
+     },
+     {
+      "expr": "1044509",
+      "value": 1044509
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "310-20-35-33"
+    },
+    {
+     "src": "ASC",
+     "ref": "320-10-35-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 콜 가능 채무증권 프리미엄은 최초 콜 일자까지 상각 (ASU 2017-08; PwC Viewpoint ASU 원문·PYA). 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "A",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-F-1001",
+   "type": "mcq",
+   "area": "II",
+   "group": "F",
+   "group_name": "Intangible Assets",
+   "topic": "Goodwill allocated to a disposed business",
+   "task": "Account for acquired and internally developed intangibles, goodwill and digital assets",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Alpine Crest Group Inc. has a reporting unit with goodwill of $600,000. Before the sale described here, the reporting unit's fair value was $1,500,000. Alpine Crest sells a business that is part of the unit for $300,000, which is the business's fair value; the fair value of the part of the unit that is retained is $1,200,000. The net assets of the business sold (excluding goodwill) have a carrying amount of $250,000. What is the result of the sale?",
+   "exhibit": "",
+   "options": [
+    "Gain of $50,000",
+    "Loss of $430,000",
+    "Loss of $550,000",
+    "Loss of $70,000"
+   ],
+   "answer": "D",
+   "rule_line": "Goodwill is allocated to a business disposed of by the relative fair value of that business and the portion of the unit retained.",
+   "why": {
+    "A": "Ignores goodwill. When a part of a reporting unit that is a business is disposed of, goodwill is included in its carrying amount on a relative fair value basis.",
+    "B": "Uses the retained portion's share (80%) instead of the share attributable to the business sold (20%). The business sold takes goodwill in proportion to its own relative fair value.",
+    "C": "Allocates all $600,000 of goodwill to the business sold. Only the relative-fair-value share, 20%, goes with the business.",
+    "D": "Correct. Goodwill is allocated by relative fair value: $300,000 / ($300,000 + $1,200,000) = 20%, or $120,000. Proceeds $300,000 less $250,000 and $120,000 give a loss of $70,000."
+   },
+   "steps": [
+    "Relative fair value = 300,000 / (300,000 + 1,200,000) = 20%",
+    "Goodwill allocated = 20% x 600,000 = 120,000",
+    "Result = 300,000 - 250,000 - 120,000 = -70,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "300000-250000-.2*600000",
+      "value": -70000
+     },
+     {
+      "expr": "300000-250000",
+      "value": 50000
+     },
+     {
+      "expr": "300000-250000-.8*600000",
+      "value": -430000
+     },
+     {
+      "expr": "300000-250000-600000",
+      "value": -550000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "350-20-40-2"
+    },
+    {
+     "src": "ASC",
+     "ref": "350-20-40-3"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "D",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-F-1002",
+   "type": "mcq",
+   "area": "II",
+   "group": "F",
+   "group_name": "Intangible Assets",
+   "topic": "Sequence of impairment tests in a reporting unit",
+   "task": "Account for acquired and internally developed intangibles, goodwill and digital assets",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "At December 31, 2026, a reporting unit of Verdana Systems Inc. has a carrying amount of $2,000,000, which includes goodwill of $400,000 and a customer list (a finite-lived intangible held and used) with a carrying amount of $300,000. The customer list's undiscounted cash flows are $280,000 and its fair value is $240,000. The reporting unit's fair value is $1,850,000. Verdana tests the customer list before it tests goodwill. What goodwill impairment loss is recognized?",
+   "exhibit": "",
+   "options": [
+    "$90,000",
+    "$150,000",
+    "$210,000",
+    "$400,000"
+   ],
+   "answer": "A",
+   "rule_line": "Test other long-lived assets for impairment first; the goodwill loss is the unit's adjusted carrying amount over its fair value, up to the goodwill balance.",
+   "why": {
+    "A": "Correct. The customer list fails recoverability ($280,000 < $300,000) and is written down $60,000 to fair value first. The unit's carrying amount becomes $1,940,000, so goodwill is impaired by $1,940,000 - $1,850,000 = $90,000.",
+    "B": "Tests goodwill before writing down the customer list. Other assets are tested first, and the goodwill test uses the adjusted carrying amount.",
+    "C": "Adds the customer list impairment to a goodwill loss measured on the unadjusted carrying amount. The list write-down already lowered the carrying amount, so $60,000 is counted twice.",
+    "D": "Writes off all of the goodwill. The loss is limited to the excess of carrying amount over fair value, and that excess is smaller than the goodwill balance."
+   },
+   "steps": [
+    "Customer list: undiscounted cash flows 280,000 < carrying amount 300,000, so impairment = 300,000 - 240,000 = 60,000",
+    "Adjusted carrying amount of the unit = 2,000,000 - 60,000 = 1,940,000",
+    "Goodwill impairment = 1,940,000 - 1,850,000 = 90,000 (less than goodwill of 400,000)"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "(2000000-(300000-240000))-1850000",
+      "value": 90000
+     },
+     {
+      "expr": "300000-240000+2000000-1850000",
+      "value": 210000
+     },
+     {
+      "expr": "2000000-1850000",
+      "value": 150000
+     },
+     {
+      "expr": "400000",
+      "value": 400000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "350-20-35-31"
+    },
+    {
+     "src": "ASC",
+     "ref": "360-10-35-17"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "A",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-F-1003",
+   "type": "mcq",
+   "area": "II",
+   "group": "F",
+   "group_name": "Intangible Assets",
+   "topic": "Implementation costs of a hosting arrangement",
+   "task": "Account for acquired and internally developed intangibles, goodwill and digital assets",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Corvid Logistics Inc. signed a three-year cloud hosting contract that starts July 1, 2026, at $60,000 a year, with a two-year renewal option that it is reasonably certain to exercise. Before the start date it incurred $150,000 of application development stage costs, $20,000 of employee training, $30,000 of data conversion and $10,000 of preliminary project costs. The hosting service is a service contract, not a software license. What is the total expense recognized in 2026 for the hosting fee and these costs?",
+   "exhibit": "",
+   "options": [
+    "$51,000",
+    "$87,000",
+    "$105,000",
+    "$115,000"
+   ],
+   "answer": "C",
+   "rule_line": "Capitalize application development costs of a hosting arrangement and amortize over the term, including reasonably certain renewals; expense training and data conversion.",
+   "why": {
+    "A": "Capitalizes every cost. Only application development stage costs are capitalized; training, data conversion and preliminary project costs are expensed.",
+    "B": "Capitalizes employee training. Training costs are expensed as incurred in a hosting arrangement, as they are for internal-use software.",
+    "C": "Correct. Application development costs of $150,000 are capitalized and amortized over the five-year expected term: $15,000 for six months. Training, data conversion and preliminary costs ($60,000) and the six-month hosting fee ($30,000) are expensed.",
+    "D": "Amortizes over only the three-year base term. The amortization period includes renewal periods the entity is reasonably certain to exercise."
+   },
+   "steps": [
+    "Capitalized 150,000 over 5 years x 6/12 = 15,000",
+    "Expensed: training 20,000 + data conversion 30,000 + preliminary 10,000 = 60,000",
+    "Hosting fee 60,000 x 6/12 = 30,000; total = 105,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "150000/5*6/12+60000*6/12+20000+30000+10000",
+      "value": 105000
+     },
+     {
+      "expr": "150000/3*6/12+60000*6/12+20000+30000+10000",
+      "value": 115000
+     },
+     {
+      "expr": "(150000+20000)/5*6/12+60000*6/12+30000+10000",
+      "value": 87000
+     },
+     {
+      "expr": "(150000+20000+30000+10000)/5*6/12+60000*6/12",
+      "value": 51000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "350-40-25-18"
+    },
+    {
+     "src": "ASC",
+     "ref": "350-40-35-9"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 호스팅 구현비용 개발단계만 자본화, 갱신 확실 기간 포함 계약기간 정액상각, 교육·데이터 전환 비용화 (ASU 2018-15; RSM, KPMG Hot Topic, Deloitte Heads Up). 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "C",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-G-1001",
+   "type": "mcq",
+   "area": "II",
+   "group": "G",
+   "group_name": "Payables and Accrued Liabilities",
+   "topic": "Bonus based on income after bonus and tax",
+   "task": "Measure payables, accruals, compensated absences and classify short-term obligations",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Larkmoor Inc. pays its manager a bonus of 10% of net income after deducting both the bonus and income tax. Income before the bonus and before taxes is $800,000, and the income tax rate is 25%. What is the bonus (rounded to the nearest dollar)?",
+   "exhibit": "",
+   "options": [
+    "$55,814",
+    "$60,000",
+    "$72,727",
+    "$80,000"
+   ],
+   "answer": "A",
+   "rule_line": "A bonus based on income after the bonus and after tax is solved algebraically, because the bonus reduces its own base.",
+   "why": {
+    "A": "Correct. Bonus = 10% x (Income - Bonus) x (1 - 0.25), so Bonus = 0.075 x 800,000 / 1.075 = $55,814.",
+    "B": "Applies 10% to income after tax but before the bonus. The base is also reduced by the bonus itself, which requires an algebraic solution.",
+    "C": "Deducts the bonus but not income tax from the base. The bonus is calculated on income after tax as well as after the bonus.",
+    "D": "Applies 10% to income before both the bonus and tax. The agreement uses net income after the bonus and after income tax."
+   },
+   "steps": [
+    "Let B = bonus. B = 0.10 x (800,000 - B) x (1 - 0.25) = 0.075 x (800,000 - B)",
+    "1.075 B = 60,000; B = 55,814"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "0.075*800000/1.075",
+      "value": 55813.95
+     },
+     {
+      "expr": "0.075*800000",
+      "value": 60000
+     },
+     {
+      "expr": "0.10*800000/1.10",
+      "value": 72727.27
+     },
+     {
+      "expr": "0.10*800000",
+      "value": 80000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "710-10-25-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "A",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-G-1002",
+   "type": "mcq",
+   "area": "II",
+   "group": "G",
+   "group_name": "Payables and Accrued Liabilities",
+   "topic": "Accounts payable cutoff",
+   "task": "Measure payables, accruals, compensated absences and classify short-term obligations",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "At December 31, 2026, the unadjusted accounts payable of Ironbridge Supply Inc. were $400,000. Ironbridge found these items: goods costing $36,000, shipped FOB shipping point on December 29 and received January 3, had not been recorded; goods costing $24,000, shipped FOB destination on December 30 and received January 4, had been recorded in December; a $4,500 freight bill on inventory received in December had not been recorded; and $9,000 of goods returned to a supplier on December 30 had not been recorded. What is the correct accounts payable balance?",
+   "exhibit": "",
+   "options": [
+    "$403,000",
+    "$407,500",
+    "$431,500",
+    "$473,500"
+   ],
+   "answer": "B",
+   "rule_line": "Record payables for goods when title passes: add FOB shipping point items in transit, remove FOB destination goods not delivered, and net returns.",
+   "why": {
+    "A": "Omits the freight bill. Freight on inventory received in December is an incurred liability at year-end.",
+    "B": "Correct. $400,000 + $36,000 (title passed at shipment) - $24,000 (title had not passed) + $4,500 freight - $9,000 return = $407,500.",
+    "C": "Leaves the FOB destination purchase in payables. Title passes on delivery, so the liability does not exist at year-end and must be removed.",
+    "D": "Adds the return and the FOB destination purchase instead of subtracting them. Returned goods reduce payables and goods not yet owned are not payable."
+   },
+   "steps": [
+    "400,000 + 36,000 (FOB shipping point, title passed) = 436,000",
+    "436,000 - 24,000 (FOB destination not yet received) = 412,000",
+    "412,000 + 4,500 freight - 9,000 return = 407,500"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "400000+36000-24000+4500-9000",
+      "value": 407500
+     },
+     {
+      "expr": "400000+36000+4500-9000",
+      "value": 431500
+     },
+     {
+      "expr": "400000+36000-24000-9000",
+      "value": 403000
+     },
+     {
+      "expr": "400000+36000+24000+4500+9000",
+      "value": 473500
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "405-10-25-1"
+    },
+    {
+     "src": "ASC",
+     "ref": "330-10-30-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "B",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "FAR-II-H-1001",
+   "type": "mcq",
+   "area": "II",
+   "group": "H",
+   "group_name": "Debt (Financial Liabilities)",
+   "topic": "Partial early retirement - loss and later interest expense",
+   "task": "Account for bonds, notes, convertible debt, extinguishment and restructuring",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "On January 1, 2026, Sableford Industries Inc. issued $2,000,000 par value, five-year, 6% bonds with interest paid each December 31, to yield 8%. On December 31, 2027, after paying interest, Sableford retired 40% of the bonds at 103 and used the effective interest method throughout. Which statement correctly gives the loss on extinguishment in 2027 and the interest expense on the bonds in 2028?",
+   "exhibit": "",
+   "options": [
+    "A $65,234 loss on extinguishment in 2027 and $151,753 of interest expense in 2028",
+    "A $24,000 loss on extinguishment in 2027 and $91,052 of interest expense in 2028",
+    "A $65,234 loss on extinguishment in 2027 and $96,000 of interest expense in 2028",
+    "A $65,234 loss on extinguishment in 2027 and $91,052 of interest expense in 2028"
+   ],
+   "answer": "D",
+   "rule_line": "Early retirement loss is the price paid over the carrying amount retired; later interest expense is the effective rate times the carrying amount remaining.",
+   "why": {
+    "A": "Computes 2028 interest on the whole carrying amount. After the retirement only 60% of the bonds remain outstanding.",
+    "B": "Measures the loss as the 3% premium over par. The loss is the price paid over the carrying amount, which still includes an unamortized discount.",
+    "C": "Uses the remaining par value as the interest base. Effective interest is calculated on the carrying amount, which is below par.",
+    "D": "Correct. Carrying amount at December 31, 2027 is $1,896,916. The retired 40% carries $758,766 against a price of $824,000, a $65,234 loss. The remaining 60% ($1,138,150) bears interest expense at 8%: $91,052."
+   },
+   "steps": [
+    "Issue price = 1,840,292; carrying amount 12/31/2026 = 1,867,515; 12/31/2027 = 1,896,916",
+    "Retired 40%: price 824,000 - carrying 758,766 = loss 65,234",
+    "2028 interest expense = 60% x 1,896,916 x 8% = 91,052"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "2000000*.4*1.03-1896916.1205100848*.4",
+      "value": 65233.55
+     },
+     {
+      "expr": "1896916.1205100848*.6*.08",
+      "value": 91051.97
+     },
+     {
+      "expr": "1896916.1205100848*.08",
+      "value": 151753.29
+     },
+     {
+      "expr": "1200000*.08",
+      "value": 96000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "470-50-40-2"
+    },
+    {
+     "src": "ASC",
+     "ref": "835-30-35-2"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "D",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-H-1002",
+   "type": "mcq",
+   "area": "II",
+   "group": "H",
+   "group_name": "Debt (Financial Liabilities)",
+   "topic": "Induced conversion of debt",
+   "task": "Account for bonds, notes, convertible debt, extinguishment and restructuring",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Wexcombe Corp. has $1,000,000 par value convertible bonds with an unamortized discount of $8,000 and unamortized issue costs of $4,000. Under the original terms the bonds convert into 20,000 shares of $1 par common stock. To induce prompt conversion, Wexcombe offers holders 25,000 shares instead, and the holders convert all bonds when the stock trades at $40 per share. By what amount does additional paid-in capital increase?",
+   "exhibit": "",
+   "options": [
+    "$963,000",
+    "$975,000",
+    "$1,163,000",
+    "$1,175,000"
+   ],
+   "answer": "C",
+   "rule_line": "On an induced conversion, recognize expense for the fair value of the extra consideration; credit equity for the debt's net carrying amount plus that expense.",
+   "why": {
+    "A": "Records only the carrying amount. The fair value of the extra shares issued to induce conversion is recognized as expense and increases equity as well.",
+    "B": "Values all the shares issued at market price. Induced conversions are recorded at carrying amount plus expense for the incremental consideration only.",
+    "C": "Correct. The inducement is an expense equal to the fair value of the extra shares (5,000 x $40 = $200,000). Equity increases by the net carrying amount $988,000 plus the expense, less $25,000 of par value: $1,163,000.",
+    "D": "Starts from the $1,000,000 par amount. The unamortized discount and issue costs are written off in the conversion, so the net carrying amount is used."
+   },
+   "steps": [
+    "Net carrying amount = 1,000,000 - 8,000 - 4,000 = 988,000",
+    "Induced conversion expense = 5,000 x 40 = 200,000",
+    "Common stock at par 25,000; additional paid-in capital = 988,000 + 200,000 - 25,000 = 1,163,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "1000000-8000-4000+5000*40-25000",
+      "value": 1163000
+     },
+     {
+      "expr": "1000000-8000-4000-25000",
+      "value": 963000
+     },
+     {
+      "expr": "25000*40-25000",
+      "value": 975000
+     },
+     {
+      "expr": "1000000+5000*40-25000",
+      "value": 1175000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "470-20-40-13"
+    },
+    {
+     "src": "ASC",
+     "ref": "470-20-40-16"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 유도전환 비용은 원래 조건 초과 증분 대가의 공정가치 (ASC 470-20-40-16 문단 확인; Deloitte DART, ASU 2024-04 해설)",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "C",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "FAR-II-H-1003",
+   "type": "mcq",
+   "area": "II",
+   "group": "H",
+   "group_name": "Debt (Financial Liabilities)",
+   "topic": "Current portion of a level-payment loan",
+   "task": "Account for bonds, notes, convertible debt, extinguishment and restructuring",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "On January 1, 2026, Tallgrass Inc. borrowed $500,000 at 8% under a loan repayable in five equal annual installments of $125,228, including interest, with the first installment paid on December 31, 2026. What amount is classified as the current portion of long-term debt at December 31, 2026, after the first installment has been paid (rounded to the nearest dollar)?",
+   "exhibit": "",
+   "options": [
+    "$85,228",
+    "$92,046",
+    "$100,000",
+    "$125,228"
+   ],
+   "answer": "B",
+   "rule_line": "The current portion of a level-payment loan is the next year's principal reduction: the installment less interest on the balance after the last payment.",
+   "why": {
+    "A": "Uses the principal portion of the first installment. The current portion is the principal reduction in the next twelve months, computed on the reduced balance.",
+    "B": "Correct. The balance after the first payment is $414,772. The next installment's principal is $125,228 less 8% interest on that balance ($33,182), or $92,046.",
+    "C": "Divides the original principal equally over five years. Level payments include more interest early, so principal repayments grow each year.",
+    "D": "Uses the whole installment. The current portion includes only principal, not the interest included in the payment."
+   },
+   "steps": [
+    "Balance after the first payment = 500,000 x 1.08 - 125,228 = 414,772",
+    "2027 interest = 414,772 x 8% = 33,182",
+    "Principal due in 2027 = 125,228 - 33,182 = 92,046"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "125228-(500000*1.08-125228)*.08",
+      "value": 92046.24
+     },
+     {
+      "expr": "125228-500000*.08",
+      "value": 85228
+     },
+     {
+      "expr": "500000/5",
+      "value": 100000
+     },
+     {
+      "expr": "125228",
+      "value": 125228
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "470-10-45-9"
+    },
+    {
+     "src": "ASC",
+     "ref": "835-30-35-2"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "B",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-H-1004",
+   "type": "mcq",
+   "area": "II",
+   "group": "H",
+   "group_name": "Debt (Financial Liabilities)",
+   "topic": "Fair value option applied to a liability",
+   "task": "Account for bonds, notes, convertible debt, extinguishment and restructuring",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "On January 1, 2026, Tarrant Corp. issued $1,000,000 of notes and elected the fair value option for them. At December 31, 2026, the notes' fair value is $940,000. Tarrant attributes $25,000 of the $60,000 decrease in fair value to a change in its own instrument-specific credit risk and the rest to changes in market interest rates. Ignoring interest and taxes, what are the effects on 2026 net income and other comprehensive income?",
+   "exhibit": "",
+   "options": [
+    "No effect on net income and a $60,000 gain in other comprehensive income",
+    "A $60,000 gain in net income and no effect on other comprehensive income",
+    "A $25,000 gain in net income and a $35,000 gain in other comprehensive income",
+    "A $35,000 gain in net income and a $25,000 gain in other comprehensive income"
+   ],
+   "answer": "D",
+   "rule_line": "For a liability at fair value, the change from instrument-specific credit risk goes to OCI and the remaining change goes to net income.",
+   "why": {
+    "A": "Puts the whole change in other comprehensive income. Only the instrument-specific credit risk portion is presented there.",
+    "B": "Puts the whole change in net income. For a liability measured under the fair value option, the change due to own credit risk is presented in other comprehensive income.",
+    "C": "Reverses the two parts. The credit-risk portion goes to other comprehensive income and the interest rate portion goes to net income.",
+    "D": "Correct. Under the fair value option for a liability, the part of the change due to instrument-specific credit risk is recognized in other comprehensive income; the remainder ($35,000) goes to net income."
+   },
+   "steps": [
+    "Total decrease in fair value = 1,000,000 - 940,000 = 60,000 (a gain)",
+    "Instrument-specific credit risk part 25,000 -> other comprehensive income",
+    "Remainder 60,000 - 25,000 = 35,000 -> net income"
+   ],
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "825-10-45-5"
+    },
+    {
+     "src": "ASC",
+     "ref": "825-10-35-5"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "D",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "trap"
+   }
+  },
+  {
+   "id": "FAR-II-H-1005",
+   "type": "mcq",
+   "area": "II",
+   "group": "H",
+   "group_name": "Debt (Financial Liabilities)",
+   "topic": "Bonds issued between fiscal year-end dates",
+   "task": "Account for bonds, notes, convertible debt, extinguishment and restructuring",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "On October 1, 2026, Oakhaven Inc. issued $1,000,000 par value, five-year, 6% bonds with interest paid semiannually on April 1 and October 1. The market rate was 8% (4% per six months), and the bonds were issued for $918,891. Oakhaven's fiscal year ends December 31 and it uses the effective interest method. What is the carrying amount of the bonds at December 31, 2026, excluding accrued interest payable (rounded to the nearest dollar)?",
+   "exhibit": "",
+   "options": [
+    "$918,891",
+    "$922,269",
+    "$922,946",
+    "$925,647"
+   ],
+   "answer": "B",
+   "rule_line": "Accrue interest expense at the effective rate on the carrying amount for the elapsed time; the excess over the coupon amortizes the discount.",
+   "why": {
+    "A": "Records no amortization. The discount is amortized as interest accrues, including for the three months from October 1 to December 31.",
+    "B": "Correct. Interest expense for the first six months is $918,891 x 4% = $36,756; three months is $18,378. Accrued interest is $15,000, so the discount amortized is $3,378 and the carrying amount rises to $922,269.",
+    "C": "Amortizes the discount straight-line. The effective interest method applies a constant 4% rate to the carrying amount for each six-month period.",
+    "D": "Uses a full six-month period of amortization. Only three months have passed by December 31, so half of the first period's amortization is recorded."
+   },
+   "steps": [
+    "Six-month interest expense = 918,891 x 4% = 36,756; three months = 18,378",
+    "Accrued coupon = 1,000,000 x 3% x 3/6 = 15,000; discount amortized = 3,378",
+    "Carrying amount = 918,891 + 3,378 = 922,269"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "918891.0422064497+918891.0422064497*.04/2-1000000*.03/2",
+      "value": 922268.86
+     },
+     {
+      "expr": "918891.0422064497",
+      "value": 918891.04
+     },
+     {
+      "expr": "918891.0422064497+(1000000-918891.0422064497)/10/2",
+      "value": 922946.49
+     },
+     {
+      "expr": "918891.0422064497+918891.0422064497*.04-1000000*.03",
+      "value": 925646.68
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "835-30-35-2"
+    },
+    {
+     "src": "ASC",
+     "ref": "835-30-45-1A"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "B",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "FAR-II-I-1001",
+   "type": "mcq",
+   "area": "II",
+   "group": "I",
+   "group_name": "Equity",
+   "topic": "Participating cumulative preferred dividends",
+   "task": "Account for stock issuance, treasury stock, dividends, share-based payments and reserves",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Cedar Mill Inc. has 5,000 shares of 6%, $100 par cumulative, fully participating preferred stock and 100,000 shares of $10 par common stock outstanding. Preferred dividends for the prior year were not paid. This year the board declares total dividends of $400,000. After the preferred receives its arrearage and current 6%, and the common receives 6% of par, the remaining dividends are shared by the two classes in proportion to total par value. How much of the $400,000 goes to the common shareholders (rounded to the nearest dollar)?",
+   "exhibit": "",
+   "options": [
+    "$246,667",
+    "$266,667",
+    "$340,000",
+    "$370,000"
+   ],
+   "answer": "A",
+   "rule_line": "Pay the preferred arrears and current preference first, then the common's base rate; a participating preferred also shares the remainder as the terms specify.",
+   "why": {
+    "A": "Correct. Arrears $30,000 and current $30,000 go to the preferred, and the common gets $60,000. The remaining $280,000 is split by par ($500,000 : $1,000,000), giving the common $186,667, for a total of $246,667.",
+    "B": "Shares the whole dividend by par value. The arrearage and the 6% preferences are paid first, and only the remainder is shared.",
+    "C": "Gives the common everything left after the preferred's arrears and current dividend. The common receives only 6% plus its share of the remainder because the preferred participates.",
+    "D": "Ignores both the arrearage and the participation. Cumulative preferred is owed the prior year's dividend before the common is paid."
+   },
+   "steps": [
+    "Preferred: arrears 30,000 + current 6% x 500,000 = 30,000; common base 6% x 1,000,000 = 60,000",
+    "Remainder = 400,000 - 30,000 - 30,000 - 60,000 = 280,000",
+    "Common = 60,000 + 280,000 x 1,000,000 / 1,500,000 = 246,667"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "60000+(400000-30000-30000-60000)*1000000/1500000",
+      "value": 246666.67
+     },
+     {
+      "expr": "400000*1000000/1500000",
+      "value": 266666.67
+     },
+     {
+      "expr": "400000-30000-30000",
+      "value": 340000
+     },
+     {
+      "expr": "400000-30000",
+      "value": 370000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "505-10-50-3"
+    },
+    {
+     "src": "ASC",
+     "ref": "260-10-45-60B"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "A",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "FAR-II-I-1002",
+   "type": "mcq",
+   "area": "II",
+   "group": "I",
+   "group_name": "Equity",
+   "topic": "Cash-settled share appreciation rights",
+   "task": "Account for stock issuance, treasury stock, dividends, share-based payments and reserves",
+   "task_source": "2026 AICPA Blueprint FAR Area II (group names verified; task wording paraphrased)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "On January 1, 2026, Fairlight Corp. granted 50,000 share appreciation rights (SARs) that will be settled in cash and cliff-vest after four years of service. The fair value of a SAR is $10 at December 31, 2026 and $14 at December 31, 2027. No forfeitures are expected. What compensation expense is recognized for 2027?",
+   "exhibit": "",
+   "options": [
+    "$225,000",
+    "$250,000",
+    "$350,000",
+    "$700,000"
+   ],
+   "answer": "A",
+   "rule_line": "Liability-classified awards are remeasured at fair value each reporting date; cumulative expense equals fair value times the fraction of service rendered.",
+   "why": {
+    "A": "Correct. Cash-settled awards are liabilities remeasured at each reporting date. The liability at December 31, 2027 is 50,000 x $14 x 2/4 = $350,000, less the $125,000 recorded in 2026.",
+    "B": "Keeps the fair value at $10 and takes two-fourths. A cash-settled award is remeasured to fair value at each reporting date, and the 2026 accrual is also deducted.",
+    "C": "Reports the whole December 31, 2027 liability as 2027 expense. The $125,000 already accrued in 2026 must be deducted.",
+    "D": "Recognizes the entire fair value of the SARs in 2027. The cost is attributed over the four-year service period, not recognized at once."
+   },
+   "steps": [
+    "Liability at December 31, 2026 = 50,000 x $10 x 1/4 = 125,000",
+    "Liability at December 31, 2027 = 50,000 x $14 x 2/4 = 350,000",
+    "2027 expense = 350,000 - 125,000 = 225,000"
+   ],
+   "calc_check": {
+    "checks": [
+     {
+      "expr": "50000*14*2/4-50000*10*1/4",
+      "value": 225000
+     },
+     {
+      "expr": "50000*10*2/4",
+      "value": 250000
+     },
+     {
+      "expr": "50000*14*2/4",
+      "value": 350000
+     },
+     {
+      "expr": "50000*14",
+      "value": 700000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "ASC",
+     "ref": "718-30-35-2"
+    },
+    {
+     "src": "ASC",
+     "ref": "718-10-35-2"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (far_area2b_독립풀이.json)",
+    "cite_ok": "public-checked: 원리는 Deloitte DART·PwC Viewpoint 일반 해설과 계산 재검산으로 확인. 문단 번호 미확인",
+    "date": "2026-09-29",
+    "match": true,
+    "confidence": "상",
+    "independent": {
+     "solver_id": "independent-1",
+     "solver_answer": "A",
+     "commit": "d13da0a",
+     "match": true
+    }
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
+  }
+ ]
+}
