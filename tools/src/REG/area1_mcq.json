@@ -31,7 +31,7 @@
    ],
    "answer": "A",
    "why": {
-    "A": "Holders of that record have only limited representation rights, and only for returns they prepared and signed. Unlimited rights belong to attorneys, CPAs, enrolled agents, enrolled actuaries and enrolled retirement plan agents.",
+    "A": "Holders of that record have only limited representation rights, and only for returns they prepared and signed. Unlimited rights belong to attorneys, CPAs and enrolled agents; enrolled actuaries and enrolled retirement plan agents may practice only on the specific matters listed in Circular 230 section 10.3(d)(2) and (e)(2).",
     "B": "Enrolled agents are enrolled to practice and have unlimited representation rights before all IRS offices.",
     "C": "A CPA in good standing may practice before the IRS without further enrollment and has unlimited rights.",
     "D": "An attorney in good standing has unlimited practice rights; no IRS enrollment is required."
@@ -68,7 +68,7 @@
    },
    "status": "verified",
    "version": 1,
-   "rule_line": "Only attorneys, CPAs, enrolled agents, actuaries and retirement plan agents have unlimited IRS practice rights; a Record of Completion gives limited rights only.",
+   "rule_line": "Only attorneys, CPAs and enrolled agents have unlimited IRS practice rights; enrolled actuaries and retirement plan agents may practice only on the matters listed in Circular 230; a Record of Completion gives limited rights only.",
    "wrong_tags": {
     "B": "trap",
     "C": "trap",
@@ -3560,11 +3560,15 @@
     {
      "src": "Pub",
      "ref": "Pub 1"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 556"
     }
    ],
    "law_asof": "2026-09-29",
    "testable_from": "2026-01-01",
-   "law_note": "",
+   "law_note": "The 10-day written notice is stated in IRS Pub. 556; the text of section 7521(a) itself requires only a prior request.",
    "provenance": "terra-original",
    "verify": {
     "solver_answer": "C",
@@ -4230,7 +4234,7 @@
    },
    "status": "verified",
    "version": 1,
-   "rule_line": "Treatises, law review articles and opinions of tax professionals are not authority for substantial authority; rulings, notices and PLRs are.",
+   "rule_line": "Treatises, legal periodicals and opinions of tax professionals are not authority for substantial authority; rulings, notices and PLRs are.",
    "wrong_tags": {
     "A": "trap",
     "C": "trap",

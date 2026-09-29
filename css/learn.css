@@ -1,0 +1,64 @@
+/* Concept cards (learn.html). Scoped to body.lrn so no other screen changes.
+   Accent #0B5E3C, wrong/trap #E5322D, Pretendard when installed (no web font is loaded, the app works offline). */
+body.lrn{--g:#0B5E3C;--g-soft:rgba(11,94,60,.07);--g-line:rgba(11,94,60,.35);--x:#E5322D;--x-soft:rgba(229,50,45,.06);
+  font-family:"Pretendard","Pretendard Variable",-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic",Roboto,Arial,sans-serif;
+  font-weight:500;font-size:16px}
+:root[data-skin="night"] body.lrn{--g:#3DBB85;--g-soft:rgba(61,187,133,.12);--g-line:rgba(61,187,133,.4)}
+.lrn h1,.lrn h2,.lrn h3{font-weight:900}
+.lrn #stage{outline:none;display:block}
+.lrn .hd{padding:24px 0 6px}
+.lrn .hd h1{font-size:26px;letter-spacing:-.04em}
+.lrn .hd .k{font-size:14px;font-weight:800;color:var(--ink-3);margin-top:4px}
+.lrn .back{display:inline-block;margin-top:18px;font-size:14px;font-weight:800;color:var(--g);text-decoration:none;padding:6px 0}
+.lrn .back:hover{text-decoration:underline}
+.lrn .list{margin-top:14px}
+.lrn .row{min-height:60px}
+.lrn .row .t b{font-weight:900;font-size:16.5px}
+.lrn .row .t span{font-size:14px;font-weight:600}
+.lrn .row .go{font-size:14px;font-weight:900;color:var(--ink-3);white-space:nowrap}
+.lrn .row .go.done{color:var(--g)}
+.lrn .row:focus-visible,.lrn .btn:focus-visible,.lrn .cite a:focus-visible,.lrn .back:focus-visible{outline:3px solid var(--g);outline-offset:2px}
+.lrn .aprog{height:6px;margin-top:8px;background:var(--surface-3);border-radius:99px;overflow:hidden}
+.lrn .aprog i{display:block;height:100%;background:var(--g);border-radius:99px}
+.lrn .tp{margin-top:26px}
+.lrn .tp>h2{font-size:15px;font-weight:900;color:var(--ink-2);margin:0 0 8px;line-height:1.4}
+.lrn .tick{flex:none;width:22px;height:22px;border-radius:99px;border:2px solid var(--line-2);display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#fff}
+.lrn .tick.on{background:var(--g);border-color:var(--g)}
+.lrn .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.lrn .chip{font-size:13.5px;font-weight:800}
+.lrn .chip.g{color:var(--g);border-color:var(--g-line);background:var(--g-soft)}
+.lrn .card-h h1{font-size:25px;line-height:1.3;margin-top:10px;letter-spacing:-.04em}
+.lrn .card-h .tpc{font-size:14px;font-weight:700;color:var(--ink-3);margin-top:6px}
+.lrn .blk{margin-top:26px}
+.lrn .blk>h2{font-size:14px;font-weight:900;letter-spacing:0;color:var(--g);margin:0 0 8px;text-transform:none}
+.lrn .blk.trap>h2{color:var(--x)}
+.lrn .rules{border:1.5px solid var(--line-2);border-radius:var(--r2);overflow:hidden;background:var(--surface)}
+.lrn .rules div{padding:12px 14px;font-size:15.5px;line-height:1.6;font-weight:600;border-top:1px solid var(--line)}
+.lrn .rules div:first-child{border-top:0}
+.lrn .steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.lrn .steps li{counter-increment:s;position:relative;padding:10px 0 10px 40px;font-size:15.5px;line-height:1.6;font-weight:600;border-left:2px solid var(--g-line);margin-left:13px;padding-left:28px}
+.lrn .steps li:before{content:counter(s);position:absolute;left:-14px;top:9px;width:26px;height:26px;border-radius:99px;background:var(--g);color:#fff;font-size:13.5px;font-weight:900;display:flex;align-items:center;justify-content:center}
+.lrn .steps li:last-child{border-left-color:transparent}
+.lrn .traps{display:flex;flex-direction:column;gap:8px}
+.lrn .traps div{padding:12px 14px;border-radius:var(--r2);background:var(--x-soft);border:1.5px solid rgba(229,50,45,.45);font-size:15.5px;line-height:1.6;font-weight:600}
+.lrn .ex{border:1.5px solid var(--ink);border-radius:var(--r3);padding:16px;background:var(--surface)}
+.lrn .ex .q{font-size:16px;line-height:1.65;font-weight:700;margin:0}
+.lrn .ex .btn{margin-top:14px}
+.lrn .ans{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.lrn .ans .a{font-size:16px;line-height:1.65;font-weight:900;margin:0;color:var(--g)}
+.lrn .ans ol{margin:10px 0 0;padding-left:22px}
+.lrn .ans li{font-size:15.5px;line-height:1.65;font-weight:600;padding:2px 0}
+.lrn .btn{background:var(--g);font-weight:900;font-size:16.5px;min-height:52px}
+.lrn .btn:hover{background:#094A30}
+.lrn .btn.ghost{background:transparent;color:var(--ink-2);border:1.5px solid var(--line-2)}
+.lrn .btn.ghost:hover{background:var(--surface-2);border-color:var(--ink-4)}
+.lrn .btn.ghost.on{color:var(--g);border-color:var(--g)}
+.lrn .cite{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.lrn .cite a{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:var(--r2);font-size:14.5px;font-weight:700;color:var(--ink-2);text-decoration:none;line-height:1.5}
+.lrn .cite a:hover{border-color:var(--g);color:var(--g)}
+.lrn .fine{font-size:13.5px;color:var(--ink-3);font-weight:600;margin-top:12px}
+.lrn .acts{display:flex;flex-direction:column;gap:10px;margin-top:28px}
+.lrn .pn{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.lrn .pn .btn{font-size:15px;padding:12px 10px}
+.lrn .pn .btn[aria-disabled="true"]{opacity:.35;pointer-events:none}
+@media (min-width:600px){.lrn .acts{flex-direction:row}.lrn .acts .btn{flex:1}}
