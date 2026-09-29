@@ -1,0 +1,4171 @@
+{
+ "meta": {
+  "area": "V",
+  "title": "Federal Taxation of Entities - Analysis supplement",
+  "law_asof": "2026-09-29",
+  "count": 45,
+  "status": "verified",
+  "provenance": "terra-original (no Becker/UWorld/Wiley text used)"
+ },
+ "items": [
+  {
+   "id": "REG-V-A-1001",
+   "type": "mcq",
+   "area": "V",
+   "group": "A",
+   "subgroup": "A",
+   "topic": "Differences between book and tax income (loss)",
+   "task": "Review a C corporation's adjusted book trial balance and supporting documentation... to determine completeness and accuracy of book/tax differences on Form 1120.",
+   "task_source": "지도.json",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Pinewood Fabrication, Inc., a calendar-year C corporation, drafted its 2026 Schedule M-1 as shown. Its client meals are 50% deductible, the interest on the loan was used to buy the state bonds, and the dividends-received deduction is claimed on Schedule C. Compared with the correct amount, how is the draft's income before the net operating loss deduction and special deductions misstated?",
+   "exhibit": [
+    [
+     "Item (2026)",
+     "Amount",
+     "Draft treatment"
+    ],
+    [
+     "Net income per books",
+     "$480,000",
+     "Starting point"
+    ],
+    [
+     "Federal income tax expense",
+     "$101,000",
+     "Added"
+    ],
+    [
+     "Client meals expense",
+     "$26,000",
+     "Added in full"
+    ],
+    [
+     "Fines paid to a government agency",
+     "$4,000",
+     "Added"
+    ],
+    [
+     "Interest on state bonds",
+     "$8,000",
+     "Subtracted"
+    ],
+    [
+     "Interest on the loan used to buy the state bonds",
+     "$5,000",
+     "No adjustment"
+    ],
+    [
+     "Dividends-received deduction",
+     "$12,000",
+     "Subtracted"
+    ]
+   ],
+   "options": [
+    "Overstated by $4,000",
+    "Understated by $17,000",
+    "Overstated by $13,000",
+    "Understated by $4,000"
+   ],
+   "answer": "D",
+   "rule_line": "M-1 adds back federal tax, fines, half of meals and interest on loans that carry tax-exempt bonds; the dividends-received deduction is a Schedule C special deduction, not an M-1 item.",
+   "why": {
+    "A": "Reverses the direction. The draft's net errors (meals overadded $13,000, interest omitted $5,000, dividends-received deduction subtracted $12,000) make its total lower than correct, not higher.",
+    "B": "Counts only the interest omission ($5,000) and the improper dividends-received deduction ($12,000). It misses that the draft added all $26,000 of meals when only $13,000 is nondeductible.",
+    "C": "Counts only the meals error. It overlooks the omitted $5,000 interest add-back and the $12,000 dividends-received deduction, which is not a Schedule M-1 item.",
+    "D": "Correct income is $595,000 (book income $480,000 + $101,000 + half of meals $13,000 + fines $4,000 - $8,000 + the $5,000 disallowed interest); the draft reaches $591,000, so it is $4,000 too low."
+   },
+   "steps": [
+    "Draft: 480,000 + 101,000 + 26,000 + 4,000 - 8,000 - 12,000 = 591,000",
+    "Correct: 480,000 + 101,000 + 13,000 (50% of 26,000) + 4,000 - 8,000 + 5,000 (interest on loan carrying state bonds) = 595,000; no dividends-received deduction on M-1",
+    "595,000 - 591,000 = 4,000, so the draft is understated"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "480000+101000+26000+4000-8000-12000",
+      "fmt": "$",
+      "value": 591000
+     },
+     {
+      "expr": "480000+101000+13000+4000-8000+5000",
+      "fmt": "$",
+      "value": 595000
+     },
+     {
+      "expr": "(480000+101000+13000+4000-8000+5000)-(480000+101000+26000+4000-8000-12000)",
+      "fmt": "$",
+      "value": 4000
+     },
+     {
+      "expr": "5000+12000",
+      "fmt": "$",
+      "value": 17000
+     },
+     {
+      "expr": "26000-13000",
+      "fmt": "$",
+      "value": 13000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "Form",
+     "ref": "1120 Schedule M-1 instructions"
+    },
+    {
+     "src": "IRC",
+     "ref": "§274(n)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§265(a)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§162(f)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§243(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "C": "calc"
+   }
+  },
+  {
+   "id": "REG-V-A-1002",
+   "type": "mcq",
+   "area": "V",
+   "group": "A",
+   "subgroup": "A",
+   "topic": "Differences between book and tax income (loss)",
+   "task": "Calculate the book/tax differences to be reported on a Schedule M-1 or M-3.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Arbor Labs, Inc. and Birch Labs, Inc. are calendar-year C corporations. Each expensed $300,000 of research costs in 2026 on its books, each has $1,000,000 of income before those costs on its books, and neither has any other book-tax difference. Arbor performed all of its research in the United States. Birch performed all of its research in a foreign country. Neither makes any special election, and amortization of any capitalized costs begins at the midpoint of the year. By how much does Birch's 2026 taxable income exceed Arbor's?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$270,000",
+    "$290,000",
+    "$300,000"
+   ],
+   "answer": "C",
+   "rule_line": "Domestic research costs are currently deductible under section 174A; foreign research costs are capitalized and amortized over 15 years from the midpoint of the year.",
+   "why": {
+    "A": "Treats both alike. Only domestic research is currently deductible; foreign research is capitalized.",
+    "B": "Uses the 5-year mid-year amortization that applied to domestic research before 2025. Foreign research is amortized over 15 years.",
+    "C": "Arbor deducts all $300,000, for taxable income of $700,000. Birch must capitalize and amortize over 15 years starting at mid-year: $300,000 x 6/180 = $10,000, for taxable income of $990,000. The difference is $290,000.",
+    "D": "Assumes Birch gets no deduction at all in 2026. It gets the first-year mid-year amortization of $10,000."
+   },
+   "steps": [
+    "Arbor: 1,000,000 - 300,000 = 700,000",
+    "Birch amortization: 300,000 x (1/15) x 1/2 = 10,000; taxable income 1,000,000 - 10,000 = 990,000",
+    "990,000 - 700,000 = 290,000"
+   ],
+   "calc_check": {
+    "expr": "(1000000-300000*6/180)-(1000000-300000)",
+    "fmt": "$",
+    "value": 290000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "(1000000-300000/5/2)-(1000000-300000)",
+      "value": 270000
+     },
+     "D": {
+      "expr": "300000",
+      "value": 300000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§174A(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§174(a)(2)(B)"
+    },
+    {
+     "src": "Form",
+     "ref": "1120 Schedule M-1 instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "P.L. 119-21 §70302 (2025-07-04) added §174A and moved foreign research into §174 with 15-year amortization, for tax years beginning after 2024. Testable from 2026-07-01.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "limit",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "REG-V-A-1003",
+   "type": "mcq",
+   "area": "V",
+   "group": "A",
+   "subgroup": "A",
+   "topic": "Differences between book and tax income (loss)",
+   "task": "Calculate the book/tax differences to be reported on a Schedule M-1 or M-3.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Cobble Creek Partners, a calendar-year partnership, reported 2026 net income per books of $300,000. That amount is after deducting $60,000 of guaranteed payments to partners for services (deductible for tax), an $8,000 cash charitable contribution and $6,000 of client meals (50% deductible), and it includes $10,000 of tax-exempt interest. Tax depreciation exceeded book depreciation by $20,000. There are no other differences. Which statement about the 2026 Form 1065 is correct?",
+   "exhibit": "",
+   "options": [
+    "Ordinary business income is $273,000; the contribution reduces ordinary income, and only the tax-exempt interest is separately stated",
+    "Ordinary business income is $291,000; the tax-exempt interest stays in ordinary income, and only the contribution is separately stated",
+    "Ordinary business income is $341,000; the guaranteed payments are separately stated and are not deducted in computing ordinary income",
+    "Ordinary business income is $281,000; the $8,000 contribution and the $10,000 of tax-exempt interest are separately stated items on Schedule K"
+   ],
+   "answer": "D",
+   "rule_line": "A partnership's ordinary income excludes separately stated items such as tax-exempt income and charitable gifts, but guaranteed payments for services remain deductible.",
+   "why": {
+    "A": "Leaves the $8,000 charitable contribution inside ordinary income. Partnerships cannot deduct charitable gifts in ordinary income; each partner takes a share separately.",
+    "B": "Keeps the tax-exempt interest in ordinary income. It is a separately stated item on Schedule K, so it comes out of ordinary income.",
+    "C": "Adds back the guaranteed payments. Guaranteed payments for services are deductible in computing ordinary income (they are also reported to the recipient partner).",
+    "D": "Start with $300,000, remove the $10,000 tax-exempt interest (separately stated), add back the $8,000 contribution (separately stated) and the nondeductible half of meals ($3,000), and subtract the $20,000 of excess tax depreciation: $281,000. The guaranteed payments stay deducted."
+   },
+   "steps": [
+    "300,000 - 10,000 (tax-exempt interest is separately stated) = 290,000",
+    "+ 8,000 (charitable contribution is separately stated) + 3,000 (nondeductible 50% of meals) = 301,000",
+    "- 20,000 (excess tax depreciation) = 281,000; guaranteed payments already deducted"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "300000-10000+8000+0.5*6000-20000",
+      "fmt": "$",
+      "value": 281000
+     },
+     {
+      "expr": "(300000-10000+8000+0.5*6000-20000)+10000",
+      "fmt": "$",
+      "value": 291000
+     },
+     {
+      "expr": "(300000-10000+8000+0.5*6000-20000)-8000",
+      "fmt": "$",
+      "value": 273000
+     },
+     {
+      "expr": "(300000-10000+8000+0.5*6000-20000)+60000",
+      "fmt": "$",
+      "value": 341000
+     },
+     {
+      "expr": "300000-10000+8000+0.5*6000-20000",
+      "fmt": "$",
+      "value": 281000
+     },
+     {
+      "expr": "(300000-10000+8000+0.5*6000-20000)-8000",
+      "fmt": "$",
+      "value": 273000
+     },
+     {
+      "expr": "(300000-10000+8000+0.5*6000-20000)+10000",
+      "fmt": "$",
+      "value": 291000
+     },
+     {
+      "expr": "(300000-10000+8000+0.5*6000-20000)+60000",
+      "fmt": "$",
+      "value": 341000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§703(a)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§702(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§707(c)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§274(n)(1)"
+    },
+    {
+     "src": "Form",
+     "ref": "1065 Schedule M-1 instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-V-A-1004",
+   "type": "mcq",
+   "area": "V",
+   "group": "A",
+   "subgroup": "A",
+   "topic": "Differences between book and tax income (loss)",
+   "task": "Review a C corporation's adjusted book trial balance and supporting documentation... to determine completeness and accuracy of book/tax differences on Form 1120.",
+   "task_source": "지도.json",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Kappa Logistics, Inc., a calendar-year C corporation, reported 2026 net income per books of $798,400. Its book income statement includes $40,000 of state bond interest and a federal income tax provision of $201,600, made up of $159,600 of current tax and $42,000 of deferred tax. For tax purposes, depreciation exceeds book depreciation by $200,000. There are no other differences. What is Kappa's 2026 taxable income before the net operating loss deduction and special deductions?",
+   "exhibit": "",
+   "options": [
+    "$558,400",
+    "$718,000",
+    "$760,000",
+    "$960,000"
+   ],
+   "answer": "C",
+   "rule_line": "Schedule M-1 adds back the total federal income tax expense on the books, current plus deferred, before other differences.",
+   "why": {
+    "A": "Omits the add-back of federal income tax expense. Federal income tax per books is never deductible, so the whole provision is added back.",
+    "B": "Adds back only the current tax. The deferred tax is also part of federal income tax per books and must be added back.",
+    "C": "The M-1 adds back the entire federal income tax per books, current and deferred ($201,600), then subtracts tax-exempt interest ($40,000) and the excess tax depreciation ($200,000): $760,000.",
+    "D": "Forgets the $200,000 of excess tax depreciation, which reduces taxable income below book income."
+   },
+   "steps": [
+    "798,400 + 201,600 (total federal tax provision) = 1,000,000",
+    "- 40,000 (tax-exempt interest) - 200,000 (excess tax depreciation) = 760,000",
+    "Check: 760,000 x 21% = 159,600, equal to the current tax in the provision"
+   ],
+   "calc_check": {
+    "expr": "798400+201600-40000-200000",
+    "fmt": "$",
+    "value": 760000,
+    "distractors": {
+     "A": {
+      "expr": "798400-40000-200000",
+      "value": 558400
+     },
+     "B": {
+      "expr": "798400+159600-40000-200000",
+      "value": 718000
+     },
+     "D": {
+      "expr": "798400+201600-40000",
+      "value": 960000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "Form",
+     "ref": "1120 Schedule M-1 instructions"
+    },
+    {
+     "src": "IRC",
+     "ref": "§275(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§103(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§168"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "REG-V-A-1005",
+   "type": "mcq",
+   "area": "V",
+   "group": "A",
+   "subgroup": "A",
+   "topic": "Differences between book and tax income (loss)",
+   "task": "Review an entity's adjusted book trial balance and supporting documentation to identify and calculate possible book/tax differences.",
+   "task_source": "지도.json",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Ridgeline Metals, Inc., an accrual-method calendar-year C corporation, reported 2026 net income per books of $700,000 after $147,000 of federal income tax expense and after accruing the year-end bonuses shown. Each bonus was fixed and unconditionally owed at December 31, 2026. All recipients use the cash method, and Ridgeline has no other book-tax differences. What is its 2026 taxable income before the net operating loss deduction and special deductions?",
+   "exhibit": [
+    [
+     "Recipient",
+     "Ownership of Ridgeline stock",
+     "Bonus accrued",
+     "Date paid"
+    ],
+    [
+     "Production employees (group)",
+     "None",
+     "$70,000",
+     "March 1, 2027"
+    ],
+    [
+     "Dana Ortiz, vice president",
+     "60%",
+     "$30,000",
+     "March 1, 2027"
+    ]
+   ],
+   "options": [
+    "$730,000",
+    "$847,000",
+    "$877,000",
+    "$947,000"
+   ],
+   "answer": "C",
+   "rule_line": "An accrual-basis corporation cannot deduct an accrued amount owed to a cash-basis related person, such as a more-than-50% shareholder, until the year the person reports it, even if paid within 2.5 months.",
+   "why": {
+    "A": "Adds back Dana's bonus but forgets to add back the $147,000 of federal income tax expense.",
+    "B": "Ignores the related-party rule and treats all bonuses as deductible in 2026. Dana is a 60% shareholder, so the deduction waits until payment.",
+    "C": "Add back federal income tax ($147,000). The production employees' bonuses ($70,000) were paid within 2.5 months and are deductible in 2026. Dana owns more than 50% of the stock, so her $30,000 bonus is deductible only when she includes it in income (2027): add it back. Total $877,000.",
+    "D": "Adds back all bonuses. The 2.5-month rule keeps the production employees' $70,000 deductible in 2026."
+   },
+   "steps": [
+    "Book income 700,000 + federal income tax 147,000 = 847,000",
+    "Production bonuses 70,000: paid Mar 1, 2027 (within 2.5 months), deductible 2026, no adjustment",
+    "Dana (60% shareholder, cash method): deduction waits until paid in 2027, add back 30,000",
+    "847,000 + 30,000 = 877,000"
+   ],
+   "calc_check": {
+    "expr": "700000+147000+30000",
+    "fmt": "$",
+    "value": 877000,
+    "distractors": {
+     "A": {
+      "expr": "700000+30000",
+      "value": 730000
+     },
+     "B": {
+      "expr": "700000+147000",
+      "value": 847000
+     },
+     "D": {
+      "expr": "700000+147000+70000+30000",
+      "value": 947000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§267(a)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§267(b)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§404(a)(5)"
+    },
+    {
+     "src": "Form",
+     "ref": "1120 Schedule M-1 instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-A-1006",
+   "type": "mcq",
+   "area": "V",
+   "group": "A",
+   "subgroup": "A",
+   "topic": "Differences between book and tax income (loss)",
+   "task": "Review an entity's adjusted book trial balance and supporting documentation to identify and calculate possible book/tax differences.",
+   "task_source": "지도.json",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Nimbus Analytics, Inc., a calendar-year C corporation, began business on October 1, 2026. Its adjusted trial balance shows that it expensed $60,000 of start-up costs and $20,000 of organizational costs in 2026, all incurred before it began business. It made no special elections. What amount should be added back on its 2026 Schedule M-1 for these costs?",
+   "exhibit": "",
+   "options": [
+    "$68,833",
+    "$73,750",
+    "$74,000",
+    "$78,667"
+   ],
+   "answer": "B",
+   "rule_line": "Start-up and organizational costs each get a $5,000 immediate deduction that phases out dollar for dollar above $50,000; the rest is amortized over 180 months from the month business begins.",
+   "why": {
+    "A": "Gives start-up costs the full $5,000 immediate deduction. The $5,000 is reduced dollar for dollar once start-up costs exceed $50,000, and here it is eliminated.",
+    "B": "Start-up costs of $60,000 exceed $50,000 by $10,000, which wipes out the $5,000 immediate deduction; only amortization of $60,000 x 3/180 = $1,000 is allowed. Organizational costs of $20,000 allow $5,000 plus $15,000 x 3/180 = $250. Deduction $6,250, so add back $73,750.",
+    "C": "Allows the $5,000 for organizational costs but skips the amortization of the remaining $15,000 and gives no amortization credit for it.",
+    "D": "Amortizes all $80,000 over 180 months and never applies the $5,000 immediate deduction for organizational costs."
+   },
+   "steps": [
+    "Start-up 60,000 > 50,000 by 10,000, so immediate deduction = 5,000 - 10,000 -> 0; amortize 60,000 x 3/180 = 1,000",
+    "Organizational 20,000: immediate 5,000; remaining 15,000 x 3/180 = 250; total 5,250",
+    "Deduction 1,000 + 5,250 = 6,250; add back 80,000 - 6,250 = 73,750"
+   ],
+   "calc_check": {
+    "expr": "80000-(0+60000*3/180)-(5000+15000*3/180)",
+    "fmt": "$",
+    "value": 73750,
+    "distractors": {
+     "A": {
+      "expr": "80000-(5000+55000*3/180)-(5000+15000*3/180)",
+      "value": 68833
+     },
+     "C": {
+      "expr": "80000-(0+60000*3/180)-(5000)",
+      "value": 74000
+     },
+     "D": {
+      "expr": "80000-80000*3/180",
+      "value": 78667
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§195(b)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§248(a)"
+    },
+    {
+     "src": "Form",
+     "ref": "1120 Schedule M-1 instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "limit",
+    "C": "calc",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "REG-V-B-1001",
+   "type": "mcq",
+   "area": "V",
+   "group": "B",
+   "subgroup": "B.1",
+   "topic": "C corporations — computation of taxable income, tax liability and allowable credits",
+   "task": "Calculate the current-year net operating or capital loss of a C corporation, and the limitations on use in the current year.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Corvid Systems, Inc. is a calendar-year C corporation with a $1,500,000 net operating loss from 2024 and no other carryovers. Its taxable income before the net operating loss deduction is $1,000,000 for 2026 and $600,000 for 2027. Assume a 21% rate. By how much does the 80% taxable-income limitation increase Corvid's combined 2026 and 2027 federal income tax, compared with a rule that lets the loss offset 100% of taxable income?",
+   "exhibit": "",
+   "options": [
+    "$4,200",
+    "$42,000",
+    "$46,200",
+    "$67,200"
+   ],
+   "answer": "C",
+   "rule_line": "A post-2017 net operating loss carries forward indefinitely but can offset only 80% of each year's taxable income.",
+   "why": {
+    "A": "Counts only the 2027 difference ($25,200 - $21,000) and ignores the extra $42,000 of tax in 2026.",
+    "B": "Counts only 2026. The 2027 tax also differs because less of the loss is used in 2026 but more remains, and the 80% cap applies again in 2027.",
+    "C": "With the limit: 2026 deduction $800,000, tax $42,000; 2027 deduction $480,000, tax $25,200; total $67,200. Without it: 2026 tax $0, 2027 deduction $500,000, tax $21,000. The limit adds $46,200.",
+    "D": "Reports total tax with the limit ($67,200) instead of the increase over the no-limit result."
+   },
+   "steps": [
+    "With the limit: 2026 NOL 80% x 1,000,000 = 800,000, TI 200,000, tax 42,000; carryover 700,000",
+    "2027 NOL min(700,000, 80% x 600,000 = 480,000) = 480,000, TI 120,000, tax 25,200; total 67,200",
+    "No limit: 2026 TI 0; carryover 500,000; 2027 TI 100,000, tax 21,000",
+    "67,200 - 21,000 = 46,200"
+   ],
+   "calc_check": {
+    "expr": "(0.21*(1000000-800000)+0.21*(600000-min(700000,0.8*600000)))-(0.21*0+0.21*(600000-500000))",
+    "fmt": "$",
+    "value": 46200,
+    "distractors": {
+     "A": {
+      "expr": "0.21*(600000-min(700000,0.8*600000))-0.21*(600000-500000)",
+      "value": 4200
+     },
+     "B": {
+      "expr": "0.21*(1000000-800000)",
+      "value": 42000
+     },
+     "D": {
+      "expr": "0.21*(1000000-800000)+0.21*(600000-min(700000,0.8*600000))",
+      "value": 67200
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§172(a)(2)(B)(ii)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§11(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "REG-V-B-1002",
+   "type": "mcq",
+   "area": "V",
+   "group": "B",
+   "subgroup": "B.3",
+   "topic": "C corporations — formation, distributions and liquidation (supplement)",
+   "task": "Calculate the gain recognized and the basis of stock and assets in a corporate formation (transfer of property for stock).",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Rita Calloway transfers land (adjusted basis $40,000, fair market value $200,000) to a new corporation for 50% of its stock. Sam Ives transfers $200,000 in cash for the other 50%. Under a binding contract signed before the transfers, Sam sells half of his shares (25% of the corporation) to Tom Reed, an unrelated buyer, on the day after formation. Compared with the result if there were no such contract, which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "Rita recognizes $160,000 of gain, and her stock basis and the corporation's basis in the land are both $200,000",
+    "Rita recognizes no gain, and her stock basis and the corporation's basis in the land are both $40,000, because Sam's later sale does not affect control",
+    "Rita recognizes $160,000 of gain and has a $200,000 stock basis, but the corporation keeps a $40,000 carryover basis in the land",
+    "Rita recognizes $160,000 of gain, but her stock basis stays $40,000 and the corporation takes a $200,000 basis in the land"
+   ],
+   "answer": "A",
+   "rule_line": "Section 351 needs the transferors to control 80% of the stock immediately after the exchange, and a binding pre-arranged sale of some of the stock can break that control.",
+   "why": {
+    "A": "The pre-arranged sale leaves the transferors with only 75% (Rita 50% + Sam 25%), below the 80% control test, so section 351 does not apply. The exchange is taxable: Rita's gain is $200,000 - $40,000 = $160,000, and both bases equal the $200,000 value.",
+    "B": "Ignores the binding contract. A pre-arranged sale is counted, so the transferors do not have 80% control immediately after the exchange.",
+    "C": "Splits the treatment. If the exchange is taxable, the corporation's basis is cost ($200,000); carryover basis applies only under section 351.",
+    "D": "Mixes the results. In a taxable exchange Rita's stock basis is its cost ($200,000), not a carryover of her land basis."
+   },
+   "steps": [
+    "Control after: Rita 50% + Sam 50% x 50% = 25% -> 75% < 80%, so section 351 fails",
+    "Rita: amount realized 200,000 - basis 40,000 = 160,000 gain; stock basis and corporation land basis = 200,000"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "200000-40000",
+      "fmt": "$",
+      "value": 160000
+     },
+     {
+      "expr": "100*(50+0.5*50)",
+      "fmt": "%",
+      "value": 7500.0
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§351(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§368(c)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1012"
+    },
+    {
+     "src": "IRC",
+     "ref": "§362(a)"
+    },
+    {
+     "src": "Rev.",
+     "ref": "Rul. 70-140"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-B-1003",
+   "type": "mcq",
+   "area": "V",
+   "group": "B",
+   "subgroup": "B.3",
+   "topic": "C corporations — formation, distributions and liquidation (supplement)",
+   "task": "Determine the tax treatment of a corporation's distribution to shareholders (earnings and profits, dividend, return of capital, gain).",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Corvina Tools, Inc. has 100 shares of voting common stock outstanding and substantial earnings and profits. Ann Reyes owns 60 shares, and her brother Ben owns the other 40. Ann is considering two alternative plans: under Plan 1 the corporation redeems 25 of her shares for cash, and under Plan 2 it redeems 20 of her shares for cash. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "Both plans are treated as exchanges because any redemption from a majority shareholder reduces her interest",
+    "Neither plan is an exchange, because Ann is treated as owning Ben's shares through family attribution",
+    "Only Plan 2 is an exchange, because she still owns 50% of the voting power afterward",
+    "Plan 1 is treated as an exchange because it is substantially disproportionate, and Plan 2 is a dividend to the extent of earnings and profits"
+   ],
+   "answer": "D",
+   "rule_line": "A redemption is an exchange only if a test such as the 80%/50% substantially disproportionate test is met after family attribution, which does not include siblings; otherwise it is a dividend.",
+   "why": {
+    "A": "There is no such rule. A redemption is an exchange only if a test such as the substantially disproportionate test is met.",
+    "B": "Attribution runs among spouses, children, grandchildren and parents, not siblings. Ben's shares are not treated as Ann's.",
+    "C": "Owning 50% afterward fails the substantially disproportionate test, which requires her ownership to fall below 50% of the voting power and below 80% of her prior percentage.",
+    "D": "Ben, as a brother, is not attributed to Ann. After Plan 1 she owns 35 of 75 shares (46.7%), under 50% and under 80% of her prior 60% (48%). After Plan 2 she owns 40 of 80 (50%), which fails both tests, so it is a dividend."
+   },
+   "steps": [
+    "Plan 1: 60 - 25 = 35 of 100 - 25 = 75 shares = 46.7%; 80% x 60% = 48%; 46.7% < 48% and < 50%, so it qualifies",
+    "Plan 2: 60 - 20 = 40 of 80 shares = 50%; not below 50% and above 48%, so it fails and is a section 301 distribution",
+    "Brother is not a section 318(a)(1) family member"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "100*35/75",
+      "fmt": "%",
+      "value": 46.6667
+     },
+     {
+      "expr": "100*0.8*60/100",
+      "fmt": "%",
+      "value": 48.0
+     },
+     {
+      "expr": "100*40/80",
+      "fmt": "%",
+      "value": 50.0
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§302(b)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§318(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§301(c)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "limit"
+   }
+  },
+  {
+   "id": "REG-V-B-1004",
+   "type": "mcq",
+   "area": "V",
+   "group": "B",
+   "subgroup": "B.3",
+   "topic": "C corporations — formation, distributions and liquidation (supplement)",
+   "task": "Determine the tax consequences of a complete liquidation to the corporation and its shareholders.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Halvern Industries, Inc., a C corporation owned entirely by Grace Lund, holds operating assets with an adjusted basis of $200,000 and a fair market value of $800,000, and it has no liabilities. Grace's stock basis is $150,000. A buyer offers $800,000 either for the assets (Plan 1, after which Halvern liquidates and distributes all remaining cash to Grace) or for Grace's stock (Plan 2). Assume the corporation's tax rate is 21%, Grace's long-term capital gain rate is 20%, and no other tax applies. By how much is the combined federal income tax under Plan 1 higher than under Plan 2?",
+   "exhibit": "",
+   "options": [
+    "$100,800",
+    "$104,800",
+    "$126,000",
+    "$230,800"
+   ],
+   "answer": "A",
+   "rule_line": "An asset sale followed by liquidation taxes the gain at both the corporate and shareholder levels, while a stock sale taxes it once at the shareholder level.",
+   "why": {
+    "A": "Plan 1: corporate tax $126,000; Grace receives $674,000 and has a $524,000 gain taxed at 20% ($104,800); total $230,800. Plan 2: $650,000 x 20% = $130,000. Difference $100,800.",
+    "B": "Counts only the shareholder-level tax under Plan 1 ($104,800) and ignores the corporate tax and Plan 2.",
+    "C": "Equals the corporate tax alone. It results from taking Grace's Plan 1 gain on the full $650,000 (ignoring that the corporate tax reduces what she receives), so the two shareholder-level taxes cancel.",
+    "D": "Reports the total Plan 1 tax ($230,800) rather than the difference from Plan 2."
+   },
+   "steps": [
+    "Plan 1 corporate tax: 21% x (800,000 - 200,000) = 126,000; distribution 800,000 - 126,000 = 674,000",
+    "Grace: 674,000 - 150,000 = 524,000 x 20% = 104,800; total Plan 1 = 230,800",
+    "Plan 2: (800,000 - 150,000) x 20% = 130,000",
+    "230,800 - 130,000 = 100,800"
+   ],
+   "calc_check": {
+    "expr": "(0.21*(800000-200000)+0.2*(800000-0.21*(800000-200000)-150000))-0.2*(800000-150000)",
+    "fmt": "$",
+    "value": 100800,
+    "distractors": {
+     "B": {
+      "expr": "0.2*(800000-0.21*(800000-200000)-150000)",
+      "value": 104800
+     },
+     "C": {
+      "expr": "0.21*(800000-200000)",
+      "value": 126000
+     },
+     "D": {
+      "expr": "0.21*(800000-200000)+0.2*(800000-0.21*(800000-200000)-150000)",
+      "value": 230800
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1001"
+    },
+    {
+     "src": "IRC",
+     "ref": "§331(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§336(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§11(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "REG-V-B-1005",
+   "type": "mcq",
+   "area": "V",
+   "group": "B",
+   "subgroup": "B.2",
+   "topic": "C corporations — state and local tax issues",
+   "task": "Define the general concept and rationale of apportionment and allocation with respect to state and local taxation.",
+   "task_source": "지도.json",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Larkspur Equipment, Inc. manufactures in State H and ships tangible goods to customers in three states. Its business income is $400,000, and its 2026 sales are: State H, $200,000; State J, $300,000; State K, $500,000. In State J, Larkspur only solicits orders that are approved and shipped from State H, and it has no other contact there. Larkspur is taxable in State K. State H apportions business income with a sales factor only and has a throwback rule for sales into states where the seller is not taxable. How much of Larkspur's business income is apportioned to State H?",
+   "exhibit": "",
+   "options": [
+    "$80,000",
+    "$120,000",
+    "$200,000",
+    "$280,000"
+   ],
+   "answer": "C",
+   "rule_line": "Solicitation-only sales are protected from a state's income tax, so a throwback state adds those sales to its own sales factor.",
+   "why": {
+    "A": "Ignores the throwback rule. Only State H's own sales are counted, giving 20%.",
+    "B": "Counts only the State J sales. State H's own $200,000 of sales stay in the numerator too.",
+    "C": "P.L. 86-272 protects Larkspur from State J's income tax, so the $300,000 of State J sales are thrown back to State H. State H's factor is ($200,000 + $300,000) / $1,000,000 = 50%, so $200,000.",
+    "D": "Throws back the State K sales. Larkspur is taxable in State K, so those sales are not thrown back."
+   },
+   "steps": [
+    "Total sales 1,000,000",
+    "Sales into State J are not taxable there (solicitation only), so thrown back: H numerator 200,000 + 300,000 = 500,000",
+    "Factor 500,000 / 1,000,000 = 50%; 400,000 x 50% = 200,000"
+   ],
+   "calc_check": {
+    "expr": "400000*(200000+300000)/1000000",
+    "fmt": "$",
+    "value": 200000,
+    "distractors": {
+     "A": {
+      "expr": "400000*200000/1000000",
+      "value": 80000
+     },
+     "B": {
+      "expr": "400000*300000/1000000",
+      "value": 120000
+     },
+     "D": {
+      "expr": "400000*(200000+500000)/1000000",
+      "value": 280000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "Other",
+     "ref": "P.L. 86-272 (15 U.S.C. §381)"
+    },
+    {
+     "src": "Other",
+     "ref": "UDITPA §16(b) (throwback rule)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-B-1006",
+   "type": "mcq",
+   "area": "V",
+   "group": "B",
+   "subgroup": "B.1",
+   "topic": "C corporations — computation of taxable income, tax liability and allowable credits",
+   "task": "Calculate taxable income for a C corporation.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Tavern Ridge Foods, Inc., a C corporation, paid its sole shareholder-employee, Mark Lee, $300,000 of salary in 2026 and deducted it. The IRS concludes that $200,000 is reasonable compensation and recharacterizes the other $100,000 as a dividend. Assume the corporation's tax rate is 21%, Mark's rate on ordinary income is 35% and on qualified dividends 20%, and ignore payroll taxes, penalties and interest. What is the net change in combined federal income tax for the corporation and Mark?",
+   "exhibit": "",
+   "options": [
+    "An increase of $6,000",
+    "An increase of $21,000",
+    "An increase of $36,000",
+    "A decrease of $15,000"
+   ],
+   "answer": "A",
+   "rule_line": "Unreasonable compensation is nondeductible to the corporation and taxed to the shareholder as a dividend, so corporate tax rises while the shareholder's rate falls.",
+   "why": {
+    "A": "The corporation loses a $100,000 deduction: +$21,000. Mark's $100,000 moves from 35% wages to 20% dividends: -$15,000. Net increase $6,000.",
+    "B": "Counts only the corporation's extra tax. Mark's tax falls because the recharacterized amount is taxed as a dividend at the lower 20% rate.",
+    "C": "Adds Mark's rate reduction to the corporate tax. His lower dividend rate reduces the combined increase; it does not add to it.",
+    "D": "Counts only Mark's savings. The corporation's lost deduction raises its tax by more than his savings."
+   },
+   "steps": [
+    "Corporation: 21% x 100,000 = 21,000 more tax",
+    "Mark: (35% - 20%) x 100,000 = 15,000 less tax",
+    "21,000 - 15,000 = 6,000 net increase"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "0.21*100000",
+      "fmt": "$",
+      "value": 21000
+     },
+     {
+      "expr": "0.15*100000",
+      "fmt": "$",
+      "value": 15000
+     },
+     {
+      "expr": "0.21*100000-(0.35-0.20)*100000",
+      "fmt": "$",
+      "value": 6000
+     },
+     {
+      "expr": "0.21*100000",
+      "fmt": "$",
+      "value": 21000
+     },
+     {
+      "expr": "0.21*100000+(0.35-0.20)*100000",
+      "fmt": "$",
+      "value": 36000
+     },
+     {
+      "expr": "(0.35-0.20)*100000",
+      "fmt": "$",
+      "value": 15000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§162(a)(1)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.162-7"
+    },
+    {
+     "src": "IRC",
+     "ref": "§301(c)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§11(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "REG-V-B-1007",
+   "type": "mcq",
+   "area": "V",
+   "group": "B",
+   "subgroup": "B.3",
+   "topic": "C corporations — formation, distributions and liquidation (supplement)",
+   "task": "Identify the rules for affiliated groups, consolidated returns and controlled groups.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Parent Corp. and its wholly owned subsidiaries Sub A and Sub B file a consolidated return on a calendar year. In 2026, Sub A sold land (adjusted basis $40,000) to Sub B for $100,000. In 2027, Sub B sold the land to an outside buyer for $75,000. Which statement correctly describes the group's recognized gain or loss?",
+   "exhibit": "",
+   "options": [
+    "A $60,000 gain in 2026 and a $25,000 loss in 2027",
+    "No gain in 2026, and a $25,000 loss in 2027",
+    "A $60,000 gain in 2026, and a $35,000 gain in 2027",
+    "No gain in 2026, and a $35,000 net gain in 2027"
+   ],
+   "answer": "D",
+   "rule_line": "In a consolidated return an intercompany gain is deferred and matched with the buyer's outside sale, so the group reports its single economic result when the property leaves the group.",
+   "why": {
+    "A": "This is the separate-return result. In a consolidated return, Sub A's gain on the intercompany sale is deferred until the land is sold outside the group.",
+    "B": "Reports only Sub B's loss. Sub A's deferred $60,000 gain is taken into account at the same time as Sub B's outside sale.",
+    "C": "Double counts. Sub A's gain is not recognized in 2026, and the group's total gain over both years equals only $35,000.",
+    "D": "Sub A's $60,000 intercompany gain is deferred and is taken into account in 2027 when the land leaves the group, together with Sub B's $25,000 loss ($100,000 basis - $75,000). The group reports $35,000 of net gain, its actual economic gain."
+   },
+   "steps": [
+    "Sub A intercompany gain: 100,000 - 40,000 = 60,000, deferred in 2026",
+    "Sub B outside sale in 2027: 75,000 - 100,000 = -25,000",
+    "2027 group result: 60,000 - 25,000 = 35,000 net gain"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "(100000-40000)+(75000-100000)",
+      "fmt": "$",
+      "value": 35000
+     },
+     {
+      "expr": "(100000-40000)+(75000-100000)",
+      "fmt": "$",
+      "value": 35000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "Reg.",
+     "ref": "§1.1502-13(c)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1502-13(d)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1012"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "C": "calc"
+   }
+  },
+  {
+   "id": "REG-V-C-1001",
+   "type": "mcq",
+   "area": "V",
+   "group": "C",
+   "subgroup": "C.2",
+   "topic": "S corporations — determination of ordinary business income (loss) and separately stated items",
+   "task": "Calculate ordinary business income (loss) and separately stated items for an S corporation for tax purposes.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Elena Voss expects her business to earn $300,000 in 2026 before any payment to her. If it is a partnership in which she is the only general partner, she pays self-employment tax on the whole amount. If it is an S corporation, she takes $120,000 of reasonable salary and the rest as a distribution. Assume the 2026 Social Security wage base is $184,500, Social Security tax is 12.4% (combined employer and employee), Medicare tax is 2.9% with no wage cap, and self-employment income is 92.35% of net earnings. Ignore income tax, Additional Medicare Tax and any deduction for the tax. By how much do the combined Social Security and Medicare taxes under the partnership exceed those under the S corporation?",
+   "exhibit": "",
+   "options": [
+    "$12,552",
+    "$13,218",
+    "$21,732",
+    "$24,029"
+   ],
+   "answer": "A",
+   "rule_line": "A general partner pays self-employment tax on all net earnings (with the 92.35% factor and the Social Security cap), while an S corporation owner pays payroll tax only on reasonable salary.",
+   "why": {
+    "A": "Partnership: net earnings $300,000 x 92.35% = $277,050; Social Security 12.4% x $184,500 = $22,878; Medicare 2.9% x $277,050 = $8,034; total $30,912. S corporation: 15.3% x $120,000 = $18,360. Difference $12,552.",
+    "B": "Applies the taxes to the full $300,000 and skips the 92.35% factor for self-employment income.",
+    "C": "Compares against only the employee half of the S corporation's payroll tax ($9,180). The corporation's half is also a real payroll tax on the salary.",
+    "D": "Applies 15.3% to all self-employment income and ignores the Social Security wage base of $184,500."
+   },
+   "steps": [
+    "Partnership: 300,000 x 0.9235 = 277,050; SS 12.4% x min(277,050, 184,500) = 22,878; Medicare 2.9% x 277,050 = 8,034.45; total 30,912.45",
+    "S corporation: 15.3% x 120,000 = 18,360",
+    "30,912.45 - 18,360 = 12,552.45"
+   ],
+   "calc_check": {
+    "expr": "(0.124*min(300000*0.9235,184500)+0.029*300000*0.9235)-0.153*120000",
+    "fmt": "$",
+    "value": 12552,
+    "distractors": {
+     "B": {
+      "expr": "(0.124*min(300000,184500)+0.029*300000)-0.153*120000",
+      "value": 13218
+     },
+     "C": {
+      "expr": "(0.124*min(300000*0.9235,184500)+0.029*300000*0.9235)-0.5*0.153*120000",
+      "value": 21732
+     },
+     "D": {
+      "expr": "0.153*300000*0.9235-0.153*120000",
+      "value": 24029
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1401(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1401(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1402(a)(12)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§3111"
+    },
+    {
+     "src": "IRC",
+     "ref": "§3121(a)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "limit"
+   }
+  },
+  {
+   "id": "REG-V-C-1002",
+   "type": "mcq",
+   "area": "V",
+   "group": "C",
+   "subgroup": "C.4",
+   "topic": "S corporations — distributions and corporate-level taxes (supplement)",
+   "task": "Calculate the tax treatment of S corporation distributions with and without accumulated earnings and profits, and identify corporate-level taxes on an S corporation.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Two corporations each distribute land (adjusted basis $30,000, fair market value $100,000) to their sole shareholders in 2026. Ridge Corp. is an S corporation; its shareholder's stock basis is $50,000, its accumulated adjustments account is $50,000, and it has no earnings and profits. Cove Corp. is a C corporation with ample earnings and profits. Which statement compares the results correctly?",
+   "exhibit": "",
+   "options": [
+    "Both corporations recognize $70,000 of gain; Ridge's shareholder reports that gain, has $20,000 of stock basis left and no dividend, and Cove's shareholder reports a $100,000 dividend",
+    "Only Cove recognizes gain; Ridge's shareholder has $0 of stock basis left and reports $50,000 of gain on the distribution in excess of basis",
+    "Both corporations recognize $70,000 of gain; Ridge's shareholder reports that gain and also a $100,000 dividend, and Cove's shareholder reports a $100,000 dividend",
+    "Neither corporation recognizes gain, because a distribution is not a sale, and both shareholders take a $30,000 basis in the land and report no income"
+   ],
+   "answer": "A",
+   "rule_line": "Section 311(b) makes any corporation recognize gain on distributing appreciated property; an S corporation passes that gain through (raising basis first), while a C corporation's shareholder is taxed on a dividend.",
+   "why": {
+    "A": "Section 311(b) makes both corporations recognize the $70,000 built-in gain. In the S corporation it passes through and raises basis to $120,000 before the $100,000 distribution reduces it to $20,000. The C corporation's shareholder has a dividend.",
+    "B": "Treats the S corporation as if it did not recognize gain on distributing appreciated property. Section 311(b) applies to S corporations too, and the gain raises basis first.",
+    "C": "Taxes the S shareholder twice. With no earnings and profits, the S distribution is tax-free to the extent of basis after the gain increases basis.",
+    "D": "A corporation recognizes gain on distributing appreciated property, and the shareholder's basis in the land is its $100,000 fair market value."
+   },
+   "steps": [
+    "Corporate gain: 100,000 - 30,000 = 70,000 in both entities",
+    "S shareholder basis: 50,000 + 70,000 = 120,000; distribution 100,000 tax-free; basis 20,000",
+    "C shareholder: 100,000 dividend (ample earnings and profits)"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "100000-30000",
+      "fmt": "$",
+      "value": 70000
+     },
+     {
+      "expr": "50000+70000-100000",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "100000-50000",
+      "fmt": "$",
+      "value": 50000
+     },
+     {
+      "expr": "50000+70000-100000",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "100000-50000",
+      "fmt": "$",
+      "value": 50000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§311(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1366(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1367(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1368(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§301(b),(d)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-C-1003",
+   "type": "mcq",
+   "area": "V",
+   "group": "C",
+   "subgroup": "C.1",
+   "topic": "S corporations — eligibility and election",
+   "task": "Recall eligible shareholders for an S corporation for tax purposes.",
+   "task_source": "지도.json",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Three trusts hold shares of Marlin Works, Inc., which wants to elect S status effective January 1, 2026. Trust 1 is a revocable trust wholly owned by its grantor, a U.S. citizen. Trust 2 is an irrevocable trust with one current income beneficiary, a U.S. citizen who must receive all income currently, and principal may be paid only to her. Trust 3 is an irrevocable trust that accumulates income for the benefit of three U.S. citizen children. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "All three trusts are eligible without any election, because trusts may hold S corporation stock",
+    "Trust 1 needs an ESBT election, Trust 2 can qualify only as an ESBT, and Trust 3 can qualify through a QSST election",
+    "Trust 3 qualifies only through a QSST election because it has several beneficiaries, and Trust 2 can qualify only as an ESBT",
+    "Trust 1 is eligible without any trust election, Trust 2 can qualify through a QSST or an ESBT election, and Trust 3 can qualify only through an ESBT election"
+   ],
+   "answer": "D",
+   "rule_line": "Only grantor trusts are S shareholders on their own; other trusts need a QSST (one income beneficiary, all income distributed) or an ESBT (multiple beneficiaries, accumulation allowed) election.",
+   "why": {
+    "A": "Only grantor trusts (and a few testamentary or voting trusts) are eligible by themselves. Other trusts need a QSST or ESBT election.",
+    "B": "Reverses the rules. A QSST allows only one income beneficiary, so it cannot fit Trust 3, and a wholly owned grantor trust needs no election.",
+    "C": "The QSST is for a single income beneficiary and the ESBT is the choice for several beneficiaries, so this swaps them.",
+    "D": "A grantor trust owned by a U.S. citizen is a permitted shareholder. Trust 2 meets the QSST requirements (one income beneficiary, all income distributed) and may also elect ESBT. Trust 3 has several beneficiaries and accumulates income, so only an ESBT election works."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1361(c)(2)(A)(i)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1361(d)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1361(e)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-V-C-1004",
+   "type": "mcq",
+   "area": "V",
+   "group": "C",
+   "subgroup": "C.1",
+   "topic": "S corporations — eligibility and election",
+   "task": "Identify situations in which S corporation status would be revoked or terminated for tax purposes.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Quill Works, Inc. was a calendar-year S corporation owned entirely by Hazel Robb. Its S election terminated effective June 1, 2026, when it created a second class of stock. At the end of the last S day (May 31, 2026), its accumulated adjustments account was $40,000 and Hazel's stock basis was $60,000. The corporation has $30,000 of earnings and profits. On December 20, 2026, it distributed $50,000 in cash to Hazel. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "The entire $50,000 is a dividend, because the corporation is now a C corporation",
+    "$40,000 is tax-free and reduces her basis to $20,000, and $10,000 is a dividend",
+    "The entire $50,000 is tax-free, because it does not exceed her $60,000 stock basis",
+    "$30,000 is a dividend and $20,000 reduces basis, because distributions come from earnings and profits first"
+   ],
+   "answer": "B",
+   "rule_line": "For one year after an S election ends, cash distributions are tax-free up to the accumulated adjustments account and only then are dividends from earnings and profits.",
+   "why": {
+    "A": "Ignores the post-termination transition period, during which distributions of money are tax-free to the extent of the accumulated adjustments account.",
+    "B": "The distribution falls within the post-termination transition period (one year after the last S day, to May 31, 2027). Money is tax-free to the extent of the accumulated adjustments account ($40,000), and the remaining $10,000 is a dividend from earnings and profits.",
+    "C": "Only the accumulated adjustments account amount is tax-free in the transition period. The excess is taxed as a dividend to the extent of earnings and profits.",
+    "D": "Reverses the order. In the post-termination transition period the accumulated adjustments account is applied first, then earnings and profits."
+   },
+   "steps": [
+    "Last S day 5/31/2026; the transition period runs to the later of 5/31/2027 or the due date of the last S return, so 12/20/2026 is inside it",
+    "AAA first: 40,000 tax-free, basis 60,000 - 40,000 = 20,000",
+    "Remaining 50,000 - 40,000 = 10,000 <= earnings and profits 30,000, so a 10,000 dividend"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "60000-40000",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "50000-40000",
+      "fmt": "$",
+      "value": 10000
+     },
+     {
+      "expr": "50000-20000",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "40000",
+      "fmt": "$",
+      "value": 40000
+     },
+     {
+      "expr": "60000-40000",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "50000-40000",
+      "fmt": "$",
+      "value": 10000
+     },
+     {
+      "expr": "30000",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "50000-30000",
+      "fmt": "$",
+      "value": 20000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1371(e)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1377(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§301(c)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-C-1005",
+   "type": "mcq",
+   "area": "V",
+   "group": "C",
+   "subgroup": "C.3",
+   "topic": "S corporations — basis of shareholder's interest",
+   "task": "Calculate a shareholder's stock basis in an S corporation resulting from business operations, cash contributions and cash distributions.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Dax Moreno is the sole shareholder of a corporation that has a $100,000 operating loss in 2026, its first year, and no income. His stock basis is $60,000, he has made no loans to the corporation, and he materially participates and is at risk to the extent of his basis. Which statement compares the result if the corporation is an S corporation with the result if it is a C corporation?",
+   "exhibit": "",
+   "options": [
+    "If S, Dax deducts $60,000 in 2026 and carries $40,000 forward at the shareholder level; if C, he deducts nothing and the corporation has a $100,000 net operating loss carryforward",
+    "If S, Dax deducts $100,000 in 2026 because he is at risk; if C, the loss offsets his other income only after he sells the stock",
+    "If S, Dax deducts nothing because losses are limited to distributions; if C, he deducts $60,000, the amount of his basis",
+    "If S, Dax deducts $60,000 and the other $40,000 is lost permanently; if C, the corporation carries the $100,000 back two years"
+   ],
+   "answer": "A",
+   "rule_line": "S corporation losses pass through but are deductible only up to shareholder basis (excess is suspended); a C corporation's loss stays inside as a net operating loss carryforward.",
+   "why": {
+    "A": "A shareholder's S corporation loss deduction is limited to stock and debt basis ($60,000); the excess is suspended. A C corporation's loss stays in the corporation as a net operating loss carryforward.",
+    "B": "The basis limit caps the S deduction at $60,000. A C corporation's loss never passes to the shareholder, even on a sale.",
+    "C": "Reverses the entities. Basis limits S corporation losses, and a C corporation shareholder deducts none of the corporation's loss.",
+    "D": "The disallowed S loss is carried forward indefinitely, not lost, and a 2026 C corporation net operating loss is carried forward only."
+   },
+   "steps": [
+    "S: deduct min(100,000, basis 60,000) = 60,000; suspended 40,000 carried forward",
+    "C: no pass-through; corporate NOL 100,000 carried forward"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "100000-60000",
+      "fmt": "$",
+      "value": 40000
+     },
+     {
+      "expr": "100000-60000",
+      "fmt": "$",
+      "value": 40000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1366(a),(d)(1),(d)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§172(b)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-C-1006",
+   "type": "mcq",
+   "area": "V",
+   "group": "C",
+   "subgroup": "C.1",
+   "topic": "S corporations — eligibility and election",
+   "task": "Identify situations in which S corporation status would be revoked or terminated for tax purposes.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Calico Products, Inc. is a calendar-year S corporation with three shareholders: Ava Tran (45% of the shares, voting), Ben Ruiz (30%, nonvoting) and Cara Diaz (25%, voting). On March 10, 2026, Ava alone signed and filed a statement revoking the S election, with no effective date specified. On March 20, 2026, Ava and Cara together signed and filed a new revocation statement, again with no effective date. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "The March 10 revocation is valid and takes effect January 1, 2026, because a revocation made in the first 2.5 months applies to the whole year",
+    "The March 20 revocation is valid and takes effect March 20, 2026, so the year splits into S and C short years",
+    "Neither revocation is valid, because a revocation requires the consent of every shareholder, including the nonvoting shareholder",
+    "The March 20 revocation is valid and takes effect January 1, 2027, so the corporation remains an S corporation for all of 2026"
+   ],
+   "answer": "D",
+   "rule_line": "An S revocation needs consent of holders of more than half of all shares, and one filed after the 15th day of the third month takes effect the next January 1.",
+   "why": {
+    "A": "The timing rule is right for a valid revocation, but Ava's 45% is not more than half of all shares, so the March 10 statement is invalid.",
+    "B": "With no effective date specified, a revocation filed after the 15th day of the third month takes effect on the first day of the next year. It does not split the year.",
+    "C": "Only shareholders holding more than half of the shares (voting and nonvoting) must consent, not all of them.",
+    "D": "A revocation needs consent of shareholders holding more than half of all shares, voting and nonvoting. Ava alone holds 45%, so March 10 fails; Ava and Cara hold 70%. A valid revocation filed after March 15 (the 15th day of the third month) is effective the next January 1."
+   },
+   "steps": [
+    "March 10 statement: Ava 45% is not more than 50%, invalid",
+    "March 20 statement: Ava + Cara = 45% + 25% = 70% > 50%, valid; filed after March 15, so effective January 1, 2027"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "100*45",
+      "fmt": "%",
+      "value": 4500
+     },
+     {
+      "expr": "100*(45+25)",
+      "fmt": "%",
+      "value": 7000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1362(d)(1)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1362-6(a)(3)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-V-C-1007",
+   "type": "mcq",
+   "area": "V",
+   "group": "C",
+   "subgroup": "C.4",
+   "topic": "S corporations — distributions and corporate-level taxes (supplement)",
+   "task": "Calculate the tax treatment of S corporation distributions with and without accumulated earnings and profits, and identify corporate-level taxes on an S corporation.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Wolf Creek, Inc. converted from a C corporation to an S corporation on January 1, 2024. In 2026 it sold equipment for a $150,000 gain that is entirely built in from the conversion date, and it had $50,000 of other ordinary business income that is not built in. Its net unrealized built-in gain at conversion was $400,000, and its taxable income for 2026 computed as if it were a C corporation would be $500,000. Assume a 21% rate. Wolf Creek has one shareholder. By how much do these items increase the shareholder's stock basis for 2026?",
+   "exhibit": "",
+   "options": [
+    "$118,500",
+    "$158,000",
+    "$168,500",
+    "$200,000"
+   ],
+   "answer": "C",
+   "rule_line": "Built-in gains tax is paid by the S corporation on recognized built-in gain in the five-year recognition period, and that tax reduces the gain passed through to shareholders.",
+   "why": {
+    "A": "Leaves out the $50,000 of ordinary income, which also passes through and increases basis.",
+    "B": "Applies the 21% tax to all income. The tax applies only to the recognized built-in gain.",
+    "C": "Built-in gains tax = 21% x lesser of the $150,000 recognized built-in gain, the $400,000 net unrealized built-in gain and the $500,000 taxable income = $31,500. The tax reduces the gain that passes through ($118,500). Add $50,000 of ordinary income: $168,500.",
+    "D": "Ignores the corporate-level built-in gains tax, which reduces the pass-through gain."
+   },
+   "steps": [
+    "Tax: 21% x min(150,000, 400,000, 500,000) = 31,500",
+    "Pass-through gain: 150,000 - 31,500 = 118,500",
+    "Basis increase: 118,500 + 50,000 = 168,500"
+   ],
+   "calc_check": {
+    "expr": "(150000-0.21*150000)+50000",
+    "fmt": "$",
+    "value": 168500,
+    "distractors": {
+     "A": {
+      "expr": "150000-0.21*150000",
+      "value": 118500
+     },
+     "B": {
+      "expr": "200000-0.21*200000",
+      "value": 158000
+     },
+     "D": {
+      "expr": "150000+50000",
+      "value": 200000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1374(b)(1),(d)(7)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1366(f)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1367(a)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-D-1001",
+   "type": "mcq",
+   "area": "V",
+   "group": "D",
+   "subgroup": "D.3",
+   "topic": "Partnerships — distributions, sale of an interest and basis adjustments (supplement)",
+   "task": "Determine the tax consequences of partnership distributions and of the sale or exchange of a partnership interest, including the basis adjustment election.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Nora Beck contributed land with an adjusted basis of $40,000 and a fair market value of $100,000 to Eastgate Partners. The land has no debt. One month later the partnership distributed $30,000 in cash to Nora; the payment was not a return of operating profits and was not dependent on partnership income. How much gain does Nora recognize, and what is the partnership's basis in the land?",
+   "exhibit": "",
+   "options": [
+    "No gain, and a $40,000 basis",
+    "$18,000 of gain, and a $58,000 basis",
+    "$30,000 of gain, and a $40,000 basis",
+    "$18,000 of gain, and a $40,000 basis"
+   ],
+   "answer": "B",
+   "rule_line": "A contribution and a related distribution within two years is presumed a disguised sale of the part of the property paid for.",
+   "why": {
+    "A": "Treats the exchange as fully tax-free under the contribution rules. The related cash payment within two years is a disguised sale.",
+    "B": "A contribution followed within two years by a related distribution is presumed to be a sale of part of the property (30% here). Gain = $30,000 - 30% x $40,000 = $18,000. The partnership's basis is $28,000 carryover for the contributed 70% plus $30,000 cost for the purchased 30%: $58,000.",
+    "C": "Treats the entire cash as gain without recovering any basis, and gives no cost basis for the purchased portion.",
+    "D": "Gets the gain right but forgets that the partnership bought 30% of the land for $30,000, which gives it a cost basis in that part."
+   },
+   "steps": [
+    "Sold portion: 30,000 / 100,000 = 30% of the land",
+    "Gain: 30,000 - 30% x 40,000 = 18,000",
+    "Partnership basis: 70% x 40,000 = 28,000 carryover + 30,000 cost = 58,000"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "30000-0.3*40000",
+      "fmt": "$",
+      "value": 18000
+     },
+     {
+      "expr": "0.7*40000+30000",
+      "fmt": "$",
+      "value": 58000
+     },
+     {
+      "expr": "30000-0.3*40000",
+      "fmt": "$",
+      "value": 18000
+     },
+     {
+      "expr": "0.7*40000+30000",
+      "fmt": "$",
+      "value": 58000
+     },
+     {
+      "expr": "30000-0.3*40000",
+      "fmt": "$",
+      "value": 18000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§707(a)(2)(B)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.707-3(a),(f)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§723"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1012"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "REG-V-D-1002",
+   "type": "mcq",
+   "area": "V",
+   "group": "D",
+   "subgroup": "D.2",
+   "topic": "Partnerships — basis of partner's interest",
+   "task": "Calculate the partner's basis in a partnership resulting from business operations, cash contributions, cash distributions and changes in existing partnership liabilities.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Faye Owens contributed $50,000 in cash to Lakeview Partners for a 30% interest. During 2026 the partnership borrowed from a bank, and Faye's share of the partnership's liabilities at year-end is $30,000. Her share of 2026 ordinary income is $20,000, and the partnership distributed $10,000 in cash to her. Which statement correctly gives her basis in the partnership interest and the tax-basis capital account on her Schedule K-1?",
+   "exhibit": "",
+   "options": [
+    "Interest basis $90,000; tax-basis capital $60,000",
+    "Interest basis $60,000; tax-basis capital $60,000",
+    "Interest basis $90,000; tax-basis capital $90,000",
+    "Interest basis $60,000; tax-basis capital $90,000"
+   ],
+   "answer": "A",
+   "rule_line": "Outside basis includes the partner's share of partnership liabilities, while tax-basis capital on the K-1 does not.",
+   "why": {
+    "A": "Outside basis includes her $30,000 share of liabilities: $50,000 + $30,000 + $20,000 - $10,000 = $90,000. Tax-basis capital excludes liabilities: $50,000 + $20,000 - $10,000 = $60,000.",
+    "B": "Leaves the $30,000 share of partnership liabilities out of outside basis.",
+    "C": "Puts the liability share into the capital account too. Tax-basis capital does not include liabilities.",
+    "D": "Reverses the two figures. Liabilities increase outside basis, not the capital account."
+   },
+   "steps": [
+    "Outside basis: 50,000 + 30,000 + 20,000 - 10,000 = 90,000",
+    "Tax capital: 50,000 + 20,000 - 10,000 = 60,000"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "50000+30000+20000-10000",
+      "fmt": "$",
+      "value": 90000
+     },
+     {
+      "expr": "50000+20000-10000",
+      "fmt": "$",
+      "value": 60000
+     },
+     {
+      "expr": "50000+30000+20000-10000",
+      "fmt": "$",
+      "value": 90000
+     },
+     {
+      "expr": "50000+20000-10000",
+      "fmt": "$",
+      "value": 60000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§705(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§752(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§722"
+    },
+    {
+     "src": "Form",
+     "ref": "1065 Schedule K-1 instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-D-1003",
+   "type": "mcq",
+   "area": "V",
+   "group": "D",
+   "subgroup": "D.4",
+   "topic": "Partnerships — allocations, formation and tax year (supplement)",
+   "task": "Determine partnership allocations (special allocations, contributed property), formation consequences and the required tax year.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Nina Park owns land with an adjusted basis of $30,000 and a fair market value of $100,000, subject to a $50,000 recourse mortgage she took out several years ago. She and a second owner, who will contribute $50,000 in cash, will form either (1) a partnership, in which both are general partners sharing liabilities equally, or (2) a corporation in which each receives 50% of the stock. In either case the entity assumes the mortgage. What result does Nina have under each structure?",
+   "exhibit": "",
+   "options": [
+    "(1) $20,000 of gain and a $30,000 basis in the partnership interest; (2) $20,000 of gain and a $0 basis in the stock",
+    "(1) No gain and a $30,000 basis in the partnership interest; (2) $20,000 of gain and a $0 basis in the stock",
+    "(1) No gain and a $5,000 basis in the partnership interest; (2) no gain and a $30,000 basis in the stock",
+    "(1) No gain and a $5,000 basis in the partnership interest; (2) $20,000 of gain and a $0 basis in the stock"
+   ],
+   "answer": "D",
+   "rule_line": "Liabilities exceeding basis are taxable gain on a corporate transfer, but in a partnership only net liability relief above basis is gain.",
+   "why": {
+    "A": "Applies the corporate excess-liability rule to the partnership. A partnership contribution triggers gain only if net liability relief exceeds basis.",
+    "B": "Ignores the liability adjustments in the partnership, where relief and her share reduce basis to $5,000.",
+    "C": "Ignores that the corporation's assumption of liabilities exceeding basis is gain, and that the liabilities reduce her stock basis.",
+    "D": "Partnership: liability relief of $50,000 less her $25,000 share is a net $25,000, below basis, so no gain; basis $30,000 - $25,000 = $5,000. Corporation: liabilities of $50,000 exceed her $30,000 basis by $20,000, which is gain, and stock basis is $30,000 - $50,000 + $20,000 = $0."
+   },
+   "steps": [
+    "Partnership: relief 50,000 - retained share 25,000 = 25,000 < basis 30,000, no gain; basis 30,000 - 25,000 = 5,000",
+    "Corporation: 50,000 - 30,000 = 20,000 gain; stock basis 30,000 - 50,000 + 20,000 = 0"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "50000-25000",
+      "fmt": "$",
+      "value": 25000
+     },
+     {
+      "expr": "30000-25000",
+      "fmt": "$",
+      "value": 5000
+     },
+     {
+      "expr": "50000-30000",
+      "fmt": "$",
+      "value": 20000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§721(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§722"
+    },
+    {
+     "src": "IRC",
+     "ref": "§752(a),(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§357(c)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§358(d)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-V-D-1004",
+   "type": "mcq",
+   "area": "V",
+   "group": "D",
+   "subgroup": "D.2",
+   "topic": "Partnerships — basis of partner's interest",
+   "task": "Calculate the partner's basis in a partnership resulting from business operations, cash contributions, cash distributions and changes in existing partnership liabilities.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Zoe Kim is a general partner who materially participates in a partnership. At the start of 2026 her basis in the partnership interest is $45,000, which includes $25,000 of her share of a nonrecourse loan that is not qualified nonrecourse financing, and her amount at risk is $20,000. Her share of the partnership's 2026 ordinary loss is $60,000, and no passive activity limit applies. How much of the loss can she deduct in 2026, and how is the rest treated?",
+   "exhibit": "",
+   "options": [
+    "$45,000 is deductible; $15,000 is suspended by the basis limit",
+    "$20,000 is deductible; $15,000 is suspended by the basis limit and $25,000 is suspended by the at-risk limit",
+    "$60,000 is deductible, because she is a general partner who materially participates",
+    "$20,000 is deductible; the other $40,000 is suspended by the basis limit"
+   ],
+   "answer": "B",
+   "rule_line": "A partner's loss must clear the basis limit, then the at-risk limit, then the passive limit; each excess is suspended separately.",
+   "why": {
+    "A": "Applies only the basis limit. The nonrecourse loan share is in basis but not at risk, so the at-risk limit cuts the deduction to $20,000.",
+    "B": "The basis limit allows $45,000 and suspends $15,000. Of the $45,000, only her $20,000 at risk is deductible, and $25,000 is suspended by the at-risk rules.",
+    "C": "Material participation affects the passive loss rules, not the basis and at-risk limits.",
+    "D": "Lumps the whole disallowed amount into the basis limit. Only $15,000 exceeds basis; $25,000 is suspended by the at-risk limit."
+   },
+   "steps": [
+    "Basis: allowed 45,000; suspended 60,000 - 45,000 = 15,000",
+    "At-risk: allowed 20,000; suspended 45,000 - 20,000 = 25,000",
+    "Deductible 20,000"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "60000-45000",
+      "fmt": "$",
+      "value": 15000
+     },
+     {
+      "expr": "45000-20000",
+      "fmt": "$",
+      "value": 25000
+     },
+     {
+      "expr": "60000-20000",
+      "fmt": "$",
+      "value": 40000
+     },
+     {
+      "expr": "60000-45000",
+      "fmt": "$",
+      "value": 15000
+     },
+     {
+      "expr": "45000-20000",
+      "fmt": "$",
+      "value": 25000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§704(d)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§465(a)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.704-1(d)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-D-1005",
+   "type": "mcq",
+   "area": "V",
+   "group": "D",
+   "subgroup": "D.3",
+   "topic": "Partnerships — distributions, sale of an interest and basis adjustments (supplement)",
+   "task": "Determine the tax consequences of partnership distributions and of the sale or exchange of a partnership interest, including the basis adjustment election.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Rowan Tate retired from Tate & Fenn, a cash-method law partnership in which capital is not a material income-producing factor, and received $150,000 in cash in complete liquidation of her interest. Her basis in the interest was $100,000. Her share of the partnership's assets was $120,000 of cash and other capital property and $30,000 of unrealized receivables with a zero basis. The agreement makes no payment for goodwill, and the payment is a fixed sum. What is the character of her income?",
+   "exhibit": "",
+   "options": [
+    "$30,000 of ordinary income and $20,000 of capital gain",
+    "$50,000 of capital gain",
+    "$50,000 of ordinary income",
+    "$20,000 of ordinary income and $30,000 of capital gain"
+   ],
+   "answer": "A",
+   "rule_line": "In a service partnership, liquidating payments for unrealized receivables (and unagreed goodwill) are ordinary section 736(a) income; payments for other property are section 736(b) distributions.",
+   "why": {
+    "A": "The $30,000 paid for unrealized receivables is a section 736(a) payment (ordinary income). The other $120,000 is a section 736(b) distribution: $120,000 - $100,000 basis = $20,000 capital gain.",
+    "B": "Treats the whole payment as a sale of the interest. The part paid for unrealized receivables in a service partnership is ordinary income.",
+    "C": "Treats every dollar as ordinary. Only the $30,000 for unrealized receivables is a section 736(a) payment; the rest gives capital gain.",
+    "D": "Reverses the two amounts. The receivables portion ($30,000) is ordinary and the excess over basis ($20,000) is capital gain."
+   },
+   "steps": [
+    "Payment for receivables 30,000: ordinary income under 736(a)",
+    "Property payment 120,000 vs basis 100,000: 20,000 capital gain",
+    "Total 50,000 = 150,000 - 100,000"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "120000-100000",
+      "fmt": "$",
+      "value": 20000
+     },
+     {
+      "expr": "150000-100000",
+      "fmt": "$",
+      "value": 50000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§736(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§736(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§731(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§751(c)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "REG-V-D-1006",
+   "type": "mcq",
+   "area": "V",
+   "group": "D",
+   "subgroup": "D.4",
+   "topic": "Partnerships — allocations, formation and tax year (supplement)",
+   "task": "Determine partnership allocations (special allocations, contributed property), formation consequences and the required tax year.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Zane Ortiz bought a 20% interest in Delta Partners, a calendar-year partnership, from an existing partner on July 1, 2026. Delta's 2026 ordinary business income was $240,000, earned evenly through the year, on gross income of $600,000. It also sold a capital asset outside the ordinary course on November 1, 2026 for a $100,000 gain. The partners have agreed in writing to use the proration method for a change in interests, and Zane's percentage did not change after July 1. What total 2026 income does Zane report from these items?",
+   "exhibit": "",
+   "options": [
+    "$24,197",
+    "$34,279",
+    "$44,197",
+    "$68,000"
+   ],
+   "answer": "C",
+   "rule_line": "Under an agreed proration method a new partner's share of ordinary income is prorated by days, but extraordinary items such as a capital asset sale are allocated to the partners at the date of the item.",
+   "why": {
+    "A": "Includes only the prorated ordinary income and leaves out his 20% of the November gain.",
+    "B": "Prorates the gain as well as ordinary income. Extraordinary items are allocated on the day they occur.",
+    "C": "Ordinary income is prorated: $240,000 x 20% x 184/365 = $24,197. The $100,000 gain is an extraordinary item allocated to the partners on the date it occurred, and Zane was a partner: 20% = $20,000. Total $44,197.",
+    "D": "Gives Zane 20% of the full-year amounts, as if he had been a partner all year."
+   },
+   "steps": [
+    "Days July 1 to December 31 = 184",
+    "Ordinary: 240,000 x 20% x 184/365 = 24,197",
+    "Extraordinary gain on Nov 1: 20% x 100,000 = 20,000",
+    "Total 44,197"
+   ],
+   "calc_check": {
+    "expr": "0.2*240000*days('2026-07-01','2027-01-01')/365+0.2*100000",
+    "fmt": "$",
+    "value": 44197,
+    "distractors": {
+     "A": {
+      "expr": "0.2*240000*days('2026-07-01','2027-01-01')/365",
+      "value": 24197
+     },
+     "B": {
+      "expr": "0.2*(240000+100000)*days('2026-07-01','2027-01-01')/365",
+      "value": 34279
+     },
+     "D": {
+      "expr": "0.2*(240000+100000)",
+      "value": 68000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§706(d)(1)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.706-4(a)(1)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.706-4(e)(2)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-D-1007",
+   "type": "mcq",
+   "area": "V",
+   "group": "D",
+   "subgroup": "D.4",
+   "topic": "Partnerships — allocations, formation and tax year (supplement)",
+   "task": "Determine partnership allocations (special allocations, contributed property), formation consequences and the required tax year.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Ann and Ben are equal partners in Camden Partners. Ann contributed land with an adjusted basis of $40,000 and a fair market value of $100,000, and Ben contributed $100,000 in cash. Three years later the partnership sold the land for $70,000. The partnership has no other items. What does each partner report from the sale under the traditional method with the ceiling rule and under the remedial method?",
+   "exhibit": "",
+   "options": [
+    "Traditional: Ann reports $30,000 of gain and Ben reports a $15,000 loss. Remedial: the same amounts",
+    "Traditional: Ann reports $45,000 of gain and Ben reports a $15,000 loss. Remedial: Ann reports $30,000 of gain and Ben reports no loss",
+    "Both methods: Ann reports $30,000 of gain and Ben reports no loss, because the ceiling rule applies under every method",
+    "Traditional: Ann reports $30,000 of gain and Ben reports no loss. Remedial: Ann reports $45,000 of gain and Ben reports a $15,000 loss"
+   ],
+   "answer": "D",
+   "rule_line": "Under the traditional method the ceiling rule can leave the non-contributing partner with less tax loss than book loss, while the remedial method creates offsetting items to fix it.",
+   "why": {
+    "A": "Gives Ben a loss under the traditional method. The ceiling rule limits allocations to the partnership's actual tax items, and there is only a gain.",
+    "B": "Swaps the methods. The remedial method, not the traditional method, creates offsetting remedial items.",
+    "C": "The remedial method is designed to override the ceiling rule by creating offsetting remedial income and loss.",
+    "D": "The tax gain is $70,000 - $40,000 = $30,000, and the book loss is $30,000, shared equally. The ceiling rule stops the traditional method from giving Ben a tax loss. The remedial method creates a $15,000 loss for Ben and equal income for Ann."
+   },
+   "steps": [
+    "Book: 70,000 - 100,000 = -30,000, so -15,000 each",
+    "Tax: 70,000 - 40,000 = +30,000 gain; traditional ceiling rule: Ann 30,000, Ben 0",
+    "Remedial: Ben gets a 15,000 remedial loss, Ann 15,000 remedial income: Ann 45,000, Ben -15,000"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "70000-40000",
+      "fmt": "$",
+      "value": 30000
+     },
+     {
+      "expr": "30000+15000",
+      "fmt": "$",
+      "value": 45000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§704(c)(1)(A)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.704-3(b)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.704-3(d)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-V-E-1001",
+   "type": "mcq",
+   "area": "V",
+   "group": "E",
+   "subgroup": "E",
+   "topic": "Limited liability companies",
+   "task": "Recall the tax classification options for a limited liability company for tax purposes.",
+   "task_source": "지도.json",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Quinn Dawson and Rex Holt are equal members of an LLC that expects $400,000 of net income in 2026 and will distribute all of its after-tax income. If it keeps its default classification, each member pays 35% on his share. If it elects to be taxed as a corporation, it pays 21% and each member pays 20% on the dividends he receives. Ignore the qualified business income deduction, self-employment tax, net investment income tax and state taxes. Which structure produces less total federal income tax, and by how much?",
+   "exhibit": "",
+   "options": [
+    "The corporate election, by $7,200",
+    "The corporate election, by $56,000",
+    "The default partnership classification, by $7,200",
+    "The default partnership classification, by $63,200"
+   ],
+   "answer": "C",
+   "rule_line": "Corporate classification adds a second layer of tax on distributed income, so a 21% corporate rate does not beat a 35% pass-through rate once dividends are taxed.",
+   "why": {
+    "A": "Reverses the comparison. The dividend tax on the after-tax income more than offsets the lower 21% corporate rate.",
+    "B": "Compares only the 35% individual rate with the 21% corporate rate and ignores the second tax on the dividends.",
+    "C": "Partnership: 35% x $400,000 = $140,000. Corporation: $84,000 of corporate tax plus 20% x $316,000 = $63,200 of dividend tax = $147,200. The partnership is $7,200 lower.",
+    "D": "Uses only the dividend tax as the difference. The corporation's $84,000 of tax is also part of the comparison."
+   },
+   "steps": [
+    "Partnership: 35% x 400,000 = 140,000",
+    "Corporation: 21% x 400,000 = 84,000; dividends 400,000 - 84,000 = 316,000 x 20% = 63,200; total 147,200",
+    "147,200 - 140,000 = 7,200, so the partnership costs less"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "0.35*400000",
+      "fmt": "$",
+      "value": 140000
+     },
+     {
+      "expr": "0.21*400000+0.2*(400000-0.21*400000)",
+      "fmt": "$",
+      "value": 147200
+     },
+     {
+      "expr": "0.21*400000+0.2*(400000-0.21*400000)-0.35*400000",
+      "fmt": "$",
+      "value": 7200
+     },
+     {
+      "expr": "0.35*400000-0.21*400000",
+      "fmt": "$",
+      "value": 56000
+     },
+     {
+      "expr": "0.21*400000+0.2*(400000-0.21*400000)-0.35*400000",
+      "fmt": "$",
+      "value": 7200
+     },
+     {
+      "expr": "0.35*400000-0.21*400000",
+      "fmt": "$",
+      "value": 56000
+     },
+     {
+      "expr": "0.2*(400000-0.21*400000)",
+      "fmt": "$",
+      "value": 63200
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "Reg.",
+     "ref": "§301.7701-3(b)(1)(i)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§11(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§701"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(h)(11)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "REG-V-E-1002",
+   "type": "mcq",
+   "area": "V",
+   "group": "E",
+   "subgroup": "E",
+   "topic": "Limited liability companies",
+   "task": "Recall the tax classification options for a limited liability company for tax purposes.",
+   "task_source": "지도.json",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Tri-Lakes Holdings, LLC has two equal members and is classified as a partnership. Its assets have an adjusted basis of $160,000 and a fair market value of $400,000, and it has $200,000 of business liabilities. Effective January 1, 2027, it files Form 8832 to be taxed as a corporation. Treat the deemed transactions as the partnership contributing its assets and liabilities to a new corporation for stock and then liquidating. How much gain is recognized on the deemed contribution, and what is the corporation's aggregate basis in the assets?",
+   "exhibit": "",
+   "options": [
+    "No gain and a $160,000 basis",
+    "$40,000 of gain and a $200,000 basis",
+    "$240,000 of gain and a $400,000 basis",
+    "$40,000 of gain and a $160,000 basis"
+   ],
+   "answer": "B",
+   "rule_line": "In the deemed assets-over conversion of a partnership to a corporation, liabilities exceeding asset basis are taxable gain under section 357(c).",
+   "why": {
+    "A": "Assumes the deemed transfer is fully tax-free. When liabilities exceed basis, the excess is gain.",
+    "B": "The liabilities assumed ($200,000) exceed the assets' basis ($160,000), so section 357(c) triggers $40,000 of gain. The corporation's basis is the $160,000 carryover plus the $40,000 gain: $200,000.",
+    "C": "Taxes the transfer as a sale at fair market value. Section 351 still applies; only the liability excess is gain.",
+    "D": "Recognizes the gain but forgets that recognized gain increases the corporation's carryover basis."
+   },
+   "steps": [
+    "Liabilities 200,000 - basis 160,000 = 40,000 gain",
+    "Corporation basis: 160,000 + 40,000 = 200,000"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "200000-160000",
+      "fmt": "$",
+      "value": 40000
+     },
+     {
+      "expr": "160000+40000",
+      "fmt": "$",
+      "value": 200000
+     },
+     {
+      "expr": "400000-160000",
+      "fmt": "$",
+      "value": 240000
+     },
+     {
+      "expr": "200000-160000",
+      "fmt": "$",
+      "value": 40000
+     },
+     {
+      "expr": "160000+40000",
+      "fmt": "$",
+      "value": 200000
+     },
+     {
+      "expr": "400000-160000",
+      "fmt": "$",
+      "value": 240000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "Reg.",
+     "ref": "§301.7701-3(g)(1)(i)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§351(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§357(c)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§362(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "REG-V-E-1003",
+   "type": "mcq",
+   "area": "V",
+   "group": "E",
+   "subgroup": "E",
+   "topic": "Limited liability companies",
+   "task": "Recall the tax classification options for a limited liability company for tax purposes.",
+   "task_source": "지도.json",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Ivy Marsh owns 100% of Marsh Equipment, LLC, which has made no election, and Pat buys her entire membership interest. Jo Kim owns 50% of Kim & Lee, LLC, which is taxed as a partnership, and Lou buys Jo's entire 50% interest for $45,000. Each LLC's only asset is equipment with an adjusted basis of $30,000 and a fair market value of $90,000, and no election to adjust the basis of partnership assets is in effect. Which statement about the buyers' basis in the equipment is correct?",
+   "exhibit": "",
+   "options": [
+    "Pat's basis in the equipment is $90,000, and Lou's share of the partnership's basis in the equipment is $15,000",
+    "Pat's basis in the equipment is $30,000, and Lou's share of the partnership's basis is $45,000",
+    "Pat's basis in the equipment is $90,000, and Lou's share of the partnership's basis is $45,000",
+    "Pat's basis in the equipment is $30,000, and Lou's share of the partnership's basis is $15,000"
+   ],
+   "answer": "A",
+   "rule_line": "Buying all of a disregarded LLC is an asset purchase with cost basis, but buying a partnership interest leaves inside asset basis unchanged unless a section 754 election is made.",
+   "why": {
+    "A": "Buying all of a single-member LLC is treated as buying its assets, so Pat takes a cost basis of $90,000. Lou buys a partnership interest; without a section 754 election the partnership's inside basis is unchanged, so his share is 50% x $30,000 = $15,000.",
+    "B": "Reverses the treatment. The single-member LLC purchase is an asset purchase, and a partnership interest purchase does not change inside basis without an election.",
+    "C": "Gives Lou a cost basis inside the partnership. His $45,000 cost is his outside basis in the interest, not the partnership's basis in the equipment.",
+    "D": "Treats Pat as buying stock-like interest with carryover basis. A disregarded entity's owner is treated as owning the assets directly, so Pat buys the assets."
+   },
+   "steps": [
+    "Single-member LLC: asset purchase, basis = 90,000 (cost)",
+    "Partnership interest: outside basis 45,000; inside share 50% x 30,000 = 15,000 without section 754"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "0.5*30000",
+      "fmt": "$",
+      "value": 15000
+     },
+     {
+      "expr": "0.5*30000",
+      "fmt": "$",
+      "value": 15000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "Rev.",
+     "ref": "Rul. 99-5"
+    },
+    {
+     "src": "IRC",
+     "ref": "§743(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§754"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§301.7701-3(b)(1)(ii)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-E-1004",
+   "type": "mcq",
+   "area": "V",
+   "group": "E",
+   "subgroup": "E",
+   "topic": "Limited liability companies",
+   "task": "Recall the tax classification options for a limited liability company for tax purposes.",
+   "task_source": "지도.json",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Baywater Advisors, LLC has three members and made no Form 8832 election, so it has been taxed as a partnership. One member is Halo Ventures, LLC, which is itself classified as a partnership. The other two members are U.S. individuals. On February 1, 2026, Baywater timely filed Form 2553 asking to be an S corporation effective January 1, 2026, and did not file Form 8832. Which statement is correct for 2026?",
+   "exhibit": "",
+   "options": [
+    "The deemed association election takes effect anyway, so Baywater is a C corporation for 2026 and files Form 1120",
+    "The S election is valid because an LLC member is treated as a corporation for S corporation eligibility purposes",
+    "Baywater is an S corporation, but Halo Ventures' interest is treated as a second class of stock",
+    "The S election is invalid because a partnership is not an eligible shareholder, no association election is deemed made, and Baywater remains a partnership that files Form 1065"
+   ],
+   "answer": "D",
+   "rule_line": "A timely Form 2553 from an LLC is a deemed association election only if the entity already meets the small business corporation rules, such as having eligible shareholders.",
+   "why": {
+    "A": "The deemed association election is made only if the entity meets all other requirements to be a small business corporation as of the effective date.",
+    "B": "A partnership, even one that is an LLC, is not a permitted S corporation shareholder.",
+    "C": "Ineligible shareholders do not create a second class of stock; they make the corporation ineligible.",
+    "D": "Filing Form 2553 is a deemed election to be an association only if the entity otherwise meets the small business corporation requirements. With a partnership member it does not, so nothing changes."
+   },
+   "cite": [
+    {
+     "src": "Reg.",
+     "ref": "§301.7701-3(c)(1)(v)(C)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1361(b)(1)(B)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1362(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-V-E-1005",
+   "type": "mcq",
+   "area": "V",
+   "group": "E",
+   "subgroup": "E",
+   "topic": "Limited liability companies",
+   "task": "Recall the tax classification options for a limited liability company for tax purposes.",
+   "task_source": "지도.json",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Redwood Supply, LLC was formed in 2020 with two members and was taxed as a partnership until it filed Form 8832 electing to be taxed as a corporation effective January 1, 2024. In 2026 the members ask two questions. (1) Can the LLC elect S status effective January 1, 2026, by filing Form 2553 by the March 2026 due date? (2) Can it file Form 8832 effective January 1, 2026, to go back to partnership classification? Assume all S corporation requirements are met and the IRS has granted no relief. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "(1) Yes; (2) Yes, because the 60-month limit applies only to a newly formed entity's first election",
+    "(1) No, because an S election is a change in classification barred until 2029; (2) No",
+    "(1) Yes, it can file Form 2553 as a corporation without a new Form 8832; (2) No, a change in classification is barred until January 1, 2029",
+    "(1) No, because an LLC taxed as a corporation cannot make an S election; (2) Yes"
+   ],
+   "answer": "C",
+   "rule_line": "An LLC already taxed as a corporation can elect S status freely, but a further change of classification by election is barred for 60 months.",
+   "why": {
+    "A": "The 60-month limit applies to any change in classification after an election, not only the first one.",
+    "B": "An S election by an entity already classified as a corporation is not a change in classification, so the 60-month rule does not block it.",
+    "C": "An entity already classified as a corporation may elect S status without changing its classification. A change of classification by election cannot occur during the 60 months after the effective date of the last election (January 1, 2024 plus 60 months).",
+    "D": "An LLC taxed as a corporation can elect S status, and returning to partnership status is barred for 60 months."
+   },
+   "steps": [
+    "March 15, 2026 is a Sunday (weekday 6), so the due date moves to Monday, March 16",
+    "Election effective 1/1/2024 + 60 months: earliest change 1/1/2029"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "wday('2026-03-15')",
+      "fmt": "n",
+      "value": 6
+     },
+     {
+      "expr": "2024+5",
+      "fmt": "n",
+      "value": 2029
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "Reg.",
+     "ref": "§301.7701-3(c)(1)(iv)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1362(b)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§301.7701-3(c)(1)(v)(C)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-E-1006",
+   "type": "mcq",
+   "area": "V",
+   "group": "E",
+   "subgroup": "E",
+   "topic": "Limited liability companies",
+   "task": "Recall the tax classification options for a limited liability company for tax purposes.",
+   "task_source": "지도.json",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Gray & Pine, LLC has two equal members, Abel and Bea, and is taxed as a partnership. Its assets have an adjusted basis of $160,000 and a fair market value of $400,000, and it has no liabilities. Abel's basis in his interest is $80,000. On July 1, 2026, Abel buys Bea's entire interest for $200,000 in cash, so the LLC has one member and becomes a disregarded entity. What is Abel's total basis in the LLC's assets after the purchase?",
+   "exhibit": "",
+   "options": [
+    "$160,000",
+    "$200,000",
+    "$280,000",
+    "$400,000"
+   ],
+   "answer": "C",
+   "rule_line": "When one member buys out the other and the partnership becomes disregarded, the buyer takes cost basis in the purchased half and his outside basis in the rest.",
+   "why": {
+    "A": "Uses the partnership's inside basis and ignores the purchase price paid for Bea's half.",
+    "B": "Counts only the cost of the purchased half and forgets the $80,000 basis attributable to Abel's original half.",
+    "C": "Abel is treated as buying the assets attributable to Bea's interest for $200,000, and as receiving the rest in liquidation of the partnership with a basis equal to his $80,000 outside basis. Total $280,000.",
+    "D": "Uses fair market value. Only the purchased portion gets a cost basis; Abel's own portion carries his outside basis."
+   },
+   "steps": [
+    "Purchased half: cost 200,000",
+    "Own half: outside basis 80,000 (liquidating distribution)",
+    "Total 280,000"
+   ],
+   "calc_check": {
+    "expr": "80000+200000",
+    "fmt": "$",
+    "value": 280000,
+    "distractors": {
+     "A": {
+      "expr": "160000",
+      "value": 160000
+     },
+     "B": {
+      "expr": "200000",
+      "value": 200000
+     },
+     "D": {
+      "expr": "400000",
+      "value": 400000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "Rev.",
+     "ref": "Rul. 99-6"
+    },
+    {
+     "src": "IRC",
+     "ref": "§732(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1012"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-F-1001",
+   "type": "mcq",
+   "area": "V",
+   "group": "F",
+   "subgroup": "F.2",
+   "topic": "Tax-exempt organizations — unrelated business income and filing (supplement)",
+   "task": "Calculate or identify unrelated business taxable income and the annual return filing requirements of an exempt organization.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Harbor Arts Society, a tax-exempt charity, had these 2026 items: $30,000 of net income from advertising in its magazine that is unrelated to its exempt purpose and regularly carried on; $40,000 of rent from a building it owns, with $15,000 of expenses attributable to the building; $10,000 of interest and dividends; and a $50,000 gain from selling donated stock. The building was bought with a mortgage, and the average acquisition indebtedness for 2026 was 50% of the building's average adjusted basis. It claims the $1,000 specific deduction. What is its unrelated business taxable income?",
+   "exhibit": "",
+   "options": [
+    "$29,000",
+    "$41,500",
+    "$49,000",
+    "$54,000"
+   ],
+   "answer": "B",
+   "rule_line": "Rent, interest, dividends and gain on donated property are excluded from UBTI, except that debt-financed property income is included in proportion to the debt.",
+   "why": {
+    "A": "Leaves out the debt-financed rent. Rent from property bought with acquisition indebtedness is taxed in proportion to the debt.",
+    "B": "Advertising income of $30,000 is unrelated. Rent is normally excluded, but the debt-financed 50% of the net rent ($25,000 x 50% = $12,500) is included. Interest, dividends and gain on donated stock are excluded. $30,000 + $12,500 - $1,000 = $41,500.",
+    "C": "Applies the debt percentage to gross rent instead of net rent after the related $15,000 of expenses.",
+    "D": "Includes all of the net rent. Only the debt-financed percentage (50%) is included."
+   },
+   "steps": [
+    "Advertising: 30,000",
+    "Debt-financed net rent: (40,000 - 15,000) x 50% = 12,500",
+    "Interest, dividends, gain on donated stock: excluded",
+    "30,000 + 12,500 - 1,000 = 41,500"
+   ],
+   "calc_check": {
+    "expr": "30000+0.5*(40000-15000)-1000",
+    "fmt": "$",
+    "value": 41500,
+    "distractors": {
+     "A": {
+      "expr": "30000-1000",
+      "value": 29000
+     },
+     "C": {
+      "expr": "30000+0.5*40000-1000",
+      "value": 49000
+     },
+     "D": {
+      "expr": "30000+(40000-15000)-1000",
+      "value": 54000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§512(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§512(b)(1),(3),(5),(12)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§514(a)(1),(c)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "REG-V-F-1002",
+   "type": "mcq",
+   "area": "V",
+   "group": "F",
+   "subgroup": "F",
+   "topic": "Tax-exempt organizations",
+   "task": "Recall the different types of tax-exempt organizations for tax purposes.",
+   "task_source": "지도.json",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Meadow Health Trust is a tax-exempt charity that is not a church or a hospital. Its total support for the test period was $1,000,000: $500,000 from one donor, Mr. Lang; $150,000 from many small donors, none giving more than 2% of total support; $100,000 in government grants; and $250,000 of investment income. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "It passes the one-third test at 75%, because all contributions from Mr. Lang count as public support",
+    "It fails the one-third public support test at 27%, but it may still qualify as publicly supported under the 10% facts-and-circumstances test",
+    "It fails the one-third test at 27% and must be a private foundation, because no other public charity test is available",
+    "It passes the one-third test at 50%, because Mr. Lang's contributions are disregarded entirely"
+   ],
+   "answer": "B",
+   "rule_line": "Under the one-third support test a large donor counts only up to 2% of total support in the numerator but in full in the denominator, and a 10% floor opens the facts-and-circumstances test.",
+   "why": {
+    "A": "Contributions from one donor count as public support only up to 2% of total support, although the excess stays in total support.",
+    "B": "Public support counts small donors ($150,000), government grants ($100,000) and only 2% of total support ($20,000) from Mr. Lang: $270,000 / $1,000,000 = 27%. That is below 33 1/3%, but at least 10% allows the facts-and-circumstances test.",
+    "C": "A second route exists for organizations with at least 10% public support that meet the facts-and-circumstances test.",
+    "D": "The excess over 2% is excluded from public support but remains in total support (the denominator)."
+   },
+   "steps": [
+    "Public support: 150,000 + 100,000 + 2% x 1,000,000 (20,000) = 270,000",
+    "270,000 / 1,000,000 = 27% < 33 1/3%",
+    "27% >= 10%, so the facts-and-circumstances test is available"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "100*(150000+100000+0.02*1000000)/1000000",
+      "fmt": "%",
+      "value": 27.0
+     },
+     {
+      "expr": "100*(150000+100000+500000)/1000000",
+      "fmt": "%",
+      "value": 75.0
+     },
+     {
+      "expr": "100*(150000+100000)/(1000000-500000)",
+      "fmt": "%",
+      "value": 50.0
+     },
+     {
+      "expr": "100*(150000+100000+0.02*1000000)/1000000",
+      "fmt": "%",
+      "value": 27.0
+     },
+     {
+      "expr": "100*(150000+100000+500000)/1000000",
+      "fmt": "%",
+      "value": 75.0
+     },
+     {
+      "expr": "100*(150000+100000)/(1000000-500000)",
+      "fmt": "%",
+      "value": 50.0
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§170(b)(1)(A)(vi)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.170A-9(f)(3),(f)(4)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§509(a)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-F-1003",
+   "type": "mcq",
+   "area": "V",
+   "group": "F",
+   "subgroup": "F.2",
+   "topic": "Tax-exempt organizations — unrelated business income and filing (supplement)",
+   "task": "Calculate or identify unrelated business taxable income and the annual return filing requirements of an exempt organization.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Lakemont Museum, a tax-exempt charity, has two unrelated trades or businesses in 2026, each regularly carried on. Its parking business had net income of $30,000, and its catering business had a net loss of $45,000. It claims the $1,000 specific deduction. Which statement is correct for 2026?",
+   "exhibit": "",
+   "options": [
+    "Unrelated business taxable income is $29,000, and the $45,000 catering loss carries forward to offset only future catering income",
+    "Unrelated business taxable income is $0, and a $15,000 net loss carries forward",
+    "Unrelated business taxable income is $30,000, because the specific deduction is available only for a single trade or business",
+    "Unrelated business taxable income is $29,000, and the $45,000 loss carries forward against any future unrelated business income from any activity"
+   ],
+   "answer": "A",
+   "rule_line": "Unrelated business income is computed separately for each activity, so a loss in one business cannot offset income from another.",
+   "why": {
+    "A": "Unrelated business taxable income is computed separately for each trade or business, so the catering loss cannot offset the parking income. The $30,000 less the $1,000 specific deduction is taxable, and the loss carries forward within the catering business.",
+    "B": "Nets the two activities, which was the rule before 2018. Losses now stay with their own business.",
+    "C": "The $1,000 specific deduction applies to the organization's total unrelated business income.",
+    "D": "The carryforward applies only against income of the same trade or business."
+   },
+   "steps": [
+    "Parking: 30,000; catering loss cannot offset it",
+    "30,000 - 1,000 specific deduction = 29,000",
+    "Catering loss of 45,000 carries forward against catering income only"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "30000-1000",
+      "fmt": "$",
+      "value": 29000
+     },
+     {
+      "expr": "45000-30000",
+      "fmt": "$",
+      "value": 15000
+     },
+     {
+      "expr": "30000-1000",
+      "fmt": "$",
+      "value": 29000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§512(a)(6)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§512(b)(12)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.512(a)-6"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-F-1004",
+   "type": "mcq",
+   "area": "V",
+   "group": "F",
+   "subgroup": "F.2",
+   "topic": "Tax-exempt organizations — unrelated business income and filing (supplement)",
+   "task": "Calculate or identify unrelated business taxable income and the annual return filing requirements of an exempt organization.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Coastal Land Trust, a tax-exempt charity, is a limited partner in three partnerships. Its 2026 Schedules K-1 show: Partnership 1 (operates a restaurant), $60,000 of ordinary business income; Partnership 2 (owns rental buildings with no debt), $40,000 of rental real estate income; and Partnership 3 (an investment fund), $20,000 of interest, $10,000 of dividends and $15,000 of long-term capital gain. Coastal has no other income and claims the $1,000 specific deduction. What is its unrelated business taxable income?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$59,000",
+    "$99,000",
+    "$144,000"
+   ],
+   "answer": "B",
+   "rule_line": "A tax-exempt partner's share of a partnership's income keeps its character, so only the operating business income is UBTI.",
+   "why": {
+    "A": "Treats limited partner status as making all K-1 income passive and excluded. The restaurant's ordinary business income flows through as unrelated business income.",
+    "B": "A partner's share of partnership income keeps its character. The restaurant income is unrelated business income ($60,000). Rent from unleveraged real property, interest, dividends and capital gain are excluded. $60,000 - $1,000 = $59,000.",
+    "C": "Includes the unleveraged rent, which is excluded from unrelated business income.",
+    "D": "Includes every K-1 item. The rent, interest, dividends and capital gain are modifications that exclude them."
+   },
+   "steps": [
+    "Restaurant ordinary income: 60,000 (UBTI)",
+    "Unleveraged rent, interest, dividends, capital gain: excluded",
+    "60,000 - 1,000 = 59,000"
+   ],
+   "calc_check": {
+    "expr": "60000-1000",
+    "fmt": "$",
+    "value": 59000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "C": {
+      "expr": "60000+40000-1000",
+      "value": 99000
+     },
+     "D": {
+      "expr": "60000+40000+20000+10000+15000-1000",
+      "value": 144000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§512(c)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§512(b)(1),(3),(5)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.512(c)-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-F-1005",
+   "type": "mcq",
+   "area": "V",
+   "group": "F",
+   "subgroup": "F.2",
+   "topic": "Tax-exempt organizations — unrelated business income and filing (supplement)",
+   "task": "Calculate or identify unrelated business taxable income and the annual return filing requirements of an exempt organization.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Two organizations each have, in 2026, $20,000 of net income from an unrelated business regularly carried on and $15,000 of interest on savings, and each claims the $1,000 specific deduction. Pine Hollow Club is a tax-exempt social club, and the business income is not from members. Cedar Aid Foundation is a tax-exempt charity. What is each organization's unrelated business taxable income?",
+   "exhibit": "",
+   "options": [
+    "The club's is $19,000, and the foundation's is $19,000",
+    "The club's is $34,000, and the foundation's is $34,000",
+    "The club's is $19,000, and the foundation's is $34,000",
+    "The club's is $34,000, and the foundation's is $19,000"
+   ],
+   "answer": "D",
+   "rule_line": "A social club's investment income is unrelated business income, while a charity's interest and dividends are excluded.",
+   "why": {
+    "A": "Excludes the club's interest. Social clubs, unlike charities, are taxed on investment income.",
+    "B": "Includes the interest for the charity, for which interest is excluded.",
+    "C": "Reverses the two. The club is the one whose investment income is taxable.",
+    "D": "A social club's investment income is included in unrelated business income, so the club has $20,000 + $15,000 - $1,000 = $34,000. A charity's interest is excluded, so the foundation has $20,000 - $1,000 = $19,000."
+   },
+   "steps": [
+    "Club: 20,000 + 15,000 - 1,000 = 34,000",
+    "Foundation: 20,000 - 1,000 = 19,000"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "20000+15000-1000",
+      "fmt": "$",
+      "value": 34000
+     },
+     {
+      "expr": "20000-1000",
+      "fmt": "$",
+      "value": 19000
+     },
+     {
+      "expr": "20000+15000-1000",
+      "fmt": "$",
+      "value": 34000
+     },
+     {
+      "expr": "20000-1000",
+      "fmt": "$",
+      "value": 19000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§512(a)(3)(A),(B)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§512(b)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§512(b)(12)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-V-F-1006",
+   "type": "mcq",
+   "area": "V",
+   "group": "F",
+   "subgroup": "F.2",
+   "topic": "Tax-exempt organizations — unrelated business income and filing (supplement)",
+   "task": "Calculate or identify unrelated business taxable income and the annual return filing requirements of an exempt organization.",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Sunridge Historical Society, a tax-exempt charity, has two leases in 2026. Lease X is of a building and equipment to a tenant for a fixed rent of $96,000, of which $6,000 is for the equipment. Lease Y is of a building and equipment to another tenant for a fixed rent of $100,000, of which $20,000 is for the equipment. None of the property is debt-financed, and the rents do not depend on the tenants' income. Ignoring expenses and assuming the $1,000 specific deduction, what is the society's unrelated business taxable income from the leases?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$19,000",
+    "$25,000",
+    "$99,000"
+   ],
+   "answer": "B",
+   "rule_line": "Rent for personal property leased with real property is excluded if it is 10% or less of total rent; above 10% the personal-property rent is included, and above 50% all of the rent is included.",
+   "why": {
+    "A": "Treats all rent as excluded real property rent. Rent for personal property above the 10% incidental level is included.",
+    "B": "Lease X: personal property rent is 6.25% of the total (10% or less), so all rent is excluded. Lease Y: personal property rent is 20% (more than 10% but not more than 50%), so the $20,000 for equipment is unrelated business income. $20,000 - $1,000 = $19,000.",
+    "C": "Also includes the equipment rent in Lease X, which is only 6.25% of that lease and so is treated as incidental.",
+    "D": "Includes all of Lease Y. That happens only if more than 50% of the rent is for personal property."
+   },
+   "steps": [
+    "Lease X: 6,000 / 96,000 = 6.25% <= 10%, all excluded",
+    "Lease Y: 20,000 / 100,000 = 20% > 10% and <= 50%, so the 20,000 is included",
+    "20,000 - 1,000 = 19,000"
+   ],
+   "calc_check": {
+    "expr": "20000-1000",
+    "fmt": "$",
+    "value": 19000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "C": {
+      "expr": "6000+20000-1000",
+      "value": 25000
+     },
+     "D": {
+      "expr": "100000-1000",
+      "value": 99000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§512(b)(3)(A),(B)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.512(b)-1(c)(2)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "limit"
+   }
+  },
+  {
+   "id": "REG-V-G-1001",
+   "type": "mcq",
+   "area": "V",
+   "group": "G",
+   "subgroup": "G",
+   "topic": "Trusts and estates (supplement; Blueprint placement unverified)",
+   "task": "Determine the income taxation of trusts and estates (simple and complex trusts, distributable net income, distribution deduction).",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "The Ellis Trust is a simple trust that must distribute all of its accounting income currently to its sole beneficiary, Dora. For 2026 it had $40,000 of interest and a $10,000 long-term capital gain that the trust instrument allocates to principal. Trustee fees of $3,000, charged entirely to income under the instrument, are deductible. The trust distributed all of its accounting income to Dora and kept the gain. What do Dora and the trust report?",
+   "exhibit": "",
+   "options": [
+    "Dora reports $37,000, and the trust's taxable income is $10,000",
+    "Dora reports $40,000, and the trust's taxable income is $6,700",
+    "Dora reports $37,000, and the trust's taxable income is $9,700",
+    "Dora reports $37,000, and the trust's taxable income is $12,700"
+   ],
+   "answer": "C",
+   "rule_line": "A simple trust's distribution deduction is limited to income (DNI), which excludes capital gains allocated to principal, so the trust pays tax on those gains.",
+   "why": {
+    "A": "Omits the $300 exemption for a simple trust.",
+    "B": "Ignores that the fees reduce distributable net income and the amount distributed.",
+    "C": "Accounting income and distributable net income are $40,000 - $3,000 = $37,000, because the gain is allocated to principal. The trust deducts the $37,000 distribution and its $300 exemption from $47,000 of income after fees: $9,700.",
+    "D": "Does not deduct the $3,000 of trustee fees in computing the trust's taxable income."
+   },
+   "steps": [
+    "DNI = 40,000 - 3,000 = 37,000 (gain allocated to principal is excluded)",
+    "Trust taxable income = 40,000 + 10,000 - 3,000 - 37,000 - 300 = 9,700"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "50000-3000-37000-300",
+      "fmt": "$",
+      "value": 9700
+     },
+     {
+      "expr": "50000-3000-37000-300",
+      "fmt": "$",
+      "value": 9700
+     },
+     {
+      "expr": "50000-3000-37000",
+      "fmt": "$",
+      "value": 10000
+     },
+     {
+      "expr": "50000-3000-40000-300",
+      "fmt": "$",
+      "value": 6700
+     },
+     {
+      "expr": "50000-37000-300",
+      "fmt": "$",
+      "value": 12700
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§643(a)(3)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§651(a),(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§642(b)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§652(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
+  },
+  {
+   "id": "REG-V-G-1002",
+   "type": "mcq",
+   "area": "V",
+   "group": "G",
+   "subgroup": "G",
+   "topic": "Trusts and estates (supplement; Blueprint placement unverified)",
+   "task": "Determine the income taxation of trusts and estates (simple and complex trusts, distributable net income, distribution deduction).",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Nolan Price died on March 12, 2026. His estate elected a fiscal year ending January 31, 2027, for its first tax year. Nolan had also created a nonexempt irrevocable trust that has always used a calendar year. On August 1, 2026, the estate and the trust each distributed $60,000 to the same calendar-year beneficiary, and each distribution carries out distributable net income of at least $60,000. In which year does the beneficiary report each amount?",
+   "exhibit": "",
+   "options": [
+    "Both in 2026, because the beneficiary uses the calendar year and received both on August 1",
+    "The estate distribution in 2027 and the trust distribution in 2026",
+    "The estate distribution in 2026 and the trust distribution in 2027",
+    "Both in 2027, because the distributions were made after the decedent's death"
+   ],
+   "answer": "B",
+   "rule_line": "A fiscal-year estate's distributions are reported in the beneficiary's year in which the estate's year ends, while a nonexempt trust must use a calendar year.",
+   "why": {
+    "A": "The year of inclusion is set by the fiduciary's year-end, not the date of receipt.",
+    "B": "A beneficiary reports income for the fiduciary's tax year that ends within the beneficiary's tax year. The estate's year ends January 31, 2027 (within 12 months of death) and the calendar-year trust's ends December 31, 2026.",
+    "C": "Reverses the years. The fiscal-year estate's distribution falls in 2027.",
+    "D": "The trust uses a calendar year, so its distribution is reported for the year ending December 31, 2026."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§662(c)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§441(e)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§644(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§645"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-G-1003",
+   "type": "mcq",
+   "area": "V",
+   "group": "G",
+   "subgroup": "G",
+   "topic": "Trusts and estates (supplement; Blueprint placement unverified)",
+   "task": "Determine the income taxation of trusts and estates (simple and complex trusts, distributable net income, distribution deduction).",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "The estate of Wanda Cruz had $30,000 of interest income in 2026 and no deductions. The executor paid $40,000 in one payment to Wanda's niece under a specific bequest of $40,000, and, in her discretion, distributed $25,000 to Wanda's son as part of the residuary estate. The estate's exemption is $600. What do the niece and the son report, and what is the estate's taxable income?",
+   "exhibit": "",
+   "options": [
+    "The niece reports $0, the son reports $25,000, and the estate's taxable income is $4,400",
+    "The niece reports $30,000, the son reports $0, and the estate's taxable income is $0",
+    "The niece reports $0, the son reports $25,000, and the estate's taxable income is $5,000",
+    "The niece reports $18,462, the son reports $11,538, and the estate's taxable income is $0"
+   ],
+   "answer": "A",
+   "rule_line": "A specific bequest of money paid in three or fewer installments carries out no income, so only the other distributions share in DNI.",
+   "why": {
+    "A": "A bequest of a specific sum paid in three or fewer installments does not carry out income, so the niece reports nothing. The son's $25,000 carries out DNI. The estate deducts $25,000 and its $600 exemption from $30,000: $4,400.",
+    "B": "Treats the specific bequest as carrying out income. It does not, because it is a specific sum paid at once.",
+    "C": "Leaves out the $600 exemption.",
+    "D": "Splits DNI pro rata over both payments. The specific bequest is excluded from the distribution deduction."
+   },
+   "steps": [
+    "Specific bequest 40,000: excluded from the distribution deduction and from the niece's income",
+    "Distribution deduction = min(25,000, DNI 30,000) = 25,000",
+    "Estate taxable income = 30,000 - 25,000 - 600 = 4,400"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "30000*40000/65000",
+      "fmt": "$",
+      "value": 18462
+     },
+     {
+      "expr": "30000*25000/65000",
+      "fmt": "$",
+      "value": 11538
+     },
+     {
+      "expr": "30000-25000-600",
+      "fmt": "$",
+      "value": 4400
+     },
+     {
+      "expr": "30000-25000-600",
+      "fmt": "$",
+      "value": 4400
+     },
+     {
+      "expr": "30000-25000",
+      "fmt": "$",
+      "value": 5000
+     },
+     {
+      "expr": "30000*40000/65000",
+      "fmt": "$",
+      "value": 18462
+     },
+     {
+      "expr": "30000*25000/65000",
+      "fmt": "$",
+      "value": 11538
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§663(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§661(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§642(b)(1)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.663(a)-1"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "B": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-G-1004",
+   "type": "mcq",
+   "area": "V",
+   "group": "G",
+   "subgroup": "G",
+   "topic": "Trusts and estates (supplement; Blueprint placement unverified)",
+   "task": "Determine the income taxation of trusts and estates (simple and complex trusts, distributable net income, distribution deduction).",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Three trusts each earned $20,000 of interest in 2026. Trust 1 is revocable by its grantor, Sam, alone. Trust 2 is irrevocable, and its independent trustee may pay its income to Sam's wife or accumulate it for her, without the consent of any adverse party. Trust 3 is irrevocable; its independent trustee may pay income to Sam's adult daughter or accumulate it, and Sam holds no powers and has no interest in it. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "Sam reports the income of Trust 1 only, and Trusts 2 and 3 are separate taxpayers because they are irrevocable",
+    "Sam reports the income of all three trusts, because he created each of them",
+    "Sam reports the income of Trusts 1 and 3, and Trust 2 is a separate taxpayer because its trustee is independent",
+    "Sam reports the income of Trusts 1 and 2, and Trust 3 is taxed as a separate taxpayer, with a distribution deduction for amounts distributed"
+   ],
+   "answer": "D",
+   "rule_line": "A trust is taxed to its grantor if the grantor can revoke it or its income can go to the grantor or the grantor's spouse without an adverse party's consent.",
+   "why": {
+    "A": "Irrevocability does not prevent grantor trust status. Income payable to the grantor's spouse is attributed to the grantor.",
+    "B": "Creating a trust does not make it a grantor trust. Trust 3 has no retained power or interest.",
+    "C": "An independent trustee does not prevent grantor trust status where income may go to the grantor's spouse without an adverse party's consent.",
+    "D": "A power to revoke makes Trust 1 a grantor trust, and income that may be paid to the grantor's spouse without an adverse party's consent makes Trust 2 a grantor trust. Trust 3 has neither feature."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§676(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§677(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§671"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-V-G-1005",
+   "type": "mcq",
+   "area": "V",
+   "group": "G",
+   "subgroup": "G",
+   "topic": "Trusts and estates (supplement; Blueprint placement unverified)",
+   "task": "Determine the income taxation of trusts and estates (simple and complex trusts, distributable net income, distribution deduction).",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "The estate of Ruth Vale has a gross estate of $4,000,000. Assume the 2026 federal estate tax basic exclusion amount is $15,000,000, so no estate tax will be owed. The executor paid $30,000 of administration expenses. The estate has $200,000 of taxable interest in 2026 taxed at a 37% marginal rate on Form 1041, and it will make no distributions in 2026. Where should the expenses be deducted, and what is the tax saving?",
+   "exhibit": "",
+   "options": [
+    "On Form 706, saving $12,000 at the 40% estate tax rate",
+    "On both Form 706 and Form 1041, saving $23,100",
+    "On Form 1041, saving $11,100",
+    "On Form 1041, saving $12,000, because the 40% estate tax rate applies to the deduction"
+   ],
+   "answer": "C",
+   "rule_line": "Administration expenses can be deducted on the estate tax return or the income tax return but not both, so choose the one where the deduction actually saves tax.",
+   "why": {
+    "A": "No estate tax is owed, so the estate tax deduction has no value.",
+    "B": "Expenses cannot be deducted twice. A deduction claimed for estate tax cannot also be claimed for income tax.",
+    "C": "With no estate tax, a Form 706 deduction saves nothing. Deducting the expenses on Form 1041 saves 37% x $30,000 = $11,100.",
+    "D": "The income tax saving is measured at the income tax rate (37%), not the estate tax rate."
+   },
+   "steps": [
+    "Gross estate 4,000,000 < 15,000,000 exclusion: no estate tax, so a Form 706 deduction saves 0",
+    "Form 1041: 37% x 30,000 = 11,100"
+   ],
+   "calc_check": {
+    "fmt": "text",
+    "checks": [
+     {
+      "expr": "0.37*30000",
+      "fmt": "$",
+      "value": 11100
+     },
+     {
+      "expr": "0.4*30000",
+      "fmt": "$",
+      "value": 12000
+     },
+     {
+      "expr": "0.37*30000+0.4*30000",
+      "fmt": "$",
+      "value": 23100
+     },
+     {
+      "expr": "0.37*30000",
+      "fmt": "$",
+      "value": 11100
+     },
+     {
+      "expr": "0.4*30000",
+      "fmt": "$",
+      "value": 12000
+     },
+     {
+      "expr": "0.37*30000+0.4*30000",
+      "fmt": "$",
+      "value": 23100
+     },
+     {
+      "expr": "0.4*30000",
+      "fmt": "$",
+      "value": 12000
+     }
+    ]
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§642(g)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.642(g)-1"
+    },
+    {
+     "src": "IRC",
+     "ref": "§2053"
+    },
+    {
+     "src": "IRC",
+     "ref": "§2010(c)(3)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "P.L. 119-21 §70106 set the basic exclusion amount at $15,000,000 for 2026 decedents. The stem gives the amount. Testable from 2026-07-01.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-V-G-1006",
+   "type": "mcq",
+   "area": "V",
+   "group": "G",
+   "subgroup": "G",
+   "topic": "Trusts and estates (supplement; Blueprint placement unverified)",
+   "task": "Determine the income taxation of trusts and estates (simple and complex trusts, distributable net income, distribution deduction).",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "The Aster Trust is a calendar-year complex trust with distributable net income of $60,000 for 2026, all of it also accounting income. It distributed $30,000 to a beneficiary on December 20, 2026, $12,000 on February 20, 2027, and $8,000 on March 15, 2027. The trustee makes the 65-day election for 2026 on a timely filed 2026 return. The trust's exemption is $100. What is the trust's 2026 taxable income?",
+   "exhibit": "",
+   "options": [
+    "$9,900",
+    "$17,900",
+    "$21,900",
+    "$29,900"
+   ],
+   "answer": "B",
+   "rule_line": "A trustee may elect to treat distributions made in the first 65 days of the next year as made in the prior year, up to the income not otherwise distributed.",
+   "why": {
+    "A": "Treats the March 15 payment as made in 2026. It falls after the 65th day, so it does not qualify.",
+    "B": "The first 65 days of 2027 run through March 6, so the February 20 payment ($12,000) can be treated as made in 2026, but the March 15 payment cannot. The distribution deduction is $42,000: $60,000 - $42,000 - $100 = $17,900.",
+    "C": "Counts the March 15 payment instead of the February 20 payment. Only the February payment is within 65 days.",
+    "D": "Ignores the election and counts only the December payment."
+   },
+   "steps": [
+    "First 65 days of 2027 end March 6, 2027 (65 days from January 1)",
+    "February 20 is day 51 (qualifies); March 15 is day 74 (does not)",
+    "Distribution deduction 30,000 + 12,000 = 42,000; election limit 60,000 - 30,000 = 30,000 is not exceeded",
+    "Taxable income 60,000 - 42,000 - 100 = 17,900"
+   ],
+   "calc_check": {
+    "expr": "60000-(30000+12000)-100",
+    "fmt": "$",
+    "value": 17900,
+    "distractors": {
+     "A": {
+      "expr": "60000-(30000+12000+8000)-100",
+      "value": 9900
+     },
+     "C": {
+      "expr": "60000-(30000+8000)-100",
+      "value": 21900
+     },
+     "D": {
+      "expr": "60000-30000-100",
+      "value": 29900
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§663(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§661(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§642(b)(2)(C)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver (area5b_독립풀이.json)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": "68a73f8",
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "wrong_tags": {
+    "A": "limit",
+    "C": "limit",
+    "D": "concept"
+   }
+  }
+ ]
+}

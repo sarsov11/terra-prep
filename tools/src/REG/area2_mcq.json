@@ -140,7 +140,13 @@
    "needs_review": true,
    "review": "needs review: Restatement is outside the Blueprint reference list and no primary text was opened; section number from memory",
    "summary_ko": "실제 권한은 명시적이거나, 명시 권한 수행에 합리적으로 필요한 범위에서 묵시적으로 생긴다.",
-   "source_draft": "OX1"
+   "source_draft": "OX1",
+   "rule_line": "Implied actual authority covers acts reasonably necessary to carry out the express grant of authority.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-A-0002",
@@ -187,7 +193,13 @@
    "needs_review": true,
    "review": "needs review: Restatement is outside the Blueprint reference list and no primary text was opened; section number from memory",
    "summary_ko": "표현대리는 본인이 제3자에게 한 표시와 제3자의 합리적 신뢰에 근거한다. 대리인 자신의 말만으로는 성립하지 않는다.",
-   "source_draft": "M1+OX2"
+   "source_draft": "M1+OX2",
+   "rule_line": "Apparent authority arises from the principal's manifestation to a third party who reasonably relies, despite a secret limit.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-A-0003",
@@ -234,7 +246,13 @@
    "needs_review": true,
    "review": "needs review: Restatement is outside the Blueprint reference list and no primary text was opened; section number from memory",
    "summary_ko": "충실의무상 대리인은 본인을 위한 거래와 관련해 제3자로부터 중대한 이익을 취득할 수 없다.",
-   "source_draft": "OX3"
+   "source_draft": "OX3",
+   "rule_line": "An agent's duty of loyalty bars taking a material benefit from a third party in connection with the principal's transaction.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-A-0004",
@@ -281,7 +299,13 @@
    "needs_review": true,
    "review": "needs review: Restatement is outside the Blueprint reference list and no primary text was opened; section number from memory",
    "summary_ko": "근로자가 업무 범위 내에서 행위했으므로 사용자책임(respondeat superior)이 성립할 수 있다.",
-   "source_draft": "M2"
+   "source_draft": "M2",
+   "rule_line": "An employer is vicariously liable for an employee's torts committed within the scope of employment.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-A-0005",
@@ -330,7 +354,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 3-402(a), (b)(1) (Cornell LII)",
    "summary_ko": "권한 있는 대리인이 본인을 명시하고 대리 취지가 분명한 형식으로 서명하면 대리인은 어음상 책임을 지지 않는다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "An authorized representative who signs in a form clearly showing the represented company is not personally liable on the instrument.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-A-0006",
@@ -379,7 +409,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 3-402(a), (b)(2) (Cornell LII)",
    "summary_ko": "서명 형식이 대리 자격을 분명히 하지 않고 본인도 표시되지 않으면 선의의 정당소지인에 대해 대리인이 어음상 책임을 진다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A representative whose signature shows no representative capacity or represented person is liable to a holder in due course without notice.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-A-0007",
@@ -428,7 +464,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 301 (ULC final act PDF)",
    "summary_ko": "통상 영업 범위로 보이지 않는 파트너의 행위는 다른 모든 파트너가 실제로 승인한 경우에만 파트너십을 구속한다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A partner's act outside the apparent ordinary course binds the partnership only if all other partners actually authorized it.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-A-0008",
@@ -475,7 +517,13 @@
    "needs_review": true,
    "review": "needs review: Restatement (Third) of Agency 6.03 (Agent for Undisclosed Principal) confirmed from a court opinion citing it and secondary text; Restatement text is not openly available; section number checked against secondary sources quoting it, ALI text not opened.",
    "summary_ko": "본인을 밝히지 않은 대리인 계약에서 상대방은 대리인에게, 본인이 드러나면 본인에게도 이행을 청구할 수 있다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "An agent for an undisclosed principal is a party to the contract, and the principal is also bound once identified.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-A-0009",
@@ -522,7 +570,13 @@
    "needs_review": true,
    "review": "needs review: Restatement (Third) of Agency 4.01 (Ratification Defined) text confirmed from a secondary reproduction; Restatement text is not openly available; section number checked against secondary sources quoting it, ALI text not opened.",
    "summary_ko": "본인이 사정을 알면서 이익을 받아들이면 무권한 계약을 추인한 것으로 보아 전체에 구속된다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A principal that knowingly accepts the benefits of an unauthorized act ratifies it, generally for the whole transaction.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-A-0010",
@@ -569,7 +623,13 @@
    "needs_review": true,
    "review": "needs review: Restatement (Third) of Agency 3.11 (termination of apparent authority; cited in ULC ULLCA comment on lingering apparent authority); Restatement text is not openly available; section number checked against secondary sources quoting it, ALI text not opened.",
    "summary_ko": "실제 권한이 소멸해도 상대방이 통지받기 전까지 표현대리 권한은 남을 수 있다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "Apparent authority toward third parties continues after actual authority ends until they have notice.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-A-0011",
@@ -616,7 +676,13 @@
    "needs_review": true,
    "review": "needs review: Restatement (Third) of Agency 8.14(2)(a) principal duty to indemnify agent, quoted in the ULC ULLCA (2006, amended 2013) comment to 408(a); ALI text not opened.",
    "summary_ko": "본인은 지시에 따라 행동한 대리인이 입은 손실을 보상할 의무가 있다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A principal must indemnify an agent for losses incurred in properly following authorized instructions.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-A-0012",
@@ -663,7 +729,13 @@
    "needs_review": true,
    "review": "needs review: Restatement (Third) of Agency 5.03 (Imputation of Notice of Fact to Principal) confirmed from the ULC RUPA (1997, amended 2013) comment to 103(e); ALI text not opened.",
    "summary_ko": "대리 권한 범위 안에서 대리인이 알게 된 사실은 본인이 알았던 것으로 본다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "Facts an agent learns within the scope of the agency are generally imputed to the principal.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-A-0013",
@@ -712,7 +784,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 305(b) (ULC final act PDF text opened)",
    "summary_ko": "파트너가 사업 과정에서 제3자의 돈을 받아 유용하면 파트너십이 그 손실에 책임을 진다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A partnership is liable when a partner misapplies money of a non-partner received in the partnership's business.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-A-0014",
@@ -761,7 +839,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 103(e); numbering as in the 2013 harmonized text (ULC final act PDF); older 1997 text placed this rule in 102(f)",
    "summary_ko": "파트너의 지득 사실은 즉시 파트너십의 것으로 보지만, 그 파트너가 파트너십을 기망한 경우는 예외다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A partner's knowledge is not imputed to the partnership when the partner commits or consents to a fraud on the partnership.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-A-0015",
@@ -810,7 +894,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 308(a) (ULC final act PDF text opened)",
    "summary_ko": "동업자로 소개되는 데 동의한 사람은 이를 신뢰해 거래한 자에게 동업자로서 책임을 질 수 있다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A person who consents to being represented as a partner is liable to those who rely on the representation.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-A-0016",
@@ -859,7 +949,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 306(a), (b) (ULC final act PDF text opened)",
    "summary_ko": "새로 가입한 파트너는 가입 전에 발생한 파트너십 채무에 대해 개인 책임을 지지 않는다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A new partner is not personally liable for pre-admission partnership obligations, though partnership assets remain liable.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-A-0017",
@@ -912,7 +1008,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 703(a), (b) and 103(d)(2)(A) (ULC final act PDF text opened)",
    "summary_ko": "탈퇴한 파트너도 2년 내에 선의로 파트너로 믿은 상대방과의 거래에는 책임을 질 수 있다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A dissociated partner can remain liable for up to two years to a third party who lacked notice and reasonably believed she was a partner.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-A-0018",
@@ -961,7 +1063,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 3-403(a) (Cornell LII)",
    "summary_ko": "무권한 서명은 본인이 추인하면 본인에게 효력이 생긴다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "An unauthorized signature may be ratified, binding the principal without a formal writing to the bank.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-B-0001",
@@ -1010,7 +1118,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-205: merchant, signed writing, no consideration, three-month maximum (Cornell LII)",
    "summary_ko": "상인이 서명한 서면으로 유지 기간을 밝히면 약인 없이 그 기간(최대 3개월) 청약을 철회할 수 없다.",
-   "source_draft": "C1+M3"
+   "source_draft": "C1+M3",
+   "rule_line": "A merchant's signed firm offer for goods needs no consideration and stays open for the stated time, up to three months.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "limit",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-B-0002",
@@ -1059,7 +1173,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-201(1) first clause (Cornell LII); list of exceptions in the explanation is standard text, not re-opened",
    "summary_ko": "500달러 이상 물품매매는 서명된 서면이 필요하고 예외 사유가 없으면 강제할 수 없다.",
-   "source_draft": "C2"
+   "source_draft": "C2",
+   "rule_line": "A sale of goods for $500 or more needs a writing signed by the party to be charged unless an exception applies.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-B-0003",
@@ -1108,7 +1228,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-209(1) (Cornell LII)",
    "summary_ko": "물품매매 계약의 변경은 신의성실에 따른 것이면 새 약인이 없어도 구속력이 있다.",
-   "source_draft": "C3"
+   "source_draft": "C3",
+   "rule_line": "Under UCC Article 2, a good-faith modification of a sales contract needs no new consideration.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-B-0004",
@@ -1157,7 +1283,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-601 (Cornell LII); cure and installment remarks from standard text, not re-opened",
    "summary_ko": "일회성 물품매매에서 불일치 물품이 인도되면 매수인은 전부 거절, 전부 수령, 일부 수령을 선택할 수 있다.",
-   "source_draft": "C4"
+   "source_draft": "C4",
+   "rule_line": "In a single nonconforming delivery, the buyer may reject all, accept all, or accept some commercial units and reject the rest.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-II-B-0005",
@@ -1219,6 +1351,12 @@
    "calc_check": {
     "expr": "round(5000*(3.40-3.00)+150, 2)",
     "value": 2150
+   },
+   "rule_line": "Cover damages equal the cover price minus the contract price, plus incidental damages.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
    }
   },
   {
@@ -1270,7 +1408,13 @@
    "needs_review": true,
    "review": "verified 2026-09-29: UCC 2-716(1) (Cornell LII); needs review for the punitive-damages distractor: Restatement (Second) of Contracts 355 and 360 not opened",
    "summary_ko": "대체 불가 물건이라 금전 배상이 부족하면 특정이행이 인정될 수 있다. 징벌적 손해배상은 통상 구제가 아니다.",
-   "source_draft": "C6+M4+OX8"
+   "source_draft": "C6+M4+OX8",
+   "rule_line": "A buyer may seek specific performance when goods are unique and damages are inadequate.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-B-0007",
@@ -1319,7 +1463,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-725(1) four years (Cornell LII); accrual and future-performance rule in (2) from standard text, not re-opened",
    "summary_ko": "물품매매 청구권의 제척기간은 4년이며 통상 인도(위반)일부터 진행하고 발견일부터가 아니다.",
-   "source_draft": "C7"
+   "source_draft": "C7",
+   "rule_line": "The UCC limitation period for sales contract claims is four years from tender of delivery, regardless of discovery.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-B-0008",
@@ -1366,7 +1516,13 @@
    "needs_review": true,
    "review": "needs review: Restatement is outside the Blueprint reference list and no primary text was opened; section number from memory; Rest.(2d) Contracts 17 covers bargain (assent + consideration); capacity and legal purpose are in other sections",
    "summary_ko": "유효한 계약은 합의와 약인 등을 갖추어야 한다. 증여 약속은 약인이 없어 강제되지 않는다.",
-   "source_draft": "OX4"
+   "source_draft": "OX4",
+   "rule_line": "A promise without consideration is not an enforceable contract, even if signed and between relatives.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-B-0009",
@@ -1413,7 +1569,13 @@
    "needs_review": true,
    "review": "needs review: Restatement is outside the Blueprint reference list and no primary text was opened; section number from memory",
    "summary_ko": "우편 발신 원칙상 합리적 수단으로 보낸 승낙은 발송 시 효력이 생기고 철회는 도달해야 효력이 생긴다.",
-   "source_draft": "OX5"
+   "source_draft": "OX5",
+   "rule_line": "Under the mailbox rule, an acceptance is effective when dispatched, before a revocation is received.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-B-0010",
@@ -1473,6 +1635,12 @@
    "calc_check": {
     "expr": "80000-3000",
     "value": 77000
+   },
+   "rule_line": "A party who substantially performs recovers the contract price less damages for the deficiency.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "concept"
    }
   },
   {
@@ -1520,7 +1688,13 @@
    "needs_review": true,
    "review": "needs review: Restatement is outside the Blueprint reference list and no primary text was opened; section number from memory",
    "summary_ko": "경개는 당사자 교체를 통해 원래 의무를 소멸시킨다. 가격만 바꾸는 것은 변경이다.",
-   "source_draft": "OX7"
+   "source_draft": "OX7",
+   "rule_line": "A novation substitutes a new party for the original debtor and discharges the original obligation.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-B-0012",
@@ -1569,7 +1743,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-207 (Cornell LII)",
    "summary_ko": "추가 조건이 든 승낙도 계약을 성립시키지만, 청약이 자기 조건으로 승낙을 한정했다면 추가 조건은 계약에 들어가지 않는다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "If an offer expressly limits acceptance to its terms, added terms in the acceptance do not become part of the contract.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-B-0013",
@@ -1622,7 +1802,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-314, 2-316 (Cornell LII)",
    "summary_ko": "상인의 상품성 묵시적 보증은 상품성을 언급하고 눈에 띄는 문구가 아니면 배제되지 않는다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A merchant's disclaimer of the implied warranty of merchantability must mention merchantability and be conspicuous.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-B-0014",
@@ -1679,6 +1865,12 @@
    "calc_check": {
     "expr": "(12.5-10)*4000",
     "value": 10000
+   },
+   "rule_line": "A seller's market-price damages equal contract price minus market price times the units, plus incidentals.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "concept"
    }
   },
   {
@@ -1728,7 +1920,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-609 (Cornell LII)",
    "summary_ko": "불안 사유가 있으면 서면으로 이행 보증을 요구하고 상업적으로 합리적이면 그때까지 이행을 정지할 수 있다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A seller with reasonable grounds for insecurity may demand adequate assurance and suspend performance until received.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "limit",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-B-0016",
@@ -1777,7 +1975,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-508(1) (Cornell LII)",
    "summary_ko": "이행기가 남아 있으면 매도인은 통지 후 계약 기간 안에 적합한 물품으로 치유할 수 있다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A seller who gives timely notice may cure a nonconforming tender by delivering conforming goods within the contract time.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-B-0017",
@@ -1826,7 +2030,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-719 (Cornell LII)",
    "summary_ko": "배타적 구제수단이 본래 목적을 달성하지 못하면 UCC의 일반 구제수단을 쓸 수 있다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "An exclusive remedy that fails of its essential purpose opens the general UCC remedies, but a consequential damages exclusion is judged separately.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-B-0018",
@@ -1875,7 +2085,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-403 (Cornell LII)",
    "summary_ko": "해당 종류 상품을 취급하는 상인에게 맡긴 물건은 통상 매수인에게 소유자의 권리가 넘어간다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A buyer in ordinary course from a merchant entrusted with goods takes good title against the owner.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-B-0019",
@@ -1924,7 +2140,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-509(1), (3) (Cornell LII)",
    "summary_ko": "목적지 지정이 없는 운송 계약에서 위험은 물품을 운송인에게 정당하게 인도할 때 매수인에게 이전한다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "In a shipment contract, risk of loss passes to the buyer when goods are delivered to the carrier.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-B-0020",
@@ -1987,6 +2209,12 @@
    "calc_check": {
     "expr": "60*(85-70)+150",
     "value": 1050
+   },
+   "rule_line": "A seller's resale damages equal contract price minus resale price plus incidental damages.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
    }
   },
   {
@@ -2036,7 +2264,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-709(1), (2) (Cornell LII)",
    "summary_ko": "재판매가 불가능한 특별 제작 물품은 매도인이 대금 전액 청구를 할 수 있고, 이후 재판매 대금은 매수인에게 공제해 준다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A seller may recover the price of identified goods that cannot reasonably be resold after the buyer repudiates.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-B-0022",
@@ -2094,6 +2328,12 @@
    "calc_check": {
     "expr": "1000-min(0.20*2400,500)",
     "value": 520
+   },
+   "rule_line": "A defaulting buyer recovers the deposit less the seller's right to keep the smaller of 20% of price or $500.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "limit",
+    "D": "concept"
    }
   },
   {
@@ -2143,7 +2383,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-608(1), (2) (Cornell LII); stem revised so the facts fit 2-608(1)(a): buyer knew of the defect at acceptance and kept the unit on the seller's promise to cure",
    "summary_ko": "치유될 것이라는 합리적 가정 하에 인수했으나 치유되지 않으면 합리적 기간 내 통지로 인수를 철회할 수 있다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A buyer may revoke acceptance if the defect substantially impairs value and acceptance was reasonably induced by assurance of cure.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-B-0024",
@@ -2192,7 +2438,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-615(a), (b) (Cornell LII); notice duty in (c) from general knowledge",
    "summary_ko": "예상치 못한 사정으로 일부만 이행 가능하면 공평한 배분과 통지로 면책된다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "Impracticability from an unforeseen contingency excuses a seller who fairly allocates production among customers and gives notice.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-B-0025",
@@ -2241,7 +2493,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-202 (Cornell LII)",
    "summary_ko": "완결적 서면은 사전 구두 합의로 보충할 수 없다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A prior oral promise cannot supplement a writing intended as a complete and exclusive statement of terms.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-B-0026",
@@ -2290,7 +2548,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 2-206(1) (Cornell LII)",
    "summary_ko": "부적합 물품 발송도 인수 통지 없이는 승낙이 되나, 호의 제공 통지를 하면 승낙이 아니다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "Shipping nonconforming goods as an accommodation with prompt notice is a counteroffer, not an acceptance.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0001",
@@ -2339,7 +2603,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-203(a),(b) (Cornell LII)",
    "summary_ko": "부착에는 가치 제공, 담보물 권리, 담보물을 기술한 서명 약정 또는 점유가 필요하다.",
-   "source_draft": "C8+OX9"
+   "source_draft": "C8+OX9",
+   "rule_line": "A security interest attaches only with value, rights in the collateral, and a signed security agreement or possession.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0002",
@@ -2392,7 +2662,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-308(a), 9-310(a) (Cornell LII)",
    "summary_ko": "서명만으로는 부착만 되고 대항요건(등록·점유·통제 등)이 없으면 완성되지 않는다.",
-   "source_draft": "C9+OX10"
+   "source_draft": "C9+OX10",
+   "rule_line": "An attached security interest is perfected only by filing, possession or control, not by attachment alone.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0003",
@@ -2441,7 +2717,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-313(a) (Cornell LII)",
    "summary_ko": "동산은 점유로도 대항요건을 갖출 수 있어 등록이 필수는 아니다.",
-   "source_draft": "C10"
+   "source_draft": "C10",
+   "rule_line": "A secured party perfects a security interest in goods by taking possession, without filing.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0004",
@@ -2490,7 +2772,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-322(a)(1) (Cornell LII)",
    "summary_ko": "동일 담보물에 대한 등록 완료 담보권은 먼저 등록한 쪽이 우선한다.",
-   "source_draft": "C11"
+   "source_draft": "C11",
+   "rule_line": "Among perfected security interests in the same collateral, the first to file or perfect has priority.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0005",
@@ -2539,7 +2827,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-324(a) (Cornell LII)",
    "summary_ko": "구입대금 담보권은 인도 후 20일 이내 대항요건을 갖추면 앞선 등록 담보권에 우선한다.",
-   "source_draft": "C12"
+   "source_draft": "C12",
+   "rule_line": "A purchase-money security interest perfected within 20 days after the debtor receives possession beats an earlier filer.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-II-C-0006",
@@ -2588,7 +2882,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-609(a),(b) (Cornell LII)",
    "summary_ko": "자력구제 점유회수는 평온을 해치지 않는 경우에만 허용된다.",
-   "source_draft": "C13"
+   "source_draft": "C13",
+   "rule_line": "Self-help repossession is allowed only without breach of the peace.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0007",
@@ -2639,7 +2939,13 @@
    "needs_review": true,
    "review": "needs review: Restatement (Third) of Suretyship and Guaranty 22-24 reimbursement and 27-31 subrogation ranges confirmed from a published paper quoting the Restatement section list; ALI text not opened.",
    "summary_ko": "보증인은 대위변제 후 주채무자에게 구상권과 채권자의 권리에 대한 대위권을 가진다.",
-   "source_draft": "M5"
+   "source_draft": "M5",
+   "rule_line": "A guarantor who pays the debt may seek reimbursement from the principal debtor and be subrogated to the creditor's rights.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0008",
@@ -2688,7 +2994,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-315 (Cornell LII)",
    "summary_ko": "담보물 매각대금으로 받은 어음도 식별 가능한 수익으로 담보권이 미치고, 원 담보물의 등록이 있으면 21일 이후에도 대항력이 유지된다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A perfected security interest continues in identifiable proceeds, including a note received on sale of inventory.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0009",
@@ -2737,7 +3049,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-317(a)(2), (e) (Cornell LII)",
    "summary_ko": "담보권이 대항요건을 갖추기 전에 압류채권자가 생기면 압류채권자가 우선한다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A lien creditor beats a security interest that was unperfected when the lien arose.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-C-0010",
@@ -2786,7 +3104,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-320(a) (Cornell LII)",
    "summary_ko": "정상 영업 과정의 매수인은 담보권이 등록되어 있고 그 존재를 알아도 매도인이 설정한 담보권의 부담 없이 취득한다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A buyer in ordinary course takes free of the seller's inventory security interest even if he knows of it.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0011",
@@ -2843,6 +3167,12 @@
    "calc_check": {
     "expr": "60000-(38000-3000)",
     "value": 25000
+   },
+   "rule_line": "Sale proceeds first pay repossession and sale expenses, then the debt, and the debtor owes any deficiency.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "concept"
    }
   },
   {
@@ -2892,7 +3222,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-623 (Cornell LII)",
    "summary_ko": "처분·처분계약·수령 전에는 피담보채무 전부와 비용을 제공하고 담보물을 되찾을 수 있다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A debtor may redeem collateral before disposition by tendering all secured obligations plus expenses.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-C-0013",
@@ -2941,7 +3277,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-515 (Cornell LII)",
    "summary_ko": "계속 신고는 만료 전 6개월 안에만 가능하며 놓치면 등록이 실효되어 매수인에 대해 대항요건을 갖춘 적이 없는 것으로 본다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A continuation statement is effective only if filed within six months before lapse; otherwise perfection lapses.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0014",
@@ -2990,7 +3332,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-204(a), (b) (Cornell LII)",
    "summary_ko": "후취득 담보물 조항이 있으면 채무자가 권리를 취득하는 때 새 약정 없이 담보권이 부착된다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "An after-acquired property clause makes the security interest attach when the debtor acquires rights, without a new agreement.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0015",
@@ -3055,6 +3403,12 @@
    "calc_check": {
     "expr": "40000-15000",
     "value": 25000
+   },
+   "rule_line": "An accommodation party is discharged to the extent of loss caused by the creditor's extension without consent.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
    }
   },
   {
@@ -3102,7 +3456,13 @@
    "needs_review": true,
    "review": "needs review: Restatement (Third) of Suretyship and Guaranty 34 (When Defenses of Principal Obligor May Be Raised by Secondary Obligor) title and text of subsection (1) confirmed from a published paper quoting it; ALI text not opened.",
    "summary_ko": "보증인은 일반적으로 주채무자가 채권자에게 주장할 수 있는 항변을 원용할 수 있다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A guarantor may generally assert the principal debtor's defenses, such as the creditor's fraud in inducing the loan.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0017",
@@ -3151,7 +3511,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-309(1) (Cornell LII)",
    "summary_ko": "소비재 구입대금 담보권은 부착과 동시에 자동으로 대항요건을 갖춘다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A purchase-money security interest in consumer goods is perfected automatically on attachment.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0018",
@@ -3200,7 +3566,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-620(a), (b), (c), (e), (f) (Cornell LII); 9-620(f)(2) wording checked against LII (longer period agreed after default)",
    "summary_ko": "소비자 물품 PMSI에서 현금가의 60%를 갚았으면 점유 후 90일 내 처분해야 하고 담보물을 그냥 보유할 수 없다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "In consumer goods, a secured party holding 60% of the price paid must sell within 90 days and cannot keep the collateral.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0019",
@@ -3258,6 +3630,12 @@
    "calc_check": {
     "expr": "2100+0.10*12000",
     "value": 3300
+   },
+   "rule_line": "Consumer-goods statutory damages equal the credit service charge plus 10% of the principal amount.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "C": "calc"
    }
   },
   {
@@ -3311,7 +3689,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-324(b) (Cornell LII); 9-322(a)(1) as in earlier items",
    "summary_ko": "재고에 대한 PMSI가 우선하려면 점유 시점의 대항요건 구비와 선행 담보권자에 대한 통지가 필요하다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A purchase-money interest in inventory has priority only if perfected before possession and the earlier secured party is notified.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "limit",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-C-0021",
@@ -3364,7 +3748,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-307(b), (e) and 9-301(1) (Cornell LII)",
    "summary_ko": "등록 조직 채무자의 소재지는 설립 주이며 그 주의 법에 따라 등록한다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A registered organization is located in its state of organization, where a financing statement must be filed.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-C-0022",
@@ -3413,7 +3803,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-507(c) (Cornell LII)",
    "summary_ko": "채무자 명칭 변경으로 신고가 중대하게 오도되면 변경 전과 변경 후 4개월 내 취득 담보물만 대항력이 유지된다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "After a debtor's name change, a filed statement still perfects collateral acquired within four months, but not later acquisitions.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-C-0023",
@@ -3462,7 +3858,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-612(a), (b) (Cornell LII)",
    "summary_ko": "비소비자 거래에서 처분 10일 전에 발송한 통지는 합리적 기간 내로 본다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "In a non-consumer transaction, notification of disposition sent at least 10 days before disposition is timely.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-C-0024",
@@ -3511,7 +3913,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: UCC 9-406(a) (Cornell LII)",
    "summary_ko": "통지를 받은 뒤에는 매출채권 채무자는 양수인에게만 지급해야 면책된다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "After notification of assignment, an account debtor is discharged only by paying the assignee.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-C-0025",
@@ -3569,6 +3977,12 @@
    "calc_check": {
     "expr": "20000-4500",
     "value": 15500
+   },
+   "rule_line": "An account debtor's claim from the same transaction reduces what the assignee can collect.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "calc"
    }
   },
   {
@@ -3631,6 +4045,12 @@
    "calc_check": {
     "expr": "35+3600/120",
     "value": 65
+   },
+   "rule_line": "Full-time equivalents are total part-time hours divided by 120 per month, added to full-time employees.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
    }
   },
   {
@@ -3688,7 +4108,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: Treas. Reg. 31.3121(d)-1 (Cornell LII)",
    "summary_ko": "근로자 여부는 지휘·통제 권리라는 실질로 판단하며 계약 명칭이나 1099 제출 여부가 결정하지 않는다.",
-   "source_draft": "C15+OX14+OX15"
+   "source_draft": "C15+OX14+OX15",
+   "rule_line": "Worker classification turns on the right to control details and means of the work, not labels or skill.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-D-0003",
@@ -3745,7 +4171,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 704(a)(1), 727, 109(e) (Cornell LII)",
    "summary_ko": "제7장은 관재인이 비면제 재산을 환가해 배당하는 청산 절차이고 제13장은 정기 소득이 있는 개인의 변제계획 절차이다.",
-   "source_draft": "OX16+OX17"
+   "source_draft": "OX16+OX17",
+   "rule_line": "Chapter 7 liquidates entities and individuals, while chapter 13 is a repayment plan only for individuals with regular income.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-D-0004",
@@ -3794,7 +4226,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 727(a)(8) (Cornell LII)",
    "summary_ko": "8년 이내 제7장 면책을 받았으면 새 제7장 사건에서 면책이 거부된다.",
-   "source_draft": "C16"
+   "source_draft": "C16",
+   "rule_line": "A chapter 7 discharge is barred if the debtor received a prior chapter 7 discharge in a case filed within eight years.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-D-0005",
@@ -3843,7 +4281,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 362(a),(a)(1) (Cornell LII)",
    "summary_ko": "파산 신청 시 신청 전 채권에 대한 소송 계속은 자동중지된다.",
-   "source_draft": "C17"
+   "source_draft": "C17",
+   "rule_line": "A bankruptcy petition automatically stays collection actions on pre-petition claims.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-D-0006",
@@ -3896,7 +4340,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 78dd-1(a), 78m(b)(2)(A) (Cornell LII); intermediary wording from the statute summary",
    "summary_ko": "중개인을 통한 외국 공무원 대상 뇌물 제공과 이를 허위 기재한 장부는 뇌물금지와 회계 조항을 함께 위반한다.",
-   "source_draft": "C18+OX18+M7"
+   "source_draft": "C18+OX18+M7",
+   "rule_line": "A payment knowingly passed through an intermediary to a foreign official violates FCPA anti-bribery and books-and-records provisions.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-D-0007",
@@ -3953,7 +4403,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 78dd-1(b) (Cornell LII)",
    "summary_ko": "일상적 정부 행위를 촉진하는 소액 지급은 뇌물금지의 예외이며 장부에 정확히 기재해야 한다.",
-   "source_draft": "C19"
+   "source_draft": "C19",
+   "rule_line": "The FCPA excepts small facilitating payments for routine governmental action, which must be accurately recorded.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-D-0008",
@@ -4002,7 +4458,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 26 U.S.C. 3301: excise tax on employers (Cornell LII)",
    "summary_ko": "FUTA는 고용주에게 부과되며 근로자 급여에서 원천징수하지 않는다.",
-   "source_draft": "M6"
+   "source_draft": "M6",
+   "rule_line": "FUTA tax is imposed on the employer alone and is not withheld from employees.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-D-0009",
@@ -4064,6 +4526,12 @@
    "calc_check": {
     "expr": "round(1000*0.062+1000*0.0145,2)",
     "value": 76.5
+   },
+   "rule_line": "The employee's Social Security and Medicare withholding cannot be waived by the employee.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "C": "calc"
    }
   },
   {
@@ -4117,7 +4585,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: §36B(c)(2)(B) excludes months of eligibility for other minimum essential coverage; (C) governs employer plan affordability and minimum value (Cornell LII)",
    "summary_ko": "적정하고 최소가치를 갖춘 고용주 보장에 가입 자격이 있으면 그 달은 보험료 세액공제가 배제된다.",
-   "source_draft": "OX12"
+   "source_draft": "OX12",
+   "rule_line": "A taxpayer eligible for affordable, minimum-value employer coverage generally cannot claim the premium tax credit.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-D-0011",
@@ -4179,6 +4653,12 @@
    "calc_check": {
     "expr": "(230000-200000)*9/1000",
     "value": 270
+   },
+   "rule_line": "Employers withhold 0.9% additional Medicare tax on wages above $200,000, regardless of filing status or spouse's wages.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "calc",
+    "D": "calc"
    }
   },
   {
@@ -4245,6 +4725,12 @@
    "calc_check": {
     "expr": "8*7000*6/100-8*7000*54/1000",
     "value": 336
+   },
+   "rule_line": "FUTA's net 0.6% rate applies only to the first $7,000 of each employee's wages after the state credit.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
    }
   },
   {
@@ -4306,6 +4792,12 @@
    "calc_check": {
     "expr": "(120-30)*3000",
     "value": 270000
+   },
+   "rule_line": "An employer offering no coverage owes a payment on full-time employees minus 30, times the annual amount.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "limit",
+    "D": "calc"
    }
   },
   {
@@ -4368,6 +4860,12 @@
    "calc_check": {
     "expr": "min(12*4500, (40-30)*3000)",
     "value": 30000
+   },
+   "rule_line": "For unaffordable coverage the payment is per credit recipient but capped at the no-coverage amount.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
    }
   },
   {
@@ -4421,7 +4919,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: IRC 6672(a), 6671(b) (Cornell LII)",
    "summary_ko": "원천징수세를 납부하지 않은 책임 있는 임원은 미납세액 전액 상당의 벌금을 개인적으로 질 수 있다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A responsible officer who willfully fails to pay over withheld taxes is personally liable for the trust fund recovery penalty.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-D-0016",
@@ -4470,7 +4974,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 547(b), (c), (f) (Cornell LII)",
    "summary_ko": "도산 상태에서 파산 신청 전 90일 이내 기존 채무를 변제해 채권자가 더 받게 되면 관재인이 부인할 수 있다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A trustee may avoid a payment on an old debt made within 90 days before bankruptcy while insolvent.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-D-0017",
@@ -4519,7 +5029,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 523(a)(2)(A) (Cornell LII)",
    "summary_ko": "허위 진술이나 사기로 얻은 돈에 대한 채무는 제7장 면책에서 제외된다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "Debts obtained by fraud are excepted from a chapter 7 discharge, while ordinary consumer, medical and rent debts are discharged.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-D-0018",
@@ -4568,7 +5084,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 15 U.S.C. 78dd-2(a), (h) (Cornell LII)",
    "summary_ko": "증권 등록이 없는 미국 기업도 국내 관계자(domestic concern)로서 해외 공무원 뇌물 금지 규정의 적용을 받는다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "The FCPA covers domestic concerns as well as issuers, using interstate commerce as the link.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-D-0019",
@@ -4617,7 +5139,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 362(a), (b)(1) (Cornell LII)",
    "summary_ko": "파산 신청의 자동중지는 채무자에 대한 형사 절차에는 적용되지 않는다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "The automatic stay does not stop criminal proceedings against the debtor.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-D-0020",
@@ -4666,7 +5194,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 548(a)(1) (Cornell LII)",
    "summary_ko": "파산 신청 전 2년 내 시가에 못 미치는 대가로 한 지급불능 상태의 양도는 수탁자가 부인할 수 있다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A transfer within two years for less than reasonably equivalent value while insolvent is constructively fraudulent.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "limit",
+    "C": "limit"
+   }
   },
   {
    "id": "REG-II-D-0021",
@@ -4729,6 +5263,12 @@
    "calc_check": {
     "expr": "20000*(60000-10000-20000)/100000",
     "value": 6000
+   },
+   "rule_line": "Chapter 7 distributions follow priority, and late-filed claims rank behind timely general claims.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
    }
   },
   {
@@ -4778,7 +5318,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 11 U.S.C. 1325(b)(1), (b)(4) (Cornell LII)",
    "summary_ko": "제13장 적용 약정기간은 중위소득 미만이면 3년, 이상이면 5년 이상이다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A below-median-income chapter 13 debtor has a three-year applicable commitment period; above-median debtors have five.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-II-D-0023",
@@ -4836,6 +5382,12 @@
    "calc_check": {
     "expr": "0.05*40000",
     "value": 2000
+   },
+   "rule_line": "A late employment tax deposit penalty is 5% if 6 to 15 days late, 2% within 5 days, and 10% if later.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "limit",
+    "D": "limit"
    }
   },
   {
@@ -4895,6 +5447,12 @@
    "calc_check": {
     "expr": "0.015*50000+0.20*0.0765*50000+0.0765*50000",
     "value": 5340
+   },
+   "rule_line": "Section 3509 reduced rates apply to misclassified workers when Forms 1099 were filed, using 1.5% of wages and 20% of employee FICA.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "limit",
+    "D": "calc"
    }
   },
   {
@@ -4948,7 +5506,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 26 U.S.C. 3121(d)(2), (d)(3) (Cornell LII)",
    "summary_ko": "전업 생명보험 외판원은 법정 근로자로 FICA상 직원이다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "Statutory employees include full-time life insurance salespersons and certain agent-drivers, while independent professionals and one-project freelancers are not.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-D-0026",
@@ -4997,7 +5561,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 26 U.S.C. 4980H(c)(2)(B) (Cornell LII)",
    "summary_ko": "50명 초과 기간이 120일 이하이고 초과 인원이 계절 근로자면 대규모 사용자로 보지 않는다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "The seasonal worker exception excludes an employer from large-employer status if its workforce exceeds 50 for 120 days or fewer due to seasonal workers.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-D-0027",
@@ -5058,6 +5628,12 @@
    "calc_check": {
     "expr": "8400-5100",
     "value": 3300
+   },
+   "rule_line": "Excess advance premium tax credit must be repaid in full without a cap for tax years beginning after 2025.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "calc",
+    "D": "calc"
    }
   },
   {
@@ -5111,7 +5687,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 15 U.S.C. 78dd-1(c), (f)(1)(A) (Cornell LII)",
    "summary_ko": "제품 시연과 직접 관련된 합리적이고 선의의 여비 지출은 FCPA 항변사유가 된다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "The FCPA affirmative defense covers reasonable, bona fide expenses directly related to product demonstration.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-D-0029",
@@ -5160,7 +5742,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: 15 U.S.C. 78m(b)(2)(A), (B) (Cornell LII)",
    "summary_ko": "FCPA 회계 조항은 뇌물 유무와 무관하게 발행회사에 내부회계통제 유지 의무를 부과한다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "An FCPA issuer must maintain adequate internal accounting controls, and violation does not require proof of a bribe.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0001",
@@ -5213,7 +5801,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 202(a), 306(a) (ULC PDF)",
    "summary_ko": "공동 소유·이익 공유로 영리 사업을 하면 신고 없이 일반 파트너십이 성립하고 파트너는 연대 책임을 진다.",
-   "source_draft": "C20+OX19"
+   "source_draft": "C20+OX19",
+   "rule_line": "Co-owners who carry on a business for profit and share profits form a general partnership without any filing.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0002",
@@ -5262,7 +5856,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: RULPA (1985) as enacted in South Carolina; ULC text not opened, confirm numbering",
    "summary_ko": "수정·신규 유한책임사원 가입에 대한 의결권 행사는 통제 참여의 안전 항목이라 무한책임을 지지 않는다.",
-   "source_draft": "C21+OX22"
+   "source_draft": "C21+OX22",
+   "rule_line": "A limited partner does not become liable as a general partner by voting on listed safe matters such as amending the agreement.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-II-E-0003",
@@ -5311,7 +5911,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 6.22(b) (ABA official text)",
    "summary_ko": "주주는 자신의 행위가 없는 한 법인 채무에 개인 책임을 지지 않는다.",
-   "source_draft": "C22"
+   "source_draft": "C22",
+   "rule_line": "A shareholder is not personally liable for corporate debts merely as a shareholder, even if sole owner.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0004",
@@ -5364,7 +5970,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 8.30(a),(b), 8.01(b) (ABA official text)",
    "summary_ko": "이사의 행위기준은 성실, 합리적 신념, 주의를 보며 결과만으로 위반이 되지 않는다.",
-   "source_draft": "C23"
+   "source_draft": "C23",
+   "rule_line": "A director satisfies the standard of conduct by acting in good faith, with reasonable belief and care, regardless of poor outcomes.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0005",
@@ -5413,7 +6025,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: ULLCA (2006, amended 2013) 304(a),(b) (ULC PDF); act is outside the Blueprint reference list (decision item)",
    "summary_ko": "LLC 구성원은 구성원이라는 이유만으로, 또는 형식 불이행만으로는 회사 채무에 책임지지 않는다.",
-   "source_draft": "C24+M8"
+   "source_draft": "C24+M8",
+   "rule_line": "A member of an LLC is not liable for LLC debts merely as a member, and ignoring formalities is not a ground for liability.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0006",
@@ -5466,7 +6084,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: RULPA (1985) as enacted in South Carolina; ULC text not opened, confirm numbering",
    "summary_ko": "무한책임사원만 외부 채권자에게 개인책임을 지고 통제에 참여하지 않은 유한책임사원은 지지 않는다.",
-   "source_draft": "C25"
+   "source_draft": "C25",
+   "rule_line": "A limited partnership's general partner is liable to outsiders, while non-controlling limited partners are not.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0007",
@@ -5515,7 +6139,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 2.03(a) text (ABA official text, 3rd ed., 2002 supplement)",
    "summary_ko": "법인의 존속은 서명이 아니라 정관 제출(접수) 시 시작된다.",
-   "source_draft": "OX20"
+   "source_draft": "OX20",
+   "rule_line": "A corporation's existence begins when the articles of incorporation are filed with the state.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0008",
@@ -5572,6 +6202,12 @@
    "calc_check": {
     "expr": "50000/2",
     "value": 25000
+   },
+   "rule_line": "Absent agreement, partners share distributions equally regardless of capital contributions.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
    }
   },
   {
@@ -5621,7 +6257,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 7.25(a), (c) (American Bar Foundation official text, 3rd ed. through 2002)",
    "summary_ko": "정족수가 충족되면 기본 규칙상 찬성 투표수가 반대 투표수를 넘으면 가결되고 기권은 투표수에 넣지 않는다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "By default, shareholder action passes if a quorum exists and votes cast for exceed votes cast against, with abstentions not counted.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0010",
@@ -5678,6 +6320,12 @@
    "calc_check": {
     "expr": "900000-500000-150000",
     "value": 250000
+   },
+   "rule_line": "On liquidation, preferred liquidation preference is paid after liabilities and before common shareholders.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
    }
   },
   {
@@ -5729,7 +6377,13 @@
    "needs_review": true,
    "review": "needs review: MBCA 8.60-8.63 matched in the 3rd ed. text through 2002; the current ABA revision text could not be opened (403), so confirm the wording before use",
    "summary_ko": "이해충돌 거래는 자격 있는 이사(충돌 이사와 그 관계자 제외) 중 투표자의 과반, 최소 2명이 찬성해야 안전항에 든다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A director's conflicting-interest transaction is safe if approved by a majority of qualified directors, excluding interested ones.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-E-0012",
@@ -5778,7 +6432,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 401(h), (k) (ULC final act PDF)",
    "summary_ko": "파트너십 약정의 변경은 모든 파트너의 찬성이 필요하고 통상 업무의 이견만 과반으로 정한다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "Amending a general partnership agreement requires the consent of all partners.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0013",
@@ -5837,6 +6497,12 @@
    "calc_check": {
     "expr": "60000*30/100+60000*20/100*30/(50+30)",
     "value": 22500
+   },
+   "rule_line": "In winding up, partners share losses in proportion to their profit shares, and a defaulting partner's share is reallocated proportionally.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
    }
   },
   {
@@ -5890,7 +6556,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: RUPA (1997, amended 2013) 801(1), 601(1) (ULC final act PDF)",
    "summary_ko": "기간의 정함이 없는 파트너십에서 파트너가 탈퇴 의사를 표시하면 해산되고 청산해야 한다.",
-   "source_draft": "batch5"
+   "source_draft": "batch5",
+   "rule_line": "A partner's express will to withdraw from a partnership at will causes dissolution and winding up.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0015",
@@ -5939,7 +6611,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 3rd ed. text (American Bar Foundation, through 2002 supplement); 2016 revision not opened; 2.04 text opened",
    "summary_ko": "설립 전 법인을 위해 행위하며 미설립을 알았던 자는 연대 책임을 진다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "Persons who act as a corporation knowing there was no incorporation are jointly and severally liable.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0016",
@@ -5988,7 +6666,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 3rd ed. text (American Bar Foundation, through 2002 supplement); 2016 revision not opened; 8.08 text opened",
    "summary_ko": "누적투표가 없으면 제거 찬성표가 반대표를 넘을 때 이사를 해임할 수 있다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "By default, directors may be removed with or without cause when votes cast to remove exceed votes cast against.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0017",
@@ -6037,7 +6721,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 3rd ed. text (American Bar Foundation, through 2002 supplement); 2016 revision not opened; 6.30 text opened",
    "summary_ko": "정관에 규정이 없으면 주주는 신주인수 우선권이 없다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "Shareholders have no preemptive right unless the articles of incorporation provide one.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0018",
@@ -6086,7 +6776,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 3rd ed. text (American Bar Foundation, through 2002 supplement); 2016 revision not opened; 7.28 text opened",
    "summary_ko": "정관에 규정이 없으면 누적투표권이 없고 이사는 다수표로 선출된다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "Cumulative voting is not available unless the articles provide for it.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0019",
@@ -6135,7 +6831,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: MBCA 3rd ed. text (American Bar Foundation, through 2002 supplement); 2016 revision not opened; 8.24 text opened",
    "summary_ko": "이사회 정족수는 고정 인원의 과반이고 결의는 출석 이사의 과반이면 성립한다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A board quorum is a majority of the fixed number of directors, and action needs a majority of those present.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0020",
@@ -6184,7 +6886,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: ULLCA (2006, amended 2013) 407(b) (ULC final act PDF text opened)",
    "summary_ko": "구성원 경영 LLC에서 통상 업무 분쟁은 구성원 과반, 정관 변경은 전원 동의가 필요하다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "In a member-managed LLC, ordinary matters need a majority of members, but amending the operating agreement needs all members.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-II-E-0021",
@@ -6233,7 +6941,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: ULLCA (2006, amended 2013) 409(a)-(e) (ULC final act PDF text opened)",
    "summary_ko": "LLC 구성원의 주의의무는 중과실·고의 위반에 한정되고 경업 금지는 충실의무 위반이다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "In a member-managed LLC, the duty of care reaches only gross negligence, and usurping company opportunity breaches loyalty.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-II-E-0022",
@@ -6282,7 +6996,13 @@
    "needs_review": false,
    "review": "verified 2026-09-29: ULLCA (2006, amended 2013) 503(a), (c) (ULC final act PDF text opened); transferee rights in 502 not quoted",
    "summary_ko": "채권자는 차압 명령이나 경매로 분배 청구권만 얻고 구성원이 되지 못한다.",
-   "source_draft": "batch6"
+   "source_draft": "batch6",
+   "rule_line": "A charging order gives the judgment creditor only the debtor member's distributions, not membership or management rights.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   }
  ]
 }

@@ -64,7 +64,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-001"
+   "rewrite_of": "REGMC-reg_individuals-001",
+   "rule_line": "Unemployment compensation is taxable; gifts, life insurance proceeds and state or local bond interest are excluded.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0002",
@@ -144,7 +150,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Employer educational assistance is excluded only up to $5,250 per year; the excess is wages.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "limit",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-A-0003",
@@ -230,7 +242,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-002"
+   "rewrite_of": "REGMC-reg_individuals-002",
+   "rule_line": "A partner is taxed on guaranteed payments and the distributive share; cash distributions reduce basis and are not income.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-A-0004",
@@ -312,7 +330,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-006"
+   "rewrite_of": "REGMC-reg_individuals-006",
+   "rule_line": "Interest on state and local bonds, including private activity bonds, is excluded from regular income; private activity bond interest is only an AMT preference.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0005",
@@ -388,7 +412,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An annuity's taxable part is the payment less the exclusion ratio of investment divided by expected return.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0006",
@@ -465,7 +495,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Social Security benefits are taxable up to 85% based on provisional income and the $25,000 and $34,000 base amounts.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-IV-A-0007",
@@ -545,7 +581,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Canceled debt is income except to the extent of insolvency immediately before cancellation.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0008",
@@ -597,7 +639,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Damages for personal physical injury or sickness are excluded; punitive, back pay and non-physical emotional distress damages are taxable.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0009",
@@ -677,7 +725,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Compensatory damages for physical injury are excluded, but punitive damages and interest on the judgment are taxable.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0010",
@@ -734,7 +788,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-003"
+   "rewrite_of": "REGMC-reg_individuals-003",
+   "rule_line": "Stock held more than one year produces long-term capital gain equal to amount realized less basis.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "C": "calc"
+   }
   },
   {
    "id": "REG-IV-A-0011",
@@ -791,7 +851,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-005"
+   "rewrite_of": "REGMC-reg_individuals-005",
+   "rule_line": "Inherited property takes FMV at death as basis and is automatically long-term.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0012",
@@ -872,7 +938,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-004"
+   "rewrite_of": "REGMC-reg_individuals-004",
+   "rule_line": "A donee's loss basis is the lower of the donor's basis or FMV at the gift date.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-A-0013",
@@ -956,7 +1028,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Paying for a personal purchase with virtual currency is a taxable disposition of property; gain is value received less basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-A-0014",
@@ -1013,7 +1091,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-007"
+   "rewrite_of": "REGMC-reg_individuals-007",
+   "rule_line": "Inheritance is excluded from gross income, but rent the inherited property produces afterward is taxable.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0015",
@@ -1089,7 +1173,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Life insurance proceeds are excluded, but interest added to installment payments is taxable.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0016",
@@ -1169,7 +1259,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-008"
+   "rewrite_of": "REGMC-reg_individuals-008",
+   "rule_line": "A cash-basis decedent's final return reports only income received before death; later wages are income in respect of a decedent taxed to the recipient.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0017",
@@ -1226,7 +1322,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-009"
+   "rewrite_of": "REGMC-reg_individuals-009",
+   "rule_line": "Income in respect of a decedent keeps the character it would have had for the decedent and gets no basis step-up.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0018",
@@ -1306,7 +1408,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "For divorce instruments after 2018, alimony is not income to the recipient, and child support never is.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0019",
@@ -1358,7 +1466,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Bartering income equals the FMV of the property or services received.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-A-0020",
@@ -1410,7 +1524,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Scholarship amounts used for tuition, fees, books and required supplies are excluded; amounts for room and board are taxable.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0021",
@@ -1466,7 +1586,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Occasional low-value property is a de minimis fringe benefit, but cash and cash equivalents such as general gift cards are taxable wages.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0022",
@@ -1522,7 +1648,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Prizes and game show winnings are included in gross income, while gifts, inheritances and accountable plan reimbursements are excluded.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "C": "trap"
+   }
   },
   {
    "id": "REG-IV-A-0023",
@@ -1578,7 +1710,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A cash-basis taxpayer reports income when it is constructively received, meaning available without substantial restriction.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0024",
@@ -1634,7 +1772,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Virtual currency received for services is self-employment income at its FMV on the receipt date.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0025",
@@ -1716,7 +1860,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Form 1099-G unemployment compensation is taxable and must be reported, while tax-exempt interest and 401(k) deferrals are already excluded correctly.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "C": "trap"
+   }
   },
   {
    "id": "REG-IV-A-0026",
@@ -1793,7 +1943,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A direct rollover from a qualified plan to an IRA is not a taxable distribution and draws no early distribution tax.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0027",
@@ -1873,7 +2029,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Proceeds reported on Form 1099-B must be reported; with basis blank, the taxpayer reports documented basis from her own records.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0028",
@@ -1953,7 +2115,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A gift carries over the donor's basis while an inheritance is stepped up to FMV, so the donee's gain is larger.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-A-0029",
@@ -2009,7 +2177,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Canceled debt is excludable to the extent of insolvency immediately before cancellation; a solvent debtor includes it all.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0030",
@@ -2082,7 +2256,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Form 1099-NEC income is self-employment income on Schedule C subject to SE tax, with no de minimis reporting threshold.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "limit",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0031",
@@ -2159,7 +2339,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Income earned but unreceived by a cash-basis decedent is income in respect of a decedent reported by whoever collects it, not on the final return.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0032",
@@ -2227,7 +2413,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Long-term requires holding more than one year, with the holding period starting the day after acquisition.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0033",
@@ -2308,7 +2500,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Under the general method, the exclusion ratio is investment in the contract divided by expected return, applied to each payment.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-A-0034",
@@ -2409,7 +2607,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A home sale due to a job change allows a prorated exclusion of $250,000 times months of use over 24.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-B-0001",
@@ -2465,7 +2669,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Items that could affect partners differently, such as capital gains, are separately stated; ordinary operating expenses net into ordinary income.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-B-0002",
@@ -2545,7 +2755,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-010"
+   "rewrite_of": "REGMC-reg_individuals-010",
+   "rule_line": "A partner reports her distributive share of partnership income regardless of cash distributed.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-B-0003",
@@ -2630,7 +2846,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "S corporation stock basis increases for income including tax-exempt income and decreases for distributions and nondeductible expenses.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-B-0004",
@@ -2714,7 +2936,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-011"
+   "rewrite_of": "REGMC-reg_individuals-011",
+   "rule_line": "An S corporation shareholder may deduct losses only up to stock plus loan basis; the excess is suspended.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-B-0005",
@@ -2798,7 +3026,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "S corporation losses reduce stock basis first, then loan basis for the excess.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-B-0006",
@@ -2854,7 +3088,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A single-member LLC is disregarded by default and its owner reports the business on Schedule C with SE tax.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-B-0007",
@@ -2937,7 +3177,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Outside partnership basis equals contribution plus liability share plus income allocated minus distributions.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-B-0008",
@@ -3016,7 +3262,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A general partner's SE earnings include ordinary business income and guaranteed payments, but not interest or capital gains.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-B-0009",
@@ -3072,7 +3324,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An S corporation must pay shareholder-employees reasonable compensation as wages, or the IRS may recharacterize distributions as wages.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-B-0010",
@@ -3132,7 +3390,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "S corporation loss limits apply in order: basis, then at-risk, then passive activity, then excess business loss.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-B-0011",
@@ -3216,7 +3480,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "S corporation K-1 income is not subject to SE tax, but reasonable wages still bear FICA; savings equal the SE tax difference.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-B-0012",
@@ -3313,7 +3583,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A general partner's guaranteed payment for services is ordinary income and net earnings from self-employment.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "C": "trap"
+   }
   },
   {
    "id": "REG-IV-B-0013",
@@ -3397,7 +3673,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A partner's basis includes her share of partnership liabilities, but an S shareholder's basis excludes corporate debt owed to others.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-B-0014",
@@ -3506,7 +3788,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "S corporation shareholder basis is reduced by distributions before losses are applied, limiting the deductible loss.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-B-0015",
@@ -3562,7 +3850,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "S corporation distributions without E&P are tax-free up to stock basis, and the excess is capital gain.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0001",
@@ -3642,7 +3936,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A traditional IRA deduction for a plan-covered taxpayer phases out ratably across the MAGI range.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0002",
@@ -3718,7 +4018,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The HSA annual limit is the family limit plus catch-up if 55 or older, reduced by employer contributions.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-C-0003",
@@ -3771,7 +4077,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-013"
+   "rewrite_of": "REGMC-reg_individuals-013",
+   "rule_line": "HSA eligibility needs a qualifying high-deductible plan, no other disqualifying coverage, no Medicare enrollment and no dependent status.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0004",
@@ -3852,7 +4164,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-012"
+   "rewrite_of": "REGMC-reg_individuals-012",
+   "rule_line": "Half of self-employment tax, computed on 92.35% of net earnings, is deductible as an adjustment to income.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-C-0005",
@@ -3928,7 +4246,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The student loan interest deduction is capped and phases out ratably across the MAGI range.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0006",
@@ -4008,7 +4332,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Alimony under a pre-2019 divorce instrument is deductible by the payer; child support never is.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0007",
@@ -4088,7 +4418,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A self-employed SEP contribution is effectively 20% of net earnings after the deduction for half of SE tax.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-IV-C-0008",
@@ -4164,7 +4500,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The self-employed health insurance deduction cannot exceed net earnings after the deduction for half of SE tax.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0009",
@@ -4220,7 +4562,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Early withdrawal penalties are an above-the-line adjustment, while employee expenses, preparation fees and most moving costs are not deductible.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0010",
@@ -4297,7 +4645,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-014"
+   "rewrite_of": "REGMC-reg_individuals-014",
+   "rule_line": "Only qualifying medical expenses exceeding 7.5% of AGI are deductible; cosmetic surgery and general fitness costs do not qualify.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0011",
@@ -4374,7 +4728,13 @@
    "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_individuals-015",
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "Home mortgage interest is deductible only on acquisition debt up to $750,000 for debt incurred after December 15, 2017.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0012",
@@ -4430,7 +4790,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "State and local income and property taxes are deductible on Schedule A up to the cap; federal income tax, assessments and HOA dues are not.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0013",
@@ -4508,7 +4874,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01"
+   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01",
+   "rule_line": "The SALT cap is reduced by 30% of modified AGI above the threshold, but not below the $10,000 floor.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0014",
@@ -4585,7 +4957,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01"
+   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01",
+   "rule_line": "The SALT cap phases down with income but never below a $10,000 floor.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0015",
@@ -4662,7 +5040,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-016"
+   "rewrite_of": "REGMC-reg_individuals-016",
+   "rule_line": "A personal casualty loss is the lesser of basis or value decline, less insurance, less $100 and 10% of AGI.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-C-0016",
@@ -4716,7 +5100,13 @@
    "status": "verified",
    "version": 1,
    "rewrite_of": "REGOX-reg_individuals-055",
-   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01"
+   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01",
+   "rule_line": "Personal casualty losses are deductible only if attributable to a federally declared disaster.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0017",
@@ -4793,7 +5183,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01"
+   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01",
+   "rule_line": "Gambling losses are an itemized deduction limited to winnings and, in 2026, to 90% of losses; winnings are fully included.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "limit",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-C-0018",
@@ -4845,7 +5241,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A contribution of $250 or more needs a contemporaneous written acknowledgment from the charity plus a bank record.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0019",
@@ -4898,7 +5300,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "The moving expense deduction is limited to active-duty Armed Forces members moving under a military order and certain intelligence personnel.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0020",
@@ -4954,7 +5362,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Investment interest is deductible up to net investment income, with the excess carried forward indefinitely.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0021",
@@ -5031,7 +5445,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "Itemizing saves tax only on the excess of itemized deductions over the standard deduction times the marginal rate.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-C-0022",
@@ -5108,7 +5528,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "The standard deduction increases by an additional amount for age 65 or older and another for blindness.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0023",
@@ -5190,7 +5616,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "The senior deduction is per qualifying individual and phases out by 6% of MAGI above the threshold, applied separately to each.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0024",
@@ -5266,7 +5698,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "Only the premium half of qualifying overtime pay is deductible, up to the maximum.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-IV-C-0025",
@@ -5343,7 +5781,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "The QBI deduction is 20% of the lesser of QBI or taxable income minus net capital gain.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-C-0026",
@@ -5420,7 +5864,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "The QBI deduction is 20% of the lesser of QBI or taxable income before the deduction.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0027",
@@ -5501,7 +5951,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "QBI is reduced by deductions attributable to the business, including half of SE tax and retirement contributions.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-C-0028",
@@ -5578,7 +6034,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "Above the phase-in range, the QBI deduction is limited to the greater of 50% of W-2 wages or 25% of wages plus 2.5% of property.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0029",
@@ -5635,7 +6097,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-017"
+   "rewrite_of": "REGMC-reg_individuals-017",
+   "rule_line": "Health and other listed professional fields are specified service businesses; engineering, architecture and retail are not.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0030",
@@ -5716,7 +6184,13 @@
    "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_individuals-018",
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "Below the threshold, a specified service business gets the full 20% QBI deduction with no wage limit.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-C-0031",
@@ -5802,7 +6276,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "Unreimbursed employee business expenses are miscellaneous itemized deductions and are not allowed in 2026.",
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-IV-C-0032",
@@ -5879,7 +6359,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01"
+   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01",
+   "rule_line": "The SALT cap equals the base cap less 30% of MAGI over the threshold, so different thresholds change the allowed amount.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "C": "calc"
+   }
   },
   {
    "id": "REG-IV-C-0033",
@@ -5960,7 +6446,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "QBI must be reduced by half of SE tax, self-employed health insurance and retirement plan contributions before applying 20%.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0034",
@@ -6037,7 +6529,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "A specified service business gets no QBI deduction above the phase-in range, while others are limited to 50% of W-2 wages.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0035",
@@ -6118,7 +6616,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A plan-covered single taxpayer's IRA deduction is zero when MAGI exceeds the top of the phase-out range.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0036",
@@ -6198,7 +6702,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The HSA annual limit includes employer contributions, so the personal deduction is the limit minus employer amounts; excess is subject to a 6% excise tax.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-C-0037",
@@ -6251,7 +6761,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "Home mortgage interest is deductible on acquisition debt within $750,000; home equity debt qualifies only if used to buy, build or improve the home.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0001",
@@ -6308,7 +6824,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-020"
+   "rewrite_of": "REGMC-reg_individuals-020",
+   "rule_line": "An individual's net capital loss is deductible up to $3,000 per year, with the excess carried forward indefinitely keeping its character.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-IV-D-0002",
@@ -6360,7 +6882,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The annual net capital loss deduction is $3,000, or $1,500 for married filing separately.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0003",
@@ -6412,7 +6940,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Real estate professional status requires more than half of personal service time and over 750 hours in real property businesses where she materially participates.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0004",
@@ -6465,7 +6999,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-022"
+   "rewrite_of": "REGMC-reg_individuals-022",
+   "rule_line": "A partner's loss is allowed only to the extent of outside basis; the excess carries forward indefinitely until basis is restored.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0005",
@@ -6517,7 +7057,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Losses on personal-use property such as a car, home or furniture are not deductible, but investment property losses are.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0006",
@@ -6573,7 +7119,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A wash sale arises from buying substantially identical stock, including by the taxpayer's IRA, within 30 days before or after the sale.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "limit",
+    "C": "limit"
+   }
   },
   {
    "id": "REG-IV-D-0007",
@@ -6631,7 +7183,13 @@
    "status": "verified",
    "version": 1,
    "rewrite_of": "REGMC-reg_individuals-024",
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "Hobby income is taxable, but hobby expenses are not deductible, so no loss arises.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0008",
@@ -6712,7 +7270,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-019"
+   "rewrite_of": "REGMC-reg_individuals-019",
+   "rule_line": "Net short-term loss after offsetting long-term gain is deducted up to $3,000, with the remainder carried forward.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-D-0009",
@@ -6789,7 +7353,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The $25,000 rental loss allowance is reduced by 50% of MAGI above $100,000 for active participants.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0010",
@@ -6870,7 +7440,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-021"
+   "rewrite_of": "REGMC-reg_individuals-021",
+   "rule_line": "Partnership losses are limited first by outside basis, then by the amount at risk, with the excess carried forward.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0011",
@@ -6947,7 +7523,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-023"
+   "rewrite_of": "REGMC-reg_individuals-023",
+   "rule_line": "A wash sale's disallowed loss is added to the replacement shares' basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-D-0012",
@@ -7023,7 +7605,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A wash sale disallows the loss only on the replaced shares, in proportion to shares repurchased.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0013",
@@ -7103,7 +7691,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A loss on a sale to a related person is disallowed, but the buyer may reduce later gain by that disallowed loss.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-D-0014",
@@ -7159,7 +7753,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "For NOLs arising after 2017, the deduction is limited to 80% of taxable income, with the excess carried forward indefinitely.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0015",
@@ -7212,7 +7812,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "Excess business losses above the threshold are disallowed and carried forward as an NOL.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0016",
@@ -7288,7 +7894,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A fully taxable disposition of the entire passive interest to an unrelated party releases suspended losses; a gift does not.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-D-0017",
@@ -7393,7 +8005,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The net capital loss deduction is capped at $3,000, and the excess carries forward.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-D-0018",
@@ -7494,7 +8112,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The $25,000 rental allowance is reduced by 50% of MAGI above $100,000.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0019",
@@ -7570,7 +8194,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A Form 1099-B wash sale adjustment reduces the reportable loss by the disallowed amount.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-D-0020",
@@ -7651,7 +8281,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "A business loss is deductible while hobby income is taxable with no deduction, so the difference is the income plus the loss.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-D-0021",
@@ -7735,7 +8371,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Section 1244 stock allows ordinary loss up to $50,000 for a single filer; the rest is a capital loss limited to $3,000.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-IV-D-0022",
@@ -7819,7 +8461,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Loss limits apply in order: basis, at-risk, then passive activity, which allows losses up to passive income.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0023",
@@ -7875,7 +8523,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The wash sale rule applies to IRA purchases, but the disallowed loss cannot be added to IRA basis and is lost.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-D-0024",
@@ -7951,7 +8605,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The NOL deduction for post-2017 losses is limited to 80% of taxable income before the NOL.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-IV-D-0025",
@@ -8024,7 +8684,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Losses on personal-use property such as a family car are not deductible, unlike investment and worthless stock losses.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-IV-D-0026",
@@ -8100,7 +8766,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "On a joint return capital gains and losses net together, while separate returns face the $1,500 loss limit and full gain inclusion.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-E-0001",
@@ -8157,7 +8829,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-025"
+   "rewrite_of": "REGMC-reg_individuals-025",
+   "rule_line": "A spouse who has not remarried by year end may file jointly with the deceased spouse for the year of death.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-E-0002",
@@ -8210,7 +8888,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-026"
+   "rewrite_of": "REGMC-reg_individuals-026",
+   "rule_line": "Head of household requires an unmarried taxpayer paying over half the cost of a home that is the main home of a qualifying person for over half the year.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-E-0003",
@@ -8263,7 +8947,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-027"
+   "rewrite_of": "REGMC-reg_individuals-027",
+   "rule_line": "Parents and in-laws can be qualifying relatives without living with the taxpayer; cousins and unrelated persons must live in the household all year.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-E-0004",
@@ -8320,7 +9010,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-028"
+   "rewrite_of": "REGMC-reg_individuals-028",
+   "rule_line": "A qualifying child meets age, residency and support tests: under 19 or a full-time student under 24, lives over half the year, and does not provide over half own support.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "C": "limit"
+   }
   },
   {
    "id": "REG-IV-E-0005",
@@ -8377,7 +9073,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-029"
+   "rewrite_of": "REGMC-reg_individuals-029",
+   "rule_line": "A qualifying surviving spouse with a dependent child may use joint rates for two years after the year of death.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-E-0006",
@@ -8430,7 +9132,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-030"
+   "rewrite_of": "REGMC-reg_individuals-030",
+   "rule_line": "A taxpayer legally separated by decree of separate maintenance at year end is treated as unmarried and files as single or head of household.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-E-0007",
@@ -8486,7 +9194,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A married taxpayer whose spouse left the home for the last six months and who keeps up a home for a qualifying child may file as head of household.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-E-0008",
@@ -8542,7 +9256,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Form 8332 releases the child tax credit claim to the noncustodial parent, but only the custodial parent may file as head of household.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-IV-E-0009",
@@ -8594,7 +9314,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Under a multiple support agreement, one contributor of more than 10% may claim the dependent if the other eligible contributors agree in writing.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-E-0010",
@@ -8650,7 +9376,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A person with net self-employment earnings of $400 or more must file a return regardless of gross income or tax owed.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "limit"
+   }
   },
   {
    "id": "REG-IV-E-0011",
@@ -8727,7 +9459,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "A dependent's standard deduction is the greater of the minimum or earned income plus $450, capped at the regular amount.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-E-0012",
@@ -8783,7 +9521,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Nontaxable Social Security is excluded from gross income in the qualifying relative gross income test.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-E-0013",
@@ -8859,7 +9603,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "Head of household's tax saving equals the extra standard deduction times the marginal rate.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-E-0014",
@@ -8919,7 +9669,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Spouses filing separately must both itemize or both take the standard deduction, and lose education credits.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-IV-E-0015",
@@ -9000,7 +9756,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Head of household requires the qualifying child to live with the taxpayer for more than half the year.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-E-0016",
@@ -9085,7 +9847,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A qualifying child must be under 24 if a student; a child who fails may still be a qualifying relative, which has no age test.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-E-0017",
@@ -9141,7 +9909,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "For divorced parents without Form 8332, the custodial parent is the one with whom the child lived more nights.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-E-0018",
@@ -9214,7 +9988,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Qualifying surviving spouse status requires a dependent child; without one the taxpayer files as single.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0001",
@@ -9278,7 +10058,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The earned income credit is refundable, while the lifetime learning, dependent care and foreign tax credits are nonrefundable.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0002",
@@ -9331,7 +10117,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-031"
+   "rewrite_of": "REGMC-reg_individuals-031",
+   "rule_line": "Calendar-year individual estimated tax installments are due April 15, June 15, September 15 and January 15 of the next year.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-IV-F-0003",
@@ -9384,7 +10176,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-032"
+   "rewrite_of": "REGMC-reg_individuals-032",
+   "rule_line": "If prior-year AGI exceeds $150,000, the prior-year safe harbor is 110% of last year's tax.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0004",
@@ -9437,7 +10235,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-033"
+   "rewrite_of": "REGMC-reg_individuals-033",
+   "rule_line": "No estimated tax penalty applies if tax due after withholding is under $1,000.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0005",
@@ -9494,7 +10298,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-035"
+   "rewrite_of": "REGMC-reg_individuals-035",
+   "rule_line": "A qualifying surviving spouse uses the married filing jointly rates and standard deduction.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0006",
@@ -9546,7 +10356,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Net investment income includes interest, dividends, capital gains, rents and royalties, but not wages, Social Security or tax-exempt interest.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0007",
@@ -9602,7 +10418,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The bargain element of unsold incentive stock options is an AMT adjustment; municipal interest, charitable gifts and qualified mortgage interest are not.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0008",
@@ -9654,7 +10476,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "AMT paid on deferral items such as ISO exercises generates a nonrefundable minimum tax credit carried forward against later regular tax.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0009",
@@ -9710,7 +10538,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The kiddie tax applies to a child under 19, or a full-time student under 24, who has unearned income above the threshold and a living parent.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0010",
@@ -9763,7 +10597,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "The child tax credit requires a qualifying child under 17 with a valid SSN who lives with the taxpayer more than half the year.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0011",
@@ -9815,7 +10655,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The earned income credit requires earned income, a valid SSN, investment income within the limit and not being a nonresident alien.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0012",
@@ -9867,7 +10713,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "American opportunity credit expenses are tuition, required fees and required course materials, not room and board, loan interest or transportation.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0013",
@@ -9927,7 +10779,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Foreign income tax may be claimed as a limited credit or an itemized deduction, but not both for the same year.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0014",
@@ -10047,7 +10905,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "Income tax is computed progressively by bracket using the schedule for the taxpayer's filing status.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-F-0015",
@@ -10166,7 +11030,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "Qualified long-term gain fills the 0% band above ordinary taxable income, and the remainder is taxed at 15%.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0016",
@@ -10247,7 +11117,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-034"
+   "rewrite_of": "REGMC-reg_individuals-034",
+   "rule_line": "Net investment income tax is 3.8% of the lesser of net investment income or MAGI over the threshold.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "limit",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-F-0017",
@@ -10326,7 +11202,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Additional Medicare tax is 0.9% of wages above the $200,000 single threshold.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "calc",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-IV-F-0018",
@@ -10403,7 +11285,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "The child tax credit covers each dependent under 17, and other dependents get the smaller credit.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0019",
@@ -10480,7 +11368,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "The refundable child tax credit is the lesser of the per-child refundable cap or 15% of earned income above $2,500.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0020",
@@ -10557,7 +11451,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The American opportunity credit is phased out ratably by MAGI, and 40% of the credit is refundable.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0021",
@@ -10636,7 +11536,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The foreign tax credit is limited to U.S. tax times foreign source income over taxable income, with the excess carried back or forward.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0022",
@@ -10756,7 +11662,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "Tax on joint taxable income must be computed with the married filing jointly bracket schedule.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-F-0023",
@@ -10854,7 +11766,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01"
+   "testable_basis": "OBBBA provision effective 2024/2025: AICPA Board of Examiners policy (2025-09-18) -> testable 2026-07-01",
+   "rule_line": "The child tax credit phase-down counts each $1,000 or fraction of MAGI over the threshold as a full increment.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0024",
@@ -10973,7 +11891,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01"
+   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01",
+   "rule_line": "AMTI adds back SALT, ISO bargain element and private activity bond interest, subtracts the exemption, and AMT is the excess over regular tax.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-F-0025",
@@ -11071,7 +11995,13 @@
    },
    "status": "verified",
    "version": 1,
-   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01"
+   "testable_basis": "Effective for tax years beginning after 2025-12-31; AICPA rule = calendar quarter beginning 6 months after the later of enactment (2025-07-04) or effective date -> 2026-07-01",
+   "rule_line": "The AMT exemption phases out at 50 cents per dollar of AMTI above the threshold.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0026",
@@ -11147,7 +12077,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Only one of the American opportunity or lifetime learning credits may be claimed per student, so the difference is the two credits' gap.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-F-0027",
@@ -11223,7 +12159,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The estimated tax safe harbor is 90% of current tax or 110% of prior-year tax if prior AGI exceeds $150,000.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-IV-F-0028",
@@ -11303,7 +12245,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_individuals-036"
+   "rewrite_of": "REGMC-reg_individuals-036",
+   "rule_line": "Gain on S corporation stock is net investment income only to the extent of gain on passive assets in a deemed asset sale.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0029",
@@ -11403,7 +12351,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Kiddie tax unearned income above the threshold, after the standard deduction and child-rate band, is taxed at the parent's rate.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-IV-F-0030",
@@ -11505,7 +12459,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "SE tax applies the 12.4% Social Security rate only to earnings up to the wage base less wages, plus 2.9% Medicare on 92.35% of net earnings.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "calc"
+   }
   }
  ]
 }

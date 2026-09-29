@@ -106,6 +106,17 @@ for ar, items in per_area.items():
             if not it.get("steps"): F(i, "calc true but steps missing")
             cc = it.get("calc_check")
             if not cc: F(i, "calc true but calc_check missing")
+            elif "checks" in cc:
+                # multi-step form: {"checks": [{"expr", "value"}, ...]} (answer may be text, so only the steps are recomputed)
+                try:
+                    for st in cc["checks"]:
+                        v = eval(st["expr"], {"__builtins__": {}}, SAFE_EVAL)
+                        if abs(v - st["value"]) > 1: F(i, "calc_check step %s recomputes to %s, not %s" % (st["expr"], v, st["value"]))
+                    recalc[0] += 1
+                except NameError:
+                    recalc[1] += 1
+                except Exception as e:
+                    F(i, "calc_check error %s" % e)
             else:
                 try:
                     if all(nums) and abs(float(re.sub(r"[^\d.\-]", "", o[k])) - cc["value"]) > 0.5: F(i, "answer option differs from calc_check value")

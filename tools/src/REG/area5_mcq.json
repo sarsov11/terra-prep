@@ -61,7 +61,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-002"
+   "rewrite_of": "REGMC-reg_entities-002",
+   "rule_line": "Interest on state and local bonds is a permanent book-tax difference because it is never taxed; accelerated depreciation and reserves are temporary.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-A-0002",
@@ -147,7 +153,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Schedule M-1 adds back federal income tax, disallowed meals and fines, and subtracts tax-exempt interest and excess tax depreciation.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-A-0003",
@@ -232,7 +244,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Taxable income adds back federal tax, capital losses exceeding capital gains and premiums on policies where the corporation is beneficiary.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "C": "calc"
+   }
   },
   {
    "id": "REG-V-A-0004",
@@ -327,7 +345,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Excess tax depreciation over book depreciation is subtracted on Schedule M-1; entertainment, federal tax and tax-exempt interest are treated correctly.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-A-0005",
@@ -380,7 +404,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A corporation with total assets of $10 million or more at year-end files Schedule M-3 instead of M-1.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "C": "limit"
+   }
   },
   {
    "id": "REG-V-A-0006",
@@ -461,7 +491,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Temporary differences reverse later, such as depreciation and warranty accruals; fines, exempt interest and disallowed meals are permanent.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-A-0007",
@@ -543,7 +579,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Add back federal tax and reserve additions, add taxable prepaid income and subtract actual specific write-offs.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-A-0008",
@@ -596,7 +638,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Federal income tax expense in the books is added back on Schedule M-1.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-A-0009",
@@ -650,7 +698,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-001"
+   "rewrite_of": "REGMC-reg_entities-001",
+   "rule_line": "Country club dues are nondeductible in full and are added back on Schedule M-1.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-A-0010",
@@ -704,7 +758,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-003"
+   "rewrite_of": "REGMC-reg_entities-003",
+   "rule_line": "Residential rental property is depreciated straight-line over 27.5 years.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-A-0011",
@@ -786,7 +846,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Corporate charitable deductions are limited to contributions above 1% and up to 10% of taxable income before the deduction.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-A-0012",
@@ -866,7 +932,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Bonus depreciation lowers taxable income; subtract the excess of tax over book depreciation and add back federal tax.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-A-0013",
@@ -940,7 +1012,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Penalties paid to a government agency are permanent differences because they are never deductible.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-A-0014",
@@ -1022,7 +1100,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Premiums on officer life insurance for which the corporation is beneficiary are nondeductible and must be added back.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-A-0015",
@@ -1093,7 +1177,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Corporate charitable deductions are limited to 10% of taxable income before the deduction with a 1% floor; excess carries forward five years.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-A-0016",
@@ -1170,7 +1260,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Bonus depreciation accelerates the deduction, so taxable income is lower by the excess over regular first-year depreciation.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-A-0017",
@@ -1231,7 +1327,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Life insurance premiums where the corporation is beneficiary are nondeductible and death proceeds are excluded, both permanent differences.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-A-0018",
@@ -1308,7 +1410,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Fines are nondeductible and added back to taxable income, adding to the amount already reconciled.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-B-0001",
@@ -1385,7 +1493,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-004"
+   "rewrite_of": "REGMC-reg_entities-004",
+   "rule_line": "Domestic C corporations pay a flat 21% federal tax on taxable income.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-V-B-0002",
@@ -1466,7 +1580,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-005"
+   "rewrite_of": "REGMC-reg_entities-005",
+   "rule_line": "The dividends-received deduction is 65% for 20% to under 80% ownership.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-V-B-0003",
@@ -1551,7 +1671,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The DRD is the lesser of the percentage of dividends or the percentage of taxable income before the DRD, unless it creates a loss.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "limit",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-B-0004",
@@ -1604,7 +1730,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The DRD requires holding the stock more than 45 days within the 91-day period around the ex-dividend date.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0005",
@@ -1698,7 +1830,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Corporate taxable income excludes state bond interest, applies the 1% charity floor and the DRD, then the 21% rate.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-B-0006",
@@ -1751,7 +1889,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An accrual-basis corporation may treat a board-authorized gift as paid in the year authorized if paid within 3.5 months after year-end.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "trap",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-B-0007",
@@ -1838,7 +1982,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The DRD is 65% for 20% to under 80% ownership, 50% below 20%, and 100% only for qualifying affiliated group dividends.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0008",
@@ -1916,7 +2066,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Corporate organizational costs allow a $5,000 immediate deduction and amortization of the rest over 180 months from the month business begins.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0009",
@@ -1973,7 +2129,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A calendar-year corporation's estimated tax installments are due on the 15th of the fourth, sixth, ninth and twelfth months.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "C": "limit"
+   }
   },
   {
    "id": "REG-V-B-0010",
@@ -2030,7 +2192,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A calendar-year C corporation's Form 1120 is due April 15 with an automatic six-month extension to October 15.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-V-B-0011",
@@ -2111,7 +2279,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A post-2017 NOL deduction is limited to 80% of taxable income, with the rest carried forward.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-V-B-0012",
@@ -2165,7 +2339,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-007"
+   "rewrite_of": "REGMC-reg_entities-007",
+   "rule_line": "A post-2020 NOL has no carryback and an indefinite carryforward, limited to 80% of taxable income.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-B-0013",
@@ -2219,7 +2399,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-008"
+   "rewrite_of": "REGMC-reg_entities-008",
+   "rule_line": "A corporation deducts capital losses only against capital gains, with a three-year carryback and five-year carryforward as short-term.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0014",
@@ -2296,7 +2482,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A corporation's capital loss offsets only capital gains, not ordinary income, and taxable income is taxed at 21%.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-B-0015",
@@ -2374,7 +2566,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The 80% NOL limit applies each year, so a partly used NOL carryover is deducted in later years against the remaining income.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-B-0016",
@@ -2462,7 +2660,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The NOL deduction is capped at 80% of taxable income and unused NOL carries forward indefinitely without carryback.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "limit",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-B-0017",
@@ -2511,7 +2715,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A corporate net capital loss carries back to the third preceding year first, then the second and first, with the rest carried forward five years.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0018",
@@ -2594,7 +2804,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-012"
+   "rewrite_of": "REGMC-reg_entities-012",
+   "rule_line": "The general business credit cannot exceed net income tax minus 25% of net regular tax over $25,000.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0019",
@@ -2648,7 +2864,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-010"
+   "rewrite_of": "REGMC-reg_entities-010",
+   "rule_line": "Unused general business credits carry back one year and forward up to 20 years, and are not refundable.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-B-0020",
@@ -2729,7 +2951,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The foreign tax credit is limited to U.S. tax times foreign-source income over worldwide income.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-B-0021",
@@ -2783,7 +3011,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-011"
+   "rewrite_of": "REGMC-reg_entities-011",
+   "rule_line": "The research credit is part of the general business credit; the foreign tax credit and withholding are separate.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0022",
@@ -2876,7 +3110,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The general business credit limit leaves some tax payable, and unused credits carry to other years rather than being refunded.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-B-0023",
@@ -2929,7 +3169,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Repairing products at customers' sites exceeds protected solicitation of orders and can create state income tax nexus.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0024",
@@ -2982,7 +3228,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Economic nexus under Wayfair lets a state require collection from remote sellers above a sales threshold without physical presence.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-B-0025",
@@ -3035,7 +3287,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Multistate business income is apportioned by formula, while nonbusiness income is allocated to a specific state.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0026",
@@ -3111,7 +3369,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Under a single sales factor, apportioned income equals the state's sales share times business income.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0027",
@@ -3188,7 +3452,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A double-weighted sales formula averages 2 x sales plus property and payroll over four, then multiplies by business income.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-B-0028",
@@ -3265,7 +3535,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "State taxable income equals formula-apportioned business income plus nonbusiness income allocated to that state.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0029",
@@ -3329,7 +3605,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "State tax depends on each state's apportionment formula and rate applied to the same taxable income.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-B-0030",
@@ -3386,7 +3668,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A C corporation deducts state income taxes as a business expense, and the individual SALT cap does not apply.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-B-0031",
@@ -3463,7 +3751,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "On a transfer to a controlled corporation, gain is recognized only to the extent of boot received, up to realized gain.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0032",
@@ -3537,7 +3831,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Stock basis equals property basis minus boot received plus gain recognized.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0033",
@@ -3614,7 +3914,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Liabilities assumed in a controlled corporation transfer create gain only to the extent they exceed the transferred property's basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0034",
@@ -3667,7 +3973,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A transfer to a controlled corporation needs the property transferors to hold at least 80% of the stock immediately afterward; services stock does not count.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-V-B-0035",
@@ -3725,7 +4037,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "In a tax-free transfer to a controlled corporation, the corporation takes carryover basis, increased by any gain recognized.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0036",
@@ -3782,7 +4100,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Stock received for services is ordinary compensation income at FMV, and that value becomes the stock's basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-B-0037",
@@ -3858,7 +4182,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A distribution is a dividend to the extent of current earnings and profits, even if accumulated E&P is negative.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0038",
@@ -3935,7 +4265,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A distribution is dividend to the extent of E&P, then reduces basis, then is capital gain.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-B-0039",
@@ -4006,7 +4342,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A corporation recognizes gain on distributing appreciated property as if sold at FMV, measured against its adjusted basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-B-0040",
@@ -4077,7 +4419,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A shareholder's basis in property received in a distribution is its FMV on the distribution date.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "calc"
+   }
   },
   {
    "id": "REG-V-B-0041",
@@ -4159,7 +4507,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Current E&P adds back the DRD and tax-exempt interest and subtracts federal tax, penalties and disallowed meals.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-B-0042",
@@ -4222,7 +4576,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A distribution is a dividend to the extent of E&P, then a return of basis, then capital gain.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0043",
@@ -4279,7 +4639,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A corporation's payment of a shareholder's personal expenses is a constructive dividend, not a deductible business expense.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0044",
@@ -4354,7 +4720,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "In a complete liquidation the shareholder is treated as selling stock, with gain equal to amount received minus basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-B-0045",
@@ -4416,7 +4788,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "In a taxable liquidation the corporation recognizes gain as if selling at FMV, and shareholders take FMV basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "calc"
+   }
   },
   {
    "id": "REG-V-B-0046",
@@ -4496,7 +4874,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "In a qualifying liquidation of an 80% subsidiary into its parent, the parent takes a carryover basis in the assets.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0047",
@@ -4557,7 +4941,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A subsidiary liquidation is tax-free only for the 80% corporate parent's share; the minority holder's share is taxable at both levels.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0048",
@@ -4610,7 +5000,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A consolidated return requires the parent to own at least 80% of both total voting power and value of the subsidiary.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "concept",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-V-B-0049",
@@ -4663,7 +5059,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Intercompany dividends in a consolidated group are excluded from income and reduce the parent's basis in the subsidiary stock.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-C-0001",
@@ -4721,7 +5123,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-013"
+   "rewrite_of": "REGMC-reg_entities-013",
+   "rule_line": "Permitted S corporation shareholders include individuals who are citizens or residents, estates and certain trusts, but not partnerships, corporations or nonresident aliens.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0002",
@@ -4785,7 +5193,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-015"
+   "rewrite_of": "REGMC-reg_entities-015",
+   "rule_line": "Family members are automatically treated as one shareholder for the 100-shareholder S corporation limit.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0003",
@@ -4839,7 +5253,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-018"
+   "rewrite_of": "REGMC-reg_entities-018",
+   "rule_line": "Shares with different distribution or liquidation rights create a second class of stock, while voting differences alone do not.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-C-0004",
@@ -4889,7 +5309,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-017"
+   "rewrite_of": "REGMC-reg_entities-017",
+   "rule_line": "Insurance companies taxed under subchapter L are ineligible for S status, while accumulated E&P does not bar the election.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0005",
@@ -4950,7 +5376,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Form 2553 must be filed by the 15th day of the third month of the tax year to be effective for that year.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-V-C-0006",
@@ -5014,7 +5446,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-019"
+   "rewrite_of": "REGMC-reg_entities-019",
+   "rule_line": "Revoking an S election requires consent of holders of more than half of all shares, voting and nonvoting.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-C-0007",
@@ -5068,7 +5506,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-020"
+   "rewrite_of": "REGMC-reg_entities-020",
+   "rule_line": "An S election terminates on the first day of the year after three consecutive years of excess passive income with accumulated E&P.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0008",
@@ -5121,7 +5565,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An S election terminates on the day the corporation ceases to qualify, splitting the year into S and C short years.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0009",
@@ -5171,7 +5621,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-021"
+   "rewrite_of": "REGMC-reg_entities-021",
+   "rule_line": "A corporation whose S election terminated may not re-elect before its fifth taxable year after the first C year without IRS consent.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "C": "limit"
+   }
   },
   {
    "id": "REG-V-C-0010",
@@ -5249,7 +5705,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Entities taxed as partnerships cannot be S corporation shareholders, while citizens, grantor trusts and resident aliens can.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0011",
@@ -5330,7 +5792,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-022"
+   "rewrite_of": "REGMC-reg_entities-022",
+   "rule_line": "S corporation ordinary income excludes separately stated items such as section 179, charity, interest and capital gains.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-C-0012",
@@ -5407,7 +5875,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "S corporation income is allocated per share per day of ownership, including the sale date.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-C-0013",
@@ -5460,7 +5934,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An S corporation deducts ordinary business expenses like wages, but not the DRD, an NOL or federal income tax.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0014",
@@ -5514,7 +5994,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-024"
+   "rewrite_of": "REGMC-reg_entities-024",
+   "rule_line": "An S corporation separately states items like charitable contributions that depend on each shareholder's own limits; wages, COGS and regular depreciation stay in box 1.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-C-0015",
@@ -5571,7 +6057,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Health premiums for a more-than-2% S shareholder-employee are included in wages but not FICA, and deductible by the corporation and shareholder.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0016",
@@ -5650,7 +6142,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Charitable contributions are separately stated, while regular depreciation stays in ordinary income and capital gains and interest are separately stated.",
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-V-C-0017",
@@ -5717,7 +6215,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "S corporation ordinary income is allocated to shareholders by ownership percentage, so each K-1 must sum to Schedule K.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "C": "trap"
+   }
   },
   {
    "id": "REG-V-C-0018",
@@ -5795,7 +6299,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "AAA increases with ordinary income and capital gains and decreases with nondeductible expenses, charity and distributions; tax-exempt income is excluded.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-C-0019",
@@ -5872,7 +6382,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-027"
+   "rewrite_of": "REGMC-reg_entities-027",
+   "rule_line": "For distributions, AAA is computed without regard to the net negative adjustment for the year.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0020",
@@ -5949,7 +6465,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-025"
+   "rewrite_of": "REGMC-reg_entities-025",
+   "rule_line": "With accumulated E&P, S distributions come first from AAA, then from E&P as dividends.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0021",
@@ -6003,7 +6525,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-026"
+   "rewrite_of": "REGMC-reg_entities-026",
+   "rule_line": "Tax-exempt income adjusts the other adjustments account, not AAA.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0022",
@@ -6053,7 +6581,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-027"
+   "rewrite_of": "REGMC-reg_entities-027",
+   "rule_line": "AAA for distributions is computed without regard to the year's net negative adjustment, so current losses do not reduce it.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0023",
@@ -6148,7 +6682,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Tax-exempt income does not adjust AAA, though ordinary income, gains, nondeductibles and distributions do.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-C-0024",
@@ -6220,7 +6760,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Without E&P, S distributions are tax-free up to stock basis and gain above it, regardless of AAA.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-C-0025",
@@ -6282,7 +6828,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Beyond AAA, an S corporation with accumulated E&P pays dividends from E&P; without E&P the excess reduces basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0026",
@@ -6331,7 +6883,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An S corporation may elect to distribute accumulated E&P first with consent of all affected shareholders.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0027",
@@ -6410,7 +6968,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-030"
+   "rewrite_of": "REGMC-reg_entities-030",
+   "rule_line": "S stock basis increases for income including tax-exempt income and decreases for distributions and nondeductible expenses.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-C-0028",
@@ -6487,7 +7051,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-023"
+   "rewrite_of": "REGMC-reg_entities-023",
+   "rule_line": "An S shareholder's deductible loss is limited to stock plus debt basis, with the excess suspended.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0029",
@@ -6564,7 +7134,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-031"
+   "rewrite_of": "REGMC-reg_entities-031",
+   "rule_line": "S losses reduce stock basis first, then debt basis for the excess.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0030",
@@ -6641,7 +7217,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Repayment of a note whose basis was reduced produces gain in proportion to the repaid share of the note.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-C-0031",
@@ -6714,7 +7296,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-032"
+   "rewrite_of": "REGMC-reg_entities-032",
+   "rule_line": "Net S income first restores debt basis to its original amount before increasing stock basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0032",
@@ -6764,7 +7352,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-028"
+   "rewrite_of": "REGMC-reg_entities-028",
+   "rule_line": "Nondeductible expenses reduce S stock basis, while tax-exempt income, capital gains and contributions increase it.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-C-0033",
@@ -6840,7 +7434,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-029"
+   "rewrite_of": "REGMC-reg_entities-029",
+   "rule_line": "A property charitable donation by an S corporation reduces shareholder basis by the shareholder's share of the property's adjusted basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0034",
@@ -6921,7 +7521,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A shareholder loan to the corporation creates debt basis, but a mere guarantee does not.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-C-0035",
@@ -7011,7 +7617,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Tax-exempt interest increases S stock basis, so it must be added; the other worksheet items are correct.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0036",
@@ -7068,7 +7680,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "S loss limits apply in order: basis, then at-risk, then passive activity.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0037",
@@ -7143,7 +7761,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A capital contribution of property increases stock basis by the shareholder's adjusted basis in the property.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0038",
@@ -7219,7 +7843,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Built-in gains tax applies to net recognized built-in gain during the five-year recognition period at the 21% corporate rate.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0039",
@@ -7268,7 +7898,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Built-in gains tax applies only to sales within the five-year recognition period after conversion.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "limit",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-C-0040",
@@ -7346,7 +7982,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Tax on excess net passive income is 21% of net passive income times excess gross passive income over gross passive income.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-C-0041",
@@ -7399,7 +8041,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An S corporation must pay shareholder-employees reasonable compensation; the IRS may recharacterize distributions as wages subject to employment tax.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0042",
@@ -7485,7 +8133,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A C corporation's profit is taxed at the corporate level and again as a dividend, so it costs more than pass-through S taxation.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0001",
@@ -7570,7 +8224,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-034"
+   "rewrite_of": "REGMC-reg_entities-034",
+   "rule_line": "Partnership ordinary income deducts wages and guaranteed payments; charity, capital gains, section 179 and interest are separately stated.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0002",
@@ -7652,7 +8312,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-035"
+   "rewrite_of": "REGMC-reg_entities-035",
+   "rule_line": "A partner reports guaranteed payments plus her share of ordinary income; cash distributions are not income.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0003",
@@ -7706,7 +8372,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-034"
+   "rewrite_of": "REGMC-reg_entities-034",
+   "rule_line": "Charitable contributions are separately stated by a partnership, while rent, wages and guaranteed payments are deducted in ordinary income.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0004",
@@ -7756,7 +8428,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-035"
+   "rewrite_of": "REGMC-reg_entities-035",
+   "rule_line": "A guaranteed payment for services is ordinary income to the partner and a deduction or capitalized cost to the partnership.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-D-0005",
@@ -7810,7 +8488,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-036"
+   "rewrite_of": "REGMC-reg_entities-036",
+   "rule_line": "Capital gains and losses are separately stated on partner K-1s, unlike wages, advertising and repairs.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0006",
@@ -7867,7 +8551,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A calendar-year partnership's Form 1065 is due March 15 with an automatic six-month extension to September 15.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-V-D-0007",
@@ -7920,7 +8610,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A limited partner's distributive share is excluded from SE earnings, but guaranteed payments for services are included.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0008",
@@ -8006,7 +8702,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A guaranteed payment for services is deducted in ordinary income and reported on the recipient partner's K-1.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-D-0009",
@@ -8068,7 +8770,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "K-1 profit percentages must match the partnership agreement and total 100%.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0010",
@@ -8149,7 +8857,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Guaranteed payments are the partner's ordinary income and reduce shared income, unlike nontaxable distributions.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0011",
@@ -8228,7 +8942,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-037"
+   "rewrite_of": "REGMC-reg_entities-037",
+   "rule_line": "Partner basis increases with income, tax-exempt income and liability share increases, and decreases with charity and distributions.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0012",
@@ -8309,7 +9029,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A partner's basis includes his share of partnership debt, but an S shareholder's basis excludes corporate debt to outsiders.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0013",
@@ -8385,7 +9111,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A decrease in a partner's share of liabilities is a deemed cash distribution, taxable to the extent above basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0014",
@@ -8439,7 +9171,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-037"
+   "rewrite_of": "REGMC-reg_entities-037",
+   "rule_line": "An increase in a partner's share of liabilities is treated as a contribution of money increasing outside basis.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0015",
@@ -8511,7 +9249,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-038"
+   "rewrite_of": "REGMC-reg_entities-038",
+   "rule_line": "A partner's basis equals cash contributed plus adjusted basis of contributed property.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0016",
@@ -8588,7 +9332,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-039"
+   "rewrite_of": "REGMC-reg_entities-039",
+   "rule_line": "A current distribution reduces basis by cash and the partnership's adjusted basis in distributed property.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0017",
@@ -8664,7 +9414,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A partner's basis includes his share of nonrecourse liabilities allocated by profit interests.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0018",
@@ -8754,7 +9510,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Services do not create partnership basis; only cash and property contributions, income and distributions adjust it.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-D-0019",
@@ -8816,7 +9578,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Basis is increased for income and decreased for charity before applying distributions, so gain arises only if distributions exceed basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0020",
@@ -8902,7 +9670,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Basis in a contributed-property partnership interest is property basis plus liability share minus liabilities assumed by the partnership.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0021",
@@ -8955,7 +9729,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A partner's capital account reflects FMV of contributed property while outside basis carries over adjusted basis.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0022",
@@ -9034,7 +9814,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A purchaser's partnership basis is cost plus share of partnership liabilities.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "calc"
+   }
   },
   {
    "id": "REG-V-D-0023",
@@ -9117,7 +9903,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An inherited partnership interest takes FMV at death plus the heir's share of liabilities.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "C": "calc"
+   }
   },
   {
    "id": "REG-V-D-0024",
@@ -9194,7 +9986,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-039"
+   "rewrite_of": "REGMC-reg_entities-039",
+   "rule_line": "In a current distribution the partner takes the partnership's adjusted basis in distributed property, limited to outside basis.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0025",
@@ -9266,7 +10064,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "In a current distribution, property basis cannot exceed the partner's outside basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0026",
@@ -9337,7 +10141,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "In a liquidation receiving only money, unrealized receivables and inventory, the partner recognizes a loss for basis minus cash.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0027",
@@ -9418,7 +10228,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "On sale of a partnership interest, gain from unrealized receivables is ordinary, and amount realized includes liability relief.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0028",
@@ -9471,7 +10287,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "On sale of a partnership interest, amounts from unrealized receivables and inventory are ordinary; goodwill gain is capital.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-D-0029",
@@ -9546,7 +10368,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "With a section 754 election, the transferee's basis adjustment is her outside basis minus her share of inside basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0030",
@@ -9599,7 +10427,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A mandatory basis adjustment applies on a transfer if the partnership has a substantial built-in loss over $250,000.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0031",
@@ -9678,7 +10512,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Liability relief is part of the amount realized on the sale of a partnership interest, and basis already includes the liability share.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0032",
@@ -9735,7 +10575,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An S corporation recognizes gain on distributing appreciated property, while a partnership generally recognizes none on a current distribution.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-D-0033",
@@ -9810,7 +10656,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "In a liquidation the partner's basis in distributed property is remaining outside basis after cash.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0034",
@@ -9872,7 +10724,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "In a liquidation with cash below basis, no gain arises and the property takes the remaining outside basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0035",
@@ -9949,7 +10807,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Under the traditional method, built-in gain on contributed property is allocated to the contributor before remaining gain is shared.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0036",
@@ -10002,7 +10866,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A special allocation is respected only with substantial economic effect, following capital accounts and the partners' economic deal.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0037",
@@ -10051,7 +10921,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A partnership generally adopts the tax year of partners owning more than 50% of profits and capital.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-D-0038",
@@ -10108,7 +10984,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A capital interest received for services is taxable compensation at value, while a profits interest generally is not taxed on receipt.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0039",
@@ -10183,7 +11065,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A partnership takes carryover basis in property contributed by a partner.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-E-0001",
@@ -10237,7 +11125,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-040"
+   "rewrite_of": "REGMC-reg_entities-040",
+   "rule_line": "A domestic single-member LLC with no election is disregarded, and its owner reports income on his own return.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-E-0002",
@@ -10296,7 +11190,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-041"
+   "rewrite_of": "REGMC-reg_entities-041",
+   "rule_line": "A Form 8832 entity classification election may be effective up to 75 days before the filing date.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "C": "limit"
+   }
   },
   {
    "id": "REG-V-E-0003",
@@ -10349,7 +11249,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A timely Form 2553 by an eligible LLC is also treated as an election to be taxed as a corporation.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-E-0004",
@@ -10402,7 +11308,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "After an entity classification election, another change is generally barred for 60 months.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-V-E-0005",
@@ -10455,7 +11367,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A single-member LLC is disregarded for income tax but treated as a corporation for employment taxes on its employees.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-F-0001",
@@ -10509,7 +11427,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-043"
+   "rewrite_of": "REGMC-reg_entities-043",
+   "rule_line": "Exemption is lost if any net earnings inure to a private individual; insubstantial lobbying, reasonable fees and reasonable salaries are permitted.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "C": "trap"
+   }
   },
   {
    "id": "REG-V-F-0002",
@@ -10559,7 +11483,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-044"
+   "rewrite_of": "REGMC-reg_entities-044",
+   "rule_line": "Chambers of commerce and similar groups promoting common business interests qualify as business leagues.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-F-0003",
@@ -10609,7 +11539,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-046"
+   "rewrite_of": "REGMC-reg_entities-046",
+   "rule_line": "Labor unions qualify as labor, agricultural or horticultural organizations.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-F-0004",
@@ -10690,7 +11626,13 @@
    },
    "status": "verified",
    "version": 1,
-   "rewrite_of": "REGMC-reg_entities-045"
+   "rewrite_of": "REGMC-reg_entities-045",
+   "rule_line": "UBTI is gross unrelated business income minus directly connected expenses and the $1,000 specific deduction.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-F-0005",
@@ -10747,7 +11689,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An exempt organization with $1,000 or more of gross unrelated business income must file Form 990-T.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-F-0006",
@@ -10800,7 +11748,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Organizations with gross receipts under $200,000 and total assets under $500,000 may file Form 990-EZ.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-F-0007",
@@ -10853,7 +11807,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Sales of donated goods by volunteers are excluded from UBTI, but regular sales of purchased goods by paid staff are unrelated business income.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-F-0008",
@@ -10940,7 +11900,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Dividends are excluded from UBTI, and the $1,000 specific deduction applies.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-G-0001",
@@ -11020,7 +11986,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A simple trust's beneficiary reports income required to be distributed, limited to DNI, after fees and excluding principal gains.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-G-0002",
@@ -11069,7 +12041,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Fiduciary exemptions are $600 for an estate, $300 for a simple trust and $100 for a complex trust.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-G-0003",
@@ -11122,7 +12100,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An estate may elect a fiscal year, while most trusts must use a calendar year.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-G-0004",
@@ -11199,7 +12183,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "DNI goes first to income required to be distributed, then to discretionary distributions in tiers.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-G-0005",
@@ -11252,7 +12242,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A simple trust must distribute all income currently, make no charitable payments and distribute no principal.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0050",
@@ -11328,7 +12324,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Current E&P is allocated pro rata among distributions during the year and is not reduced by an accumulated deficit.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-C-0043",
@@ -11405,7 +12407,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "S basis increases by income, decreases by distributions, then by previously suspended losses now allowed.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-D-0040",
@@ -11478,7 +12486,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Each partner's loss is limited to his own basis, so the total deductible is the sum of each partner's allowed amount.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-B-0051",
@@ -11548,7 +12562,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The DRD taxable-income limit does not apply if the full deduction would create or increase an NOL.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-A-0019",
@@ -11630,7 +12650,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "State income tax expense is deductible by a corporation, so it is not added back on Schedule M-1; other add-backs are correct.",
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-V-C-0044",
@@ -11683,7 +12709,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A Form 2553 filed after the 15th day of the third month is late and needs IRS late-election relief for that year.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-V-B-0052",
@@ -11744,7 +12776,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A complete liquidation is treated as a sale of stock, so the shareholder reports capital gain after subtracting basis.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-V-D-0041",
@@ -11806,7 +12844,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Money distributed in excess of partnership basis is gain from the sale of the interest, taxed as capital gain.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-V-G-0006",
@@ -11859,7 +12903,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A decedent's estate has a $600 exemption.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   }
  ]
 }

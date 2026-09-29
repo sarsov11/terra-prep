@@ -1,0 +1,3328 @@
+{
+ "meta": {
+  "area": "IV",
+  "title": "Federal Taxation of Individuals (additional Analysis set)",
+  "blueprint": "2026 AICPA CPA Exam Blueprint, REG Area IV (Groups A-F)",
+  "law_asof": "2026-09-29",
+  "count": 45,
+  "status": "draft",
+  "provenance": "terra-original (no Becker/UWorld/Wiley text used)",
+  "note": "New Analysis-level items; ids continue the area4_mcq.json numbering per group"
+ },
+ "items": [
+  {
+   "id": "REG-IV-A-0035",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "topic": "Gross income (inclusions and exclusions)",
+   "task": "Calculate the amounts that should be included in an individual's gross income (wages, interest, dividends, guaranteed payments, fringe benefits, retirement plan income, punitive damages).",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Two taxpayers, both age 63, each took a $20,000 distribution from an IRA in 2026, and neither owes a required minimum distribution. Ana's distribution came from a traditional IRA funded entirely with deductible contributions. Ben's came from a Roth IRA that he opened eight years ago and funded entirely with after-tax contributions of $12,000, plus earnings. Which statement correctly compares the amounts included in their 2026 gross income?",
+   "exhibit": "",
+   "options": [
+    "Ana includes $20,000 and Ben includes $8,000, the earnings in excess of his contributions",
+    "Ana and Ben each include $20,000, because IRA distributions are taxable when withdrawn",
+    "Neither includes any amount, because both are older than age 59 1/2",
+    "Ana includes $20,000 and Ben includes $0, because his distribution is a qualified Roth distribution"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Applies the ordering rule for nonqualified Roth distributions (contributions first, then earnings). Ben's distribution is qualified, so that rule does not apply.",
+    "B": "Treats a Roth IRA like a traditional IRA. Qualified Roth distributions are not included in gross income.",
+    "C": "Age 59 1/2 only removes the 10 percent additional tax. Ana's deductible contributions and earnings have never been taxed, so her distribution is included.",
+    "D": "A qualified Roth distribution (made after age 59 1/2 and after the five-year period) is entirely excluded, earnings included. Ana's traditional IRA has no basis, so the whole $20,000 is taxable."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§408(d)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§408A(d)(1)"
+    },
+    {
+     "src": "Pub",
+     "ref": "590-B"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA; no phase-out or dollar limits are used.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-A-0036",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "topic": "Gross income (inclusions and exclusions)",
+   "task": "Review Form 1040 and supporting documentation to determine completeness and accuracy of gross income reported.",
+   "task_source": "지도.json",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Review the exhibit for Grace Holt's 2026 return. Grace is single and reports all $3,000 of dividends from her Forms 1099-DIV as qualified dividends. Which correction is required?",
+   "exhibit": [
+    [
+     "Stock",
+     "Date acquired",
+     "Ex-dividend date",
+     "Date sold",
+     "Dividend"
+    ],
+    [
+     "Alpha Corp. common",
+     "January 5, 2026",
+     "March 16, 2026",
+     "Held at year end",
+     "$1,000"
+    ],
+    [
+     "Beta Inc. common",
+     "May 10, 2026",
+     "May 20, 2026",
+     "June 5, 2026",
+     "$800"
+    ],
+    [
+     "Gamma Corp. common",
+     "February 1, 2026",
+     "March 1, 2026",
+     "Held at year end",
+     "$1,200"
+    ]
+   ],
+   "options": [
+    "Report $1,800 as qualified dividends, because stock must be owned more than 60 days before the ex-dividend date",
+    "Report $1,800 as qualified dividends; the Gamma Corp. dividend fails because she bought it fewer than 60 days before the ex-dividend date",
+    "No correction is required, because all three payers are domestic corporations",
+    "Report $2,200 as qualified dividends; the Beta Inc. dividend fails the holding period requirement and is an ordinary dividend"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Misreads the rule. The 60 days are counted within the 121-day window around the ex-dividend date and need not precede it. That reading wrongly disqualifies Alpha and Gamma.",
+    "B": "Gamma was bought 28 days before the ex-dividend date, but she kept it through year end, so the days held inside the 121-day window exceed 60. Gamma qualifies, and the $1,200 stays qualified.",
+    "C": "A domestic payer is necessary but not enough. The taxpayer must also satisfy the holding period for each stock, and Beta fails it.",
+    "D": "Grace held Beta only 26 days, fewer than the required more than 60 days during the 121-day period that begins 60 days before the ex-dividend date. Alpha and Gamma were held long enough."
+   },
+   "steps": [
+    "Beta: acquired May 10, sold June 5; days held (excluding acquisition day, including sale day) = 21 + 5 = 26, fewer than 61",
+    "Alpha and Gamma held through year end, more than 60 days in each 121-day window",
+    "Qualified = 1,000 + 1,200 = 2,200; Beta 800 is ordinary"
+   ],
+   "calc_check": {
+    "expr": "1000+1200",
+    "fmt": "text",
+    "value": 2200
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1(h)(11)(B)(iii)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§246(c)(1)"
+    },
+    {
+     "src": "Pub",
+     "ref": "550"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-A-0037",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "topic": "Gross income (inclusions and exclusions)",
+   "task": "Calculate the capital gain included in gross income from sale of investments/virtual currency, gifts and inherited assets; classify as long-term or short-term.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Priscilla Lund sold land she held as an investment for many years for $300,000 in 2026. Her adjusted basis was $120,000. The buyer paid $60,000 at closing and gave a note for the remaining $240,000, payable in equal annual installments over the next four years, beginning in 2027, with adequate stated interest. Compare the gain Priscilla reports in 2026 if she uses the installment method with the gain she reports if she elects out of it. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "$36,000 under the installment method; $180,000 if she elects out",
+    "$60,000 under the installment method; $180,000 if she elects out",
+    "$36,000 under the installment method; $60,000 if she elects out",
+    "$24,000 under the installment method; $180,000 if she elects out"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Gross profit percentage = $180,000 / $300,000 = 60%. Payments received in 2026 of $60,000 x 60% = $36,000. Electing out reports the whole $180,000 gain in the year of sale.",
+    "B": "Treats the entire down payment as gain. Under the installment method each payment is part recovery of basis and part gain.",
+    "C": "Limits the elect-out gain to cash received. Electing out means the note is treated as payment and the full gain is reported in 2026.",
+    "D": "Applies the basis percentage (40%) to the down payment instead of the gross profit percentage (60%)."
+   },
+   "steps": [
+    "Gross profit = 300,000 - 120,000 = 180,000",
+    "Gross profit percentage = 180,000 / 300,000 = 60%",
+    "2026 installment gain = 60,000 x 60% = 36,000; elect out = 180,000"
+   ],
+   "calc_check": {
+    "expr": "60000*(300000-120000)/300000",
+    "fmt": "text",
+    "value": 36000
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§453(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§453(d)"
+    },
+    {
+     "src": "Pub",
+     "ref": "537"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA. Land held for investment: no depreciation recapture.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-A-0038",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "topic": "Gross income (inclusions and exclusions)",
+   "task": "Calculate the amounts that should be included in an individual's gross income (wages, interest, dividends, guaranteed payments, fringe benefits, retirement plan income, punitive damages).",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In 2026 Dara Nunn received 1,000 shares of her employer's stock for her services, paying $2,000 for them. The shares are subject to a substantial risk of forfeiture and vest on June 1, 2028. The shares were worth $10,000 when granted in 2026 and are worth $50,000 at vesting. Compare the compensation income Dara reports if she makes a timely election to include the value of the stock in income when she receives it with the income she reports if she makes no election. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "With the election, $10,000 in 2026; without it, $50,000 at vesting in 2028",
+    "With the election, $8,000 in 2026 and another $40,000 at vesting; without it, $48,000 at vesting",
+    "With the election, nothing in 2026 because the shares are unvested; without it, $48,000 at vesting",
+    "With the election, $8,000 in 2026 and no compensation at vesting; without it, $48,000 at vesting in 2028"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Ignores the $2,000 Dara paid for the shares. Compensation is the value less the amount paid.",
+    "B": "Taxes the appreciation as compensation even with the election. After a valid election, later appreciation is not compensation.",
+    "C": "Describes the result when no election is made. The election is what causes inclusion in the year of transfer.",
+    "D": "With the election, income equals the grant-date value less the amount paid: $10,000 - $2,000 = $8,000, and later appreciation is capital gain. Without it, income is measured at vesting: $50,000 - $2,000 = $48,000."
+   },
+   "steps": [
+    "Election: FMV at transfer 10,000 - amount paid 2,000 = 8,000 in 2026",
+    "No election: FMV at vesting 50,000 - amount paid 2,000 = 48,000 in 2028"
+   ],
+   "calc_check": {
+    "expr": "10000-2000",
+    "fmt": "text",
+    "value": 8000
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§83(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§83(b)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.83-2"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-A-0039",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "topic": "Gross income (inclusions and exclusions)",
+   "task": "Calculate the capital gain included in gross income from sale of investments/virtual currency, gifts and inherited assets; classify as long-term or short-term.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "As part of their 2026 divorce, Kim Ostrow transferred to her former spouse Lee, under the divorce instrument, 500 shares of stock she bought years ago for $20,000. The shares were worth $70,000 on the transfer date. Lee sold them later in 2026 for $90,000. Separately, Kim sold 500 identical shares (also with a $20,000 basis) to an unrelated buyer for $70,000. Which statement correctly compares the gain recognized?",
+   "exhibit": "",
+   "options": [
+    "Kim recognizes no gain on the transfer to Lee and a $50,000 gain on the sale to the buyer; Lee recognizes a $70,000 gain",
+    "Kim recognizes no gain on the transfer to Lee and a $50,000 gain on the sale to the buyer; Lee recognizes a $20,000 gain",
+    "Kim recognizes a $50,000 gain on both the transfer and the sale; Lee recognizes a $20,000 gain",
+    "Kim recognizes a $50,000 gain on both the transfer and the sale; Lee recognizes a $70,000 gain"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "A transfer between spouses incident to divorce is not a taxable event and Lee takes Kim's $20,000 basis: $90,000 - $20,000 = $70,000. The sale to the unrelated buyer is taxable: $70,000 - $20,000 = $50,000.",
+    "B": "Gives Lee a $70,000 fair market value basis. Property received in a divorce transfer keeps the transferor's basis.",
+    "C": "Treats the divorce transfer as a sale at fair market value and gives Lee a stepped-up basis. Neither applies to a transfer incident to divorce.",
+    "D": "Taxes Kim on the divorce transfer while still using her carryover basis for Lee. Kim has no gain on a transfer incident to divorce."
+   },
+   "steps": [
+    "Transfer to Lee: no gain or loss to Kim; Lee's basis = 20,000",
+    "Lee's sale: 90,000 - 20,000 = 70,000",
+    "Kim's sale to buyer: 70,000 - 20,000 = 50,000"
+   ],
+   "calc_check": {
+    "expr": "90000-20000",
+    "fmt": "text",
+    "value": 70000
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1041(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1041(b)"
+    },
+    {
+     "src": "Pub",
+     "ref": "504"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-A-0040",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "topic": "Gross income (inclusions and exclusions)",
+   "task": "Calculate the amounts that should be included in an individual's gross income (wages, interest, dividends, guaranteed payments, fringe benefits, retirement plan income, punitive damages).",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In 2026 Mira Vaughn and Noel Ames, both single, each received a $3,000 refund of state income tax paid for 2025. Both itemized deductions on their 2025 returns; neither was affected by the annual limit on state and local taxes. Mira's 2025 itemized deductions were $22,000 and Noel's were $16,500. The 2025 standard deduction for a single filer was $15,750. Which statement correctly states the refund each includes in 2026 gross income?",
+   "exhibit": "",
+   "options": [
+    "Mira and Noel each include $3,000, because every state tax refund is taxable",
+    "Neither includes any refund, because state taxes are not income",
+    "Mira includes $6,250 and Noel includes $750",
+    "Mira includes $3,000 and Noel includes $750"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Includes the full refund without testing whether the deduction produced a tax benefit. Noel benefited by only $750.",
+    "B": "The refund recovers an amount previously deducted and is included to the extent of the prior benefit.",
+    "C": "Uses each taxpayer's full excess of itemized deductions over the standard deduction. The inclusion cannot exceed the $3,000 refund.",
+    "D": "A refund is income only to the extent the earlier deduction reduced tax. Mira's itemized excess over the standard deduction, $6,250, exceeds the refund, so all $3,000 is included. Noel's excess is $16,500 - $15,750 = $750."
+   },
+   "steps": [
+    "Mira: excess = 22,000 - 15,750 = 6,250 > refund 3,000, so include 3,000",
+    "Noel: excess = 16,500 - 15,750 = 750 < refund, so include 750"
+   ],
+   "calc_check": {
+    "expr": "min(3000, 16500-15750)",
+    "fmt": "text",
+    "value": 750
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§111(a)"
+    },
+    {
+     "src": "Pub",
+     "ref": "525"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA; the stem supplies the 2025 standard deduction (raised for 2025 by OBBBA).",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-A-0041",
+   "type": "mcq",
+   "area": "IV",
+   "group": "A",
+   "topic": "Gross income (inclusions and exclusions)",
+   "task": "Review Form 1040 and supporting documentation to determine completeness and accuracy of gross income reported.",
+   "task_source": "지도.json",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Review the exhibit for Cole Rivera's 2026 Schedule E. Cole is a cash-basis landlord. His draft return reports $18,000 of rents received. What amount of rental income should the return report?",
+   "exhibit": [
+    [
+     "Cash received in 2026",
+     "Amount"
+    ],
+    [
+     "Monthly rent for January through December 2026",
+     "$18,000"
+    ],
+    [
+     "Payment on December 20, 2026 for January 2027 rent",
+     "$1,500"
+    ],
+    [
+     "Security deposit, refundable at lease end, held in the landlord's bank account",
+     "$1,500"
+    ],
+    [
+     "Payment from a departing tenant to cancel a lease",
+     "$2,000"
+    ]
+   ],
+   "options": [
+    "$19,500",
+    "$20,000",
+    "$21,500",
+    "$23,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Leaves out the $2,000 lease cancellation payment, which is treated as rent when received.",
+    "B": "Leaves out the December payment for January 2027 rent. Advance rent is included when received.",
+    "C": "Cole includes all rent received in 2026 regardless of the period it covers: $18,000 + $1,500 of advance rent + $2,000 lease cancellation payment = $21,500. A refundable security deposit is not income until it is kept.",
+    "D": "Includes the refundable security deposit. A deposit that must be returned is not income until the landlord keeps it."
+   },
+   "steps": [
+    "Rent 18,000",
+    "Advance rent 1,500 included when received",
+    "Lease cancellation 2,000 included",
+    "Refundable deposit excluded; total 21,500"
+   ],
+   "calc_check": {
+    "expr": "18000+1500+2000",
+    "fmt": "$",
+    "value": 21500,
+    "distractors": {
+     "A": {
+      "expr": "18000+1500",
+      "value": 19500
+     },
+     "B": {
+      "expr": "18000+2000",
+      "value": 20000
+     },
+     "D": {
+      "expr": "18000+1500+2000+1500",
+      "value": 23000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "Reg.",
+     "ref": "§1.61-8(b)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.61-8(c)"
+    },
+    {
+     "src": "Pub",
+     "ref": "527"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-B-0016",
+   "type": "mcq",
+   "area": "IV",
+   "group": "B",
+   "topic": "Reporting of items from pass-through entities",
+   "task": "Use information from disregarded and pass-through entities to report an owner's share of ordinary business income (loss) and separately stated items on an individual's tax return.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Rae Kim is the sole shareholder of Fern Inc., a calendar-year S corporation. Her stock basis is $0. She lent Fern $30,000 in exchange for a written note and has held the note for several years. Fern's losses in prior years reduced her basis in the note to $12,000. In 2026 Fern broke even (no income, loss, or distributions) and repaid the entire $30,000 note in cash. What is the effect of the repayment on Rae's 2026 return?",
+   "exhibit": "",
+   "options": [
+    "She recognizes no gain, because repayment of loan principal is a return of capital",
+    "She recognizes a $12,000 capital gain, the reduced basis in the note",
+    "She recognizes an $18,000 capital gain, because the repayment exceeds her reduced basis in the note",
+    "She reports $30,000 of ordinary income from the S corporation"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Ignores the basis reduction. Repayment above the reduced basis is gain.",
+    "B": "Uses the basis as the gain. Gain is the amount repaid less basis: $30,000 - $12,000.",
+    "C": "Loss deductions reduced Rae's note basis to $12,000. Repayment of $30,000 exceeds it by $18,000, and there was no 2026 net increase to restore basis.",
+    "D": "Repayment of the shareholder's own loan is not S corporation income. Only the amount exceeding basis is gain, and it is capital for a note."
+   },
+   "steps": [
+    "Repayment 30,000 - basis in note 12,000 = 18,000 gain",
+    "No net increase in 2026, so no restoration of note basis",
+    "Note held more than one year: long-term capital gain"
+   ],
+   "calc_check": {
+    "expr": "30000-12000",
+    "fmt": "text",
+    "value": 18000
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1367(b)(2)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1367-2(b)"
+    },
+    {
+     "src": "Form",
+     "ref": "7203 instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-B-0017",
+   "type": "mcq",
+   "area": "IV",
+   "group": "B",
+   "topic": "Reporting of items from pass-through entities",
+   "task": "Use information from disregarded and pass-through entities to report an owner's share of ordinary business income (loss) and separately stated items on an individual's tax return.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Gus and Lia each own an interest in a different calendar-year partnership that provides consulting services. Each 2026 Schedule K-1 shows $60,000 of ordinary business income and $30,000 of guaranteed payments for services the partner performed. Gus is a general partner. Lia is a limited partner who performs services for the partnership. Which statement correctly compares their 2026 net earnings from self-employment, before the 92.35% adjustment?",
+   "exhibit": "",
+   "options": [
+    "Gus $90,000; Lia $30,000",
+    "Gus $90,000; Lia $0",
+    "Gus $60,000; Lia $30,000",
+    "Gus $90,000; Lia $90,000"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "A general partner's distributive share and guaranteed payments are self-employment income: $60,000 + $30,000 = $90,000. A limited partner's distributive share is excluded, but guaranteed payments for services are included.",
+    "B": "Excludes Lia's guaranteed payments as well. Only a limited partner's distributive share is excluded; payments for services are not.",
+    "C": "Leaves out Gus's guaranteed payments. A general partner's guaranteed payments for services are self-employment income.",
+    "D": "Treats the limited partner like a general partner. The distributive share of a limited partner is excluded."
+   },
+   "steps": [
+    "General partner: 60,000 + 30,000 = 90,000",
+    "Limited partner: distributive share excluded; guaranteed payments 30,000"
+   ],
+   "calc_check": {
+    "expr": "60000+30000",
+    "fmt": "text",
+    "value": 90000
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1402(a)(13)"
+    },
+    {
+     "src": "Form",
+     "ref": "K-1 (1065) instructions, box 14"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-B-0018",
+   "type": "mcq",
+   "area": "IV",
+   "group": "B",
+   "topic": "Reporting of items from pass-through entities",
+   "task": "Use information from disregarded and pass-through entities to report an owner's share of ordinary business income (loss) and separately stated items on an individual's tax return.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Two partners each have a $22,000 basis in a partnership interest immediately before a current, non-liquidating distribution. Al receives $30,000 of cash. Bea receives land with a $30,000 fair market value and a $14,000 basis to the partnership. Assume no partnership liabilities and no unrealized receivables or inventory. Which statement correctly compares Al's and Bea's results?",
+   "exhibit": "",
+   "options": [
+    "Al recognizes no gain; Bea recognizes a $16,000 gain, the excess of fair market value over the partnership's basis",
+    "Al recognizes an $8,000 gain; Bea recognizes no gain, takes a $30,000 basis in the land, and has no remaining basis in her interest",
+    "Al and Bea each recognize an $8,000 gain, because each receives more than $22,000 of value",
+    "Al recognizes an $8,000 gain and has a $0 basis in his interest; Bea recognizes no gain, takes a $14,000 basis in the land, and has an $8,000 basis in her interest"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Reverses the two results. A property distribution is not a taxable sale, and cash over basis is taxed.",
+    "B": "Gives the land a fair market value basis. Basis is the partnership's basis, $14,000, limited to Bea's outside basis.",
+    "C": "Gain is recognized on a current distribution of property only through cash exceeding basis. Bea receives no cash.",
+    "D": "Cash over basis is gain to Al: $30,000 - $22,000. Property distributions carry over the partnership's basis ($14,000, limited to outside basis), and Bea's interest falls to $22,000 - $14,000 = $8,000."
+   },
+   "steps": [
+    "Al: 30,000 - 22,000 = 8,000 gain; basis becomes 0",
+    "Bea: land basis = lesser of 14,000 or 22,000 = 14,000",
+    "Bea's remaining interest basis = 22,000 - 14,000 = 8,000"
+   ],
+   "calc_check": {
+    "expr": "30000-22000",
+    "fmt": "text",
+    "value": 8000
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§731(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§732(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§733"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-B-0019",
+   "type": "mcq",
+   "area": "IV",
+   "group": "B",
+   "topic": "Reporting of items from pass-through entities",
+   "task": "Use information from disregarded and pass-through entities to report an owner's share of ordinary business income (loss) and separately stated items on an individual's tax return.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Stan sold his entire interest in Harbor Partners, a cash-basis service partnership, for $100,000 in 2026. His basis in the interest was $60,000. Stan's share of the partnership's accounts receivable, which have a zero tax basis, is $15,000. The partnership has no inventory, collectibles, or depreciable real property. Which statement describes the character of Stan's total gain?",
+   "exhibit": "",
+   "options": [
+    "$25,000 of ordinary income and $15,000 of capital gain",
+    "$40,000 of capital gain, because a partnership interest is a capital asset",
+    "$15,000 of ordinary income and $25,000 of capital gain",
+    "$40,000 of ordinary income, because the partnership uses the cash method"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Swaps the amounts. Only the portion attributable to the receivables is ordinary.",
+    "B": "Ignores the look-through rule for unrealized receivables. That part of the amount realized is ordinary income.",
+    "C": "Gain on the sale of a partnership interest is capital except to the extent attributable to unrealized receivables and inventory. The $15,000 receivable share is ordinary; the rest of the $40,000 gain is capital.",
+    "D": "The cash method creates the zero-basis receivables but does not convert the whole gain to ordinary income."
+   },
+   "steps": [
+    "Total gain = 100,000 - 60,000 = 40,000",
+    "Ordinary income = receivable share 15,000 - basis 0 = 15,000",
+    "Capital gain = 40,000 - 15,000 = 25,000"
+   ],
+   "calc_check": {
+    "expr": "100000-60000-15000",
+    "fmt": "text",
+    "value": 25000
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§741"
+    },
+    {
+     "src": "IRC",
+     "ref": "§751(a)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.751-1(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-B-0020",
+   "type": "mcq",
+   "area": "IV",
+   "group": "B",
+   "topic": "Reporting of items from pass-through entities",
+   "task": "Use information from disregarded and pass-through entities to report an owner's share of ordinary business income (loss) and separately stated items on an individual's tax return.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Marsh Inc. is a calendar-year S corporation with two equal shareholders, Ori and Pam. Marsh earned $73,000 of ordinary business income in 2026, spread evenly at $200 per day for all 365 days. On June 30, 2026, Ori sold all his stock to Quinn. Marsh has no other classes of stock, made no distributions, and made no election to close its books. What ordinary income is reported on the 2026 Schedules K-1 of Ori, Pam, and Quinn, respectively?",
+   "exhibit": "",
+   "options": [
+    "$18,100, $36,500, and $18,400",
+    "$0, $36,500, and $36,500",
+    "$18,250, $36,500, and $18,250",
+    "$18,400, $36,500, and $18,100"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Income is assigned equally to each day and split among the shares outstanding that day. The seller is treated as the shareholder on the day of sale. Ori: 181 days x $200 x 50% = $18,100. Quinn: 184 days x $200 x 50% = $18,400. Pam: $36,500.",
+    "B": "Assigns the whole year's income to the shareholder at year end. Income is allocated by day among the shareholders during the year.",
+    "C": "Splits the year evenly in half. The allocation uses actual days: 181 days through June 30 and 184 days from July 1.",
+    "D": "Reverses the day counts. Ori owned through June 30, which is 181 days, and Quinn owned the remaining 184 days."
+   },
+   "steps": [
+    "January 1 through June 30 = 31+28+31+30+31+30 = 181 days; July 1 through December 31 = 184 days",
+    "Ori = 181 x 200 x 0.50 = 18,100",
+    "Quinn = 184 x 200 x 0.50 = 18,400; Pam = 73,000 x 0.50 = 36,500"
+   ],
+   "calc_check": {
+    "expr": "181*200*0.5",
+    "fmt": "text",
+    "value": 18100
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1377(a)(1)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.1377-1(a)(2)(ii)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-B-0021",
+   "type": "mcq",
+   "area": "IV",
+   "group": "B",
+   "topic": "Reporting of items from pass-through entities",
+   "task": "Use information from disregarded and pass-through entities to report an owner's share of ordinary business income (loss) and separately stated items on an individual's tax return.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Review the exhibit for Tom Ridge's 2026 return. Tom owns 40% of Ridge Supply Inc., an S corporation, and works there full time. His stock basis is ample. His draft return reports the $50,000 of ordinary business income on Schedule C, pays self-employment tax on it, and reports the $30,000 distribution as other income. Which correction is required?",
+   "exhibit": [
+    [
+     "Schedule K-1 (Form 1120-S) for Tom Ridge",
+     "Amount"
+    ],
+    [
+     "Box 1, ordinary business income",
+     "$50,000"
+    ],
+    [
+     "Box 4, interest income",
+     "$1,000"
+    ],
+    [
+     "Box 16 code D, distributions",
+     "$30,000"
+    ],
+    [
+     "Stock basis at beginning of year",
+     "$45,000"
+    ]
+   ],
+   "options": [
+    "Keep the $50,000 on Schedule C because Tom works full time, but remove the $30,000 distribution from income",
+    "Report the $50,000 on Schedule E but keep the $30,000 distribution as dividend income",
+    "Report both the $50,000 and the $30,000 on Schedule E as ordinary income",
+    "Report the $50,000 on Schedule E, remove it from self-employment tax, and remove the $30,000 distribution from income because it does not exceed his basis"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Working full time affects the reasonable wages the corporation must pay, not the character of pass-through income. It is not reported on Schedule C.",
+    "B": "Treats a distribution from an S corporation with sufficient basis as a dividend. A distribution within basis is not taxed.",
+    "C": "Adds the distribution to Schedule E income. The distribution reduces basis and is not income unless it exceeds basis.",
+    "D": "S corporation ordinary income passes through on Schedule K-1 to Schedule E and is not self-employment income. A distribution up to stock basis is a nontaxable return of basis."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1366(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1368(b)"
+    },
+    {
+     "src": "Form",
+     "ref": "K-1 (1120-S) instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-B-0022",
+   "type": "mcq",
+   "area": "IV",
+   "group": "B",
+   "topic": "Reporting of items from pass-through entities",
+   "task": "Use information from disregarded and pass-through entities to report an owner's share of ordinary business income (loss) and separately stated items on an individual's tax return.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Fay Ott is a limited partner in Orchard LP. Her basis in the interest at the beginning of 2026 was $25,000, including her $22,000 share of partnership nonrecourse liabilities. During 2026 her share of partnership income was $6,000. The partnership repaid a nonrecourse loan, which reduced Fay's share of liabilities from $22,000 to $4,000, and it also distributed $20,000 of cash to her. There were no other adjustments. What gain does Fay recognize in 2026?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$7,000",
+    "$13,000",
+    "$18,000"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Counts only the $20,000 of cash actually received, which is less than her $31,000 basis. The liability decrease is also a deemed distribution.",
+    "B": "Basis rises by income to $31,000. The $18,000 decrease in her liability share is a deemed cash distribution, so total distributions are $20,000 + $18,000 = $38,000. Gain is the excess over basis: $38,000 - $31,000 = $7,000.",
+    "C": "Omits the $6,000 basis increase for her share of income, so the gain is overstated.",
+    "D": "Treats the deemed distribution from the liability decrease as gain by itself. It is taxed only to the extent total distributions exceed basis."
+   },
+   "steps": [
+    "Basis after income = 25,000 + 6,000 = 31,000",
+    "Deemed distribution = 22,000 - 4,000 = 18,000; total = 20,000 + 18,000 = 38,000",
+    "Gain = 38,000 - 31,000 = 7,000"
+   ],
+   "calc_check": {
+    "expr": "20000+(22000-4000)-(25000+6000)",
+    "fmt": "$",
+    "value": 7000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "C": {
+      "expr": "20000+(22000-4000)-25000",
+      "value": 13000
+     },
+     "D": {
+      "expr": "22000-4000",
+      "value": 18000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§752(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§731(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§705(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-B-0023",
+   "type": "mcq",
+   "area": "IV",
+   "group": "B",
+   "topic": "Reporting of items from pass-through entities",
+   "task": "Use information from disregarded and pass-through entities to report an owner's share of ordinary business income (loss) and separately stated items on an individual's tax return.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Jo Diaz contributed land with a $30,000 adjusted basis and a $50,000 fair market value to a partnership in exchange for a 50% interest. Kit contributed $50,000 cash for the other 50%. In 2026 the partnership sold the land for $50,000. The partnership agreement allocates all items equally, and the partnership uses the traditional method for contributed property. How much of the gain on the sale is allocated to Jo?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$10,000",
+    "$20,000",
+    "$25,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Assumes the sale at fair market value produces no gain. The partnership's basis in the land is Jo's $30,000, not $50,000.",
+    "B": "Splits the gain equally under the agreement. Built-in gain at contribution is allocated to the contributing partner.",
+    "C": "The partnership takes Jo's $30,000 basis, so it recognizes a $20,000 gain. The precontribution gain of $20,000 must be allocated entirely to Jo.",
+    "D": "Takes 50% of the sale price instead of allocating the gain. Gain is price less the partnership's basis."
+   },
+   "steps": [
+    "Partnership basis in land = 30,000 (carryover)",
+    "Gain = 50,000 - 30,000 = 20,000",
+    "Built-in gain of 20,000 allocated to Jo"
+   ],
+   "calc_check": {
+    "expr": "50000-30000",
+    "fmt": "$",
+    "value": 20000,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "B": {
+      "expr": "(50000-30000)*0.5",
+      "value": 10000
+     },
+     "D": {
+      "expr": "50000*0.5",
+      "value": 25000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§704(c)(1)(A)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§723"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.704-3(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-C-0038",
+   "type": "mcq",
+   "area": "IV",
+   "group": "C",
+   "topic": "Adjustments and deductions to AGI and taxable income",
+   "task": "Review Form 1040 and supporting documentation to determine accuracy of AGI and taxable income reported.",
+   "task_source": "지도.json",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Sal and Tess Ward file jointly for 2026 and take the standard deduction. Their draft return claims a $2,000 charitable deduction for the gifts listed in the exhibit. What charitable deduction should they claim?",
+   "exhibit": [
+    [
+     "Gift in 2026",
+     "Amount"
+    ],
+    [
+     "Cash to their church (a public charity)",
+     "$1,500"
+    ],
+    [
+     "Cash to a donor-advised fund at a community foundation",
+     "$900"
+    ],
+    [
+     "Cash to a supporting organization of a local hospital",
+     "$600"
+    ],
+    [
+     "Used clothing given to a charity thrift shop (fair market value)",
+     "$400"
+    ]
+   ],
+   "options": [
+    "$1,000",
+    "$1,500",
+    "$2,000",
+    "$3,000"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Applies the $1,000 limit for other filers. The joint return limit is $2,000, but the eligible gifts total only $1,500.",
+    "B": "A taxpayer who does not itemize may deduct only cash gifts to qualifying public charities, up to $2,000 on a joint return. Gifts to a donor-advised fund, to a supporting organization, and noncash gifts do not count, leaving the $1,500 church gift.",
+    "C": "Applies the joint return limit to gifts that include ineligible amounts. The deduction cannot exceed the eligible cash gifts of $1,500.",
+    "D": "Counts all cash gifts ($1,500 + $900 + $600) without excluding the donor-advised fund and supporting organization gifts or applying the limit."
+   },
+   "steps": [
+    "Eligible cash gifts to public charities = 1,500 (fund, supporting organization, and noncash excluded)",
+    "Joint limit 2,000; deduction = min(1,500, 2,000) = 1,500"
+   ],
+   "calc_check": {
+    "expr": "1500",
+    "fmt": "$",
+    "value": 1500,
+    "distractors": {
+     "A": {
+      "expr": "1000",
+      "value": 1000
+     },
+     "C": {
+      "expr": "2000",
+      "value": 2000
+     },
+     "D": {
+      "expr": "3000",
+      "value": 3000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§170(p)"
+    },
+    {
+     "src": "Pub",
+     "ref": "526"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA (P.L. 119-21 sec. 70424) added IRC 170(p): nonitemizers may deduct cash gifts to public charities up to $1,000 ($2,000 joint), taxable years beginning after 2025. Excluded: gifts to 509(a)(3) organizations and for donor-advised funds. Verified against Cornell LII 26 USC 170(p).",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-C-0039",
+   "type": "mcq",
+   "area": "IV",
+   "group": "C",
+   "topic": "Adjustments and deductions to AGI and taxable income",
+   "task": "Calculate the qualified business income (QBI) deduction for federal income tax purposes.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Rick Sloan, single, has two sole proprietorships, neither a specified service business. For 2026 his landscaping business had qualified business income of $90,000 and his food-truck business had a qualified business loss of $30,000. His taxable income before the qualified business income deduction is $140,000, below the threshold amount, and includes no net capital gain. What is his qualified business income deduction?",
+   "exhibit": "",
+   "options": [
+    "$12,000",
+    "$18,000",
+    "$24,000",
+    "$28,000"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Qualified business income from all businesses is netted: $90,000 - $30,000 = $60,000. The deduction is 20% of $60,000 = $12,000, below the 20% of taxable income limit of $28,000.",
+    "B": "Ignores the loss from the food-truck business. Losses reduce combined qualified business income.",
+    "C": "Adds the loss instead of subtracting it.",
+    "D": "Uses the taxable income limit as the deduction. The deduction is the lesser of 20% of net qualified business income and 20% of taxable income."
+   },
+   "steps": [
+    "Net QBI = 90,000 - 30,000 = 60,000",
+    "20% x 60,000 = 12,000",
+    "Taxable income limit = 20% x 140,000 = 28,000; deduction = 12,000"
+   ],
+   "calc_check": {
+    "expr": "0.20*(90000-30000)",
+    "fmt": "$",
+    "value": 12000,
+    "distractors": {
+     "B": {
+      "expr": "0.20*90000",
+      "value": 18000
+     },
+     "C": {
+      "expr": "0.20*(90000+30000)",
+      "value": 24000
+     },
+     "D": {
+      "expr": "0.20*140000",
+      "value": 28000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§199A(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§199A(c)(2)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.199A-1(d)(2)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA made the section 199A deduction permanent for years after 2025. No phase-in computation is asked.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-C-0040",
+   "type": "mcq",
+   "area": "IV",
+   "group": "C",
+   "topic": "Adjustments and deductions to AGI and taxable income",
+   "task": "Review Form 1040 and supporting documentation to determine accuracy of AGI and taxable income reported.",
+   "task_source": "지도.json",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Review the exhibit for Hal and Ivy Ross's joint 2026 return. They itemize deductions. The draft computes the medical expense deduction using the AGI shown, but the exhibit also lists a deductible traditional IRA contribution that the draft omitted. After correcting for the omission, what is the medical expense deduction?",
+   "exhibit": [
+    [
+     "Item",
+     "Draft return / support"
+    ],
+    [
+     "AGI on the draft return",
+     "$80,000"
+    ],
+    [
+     "Unreimbursed medical expenses paid",
+     "$9,500"
+    ],
+    [
+     "Medical deduction on the draft ($9,500 - 7.5% x $80,000)",
+     "$3,500"
+    ],
+    [
+     "Deductible IRA contribution omitted from the draft",
+     "$10,000"
+    ]
+   ],
+   "options": [
+    "$2,750",
+    "$3,500",
+    "$4,250",
+    "$5,250"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Adds the IRA deduction to AGI instead of subtracting it, which raises the floor.",
+    "B": "Leaves AGI at $80,000, the amount in the draft, so the omitted IRA deduction is not reflected.",
+    "C": "The $10,000 deductible IRA contribution lowers AGI to $70,000. The 7.5% floor becomes $5,250, so the deduction is $9,500 - $5,250 = $4,250.",
+    "D": "Applies the corrected floor but adds an unrelated $1,000. Medical expenses above 7.5% of AGI are deductible, and nothing else adjusts the amount."
+   },
+   "steps": [
+    "Corrected AGI = 80,000 - 10,000 = 70,000",
+    "Floor = 7.5% x 70,000 = 5,250",
+    "Deduction = 9,500 - 5,250 = 4,250"
+   ],
+   "calc_check": {
+    "expr": "9500-0.075*(80000-10000)",
+    "fmt": "$",
+    "value": 4250,
+    "distractors": {
+     "A": {
+      "expr": "9500-0.075*(80000+10000)",
+      "value": 2750
+     },
+     "B": {
+      "expr": "9500-0.075*80000",
+      "value": 3500
+     },
+     "D": {
+      "expr": "9500-0.075*(80000-10000)+1000",
+      "value": 5250
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§213(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§219"
+    },
+    {
+     "src": "Pub",
+     "ref": "502"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-C-0041",
+   "type": "mcq",
+   "area": "IV",
+   "group": "C",
+   "topic": "Adjustments and deductions to AGI and taxable income",
+   "task": "Identify deductions from adjusted gross income in calculating taxable income (medical expenses, qualified residence interest, casualty losses, taxes).",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Ken and Lin each paid $6,000 of mortgage points in cash at closing on October 1, 2026, on a 15-year (180-month) loan secured by the borrower's main home. Each paid an amount that is a usual percentage of the loan, and the points were paid from the borrower's own funds. Ken's loan financed the purchase of his main home. Lin's loan refinanced her existing mortgage, and none of the proceeds were used to improve the home. Which statement correctly states the interest deduction for the points on each 2026 return?",
+   "exhibit": "",
+   "options": [
+    "Ken deducts $6,000; Lin deducts $6,000",
+    "Ken deducts $100; Lin deducts $100",
+    "Ken deducts $6,000; Lin deducts $100",
+    "Ken deducts $6,000; Lin deducts $400"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Applies the purchase rule to the refinance. Refinance points are deducted over the life of the loan.",
+    "B": "Amortizes the purchase points too. Points on a purchase of a main home qualify for the year-paid deduction.",
+    "C": "Points on a loan to buy a main home may be deducted in the year paid. Points on a refinance are amortized over the loan term: $6,000 / 180 months x 3 months = $100.",
+    "D": "Uses 12 months of amortization. The loan closed October 1, so only three payments fall in 2026."
+   },
+   "steps": [
+    "Ken: purchase points deductible in year paid = 6,000",
+    "Lin: 6,000 / 180 = 33.33 per month; October through December = 3 months",
+    "Lin's deduction = 100"
+   ],
+   "calc_check": {
+    "expr": "6000/180*3",
+    "fmt": "text",
+    "value": 100
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§461(g)"
+    },
+    {
+     "src": "Pub",
+     "ref": "936"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-C-0042",
+   "type": "mcq",
+   "area": "IV",
+   "group": "C",
+   "topic": "Adjustments and deductions to AGI and taxable income",
+   "task": "Identify adjustments allowed in calculating adjusted gross income (retirement plan contribution, HSA contribution, self-employment expenses).",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Cara Diaz, a self-employed consultant, uses 200 square feet of her home of 2,000 square feet exclusively and regularly as her principal place of business. Her gross income from the business exceeds all business expenses, including any home office deduction. Her indirect home expenses for 2026 (utilities, homeowner's insurance, and depreciation on the home) total $9,600. Which statement correctly gives the home office deduction under the regular method and the simplified method?",
+   "exhibit": "",
+   "options": [
+    "Regular method $960; simplified method $1,000",
+    "Regular method $960; simplified method $1,500",
+    "Regular method $9,600; simplified method $1,000",
+    "Regular method $1,000; simplified method $960"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Regular method: 200 of 2,000 square feet = 10% x $9,600 = $960. Simplified method: $5 per square foot x 200 = $1,000.",
+    "B": "Applies the 300 square foot maximum to the simplified method. The rate applies to the actual 200 square feet used.",
+    "C": "Deducts all indirect expenses without the business-use percentage under the regular method.",
+    "D": "Swaps the two results. The regular method gives the smaller amount here."
+   },
+   "steps": [
+    "Business percentage = 200 / 2,000 = 10%",
+    "Regular = 10% x 9,600 = 960",
+    "Simplified = 5 x 200 = 1,000"
+   ],
+   "calc_check": {
+    "expr": "5*200",
+    "fmt": "text",
+    "value": 1000
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§280A(c)(1)"
+    },
+    {
+     "src": "Rev.Proc.",
+     "ref": "2013-13"
+    },
+    {
+     "src": "Pub",
+     "ref": "587"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-C-0043",
+   "type": "mcq",
+   "area": "IV",
+   "group": "C",
+   "topic": "Adjustments and deductions to AGI and taxable income",
+   "task": "Identify adjustments allowed in calculating adjusted gross income (retirement plan contribution, HSA contribution, self-employment expenses).",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "In March 2026 Nate Voss and Oli Park, both sole proprietors, each bought new 5-year MACRS equipment costing $50,000 and placed it in service that month. Neither elects the small-business expensing rule. Oli properly elects out of the additional first-year depreciation for the class of 5-year property; Nate makes no election. Use the half-year convention and a 20% first-year MACRS rate. Which statement correctly gives each taxpayer's 2026 depreciation deduction for the equipment?",
+   "exhibit": "",
+   "options": [
+    "Nate $18,000; Oli $10,000",
+    "Nate $10,000; Oli $10,000",
+    "Nate $50,000; Oli $50,000",
+    "Nate $50,000; Oli $10,000"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Applies the former phase-down (20% allowance for 2026): $10,000 + 20% x $40,000 = $18,000. The 2025 legislation restored 100%.",
+    "B": "Assumes the additional allowance applies only if elected. It applies automatically unless the taxpayer elects out.",
+    "C": "Ignores Oli's election out. With the election, the additional allowance does not apply to that class of property.",
+    "D": "For new property acquired after January 19, 2025, the additional first-year allowance is 100% of basis unless the taxpayer elects out. Oli's election leaves regular MACRS: $50,000 x 20% = $10,000."
+   },
+   "steps": [
+    "Nate: 100% allowance = 50,000",
+    "Oli: elected out; MACRS year 1 = 50,000 x 20% = 10,000"
+   ],
+   "calc_check": {
+    "expr": "50000*0.20",
+    "fmt": "text",
+    "value": 10000
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§168(k)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§168(k)(7)"
+    },
+    {
+     "src": "Pub",
+     "ref": "946"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA (P.L. 119-21 sec. 70301): IRC 168(k)(1)(A) now provides a 100 percent allowance and 168(k)(7) allows an election out by class; 168(k)(10) gives an optional 40 percent only for the first taxable year ending after January 19, 2025. Property acquired in 2026 gets 100 percent. Verified against Cornell LII 26 USC 168(k). The January 19, 2025 acquisition date is the OBBBA effective date (not in the code text).",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-C-0044",
+   "type": "mcq",
+   "area": "IV",
+   "group": "C",
+   "topic": "Adjustments and deductions to AGI and taxable income",
+   "task": "Identify adjustments allowed in calculating adjusted gross income (retirement plan contribution, HSA contribution, self-employment expenses).",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 1,
+   "calc": true,
+   "stem": "Ann and Bob are single, age 73, and each has $60,000 of other income included in AGI for 2026. Each has a required minimum distribution of $10,000 from a traditional IRA and each gave $10,000 to a public charity. Ann had her IRA trustee transfer $10,000 directly to the charity as her required distribution. Bob took his $10,000 distribution himself and wrote a $10,000 check to the charity ten days later. Which statement correctly compares their 2026 AGI?",
+   "exhibit": "",
+   "options": [
+    "Ann's AGI is $70,000 and Bob's is $70,000",
+    "Ann's AGI is $60,000 and Bob's is $60,000, because Bob's gift is an adjustment to income",
+    "Ann's AGI is $60,000 and Bob's is $70,000",
+    "Ann's AGI is $50,000 and Bob's is $70,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Includes Ann's direct transfer in income. A qualified charitable distribution is excluded.",
+    "B": "Charitable gifts are not above-the-line adjustments. Bob's distribution stays in AGI.",
+    "C": "A direct transfer from an IRA to a charity by someone age 70 1/2 or older is excluded from gross income and counts toward the required distribution. Bob's distribution is included in AGI, and his gift is deducted below AGI if at all.",
+    "D": "Excludes Ann's transfer and then subtracts it again. The exclusion already keeps it out of AGI."
+   },
+   "steps": [
+    "Ann: distribution to charity excluded; AGI = 60,000",
+    "Bob: distribution included; AGI = 60,000 + 10,000 = 70,000"
+   ],
+   "calc_check": {
+    "expr": "60000+10000",
+    "fmt": "text",
+    "value": 70000
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§408(d)(8)"
+    },
+    {
+     "src": "Pub",
+     "ref": "590-B"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA; the annual dollar limit on qualified charitable distributions is not tested.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-C-0045",
+   "type": "mcq",
+   "area": "IV",
+   "group": "C",
+   "topic": "Adjustments and deductions to AGI and taxable income",
+   "task": "Review Form 1040 and supporting documentation to determine accuracy of AGI and taxable income reported.",
+   "task_source": "지도.json",
+   "task_skill": "Analysis",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Lou Perez, single, is a restaurant server who received $32,000 of voluntary cash tips in 2026 that were reported on his Form W-2. His occupation is on Treasury's list of occupations that customarily receive tips, and he has a valid Social Security number. His MAGI before any tips deduction is $160,000. His draft return claims a $31,000 qualified tips deduction. What deduction should he claim?",
+   "exhibit": "",
+   "options": [
+    "$24,000",
+    "$25,000",
+    "$31,000",
+    "$32,000"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "The deduction is capped at $25,000, then reduced by $100 for each $1,000 of MAGI over $150,000: $25,000 - 10 x $100 = $24,000.",
+    "B": "Applies the cap but omits the MAGI phase-out reduction.",
+    "C": "Applies the phase-out to the full $32,000 and skips the $25,000 cap. This is the draft return's $31,000.",
+    "D": "Deducts all tips received without the $25,000 cap or the phase-out."
+   },
+   "steps": [
+    "Cap = 25,000 (tips 32,000 exceed the cap)",
+    "Phase-out = 100 x (160,000 - 150,000) / 1,000 = 1,000",
+    "Deduction = 25,000 - 1,000 = 24,000"
+   ],
+   "calc_check": {
+    "expr": "25000-100*((160000-150000)/1000)",
+    "fmt": "$",
+    "value": 24000,
+    "distractors": {
+     "B": {
+      "expr": "25000",
+      "value": 25000
+     },
+     "C": {
+      "expr": "32000-100*((160000-150000)/1000)",
+      "value": 31000
+     },
+     "D": {
+      "expr": "32000",
+      "value": 32000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§224(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§224(b)"
+    },
+    {
+     "src": "Schedule",
+     "ref": "1-A instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA new IRC 224 deduction for qualified tips (taxable years 2025 through 2028): $25,000 cap, reduced $100 per $1,000 of MAGI over $150,000 ($300,000 joint); SSN required; joint return required for married. Verified against Cornell LII 26 USC 224.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-D-0027",
+   "type": "mcq",
+   "area": "IV",
+   "group": "D",
+   "topic": "Loss limitations",
+   "task": "Calculate the net tax loss allowed on the sale of capital property, including netting of capital gains and losses and capital loss carryforwards.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Nora Beck, single, has a capital loss carryover into 2026 of $4,000 short-term and $20,000 long-term. In 2026 she sold stock at a $6,000 long-term capital gain and had no other capital transactions. Her taxable income is high enough to absorb the deduction of capital losses against ordinary income. What capital loss carryover does Nora take into 2027?",
+   "exhibit": "",
+   "options": [
+    "$1,000 short-term and $14,000 long-term",
+    "$4,000 short-term and $11,000 long-term",
+    "$1,000 short-term and $20,000 long-term",
+    "$0 short-term and $15,000 long-term"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Net short-term loss is $4,000. Net long-term is $6,000 - $20,000 = a $14,000 loss. The $3,000 deduction is treated as short-term gain, cutting the short-term loss to $1,000. The long-term loss carries over as $14,000.",
+    "B": "Takes the $3,000 deduction from the long-term loss first. The allowed deduction is applied against the net short-term loss first.",
+    "C": "Leaves out the $6,000 long-term gain. Current-year gains net against the carried long-term loss before the carryover is computed.",
+    "D": "Uses up the whole short-term loss and moves $1,000 to long-term. Character is preserved: the remaining $1,000 stays short-term."
+   },
+   "steps": [
+    "Net short-term = -4,000 (loss); net long-term = 6,000 - 20,000 = -14,000 (loss)",
+    "Deduct 3,000 against ordinary income; treated as short-term gain: short-term carryover = 4,000 - 3,000 = 1,000",
+    "Long-term carryover = 14,000"
+   ],
+   "calc_check": {
+    "expr": "4000-3000",
+    "fmt": "text",
+    "value": 1000
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1211(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1212(b)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1212(b)(2)"
+    },
+    {
+     "src": "Pub",
+     "ref": "550"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-D-0028",
+   "type": "mcq",
+   "area": "IV",
+   "group": "D",
+   "topic": "Loss limitations",
+   "task": "Calculate the amount of ordinary business loss allowed for an individual materially participating in a pass-through entity with sufficient basis.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Ann Hill and Ben Cole each own 100% of a separate business operated through a single-member LLC that is disregarded for tax purposes. Each business lost $40,000 in 2026. Each owner has sufficient basis and at-risk amounts, and has no passive income. Ann spent 110 hours on her business, while a paid part-time manager spent 300 hours. Ben spent 520 hours on his business, while his employees spent 900 hours. Which statement correctly describes the treatment of their losses?",
+   "exhibit": "",
+   "options": [
+    "Both losses are nonpassive, because each owner spent more than 100 hours in the business",
+    "Both losses are passive, because each business used employees to perform work",
+    "Ann's loss is nonpassive and Ben's is passive, because employees worked more hours than Ben",
+    "Ben's loss is nonpassive and deductible; Ann's loss is passive and is suspended"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "More than 100 hours is required, and the owner's hours also must not be less than those of any other individual. Ann's 110 hours are less than the manager's 300.",
+    "B": "Having employees does not defeat material participation. Ben's 520 hours meet the more-than-500-hour test.",
+    "C": "Reverses the outcome. Ben meets the 500-hour test regardless of hours worked by employees.",
+    "D": "Ben participates more than 500 hours, so he materially participates. Ann exceeds 100 hours but not by more than any other individual (the manager worked 300), so she does not materially participate. Because the manager is paid to manage, Ann also cannot use the facts-and-circumstances test."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§469(h)(1)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.469-5T(a)(1)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.469-5T(a)(3)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-D-0029",
+   "type": "mcq",
+   "area": "IV",
+   "group": "D",
+   "topic": "Loss limitations",
+   "task": "Calculate losses disallowed for tax purposes, such as from a hobby, wash sale or sale of a personal-use asset.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Uma and Vic each contribute $20,000 cash for a limited partner interest in a separate partnership. Uma's partnership owns an apartment building financed with a $200,000 nonrecourse loan from a commercial bank, and her share of the loan is $20,000. Vic's partnership owns leased equipment financed with a $200,000 nonrecourse loan from the equipment seller, and his share is $20,000. Each has a $40,000 basis and is allocated a $35,000 loss for 2026. Ignoring the passive activity rules, what loss may each deduct under the at-risk rules?",
+   "exhibit": "",
+   "options": [
+    "Uma $35,000; Vic $35,000, because each has a $40,000 basis",
+    "Uma $35,000; Vic $20,000",
+    "Uma $20,000; Vic $20,000, because nonrecourse debt does not increase the at-risk amount",
+    "Uma $20,000; Vic $35,000"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Confuses basis with the at-risk amount. Nonrecourse debt raises basis but raises the at-risk amount only when it is qualified nonrecourse financing.",
+    "B": "Qualified nonrecourse financing on real property from a commercial lender counts as at risk, so Uma's at-risk amount is $40,000. Seller-financed nonrecourse debt on equipment is not qualified, so Vic is at risk only for his $20,000.",
+    "C": "Overstates the rule. Qualified nonrecourse financing secured by real property counts as an amount at risk.",
+    "D": "Reverses the results. Real property financing from a commercial lender qualifies, while seller financing of equipment does not."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§465(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§465(b)(6)"
+    },
+    {
+     "src": "Form",
+     "ref": "6198 instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-D-0030",
+   "type": "mcq",
+   "area": "IV",
+   "group": "D",
+   "topic": "Loss limitations",
+   "task": "Calculate losses disallowed for tax purposes, such as from a hobby, wash sale or sale of a personal-use asset.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Wren Hall bought a house in 2015 for $300,000 and used it as her main home. On January 1, 2024, she converted it to rental property when its fair market value was $250,000. She claimed $10,000 of depreciation through 2026. Treat the entire property as depreciable, and ignore any exclusion for the sale of a main home. She sold the property on December 31, 2026. Which statement correctly states her recognized result if the sale price is $270,000 and if the sale price is $220,000?",
+   "exhibit": "",
+   "options": [
+    "A $20,000 loss at $270,000 and a $70,000 loss at $220,000",
+    "A $30,000 gain at $270,000 and a $20,000 loss at $220,000",
+    "No gain or loss at $270,000; a $20,000 loss at $220,000",
+    "No gain or loss at $270,000; a $70,000 loss at $220,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Uses the $290,000 gain basis for losses. The loss basis is limited to the fair market value at conversion less depreciation.",
+    "B": "Uses the $240,000 loss basis to measure gain. The gain basis is the higher adjusted basis of $290,000.",
+    "C": "The gain basis is the adjusted basis, $300,000 - $10,000 = $290,000. The loss basis is the lower fair market value at conversion less depreciation, $250,000 - $10,000 = $240,000. A price between them gives neither; $220,000 produces a $20,000 loss.",
+    "D": "Gets the middle range right but uses the $290,000 gain basis for the loss. The loss is $240,000 - $220,000."
+   },
+   "steps": [
+    "Gain basis = 300,000 - 10,000 = 290,000",
+    "Loss basis = min(300,000, 250,000) - 10,000 = 240,000",
+    "270,000 is between 240,000 and 290,000: no gain or loss; 220,000: loss = 240,000 - 220,000 = 20,000"
+   ],
+   "calc_check": {
+    "expr": "250000-10000-220000",
+    "fmt": "text",
+    "value": 20000
+   },
+   "cite": [
+    {
+     "src": "Reg.",
+     "ref": "§1.168(i)-4(b)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.165-9(b)(2)"
+    },
+    {
+     "src": "Pub",
+     "ref": "523"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-D-0031",
+   "type": "mcq",
+   "area": "IV",
+   "group": "D",
+   "topic": "Loss limitations",
+   "task": "Calculate losses disallowed for tax purposes, such as from a hobby, wash sale or sale of a personal-use asset.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "In 2026 two loans became totally worthless. Rob, a furniture maker, lent $20,000 to his lumber supplier to keep it operating so that he could keep buying lumber for his sole proprietorship. Sue lent $20,000 to a friend for a personal purpose. Neither has taken a deduction before, each has $60,000 of other income, and each has no other capital transactions. Which statement correctly describes the tax treatment of the two worthless debts?",
+   "exhibit": "",
+   "options": [
+    "Rob deducts $20,000 as an ordinary loss; Sue has a $20,000 short-term capital loss, of which $3,000 is deductible now and $17,000 carries forward",
+    "Rob and Sue each deduct $20,000 as an ordinary loss",
+    "Rob and Sue each have a $20,000 short-term capital loss, of which only $3,000 is deductible now",
+    "Rob has a $20,000 short-term capital loss; Sue deducts $20,000 as an ordinary loss"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "A business bad debt is an ordinary deduction. A nonbusiness bad debt is treated as a short-term capital loss, so the $3,000 annual limit applies.",
+    "B": "Applies the business bad debt rule to a personal loan. A nonbusiness bad debt is a short-term capital loss.",
+    "C": "Applies the nonbusiness rule to Rob. A debt proximately related to his trade or business is deducted as an ordinary business bad debt.",
+    "D": "Reverses the two treatments."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§166(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§166(d)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.166-5"
+    },
+    {
+     "src": "Pub",
+     "ref": "550"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-D-0032",
+   "type": "mcq",
+   "area": "IV",
+   "group": "D",
+   "topic": "Loss limitations",
+   "task": "Calculate losses disallowed for tax purposes, such as from a hobby, wash sale or sale of a personal-use asset.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Ann and Ben are each married and file separately for 2026. Each actively participates in a rental house, has a $20,000 loss from it and no passive income, and has MAGI of $40,000 before the loss. Ann lived apart from her spouse for all of 2026. Ben lived with his spouse for part of 2026. Which statement correctly gives the rental loss each may deduct against nonpassive income?",
+   "exhibit": "",
+   "options": [
+    "Ann $20,000; Ben $0",
+    "Ann $12,500; Ben $12,500",
+    "Ann $0; Ben $0, because married taxpayers filing separately get no allowance",
+    "Ann $12,500; Ben $0"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Gives Ann the full $25,000 allowance. On a separate return the allowance is $12,500 even for a spouse who lived apart all year.",
+    "B": "Gives Ben the reduced allowance. It is available only if the spouses lived apart at all times during the year.",
+    "C": "Overstates the rule. The exception for a separate filer who lived apart all year keeps the allowance at half.",
+    "D": "A married person filing separately who lived apart from the spouse all year gets half the special allowance ($12,500). A separate filer who lived with the spouse at any time during the year gets no allowance."
+   },
+   "steps": [
+    "Ann: allowance = 12,500 (MAGI 40,000 is below the 50,000 phase-out start); deduction = min(20,000, 12,500) = 12,500",
+    "Ben: lived with spouse during the year, so allowance = 0"
+   ],
+   "calc_check": {
+    "expr": "min(20000, 12500)",
+    "fmt": "text",
+    "value": 12500
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§469(i)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§469(i)(5)"
+    },
+    {
+     "src": "Pub",
+     "ref": "925"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-D-0033",
+   "type": "mcq",
+   "area": "IV",
+   "group": "D",
+   "topic": "Loss limitations",
+   "task": "Calculate losses disallowed for tax purposes, such as from a hobby, wash sale or sale of a personal-use asset.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Al and Bea each own a beach house and rented it at fair rental value for 100 days in 2026. Al used his house personally for 10 days and Bea used hers personally for 30 days. Each house has more expenses than rental income allocable to the rental use. Which statement correctly compares the limits on their rental deductions?",
+   "exhibit": "",
+   "options": [
+    "Both may deduct rental expenses in excess of rental income, because each rented the house for more than 14 days",
+    "Al may deduct rental expenses in excess of rental income; Bea's deductions are limited to her rental income",
+    "Neither may deduct rental expenses in excess of rental income, because each used the house personally",
+    "Bea may deduct rental expenses in excess of rental income; Al's are limited, because Al's use exceeds 10 percent of the rental days"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Renting more than 14 days makes the rental income taxable but does not lift the limit for excessive personal use. Bea used hers 30 days.",
+    "B": "A dwelling is a residence when personal use exceeds the greater of 14 days or 10% of rental days. Al's 10 days do not; Bea's 30 do, so her rental deductions cannot exceed rental income.",
+    "C": "Any personal use triggers the limit only above the greater of 14 days or 10% of the rental days. Al's 10 days are under it.",
+    "D": "Al's 10 days equal, not exceed, 10% of 100 rental days, and the 14-day floor is greater. The limit applies to Bea."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§280A(d)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§280A(c)(5)"
+    },
+    {
+     "src": "Pub",
+     "ref": "527"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-E-0019",
+   "type": "mcq",
+   "area": "IV",
+   "group": "E",
+   "topic": "Filing status",
+   "task": "Identify taxpayer filing status for tax purposes given a specific scenario.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Ron and Sue Yuen are married and file separate returns for 2026. Ron itemizes and his itemized deductions total $9,000. Sue's allowable itemized deductions total $2,500. The 2026 standard deduction for a married individual filing separately is $16,100. What deduction may Sue claim?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$2,500",
+    "$9,000",
+    "$16,100"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Denies any deduction. The standard deduction is unavailable to Sue, but she may still itemize her own deductions.",
+    "B": "If one spouse on a separate return itemizes, the other spouse's standard deduction is $0, so Sue must itemize. Her deduction is her own $2,500.",
+    "C": "Uses Ron's itemized deductions. Each spouse deducts only his or her own expenses on a separate return.",
+    "D": "Allows the standard deduction. It is not allowed when the spouse itemizes on a separate return."
+   },
+   "steps": [
+    "Ron itemizes, so Sue's standard deduction = 0",
+    "Sue itemizes her own deductions = 2,500"
+   ],
+   "calc_check": {
+    "expr": "2500",
+    "fmt": "$",
+    "value": 2500,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "C": {
+      "expr": "9000",
+      "value": 9000
+     },
+     "D": {
+      "expr": "16100",
+      "value": 16100
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§63(c)(6)(A)"
+    },
+    {
+     "src": "Pub",
+     "ref": "501"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA; the stem supplies the 2026 amount.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-E-0020",
+   "type": "mcq",
+   "area": "IV",
+   "group": "E",
+   "topic": "Filing status",
+   "task": "Identify taxpayer filing status for tax purposes given a specific scenario.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Pia Lund is a U.S. citizen. She married Omar, a nonresident alien with no U.S. income, in 2020, and they lived abroad in 2026. Pia earned $90,000 of wages and has no dependents. Omar has foreign income. Which statement about Pia's 2026 filing options is correct?",
+   "exhibit": "",
+   "options": [
+    "She may file as single, because her spouse is a nonresident alien",
+    "She may file jointly without an election, because she is a U.S. citizen",
+    "She may file jointly only if she and Omar elect to treat him as a U.S. resident for the entire year; otherwise she files as married filing separately",
+    "If they elect joint status, only Omar's U.S.-source income is taxed on the joint return"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Marital status is not changed by the spouse's residency. Without the election she is married and files separately.",
+    "B": "A joint return with a nonresident alien spouse requires the election to be treated as a resident.",
+    "C": "A married person with a nonresident alien spouse may not use single status. The joint return is available only by election under which both spouses are taxed on worldwide income.",
+    "D": "The election subjects both spouses to tax on worldwide income for the year and later years until revoked."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§6013(g)"
+    },
+    {
+     "src": "Pub",
+     "ref": "519"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-E-0021",
+   "type": "mcq",
+   "area": "IV",
+   "group": "E",
+   "topic": "Filing status",
+   "task": "Identify taxpayer filing status for tax purposes given a specific scenario.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Compare two unmarried taxpayers for 2026. Mia paid $30,000 of the $40,000 total cost of keeping her father in a nursing home, which was his main home for the entire year. Nan paid $12,000 of the $30,000 cost of keeping up the apartment in which her mother lived all year. Each provides more than half of the support of her parent, and each parent qualifies as the taxpayer's dependent. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "Mia qualifies for head of household status; Nan does not, because she paid less than half the cost of keeping up her mother's home",
+    "Neither qualifies, because a parent must live with the taxpayer for more than half the year",
+    "Both qualify, because each taxpayer supports a parent who is a dependent",
+    "Nan qualifies but Mia does not, because a nursing home is not a household"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "A parent who is a dependent need not live with the taxpayer if the taxpayer pays more than half the cost of keeping up the parent's main home, which may be a rest home. Mia paid 75%; Nan paid 40%.",
+    "B": "Applies the residence test used for other relatives. For a dependent parent, the taxpayer need only pay more than half the cost of the parent's home.",
+    "C": "Support alone is not enough. The taxpayer must also pay more than half the cost of keeping up the parent's home.",
+    "D": "A home for the elderly or nursing home can be the parent's main home for this purpose. Mia paid more than half."
+   },
+   "steps": [
+    "Mia: 30,000 / 40,000 = 75%, more than half",
+    "Nan: 12,000 / 30,000 = 40%, not more than half"
+   ],
+   "calc_check": {
+    "expr": "30000/40000*100",
+    "fmt": "text",
+    "value": 75
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§2(b)(1)(B)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.2-2(b)(4)"
+    },
+    {
+     "src": "Pub",
+     "ref": "501"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-E-0022",
+   "type": "mcq",
+   "area": "IV",
+   "group": "E",
+   "topic": "Filing status",
+   "task": "Recall relationships meeting the definition of dependent for purposes of determining taxpayer filing status.",
+   "task_source": "지도.json",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Zoe, age 6, lived all of 2026 with her mother Gwen and her grandmother Hazel in Hazel's home. Zoe's father does not live with them and does not claim her. Gwen's AGI is $28,000 and Hazel's AGI is $76,000. Zoe is a qualifying child of both women. Gwen and Hazel agree that Hazel will claim Zoe. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "Hazel may not claim Zoe, because a parent has priority over a grandparent even when the parent does not claim the child",
+    "Hazel may claim Zoe only if Gwen signs Form 8332 releasing the claim",
+    "Hazel may not claim Zoe, because the person with the lower AGI must claim her",
+    "Hazel may claim Zoe, because Gwen does not claim her and Hazel's AGI is higher than Gwen's"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Overstates the priority rule. A parent's priority applies only if the parent actually claims the child.",
+    "B": "Form 8332 applies to divorced or separated parents. It is not part of the rule for a non-parent relative.",
+    "C": "Reverses the AGI test. A non-parent may claim only when her AGI is higher than any parent who could claim the child.",
+    "D": "When a child is a qualifying child of a parent and a non-parent, the parent has priority, but if the parent does not claim the child, the non-parent may claim her if the non-parent's AGI is higher than the highest AGI of any parent who could claim her."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§152(c)(4)(B)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§152(c)(4)(C)"
+    },
+    {
+     "src": "Pub",
+     "ref": "501"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-E-0023",
+   "type": "mcq",
+   "area": "IV",
+   "group": "E",
+   "topic": "Filing status",
+   "task": "Identify taxpayer filing status for tax purposes given a specific scenario.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Dev Marsh is unmarried and claims head of household status for 2026. His 8-year-old daughter, a qualifying child, lived with him all year. Review the exhibit of the costs of keeping up his home. Which statement is correct?",
+   "exhibit": [
+    [
+     "Cost for the year",
+     "Total cost",
+     "Paid by Dev"
+    ],
+    [
+     "Rent",
+     "$12,000",
+     "$5,000"
+    ],
+    [
+     "Utilities",
+     "$3,000",
+     "$2,500"
+    ],
+    [
+     "Food eaten in the home",
+     "$5,000",
+     "$1,500"
+    ],
+    [
+     "Home repairs",
+     "$1,000",
+     "$500"
+    ],
+    [
+     "Clothing",
+     "$3,000",
+     "$3,000"
+    ],
+    [
+     "Medical treatment",
+     "$2,000",
+     "$2,000"
+    ]
+   ],
+   "options": [
+    "He qualifies, because he paid 56 percent of all costs ($14,500 of $26,000)",
+    "He does not qualify, because he paid 45 percent of the qualifying costs of keeping up the home ($9,500 of $21,000); clothing and medical costs are excluded",
+    "He qualifies, because paying for his daughter's clothing and medical care counts toward keeping up the home",
+    "He qualifies, because a qualifying child living with him more than half the year is the only requirement"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Includes clothing and medical costs in both totals. Those costs are not part of the cost of keeping up a home.",
+    "B": "Rent, utilities, food eaten at home, and repairs count. Clothing and medical treatment do not. Dev paid $9,500 of $21,000, which is not more than half.",
+    "C": "Those payments are for the child's personal needs and are excluded from the cost of keeping up a home.",
+    "D": "The taxpayer must also pay more than half the cost of keeping up the home."
+   },
+   "steps": [
+    "Qualifying costs = 12,000 + 3,000 + 5,000 + 1,000 = 21,000",
+    "Dev paid = 5,000 + 2,500 + 1,500 + 500 = 9,500 = 45%",
+    "Not more than half, so no head of household"
+   ],
+   "calc_check": {
+    "expr": "5000+2500+1500+500",
+    "fmt": "text",
+    "value": 9500
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§2(b)(1)(A)"
+    },
+    {
+     "src": "Reg.",
+     "ref": "§1.2-2(d)"
+    },
+    {
+     "src": "Pub",
+     "ref": "501"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-E-0024",
+   "type": "mcq",
+   "area": "IV",
+   "group": "E",
+   "topic": "Filing status",
+   "task": "Determine an individual's filing requirement and standard deduction (including the standard deduction of a dependent).",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Ted and Una Frost, both age 66, are choosing between a joint return and separate returns for 2026. Una is also blind. Neither itemizes. For 2026 the basic standard deduction is $32,200 for a joint return and $16,100 for a separate return, and the additional amount for each aged or blind condition of a married individual is $1,650. Ignore any other deduction for seniors. Which statement correctly compares the total standard deductions?",
+   "exhibit": "",
+   "options": [
+    "The joint return gives $37,150 and separate returns give $35,500 in total",
+    "The joint return gives $32,200 and separate returns give $37,150, because additional amounts apply only on separate returns",
+    "Both methods give a total standard deduction of $37,150",
+    "Both methods give $38,350, using the $2,050 additional amount"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Leaves out Una's additional amount for blindness on the separate return. Each spouse claims his or her own age and blindness amounts.",
+    "B": "Omits the additional amounts from the joint return, where both spouses' amounts are added.",
+    "C": "Joint: $32,200 + 3 x $1,650 = $37,150. Separate: Ted $16,100 + $1,650 = $17,750 and Una $16,100 + 2 x $1,650 = $19,400, for $37,150.",
+    "D": "The $2,050 amount applies only to an unmarried individual. Married individuals use $1,650."
+   },
+   "steps": [
+    "Joint = 32,200 + 3 x 1,650 = 37,150",
+    "Separate: Ted 16,100 + 1,650 = 17,750; Una 16,100 + 3,300 = 19,400; total 37,150"
+   ],
+   "calc_check": {
+    "expr": "32200+3*1650",
+    "fmt": "text",
+    "value": 37150
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§63(c)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§63(f)"
+    },
+    {
+     "src": "Rev.Proc.",
+     "ref": "2025-32 §4.14"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Amounts from Rev.Proc. 2025-32 (2026 basic $16,100/$32,200; aged or blind $1,650 married, $2,050 unmarried). Verified against the Rev.Proc. text.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-E-0025",
+   "type": "mcq",
+   "area": "IV",
+   "group": "E",
+   "topic": "Filing status",
+   "task": "Recall relationships meeting the definition of dependent for purposes of determining taxpayer filing status.",
+   "task_source": "지도.json",
+   "task_skill": "Remembering",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Cy Arden, age 20, and Dee Boyd, age 21, are full-time students who lived with their parents for all of 2026 and provided less than half of their own support. Each is married and filed a joint return with a spouse. Cy and his wife filed jointly only to claim a $600 refund of tax withheld from their pay; neither would owe tax on separate returns. Dee and her husband filed jointly and owed tax. Which statement about whether the parents may claim each as a dependent is correct?",
+   "exhibit": "",
+   "options": [
+    "The parents may claim Cy but not Dee",
+    "The parents may claim both, because both are full-time students under age 24",
+    "The parents may claim neither, because a married person filing jointly cannot be a dependent",
+    "The parents may claim Dee but not Cy, because Cy's joint return shows he claimed a refund"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "A married person who files a joint return cannot be claimed as a dependent unless the joint return is filed only to claim a refund and no tax liability would exist on separate returns.",
+    "B": "Student status does not override the joint return test. Dee's joint return had a tax liability.",
+    "C": "Overlooks the refund-only exception that applies to Cy.",
+    "D": "Reverses the outcome. Filing solely to claim a refund preserves Cy's dependent status."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§152(b)(2)"
+    },
+    {
+     "src": "Rev.Rul.",
+     "ref": "54-567"
+    },
+    {
+     "src": "Pub",
+     "ref": "501"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-F-0031",
+   "type": "mcq",
+   "area": "IV",
+   "group": "F",
+   "topic": "Computation of tax and credits",
+   "task": "Calculate individual tax credits (child and other dependent credits, education credits, earned income credit, foreign tax credit).",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Olga and Paul Rene file jointly for 2026 with modified AGI well below all phase-out ranges. Their daughter Ella is a sophomore in a degree program, and they paid $5,000 of qualified tuition and required course materials for her. Olga also took a graduate course at a college that costs $4,000 in tuition, to improve her job skills. Neither had scholarships. Assume the maximum American opportunity credit for an eligible student is $2,500 and the lifetime learning credit is 20% of up to $10,000 of qualified expenses per return. What is the largest total education credit available to the Renes?",
+   "exhibit": "",
+   "options": [
+    "$1,800",
+    "$2,500",
+    "$3,300",
+    "$5,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Uses the lifetime learning credit for both. Ella's expenses qualify for the larger American opportunity credit.",
+    "B": "Claims only Ella's American opportunity credit and leaves out the lifetime learning credit for Olga's course.",
+    "C": "Ella qualifies for the American opportunity credit: $2,000 + 25% x $2,000 = $2,500. Olga's graduate course is not eligible for that credit, so it qualifies only for the lifetime learning credit: 20% x $4,000 = $800. Total $3,300.",
+    "D": "Applies the American opportunity credit to Olga as well. It is limited to the first four years of postsecondary education in a degree program."
+   },
+   "steps": [
+    "Ella: 100% x 2,000 + 25% x 2,000 = 2,500",
+    "Olga: 20% x 4,000 = 800",
+    "Total = 3,300"
+   ],
+   "calc_check": {
+    "expr": "(2000+0.25*2000)+0.20*4000",
+    "fmt": "$",
+    "value": 3300,
+    "distractors": {
+     "A": {
+      "expr": "0.20*(5000+4000)",
+      "value": 1800
+     },
+     "B": {
+      "expr": "2000+0.25*2000",
+      "value": 2500
+     },
+     "D": {
+      "expr": "2*(2000+0.25*2000)",
+      "value": 5000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§25A(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§25A(c)"
+    },
+    {
+     "src": "Pub",
+     "ref": "970"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-F-0032",
+   "type": "mcq",
+   "area": "IV",
+   "group": "F",
+   "topic": "Computation of tax and credits",
+   "task": "Calculate individual tax credits (child and other dependent credits, education credits, earned income credit, foreign tax credit).",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Kim Sato and Lin Dorr each paid $24,000 to have a rooftop solar electric system installed on their main homes, and each has enough tax liability to use any credit. Kim's installation was completed and paid for on December 20, 2025. Lin's installation was completed and paid for on January 10, 2026. Which statement correctly gives the residential clean energy credit each taxpayer may claim?",
+   "exhibit": "",
+   "options": [
+    "Kim $7,200; Lin $7,200",
+    "Kim $7,200; Lin $6,240",
+    "Kim $0; Lin $0, because the credit expired before either system was completed",
+    "Kim $7,200; Lin $0"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Assumes the 30% credit continues into 2026 under the pre-2025 schedule. It ends for expenditures made after 2025.",
+    "B": "Applies a reduced 26% rate to Lin. No reduced-rate credit is available for 2026 expenditures.",
+    "C": "Puts the end date too early. The credit covers expenditures made through December 31, 2025.",
+    "D": "The credit is 30% of qualified costs but does not apply to expenditures made after December 31, 2025. Kim's 30% x $24,000 = $7,200; Lin's expenditure falls in 2026."
+   },
+   "steps": [
+    "Kim: expenditure made in 2025; credit = 30% x 24,000 = 7,200",
+    "Lin: expenditure made in 2026, after the termination date; credit = 0"
+   ],
+   "calc_check": {
+    "expr": "0.30*24000",
+    "fmt": "text",
+    "value": 7200
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§25D(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§25D(h)"
+    },
+    {
+     "src": "Form",
+     "ref": "5695 instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-07-01",
+   "law_note": "OBBBA (P.L. 119-21 sec. 70513) terminated the section 25D credit for expenditures made after December 31, 2025. Verified against Cornell LII 26 USC 25D(h). Expenditure timing for an installation on an existing home: when installation is complete (Form 5695 instructions). Timing rule (costs treated as paid when the original installation is completed) verified in the Form 5695 instructions. Timing rule (costs treated as paid when the original installation is completed) verified in the Form 5695 instructions.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-F-0033",
+   "type": "mcq",
+   "area": "IV",
+   "group": "F",
+   "topic": "Computation of tax and credits",
+   "task": "Calculate the tax liability based on an individual's taxable income given a specific scenario, including consideration of the net investment income tax.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Review the draft 2026 joint return of Oren and Pia Zell. Oren earned $160,000 of wages and Pia earned $130,000. Neither employer withheld additional Medicare tax, and the couple has no other income or self-employment income. The draft return reports no additional Medicare tax. What amount of additional Medicare tax should the Zells report?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$360",
+    "$810",
+    "$2,610"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Assumes no tax is due because neither employer withheld it. The liability depends on combined wages, not on withholding.",
+    "B": "The 0.9% tax applies to combined wages over $250,000 on a joint return: 0.9% x ($290,000 - $250,000) = $360. Employers withhold only on wages over $200,000, so none was withheld.",
+    "C": "Uses the $200,000 single threshold. A joint return uses $250,000.",
+    "D": "Applies the tax to all wages instead of only the excess over the threshold."
+   },
+   "steps": [
+    "Combined wages = 160,000 + 130,000 = 290,000",
+    "Excess over 250,000 = 40,000",
+    "Tax = 0.9% x 40,000 = 360"
+   ],
+   "calc_check": {
+    "expr": "0.009*((160000+130000)-250000)",
+    "fmt": "$",
+    "value": 360,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "C": {
+      "expr": "0.009*(290000-200000)",
+      "value": 810
+     },
+     "D": {
+      "expr": "0.009*290000",
+      "value": 2610
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§3101(b)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1401(b)(2)"
+    },
+    {
+     "src": "Form",
+     "ref": "8959 instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-F-0034",
+   "type": "mcq",
+   "area": "IV",
+   "group": "F",
+   "topic": "Computation of tax and credits",
+   "task": "Calculate the tax liability based on an individual's taxable income given a specific scenario, including consideration of the net investment income tax.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Wade Rhine, single, has 2026 taxable income of $280,000, which consists of $250,000 of ordinary income and a $30,000 gain from selling a rental building that is entirely unrecaptured gain from depreciation (taxed at a maximum rate of 25%). He has no other capital gain. Use the 2026 single rate schedule in the exhibit and ignore the net investment income tax. By how much does the 25% maximum rate reduce his tax compared with taxing the entire $280,000 as ordinary income?",
+   "exhibit": [
+    [
+     "2026 single taxable income",
+     "Tax"
+    ],
+    [
+     "Not over $12,400",
+     "10% of taxable income"
+    ],
+    [
+     "Over $12,400 to $50,400",
+     "$1,240 plus 12% of the excess over $12,400"
+    ],
+    [
+     "Over $50,400 to $105,700",
+     "$5,800 plus 22% of the excess over $50,400"
+    ],
+    [
+     "Over $105,700 to $201,775",
+     "$17,966 plus 24% of the excess over $105,700"
+    ],
+    [
+     "Over $201,775 to $256,225",
+     "$41,024 plus 32% of the excess over $201,775"
+    ],
+    [
+     "Over $256,225 to $640,600",
+     "$58,448 plus 35% of the excess over $256,225"
+    ],
+    [
+     "Over $640,600",
+     "$192,979.25 plus 37% of the excess over $640,600"
+    ]
+   ],
+   "options": [
+    "$2,100",
+    "$2,813",
+    "$3,000",
+    "$7,500"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Assumes the whole $30,000 would be taxed at 32%. Part of the ordinary layer above $256,225 falls in the 35% bracket.",
+    "B": "Regular tax on $250,000 is $56,456, plus 25% x $30,000 = $7,500, for $63,956. Tax on $280,000 as ordinary income is $66,769. The difference is $2,813.",
+    "C": "Assumes the whole $30,000 would be taxed at 35%. The first $6,225 above $250,000 falls in the 32% bracket.",
+    "D": "Reports the tax at 25% as the savings. The savings is the difference between ordinary-rate tax and the 25% tax."
+   },
+   "steps": [
+    "Tax on 250,000 = 41,024 + 32% x (250,000 - 201,775) = 56,456",
+    "Add 25% x 30,000 = 7,500: total 63,956",
+    "Tax on 280,000 = 58,448 + 35% x (280,000 - 256,225) = 66,769; savings = 66,769 - 63,956 = 2,813"
+   ],
+   "calc_check": {
+    "expr": "tax_s(280000)-(tax_s(250000)+0.25*30000)",
+    "fmt": "$",
+    "value": 2813,
+    "distractors": {
+     "A": {
+      "expr": "30000*(0.32-0.25)",
+      "value": 2100
+     },
+     "C": {
+      "expr": "30000*(0.35-0.25)",
+      "value": 3000
+     },
+     "D": {
+      "expr": "30000*0.25",
+      "value": 7500
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1(h)(1)(E)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(h)(6)"
+    },
+    {
+     "src": "Schedule",
+     "ref": "D Tax Worksheet instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Rates from Rev.Proc. 2025-32 Table 3 (verified against the Rev.Proc. text). The 25% rate for unrecaptured gain is unchanged.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-F-0035",
+   "type": "mcq",
+   "area": "IV",
+   "group": "F",
+   "topic": "Computation of tax and credits",
+   "task": "Calculate individual tax credits (child and other dependent credits, education credits, earned income credit, foreign tax credit).",
+   "task_source": "supplement (not in 지도.json; verify against Blueprint)",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Review the draft 2026 return of Ira Cole, single. Ira worked for two unrelated employers. Employer 1 paid him $120,000 and Employer 2 paid him $90,000, and each employer withheld Social Security tax at 6.2% of the wages it paid. The draft return claims no credit for excess Social Security tax. The 2026 Social Security wage base is $184,500. What credit for excess Social Security tax withheld should Ira claim?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$1,581",
+    "$1,951",
+    "$5,580"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Assumes each employer withheld correctly. Each employer applied the wage base separately, so the combined overpayment is refundable through the credit.",
+    "B": "Ira's combined wages exceed the wage base by $25,500, so he overpaid the 6.2% tax on that amount: 6.2% x $25,500 = $1,581, claimed as a credit on Schedule 3.",
+    "C": "Includes the 1.45% Medicare tax. Medicare tax has no wage base, so only the 6.2% Social Security portion is excess.",
+    "D": "Credits the tax on all of the second employer's wages. Only the wages above the wage base are excess."
+   },
+   "steps": [
+    "Combined wages = 120,000 + 90,000 = 210,000",
+    "Excess over wage base = 210,000 - 184,500 = 25,500",
+    "Credit = 6.2% x 25,500 = 1,581"
+   ],
+   "calc_check": {
+    "expr": "0.062*((120000+90000)-184500)",
+    "fmt": "$",
+    "value": 1581,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "C": {
+      "expr": "0.0765*((120000+90000)-184500)",
+      "value": 1951
+     },
+     "D": {
+      "expr": "0.062*90000",
+      "value": 5580
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§31(b)"
+    },
+    {
+     "src": "Pub",
+     "ref": "505"
+    },
+    {
+     "src": "Schedule",
+     "ref": "3 (Form 1040) instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA; the 2026 wage base of $184,500 is from SSA and supplied in the stem.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-F-0036",
+   "type": "mcq",
+   "area": "IV",
+   "group": "F",
+   "topic": "Computation of tax and credits",
+   "task": "Calculate the tax liability based on an individual's taxable income given a specific scenario, including consideration of the net investment income tax.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Cam and Dot are married. If they file separately, Cam's 2026 taxable income is $240,000 and Dot's is $20,000. If they file jointly, their taxable income is $260,000. Use the exhibit, and assume the married filing separately schedule equals the single schedule for taxable income up to $256,225. Which filing method produces the lower combined tax, and by how much?",
+   "exhibit": [
+    [
+     "Joint (MFJ) taxable income",
+     "Tax"
+    ],
+    [
+     "Not over $24,800",
+     "10%"
+    ],
+    [
+     "Over $24,800 to $100,800",
+     "$2,480 plus 12% of the excess over $24,800"
+    ],
+    [
+     "Over $100,800 to $211,400",
+     "$11,600 plus 22% of the excess over $100,800"
+    ],
+    [
+     "Over $211,400 to $403,550",
+     "$35,932 plus 24% of the excess over $211,400"
+    ],
+    [
+     "Separate (MFS) taxable income, up to $256,225",
+     "Tax"
+    ],
+    [
+     "Not over $12,400",
+     "10%"
+    ],
+    [
+     "Over $12,400 to $50,400",
+     "$1,240 plus 12% of the excess over $12,400"
+    ],
+    [
+     "Over $50,400 to $105,700",
+     "$5,800 plus 22% of the excess over $50,400"
+    ],
+    [
+     "Over $105,700 to $201,775",
+     "$17,966 plus 24% of the excess over $105,700"
+    ],
+    [
+     "Over $201,775 to $256,225",
+     "$41,024 plus 32% of the excess over $201,775"
+    ]
+   ],
+   "options": [
+    "Filing separately, which produces $2,800 less combined tax",
+    "Filing jointly, which produces $7,812 less combined tax",
+    "Filing jointly, which produces $2,152 less combined tax",
+    "The tax is the same either way, because the two schedules use the same rates"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Applies the joint schedule to each spouse's separate income. The separate schedule brackets are half as wide.",
+    "B": "Joint tax on $260,000 is $47,596. Separate tax is $53,256 for Cam plus $2,152 for Dot, $55,408. Joint saves $7,812.",
+    "C": "Uses Dot's separate tax as the difference instead of comparing the two totals.",
+    "D": "The rates match, but the separate brackets are narrower, so Cam's income reaches the 32% bracket sooner."
+   },
+   "steps": [
+    "MFJ tax on 260,000 = 35,932 + 24% x (260,000 - 211,400) = 47,596",
+    "MFS: Cam 41,024 + 32% x 38,225 = 53,256; Dot 1,240 + 12% x 7,600 = 2,152; total 55,408",
+    "Joint saves 55,408 - 47,596 = 7,812"
+   ],
+   "calc_check": {
+    "expr": "tax_s(240000)+tax_s(20000)-tax_m(260000)",
+    "fmt": "text",
+    "value": 7812
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(d)"
+    },
+    {
+     "src": "Rev.Proc.",
+     "ref": "2025-32 §4.01"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Rates from Rev.Proc. 2025-32 Tables 1, 3, and 4 (verified against the Rev.Proc. text).",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-F-0037",
+   "type": "mcq",
+   "area": "IV",
+   "group": "F",
+   "topic": "Computation of tax and credits",
+   "task": "Calculate the tax liability based on an individual's taxable income given a specific scenario, including consideration of the net investment income tax.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": true,
+   "stem": "Fred Kane, single, has 2026 MAGI of $190,000 before considering a Roth conversion, including $30,000 of net investment income. He is considering converting $40,000 from a traditional IRA to a Roth IRA in 2026. The conversion is included in gross income but is not net investment income. The net investment income tax threshold for a single filer is $200,000. By how much would the conversion increase his net investment income tax?",
+   "exhibit": "",
+   "options": [
+    "$0",
+    "$1,140",
+    "$1,520",
+    "$2,660"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Assumes the conversion cannot cause the tax because it is not investment income. It raises MAGI, which brings existing investment income into the tax.",
+    "B": "Without the conversion MAGI is below $200,000, so the tax is $0. With it, MAGI is $230,000, excess $30,000. The tax is 3.8% x the lesser of net investment income ($30,000) or the excess ($30,000) = $1,140.",
+    "C": "Applies 3.8% to the converted amount. The tax applies to the lesser of net investment income or the MAGI excess.",
+    "D": "Adds the conversion to net investment income. The conversion is not investment income."
+   },
+   "steps": [
+    "Before: MAGI 190,000 < 200,000, tax = 0",
+    "After: MAGI = 230,000; excess = 30,000",
+    "Tax = 3.8% x min(30,000, 30,000) = 1,140"
+   ],
+   "calc_check": {
+    "expr": "0.038*min(30000, (190000+40000)-200000)-0.038*min(30000, max(0, 190000-200000))",
+    "fmt": "$",
+    "value": 1140,
+    "distractors": {
+     "A": {
+      "expr": "0",
+      "value": 0
+     },
+     "C": {
+      "expr": "0.038*40000",
+      "value": 1520
+     },
+     "D": {
+      "expr": "0.038*(30000+40000)",
+      "value": 2660
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1411(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1411(b)"
+    },
+    {
+     "src": "Form",
+     "ref": "8960 instructions"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Unchanged by OBBBA.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  },
+  {
+   "id": "REG-IV-F-0038",
+   "type": "mcq",
+   "area": "IV",
+   "group": "F",
+   "topic": "Computation of tax and credits",
+   "task": "Calculate the tax liability based on an individual's taxable income given a specific scenario, including consideration of the net investment income tax.",
+   "task_source": "지도.json",
+   "task_skill": "Application",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Kit is a 15-year-old dependent with $9,000 of interest and dividend income in 2026 and no earned income. Her parents' top tax rate is 32%. For 2026 the kiddie tax amount is $1,350, Kit's standard deduction as a dependent is $1,350, and the 10% bracket for a single filer extends to $12,400. Kit's parents do not elect to report her income. By how much is Kit's tax higher because the kiddie tax applies than it would be if all of her income were taxed at her own rates?",
+   "exhibit": "",
+   "options": [
+    "$1,251",
+    "$1,386",
+    "$2,016",
+    "$2,151"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Leaves out the $135 of tax on the $1,350 taxed at Kit's rate. The kiddie tax total is $2,151.",
+    "B": "Kiddie tax: $9,000 less $2,700 leaves $6,300 taxed at 32% = $2,016, plus 10% x $1,350 = $135 on the rest, for $2,151. Without it: 10% x ($9,000 - $1,350) = $765. The increase is $1,386.",
+    "C": "Reports the tax on the net unearned income only, without the $135 or the $765 it replaces.",
+    "D": "Reports the total kiddie tax of $2,151 rather than the increase over the tax at Kit's own rates."
+   },
+   "steps": [
+    "Net unearned income = 9,000 - 1,350 - 1,350 = 6,300, taxed at 32% = 2,016",
+    "Remaining taxable income = 7,650 - 6,300 = 1,350 at 10% = 135; kiddie tax total = 2,151",
+    "Own rates: 10% x (9,000 - 1,350) = 765; increase = 2,151 - 765 = 1,386"
+   ],
+   "calc_check": {
+    "expr": "(0.10*1350+0.32*(9000-2*1350))-0.10*(9000-1350)",
+    "fmt": "$",
+    "value": 1386,
+    "distractors": {
+     "A": {
+      "expr": "0.32*(9000-2*1350)-0.10*(9000-1350)",
+      "value": 1251
+     },
+     "C": {
+      "expr": "0.32*(9000-2*1350)",
+      "value": 2016
+     },
+     "D": {
+      "expr": "0.10*1350+0.32*(9000-2*1350)",
+      "value": 2151
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§1(g)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§1(g)(4)"
+    },
+    {
+     "src": "Pub",
+     "ref": "929"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "Kiddie tax amounts from Rev.Proc. 2025-32 sec. 4.02 ($1,350). Verified against the Rev.Proc. text.",
+   "provenance": "terra-original",
+   "batch": "area4b-analysis",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "re-solve from area4b_문제지_검산용.json (same agent as writer, no sub-agent; answer key not consulted)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "match": true,
+    "independence": "weak: needs a second solver before status verified"
+   },
+   "status": "draft",
+   "version": 1
+  }
+ ]
+}

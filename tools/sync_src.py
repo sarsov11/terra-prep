@@ -23,9 +23,28 @@ def show(ref, path):
     return r.stdout if r.returncode == 0 else None
 
 
+def merge_area2(data):
+    """Merge rule_line/wrong_tags from area2_enrich.json (Area II is owned by another window)."""
+    import json
+    enrich = show(BECKER, "jobs/terra-prep-becker/원천/REG/area2_enrich.json")
+    if enrich is None:
+        return data
+    add = json.loads(enrich.decode("utf-8"))
+    doc = json.loads(data.decode("utf-8"))
+    items = doc if isinstance(doc, list) else next(v for v in doc.values() if isinstance(v, list))
+    for it in items:
+        e = add.get(it.get("id"))
+        if e:
+            it.setdefault("rule_line", e.get("rule_line"))
+            it.setdefault("wrong_tags", e.get("wrong_tags"))
+    return (json.dumps(doc, ensure_ascii=False, indent=1) + "\n").encode("utf-8")
+
+
 os.makedirs(DST, exist_ok=True)
 for ref, path, name in FILES:
     data = show(ref, path)
+    if data is not None and name == "area2_mcq.json":
+        data = merge_area2(data)
     if data is None:
         print(f"skip  {name} (not on {ref})")
         continue

@@ -67,7 +67,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Only attorneys, CPAs, enrolled agents, actuaries and retirement plan agents have unlimited IRS practice rights; a Record of Completion gives limited rights only.",
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-I-A-0002",
@@ -123,7 +129,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A preparer with no credential and no Record of Completion cannot represent a client in an examination of a return prepared after 2015.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "trap"
+   }
   },
   {
    "id": "REG-I-A-0003",
@@ -179,7 +191,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Form 8821 authorizes receipt of tax information only; representation requires Form 2848 power of attorney.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-A-0004",
@@ -231,7 +249,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Circular 230 exceptions cover the taxpayer, family, employees, partners, officers and fiduciaries, not an unrelated friend.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "C": "trap"
+   }
   },
   {
    "id": "REG-I-A-0005",
@@ -283,7 +307,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A practitioner who knows of a client's return error must advise the client of the error and consequences, but need not report it to the IRS.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-A-0006",
@@ -331,7 +361,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A practitioner must promptly submit properly requested IRS records unless in good faith believing them privileged; client instruction is no excuse.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-A-0007",
@@ -379,7 +415,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Circular 230 permits contingent fees only for IRS examinations, challenges to original returns and certain refund claims or court matters, not original return preparation.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-A-0008",
@@ -431,7 +473,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Contingent fees for representation in an IRS examination are allowed under both Circular 230 and the AICPA Code for non-attest clients.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-A-0009",
@@ -487,7 +535,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A practitioner must promptly return client records the client needs for tax compliance despite a fee dispute, and may keep copies.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-A-0010",
@@ -535,7 +589,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Directly adverse client conflicts are waivable only if the practitioner reasonably believes he can serve both and each client gives informed written consent within 30 days.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-A-0011",
@@ -583,7 +643,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A practitioner may not endorse or negotiate a Treasury refund check issued to a client.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "C": "trap"
+   }
   },
   {
    "id": "REG-I-A-0012",
@@ -635,7 +701,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A practitioner may rely in good faith on client information but must inquire when it appears incorrect, inconsistent or incomplete.",
+   "wrong_tags": {
+    "B": "trap",
+    "C": "concept",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-I-A-0013",
@@ -691,7 +763,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A position with reasonable basis but without substantial authority may be signed only if adequately disclosed on the return.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-I-A-0014",
@@ -739,7 +817,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A practitioner must advise a client of potential penalties on a position and how adequate disclosure can avoid them.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "trap",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-I-A-0015",
@@ -787,7 +871,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Written tax advice may not take into account the possibility that a return will not be audited or an issue not raised.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-I-A-0016",
@@ -835,7 +925,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A practitioner with principal authority over a firm must take reasonable steps to ensure firm-wide compliance procedures or face Circular 230 sanction.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-A-0017",
@@ -884,7 +980,13 @@
    },
    "status": "verified",
    "version": 1,
-   "author_note": "확신 낮음: 30일 기간 조문 원문 재확인 필요"
+   "author_note": "확신 낮음: 30일 기간 조문 원문 재확인 필요",
+   "rule_line": "A practitioner who publishes fees must adhere to them for at least 30 calendar days after the last publication date.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-A-0018",
@@ -959,7 +1061,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Preparer penalty for an unreasonable position is the greater of $1,000 or 50% of the income derived from the return.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-A-0019",
@@ -1030,7 +1138,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Preparer penalty for willful or reckless understatement is the greater of $5,000 or 75% of the income derived from the return.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "calc",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-A-0020",
@@ -1082,7 +1196,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A tax return preparer is anyone paid to prepare all or a substantial portion of a return, signing or not.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-A-0021",
@@ -1134,7 +1254,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "For a reportable transaction, the preparer needs a reasonable more-likely-than-not belief; substantial authority alone does not avoid the unreasonable-position penalty.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-I-A-0022",
@@ -1186,7 +1312,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A preparer must give the taxpayer a copy of the return no later than when it is presented for signature, or a per-return penalty applies.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-A-0023",
@@ -1242,7 +1374,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The due diligence penalty for EITC, CTC and similar credits applies for noncompliance with the requirements even when the credits are correct.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "concept",
+    "C": "limit"
+   }
   },
   {
    "id": "REG-I-A-0024",
@@ -1298,7 +1436,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A preparer may disclose return information to another U.S. preparer helping prepare the return without consent; other disclosures and uses need written consent.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-A-0025",
@@ -1373,7 +1517,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The civil penalty for unauthorized disclosure or use of return information is $250 per disclosure, capped at $10,000 per year.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "limit",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-I-A-0026",
@@ -1425,7 +1575,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A preparer must retain a copy of each return or a list of taxpayers for 3 years after the close of the return period.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-A-0027",
@@ -1481,7 +1637,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Willfully aiding or assisting in preparing a materially false return is a felony; failure to file and unauthorized disclosure are misdemeanors.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-A-0028",
@@ -1534,7 +1696,13 @@
    },
    "status": "verified",
    "version": 1,
-   "author_note": "확신 낮음: 2024 개정 SSTS의 절 번호 미확인. 개념 이름과 구 번호를 병기"
+   "author_note": "확신 낮음: 2024 개정 SSTS의 절 번호 미확인. 개념 이름과 구 번호를 병기",
+   "rule_line": "Under AICPA standards a member who learns of a prior-year client error must advise the client and recommend correction but need not tell the IRS.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-A-0029",
@@ -1587,7 +1755,13 @@
     "cite_note": "SSTS/Bylaws section numbers from secondary sources or unconfirmed; check against AICPA primary text"
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A member may use a client's reasonable estimates when exact data are impractical to obtain, provided they are not presented as exact.",
+   "wrong_tags": {
+    "B": "trap",
+    "C": "concept",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-I-A-0030",
@@ -1640,7 +1814,13 @@
     "cite_note": "SSTS/Bylaws section numbers from secondary sources or unconfirmed; check against AICPA primary text"
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A member may leave a return answer blank only for unavailable information, reasonable uncertainty or immateriality, not to reduce audit risk.",
+   "wrong_tags": {
+    "A": "trap",
+    "C": "trap",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-I-A-0031",
@@ -1693,7 +1873,13 @@
     "cite_note": "SSTS/Bylaws section numbers from secondary sources or unconfirmed; check against AICPA primary text"
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A member may use prior returns but should make reasonable inquiries when client information appears incorrect, incomplete or inconsistent.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-I-A-0032",
@@ -1746,7 +1932,13 @@
     "cite_note": "SSTS/Bylaws section numbers from secondary sources or unconfirmed; check against AICPA primary text"
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A member has no duty to update prior advice for later law changes unless agreed or assisting in implementation.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-A-0033",
@@ -1800,7 +1992,13 @@
    },
    "status": "verified",
    "version": 1,
-   "author_note": "확신 낮음: 2024 개정 SSTS에 같은 표준이 그대로 남았는지 원문 대조 필요"
+   "author_note": "확신 낮음: 2024 개정 SSTS에 같은 표준이 그대로 남았는지 원문 대조 필요",
+   "rule_line": "A member is not bound to a prior-year administrative result for a different year absent a closing agreement or estoppel, and follows the facts.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-A-0034",
@@ -1852,7 +2050,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A CPA may disclose confidential client information without consent to comply with a valid, enforceable subpoena or summons.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-B-0001",
@@ -1900,7 +2104,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Censure is a public reprimand that leaves the practitioner's right to practice intact, unlike suspension or disbarment.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-B-0002",
@@ -1952,7 +2162,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The IRS Office of Professional Responsibility administers Circular 230 and pursues sanctions against practitioners.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-B-0003",
@@ -2000,7 +2216,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A Circular 230 monetary penalty may not exceed the gross income derived from the sanctionable conduct.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-B-0004",
@@ -2048,7 +2270,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Willfully failing to file one's own federal return is disreputable conduct; an unsuccessful but competent position is not.",
+   "wrong_tags": {
+    "A": "trap",
+    "C": "concept",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-I-B-0005",
@@ -2097,7 +2325,13 @@
    },
    "status": "verified",
    "version": 1,
-   "author_note": "확신 낮음: §10.82 요건의 세부 문구 원문 대조 필요"
+   "author_note": "확신 낮음: §10.82 요건의 세부 문구 원문 대조 필요",
+   "rule_line": "A practitioner convicted within five years of a crime involving dishonesty or breach of trust may be suspended by the expedited procedure, appeals notwithstanding.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-B-0006",
@@ -2149,7 +2383,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An ALJ's decision in a Circular 230 disciplinary case is appealed to the Secretary of the Treasury.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-B-0007",
@@ -2197,7 +2437,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A practitioner disbarred under Circular 230 may apply for reinstatement only after 5 years.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-B-0008",
@@ -2249,7 +2495,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Loss of a state CPA license for misconduct ends CPA practice rights before the IRS and may support sanction, but does not automatically revoke enrolled agent status.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "trap",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-B-0009",
@@ -2303,7 +2555,13 @@
    },
    "status": "verified",
    "version": 1,
-   "author_note": "확신 낮음: AICPA 정관 조항 번호와 열거 범위 원문 대조 필요"
+   "author_note": "확신 낮음: AICPA 정관 조항 번호와 열거 범위 원문 대조 필요",
+   "rule_line": "AICPA membership is terminated automatically after conviction of certain crimes such as aiding a false return, not after arrest, acquittal or civil settlement.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-B-0010",
@@ -2351,7 +2609,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A practitioner may not knowingly accept assistance from a disbarred or suspended person in an IRS matter, regardless of consent or appearance.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-D-0001",
@@ -2399,7 +2663,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The federal tax practitioner privilege covers tax advice only in noncriminal federal tax matters, not criminal, state or SEC proceedings.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-D-0002",
@@ -2451,7 +2721,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The tax practitioner privilege protects tax advice, not information given for return preparation or the preparation itself.",
+   "wrong_tags": {
+    "A": "trap",
+    "C": "trap",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-D-0003",
@@ -2507,7 +2783,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Communications with an accountant engaged by the client's attorney to help give legal advice can fall under attorney-client privilege, including in criminal matters.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-D-0004",
@@ -2555,7 +2837,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The Fifth Amendment does not protect a taxpayer's records held by her accountant when the IRS summons them.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "limit",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-D-0005",
@@ -2603,7 +2891,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "No federal accountant work-product privilege protects an independent auditor's tax accrual workpapers from an IRS summons.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-D-0006",
@@ -2655,7 +2949,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Federal privilege law governs federal tax matters, so a state accountant-client privilege does not bar an IRS summons.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "trap",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-I-D-0007",
@@ -2707,7 +3007,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A professional who fails to use ordinary care and causes client loss is liable in negligence, not fraud or strict liability.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-D-0008",
@@ -2755,7 +3061,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Under the Restatement (Second) of Torts, a professional may be liable for negligence to a known limited class relying on the work.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-D-0009",
@@ -2811,7 +3123,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Tax evasion requires a deficiency, an affirmative act and willfulness; merely not paying is a misdemeanor.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "trap",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-D-0010",
@@ -2859,7 +3177,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Most criminal tax offenses, including evasion and false returns, must be charged within 6 years.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-D-0011",
@@ -2911,7 +3235,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Willfulness requires knowledge of the legal duty, so a sincere good-faith belief can negate it even if unreasonable.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-D-0012",
@@ -2959,7 +3289,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A court may enjoin a preparer who continually or flagrantly engages in specified misconduct from preparing returns.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-D-0013",
@@ -3007,7 +3343,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The tax practitioner privilege does not cover written communications promoting participation in a tax shelter.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "C": "trap"
+   }
   },
   {
    "id": "REG-I-D-0014",
@@ -3059,7 +3401,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Destroying summoned records can be obstruction and grounds for Circular 230 discipline.",
+   "wrong_tags": {
+    "B": "trap",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-C-0001",
@@ -3111,7 +3459,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An IRS summons is not self-enforcing; the IRS must petition a federal district court to enforce it.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-C-0002",
@@ -3159,7 +3513,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A taxpayer notified of a third-party summons has 20 days from the notice date to begin a proceeding to quash it.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-C-0003",
@@ -3215,7 +3575,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A taxpayer may audio record an in-person IRS interview with 10 days advance written notice.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-C-0004",
@@ -3276,7 +3642,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A return filed before the due date is treated as filed on the due date, so the 3-year assessment period runs from that date.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "limit",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-C-0005",
@@ -3333,7 +3705,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Omitting more than 25% of gross income shown on the return extends the assessment period to 6 years.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-C-0006",
@@ -3385,7 +3763,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A notice of deficiency gives 90 days to petition the Tax Court without prepaying, and bars assessment meanwhile.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-C-0007",
@@ -3442,7 +3826,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A U.S. resident has 90 days from the mailing of a notice of deficiency to petition the Tax Court.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-C-0008",
@@ -3494,7 +3884,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Only a U.S. district court offers a jury trial, and it requires payment of the tax before a refund suit.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-C-0009",
@@ -3542,7 +3938,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A Tax Court decision is appealed to the court of appeals for the circuit of the taxpayer's residence.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-C-0010",
@@ -3599,7 +4001,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A notice of appeal from a Tax Court decision must be filed within 90 days after the decision is entered.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-C-0011",
@@ -3651,7 +4059,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "After a Tax Court petition is filed, the IRS generally cannot issue a second notice but may claim an increased deficiency in the pending case.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-C-0012",
@@ -3703,7 +4117,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A proposed deficiency above $25,000 requires a formal written protest to obtain an Appeals conference.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-C-0013",
@@ -3755,7 +4175,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Adequate disclosure of an item with a reasonable basis reduces the substantial understatement, except for tax shelter items.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-C-0014",
@@ -3803,7 +4229,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Treatises, law review articles and opinions of tax professionals are not authority for substantial authority; rulings, notices and PLRs are.",
+   "wrong_tags": {
+    "A": "trap",
+    "C": "trap",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-I-C-0015",
@@ -3855,7 +4287,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A position contrary to a Treasury regulation must be disclosed on Form 8275-R even if held in good faith; positions with substantial authority need no disclosure.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-C-0016",
@@ -3911,7 +4349,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Travel, gifts and listed property expenses need strict substantiation of amount, time, place and business purpose; ordinary expenses need only reasonable records.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-I-C-0017",
@@ -3963,7 +4407,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Lodging always needs a receipt; other travel expenses under $75 need only a log with amount, time, place and purpose.",
+   "wrong_tags": {
+    "B": "trap",
+    "C": "trap",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-I-C-0018",
@@ -4019,7 +4469,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Records supporting a worthless securities or bad debt deduction should be kept 7 years.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "C": "limit"
+   }
   },
   {
    "id": "REG-I-C-0019",
@@ -4084,7 +4540,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An FBAR is required when the aggregate maximum value of all foreign financial accounts exceeds $10,000 at any time in the year.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-C-0020",
@@ -4140,7 +4602,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The civil fraud penalty is 75% of the fraud-attributable underpayment, and the IRS must prove fraud by clear and convincing evidence.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-C-0021",
@@ -4192,7 +4660,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The failure-to-file addition is 5% per month or part of a month up to 25%, reduced by the failure-to-pay addition.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "C": "limit"
+   }
   },
   {
    "id": "REG-I-C-0022",
@@ -4272,7 +4746,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "For overlapping months, the failure-to-file rate is 4.5% plus 0.5% failure-to-pay per month or part of a month.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-I-C-0023",
@@ -4324,7 +4804,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Relying on an agent to file on time is not reasonable cause for late filing; the deadline is the taxpayer's nondelegable duty (Boyle).",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-C-0024",
@@ -4402,7 +4888,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The accuracy-related penalty for negligence is 20% of the underpayment attributable to it.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-C-0025",
@@ -4482,7 +4974,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "An understatement is substantial if above the greater of 10% of correct tax or $5,000 for individuals; the accuracy penalty is 20%.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-C-0026",
@@ -4530,7 +5028,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "On a joint return the civil fraud penalty applies only to the spouse whose fraud caused the underpayment.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-C-0027",
@@ -4604,7 +5108,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The accuracy-related penalty for an undisclosed transaction lacking economic substance is 40% of the underpayment.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-I-C-0028",
@@ -4679,7 +5189,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A reported basis of 200% or more of the correct amount is a gross valuation misstatement with a 40% penalty.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "limit",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-I-C-0029",
@@ -4731,7 +5247,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "First-time penalty abatement is available administratively for taxpayers with a clean three-year history who filed and paid.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-C-0030",
@@ -4787,7 +5309,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Good-faith reliance on a competent, fully informed adviser can establish reasonable cause and avoid the accuracy-related penalty.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "trap"
+   }
   },
   {
    "id": "REG-I-C-0031",
@@ -4839,7 +5367,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The Internal Revenue Code, as enacted statute, outranks regulations, rulings and court decisions.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-I-C-0032",
@@ -4887,7 +5421,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A private letter ruling may not be cited as precedent by taxpayers other than the one to whom it was issued.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   }
  ]
 }

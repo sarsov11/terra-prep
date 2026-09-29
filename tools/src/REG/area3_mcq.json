@@ -85,7 +85,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Basis of purchased property includes price, sales tax, freight and installation to place it in service; post-installation training is expensed.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0002",
@@ -166,7 +172,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A lump-sum purchase cost, including closing costs and seller's taxes paid by the buyer, is allocated between land and building by relative fair market value.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-III-A-0003",
@@ -244,7 +256,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Basis of purchased property includes cash paid, liabilities assumed and capitalized closing costs.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "C": "calc"
+   }
   },
   {
    "id": "REG-III-A-0004",
@@ -302,7 +320,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Purchase-money debt is part of basis from acquisition, and interest on it is interest expense, not basis.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0005",
@@ -379,7 +403,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Adjusted basis is reduced by depreciation allowed or allowable, whichever is greater, even if less was claimed.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0006",
@@ -433,7 +463,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Title search, recording and legal fees to acquire title are capitalized into basis; loan costs, insurance and interest are not.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0007",
@@ -514,7 +550,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Depreciation basis of converted property is the lower of adjusted basis or FMV at conversion, applied to the building only.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-III-A-0008",
@@ -578,7 +620,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Converted property has a gain basis (adjusted basis) and a loss basis (lower of adjusted basis or FMV), each reduced by depreciation; a price between them gives no gain or loss.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-III-A-0009",
@@ -655,7 +703,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Depreciation basis of property converted from personal to business use is the lower of adjusted basis or FMV at conversion.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0010",
@@ -705,7 +759,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Property is placed in service when ready and available for its specific use, not when a tenant moves in or pays rent.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0011",
@@ -781,7 +841,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Gift property takes the donor's carryover basis for gain unless FMV at gift is lower and the property is sold at a loss.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "C": "calc"
+   }
   },
   {
    "id": "REG-III-A-0012",
@@ -858,7 +924,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Gift tax paid increases the donee's basis only by the share attributable to net appreciation.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-III-A-0013",
@@ -912,7 +984,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A donee using carryover basis tacks on the donor's holding period.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-III-A-0014",
@@ -966,7 +1044,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Inherited property takes FMV at death as basis and is treated as long-term regardless of holding time.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0015",
@@ -1042,7 +1126,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "If validly elected, the alternate valuation date (six months after death) sets the basis of property still held.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0016",
@@ -1115,7 +1205,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Appreciated property given to a decedent within one year and inherited back by the donor gets no step-up; basis is the decedent's adjusted basis.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0017",
@@ -1177,7 +1273,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Community property gets a full step-up at the first spouse's death; spousal joint tenancy steps up only the decedent's half.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-III-A-0018",
@@ -1227,7 +1329,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Inherited property takes FMV at death as basis even when lower than the decedent's cost.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0019",
@@ -1281,7 +1389,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A gift carries over the donor's basis, while inherited property takes stepped-up FMV at death.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0020",
@@ -1353,7 +1467,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A wash sale loss is disallowed and added to the replacement shares' basis.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "C": "calc"
+   }
   },
   {
    "id": "REG-III-A-0021",
@@ -1430,7 +1550,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A wash sale disallows the loss only on the number of shares replaced within 30 days before or after the sale.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0022",
@@ -1485,7 +1611,13 @@
    },
    "status": "verified",
    "version": 1,
-   "author_note": "IRS position from Rev. Rul. 2008-5; verify the citation against the ruling text before status=verified."
+   "author_note": "IRS position from Rev. Rul. 2008-5; verify the citation against the ruling text before status=verified.",
+   "rule_line": "Buying substantially identical stock in an IRA triggers the wash sale rule, and the disallowed loss is not added to IRA basis.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0023",
@@ -1535,7 +1667,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The wash sale window runs 30 days before through 30 days after the sale date.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "limit",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-III-A-0024",
@@ -1599,7 +1737,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A wash sale's disallowed loss is added to replacement basis and the holding period tacks on.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-III-A-0025",
@@ -1678,7 +1822,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Organizational costs allow a $5,000 immediate deduction reduced dollar for dollar above $50,000, with the rest amortized over 180 months from business start.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-III-A-0026",
@@ -1757,7 +1907,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Start-up costs allow a $5,000 immediate deduction reduced dollar for dollar above $50,000, with the rest amortized over 180 months.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0027",
@@ -1811,7 +1967,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Partnership syndication costs, such as broker commissions to sell interests, are capitalized and not deductible or amortizable.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0028",
@@ -1888,7 +2050,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Loan costs are amortized ratably over the loan term, starting when the loan begins.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-A-0029",
@@ -1966,7 +2134,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Organizational and start-up costs each get their own $5,000 immediate deduction, and the remainder is amortized over 180 months.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "C": "calc"
+   }
   },
   {
    "id": "REG-III-B-0001",
@@ -2016,7 +2190,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Computers, peripheral equipment, cars and light trucks are 5-year MACRS property.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0002",
@@ -2080,7 +2260,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The mid-quarter test compares fourth-quarter personal property basis after section 179 to the year's total, excluding real property; over 40% requires mid-quarter.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-III-B-0003",
@@ -2170,7 +2356,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "If more than 40% of personal property basis is placed in service in the fourth quarter, the mid-quarter convention applies.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0004",
@@ -2243,7 +2435,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Residential rental property uses 27.5-year straight-line with mid-month convention, excluding land.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-III-B-0005",
@@ -2293,7 +2491,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Nonresidential real property is depreciated straight-line over 39 years using the mid-month convention.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-III-B-0006",
@@ -2371,7 +2575,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The annual passenger-automobile depreciation cap, including bonus, is prorated by the business-use percentage.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "limit",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0007",
@@ -2425,7 +2635,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A listed property used 50% or less for business gets no section 179 or bonus and uses straight-line ADS on the business portion.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0008",
@@ -2519,7 +2735,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The mid-quarter convention applies only if MORE than 40% of personal property basis is placed in service in the fourth quarter.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "limit"
+   }
   },
   {
    "id": "REG-III-B-0009",
@@ -2601,7 +2823,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Under the half-year convention, only half a year of depreciation is allowed in the year of disposition.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0010",
@@ -2655,7 +2883,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Interior improvements to nonresidential real property placed in service after the building are qualified improvement property with a 15-year life.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0011",
@@ -2713,7 +2947,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Residential rental property under ADS has a 30-year recovery period for property placed in service after 2017.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0012",
@@ -2785,7 +3025,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The section 179 dollar limit is reduced dollar for dollar by qualifying property placed in service above the investment threshold.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0013",
@@ -2862,7 +3108,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The section 179 deduction cannot exceed taxable business income; the excess carries forward and is not depreciated.",
+   "wrong_tags": {
+    "A": "calc",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0014",
@@ -2916,7 +3168,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Section 179 property excludes buildings themselves but includes software, qualified real property improvements and used personal property bought from unrelated parties.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0015",
@@ -2994,7 +3252,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Property is acquired when a binding written contract is signed, which fixes the bonus percentage; regular MACRS applies to the remaining basis.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0016",
@@ -3067,7 +3331,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Bonus depreciation applies to new or used property with a recovery period of 20 years or less; buildings do not qualify.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0017",
@@ -3117,7 +3387,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The election out of bonus depreciation applies to all property in the same MACRS class placed in service that year.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-III-B-0018",
@@ -3199,7 +3475,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Section 179 is taken first and reduces the basis on which regular MACRS is computed.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-III-B-0019",
@@ -3281,7 +3563,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The section 179 SUV cap is $31,000 in this scenario; bonus applies to the remaining basis, and passenger-automobile caps do not apply above 6,000 pounds.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-III-B-0020",
@@ -3331,7 +3619,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "When listed property business use falls to 50% or less, the excess of accelerated over straight-line ADS depreciation is recaptured as income.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-III-B-0021",
@@ -3385,7 +3679,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A section 179 election can be made on an amended return for the year without IRS consent.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0022",
@@ -3462,7 +3762,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Goodwill and an acquisition-related covenant not to compete are section 197 intangibles amortized over 15 years from the month acquired.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0023",
@@ -3512,7 +3818,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Trademarks acquired with a business are section 197 intangibles; separately bought patents, off-the-shelf software and land interests are not.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-III-B-0024",
@@ -3566,7 +3878,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "No loss is allowed on abandoning one section 197 intangible while others from the same acquisition are kept; basis shifts to the rest.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-III-B-0025",
@@ -3648,7 +3966,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A separately acquired patent is amortized straight-line over its remaining life from the month acquired.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "D": "calc"
+   }
   },
   {
    "id": "REG-III-B-0026",
@@ -3753,7 +4077,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "If over 40% of personal property basis is placed in service in the fourth quarter, mid-quarter applies to all such property placed in service that year.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
   },
   {
    "id": "REG-III-B-0027",
@@ -3828,7 +4158,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Heavy general-purpose trucks are 5-year MACRS property, while office furniture is 7-year and computers 5-year.",
+   "wrong_tags": {
+    "A": "trap",
+    "C": "trap",
+    "D": "trap"
+   }
   },
   {
    "id": "REG-III-B-0028",
@@ -3908,7 +4244,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "A covenant not to compete entered into with a business acquisition is a section 197 intangible amortized over 180 months.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0029",
@@ -4010,7 +4352,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The $5,000 start-up cost deduction is reduced dollar for dollar above $50,000 and eliminated at $55,000; all costs are then amortized.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "calc",
+    "D": "concept"
+   }
   },
   {
    "id": "REG-III-B-0030",
@@ -4090,7 +4438,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "Land is not depreciable, so building basis must exclude the land allocation from the closing statement.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "C": "trap"
+   }
   },
   {
    "id": "REG-III-B-0031",
@@ -4200,7 +4554,13 @@
     "match": true
    },
    "status": "verified",
-   "version": 1
+   "version": 1,
+   "rule_line": "The section 179 deduction is limited to business taxable income, and the disallowed amount carries forward.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
   }
  ]
 }

@@ -1,0 +1,2052 @@
+{
+ "meta": {
+  "area": "I",
+  "title": "Ethics, Professional Responsibilities and Federal Tax Procedures (Analysis add-on, batch b)",
+  "blueprint": "2026 AICPA CPA Exam Blueprint, REG Area I (A Ethics and responsibilities in tax practice, B Licensing and disciplinary systems, C Federal tax procedures, D Legal duties and responsibilities)",
+  "law_asof": "2026-09-29",
+  "count": 30,
+  "status": "verified",
+  "provenance": "terra-original (no Becker/UWorld/Wiley text used)",
+  "purpose": "Adds 30 Analysis-level items to area1_mcq.json (90 items, 6 Analysis) so that Area I Analysis reaches 36 of 120 (30%) when the two files are combined",
+  "id_range": {
+   "A": "REG-I-A-1001..1008",
+   "B": "REG-I-B-1001..1002",
+   "C": "REG-I-C-1001..1013",
+   "D": "REG-I-D-1001..1007"
+  },
+  "skill_distribution": {
+   "Analysis": 30
+  },
+  "group_distribution": {
+   "A": 8,
+   "B": 2,
+   "C": 13,
+   "D": 7
+  },
+  "answer_distribution": {
+   "A": 8,
+   "B": 7,
+   "C": 8,
+   "D": 7
+  },
+  "difficulty_distribution": {
+   "2": 16,
+   "3": 14
+  },
+  "verify": {
+   "solver": "independent-solver-2 (문제지만)",
+   "match": "30/30",
+   "cite_checked_against_source": 7,
+   "date": "2026-09-29"
+  }
+ },
+ "items": [
+  {
+   "id": "REG-I-A-1001",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "subgroup": "A.1",
+   "topic": "Regulations governing practice before the IRS (Circular 230)",
+   "task": "Apply a practitioner's duties, restrictions and standards under Circular 230 to a scenario.",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Nadia Ferro, CPA, is drafting a written opinion for Brightline Lodging LLC on whether the investors in its new hotel will be able to deduct the LLC's early-year losses. The exhibit lists four statements from the draft letter. Which statement would make the letter inconsistent with the standards for written tax advice if it stays in the final letter?",
+   "exhibit": [
+    [
+     "No.",
+     "Statement in the draft letter"
+    ],
+    [
+     "1",
+     "We assumed that construction will be finished by October 2026, because the loan agreement we reviewed requires completion by that date."
+    ],
+    [
+     "2",
+     "We related the loss-limitation rules and the authorities we cite to the facts described in this letter and explained our reasoning."
+    ],
+    [
+     "3",
+     "We accepted the promoter's projection of 95% occupancy without testing it, although our own workpapers show comparable hotels in the market averaging about 60%."
+    ],
+    [
+     "4",
+     "We relied on the manager's written statement that the LLC has no debt other than the bank loan; nothing in the records we saw contradicts it."
+    ]
+   ],
+   "options": [
+    "Statement 1, the assumption about the completion date",
+    "Statement 2, the application of the loss rules to the stated facts",
+    "Statement 3, the acceptance of the occupancy projection",
+    "Statement 4, the reliance on the manager's statement about debt"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "A reasonable assumption about a future event, supported by a document the practitioner reviewed and disclosed in the letter, is allowed.",
+    "B": "Relating the law and authorities to the facts is required in written advice, so this statement supports the letter.",
+    "C": "Written advice may not rely on a projection when the reliance is unreasonable. Nadia's own workpapers contradict the 95% figure, so she ignored facts she knows and relied unreasonably on the promoter.",
+    "D": "Reasonable reliance on a written statement from the client's manager is allowed when nothing in the file contradicts it."
+   },
+   "cite": [
+    {
+     "src": "C230",
+     "ref": "§10.37"
+    },
+    {
+     "src": "C230",
+     "ref": "§10.22"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "Written tax advice may not rely on projections or assumptions that are unreasonable given facts the practitioner knows.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "D": "trap"
+   }
+  },
+  {
+   "id": "REG-I-A-1002",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "subgroup": "A.1",
+   "topic": "Regulations governing practice before the IRS (Circular 230)",
+   "task": "Apply a practitioner's duties, restrictions and standards under Circular 230 to a scenario.",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Which situation presents a conflict of interest for Imani Okafor, CPA, that she may accept only if she reasonably believes she can serve every client competently and diligently and each affected client gives informed consent that is confirmed in writing?",
+   "exhibit": "",
+   "options": [
+    "She represents two competing restaurants, each in a separate IRS examination that raises unrelated issues.",
+    "She represents a husband in an examination of a joint return and his wife in a request for relief from liability on that return.",
+    "She represents a client in the examination of a return she prepared, and the IRS has raised no question about her work.",
+    "She represents a corporation in an IRS matter and earlier prepared returns for its former owner in an unrelated engagement that has ended."
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Business rivalry does not make the clients' positions before the IRS directly adverse, and nothing limits her work for either client, so no conflict arises.",
+    "B": "Relief for the wife would shift liability to the husband, so representing both is directly adverse. Imani may proceed only with each client's informed consent, confirmed in writing, and a reasonable belief that she can serve both competently and diligently.",
+    "C": "A personal-interest conflict needs a significant risk that her own interest would materially limit the representation, such as a preparer penalty proposed against her. Nothing here suggests that.",
+    "D": "A duty to a former client creates a conflict only if it materially limits the current representation. The earlier engagement is unrelated and finished."
+   },
+   "cite": [
+    {
+     "src": "C230",
+     "ref": "§10.29"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "Directly adverse client interests, such as spouses in innocent-spouse relief, need reasonable belief and informed written consent; mere business rivalry is not adversity.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-A-1003",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "subgroup": "A.1",
+   "topic": "Regulations governing practice before the IRS (Circular 230)",
+   "task": "Apply a practitioner's duties, restrictions and standards under Circular 230 to a scenario.",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Ravi Menon, EA, is asked to quote fees for IRS work. Under Circular 230, which arrangement is a contingent fee?",
+   "exhibit": "",
+   "options": [
+    "An hourly rate of $250, billed monthly for all of the time Ravi spends on the client's examination",
+    "A fee of 1% of the client's gross receipts, charged for monthly bookkeeping that is unrelated to any tax position",
+    "A fixed fee of $4,000 set in advance, payable half at signing and half on delivery of the completed return",
+    "A fixed fee of $4,000 for a return, refunded to the client if the IRS later disallows a position on it"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Time-based billing does not depend on the outcome of any position, so it is not a contingent fee.",
+    "B": "A percentage fee is contingent only when it turns on whether a tax position is sustained or on a tax result. This fee depends on receipts for bookkeeping, not on a tax result.",
+    "C": "A fee fixed in advance and payable on stated dates is not tied to any result, so it is not contingent.",
+    "D": "A fee that is returned if a return position is not sustained depends on the result. Circular 230 treats reimbursement guarantees like this as contingent fees even though the stated fee is fixed."
+   },
+   "cite": [
+    {
+     "src": "C230",
+     "ref": "§10.27(c)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "Under Circular 230 a fee that depends on the outcome, including one refundable if a position fails, is contingent.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-I-A-1004",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "subgroup": "A.1",
+   "topic": "Regulations governing practice before the IRS (Circular 230)",
+   "task": "Apply a practitioner's duties, restrictions and standards under Circular 230 to a scenario.",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "During an examination of a client's 2024 return, a revenue agent makes a proper written request to Jorge Ibarra, CPA, for the client's 2024 payroll records. Neither Jorge nor the client has the records. The client says that a former payroll company holds them and refuses to release them to the client. What must Jorge do under Circular 230?",
+   "exhibit": "",
+   "options": [
+    "Ask the client who holds the records, then promptly tell the agent that neither has them and name the company as the client reports",
+    "Say nothing more, because the IRS can summon the payroll company itself and Jorge has no duty to say who might hold the records",
+    "Contact the payroll company himself, confirm exactly what records it holds, and deliver copies of them to the revenue agent",
+    "Tell the agent that the records are privileged, because they were created for the client's business and not for use by the IRS"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "When records are outside the control of both practitioner and client, the practitioner must promptly notify the IRS and give the identity of the holder as the client reports it, after reasonable inquiry of the client.",
+    "B": "The practitioner must promptly notify the IRS and share what he knows about who holds the records. The IRS's ability to issue a summons does not remove that duty.",
+    "C": "The practitioner need only ask his client and pass on the answer. He is not required to make inquiry of anyone else or to verify what the client says.",
+    "D": "The privilege exception applies only if the practitioner believes in good faith and on reasonable grounds that the records are privileged. Ordinary business records held by a third party are not."
+   },
+   "cite": [
+    {
+     "src": "C230",
+     "ref": "§10.20(a)(2) (privilege exception: §10.20(a)(1))"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "If records are held by neither practitioner nor client, the practitioner must promptly notify the IRS and identify the holder as the client reports.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-A-1005",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "subgroup": "A.1",
+   "topic": "Regulations governing practice before the IRS (Circular 230)",
+   "task": "Apply a practitioner's duties, restrictions and standards under Circular 230 to a scenario.",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "In 2026, Carlos Vega, CPA, is preparing a client's 2025 return. He finds that the 2024 return he prepared reported a $200,000 net operating loss when the supportable loss is $50,000, because personal expenses were deducted. Carlos has explained the error and its consequences to the client, who refuses to amend the 2024 return and insists that the 2025 return use the full $200,000 loss carryover. What is Carlos's position under Circular 230?",
+   "exhibit": "",
+   "options": [
+    "He must report the 2024 error to the IRS before he may prepare any 2025 return for the client",
+    "He may sign the 2025 return with the full carryover, because once he advised the client his duty for the 2024 error ended",
+    "He must file an amended 2024 return himself, because he prepared it and his duty of care runs to the IRS",
+    "He need not notify the IRS, but he may not sign a 2025 return that claims a carryover he knows is unsupported"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Circular 230 requires advising the client, not reporting to the IRS, and client confidentiality restricts disclosure.",
+    "B": "Advising the client satisfies only the duty for the prior return. Carrying the known error into a new return means signing a position he knows is unsupported.",
+    "C": "A practitioner cannot amend a client's return on his own, and Circular 230 does not require him to do so.",
+    "D": "The duty for a known prior-year error is to advise the client of the error and its consequences; there is no duty to notify the IRS or to amend. But a practitioner may not sign a return containing a position he knows lacks a reasonable basis."
+   },
+   "cite": [
+    {
+     "src": "C230",
+     "ref": "§10.21"
+    },
+    {
+     "src": "C230",
+     "ref": "§10.34"
+    },
+    {
+     "src": "C230",
+     "ref": "§10.22"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "A practitioner who knows of a prior-year error must advise the client, need not tell the IRS, but may not sign a return carrying the unsupported position.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-I-A-1006",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "subgroup": "A.2",
+   "topic": "Internal Revenue Code and regulations related to tax return preparers",
+   "task": "Identify penalties, requirements and prohibitions that apply to tax return preparers.",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Lena and Tomas each prepared a client's return claiming the same $70,000 deduction, as shown in the exhibit. Neither return involves a tax shelter or reportable transaction, neither preparer acted willfully or recklessly, and the IRS disallows both deductions. Which statement about the preparer penalty for an unreasonable position is correct?",
+   "exhibit": [
+    [
+     "Preparer",
+     "Position taken",
+     "Disclosed on Form 8275?",
+     "Reasonable cause shown?"
+    ],
+    [
+     "Lena",
+     "$70,000 deduction; reasonable basis but no substantial authority",
+     "Yes, attached to the return",
+     "No"
+    ],
+    [
+     "Tomas",
+     "Same $70,000 deduction; same support",
+     "No",
+     "No"
+    ]
+   ],
+   "options": [
+    "Only Tomas is subject to the penalty, because disclosing a reasonable-basis position protects the preparer",
+    "Neither preparer is subject to the penalty, because the position had a reasonable basis in both of the returns",
+    "Both preparers are subject to the penalty, because the position lacked substantial authority in both of the returns",
+    "Only Lena is subject to the penalty, because her disclosure shows that she knew the position was weak when she filed"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "A preparer is not penalized for a position that has a reasonable basis and is adequately disclosed. Lena disclosed. Tomas took the same position without substantial authority or disclosure and has no reasonable cause.",
+    "B": "A reasonable basis protects a preparer only when the position is also adequately disclosed. Tomas did not disclose, so it does not protect him.",
+    "C": "Lack of substantial authority is enough only for an undisclosed position. Lena's disclosure of a position with a reasonable basis avoids the penalty.",
+    "D": "Disclosure is not evidence of wrongdoing. It is the step that protects a preparer whose position has a reasonable basis."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§6694(a)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.6694-2"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "A reasonable-basis position avoids the preparer penalty only if adequately disclosed; otherwise substantial authority is needed.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-A-1007",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "subgroup": "A.3",
+   "topic": "AICPA Statements on Standards for Tax Services and Code of Professional Conduct",
+   "task": "Apply the AICPA tax practice standards and Code provisions to a scenario.",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Halden & Pryor, CPAs, audit the financial statements of Kestrel Products Inc. and also provide tax services to Kestrel. Which tax service would impair the firm's independence for the audit under the AICPA Code of Professional Conduct?",
+   "exhibit": "",
+   "options": [
+    "Preparing Kestrel's federal return from records its staff assembled, after which its chief financial officer reviews, approves and signs it",
+    "Deciding for Kestrel, without its approval, which of two supportable positions its return will take and directing the staff to file it",
+    "Advising Kestrel on the federal tax effects of a proposed acquisition while its board decides whether to proceed",
+    "Preparing an amended return for Kestrel for a flat fee agreed in advance and not tied to any refund"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Return preparation does not impair independence when management makes the decisions and takes responsibility for the return, as it does here.",
+    "B": "Making decisions that belong to management is assuming a management responsibility, which impairs independence for an attest client.",
+    "C": "Tax planning advice is allowed when management makes the decision, and here the board makes it.",
+    "D": "A contingent fee for preparing an amended return would violate the Contingent Fees Rule. This fee is fixed and not tied to any result, so the service is permitted."
+   },
+   "cite": [
+    {
+     "src": "AICPA",
+     "ref": "Code 1.295.030.01-.02 (management responsibilities)"
+    },
+    {
+     "src": "AICPA",
+     "ref": "Code 1.295.160.03 (tax services) and 1.295.040.01 (general requirements for nonattest services)"
+    },
+    {
+     "src": "AICPA",
+     "ref": "Code 1.510.001.01(b), .03 (contingent fees rule)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "AICPA revised Tax Services interpretation (1.295.160) effective 2026-12-31 (early adoption permitted); the answer is the same under both versions.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "Making decisions that belong to management for an attest client impairs independence; return preparation with management approval does not.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-A-1008",
+   "type": "mcq",
+   "area": "I",
+   "group": "A",
+   "subgroup": "A.3",
+   "topic": "AICPA Statements on Standards for Tax Services and Code of Professional Conduct",
+   "task": "Apply the AICPA tax practice standards and Code provisions to a scenario.",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Which disclosure of confidential client information by a CPA in public practice would violate the AICPA Code of Professional Conduct because it is made without the client's specific consent?",
+   "exhibit": "",
+   "options": [
+    "Answering a written inquiry from the state board of accountancy that is investigating a complaint about the CPA's work for the client",
+    "Giving client files to a reviewer who is performing a peer review of the CPA's practice under an authorized review program",
+    "Telling a banker friend, who asked informally about the client's creditworthiness, that the client's profits fell last year",
+    "Complying with a validly issued and enforceable subpoena from a court in a civil suit against the client"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "The Code allows a member to respond to inquiries from a duly constituted investigative or disciplinary body without client consent.",
+    "B": "Review of a member's practice under an authorized program is an exception, and the reviewer must keep the information confidential.",
+    "C": "Disclosing confidential client information to a third party for that party's use requires the client's specific consent. No exception covers an informal answer to a bank contact.",
+    "D": "A valid, enforceable subpoena is an exception, so compliance does not violate the confidentiality rule."
+   },
+   "cite": [
+    {
+     "src": "AICPA",
+     "ref": "Code 1.700.001"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "A CPA may disclose confidential client information without consent to a board inquiry, peer review or enforceable subpoena, not to an informal third-party inquiry.",
+   "wrong_tags": {
+    "A": "trap",
+    "B": "trap",
+    "D": "trap"
+   }
+  },
+  {
+   "id": "REG-I-B-1001",
+   "type": "mcq",
+   "area": "I",
+   "group": "B",
+   "subgroup": "B.1",
+   "topic": "Licensing and disciplinary systems",
+   "task": "Identify sanctions, eligibility rules and disciplinary procedures for practitioners.",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "The IRS finds that Marcus Hale, a CPA employed by Dunmore & Lyle, prepared documents for an IRS matter that willfully misstated facts, and that the firm earned $30,000 in fees for the work. The Secretary of the Treasury proceeds against Marcus. Which statement about a monetary penalty on the firm itself is correct?",
+   "exhibit": "",
+   "options": [
+    "The firm may be fined up to $30,000, its fees, if it knew or reasonably should have known of Marcus's conduct",
+    "The firm may be fined up to $30,000 in every case, because it profited from the fees earned on the work",
+    "The firm cannot be fined, because a monetary penalty may be imposed only on the individual practitioner who acted",
+    "The firm may be fined up to $60,000, twice its fees, if it knew of Marcus's conduct and profited from it"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "The Secretary may impose a monetary penalty on an employer or firm if it knew or reasonably should have known of the conduct. The penalty is capped at the gross income derived from the conduct, here $30,000.",
+    "B": "Earning the fees is not enough. The firm must have known, or reasonably should have known, of the conduct.",
+    "C": "The rules expressly allow a penalty on the employer, firm or entity on whose behalf the practitioner acted.",
+    "D": "The cap is the gross income derived or to be derived from the conduct, not a multiple of it."
+   },
+   "cite": [
+    {
+     "src": "C230",
+     "ref": "§10.50(c)(1)(ii), (c)(2)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "A firm may be fined up to the gross income from the conduct if it knew or reasonably should have known of the practitioner's conduct.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "limit"
+   }
+  },
+  {
+   "id": "REG-I-B-1002",
+   "type": "mcq",
+   "area": "I",
+   "group": "B",
+   "subgroup": "B.1",
+   "topic": "Licensing and disciplinary systems",
+   "task": "Identify sanctions, eligibility rules and disciplinary procedures for practitioners.",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "The IRS establishes that Priya Nair, a CPA, willfully understated the tax on 40 client returns she prepared. Her state board of accountancy has already suspended her license for one year for the same conduct. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "The IRS must wait until the suspension ends, because only one authority may discipline the same practitioner at a time",
+    "The IRS is barred from any further action over the same conduct, because a second penalty would be double jeopardy",
+    "The IRS may act only by asking the state board to lengthen the suspension, because states have exclusive power over CPAs",
+    "The IRS may still assess preparer penalties and seek sanctions, and the state action may itself support discipline"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Each authority acts under its own rules and no single-forum rule exists, so the IRS need not wait for the state board.",
+    "B": "Administrative and civil penalties and sanctions by different authorities are separate proceedings. The state action does not bar them.",
+    "C": "The IRS regulates practice before the IRS and enforces preparer penalties. The state's licensing power is not exclusive.",
+    "D": "The proceedings are independent. The IRS can pursue its own preparer penalties and sanctions, and a state suspension is itself conduct that can support IRS discipline."
+   },
+   "cite": [
+    {
+     "src": "C230",
+     "ref": "§10.50"
+    },
+    {
+     "src": "C230",
+     "ref": "§10.51"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6694(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "State board discipline does not bar independent IRS preparer penalties and Circular 230 sanctions for the same conduct.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-I-C-1001",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "subgroup": "C.1",
+   "topic": "Audits, appeals and the judicial process",
+   "task": "Explain the audit and appeals process as it relates to tax matters.",
+   "task_source": "지도.json",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Hannah Doyle timely filed her 2023 individual return, which reported gross income of $200,000. It left out $30,000 of income that she overlooked. The IRS has not begun an examination, and Hannah has not signed any agreement extending the assessment period. Which change in the facts would give the IRS an unlimited period to assess additional tax for 2023?",
+   "exhibit": "",
+   "options": [
+    "The omitted income turns out to be $60,000, which is more than 25% of the gross income stated on the return",
+    "Hannah left out the income on purpose, and the IRS proves she filed a false return intending to evade tax",
+    "Hannah filed the return on October 15, 2024 under a valid extension, rather than in March as she did",
+    "Hannah files an amended return that reports the omitted income and pays the additional tax with interest"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Omitting more than 25% of the gross income stated on the return extends the period to six years, not to an unlimited period.",
+    "B": "A false or fraudulent return filed with intent to evade tax leaves the assessment period open indefinitely.",
+    "C": "A return filed under extension is still subject to the three-year period, which then runs from the later filing date.",
+    "D": "An amended return does not create an unlimited period. Reporting the income voluntarily does not extend the general three-year period."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§6501(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6501(c)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6501(e)(1)(A)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "Unlimited assessment time applies to fraud or unfiled returns; omitting over 25% of gross income gives six years.",
+   "wrong_tags": {
+    "A": "limit",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-C-1002",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "subgroup": "C.2",
+   "topic": "Substantiation and disclosure",
+   "task": "Identify whether substantiation is sufficient given a specific scenario.",
+   "task_source": "지도.json",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Ruth Alvarez, a self-employed consultant, kept no receipts, logs or other records of her 2025 business expenses. On examining her 2025 return, the IRS disallows all of her business deductions for lack of documentation. For which expense could a court still allow a reasonable estimate, if Ruth shows she incurred the expense and gives a reasonable basis for the amount?",
+   "exhibit": "",
+   "options": [
+    "Airfare and hotel for a client meeting in another city",
+    "The business share of her car's use, for which she kept no log",
+    "Office supplies bought for use in the consulting business",
+    "A holiday gift she gave to an important client"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Travel expenses must meet the strict substantiation rules, so a court may not estimate them.",
+    "B": "Listed property such as a vehicle is subject to the strict substantiation rules, and an estimate is not enough.",
+    "C": "Expenses outside the strict rules for travel, gifts and listed property may be estimated under the Cohan rule when the taxpayer shows the expense was incurred and gives a reasonable basis for the amount. (Lost records from a casualty such as a flood could instead be reasonably reconstructed under Treas. Reg. §1.274-5T(c)(5); here no records were ever kept.)",
+    "D": "Gifts are subject to the strict substantiation rules, so the court may not estimate the amount."
+   },
+   "cite": [
+    {
+     "src": "Case",
+     "ref": "Cohan v. Commissioner, 39 F.2d 540 (2d Cir. 1930)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§274(d)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 463"
+    },
+    {
+     "src": "Reg.",
+     "ref": "Treas. Reg. §1.274-5T(c)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "Cohan estimates are allowed for expenses outside the strict substantiation rules for travel, gifts and listed property.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-C-1003",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "subgroup": "C.1",
+   "topic": "Audits, appeals and the judicial process",
+   "task": "Explain the audit and appeals process as it relates to tax matters.",
+   "task_source": "지도.json",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Renee Baptiste filed her 2023 individual return on February 12, 2024. The return was due April 15, 2024, and she did not extend it. All of her tax for 2023 was paid through withholding. In September 2026 she finds an overlooked deduction that would produce a refund. What is the last day on which she can file a timely claim for refund?",
+   "exhibit": "",
+   "options": [
+    "April 15, 2026",
+    "February 12, 2027",
+    "April 15, 2027",
+    "October 15, 2027"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Counts two years from the day withholding is treated as paid. The claim period is the later of that date and three years from filing, so the two-year date is too early.",
+    "B": "Counts three years from the actual early filing date. A return filed before its due date is treated as filed on the due date.",
+    "C": "The early return is treated as filed on April 15, 2024, and withholding is treated as paid the same day. The later of three years from filing and two years from payment is April 15, 2027.",
+    "D": "Adds a six-month extension to the three years. Renee did not extend the return, so no extra time applies."
+   },
+   "steps": [
+    "A return filed early is treated as filed on the due date, April 15, 2024",
+    "Withholding is treated as paid on April 15, 2024",
+    "Claim period is the later of 3 years from filing or 2 years from payment: 3 years from April 15, 2024",
+    "April 15, 2027 (1,095 days after April 15, 2024)"
+   ],
+   "calc_check": {
+    "expr": "(date(2027,4,15)-date(2024,4,15)).days",
+    "value": 1095
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§6511(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6513(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6513(b)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "A refund claim is due by the later of three years from filing (early returns count as filed on the due date) or two years from payment.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "calc",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-C-1004",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "subgroup": "C.1",
+   "topic": "Audits, appeals and the judicial process",
+   "task": "Explain the different levels of the judicial process as they relate to tax matters.",
+   "task_source": "지도.json",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "The exhibit shows a notice of deficiency mailed to Kenji Arai. Kenji wants to petition the Tax Court. What is the last day on which a petition is timely?",
+   "exhibit": [
+    [
+     "Item",
+     "Detail"
+    ],
+    [
+     "Document",
+     "Statutory notice of deficiency"
+    ],
+    [
+     "Taxpayer",
+     "Kenji Arai"
+    ],
+    [
+     "Tax year",
+     "2024"
+    ],
+    [
+     "Address on the notice",
+     "Osaka, Japan"
+    ],
+    [
+     "Date the notice was mailed",
+     "Wednesday, October 7, 2026"
+    ]
+   ],
+   "options": [
+    "January 5, 2027",
+    "March 5, 2027",
+    "March 6, 2027",
+    "March 8, 2027"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Uses 90 days, which applies to a notice addressed to a person in the United States.",
+    "B": "Moves back to the previous business day. A deadline that falls on a weekend moves forward to the next business day.",
+    "C": "Correctly counts 150 days but ignores that March 6, 2027 is a Saturday.",
+    "D": "A notice addressed to a person outside the United States allows 150 days. 150 days after October 7, 2026 is Saturday, March 6, 2027, so the deadline moves to Monday, March 8, 2027."
+   },
+   "steps": [
+    "Notice is addressed to a person outside the United States, so the period is 150 days",
+    "October 7, 2026 + 150 days = March 6, 2027, a Saturday",
+    "A deadline on a Saturday, Sunday or legal holiday moves to the next business day: Monday, March 8, 2027"
+   ],
+   "calc_check": {
+    "expr": "(date(2027,3,6)-date(2026,10,7)).days",
+    "value": 150
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§6213(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§7503"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "A notice of deficiency mailed outside the U.S. allows 150 days, and a weekend deadline moves to the next business day.",
+   "wrong_tags": {
+    "A": "limit",
+    "B": "calc",
+    "C": "calc"
+   }
+  },
+  {
+   "id": "REG-I-C-1005",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "subgroup": "C.1",
+   "topic": "Audits, appeals and the judicial process",
+   "task": "Explain the different levels of the judicial process as they relate to tax matters.",
+   "task_source": "지도.json",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "The IRS mailed Elena Kowalczyk notices of deficiency for 2023 and 2024 showing the amounts in the exhibit. Elena disputes every amount. For which year or years may she ask the Tax Court to use its small tax case procedure?",
+   "exhibit": [
+    [
+     "Tax year",
+     "Deficiency",
+     "Accuracy-related penalty",
+     "Total in dispute"
+    ],
+    [
+     "2023",
+     "$44,000",
+     "$8,800",
+     "$52,800"
+    ],
+    [
+     "2024",
+     "$21,000",
+     "$4,200",
+     "$25,200"
+    ]
+   ],
+   "options": [
+    "Both years, because each year's deficiency by itself is $50,000 or less",
+    "Neither year, because the two years together exceed $50,000",
+    "Neither year, because the small tax case procedure is not available when a penalty is asserted",
+    "2024 only, because the deficiency and penalty in dispute for that year total $50,000 or less"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "The amount in dispute includes penalties. Adding the $8,800 penalty puts 2023 above $50,000.",
+    "B": "The limit is applied separately to each taxable year, not to the total of all years in the case.",
+    "C": "Penalties may be part of a small tax case. They simply count toward the limit.",
+    "D": "The limit applies to each tax year and counts penalties. 2024 totals $25,200, which qualifies, but 2023 totals $52,800, which does not."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§7463(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "The $50,000 small tax case limit is a fixed statutory amount, not inflation adjusted.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "The small tax case limit is $50,000 per tax year including penalties, applied separately to each year.",
+   "wrong_tags": {
+    "A": "calc",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-I-C-1006",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "subgroup": "C.1",
+   "topic": "Audits, appeals and the judicial process",
+   "task": "Explain the different levels of the judicial process as they relate to tax matters.",
+   "task_source": "지도.json",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Paolo Ricci received a notice of deficiency for 2023 showing a $52,000 deficiency. He did not petition the Tax Court within the time allowed, and the IRS assessed the tax. Paolo now believes the IRS was wrong on the merits. Which route to judicial review is still open to him?",
+   "exhibit": "",
+   "options": [
+    "Pay the tax, file a timely refund claim, and sue for a refund in a district court or the Court of Federal Claims if it is denied",
+    "File a late petition in the Tax Court, which the court may accept for up to one year after the tax is assessed",
+    "Ask the Independent Office of Appeals to reopen the year, with its decision then reviewable in the Tax Court on petition",
+    "Sue in a district court to stop collection without paying first, because he disputes the assessment on the merits"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "After the Tax Court route is lost, the remaining route is to pay in full, file a timely refund claim, and sue for a refund in a district court or the Court of Federal Claims.",
+    "B": "No general one-year grace period exists for a Tax Court petition after a notice of deficiency.",
+    "C": "Appeals has no procedure that revives the Tax Court's review of an assessed deficiency.",
+    "D": "A suit to restrain assessment or collection is generally barred, and a refund suit requires full payment first."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§6213(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6511(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§7421(a)"
+    },
+    {
+     "src": "Case",
+     "ref": "Flora v. United States, 362 U.S. 145 (1960)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "After missing the Tax Court deadline, review requires paying in full, filing a refund claim and suing in district court or the Court of Federal Claims.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-C-1007",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "subgroup": "C.1",
+   "topic": "Audits, appeals and the judicial process",
+   "task": "Explain the audit and appeals process as it relates to tax matters.",
+   "task_source": "지도.json",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "After an examination, the IRS offers Ilse Brandt two ways to settle her 2023 tax year: signing Form 870, a waiver of restrictions on assessment, or entering into a closing agreement on Form 866. Which statement correctly compares the two?",
+   "exhibit": "",
+   "options": [
+    "Both are closing agreements, so neither the IRS nor Ilse may reopen 2023 except for fraud, malfeasance or misrepresentation",
+    "Form 870 permits assessment now and does not bar a refund claim, while Form 866 is final except for fraud or misrepresentation",
+    "Form 870 is a final closing agreement, while Form 866 lets Ilse pay and claim a refund for 2023 later if she disagrees",
+    "Form 866 only waives the restrictions on assessment, and Form 870 also settles every later year that raises the same issue"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Only the closing agreement has that finality. Form 870 is a waiver of restrictions on assessment and is not a closing agreement.",
+    "B": "Form 870 is not a final closing agreement, so it does not stop Ilse from paying and claiming a refund later. A closing agreement is final and conclusive except for fraud, malfeasance or misrepresentation of a material fact.",
+    "C": "This reverses the two forms. The closing agreement, not the waiver, is the final one.",
+    "D": "Neither form settles later years. The closing agreement is the final agreement for the matters it covers."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§7121(b)"
+    },
+    {
+     "src": "Pub",
+     "ref": "Pub 556"
+    },
+    {
+     "src": "Form",
+     "ref": "Form 870 (Rev. 3-1992), instructions: General Information, Who Must Sign"
+    },
+    {
+     "src": "IRM",
+     "ref": "IRM 8.6.4.6 (Forms 866 and 906 give closing-agreement finality under IRC 7121)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "Form 870 waives restrictions on assessment and permits a refund claim, while a Form 866 closing agreement is final except for fraud or misrepresentation.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-C-1008",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "subgroup": "C.3",
+   "topic": "Taxpayer penalties",
+   "task": "Identify taxpayer penalties given a specific scenario.",
+   "task_source": "지도.json",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "Alberto Rojas's return understated his tax. The exhibit summarizes the revenue agent's findings. What total civil penalty applies to the underpayment?",
+   "exhibit": [
+    [
+     "Revenue agent's summary",
+     "Amount"
+    ],
+    [
+     "Total underpayment",
+     "$120,000"
+    ],
+    [
+     "Portion the IRS proves is due to fraud",
+     "$80,000"
+    ],
+    [
+     "Portion Alberto proves, by a preponderance of the evidence, is not due to fraud (substantial understatement; no defense applies)",
+     "$40,000"
+    ]
+   ],
+   "options": [
+    "$24,000",
+    "$60,000",
+    "$68,000",
+    "$90,000"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "20% of the whole $120,000. This ignores the fraud penalty that applies to the portion due to fraud.",
+    "B": "75% of the $80,000 fraud portion only. It omits the 20% accuracy-related penalty on the remaining $40,000.",
+    "C": "The fraud penalty of 75% applies to the $80,000 fraud portion ($60,000). Because Alberto proved the other $40,000 is not fraud, the 20% accuracy-related penalty applies to it ($8,000). Total $68,000.",
+    "D": "75% of the entire $120,000. That result applies only if Alberto fails to prove that the $40,000 is not due to fraud."
+   },
+   "steps": [
+    "Fraud penalty: 75% x 80,000 = 60,000",
+    "Alberto proves 40,000 is not fraud, so the 20% accuracy-related penalty applies to it: 20% x 40,000 = 8,000",
+    "Total = 60,000 + 8,000 = 68,000"
+   ],
+   "calc_check": {
+    "expr": "0.75*80000+0.20*40000",
+    "value": 68000,
+    "distractors": {
+     "A": {
+      "expr": "0.2*120000",
+      "value": 24000
+     },
+     "B": {
+      "expr": "0.75*80000",
+      "value": 60000
+     },
+     "D": {
+      "expr": "0.75*120000",
+      "value": 90000
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§6663(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6663(b)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6662(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6662(b)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "The fraud penalty is 75% of the fraud portion, and the 20% accuracy penalty applies to the remaining portion shown not fraudulent.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "calc",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-C-1009",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "subgroup": "C.3",
+   "topic": "Taxpayer penalties",
+   "task": "Identify taxpayer penalties given a specific scenario.",
+   "task_source": "지도.json",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": true,
+   "stem": "The exhibit summarizes an examination of Sophie Lindqvist's individual return. What accuracy-related penalty applies to the $90,000 underpayment?",
+   "exhibit": [
+    [
+     "Item",
+     "Underpayment",
+     "Facts",
+     "Disclosed on Form 8275?"
+    ],
+    [
+     "1",
+     "$70,000",
+     "No reasonable attempt to keep adequate records; no substantial authority; no reasonable cause",
+     "No"
+    ],
+    [
+     "2",
+     "$20,000",
+     "Position with a reasonable basis; not a tax shelter",
+     "Yes"
+    ],
+    [
+     "Total",
+     "$90,000",
+     "Tax shown $60,000; correct tax $150,000; no fraud",
+     ""
+    ]
+   ],
+   "options": [
+    "$14,000",
+    "$18,000",
+    "$28,000",
+    "$52,500"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "Item 2 is disclosed with a reasonable basis, so no penalty applies to it. Item 1 is both negligent and a substantial understatement, but penalties do not stack: 20% x $70,000 = $14,000.",
+    "B": "20% of the full $90,000. It ignores that Item 2 is disclosed with a reasonable basis and is not penalized.",
+    "C": "40% of $70,000. It adds the negligence and substantial-understatement rates together, but no stacking of rates is allowed.",
+    "D": "75% of $70,000, the civil fraud rate. Fraud is not asserted."
+   },
+   "steps": [
+    "Item 2 ($20,000) is adequately disclosed and has a reasonable basis: no penalty",
+    "Item 1 understatement after reduction: 90,000 - 20,000 = 70,000; threshold = greater of 10% x 150,000 = 15,000 or 5,000 = 15,000; 70,000 > 15,000, so substantial",
+    "Negligence and substantial understatement overlap on the same 70,000; the rate does not stack",
+    "20% x 70,000 = 14,000"
+   ],
+   "calc_check": {
+    "expr": "0.2*(90000-20000)",
+    "value": 14000,
+    "distractors": {
+     "B": {
+      "expr": "0.2*90000",
+      "value": 18000
+     },
+     "C": {
+      "expr": "0.4*70000",
+      "value": 28000
+     },
+     "D": {
+      "expr": "0.75*70000",
+      "value": 52500
+     }
+    }
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§6662(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6662(b)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6662(b)(2)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6662(d)(2)(B)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.6662-2(c)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "Accuracy-related penalties do not stack, and a disclosed item with reasonable basis is not penalized.",
+   "wrong_tags": {
+    "B": "calc",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-C-1010",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "subgroup": "C.3",
+   "topic": "Taxpayer penalties",
+   "task": "Identify taxpayer penalties given a specific scenario.",
+   "task_source": "지도.json",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "The IRS disallowed a deduction on each of four unrelated returns and asserted the accuracy-related penalty. Each taxpayer claims reasonable cause based on reliance on someone else. Which taxpayer is most likely to establish reasonable cause and good faith?",
+   "exhibit": "",
+   "options": [
+    "Vera, who bought an aggressive shelter on the advice of the promoter who sold it and who earned a fee from her investment",
+    "Dev, who hired an experienced CPA but described the deduction only as a consulting expense and left out that the payee was his own company",
+    "Gwen, who gave an experienced CPA all the relevant facts and took the position the CPA recommended after reviewing the authorities",
+    "Owen, who followed the tax advice of his brother-in-law, a bookkeeper with no tax training, because it saved the most tax"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Reliance on a promoter who profits from the transaction is generally not reasonable.",
+    "B": "Reliance fails when the taxpayer withholds facts the adviser needs, so the advice was not based on all the relevant facts.",
+    "C": "Reasonable cause is shown when the adviser is competent, the taxpayer gives the adviser complete and accurate information, and the taxpayer actually relies in good faith. Gwen meets all three.",
+    "D": "The adviser must be competent in tax matters. Reliance on someone without that expertise is not reasonable."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§6664(c)(1)"
+    },
+    {
+     "src": "Reg",
+     "ref": "§1.6664-4(c)"
+    },
+    {
+     "src": "Case",
+     "ref": "Neonatology Associates, P.A. v. Commissioner, 115 T.C. 43 (2000), aff'd, 299 F.3d 221 (3d Cir. 2002)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "Reasonable cause requires a competent adviser, complete information and good-faith reliance.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-C-1011",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "subgroup": "C.3",
+   "topic": "Taxpayer penalties",
+   "task": "Identify taxpayer penalties given a specific scenario.",
+   "task_source": "지도.json",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "The 2025 returns of the four taxpayers in the exhibit were due April 15, 2026. None has reasonable cause for any failure. Which taxpayer owes the failure-to-file addition to tax?",
+   "exhibit": [
+    [
+     "Taxpayer",
+     "Extension requested?",
+     "Date 2025 return filed",
+     "Result shown on the return"
+    ],
+    [
+     "Nia",
+     "No",
+     "July 20, 2026",
+     "Refund; withholding exceeded her tax"
+    ],
+    [
+     "Petra",
+     "No",
+     "July 20, 2026",
+     "$3,000 balance due, paid with the return"
+    ],
+    [
+     "Omar",
+     "Yes, by April 15, 2026",
+     "October 10, 2026",
+     "$6,000 balance due, paid with the return"
+    ],
+    [
+     "Quinn",
+     "No",
+     "August 3, 2026",
+     "No balance; estimated payments and withholding covered all of his tax"
+    ]
+   ],
+   "options": [
+    "Nia",
+    "Petra",
+    "Omar",
+    "Quinn"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Her return showed a refund, so no tax was unpaid on the due date. The addition is figured on the unpaid tax, so it is zero.",
+    "B": "She had no extension and filed late with $3,000 of tax unpaid at the due date, so the failure-to-file addition applies to that unpaid tax.",
+    "C": "His extension was timely and he filed within the extended due date, so he owes no failure-to-file addition. He may owe a failure-to-pay addition.",
+    "D": "He filed late, but his payments covered all of his tax, so no tax was unpaid and the addition is zero."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§6651(a)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6651(b)(1)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6081(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "A late return with no tax due after timely payments and credits produces no failure-to-file addition; the minimum penalty is not asked.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "The failure-to-file addition applies to tax unpaid at the original due date when the return is filed late without a valid extension.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-C-1012",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "subgroup": "C.3",
+   "topic": "Taxpayer penalties",
+   "task": "Identify taxpayer penalties given a specific scenario.",
+   "task_source": "지도.json",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Gordon Pell believes that wages are not income. He filed a signed 2024 return reporting zero income, and the return itself showed that its self-assessed tax was wrong. After the IRS issued a notice of deficiency, Gordon petitioned the Tax Court and repeated the same argument, which courts have rejected many times. Which penalty aimed at frivolous positions may apply to each action?",
+   "exhibit": "",
+   "options": [
+    "$5,000 for the return and up to $25,000 for the petition",
+    "$25,000 for the return and $5,000 for the petition",
+    "Nothing for the return, because a return reporting no income is not a return, and up to $25,000 for the petition",
+    "$5,000 for the return and nothing for the petition, because a Tax Court petition cannot be penalized"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "The IRS may assess a $5,000 penalty for a frivolous return, and the Tax Court may award up to $25,000 against a taxpayer whose position in the case is frivolous or groundless.",
+    "B": "The amounts are reversed. $5,000 applies to the frivolous return and up to $25,000 to a frivolous Tax Court position.",
+    "C": "The frivolous return penalty reaches a document that purports to be a return and shows on its face that the tax is wrong, so it applies to the return.",
+    "D": "The Tax Court may award damages of up to $25,000 when a taxpayer's position is frivolous or groundless."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§6702(a)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6673(a)(1)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "The $5,000 and $25,000 amounts are fixed statutory figures.",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "The IRS may assess a $5,000 penalty on a frivolous return, and the Tax Court may award up to $25,000 for frivolous positions.",
+   "wrong_tags": {
+    "B": "limit",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-C-1013",
+   "type": "mcq",
+   "area": "I",
+   "group": "C",
+   "subgroup": "C.1",
+   "topic": "Audits, appeals and the judicial process",
+   "task": "Explain the audit and appeals process as it relates to tax matters.",
+   "task_source": "지도.json",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "The IRS examined Ravi Kapoor's 2023 return and sent a 30-day letter proposing a $70,000 deficiency. Ravi did not respond and never filed a protest. The IRS then mailed a notice of deficiency, and Ravi filed a timely Tax Court petition. Which statement about Appeals is correct?",
+   "exhibit": "",
+   "options": [
+    "Ravi lost any chance at Appeals review when he ignored the 30-day letter, so the case can go only to trial",
+    "Appeals may consider a case only until a notice of deficiency is issued, so the petition ended its role in the case",
+    "Ravi can reach Appeals only by first paying the $70,000 and then filing a claim for refund with the IRS",
+    "Because Appeals has not yet considered the case, the IRS will generally refer the docketed case to Appeals for settlement talks"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Ignoring the 30-day letter does not end Appeals review. Docketed cases are handled differently.",
+    "B": "Appeals also handles docketed cases and can settle them after a petition is filed.",
+    "C": "Appeals consideration does not require payment. Prepayment is a condition of a refund suit, not of Appeals.",
+    "D": "Chief Counsel generally refers a docketed case to Appeals for settlement consideration unless Appeals itself issued the notice of deficiency, the taxpayer opts out, or an exception applies, such as a case designated for litigation. Appeals neither considered this case nor issued the notice, so referral is the general rule."
+   },
+   "cite": [
+    {
+     "src": "Rev. Proc.",
+     "ref": "Rev. Proc. 2016-22, §§3.01, 3.03, 4.01 (2016-15 I.R.B. 577)"
+    },
+    {
+     "src": "IRC",
+     "ref": "§6213(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "A docketed Tax Court case is generally referred to Appeals for settlement even if the taxpayer never filed a protest.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-I-D-1001",
+   "type": "mcq",
+   "area": "I",
+   "group": "D",
+   "subgroup": "D.1",
+   "topic": "Legal duties and responsibilities",
+   "task": "Identify the legal duties and responsibilities of tax practitioners (privilege, confidentiality, civil and criminal liability).",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Foster & Quill, CPAs, audited Tarn Holdings' financial statements. The firm knew that Tarn would give the audited statements to one or more banks to obtain a loan of about $2,000,000, but it did not know which banks and had no contact with any bank. The audit was negligent. Lakeview Bank lent Tarn $2,000,000 relying on the statements, and Ines Ward, who bought Tarn stock on the open market, also relied on them. Both lost money. Under which approach to accountants' liability to third parties could Lakeview recover for ordinary negligence, but Ines could not?",
+   "exhibit": "",
+   "options": [
+    "The Ultramares approach, which requires privity of contract with the auditor",
+    "The Credit Alliance approach, which requires a known user and conduct linking it to the auditor",
+    "The Restatement (Second) of Torts approach, which covers a limited group of intended users",
+    "The foreseeability approach, which covers users whose reliance the auditor could reasonably foresee"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Neither Lakeview nor Ines had a contract with the auditor, so neither could recover for ordinary negligence.",
+    "B": "The auditor did not know which banks would receive the statements and had no contact with any, so neither plaintiff meets the test.",
+    "C": "Under Restatement Section 552 the auditor is liable to a limited group it knows will use the statements for a particular transaction. The banks Tarn would approach for the loan are such a group, but open-market stock buyers are not.",
+    "D": "This approach reaches every foreseeable user, so Ines could recover along with Lakeview."
+   },
+   "cite": [
+    {
+     "src": "Case",
+     "ref": "Ultramares Corp. v. Touche, 255 N.Y. 170 (1931)"
+    },
+    {
+     "src": "Case",
+     "ref": "Credit Alliance Corp. v. Arthur Andersen & Co., 65 N.Y.2d 536 (1985)"
+    },
+    {
+     "src": "Restatement",
+     "ref": "Restatement (Second) of Torts §552"
+    },
+    {
+     "src": "Case",
+     "ref": "Rosenblum v. Adler, 93 N.J. 324 (1983)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "Under Restatement (Second) of Torts section 552, an auditor is liable to a known limited group of intended users, not open-market buyers.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-D-1002",
+   "type": "mcq",
+   "area": "I",
+   "group": "D",
+   "subgroup": "D.1",
+   "topic": "Legal duties and responsibilities",
+   "task": "Identify the legal duties and responsibilities of tax practitioners (privilege, confidentiality, civil and criminal liability).",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "A state follows the strict privity approach of Ultramares. Mira Voss, CPA, issued an unmodified opinion on Corvane Inc.'s financial statements without confirming any accounts receivable or inspecting inventory, even though her own workpapers flagged large unexplained sales. The statements later proved materially false. Corvane's lender, which had no contract with Mira and was unknown to her, sued for its loss. Which statement is correct?",
+   "exhibit": "",
+   "options": [
+    "The lender cannot recover on any theory, because it had no contract with Mira and she did not know it",
+    "The lender may recover if it proves that Mira was grossly negligent or reckless, which counts as constructive fraud",
+    "The lender may recover only if Mira knew who the lender was when she issued the unmodified opinion",
+    "The lender may recover on a showing of ordinary negligence, because its loss from the false statements was foreseeable"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Privity is not required when the auditor's conduct is fraudulent, and reckless disregard of obvious warning signs can be treated as constructive fraud.",
+    "B": "Under Ultramares, gross negligence so serious that it implies fraud can support liability to a third party who relied, even without privity.",
+    "C": "Knowing the identity of the user matters for negligence claims under other approaches, not for liability based on fraud or constructive fraud.",
+    "D": "Foreseeability supports ordinary negligence liability only in states that follow the foreseeability approach. This state follows strict privity."
+   },
+   "cite": [
+    {
+     "src": "Case",
+     "ref": "Ultramares Corp. v. Touche, 255 N.Y. 170 (1931)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "Under Ultramares, a third party may recover without privity if the auditor's gross negligence or recklessness amounts to constructive fraud.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-D-1003",
+   "type": "mcq",
+   "area": "I",
+   "group": "D",
+   "subgroup": "D.1",
+   "topic": "Legal duties and responsibilities",
+   "task": "Identify the legal duties and responsibilities of tax practitioners (privilege, confidentiality, civil and criminal liability).",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "Two investors sue an auditor over the same materially misstated financial statements. Ada bought shares in a registered public offering and sues under the Securities Act of 1933 provision that makes experts liable for misstatements in a registration statement. Ben bought shares on the open market and sues under the general antifraud provisions of the Securities Exchange Act of 1934. Which of the following must Ben prove that Ada need not prove?",
+   "exhibit": "",
+   "options": [
+    "That the auditor acted with intent to deceive or reckless disregard and that Ben relied on the report",
+    "That the audited financial statements contained a material misstatement or omission when the shares were sold",
+    "That Ben suffered a monetary loss on the shares he bought after the statements were issued",
+    "That the auditor had a contract with Ben or knew who he was when it issued the audit report"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "The antifraud claim requires scienter and reliance. The registration statement claim generally requires neither.",
+    "B": "Ada must also prove a material misstatement in the registration statement, so this is not an added burden for Ben.",
+    "C": "Both plaintiffs must show damages, so this is not an added burden for Ben.",
+    "D": "Neither claim requires privity of contract or knowledge of the plaintiff's identity."
+   },
+   "cite": [
+    {
+     "src": "Securities Act",
+     "ref": "§11 (15 U.S.C. §77k)"
+    },
+    {
+     "src": "Exchange Act",
+     "ref": "§10(b) and Rule 10b-5"
+    },
+    {
+     "src": "Case",
+     "ref": "Ernst & Ernst v. Hochfelder, 425 U.S. 185 (1976)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "A 1934 Act antifraud claim requires scienter and reliance, unlike a 1933 Act registration statement claim.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-D-1004",
+   "type": "mcq",
+   "area": "I",
+   "group": "D",
+   "subgroup": "D.1",
+   "topic": "Legal duties and responsibilities",
+   "task": "Identify the legal duties and responsibilities of tax practitioners (privilege, confidentiality, civil and criminal liability).",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Purchasers in a public offering sue the company's auditors under the Securities Act of 1933, alleging a material misstatement in the audited financial statements included in the registration statement. Which of the following is a valid defense for the auditors?",
+   "exhibit": "",
+   "options": [
+    "The purchasers did not read or rely on the audited statements when they bought their shares in the offering",
+    "The auditors had no contract with the purchasers and had no contact with them before the offering",
+    "The auditors did not intend to deceive anyone and believed in good faith that the statements were fairly presented",
+    "The auditors made a reasonable investigation and reasonably believed the statements were true when the registration became effective"
+   ],
+   "answer": "D",
+   "why": {
+    "A": "Reliance is generally not an element of the registration statement claim, so lack of reliance is not a defense.",
+    "B": "Privity is not required for the registration statement claim.",
+    "C": "Intent is not an element, and a good-faith belief without a reasonable investigation does not meet the due diligence defense.",
+    "D": "This is the due diligence defense for experts. The auditors must show a reasonable investigation and a reasonable ground to believe, and actual belief, that the statements were true."
+   },
+   "cite": [
+    {
+     "src": "Securities Act",
+     "ref": "§11(b)(3)(B) (15 U.S.C. §77k(b)(3)(B))"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "D",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "An expert's due diligence defense under the 1933 Act requires a reasonable investigation and reasonable belief that the statements were true.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "C": "concept"
+   }
+  },
+  {
+   "id": "REG-I-D-1005",
+   "type": "mcq",
+   "area": "I",
+   "group": "D",
+   "subgroup": "D.1",
+   "topic": "Legal duties and responsibilities",
+   "task": "Identify the legal duties and responsibilities of tax practitioners (privilege, confidentiality, civil and criminal liability).",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Delphine Ross, CPA, gave her client Arclight Corp. a memorandum of tax advice about a proposed reorganization. The memorandum is protected by the federally authorized tax practitioner privilege in a civil tax matter. Which later event most likely waives the privilege for the memorandum?",
+   "exhibit": "",
+   "options": [
+    "Arclight's chief financial officer, who needs the advice to carry out the plan, shares the memorandum with two finance managers",
+    "Arclight gives a copy of the memorandum to its outside lender to help win approval of a related loan",
+    "Delphine discusses the memorandum with a partner in her firm who is helping on the engagement",
+    "The IRS opens an examination of Arclight's return and asks about the reorganization"
+   ],
+   "answer": "B",
+   "why": {
+    "A": "Sharing within the client on a need-to-know basis does not waive the privilege.",
+    "B": "Voluntary disclosure of privileged advice to an outsider such as a lender waives the privilege for that communication.",
+    "C": "Consulting within the practitioner's own firm on the engagement does not waive the privilege.",
+    "D": "An IRS examination or request for information does not waive the privilege. Only the client's voluntary disclosure does."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§7525(a)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "B",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "Voluntary disclosure of privileged tax advice to an outsider such as a lender waives the tax practitioner privilege.",
+   "wrong_tags": {
+    "A": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-D-1006",
+   "type": "mcq",
+   "area": "I",
+   "group": "D",
+   "subgroup": "D.1",
+   "topic": "Legal duties and responsibilities",
+   "task": "Identify the legal duties and responsibilities of tax practitioners (privilege, confidentiality, civil and criminal liability).",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 2,
+   "calc": false,
+   "stem": "Reese Duran, a paid return preparer, knowingly listed fictitious business expenses on a client's return to increase the client's refund. The client, Alma, believed the return was accurate, did not know about the expenses, and signed it. Which statement about Reese's criminal exposure is correct?",
+   "exhibit": "",
+   "options": [
+    "He may be convicted of willfully assisting in a false return, even though Alma did not know it was false",
+    "He cannot be convicted, because Alma signed the return herself and had no intent to defraud anyone",
+    "He may be convicted only if the IRS also proves that Alma is liable for the civil fraud penalty on the return",
+    "He faces at most a misdemeanor, because preparers are not subject to the felony provisions of the tax code"
+   ],
+   "answer": "A",
+   "why": {
+    "A": "The statute reaches anyone who willfully aids or assists in preparing a false return, whether or not the taxpayer knows of the falsity.",
+    "B": "The taxpayer's signature and innocence do not protect a preparer who willfully assists in a false return.",
+    "C": "No finding of civil fraud against the client is required for the preparer's conviction.",
+    "D": "Willfully assisting in a false return is a felony that applies to preparers."
+   },
+   "cite": [
+    {
+     "src": "IRC",
+     "ref": "§7206(2)"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "A",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "A preparer who willfully assists in preparing a false return commits a felony even if the taxpayer is unaware of the falsity.",
+   "wrong_tags": {
+    "B": "concept",
+    "C": "concept",
+    "D": "concept"
+   }
+  },
+  {
+   "id": "REG-I-D-1007",
+   "type": "mcq",
+   "area": "I",
+   "group": "D",
+   "subgroup": "D.1",
+   "topic": "Legal duties and responsibilities",
+   "task": "Identify the legal duties and responsibilities of tax practitioners (privilege, confidentiality, civil and criminal liability).",
+   "task_source": "author-drafted from Blueprint topic name (지도.json has no Group A/B/D)",
+   "skill": "Analysis",
+   "difficulty": 3,
+   "calc": false,
+   "stem": "In a private class action under the antifraud provisions of the Securities Exchange Act of 1934, a jury finds that Larkin & Shaw, the company's auditor, is 30% responsible for the investors' loss because it acted recklessly but not knowingly. The company's officers, who acted knowingly, are found 70% responsible. How is Larkin & Shaw's liability for damages determined?",
+   "exhibit": "",
+   "options": [
+    "Jointly and severally liable for all of the damages, because any auditor found liable under the antifraud provisions is jointly and severally liable",
+    "Not liable at all, because an auditor is liable under the antifraud provisions only if it knew the statements were false",
+    "Generally liable only for its own percentage of responsibility, because reckless conduct is not treated as a knowing violation",
+    "Jointly and severally liable, because the case was certified as a class action"
+   ],
+   "answer": "C",
+   "why": {
+    "A": "Joint and several liability applies only to a defendant that knowingly committed the violation, not to every auditor found liable.",
+    "B": "Recklessness satisfies the scienter requirement in most courts, so actual knowledge is not needed for liability.",
+    "C": "Under the Private Securities Litigation Reform Act, joint and several liability requires a knowing violation. Reckless conduct is not treated as knowing, so liability is generally proportionate.",
+    "D": "Class certification does not change the liability rule."
+   },
+   "cite": [
+    {
+     "src": "Exchange Act",
+     "ref": "§21D(f)(2)(A)-(B), (f)(10)(B) (15 U.S.C. §78u-4(f)(2)(A)-(B), (f)(10)(B))"
+    },
+    {
+     "src": "Statute",
+     "ref": "Private Securities Litigation Reform Act of 1995"
+    }
+   ],
+   "law_asof": "2026-09-29",
+   "testable_from": "2026-01-01",
+   "law_note": "",
+   "provenance": "terra-original",
+   "verify": {
+    "solver_answer": "C",
+    "solver_id": "independent-solver-2 (문제지만 보고 풂, area1b 독립풀이)",
+    "cite_ok": true,
+    "date": "2026-09-29",
+    "commit": null,
+    "match": true
+   },
+   "status": "verified",
+   "version": 1,
+   "rule_line": "Under the PSLRA, joint and several liability requires a knowing violation, so reckless defendants are liable only proportionately.",
+   "wrong_tags": {
+    "A": "concept",
+    "B": "concept",
+    "D": "concept"
+   }
+  }
+ ]
+}
