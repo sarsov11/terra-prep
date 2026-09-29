@@ -249,7 +249,7 @@
     return out;
   }
   var COA = {}, JEG = null;
-  function coaSet(list) { COA = {}; JEG = null; list.forEach(function (a) { COA[a.id] = a; }); }
+  function coaSet(list) { COA = {}; JEG = null; TA = null; list.forEach(function (a) { COA[a.id] = a; }); }
   /* twin of tbs_far_lib.je_hints: affected accounts -> increase/decrease -> debit/credit (no amounts) */
   function jeHints(lines) {
     function nm(l) { return COA[l.a].name; }
@@ -815,6 +815,22 @@
   /* journal-entry feedback: one row per entered line (wrong part struck through, right value after the arrow), then missing lines */
   var JSTAT = { ok: ["Correct", "ok"], ecf: ["½ Carried forward", "half"], amount: ["Amount", "no"], flip: ["Reversed", "no"], acct: ["Account", "no"], extra: ["Extra", "no"], unknown: ["Unknown", "no"], noamt: ["No amount", "no"] };
   function sideTxt(s) { return s === "D" ? "Debit" : "Credit"; }
+  /* T-accounts under a graded journal-entry cell: "Yours" is drawn from the lines the learner entered (posted lines only), "Answer" from the key.
+     The answer view opens only once the cell is locked (correct, explanation shown, or exam submitted), so a retry is not spoiled. */
+  var TA = null;
+  function taAcct() {
+    if (!TA) { if (!window.TAcct) throw new Error("js/tacct.js missing"); TA = window.TAcct.make(COA, { esc: esc, fmtNum: window.JEGrade.fmtNum }); }
+    return TA;
+  }
+  function jeTacc(c, r) {
+    var yours = [], ans = c.lines.map(function (l) { return { a: l.a, s: l.s, v: l.v, si: 0 }; });
+    (r.d ? r.d.lines : []).forEach(function (u) { if (u.a && COA[u.a] && u.s) yours.push({ a: u.a, s: u.s, v: u.v, si: 0 }); });
+    var open = A.tacc && A.tacc[c.id];
+    return '<details class="tacc" data-tc="' + esc(c.id) + '"' + (open ? " open" : "") + "><summary>T-accounts</summary>" +
+      '<div class="tacc-h">Yours</div><div class="je-ts">' + (yours.length ? taAcct().tHTML(yours, false) : '<p class="mute">No posted lines.</p>') + "</div>" +
+      (locked(c) ? '<div class="tacc-h">Answer</div><div class="je-ts">' + taAcct().tHTML(ans, false) + "</div>" : '<p class="mute">The answer T-accounts appear once this cell is closed.</p>') +
+      "</details>";
+  }
   function jeFb(c, r) {
     var d = r.d; if (!d) return "";
     var M = window.JEGrade.fmtNum, h = "";
@@ -841,7 +857,7 @@
       var pts = num(r.credit * c.points);
       h = r.kind === "ok" ? '<span class="st ok">✓ Correct</span>' : r.kind === "blank" ? '<span class="st bad">✗ No entry</span>' :
         '<span class="st ' + (r.credit > 0 ? "half" : "bad") + '">' + (r.credit > 0 ? "½ " : "✗ ") + pts + " of " + c.points + " lines</span>";
-      if (r.kind !== "blank") h += jeFb(c, r);
+      if (r.kind !== "blank") h += jeFb(c, r) + jeTacc(c, r);
       if (r.rc !== undefined && r.kind !== "ok") h += '<div class="msg">Retry: ✗</div>';
       return h;
     }
@@ -903,6 +919,7 @@
     }
     fb.hidden = !r || !!r.stale;
     if (r) fb.innerHTML = fbHtml(c, r, r.v);
+    $$("details.tacc", fb).forEach(function (d) { d.addEventListener("toggle", function () { (A.tacc = A.tacc || {})[c.id] = d.open; }); });
     ex.hidden = !(A.open && A.open[c.id]);
     if (!ex.hidden) {
       ex.innerHTML = (c.kind === "je" ? "<div>Answer</div>" + jeAnswerHtml(c) : "<div>Answer <ins>" + esc(answerText(c)) + "</ins></div>") + "<p style=\"margin:6px 0\">" + esc(c.why) + "</p>" +

@@ -1,0 +1,14 @@
+/* T-account cards (js/tacct.js), shared by je.html and tbs.html. Moved out of je.css unchanged. */
+.je-ts{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-top:6px}
+.je-t{border:1px solid var(--line-2);border-radius:var(--r2);background:var(--surface);overflow:hidden}
+.je-th{padding:8px 10px;font-weight:900;font-size:15px;border-bottom:2px solid var(--ink);display:flex;flex-direction:column}
+.je-th small{color:var(--ink-3);font-weight:600}
+.je-tb{display:grid;grid-template-columns:1fr 1fr;min-height:44px}
+.je-tl{border-right:2px solid var(--ink);padding:6px 8px}
+.je-tr{padding:6px 8px}
+.je-te{display:flex;gap:6px;font-size:15px;font-weight:700;font-variant-numeric:tabular-nums}
+.je-te i{font-style:normal;color:var(--ink-4);font-size:13.5px}
+.je-tr .je-te{justify-content:flex-end}
+.je-tl .je-te{justify-content:flex-start}
+.je-tt{display:flex;justify-content:space-between;gap:8px;padding:7px 10px;border-top:1px solid var(--line);background:var(--surface-2);font-size:14px;font-weight:800;font-variant-numeric:tabular-nums}
+.je-tt b{color:var(--je-ac,var(--ac))}

@@ -20,6 +20,12 @@
   .readhd h2{font-size:18px;flex:1}
   .empty{padding:48px 8px;text-align:center;color:var(--ink-3)}
   .spd{font-size:40px;font-weight:900;text-align:center;letter-spacing:-.05em}
+  .guide{margin-top:12px}
+  .guide .gs{border-left:3px solid var(--line-2);padding:2px 0 2px 12px;margin:10px 0}
+  .guide .gk{font-size:13px;font-weight:800;color:var(--ink-3);letter-spacing:.02em}
+  .guide .ga{margin:2px 0 6px;font-weight:700}
+  .guide .gr{margin:2px 0 6px;color:var(--ink-2)}
+  .guide .gnote{margin:8px 0 0;font-size:14.5px;color:var(--ink-3)}
 </style>
 </head>
 <body class="focus">
@@ -255,6 +261,7 @@
     var q = GB.item(s.id);
     if (!q || !q.mc) { next(); return; }
     var mc = q.mc, tg = mc.tags, ask = GB.confOn() || !tg, conf = null, t0 = Date.now(), done = false;
+    var gd = mc.gd && mc.gd.length ? mc.gd : null, gs = -1, gopen = false;   /* Guide me: gs = step now showing (-1 = not started), gopen = its reveal is open */
     var prev = GB.answered(q.i), prevPick = prev && prev.pick != null ? prev.pick : null;
     var fl = GB.flagged(q.i);
     $("stage").innerHTML =
@@ -266,12 +273,38 @@
         '<p class="sent" id="sent">' + esc(mc.s) + "</p>" +
         (mc.d ? '<div class="case mcdata" style="margin:12px 0 0">' + esc(mc.d) + "</div>" : "") +
         (mc.tb ? tableHTML(mc.tb) : "") + "</div>" +
+      (gd ? '<div class="guide" id="gd"></div>' : "") +
       (ask ? '<div class="step"><h3>How confident are you?</h3><div class="conf" id="conf">' +
         [{ v: "sure", name: "Certain" }, { v: "half", name: "Not sure" }].map(function (c) { return '<button type="button" data-v="' + c.v + '" aria-pressed="false">' + c.name + "</button>"; }).join("") + "</div></div>" : "") +
       '<div class="mcb' + (ask ? " lock" : "") + '" id="oxb">' + mc.o.map(function (o, i) {
         return '<button type="button" data-a="' + (i + 1) + '"><b>' + LETTERS[i] + "</b><span>" + esc(o) + "</span></button>"; }).join("") + "</div>" +
       '<p class="hint" id="hint">' + (ask ? "Choose your confidence first" : "") + "</p>" +
       '<div id="after"></div>';
+    /* Guide me: step k shows its question first; the reveal opens only on a second press; the next step comes after that.
+       After the last step the learner chooses an answer. Choosing is never blocked. */
+    function drawGuide() {
+      var el = $("gd"); if (!el) return;
+      if (gs < 0) {
+        el.innerHTML = done ? "" : '<button type="button" class="btn ghost sm" id="gbtn">Guide me</button>';
+        if ($("gbtn")) $("gbtn").onclick = function () { gs = 0; gopen = false; drawGuide(); };
+        return;
+      }
+      var h = "";
+      for (var i = 0; i <= gs; i++) {
+        var shown = i < gs || gopen;
+        h += '<div class="gs"><div class="gk">Step ' + (i + 1) + " of " + gd.length + '</div><p class="ga">' + esc(gd[i][0]) + "</p>" +
+          (shown ? '<p class="gr">' + esc(gd[i][1]) + "</p>" : "") + "</div>";
+      }
+      if (!done) {
+        if (!gopen) h += '<button type="button" class="btn ghost sm" id="grev">Show this step’s answer</button>';
+        else if (gs < gd.length - 1) h += '<button type="button" class="btn ghost sm" id="gnext">Next step</button>';
+        else h += '<p class="gnote">Now choose your answer below.</p>';
+      }
+      el.innerHTML = h;
+      if ($("grev")) $("grev").onclick = function () { gopen = true; drawGuide(); };
+      if ($("gnext")) $("gnext").onclick = function () { gs++; gopen = false; drawGuide(); };
+    }
+    drawGuide();
     if ($("flg")) $("flg").onclick = function () {
       var on = !GB.flagged(q.i); GB.setFlag(q.i, on);
       this.setAttribute("aria-pressed", String(on)); this.textContent = on ? "Flagged" : "Flag";
@@ -291,7 +324,8 @@
       b.onclick = function () {
         if (done || (ask && !conf)) return;
         done = true;
-        var pick = +b.dataset.a - 1, ok = pick + 1 === mc.a, ms = Date.now() - t0;
+        var pick = +b.dataset.a - 1, ok = pick + 1 === mc.a, ms = Date.now() - t0, gUsed = gs + 1;
+        drawGuide();
         $("oxb").querySelectorAll("button").forEach(function (x) {
           x.disabled = true;
           if (+x.dataset.a === mc.a) x.dataset.s = "ok"; else if (x === b) x.dataset.s = "no";
@@ -300,8 +334,8 @@
         var j = JUDGE.judge({ ok: ok, conf: conf, ms: ms, attempt: prev ? prev.n + 1 : 1, mastery: st.mastery,
                              streak: streakBy[q.n] || 0, qid: q.i, leafName: GB.node(q.n).name });
         streakBy[q.n] = ok ? 0 : (streakBy[q.n] || 0) + 1;
-        GB.answer(q.i, ok, { conf: conf, ms: ms, kind: j.kind, pick: pick });
-        results[pos] = { ok: ok, kind: j.kind, id: q.i, pick: pick };
+        GB.answer(q.i, ok, { conf: conf, ms: ms, kind: j.kind, pick: pick, guide: gUsed });
+        results[pos] = { ok: ok, kind: j.kind, id: q.i, pick: pick, g: gUsed };
         document.querySelector(".qcard").classList.add(ok ? "glow-ok" : "glow-no");
         if (mode === "today") GB.markToday(todayIdx[pos]);
         drawProg();
@@ -311,8 +345,10 @@
           if (more) { extra = more; seq.splice(pos + 1, 0, { k: "ox", id: more.i, add: 1 }); if (mode === "today") todayIdx.splice(pos + 1, 0, -1); drawProg(); }
         }
         var h = '<div class="verdict ' + j.tone + '"><div class="top"><span class="mk">' + (ok ? "✓" : "✕") + "</span>" +
-          (ok ? '<span class="reward">+1</span>' : "") + '<span class="chip">' + esc(j.label || { "retryRight": "Correct on retry", "streakWrong": "Missed repeatedly" }[j.kind] || j.kind) + "</span></div>" +
+          (ok ? '<span class="reward">+1</span>' : "") + '<span class="chip">' + esc(j.label || { "retryRight": "Correct on retry", "streakWrong": "Missed repeatedly" }[j.kind] || j.kind) + "</span>" +
+          (gUsed ? '<span class="chip">Guide me · ' + gUsed + " of " + gd.length + " steps</span>" : "") + "</div>" +
           '<p class="say">' + esc(j.say) + "</p>" +
+          (gUsed ? '<p class="fine">Recorded as a guided attempt: it counts half toward your readiness range.</p>' : "") +
           '<p class="ans">Correct answer: <b>' + LETTERS[mc.a - 1] + "</b>" + (ok ? "" : " · You chose <b>" + LETTERS[pick] + "</b>") + "</p>";
         if (mc.ex) h += '<div class="expl" id="expl"><button type="button">Show explanation</button><div class="body">' + explainHTML(q, pick, ok, prevPick) + "</div></div>";
         else if (mc.cite) h += '<p class="ans"><b>' + esc(mc.cite) + "</b> — " + esc(mc.rat) + "</p>";

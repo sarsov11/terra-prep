@@ -364,6 +364,8 @@ def question(it):
         mc["calc"] = 1
     if it.get("steps"):
         mc["steps"] = list(it["steps"])
+    if it.get("guide"):                                   # step-by-step guide: [[ask, reveal], ...] (shown by the Guide me button)
+        mc["gd"] = [[str(g["ask"]).strip(), str(g["reveal"]).strip()] for g in it["guide"]]
     return {"i": it["id"], "t": it["stem"], "mc": mc}
 
 

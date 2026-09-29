@@ -132,6 +132,7 @@
     a.n = (a.n || 0) + 1;
     a.ok = !!ok; a.at = Date.now(); a.conf = x.conf || null; a.ms = x.ms || 0;
     if (x.pick != null) a.pick = x.pick;
+    if (x.guide) a.g = x.guide; else delete a.g;            /* a.g = number of Guide me steps the learner opened on this attempt */
     if (ok) a.box = x.conf === "sure" ? Math.min(5, (a.box || 0) + 1) : Math.max(1, Math.min(a.box || 0, 1));
     else a.box = 0;
     a.due = TODAYN + GAP[a.box];
@@ -331,7 +332,7 @@
      Candidates are new questions plus questions due for review; ties fall back to recency of the exam series.
      At most perNode questions from one Topic go into a day's set unless nothing else fits. */
   var FORMULA = { wTopic: 0.45, wType: 0.30, wDue: 0.25, prior: 0.6, priorN: 2, typeWindow: 30, typeMin: 2, typeFull: 2,
-                  dueBase: 0.5, dueStep: 0.1, perNode: 8, gaps: GAP };
+                  dueBase: 0.5, dueStep: 0.1, perNode: 8, gaps: GAP, guideW: 0.5 };
   var CAUSES = [
     { v: "concept", n: "Concept error", d: "The rule itself was misread or a different rule was applied." },
     { v: "calc", n: "Calculation slip", d: "The rule was right but a number or step went wrong." },
@@ -440,7 +441,7 @@
 
   /* === readiness range ===
      Per Area: Wilson score interval (z = 1.645, 90%) for the share answered correctly, using each question's
-     latest attempt. Range = sum weight*lo ... sum weight*hi over the Areas, weights = Blueprint midpoints. An Area with no
+     latest attempt (an attempt that used Guide me counts FORMULA.guideW = half in both the correct and the answered count). Range = sum weight*lo ... sum weight*hi over the Areas, weights = Blueprint midpoints. An Area with no
      answers counts as 0-100, so the range is wide until every Area has been tried. This is a % correct on questions
      you chose to practise - not a scaled exam score and not a pass prediction. */
   var READY_Z = 1.645, READY_MIN = 10;
@@ -451,17 +452,21 @@
   }
   function areaWeight(k) { var C0 = window.CATALOG, w = C0 && C0.weight(k); return w || AREA_W[C0 && C0.area(k)] || 10; }
   function readiness() {
-    var per = [], W = 0, lo = 0, hi = 0, N = 0, touched = 0;
+    var per = [], W = 0, lo = 0, hi = 0, N = 0, G = 0, touched = 0;
     subs().forEach(function (k) {
       if (window.READY && !window.READY[k]) return;
-      var st = stateOf(k), n = 0, ok = 0;
-      Object.keys(st.ans).forEach(function (id) { n++; if (st.ans[id].ok) ok++; });
-      var w = wilson(ok, n, READY_Z), wt = areaWeight(k);
+      var st = stateOf(k), n = 0, ok = 0, ne = 0, oke = 0, gu = 0;
+      Object.keys(st.ans).forEach(function (id) {
+        var an = st.ans[id], wq = an.g ? FORMULA.guideW : 1;       /* an attempt that used Guide me counts guideW (half) in the range */
+        n++; ne += wq; if (an.g) gu++;
+        if (an.ok) { ok++; oke += wq; }
+      });
+      var w = wilson(oke, ne, READY_Z), wt = areaWeight(k);
       per.push({ key: k, name: window.CATALOG ? CATALOG.name(k) : k, area: window.CATALOG ? CATALOG.area(k) : "", w: wt, n: n, ok: ok,
-                 pct: n ? Math.round(ok / n * 100) : null, lo: Math.round(w.lo * 100), hi: Math.round(w.hi * 100) });
-      W += wt; lo += wt * w.lo; hi += wt * w.hi; N += n; if (n) touched++;
+                 pct: n ? Math.round(ok / n * 100) : null, guided: gu, lo: Math.round(w.lo * 100), hi: Math.round(w.hi * 100) });
+      W += wt; lo += wt * w.lo; hi += wt * w.hi; N += n; G += gu; if (n) touched++;
     });
-    return { of: subs().length, ready: N >= READY_MIN, lo: W ? Math.round(lo / W * 100) : 0, hi: W ? Math.round(hi / W * 100) : 100, n: N, areas: per, touched: touched, z: READY_Z, min: READY_MIN };
+    return { of: subs().length, ready: N >= READY_MIN, lo: W ? Math.round(lo / W * 100) : 0, hi: W ? Math.round(hi / W * 100) : 100, n: N, areas: per, touched: touched, guided: G, guideW: FORMULA.guideW, z: READY_Z, min: READY_MIN };
   }
 
   /* === study plan ===

@@ -218,6 +218,9 @@ if not a.no_data:
                 wt = m2.get("wt")
                 if not (isinstance(wt, list) and len(wt) == 4 and all((t == "" and j == m2["a"] - 1) or (t in C.WRONG_TAGS and j != m2["a"] - 1) for j, t in enumerate(wt))): fails.append("%s: bad wrong-choice tags %s" % (q["i"], wt))
                 if len(m2["o"]) != 4 or len(m2["ex"]) != 4 or not (1 <= m2["a"] <= 4): fails.append("%s: bad mc structure" % q["i"])
+                sg = next((x for x in items if x["id"] == q["i"]), {}).get("guide") or []          # guide steps: data gd matches the source guide
+                if [list(g) for g in m2.get("gd", [])] != [[str(g["ask"]).strip(), str(g["reveal"]).strip()] for g in sg]: fails.append("%s: guide (gd) differs from source guide" % q["i"])
+                if sg and not (2 <= len(sg) <= 3 and all(g.get("ask") and g.get("reveal") for g in sg)): fails.append("%s: guide needs 2-3 steps with ask and reveal" % q["i"])
                 if sec == "AUD":                           # displayed citation follows the AUD topic-level rule
                     si = next(x for x in items if x["id"] == q["i"])
                     if m2["cite"] != C.cite_text(C.aud_cite(si)): fails.append("%s: displayed cite %r breaks the AUD citation display rule" % (q["i"], m2["cite"]))
