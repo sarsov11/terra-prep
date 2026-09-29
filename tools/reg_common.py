@@ -40,19 +40,41 @@ GROUP_NAMES = {
 }
 SKILLS = ["Remembering & Understanding", "Application", "Analysis"]
 
+# ---------------------------------------------------------------------------
+# FAR section (same schema and rules as REG; the source folder is tools/src/FAR/far_area<N>*_mcq.json)
+# Blueprint weights = midpoint of the 2026 ranges (I 30-40, II 30-40, III 25-35 -> 35/35/30, see FAR_SPEC.md).
+# ---------------------------------------------------------------------------
+FAR_DEFAULT_SRC = os.path.join(HERE, "src", "FAR")
+FAR_AREAS = ["I", "II", "III"]
+FAR_SUBJECTS = {
+    "I":   ("far_area1_financial_reporting", "Area I · Financial Reporting", "--fam-geo"),
+    "II":  ("far_area2_balance_sheet", "Area II · Select Balance Sheet Accounts", "--fam-soc"),
+    "III": ("far_area3_transactions", "Area III · Select Transactions", "--fam-eth"),
+}
+FAR_AREA_TITLE = {"I": "Conceptual Framework, Standard-Setting, and Financial Reporting",
+                  "II": "Select Financial Statement Accounts", "III": "Select Transactions"}
+FAR_WEIGHT = {"I": 35, "II": 35, "III": 30}
+SECTIONS = {
+    "REG": {"areas": AREAS, "subjects": SUBJECTS, "weight": WEIGHT, "src": DEFAULT_SRC, "prefix": "reg", "tool": "build_reg.py"},
+    "FAR": {"areas": FAR_AREAS, "subjects": FAR_SUBJECTS, "weight": FAR_WEIGHT, "src": FAR_DEFAULT_SRC, "prefix": "far", "tool": "build_far.py"},
+}
 
-def find_files(src, area):
-    """All source files for an Area, e.g. area4_mcq.json plus area4b_mcq.json (merged into one subject)."""
+
+def find_files(src, area, sec="REG"):
+    """All source files for an Area, e.g. area4_mcq.json plus area4b_mcq.json (merged into one subject).
+    FAR files are named far_area<N>*_mcq.json."""
     import glob
     n = {"I": "1", "II": "2", "III": "3", "IV": "4", "V": "5"}[area]
+    if sec == "FAR":
+        return sorted(glob.glob(os.path.join(src, "far_area%s*_mcq.json" % n)))
     found = sorted(glob.glob(os.path.join(src, "area%s*_mcq.json" % n)))
     if area == "II" and not found:
         found = [p for p in [os.path.join(src, "II_mcq.json")] if os.path.exists(p)]
     return found
 
 
-def load_area(src, area):
-    files = find_files(src, area)
+def load_area(src, area, sec="REG"):
+    files = find_files(src, area, sec)
     if not files:
         return None, []
     meta, items = None, []
@@ -65,10 +87,14 @@ def load_area(src, area):
     return meta, items
 
 
-def group_names(area, meta, items):
-    """Group letter -> name. Blueprint names are read from meta.blueprint when present."""
-    names = dict(GROUP_NAMES.get(area, {}))
-    bp = (meta or {}).get("blueprint", "")
+def group_names(area, meta, items, sec="REG"):
+    """Group letter -> name. Blueprint names are read from meta.blueprint when present (FAR items carry group_name)."""
+    names = dict(GROUP_NAMES.get(area, {})) if sec == "REG" else {}
+    if sec == "FAR":
+        for i in items:
+            if i.get("group_name"):
+                names.setdefault(i["group"], i["group_name"])
+    bp = (meta or {}).get("blueprint", "") if sec == "REG" else ""
     for m in re.finditer(r"\b([A-F]) ([A-Z][^,;()]+)", bp):
         names.setdefault(m.group(1), m.group(2).strip())
     for g in sorted({i["group"] for i in items}):
@@ -184,3 +210,97 @@ def pwa_version(files):
     for f in files:
         h.update(f.encode()); h.update(open(os.path.join(ROOT, f), "rb").read())
     return h.hexdigest()[:10]
+
+
+# ---------------------------------------------------------------------------
+# Builder helpers shared by build_reg.py and build_far.py
+# ---------------------------------------------------------------------------
+def first_sentence(t):
+    t = re.sub(r"^(Correct|Incorrect)\.\s*", "", str(t)).strip()
+    m = re.match(r"(.+?[.!?])(\s|$)", t)
+    return m.group(1) if m else t
+
+
+def clean(t):
+    return re.sub(r"^(Correct|Incorrect)\.\s*", "", str(t)).strip()
+
+
+def question(it):
+    ex = it.get("exhibit")
+    mc = {
+        "s": it["stem"],
+        "d": ex if isinstance(ex, str) else "",
+        "o": list(it["options"]),
+        "a": "ABCD".index(it["answer"]) + 1,
+        "cite": cite_text(it["cite"]),
+        "rat": first_sentence(it["why"][it["answer"]]),
+        "ex": [clean(it["why"][k]) for k in "ABCD"],
+        "wt": tag_wrong_options(it),
+        "tags": {"area": it["area"], "group": it["group"], "skill": it["skill"], "diff": it["difficulty"]},
+        "asof": it.get("law_asof") or "",
+    }
+    if it.get("rule_line"):
+        mc["rl"] = str(it["rule_line"]).strip()
+    if isinstance(ex, list) and ex:
+        mc["tb"] = ex
+    if it.get("testable_from"):
+        mc["from"] = it["testable_from"]
+    if it.get("calc"):
+        mc["calc"] = 1
+    if it.get("steps"):
+        mc["steps"] = list(it["steps"])
+    return {"i": it["id"], "t": it["stem"], "mc": mc}
+
+
+def dump_js(path, T, Q, tool="build_reg.py"):
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        f.write("/* Auto-generated by tools/%s — pipeline artifact. Do not hand-edit */\n" % tool)
+        f.write("window.TREE=" + json.dumps(T, ensure_ascii=False, separators=(",", ":")) + ";\n")
+        f.write("window.QBANK=" + json.dumps(Q, ensure_ascii=False, separators=(",", ":")) + ";\n")
+        f.write("window.PAIRS=[];\n")
+
+
+def read_ready():
+    rp = os.path.join(ROOT, "data", "ready.js")
+    if os.path.exists(rp):
+        t = open(rp, encoding="utf-8").read()
+        try:
+            return json.loads(t[t.index("=") + 1:].rstrip().rstrip(";"))
+        except Exception:
+            pass
+    return {}
+
+
+def write_ready(R):
+    """Fixed key order (other subjects, then reg_*, then far_*), so a rebuild of one section never reorders the others."""
+    def rank(k):
+        return 1 if k.startswith("reg_") else 2 if k.startswith("far_") else 0
+    R = {k: R[k] for k in sorted(R, key=rank)}          # stable sort keeps the order inside a group
+    with open(os.path.join(ROOT, "data", "ready.js"), "w", encoding="utf-8", newline="\n") as f:
+        f.write("/* Auto-generated — pipeline artifact */\nwindow.READY=" + json.dumps(R, ensure_ascii=False) + ";\n")
+
+
+def write_catalog(sec):
+    """Rewrite the subject list and the exam's subject list between the <sec> markers of js/catalog.js."""
+    cfg = SECTIONS[sec]
+    cp = os.path.join(ROOT, "js", "catalog.js")
+    cat = open(cp, encoding="utf-8").read()
+    subj = "".join('    %s: { name: %s, area: "%s", weight: %d },\n' % (cfg["subjects"][ar][0], json.dumps(cfg["subjects"][ar][1], ensure_ascii=False), ar, cfg["weight"][ar]) for ar in cfg["areas"])
+    subs = ", ".join('"%s"' % cfg["subjects"][ar][0] for ar in cfg["areas"])
+    cat = re.sub(r"(/\* BEGIN %s SUBJECTS[^\n]*\*/\n).*?(    /\* END %s SUBJECTS \*/)" % (sec, sec), lambda m: m.group(1) + subj + m.group(2), cat, flags=re.S)
+    cat = re.sub(r"(/\* BEGIN %s SUBS \*/).*?(/\* END %s SUBS \*/)" % (sec, sec), lambda m: m.group(1) + "[" + subs + "]" + m.group(2), cat, flags=re.S)
+    open(cp, "w", encoding="utf-8", newline="\n").write(cat)
+
+
+def write_sw(tool="build_reg.py"):
+    """Service worker file list + version (content hash of every shipped app file). Returns a report line or None."""
+    swp = os.path.join(ROOT, "sw.js")
+    if not os.path.exists(swp):
+        return None
+    files = pwa_files()
+    ver = pwa_version(files)
+    sw = open(swp, encoding="utf-8").read()
+    sw = re.sub(r"(/\* BEGIN PRECACHE[^\n]*\*/\n).*?(/\* END PRECACHE \*/)",
+                lambda m: m.group(1) + 'var VERSION = "%s";\nvar FILES = %s;\n' % (ver, json.dumps(files, indent=1)) + m.group(2), sw, flags=re.S)
+    open(swp, "w", encoding="utf-8", newline="\n").write(sw)
+    return "sw.js version %s, %d files precached" % (ver, len(files))

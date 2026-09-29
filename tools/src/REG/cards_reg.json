@@ -2868,7 +2868,7 @@
     "Items pass through by shares per day owned; seller counts through the sale date (IRC §1377)",
     "Separately stated: capital gains, §1231 gain, §179, charitable contributions, tax-exempt interest, portfolio income",
     "Ordinary income deducts wages, COGS, regular depreciation; no DRD, NOL or federal income tax deduction",
-    "More-than-2% shareholder health premiums: W-2 box 14 information item; shareholder deducts on Schedule 1",
+    "More-than-2% shareholder health premiums: W-2 box 14 information item; shareholder deducts on Schedule 1; excluded from FICA, Medicare and FUTA wages but included in income tax withholding wages (Pub. 15-B)",
     "Reasonable compensation required before distributions; IRS may recharacterize distributions as wages",
     "Distributive share taxed whether or not distributed"
    ],

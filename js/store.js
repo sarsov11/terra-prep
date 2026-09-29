@@ -71,11 +71,36 @@
      P.series (series id) · P.subs (subject id list) · P.cur (current subject). */
   var C = window.CATALOG;
   function exam() { return (C && C.exam(P.exam)) || (C && C.EXAMS[0]) || { id: "", name: "", date: null }; }
+  /* Section switch (REG / FAR / CFA): the per-exam settings are parked under P.sec[<exam id>] and the target exam's own
+     are restored, so each section keeps its own test date, weekly hours, placement result, today's split and current Area.
+     Settings saved before sections existed sit at the top level and belong to the exam that was active (REG). Question
+     history is stored per subject (te.<subject key>.v1), so REG and FAR history never mix. */
+  var SEC_KEYS = ["goal", "goalMine", "hours", "place", "planToday", "cur"];
   function setExam(id, sid) {
+    var from = P.exam || (P.onboarded ? exam().id : null);
+    if (from && from !== id) {
+      P.sec = P.sec || {};
+      var parked = {};
+      SEC_KEYS.forEach(function (k) { if (P[k] != null) parked[k] = P[k]; delete P[k]; });
+      P.sec[from] = parked;
+      var back = P.sec[id] || {};
+      SEC_KEYS.forEach(function (k) { if (back[k] != null) P[k] = back[k]; });
+    }
     P.exam = id; P.series = sid || null;
     P.subs = C ? C.subsOf(id, sid) : [];
     if (!P.goalMine) P.goal = exam().date;
     savePref();
+  }
+  /* Home switch: returns {setup: true} the first time a section is opened (the caller sends the learner to test date + placement check) */
+  function switchSection(id) {
+    var e = C && C.exam(id);
+    if (!e || P.exam === id) return { setup: false };
+    var fresh = !(P.sec && P.sec[id]);
+    setExam(id, null);
+    var ok = subs().filter(function (k) { return !window.READY || window.READY[k]; });
+    if (!P.cur || subs().indexOf(P.cur) < 0) P.cur = ok[0] || subs()[0];
+    savePref();
+    return { setup: fresh };
   }
   function subs() { return (P.subs && P.subs.length) ? P.subs.slice() : [T.key || "_sample"]; }
   function cur() { return window.TJ_CUR || T.key; }
@@ -223,7 +248,7 @@
     return s;
   }
   /* True/False sentences are not part of the REG bank any more (concept checks only) — REG sessions are multiple choice */
-  function usable(q) { return !(q.ox && /^reg_/.test(T.key || "")); }
+  function usable(q) { return !(q.ox && /^(reg|far)_/.test(T.key || "")); }
   function freshOf(no, k) {
     return qs(no).filter(function (q) { return usable(q) && !S.ans[q.i]; })
       .sort(function (a, b) { return rank(b) - rank(a); }).slice(0, k);
@@ -436,7 +461,7 @@
                  pct: n ? Math.round(ok / n * 100) : null, lo: Math.round(w.lo * 100), hi: Math.round(w.hi * 100) });
       W += wt; lo += wt * w.lo; hi += wt * w.hi; N += n; if (n) touched++;
     });
-    return { ready: N >= READY_MIN, lo: W ? Math.round(lo / W * 100) : 0, hi: W ? Math.round(hi / W * 100) : 100, n: N, areas: per, touched: touched, z: READY_Z, min: READY_MIN };
+    return { of: subs().length, ready: N >= READY_MIN, lo: W ? Math.round(lo / W * 100) : 0, hi: W ? Math.round(hi / W * 100) : 100, n: N, areas: per, touched: touched, z: READY_Z, min: READY_MIN };
   }
 
   /* === study plan ===
@@ -605,7 +630,7 @@
   var POOL = null;
   function loadPool(cb) {
     if (POOL) return cb(POOL);
-    var R = window.READY || {}, keys = Object.keys(R).filter(function (k) { return /^reg_/.test(k) && (!window.CATALOG || CATALOG.subsOf(P.exam, P.series).indexOf(k) >= 0); });
+    var R = window.READY || {}, keys = Object.keys(R).filter(function (k) { return /^(reg|far)_/.test(k) && (!window.CATALOG || CATALOG.subsOf(P.exam, P.series).indexOf(k) >= 0); });
     if (!keys.length) keys = [curKey()];
     var out = [], saved = { T: window.TREE, Q: window.QBANK, P: window.PAIRS }, i = 0;
     function done() { window.TREE = saved.T; window.QBANK = saved.Q; window.PAIRS = saved.P; POOL = out; cb(out); }
@@ -642,8 +667,11 @@
   function weightedSet(pool, n, seed, only) {
     var all = poolItems(pool).filter(function (x) { return !only || only(x); }), byA = {};
     all.forEach(function (x) { (byA[x.area] = byA[x.area] || []).push(x); });
-    var areas = Object.keys(byA), tot = areas.reduce(function (t, k) { return t + (AREA_W[k] || 10); }, 0), alloc = {}, used = 0;
-    areas.forEach(function (k) { var e = n * (AREA_W[k] || 10) / tot; alloc[k] = { c: Math.floor(e), r: e - Math.floor(e) }; used += alloc[k].c; });
+    /* weight per Area: the catalog weight of the subject the questions come from (REG and FAR both number their Areas I, II, III) */
+    var aw = {};
+    all.forEach(function (x) { aw[x.area] = (window.CATALOG && CATALOG.weight(x.key)) || AREA_W[x.area] || 10; });
+    var areas = Object.keys(byA), tot = areas.reduce(function (t, k) { return t + aw[k]; }, 0), alloc = {}, used = 0;
+    areas.forEach(function (k) { var e = n * aw[k] / tot; alloc[k] = { c: Math.floor(e), r: e - Math.floor(e) }; used += alloc[k].c; });
     areas.slice().sort(function (a, b) { return alloc[b].r - alloc[a].r; }).forEach(function (k) { if (used < n) { alloc[k].c++; used++; } });
     var pick = [];
     areas.forEach(function (k) {
@@ -776,7 +804,7 @@
     placementSet: placementSet, setPlacement: setPlacement, placement: placement,
     loadPool: loadPool, mockSet: mockSet, poolItems: poolItems, answerIn: answerIn, stateOf: stateOf,
     flagged: flagged, setFlag: setFlag, flagList: flagList, skillStats: skillStats, confOn: confOn, setConf: setConf,
-    track: track, setTrack: setTrack, exam: exam, setExam: setExam, subs: subs, cur: cur, setCur: setCur, seriesName: seriesName, goal: goal, goalMark: goalMark, setGoal: setGoal, dday: dday,
+    track: track, setTrack: setTrack, exam: exam, setExam: setExam, switchSection: switchSection, subs: subs, cur: cur, setCur: setCur, seriesName: seriesName, goal: goal, goalMark: goalMark, setGoal: setGoal, dday: dday,
     minutes: minutes, setMinutes: setMinutes, name: name, setName: setName,
     onboarded: onboarded, setOnboarded: setOnboarded,
     skin: skin, setSkin: setSkin, SKINS: SKINS,

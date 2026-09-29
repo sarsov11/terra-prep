@@ -45,6 +45,7 @@
 </head>
 <body>
 <div class="page">
+  <div class="subs" id="secs" aria-label="Section"></div>
   <div class="subs" id="subs"></div>
   <div class="exam">
     <div class="k" id="ek"></div>
@@ -74,6 +75,18 @@
   GB.mountNav("index.html");
   var $ = function (id) { return document.getElementById(id); }, esc = GB.esc;
 
+  /* CPA section switch: REG and FAR keep separate history, test date, plan and placement result */
+  var SEC = GB.exam().sec || "", secs = CATALOG.sections();
+  $("secs").innerHTML = secs.length > 1 ? secs.map(function (e) {
+    return '<a href="#" data-x="' + e.id + '"' + (e.sec === SEC ? ' class="on" aria-current="true"' : "") + ">" + esc(e.sec) + "</a>";
+  }).join("") : "";
+  $("secs").querySelectorAll("a").forEach(function (a) {
+    a.onclick = function (ev) { ev.preventDefault(); goSection(a.dataset.x); };
+  });
+  function goSection(id) {
+    var r = GB.switchSection(id);
+    location.href = r.setup ? "start.html?step=date" : "index.html";
+  }
   var tr = GB.track(), dd = GB.dday();
   $("ek").textContent = tr.name + " · " + GB.subject;
   $("subs").innerHTML = GB.subs().map(function (k) {
@@ -158,16 +171,24 @@
   })();
 
   var wrong = GB.wrongList().length, flg = GB.flagList().length, ox = GB.pairs().length > 0;
-  $("alt").innerHTML =
-    '<a class="row" href="exam.html"><span class="t"><b>Mock exam</b><span>Timed, Blueprint-weighted, with a review screen</span></span><span class="go">›</span></a>' +
-    '<a class="row" href="tbs.html"><span class="t"><b>Task-based simulations</b><span>24 TBS + partial credit by cell + new numbers</span></span><span class="go">›</span></a>' +
-    '<a class="row" href="je.html"><span class="t"><b>Journal entry drill</b><span>FAR + 150 transaction types + endless new numbers</span></span><span class="go">›</span></a>' +
-    '<a class="row" href="learn.html"><span class="t"><b>Concept cards</b><span>57 cards + 5 min each</span></span><span class="go">›</span></a>' +
-    '<a class="row" href="cards.html"><span class="t"><b>Flashcards</b><span>Made from your missed questions</span></span><span class="go">›</span></a>' +
-    (wrong ? '<a class="row" href="ox.html?mode=wrong"><span class="t"><b>Retry missed questions</b><span>' + wrong + "</span></span><span class=\"go\">›</span></a>" : "") +
-    (flg ? '<a class="row" href="ox.html?mode=flag"><span class="t"><b>Flagged questions</b><span>' + flg + "</span></span><span class=\"go\">›</span></a>" : "") +
-    (ox ? '<a class="row" href="ox.html?mode=hard"><span class="t"><b>Hard True/False</b><span>Sentences with one or two words changed to make them false</span></span><span class="go">›</span></a>' +
-    '<a class="row" href="ox.html?mode=pair"><span class="t"><b>Confusable pairs</b><span>Pick the correct one of two similar sentences</span></span><span class="go">›</span></a>' : "");
+  function row(href, t, d) { return '<a class="row" href="' + href + '"><span class="t"><b>' + t + "</b><span>" + d + '</span></span><span class="go">›</span></a>'; }
+  var rows = [];
+  if (SEC === "FAR") rows.push(row("je.html", "Journal entry drill", "150 transaction types + endless new numbers"));
+  rows.push(row("exam.html", "Mock exam", "Timed, Blueprint-weighted, with a review screen"));
+  if (SEC === "REG") {
+    rows.push(row("tbs.html", "Task-based simulations", "24 TBS + partial credit by cell + new numbers"));
+    rows.push('<a class="row" href="#" id="tofar"><span class="t"><b>Journal entry drill</b><span>FAR section → switch to FAR</span></span><span class="go">›</span></a>');
+    rows.push(row("learn.html", "Concept cards", "57 cards + 5 min each"));
+  }
+  rows.push(row("cards.html", "Flashcards", "Made from your missed questions"));
+  if (wrong) rows.push(row("ox.html?mode=wrong", "Retry missed questions", wrong));
+  if (flg) rows.push(row("ox.html?mode=flag", "Flagged questions", flg));
+  if (ox) {
+    rows.push(row("ox.html?mode=hard", "Hard True/False", "Sentences with one or two words changed to make them false"));
+    rows.push(row("ox.html?mode=pair", "Confusable pairs", "Pick the correct one of two similar sentences"));
+  }
+  $("alt").innerHTML = rows.join("");
+  if ($("tofar")) $("tofar").onclick = function (ev) { ev.preventDefault(); var f = secs.filter(function (e) { return e.sec === "FAR"; })[0]; if (f) goSection(f.id); };
 })();
 </script>
 </body>

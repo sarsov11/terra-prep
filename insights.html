@@ -34,7 +34,8 @@
   } else {
     h += '<div class="stat"><span class="big num">Estimated range ' + R.lo + "–" + R.hi + '</span><span class="muted">% correct, weighted by Area</span></div>' +
       '<div class="rng" aria-hidden="true"><i style="left:' + R.lo + "%;width:" + Math.max(1, R.hi - R.lo) + '%"></i></div>' +
-      '<p class="fine">Based on ' + R.n + " answered questions in " + R.touched + " of " + R.areas.length + " Areas" +
+      '<p class="fine">Based on ' + R.n + " answered questions in " + R.touched + " of " + R.of + " Areas" +
+      (R.of > R.areas.length ? " (" + (R.of - R.areas.length) + " without questions yet, left out)" : "") +
       (R.hi - R.lo > 40 ? " · wide range: some Areas have few or no answers" : "") + "</p>";
   }
   h += '<p class="fine">Practice scores can differ from the real exam. This is not a pass prediction. <a href="method.html#range">How it is calculated</a></p>' +

@@ -44,6 +44,7 @@
     ["method.html", "How the numbers are made", "How we pick your next question, the range and the plan", "›"],
     ["skilltree.html", "Pick a unit", "Choose a unit and solve 10, 20 or 30 questions from it", GB.nodes.length]
   ];
+  if (GB.exam().sec === "FAR") rows.unshift(["je.html", "Journal entry drill", "150 transaction types + endless new numbers", "150"]);
   if (hasOX) rows = rows.concat([
     ["ox.html?mode=hard", "Hard True/False", "True sentences with one or two words changed to make them false" + (mis ? " — starting with " + mis + " you were confident about but missed" : ""), GB.pairs().length],
     ["ox.html?mode=pair", "Confusable pairs", "Pick the true one of two similar sentences", done + " / " + GB.pairs().length],
