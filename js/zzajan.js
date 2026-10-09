@@ -275,6 +275,7 @@
   var GRADE = { C: ["#6B7280", "#D1D5DB"], B: ["#1D4ED8", "#7CB4FF"], A: ["#C81E1E", "#FF8A8A"], S: ["#B88A00", "#FFE066"] };
   function promote(from, to) { var g = GRADE[to] || GRADE.S; bigScene(g[0], g[1], to, TXT.prT(to), from ? from + " → " + to : "", to === "S" ? "fanfare" : "levelup"); }
   function stars(n) {
+    if (!(n >= 1)) return;   /* 별 0개는 부르지 않는다(40% 미만) */
     var wait = Math.max(bannerUntil, bigUntil) - Date.now();
     if (wait > 0) { setTimeout(function () { stars(n); }, wait + 60); return; }
     bigUntil = Date.now() + 2500;
