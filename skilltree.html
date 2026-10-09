@@ -930,5 +930,14 @@
   GB.mountNext();
 })();
 </script>
+<script src="js/zzsfx.js?v=1009a" defer></script><script src="js/zzajan.js?v=1009a" defer></script><script src="js/zzcoach.js?v=1009a" defer></script>
+<script>
+/* 첫 진입 안내(zzcoach.js, defer 라 load 뒤에 부른다). 한 번 보면 다시 안 뜬다 */
+window.addEventListener("load", function () { if (!window.ZZCOACH) return; ZZCOACH.run("terra-prep.skilltree", [
+  { el: function () { var t = document.querySelector(".tabbar a"); if (t && t.offsetParent) return t; return document.querySelector(".navlinks a"); }, text: "Start today's questions right from Home" },
+  { el: function () { var l = document.querySelector("#treelist .mrow"); return (l && l.offsetParent) ? l : document.querySelector(".board"); }, text: "Map of the exam scope: parts, then sections, then topics. Start practice from a topic" },
+  { el: "#legend", text: "Circle color shows mastery: S 80+, A 60+, B 30+, C under 30, – not started. Circle size shows how much you studied" }
+], { delay: 900 }); });
+</script>
 </body>
 </html>

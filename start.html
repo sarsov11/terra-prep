@@ -171,6 +171,7 @@
             if (x.dataset.a === q.ox) x.dataset.s = "ok"; else if (x.dataset.a === a) x.dataset.s = "no";
           });
           A.rec.push({ id: q.i, ok: ok, ms: ms, to: to });
+          if (window.ZZ) { if (ok) ZZ.ok(document.querySelector('#oxb [data-s="ok"]')); else ZZ.no(document.querySelector('#oxb [data-s="no"]')); }
           GB.answer(q.i, ok, { ms: ms, kind: to ? "timeout" : ok ? "right" : "wrong" });
           i++; setTimeout(one, ok ? 450 : 1100);
         }
@@ -198,6 +199,7 @@
       /* ★ "start here" must match what Home actually picks as today's work — a mismatch confuses the learner */
       var from = GB.today().foci.slice(0, 3);
       var fast = A.rec.filter(function (r) { return r.ok && r.ms < 6000; }).length;
+      if (window.ZZ && p.n && !A.starred) { A.starred = 1; var rr = p.ok / p.n; var kk = rr >= 1 ? 3 : rr >= 0.7 ? 2 : rr >= 0.4 ? 1 : 0; if (kk) ZZ.stars(kk); }
       $("scr").innerHTML = "<h1>" + (p.n ? p.ok + " of " + p.n + " correct" : "Great, let’s dive in") + "</h1>" +
         (p.n ? '<p class="lead">' + fast + " answered instantly (under 6s) · " + A.rec.filter(function (r) { return r.to; }).length + " timed out</p>" : "") +
         '<div class="body">' +
@@ -213,5 +215,6 @@
   go(startStep && STEPS.indexOf(startStep) >= 0 ? STEPS.indexOf(startStep) : 0);
 })();
 </script>
+<script src="js/zzsfx.js?v=1009a" defer></script><script src="js/zzajan.js?v=1009a" defer></script>
 </body>
 </html>
