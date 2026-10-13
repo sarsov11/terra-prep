@@ -65,7 +65,7 @@
     var pl = (nodeNo ? GB.pairs(nodeNo) : GB.pairs()).filter(function (p) { return !GB.state().pairs[p.id] || !GB.state().pairs[p.id].ok; });
     shuffle(pl, 17);
     seq = pl.slice(0, 10).map(function (p) { return { k: "pair", id: p.id }; });
-    $("ttl").textContent = "Confusable pairs";
+    $("ttl").textContent = "Pick the true statement";
   } else if (mode === "hard") {
     /* hard True/False — the **false side** of a confusable pair (differs from the true
        sentence by only a word or two) + sentences the learner was confident about but missed.
@@ -86,7 +86,8 @@
   }
 
   var pos = 0, results = [], streakBy = {};
-  /* 짜잔 3판 — 세트 안에서 쟁점 등급(S·A·B·C)이 오르면 끝에 승급 연출 */
+  var planned = seq.length, extraCnt = 0;   /* - */
+  /* - */
   var tierBefore = {}, TORD = { L: 0, C: 1, B: 2, A: 3, S: 4 };
   function curTier(no) { var s = GB.nodeStat(no), a = s.achieve; return !s.solved ? "L" : a >= 80 ? "S" : a >= 60 ? "A" : a >= 30 ? "B" : "C"; }
   function noteTier(no) { if (!(no in tierBefore)) tierBefore[no] = curTier(no); }
@@ -192,7 +193,7 @@
         var extra = null;
         if (!ok || j.next === "same" || j.next === "similar") {
           var more = GB.freshOf(q.n, 3).filter(function (x) { return !seq.some(function (y) { return y.id === x.i; }); })[0];
-          if (more) { extra = more; seq.splice(pos + 1, 0, { k: "ox", id: more.i, add: 1 }); if (mode === "today") todayIdx.splice(pos + 1, 0, -1); drawProg(); }
+          if (more && extraCnt < Math.max(4, Math.ceil(planned / 3))) { extraCnt++; extra = more; seq.splice(pos + 1, 0, { k: "ox", id: more.i, add: 1 }); if (mode === "today") todayIdx.splice(pos + 1, 0, -1); drawProg(); }
         }
 
         var h = '<div class="verdict ' + j.tone + '"><div class="top"><span class="mk">' + (ok ? "✓" : "✕") + "</span>" +
@@ -204,12 +205,12 @@
         var p = pairOf(q.i);
         if (p) {
           var d = GB.markDiff(p.o.t, p.x.t);
-          expl += '<div class="pair"><div class="lab">Confusable pair — the difference is highlighted</div>' +
+          expl += '<div class="pair"><div class="lab">Pick the true statement — the difference is highlighted</div>' +
                '<p><b style="color:var(--ok)">True</b> ' + d[0] + "</p>" +
                '<p><b style="color:var(--no)">False</b> ' + d[1] + "</p></div>";
         } else if (!mc && q.ox === "X") {
           var o = nearestO(q);
-          if (o) expl += '<div class="pair"><div class="lab">A true past sentence on the same topic — ' + esc(GB.src(o)) + "</div><p>" + GB.markDiff(o.t, q.t)[0] + "</p></div>";
+          if (o) expl += '<div class="pair"><div class="lab">A true statement on the same topic — ' + esc(GB.src(o)) + "</div><p>" + GB.markDiff(o.t, q.t)[0] + "</p></div>";
         }
         if (expl) h += '<div class="expl" id="expl"><button type="button">Show explanation</button><div class="body">' + expl + "</div></div>";
         if (extra) h += '<p class="more">Added one more on ' + esc(GB.node(q.n).name) + " right after this one.</p>";
@@ -234,8 +235,8 @@
     var flip = (p.id.charCodeAt(p.id.length - 1) + new Date().getDate()) % 2 === 1;   /* so learners can't just memorize a position */
     var A = flip ? [p.x, p.o] : [p.o, p.x], done = false;
     $("stage").innerHTML =
-      '<div class="qcard"><div class="src">' + nodeChip(p.n) + '<span class="chip cta">Confusable pair</span></div>' +
-      '<p class="sent" style="font-size:17px">Of these two past-question sentences, pick the <b>true</b> one.</p>' +
+      '<div class="qcard"><div class="src">' + nodeChip(p.n) + '<span class="chip cta">Pick the true statement</span></div>' +
+      '<p class="sent" style="font-size:17px">Of these two statements, pick the <b>true</b> one.</p>' +
       '<div class="two" id="two">' + A.map(function (x, i) {
         return '<button type="button" data-i="' + x.i + '"><b>' + "AB"[i] + '</b><span class="tx">' + esc(x.t) + "</span></button>";
       }).join("") + "</div></div><div id=\"after\"></div>";
@@ -264,12 +265,12 @@
     });
   }
 
-  /* ── read the true sentences — shows the true past-question sentences for this topic, collected ── */
+  /* ── read the true sentences — shows the true statements for this topic, collected ── */
   function showRead(no, back) {
     var nd = GB.node(no);
     var os = GB.qs(no).filter(function (q) { return q.ox === "O"; })
       .sort(function (a, b) { return (b.y || 0) - (a.y || 0); }).slice(0, 12);
-    var h = '<div class="readhd"><h2>' + esc(nd.name) + " — true past-question sentences</h2></div>" +
+    var h = '<div class="readhd"><h2>' + esc(nd.name) + " — true statements</h2></div>" +
       '<p class="muted" style="margin:4px 0 0;font-size:14.5px">Only sentences the exam tested as true, newest first.</p>' +
       '<div class="readlist">' + os.map(function (q) { return "<p>" + esc(q.t) + "<small>" + esc(GB.src(q)) + "</small></p>"; }).join("") + "</div>" +
       '<div class="acts">' + (back ? '<button class="btn" id="nx">Keep solving</button>'
@@ -283,7 +284,13 @@
   function runSpeed() {
     var pool = [];
     GB.focusNodes(6).forEach(function (n) { pool = pool.concat(GB.qs(n.no).filter(function (q) { return q.t.length <= 80 && !q.sa && !q.mc; })); });
+    /* - */
+    if (pool.length < 12) {
+      var all = []; GB.nodes.forEach(function (n) { all = all.concat(GB.qs(n.no).filter(function (q) { return !q.sa && !q.mc; })); });
+      all.sort(function (x, y) { return x.t.length - y.t.length; }); pool = all.slice(0, 40);
+    }
     shuffle(pool, Date.now() % 997);
+    if (!pool.length) { $("stage").innerHTML = '<div class="empty">This subject has no short sentences for the 60-second sprint yet.<div class="acts" style="justify-content:center;margin-top:18px"><a class="btn ghost" href="drill.html">Training</a><a class="btn" href="skilltree.html">Pick a topic</a></div></div>'; return; }
     var end = Date.now() + 60000, i = 0, ok = 0, n = 0;
     function one() {
       if (Date.now() >= end || i >= pool.length) return fin();
@@ -352,8 +359,11 @@
   if (mode === "speed") { runSpeed(); return; }
   if (!seq.length) {
     $("stage").innerHTML = '<div class="empty">' + (mode === "today" ? "You’ve finished today’s work. See you tomorrow." :
-      mode === "wrong" ? "No missed sentences." : "There’s nothing to solve here.") +
-      '<div class="acts" style="justify-content:center;margin-top:18px"><a class="btn" href="index.html">Home</a></div></div>';
+      mode === "wrong" ? "No missed sentences." :
+      mode === "pair" ? (!GB.pairs().length ? "This subject has no statement pairs yet." : "You got every statement pair right.") :
+      mode === "hard" ? (!GB.pairs().length ? "This subject has no sentences for Hard True/False yet." : "There’s nothing to solve here.") : "There’s nothing to solve here.") +
+      '<div class="acts" style="justify-content:center;margin-top:18px"><a class="btn ghost" href="index.html">Home</a>' +
+      (mode === "today" ? "" : '<a class="btn" href="skilltree.html">Pick a topic</a>') + '</div></div>';
     return;
   }
   pos = -1; next();

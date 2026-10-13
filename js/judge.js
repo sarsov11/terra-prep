@@ -251,8 +251,8 @@
     same:    { t: "One more on this concept", why: "Another question on the same concept" },
     similar: { t: "One more like this", why: "Another similar question" },
     easier:  { t: "Start easier", why: "An easier question first" },
-    concept: { t: "Read the source", why: "Read every correct released sentence on this topic" },
-    lecture: { t: "Read the source", why: "Read every correct released sentence on this topic" }
+    concept: { t: "Read the source", why: "Read every true statement on this topic" },
+    lecture: { t: "Read the source", why: "Read every true statement on this topic" }
   };
 
   window.JUDGE = {

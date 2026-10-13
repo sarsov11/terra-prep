@@ -74,7 +74,7 @@
       };
     });
   }
-  function drawGoal() { $("goal").value = GB.goal(); $("gm").textContent = GB.goalMark(); }
+  function drawGoal() { $("goal").value = GB.goalSet() ? GB.goal() : ""; $("gm").textContent = GB.goalSet() ? GB.goalMark() : "not set"; }
   $("trk").textContent = GB.track().name + " · Change";
   $("trk").onclick = function () { location.href = "start.html?step=exam"; };
   drawGoal();

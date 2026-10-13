@@ -71,7 +71,7 @@
 
   var SCREENS = {
     intro: function () {
-      $("scr").innerHTML = '<h1>Solve True/False<br>from real past questions</h1>' +
+      $("scr").innerHTML = '<h1>Solve True/False<br>with practice questions</h1>' +
         '<p class="lead">Just the time you set, once a day. We pick today’s work for you.</p>' +
         '<div class="body"></div><div class="foot"><button class="btn block" id="n">Get started</button></div>';
       $("n").onclick = nextStep;
@@ -87,7 +87,7 @@
     exam: function () {
       var cur = null;
       try { cur = (JSON.parse(localStorage.getItem("te.pref.v1") || "{}").exam) || null; } catch (e) {}
-      $("scr").innerHTML = "<h1>Which exam are you taking?</h1><p class=\"lead\">We’ll set up subjects and past questions to match.</p>" +
+      $("scr").innerHTML = "<h1>Which exam are you taking?</h1><p class=\"lead\">We’ll set up subjects and practice questions to match.</p>" +
         '<div class="body"><div class="opts" id="op">' + CATALOG.EXAMS.map(function (e) {
           return '<button type="button" data-v="' + e.id + '" aria-pressed="' + (e.id === cur) + '">' + e.name + "<small>" + e.sub + "</small></button>";
         }).join("") + "</div></div>";
@@ -118,7 +118,7 @@
         '<div class="body"><div class="opts">' + ss.map(function (k) {
           var r = CATALOG.ready(k);
           return '<button type="button" disabled style="cursor:default;opacity:1">' + CATALOG.name(k) + "<small>" +
-            (r ? GB.num(CATALOG.count(k)) + " past questions" : "Coming soon") + "</small></button>";
+            (r ? GB.num(CATALOG.count(k)) + " practice questions" : "Coming soon") + "</small></button>";
         }).join("") + "</div></div>" +
         '<div class="foot"><button class="btn block" id="n">Looks good</button></div>';
       $("n").onclick = nextStep;
@@ -126,8 +126,8 @@
     date: function () {
       var tr = GB.track();
       $("scr").innerHTML = "<h1>Test date</h1><p class=\"lead\">" + esc(GB.exam().name) + " is offered year-round, so there’s no single fixed date — enter the date you’ve scheduled (or plan to schedule) with the testing center.</p>" +
-        '<div class="body"><div class="dateline num"><span id="dv">' + (GB.goal() ? GB.goal().replace(/-/g, "/") : "Not set") + '</span><span class="chip" id="dm">' + GB.goalMark() + "</span></div>" +
-        '<input type="date" id="di" value="' + (GB.goal() || "") + '"></div>' +
+        '<div class="body"><div class="dateline num"><span id="dv">' + (GB.goalSet() ? GB.goal().replace(/-/g, "/") : "Not set") + '</span><span class="chip" id="dm">' + (GB.goalSet() ? GB.goalMark() : "") + "</span></div>" +
+        '<input type="date" id="di" value="' + (GB.goalSet() ? GB.goal() : "") + '"></div>' +
         '<div class="foot"><button class="btn block" id="n">Use this date</button><button class="skip" id="later">I’ll set this later</button></div>';
       $("di").onchange = function () {
         if (!this.value) return;
@@ -212,6 +212,10 @@
       $("n").onclick = function () { GB.setOnboarded(); location.href = "index.html"; };
     }
   };
+  /* ?exam=<exam id> — entry from the hub cards (2026-10-13). A learner already set to that exam goes to Home */
+  var examParam = new URLSearchParams(location.search).get("exam"), picked = examParam && CATALOG.exam(examParam);
+  if (picked && GB.onboarded() && GB.exam().id === picked.id) { location.replace("index.html"); return; }
+  if (picked) { GB.setExam(picked.id, null); go(STEPS.indexOf(picked.series ? "series" : "subs")); return; }
   go(startStep && STEPS.indexOf(startStep) >= 0 ? STEPS.indexOf(startStep) : 0);
 })();
 </script>

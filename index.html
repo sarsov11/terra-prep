@@ -78,7 +78,7 @@
     if (!CATALOG.ready(k)) return "<span>" + esc(CATALOG.name(k)) + "<small>Coming soon</small></span>";
     return '<a href="index.html?s=' + k + '"' + (k === GB.cur() ? ' class="on"' : "") + ">" + esc(CATALOG.name(k)) + "</a>";
   }).join("");
-  $("ed").innerHTML = (dd > 0 ? "D-" + dd : dd === 0 ? "D-DAY" : "Exam date passed") + "<small>" + GB.goal().replace(/-/g, "/") +
+  $("ed").innerHTML = !GB.goalSet() ? "Test date not set<small>Add it in Settings</small>" : (dd > 0 ? "D-" + dd : dd === 0 ? "D-DAY" : "Exam date passed") + "<small>" + GB.goal().replace(/-/g, "/") +
     ' <span class="chip">' + GB.goalMark() + "</span></small>";
 
   var t = GB.today(), nm = GB.name();
@@ -90,12 +90,12 @@
     h = '<h2>You’re done for today</h2><p class="t">You finished ' + t.total + " sentences. Want more? Try the hard True/False set.</p>" +
         '<div style="margin-top:18px"><a class="btn block" href="ox.html?mode=hard">Hard True/False</a></div>';
   } else {
-    h = '<h2>' + (nm ? esc(nm) + ", " : "") + (t.done ? "Let’s keep going — " : "") + "how about " + t.min + " minutes?</h2>" +
+    h = '<h2>' + (nm ? esc(nm) + " · " : "") + (t.done ? "Continue · " : "Today · ") + t.min + " min</h2>" +
         '<p class="t">About ' + t.min + " min · " + t.total + " sentences</p>" +
         "<ul>" +
         (t.re ? "<li><b class=\"num\">" + t.re + "</b><span>Review — missed items, or ones due for another look</span></li>" : "") +
         "<li><b class=\"num\">" + newN + "</b><span>New — " + esc(foci.join(" · ")) + "</span></li>" +
-        (prN ? "<li><b class=\"num\">" + prN + "</b><span>Confusable pairs</span></li>" : "") +
+        (prN ? "<li><b class=\"num\">" + prN + "</b><span>Pick the true statement</span></li>" : "") +
         "</ul>" +
         (t.done ? '<div class="bar"><i style="width:' + Math.round(t.done / t.total * 100) + '%"></i></div>' : "") +
         '<a class="btn block" href="ox.html">' + (t.done ? "Continue · " + t.done + " / " + t.total : "Start") + "</a>";
@@ -136,7 +136,7 @@
   var wrong = GB.wrongList().length;
   $("alt").innerHTML =
     '<a class="row" href="ox.html?mode=hard"><span class="t"><b>Hard True/False</b><span>Sentences with one or two words changed to make them false</span></span><span class="go">›</span></a>' +
-    '<a class="row" href="ox.html?mode=pair"><span class="t"><b>Confusable pairs</b><span>Pick the correct one of two similar past-question sentences</span></span><span class="go">›</span></a>' +
+    '<a class="row" href="ox.html?mode=pair"><span class="t"><b>Pick the true statement</b><span>Two statements that differ by a word or two</span></span><span class="go">›</span></a>' +
     (wrong ? '<a class="row" href="ox.html?mode=wrong"><span class="t"><b>Retry missed sentences</b><span>' + wrong + "</span></span><span class=\"go\">›</span></a>" : "");
 })();
 </script>

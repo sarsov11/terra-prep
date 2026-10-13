@@ -77,6 +77,8 @@
   function track() { var e = exam(); return { id: e.id, name: e.name + (seriesName() ? " " + seriesName() : ""), exam: e.name, date: e.date }; }
   function setTrack(id) { setExam(id, P.series); }
   function goal() { return P.goal || exam().date || TODAY; }
+  /* Exams with no fixed date: goal() falls back to today. goalSet() tells whether a date was actually entered. */
+  function goalSet() { return !!(P.goal || exam().date); }
   function goalMark() { return P.goalMine ? "custom" : "default"; }
   function setGoal(d, mine) { P.goal = d || null; P.goalMine = !!mine; savePref(); }
   function dday() { return dayNo(goal()) - TODAYN; }
@@ -121,7 +123,7 @@
   function nodeStat(no) {
     var list = qs(no), solved = 0, correct = 0, last = null;
     for (var i = 0; i < list.length; i++) {
-      var a = S.ans[list[i].i];
+      var a = S.ans[list[i].i] || twin(list[i]);
       if (a) { solved++; if (a.ok) correct++; if (!last || a.at > last) last = a.at; }
     }
     var n = list.length;
@@ -169,9 +171,26 @@
     if (q.c === "A") s += 1;
     return s;
   }
+  /* - */
+  function qkey(q) {
+    if (q._k) return q._k;
+    var m = q.mc;
+    return (q._k = (m ? m.s + "|" + (m.o || []).join("/") + "|" + (m.d || "") + "|" + m.a : q.t + "|" + q.ox).replace(/\s+/g, ""));
+  }
+  /* - */
+  var KEYIDS = null;
+  function twin(q) {
+    if (!KEYIDS) { KEYIDS = {}; Object.keys(ITEM).forEach(function (id) { var k = qkey(ITEM[id]); (KEYIDS[k] = KEYIDS[k] || []).push(id); }); }
+    var l = KEYIDS[qkey(q)];
+    if (l.length > 1) for (var i = 0; i < l.length; i++) if (l[i] !== q.i && S.ans[l[i]]) return S.ans[l[i]];
+    return null;
+  }
   function freshOf(no, k) {
+    var seen = {};
+    Object.keys(S.ans).forEach(function (id) { if (ITEM[id]) seen[qkey(ITEM[id])] = 1; });
     return qs(no).filter(function (q) { return !S.ans[q.i]; })
-      .sort(function (a, b) { return rank(b) - rank(a); }).slice(0, k);
+      .sort(function (a, b) { return rank(b) - rank(a); })
+      .filter(function (q) { var key = qkey(q); if (seen[key]) return false; seen[key] = 1; return true; }).slice(0, k);
   }
   /* today's review — items whose due date has arrived. Misses (box 0) come first */
   function dueList() {
@@ -184,7 +203,7 @@
       .sort(function (a, b) { return S.ans[b].at - S.ans[a].at; });
   }
 
-  /* today's focus topics — lots of past questions (q), still not mastered. Weak areas from the placement test get extra weight */
+  /* today's focus topics — lots of practice questions (q), still not mastered. Weak areas from the placement test get extra weight */
   function focusNodes(k) {
     var weakPart = (S.place && S.place.weakPart) || null;
     return T.nodes.filter(function (n) { return n.q > 0 && freshOf(n.no, 1).length; })
@@ -208,7 +227,7 @@
     if (S.today && S.today.date === TODAY && S.today.min === minutes()) return decorate(S.today);
     /* ★ workload is filled by time (seconds) — one True/False sentence is about 20s, a past
        question (source + 4-5 choices) is about 60s (estimate, not yet measured).
-       For a subject that is nothing but "solve past questions," assigning 45 items to
+       For a subject that is nothing but "solve practice questions," assigning 45 items to
        a 15-minute budget would never let the learner reach the end. */
     function secondsFor(id) { var q = ITEM[id]; return q && q.mc ? SEC_MC : SEC_PER; }
     var budget = minutes() * 60, used = 0;
@@ -217,8 +236,8 @@
     var foci = focusNodes(3), fresh = [], seen = {};
     function fill(no, cap) {
       freshOf(no, 60).some(function (q) {
-        if (used + secondsFor(q.i) > cap || seen[q.i]) return used + SEC_PER > cap;
-        fresh.push(q.i); seen[q.i] = 1; used += secondsFor(q.i); return false;
+        if (used + secondsFor(q.i) > cap || seen[q.i] || seen[qkey(q)]) return used + SEC_PER > cap;
+        fresh.push(q.i); seen[q.i] = 1; seen[qkey(q)] = 1; used += secondsFor(q.i); return false;
       });
     }
     var share = (budget - 40 - used) / Math.max(1, foci.length);   /* reserve 40s for pairs */
@@ -227,7 +246,7 @@
     /* 2 confusable pairs — from today's focus topics, not yet answered */
     var ps = [];
     foci.forEach(function (n) { pairs(n.no).forEach(function (p) { if (!S.pairs[p.id] && ps.length < 2) ps.push(p.id); }); });
-    if (ps.length < 2) PR.forEach(function (p) { if (!S.pairs[p.id] && ps.length < 2) ps.push(p.id); });
+    if (ps.length < 2) PR.forEach(function (p) { if (!S.pairs[p.id] && ps.length < 2 && ps.indexOf(p.id) < 0) ps.push(p.id); });
     /* order — review first, pairs interleaved between new sentences */
     var seq = due.map(function (id) { return { k: "ox", id: id, re: 1 }; });
     fresh.forEach(function (id, i) {
@@ -368,7 +387,7 @@
     var nav = document.createElement("div");
     nav.className = "nav";
     nav.innerHTML = '<div class="in"><a class="logo" href="index.html"><i></i>' + esc(window.BRAND || T.brand) +
-      '<span class="sub">' + esc(T.subject) + "</span></a>" +
+      '<span class="sub"><span class="vh"> · </span>' + esc(T.subject) + "</span></a>" +
       '<nav class="navlinks">' + PAGES.map(function (p) {
         return '<a href="' + p[0] + '"' + (p[0] === here ? ' class="on"' : "") + ">" + p[1] + "</a>";
       }).join("") + "</nav></div>";
@@ -408,7 +427,7 @@
     dueList: dueList, wrongList: wrongList, focusNodes: focusNodes, freshOf: freshOf,
     today: today, markToday: markToday, streak: streak, todayCount: todayCount, tier: tier, tierOn: tierOn, setTierOn: setTierOn, days: days, SEC_PER: SEC_PER,
     placementSet: placementSet, setPlacement: setPlacement, placement: function () { return S.place || null; },
-    track: track, setTrack: setTrack, exam: exam, setExam: setExam, subs: subs, cur: cur, setCur: setCur, seriesName: seriesName, goal: goal, goalMark: goalMark, setGoal: setGoal, dday: dday,
+    track: track, setTrack: setTrack, exam: exam, setExam: setExam, subs: subs, cur: cur, setCur: setCur, seriesName: seriesName, goal: goal, goalSet: goalSet, goalMark: goalMark, setGoal: setGoal, dday: dday,
     minutes: minutes, setMinutes: setMinutes, name: name, setName: setName,
     onboarded: onboarded, setOnboarded: setOnboarded,
     skin: skin, setSkin: setSkin, SKINS: SKINS,
