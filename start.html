@@ -103,7 +103,8 @@
     series: function () {
       var e = GB.exam();
       if (!e.series) return go(STEPS.indexOf("subs"));
-      $("scr").innerHTML = "<h1>Which track?</h1><p class=\"lead\">" + esc(e.name) + " — each track has different subjects.</p>" +
+      if (e.series.length === 1) { GB.setExam(e.id, e.series[0].id); return go(STEPS.indexOf("subs")); }   /* only one choice: skip the question */
+      $("scr").innerHTML = "<h1>" + esc(e.seriesQ || "Which track?") + "</h1><p class=\"lead\">" + esc(e.name) + " · " + esc(e.seriesLead || "Each track has different subjects.") + "</p>" +
         '<div class="body"><div class="opts" id="op">' + e.series.map(function (x) {
           return '<button type="button" data-v="' + x.id + '">' + x.name + "<small>" +
             x.subs.map(function (k) { return CATALOG.name(k); }).join(" · ") + "</small></button>";
