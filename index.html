@@ -141,5 +141,15 @@
 })();
 </script>
 <script src="js/zzsfx.js?v=1009a" defer></script><script src="js/zzajan.js?v=1009a" defer></script>
+<script src="js/zzstrat.js?v=1020s"></script><script src="js/zzstrat_us_cpa.js?v=1020s"></script><script src="js/zzstrat_us_cfa.js?v=1020s"></script>
+<script>
+/* Pass plan briefing per exam. First visit opens the guided tour; afterwards the Pass plan button reopens it */
+(function () {
+  try {
+    var id = { cpa: "us_cpa", cfa1: "us_cfa" }[GB.exam().id];
+    if (id) ZZSTRAT.auto(id);
+  } catch (x) { }
+})();
+</script>
 </body>
 </html>
