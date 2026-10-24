@@ -5,6 +5,16 @@ ZZSTRAT.add({
   "기준": "2026 topic weights",
   "방식": "상대",
   "한줄": "The estimated pass line has sat near 69 percent for the last several windows. Ethics, FSA, Equity and Fixed Income are 97 of the 180 questions, and that is where either target is won.",
+  "이야기": [
+    "Level I is **180** three-option questions in two sessions, with no penalty for a wrong answer.",
+    "The pass line is not published. Outside estimates put it near **69%**, about **125** questions.",
+    "Ethics, FSA, Equity and Fixed Income are **97** of the 180 questions. Either target is won there.",
+    "Fixed Income, FSA, Portfolio Management, Quant and Derivatives are the topics passers rank hardest.",
+    "Equity, Alternatives and Corporate Issuers are the easy marks. Take every one of them.",
+    "Start with Quant for time value of money. Finish with Economics and Ethics, which are memorization.",
+    "You get about **90 seconds** a question. Strike out, flag, move on, and leave nothing blank.",
+    "Passers report about **300 hours** over three to seven months."
+  ],
   "합격선": {
     "설명": "180 three-option questions in two sessions of 90, about 135 minutes each, with no penalty for wrong answers. CFA Institute sets a minimum passing score for each window and does not publish it; your score report only shows where it fell. There is no per-topic minimum.",
     "과락": "No per-topic minimum. One overall pass line per exam window",
