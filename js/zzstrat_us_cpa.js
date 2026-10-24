@@ -1,4 +1,4 @@
-/* Pass plan — US CPA, REG (2026-10-21 revision, Terra Prep). Tier shares = Terra Prep REG bank by blueprint task (questions built from blueprint task mapping). Business Law has no bank items yet, so no tiers. */
+/* Pass plan — US CPA, REG (2026-10-21 revision, Terra Prep). Tier shares = Terra Prep REG bank by blueprint task (questions built from blueprint task mapping). Business Law has no bank items yet, so no tiers. Revised 2026-10-24 from YouTube instructor and candidate transcripts. */
 ZZSTRAT.add({
   "id": "us_cpa",
   "이름": "US CPA — REG",
@@ -33,7 +33,7 @@ ZZSTRAT.add({
       "id": "edge",
       "이름": "Just clear the line",
       "목표": 68,
-      "설명": "Three points above the commonly estimated two-thirds line. Study the S and A content in Areas IV and V hard and guess on the rest.",
+      "설명": "Three points above the commonly estimated two-thirds line. Study Individuals and Entities hard, give Business Law one pass with its multiple choice, and guess on the rest.",
       "범위": {
         "S": "전부",
         "A": "전부",
@@ -46,7 +46,7 @@ ZZSTRAT.add({
       "id": "safe",
       "이름": "Clear with room",
       "목표": 78,
-      "설명": "Thirteen points above the estimated line. Cover B content in every Area and the short C items.",
+      "설명": "Thirteen points above the estimated line. Cover B content in every Area, practise simulations on top of multiple choice, and skim the short C items.",
       "범위": {
         "S": "전부",
         "A": "전부",
@@ -64,7 +64,7 @@ ZZSTRAT.add({
       "역할": "전략",
       "목표": 23,
       "목표문항": "23 of 27 points",
-      "이유": "Weighted 22 to 32 percent. Gross income, deductions and loss limits make up most of it, and each rule sits in a single Code section you can quote.",
+      "이유": "Weighted 22 to 32 percent, and together with Entities it is over 60 percent of the exam, so most study hours go here. Every question sits on one line of Form 1040: gross income, adjustments to AGI, deductions, credits.",
       "지표": {
         "범위": "보통"
       },
@@ -124,11 +124,11 @@ ZZSTRAT.add({
       "역할": "전략",
       "목표": 22,
       "목표문항": "22 of 28 points",
-      "이유": "Weighted 23 to 33 percent, the largest Area. C corporation rate, the dividends-received deduction, §274 limits and depreciation lives are fixed numbers that show up in both multiple choice and simulations.",
+      "이유": "Weighted 23 to 33 percent, the largest Area; Breezy Smiles, who passed first try, calls entity tax the material she had to learn almost from scratch. Partnership basis and the S corporation rules come up as simulations, not only as multiple choice.",
       "지표": {
         "범위": "넓음"
       },
-      "선": "The 21 percent corporate rate, the 50/65/100 DRD tiers, MACRS lives (27.5 and 39 years), and the meals and entertainment limits.",
+      "선": "Partnership basis (debt raises it, S corporation debt does not), ordinary income versus separately stated items, S election eligibility, and the 21 percent corporate rate.",
       "버림": "Multi-year partnership basis roll-forwards with special allocations take a full simulation's worth of time. Do them last.",
       "예시": [
         {
@@ -184,7 +184,7 @@ ZZSTRAT.add({
       "역할": "방어",
       "목표": 14,
       "목표문항": "14 of 20 points",
-      "이유": "Weighted 15 to 25 percent, but contracts, agency, debtor-creditor and entity formation are broad and reward memorization less than the tax Areas. Hold it near two thirds and earn the margin in IV and V.",
+      "이유": "Weighted 15 to 25 percent and tested mostly as recall. Two candidates who failed REG once name Business Law as what cost them; one pass through the material plus its multiple choice is what passers describe.",
       "지표": {
         "범위": "넓음"
       },
@@ -211,7 +211,7 @@ ZZSTRAT.add({
       "역할": "기본",
       "목표": 11,
       "목표문항": "11 of 15 points",
-      "이유": "Weighted 10 to 20 percent. Circular 230 duties, preparer penalties and deficiency procedure deadlines are a short list of fixed numbers.",
+      "이유": "Weighted 10 to 20 percent and tested as recall: Circular 230, preparer versus taxpayer penalties, deficiency deadlines. Passers call it easier than the ethics in AUD.",
       "지표": {
         "범위": "좁음"
       },
@@ -310,12 +310,55 @@ ZZSTRAT.add({
     }
   ],
   "순서": [
-    "REG is 72 multiple choice in two testlets and 8 simulations in three. Finish each multiple-choice testlet in under 45 minutes to bank time for the simulations, which carry half the score.",
-    "Never leave a simulation blank. Partial credit is awarded cell by cell, so fill every required cell before going back to a hard one."
+    "Passers report 110 to 140 hours over 4 to 8 weeks. Review-course mocks grade harder than the real exam: candidates scoring 58 to 69 percent on mocks passed with 78 to 81.",
+    "REG has the most multiple choice of any section. Finish each multiple-choice testlet in under 45 minutes, cap any simulation at 25 to 30 minutes, and reach every simulation, since partial credit counts and one is an unscored pretest."
   ],
   "출처": [
     "AICPA, Learn more about CPA Exam scoring and pass rates",
     "AICPA 2025 quarterly pass rates",
-    "REG blueprint Area weights effective 2026 (as reported by review providers)"
+    "REG blueprint Area weights effective 2026 (as reported by review providers)",
+    "YouTube instructor and candidate videos (10 transcripts read)"
+  ],
+  "근거영상": [
+    {
+      "url": "https://www.youtube.com/watch?v=GWOHAK9tbUI",
+      "누구": "Maxwell CPA Review (scored 91)",
+      "요지": "Individual and entity tax are over 60% of REG; spend most hours there. 140 hours in 7-8 weeks: 2.5 h of new material on weeknights, 5 h of practice each weekend day"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zQ2JslDQMXE",
+      "누구": "Maxwell CPA Review",
+      "요지": "Partnership basis, ordinary income vs separately stated items, cash-to-accrual and above- vs below-the-line deductions show up on every form"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=opZc-6o8J3g",
+      "누구": "Breezy Smiles (passed REG first try)",
+      "요지": "Since 2024 the harder property and 1231/1245/1250 topics moved to TCP. Inflation-adjusted amounts are given on the exam, so learn how to use them, not the numbers"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=TVh_dGSFYjg",
+      "누구": "Just Effa (failed once, then passed with her highest score)",
+      "요지": "Do not underestimate Business Law: it is a small share of the material but carries many questions"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cveET72a6V8",
+      "누구": "Punto Base (passed in 4 weeks, scored 81)",
+      "요지": "Business Law is a quarter of the material; one pass plus multiple choice is enough. REG has the most MCQs and ran closest to time. Mock 69 led to an 81"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=U_pqVj80CFc",
+      "누구": "Sean Todd (78 in 20 days)",
+      "요지": "Mock exams scored 58% and the real exam 78; review mocks grade harder than the real exam. Aim for about 75% per section in practice"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Xc3n0uavmXg",
+      "누구": "Lindsey Davis (passed in 1 month)",
+      "요지": "Multiple choice did most of the work; 3 weeks of new material, the 4th week for mocks and MCQ review"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KY6Ay-EFXpA",
+      "누구": "Breezy Smiles",
+      "요지": "Cap a document-review simulation at 25-30 minutes and reach every simulation; one simulation is an unscored pretest"
+    }
   ]
 });

@@ -83,7 +83,9 @@
   function setGoal(d, mine) { P.goal = d || null; P.goalMine = !!mine; savePref(); }
   function dday() { return dayNo(goal()) - TODAYN; }
 
-  function minutes() { return P.minutes || 15; }
+  /* Daily-minute options are per exam (catalog "mins"), set from what passing candidates report — no shared 10-30 minute list (2026-10-21) */
+  function minPlan() { var sr = C && C.series(P.exam, P.series), e = exam(); return (sr && sr.mins) || e.mins || { opts: [10, 15, 20, 30], rec: 15 }; }
+  function minutes() { var pl = minPlan(); return (P.minutes && pl.opts.indexOf(P.minutes) >= 0) ? P.minutes : pl.rec; }
   function setMinutes(m) { P.minutes = m; savePref(); delete S.today; save(); }
   function name() { return P.name || ""; }
   function setName(v) { P.name = String(v || "").trim().slice(0, 12); savePref(); }
@@ -428,7 +430,7 @@
     today: today, markToday: markToday, streak: streak, todayCount: todayCount, tier: tier, tierOn: tierOn, setTierOn: setTierOn, days: days, SEC_PER: SEC_PER,
     placementSet: placementSet, setPlacement: setPlacement, placement: function () { return S.place || null; },
     track: track, setTrack: setTrack, exam: exam, setExam: setExam, subs: subs, cur: cur, setCur: setCur, seriesName: seriesName, goal: goal, goalSet: goalSet, goalMark: goalMark, setGoal: setGoal, dday: dday,
-    minutes: minutes, setMinutes: setMinutes, name: name, setName: setName,
+    minutes: minutes, setMinutes: setMinutes, minPlan: minPlan, name: name, setName: setName,
     onboarded: onboarded, setOnboarded: setOnboarded,
     skin: skin, setSkin: setSkin, SKINS: SKINS,
     mountNav: mountNav, mountNext: mountNext,

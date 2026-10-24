@@ -7,7 +7,7 @@
 <link rel="icon" href="icons/favicon.svg">
 <link rel="manifest" href="manifest.webmanifest">
 <script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
-<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/app.css?v=1024a">
 <style>
   .wrapx{max-width:1360px;margin:0 auto;padding:18px var(--s3) var(--s6)}
   h1,h2,.pk-title{font-family:var(--title);font-weight:var(--tw);letter-spacing:var(--tls)}
@@ -58,6 +58,8 @@
      height:auto made the circular orbit taller than the board or left gaps on the sides (measured 2026-08-31). */
   .board svg{display:block;width:100%;height:clamp(430px,50vw,690px)}
   @media(max-width:760px){.board svg{height:clamp(460px,120vw,760px)}}
+  /* Phones: hide the second line on the board (pages, practice, mastery) — the list below and the sheet show the same numbers */
+  @media(max-width:760px){.board .lbl2{display:none}}
   .node{cursor:pointer}
   .node:focus-visible{outline:none}
   .nb{transform-box:fill-box;transform-origin:center;
@@ -76,7 +78,7 @@
   .peek.on{opacity:1;transform:none}
   .peek[hidden]{display:none}
   .pk-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
-  .pk-eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--stage-ink-2)}
+  .pk-eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--stage-ink-2)}
   .pk-tier{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--stage);
     padding:3px 10px;border-radius:6px;letter-spacing:.06em}
   .pk-title{font-size:20px;color:var(--stage-ink);margin:9px 0 0;line-height:1.3}
@@ -86,11 +88,11 @@
   .pk-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
   .pk-stats b{display:block;font-family:var(--mono);font-size:20px;font-weight:600;
     color:var(--stage-ink);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-  .pk-stats span{font-size:11.5px;color:var(--stage-ink-2)}
+  .pk-stats span{font-size:12px;color:var(--stage-ink-2)}
   .pk-keys{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
   .pk-key{font-size:12.5px;padding:4px 10px;border-radius:7px;background:var(--surface-2);
     color:var(--ink-2);border:1px solid var(--line-2)}
-  .pk-foot{margin-top:11px;font-size:11.5px;color:var(--stage-ink-2);font-family:var(--mono)}
+  .pk-foot{margin-top:11px;font-size:12px;color:var(--stage-ink-2);font-family:var(--mono)}
 
   /* node sheet */
   .sheet{position:fixed;inset:0;z-index:90;display:flex;align-items:center;
@@ -107,7 +109,7 @@
   .sheet.on .sheetcard{opacity:1;transform:none}
   .sh-top{position:sticky;top:0;z-index:2;background:var(--surface);padding:22px 26px 16px;
     border-bottom:1px solid var(--line)}
-  .sh-eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:var(--ink-4)}
+  .sh-eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--ink-4)}
   .sh-top h3{font-size:25px;margin:8px 0 0;letter-spacing:-.04em;
     font-family:var(--title);font-weight:var(--tw)}
   .sh-x{position:absolute;right:18px;top:18px;width:34px;height:34px;border-radius:50%;
@@ -115,7 +117,7 @@
     cursor:pointer;font-size:15px;line-height:1;transition:.16s}
   .sh-x:hover{color:var(--ink);border-color:var(--line-3)}
   .sh-facts{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}
-  .fact{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);border:1px solid var(--line);
+  .fact{font-family:var(--mono);font-size:12px;color:var(--ink-3);border:1px solid var(--line);
     background:var(--surface-2);padding:5px 10px;border-radius:7px}
   .fact b{color:var(--ink);font-weight:600}
   .sh-body{padding:18px 26px 26px}
@@ -127,7 +129,7 @@
     border:1px solid var(--line);color:var(--ink-2)}
   .qprev{border:1px solid var(--line);border-radius:var(--r1);background:var(--surface-2);
     padding:13px 15px;margin-bottom:8px;font-size:14px;line-height:1.65;color:var(--ink-2)}
-  .qprev .m{font-family:var(--mono);font-size:11.5px;color:var(--ink-4);display:flex;gap:9px;
+  .qprev .m{font-family:var(--mono);font-size:12px;color:var(--ink-4);display:flex;gap:9px;
     flex-wrap:wrap;margin-top:7px}
   .qprev .m .ox{font-weight:700}
   .qprev .m .ox.o{color:var(--mint)} .qprev .m .ox.x{color:var(--red-2)}
@@ -150,7 +152,7 @@
     border-bottom:1px solid var(--line);background:var(--surface-2)}
   .grp .gh .cd{font-family:var(--mono);font-size:13px;font-weight:700}
   .grp .gh h3{font-size:16px;flex:1;min-width:0}
-  .grp .gh .n{font-family:var(--mono);font-size:11.5px;color:var(--ink-4)}
+  .grp .gh .n{font-family:var(--mono);font-size:12px;color:var(--ink-4)}
   .mrow{display:flex;align-items:center;gap:11px;padding:13px 16px;cursor:pointer;
     border-bottom:1px solid var(--line);background:var(--surface)}
   .mrow:last-child{border-bottom:0}
@@ -219,10 +221,10 @@
 </div>
 
 <script src="js/brand.js"></script>
-<script src="js/catalog.js"></script>
+<script src="js/catalog.js?v=1024a"></script>
 <script src="data/ready.js"></script>
 <script src="js/boot.js"></script>
-<script src="js/store.js"></script>
+<script src="js/store.js?v=1024a"></script>
 <script>
 (function(){
   var T=GB.T, esc=GB.esc;
@@ -321,6 +323,13 @@
     if(w/h < want){ var nw=h*want; x-=(nw-w)/2; w=nw; }
     else{ var nh=w/want; y-=(nh-h)/2; h=nh; }
     svg.setAttribute("viewBox",[x.toFixed(0),y.toFixed(0),w.toFixed(0),h.toFixed(0)].join(" "));
+    /* Shrinking the whole board on phones took text down to 5px (measured 2026-10-21) — scale it so on-screen text stays at 12px or more */
+    var sc=box.width? box.width/w : 1;
+    svg.querySelectorAll("text").forEach(function(t){
+      if(!t.dataset.f0) t.dataset.f0=t.getAttribute("font-size")||"";
+      var f0=parseFloat(t.dataset.f0); if(!f0) return;
+      t.setAttribute("font-size", f0*sc<12 ? (12/sc).toFixed(1) : f0);
+    });
   }
   /* dark circle + outline + fill rising from the bottom */
   function orb(parent,x,y,r,col,pct,opt){
@@ -478,7 +487,7 @@
       var l2=txt(lg,ps.vol+" pages · "+ps.n+" practice items · "+ps.achieve+"% mastery",
         {x:x+ca*off,y:up?y0:y0+L.fSub+5,"text-anchor":anc,fill:SINK2,
          "font-size":L.fSub+1,"font-weight":600,"font-family":cv("--kr")});
-      [l1,l2].forEach(function(e){ e.classList.add("lbl"); });
+      [l1,l2].forEach(function(e){ e.classList.add("lbl"); }); l2.classList.add("lbl2");
       function open(){ if(!busy) goPart(p.no,x,y); }
       var hold=null, ring=null;
       liven(gp,[l1,l2],function(){
@@ -533,7 +542,7 @@
       var l2=txt(lg,c.nodes.length+" topics · "+st.vol+" pages · "+st.achieve+"%",
         {x:x+ca*off,y:up?y0:y0+L.fSub+4,"text-anchor":anc,fill:SINK2,
          "font-size":L.fSub,"font-weight":600,"font-family":cv("--kr")});
-      [l1,l2].forEach(function(e){ e.classList.add("lbl"); });
+      [l1,l2].forEach(function(e){ e.classList.add("lbl"); }); l2.classList.add("lbl2");
       liven(gp,[l1,l2],function(){ chPeek(c,gp); },hidePeek);
       function open(){ if(!busy) goCh(c.key,x,y); }
       gp.addEventListener("click",open);
@@ -584,7 +593,7 @@
       var l2=txt(lg,n.vol+" pages · "+n.q+" practice items"+(lock?"":" · "+st.achieve+"%"),
         {x:x+ca*off,y:up?y0:y0+L.fSub+4,"text-anchor":anc,fill:SINK2,
          "font-size":L.fSub,"font-weight":600,"font-family":cv("--kr")});
-      [l1,l2].forEach(function(e){ e.classList.add("lbl"); });
+      [l1,l2].forEach(function(e){ e.classList.add("lbl"); }); l2.classList.add("lbl2");
       liven(gp,[l1,l2],function(){ nodePeek(n,gp); },hidePeek);
       function open(){ openSheet(n); }
       gp.addEventListener("click",open);

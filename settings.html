@@ -7,7 +7,7 @@
 <link rel="icon" href="icons/favicon.svg">
 <link rel="manifest" href="manifest.webmanifest">
 <script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
-<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/app.css?v=1024a">
 <style>
   /* settings collapse into groups — no long scroll-and-skim page */
   .hd{padding:26px 0 8px}
@@ -54,10 +54,10 @@
   </div></details>
 </div>
 <script src="js/brand.js"></script>
-<script src="js/catalog.js"></script>
+<script src="js/catalog.js?v=1024a"></script>
 <script src="data/ready.js"></script>
 <script src="js/boot.js"></script>
-<script src="js/store.js"></script>
+<script src="js/store.js?v=1024a"></script>
 <script>
 (function () {
   "use strict";
@@ -79,7 +79,7 @@
   $("trk").onclick = function () { location.href = "start.html?step=exam"; };
   drawGoal();
   $("goal").onchange = function () { if (this.value) { GB.setGoal(this.value, true); drawGoal(); } };
-  seg($("min"), [10, 15, 20, 30].map(function (m) { return { v: m, n: m + " min" }; }), GB.minutes(), function (v) { GB.setMinutes(+v); });
+  seg($("min"), GB.minPlan().opts.map(function (m) { return { v: m, n: m + " min" }; }), GB.minutes(), function (v) { GB.setMinutes(+v); });
   $("nm").value = GB.name();
   $("nm").onchange = function () { GB.setName(this.value); };
   seg($("tier"), [{ v: "1", n: "Show" }, { v: "0", n: "Hide" }], GB.tierOn() ? "1" : "0", function (v) { GB.setTierOn(v === "1"); });
