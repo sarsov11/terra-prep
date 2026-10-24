@@ -34,7 +34,8 @@
       mins: { opts: [30, 60, 90, 120], rec: 60, note: "Candidates who passed report 110 to 140 hours over 4 to 8 weeks, about 2.5 hours on weeknights and 5 hours on weekend days. Pick how much of that goes to practice here." } },
     { id: "cfa1", name: "CFA Level I", sub: "Computer-based testing available year-round — enter your own test date on the Settings screen.",
       date: null, series: [
-        { id: "ethics", name: "Ethics", subs: ["cfa_l1_ethics"] } ] }
+        { id: "ethics", name: "Ethics", subs: ["cfa_l1_ethics"] } ],
+      mins: { opts: [30, 60, 90, 120], rec: 60, note: "Candidates who passed report about 300 hours over three to seven months: 1 hour on weekdays and 3 hours on weekend days, rising to 4 to 5 hours a day in the final month. Pick how much of that goes to practice here." } }
   ];
 
   function exam(id) { return EXAMS.filter(function (e) { return e.id === id; })[0] || null; }

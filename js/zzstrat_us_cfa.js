@@ -1,4 +1,4 @@
-/* Pass plan — CFA Level I (2026-10-21 revision, Terra Prep). Topic tiers = official 2026 topic weights. Ethics inner tiers = share of Standards in the Terra Prep Ethics bank. */
+/* Pass plan — CFA Level I (2026-10-21 revision, Terra Prep). Topic tiers = official 2026 topic weights. Ethics inner tiers = share of Standards in the Terra Prep Ethics bank. Revised 2026-10-25 from YouTube candidate transcripts. */
 ZZSTRAT.add({
   "id": "us_cfa",
   "이름": "CFA Level I",
@@ -72,7 +72,7 @@ ZZSTRAT.add({
       "역할": "전략",
       "목표": 26,
       "목표문항": "26 of 31",
-      "이유": "Weighted 15 to 20 percent, the single largest topic in 2026. Every question maps to one of seven Standards, and the guidance cases repeat in new wording. From 2027 the weight drops to 10 to 15 percent.",
+      "이유": "Weighted 15 to 20 percent, the single largest topic in 2026, and pure reading with no calculator. Passers leave it for last so the Standards are fresh on exam day. Instructors also say Ethics decides candidates who sit right at the line; CFA Institute has not confirmed this.",
       "지표": {
         "범위": "좁음"
       },
@@ -171,7 +171,7 @@ ZZSTRAT.add({
       "역할": "기본",
       "목표": 18,
       "목표문항": "18 of 22",
-      "이유": "Weighted 11 to 14 percent. Market structure, index construction and the dividend discount model are short calculations with fixed formulas.",
+      "이유": "Weighted 11 to 14 percent, and passers call it one of the easier topics to score on. Index construction and the dividend discount model are short calculations with fixed formulas.",
       "지표": {
         "범위": "보통"
       },
@@ -201,7 +201,7 @@ ZZSTRAT.add({
       "역할": "기본",
       "목표": 16,
       "목표문항": "16 of 22",
-      "이유": "Weighted 11 to 14 percent, and the most calculator-heavy topic. Bond pricing, yield measures and duration are worth learning cold; the credit and securitization detail is where time runs out.",
+      "이유": "Weighted 11 to 14 percent and one of the five topics passers rank hardest. It reuses the time value of money from Quant; bond pricing and duration are worth learning cold, while securitization detail is where time runs out.",
       "지표": {
         "범위": "넓음"
       },
@@ -291,7 +291,7 @@ ZZSTRAT.add({
       "역할": "방어",
       "목표": 10,
       "목표문항": "10 of 13",
-      "이유": "Weighted 6 to 9 percent in 2026, rising to 11 to 14 percent in 2027. Time value of money and basic statistics are must-gets; regression output interpretation is the slow part.",
+      "이유": "Weighted 6 to 9 percent in 2026, rising to 11 to 14 percent in 2027. Study it first: time value of money runs through Fixed Income, Equity and Corporate Issuers. The statistics half matters mainly for Portfolio Management.",
       "지표": {
         "범위": "넓음"
       },
@@ -351,7 +351,7 @@ ZZSTRAT.add({
       "역할": "기본",
       "목표": 10,
       "목표문항": "10 of 13",
-      "이유": "Weighted 6 to 9 percent. Cost of capital and working capital measures reuse FSA skills.",
+      "이유": "Weighted 6 to 9 percent, but passers count it among the easy marks with Equity and Alternatives. Cost of capital and working capital reuse FSA skills.",
       "지표": {
         "범위": "좁음"
       },
@@ -367,7 +367,7 @@ ZZSTRAT.add({
         "safe": "10 of 13"
       },
       "등급": {
-        "B": "Whole topic (weight 6 to 9 percent)"
+        "A": "Whole topic (weight 6 to 9 percent; passers count it among the easy marks)"
       },
       "조언선택": {
         "edge": "WACC and the cash conversion cycle.",
@@ -381,7 +381,7 @@ ZZSTRAT.add({
       "역할": "방어",
       "목표": 7,
       "목표문항": "7 of 11",
-      "이유": "Weighted 5 to 8 percent, the smallest topic. Payoff diagrams and forward pricing are enough to clear it; deeper valuation belongs to Level II.",
+      "이유": "Weighted 5 to 8 percent, the smallest topic, and passers say it slows people down. Payoff diagrams and forward pricing are enough to clear it; move on if it eats your time.",
       "지표": {
         "범위": "좁음"
       },
@@ -406,12 +406,35 @@ ZZSTRAT.add({
     }
   ],
   "순서": [
-    "Each session is 90 questions in about 135 minutes: 90 seconds a question. Answer every question on the first pass; there is no penalty for a wrong answer.",
-    "Flag any calculation still unsolved at two minutes and move on. The last 15 minutes of each session go to flagged items."
+    "Passers report about 300 hours, one as many as 400, over three to seven months: 1 hour on weekdays and 3 hours on weekend days, rising to 4 to 5 hours a day in the final month. Mocks go in the last four to eight weeks.",
+    "Each session is 90 questions in about 135 minutes, 90 seconds a question. Strike out what you can, flag anything still open, and move on; come back once 60 to 70 percent of the session is done. There is no penalty for a wrong answer, so leave nothing blank."
   ],
   "출처": [
     "CFA Institute, Level I exam (topic weights)",
     "CFA Institute, candidate examination results 1963 to 2026",
-    "300hours, CFA passing score estimates (unofficial)"
+    "300hours, CFA passing score estimates (unofficial)",
+    "YouTube candidate videos (4 transcripts read, 3 of them from speech-to-text)"
+  ],
+  "근거영상": [
+    {
+      "url": "https://www.youtube.com/watch?v=VKVN5LQlU8c",
+      "누구": "Haaris Zamir, CFA (90th percentile)",
+      "요지": "Fixed Income, FSA, Portfolio Management, Quant and Derivatives are the hardest; Equity, Alternatives and Corporate Issuers are easy marks. Start with Quant for time value of money, end with Economics and Ethics. 90 seconds a question: strike out, flag, move on"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DhXMBF2b5go",
+      "누구": "Brandon Hill (95th percentile, cleared 70% in all 10 topics)",
+      "요지": "About 400 hours over 6 months: 1-2 h a day early, 2-3 h from three months out, 4-5 h a day in the final month. 3,000 Kaplan questions and one mock a week in the last month"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ek0D6tn3sNU",
+      "누구": "JM Invest (90th percentile)",
+      "요지": "Six to seven months at 1 hour each weekday and 3 hours each weekend day. Mocks from 7-8 weeks out; with a curriculum this broad, one or two mocks prove little"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=trWCvWqWUJg",
+      "누구": "Sarah Sivan (passed first attempt)",
+      "요지": "300 hours is the rule of thumb; give Level I at least three months. Learn the BA II Plus functions cold, since there are about 90 seconds per question. CFA Institute mocks match the real difficulty"
+    }
   ]
 });
