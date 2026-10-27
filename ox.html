@@ -8,6 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <script>try{document.documentElement.dataset.skin=localStorage.getItem("te.skin")||"white"}catch(e){document.documentElement.dataset.skin="white"}</script>
 <link rel="stylesheet" href="css/app.css?v=1025a">
+<link rel="stylesheet" href="css/diagram.css?v=1026a">
 <style>
   .hd{display:flex;align-items:center;gap:10px;padding:18px 0 0}
   .hd h1{font-size:20px;flex:1;min-width:0}
@@ -19,6 +20,8 @@
   .readhd h2{font-size:18px;flex:1}
   .empty{padding:48px 8px;text-align:center;color:var(--ink-3)}
   .spd{font-size:40px;font-weight:900;text-align:center;letter-spacing:-.05em}
+  .yodo-src{margin-top:16px}
+  .yodo-src summary{cursor:pointer;font-weight:800;font-size:14.5px;color:var(--ink-3);padding:8px 0}
 </style>
 </head>
 <body class="focus">
@@ -34,6 +37,7 @@
 <script src="js/boot.js"></script>
 <script src="js/judge.js"></script>
 <script src="js/store.js?v=1025a"></script>
+<script src="js/diagram.js?v=1026a"></script>
 <script>
 (function () {
   "use strict";
@@ -267,12 +271,20 @@
 
   /* ── read the true sentences — shows the true statements for this topic, collected ── */
   function showRead(no, back) {
+    /* concept diagrams (2026-10-26): if data/dosik/<subject>.js exists, show diagrams first and fold the source sentences */
+    var dkey = (window.TREE && TREE.key) || "";
+    if (dkey && window.DIAGRAM && !(window.DOSIK && DOSIK[dkey]) && !showRead.dsLoaded) {
+      showRead.dsLoaded = 1;
+      var dsc = document.createElement("script"); dsc.src = "data/dosik/" + dkey + ".js";
+      dsc.onload = dsc.onerror = function () { showRead(no, back); }; document.head.appendChild(dsc); return;
+    }
+    var dsHtml = (function () { var D = window.DOSIK && DOSIK[dkey]; if (!D) return ""; var nd0 = GB.node(no); var b = D[String(no)] || D["#" + no] || (nd0 && D[nd0.name]); return b ? '<div class="yodo">' + b.map(DIAGRAM.html).join("") + "</div>" : ""; })();
     var nd = GB.node(no);
     var os = GB.qs(no).filter(function (q) { return q.ox === "O"; })
       .sort(function (a, b) { return (b.y || 0) - (a.y || 0); }).slice(0, 12);
     var h = '<div class="readhd"><h2>' + esc(nd.name) + " — true statements</h2></div>" +
       '<p class="muted" style="margin:4px 0 0;font-size:14.5px">Only sentences the exam tested as true, newest first.</p>' +
-      '<div class="readlist">' + os.map(function (q) { return "<p>" + esc(q.t) + "<small>" + esc(GB.src(q)) + "</small></p>"; }).join("") + "</div>" +
+      (dsHtml ? dsHtml + '<details class="yodo-src"><summary>True statements (' + os.length + ')</summary>' : "") + '<div class="readlist">' + os.map(function (q) { return "<p>" + esc(q.t) + "<small>" + esc(GB.src(q)) + "</small></p>"; }).join("") + "</div>" + (dsHtml ? "</details>" : "") +
       '<div class="acts">' + (back ? '<button class="btn" id="nx">Keep solving</button>'
                                    : '<a class="btn" href="ox.html?node=' + no + '">Solve this topic’s True/False</a>') + "</div>";
     $("stage").innerHTML = h;
