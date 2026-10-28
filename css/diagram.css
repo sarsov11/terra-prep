@@ -89,3 +89,14 @@
   .dg-cwrap{display:none}
   .dg-clist{display:block;margin:0;padding-left:20px}
 }
+
+/* 1028 tidy: bulleted lines, 2-col tables as row cards */
+.dg{word-break:keep-all}
+.dg-ln{display:block;position:relative;padding-left:12px;margin:2px 0}
+.dg-ln::before{content:"";position:absolute;left:1px;top:.68em;width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.45}
+.dg-core .dg-ln,.dg-root .dg-ln{text-align:left}
+.dg-rl{display:flex;flex-direction:column;gap:7px}
+.dg-rl .dg-t{margin-bottom:2px}
+.dg-ri{border:1px solid var(--dg-line);border-left:4px solid var(--dg-key);border-radius:10px;background:var(--surface,#fff);padding:9px 12px}
+.dg-rn{font-weight:900;font-size:15px;margin-bottom:3px}
+.dg-rv{font-size:14.5px;line-height:1.55}

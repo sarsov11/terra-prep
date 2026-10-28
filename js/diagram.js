@@ -2,7 +2,7 @@
 (function(){
   function esc(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
   function b(t){ if(window.DIAGRAM&&window.DIAGRAM.k3_) return window.DIAGRAM.k3_(String(t==null?"":t)).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>"); return esc(t).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>"); }
-  function k10_(t){ return b(t).split(" · ").join("<br>"); }
+  function k10_(t){ var z=b(t).split(" · "); return z.length>1 ? z.map(function(l){ return '<span class="dg-ln">'+l+'</span>'; }).join("") : z[0]; }
   function k9_(t){ return t ? '<div class="dg-t">'+b(t).split(" · ").join(", ")+'</div>' : ""; }
   function k5_(xs){ return (xs&&xs.length) ? '<ul>'+xs.map(function(x){ return '<li>'+b(x)+'</li>'; }).join("")+'</ul>' : ""; }
   function k6_(t){ return String(t||"").replace(/\*\*/g,""); }
@@ -73,6 +73,9 @@
         '<ul class="dg-marks">'+m.map(function(k,n){ return '<li><span class="dg-mn">'+(n+1)+'</span><b>'+b(k.name)+'</b>'+(k.text?'<span>'+b(k.text)+'</span>':'')+'</li>'; }).join("")+'</ul></div>';
     },
     table: function(x){
+      var n2=(x.head&&x.head.length)||((x.rows||[])[0]||[]).length;
+      if(n2===2) return '<div class="dg dg-rl">'+k9_(x.title)+(x.rows||[]).map(function(r){
+          return '<div class="dg-ri"><div class="dg-rn">'+b(r[0])+'</div><div class="dg-rv">'+k10_(r[1])+'</div></div>'; }).join("")+'</div>';
       return '<div class="dg dg-table">'+k9_(x.title)+'<div class="dg-tw"><table>'+
         ((x.head&&x.head.length)?'<thead><tr>'+x.head.map(function(h){ return '<th>'+k10_(h)+'</th>'; }).join("")+'</tr></thead>':'')+
         '<tbody>'+(x.rows||[]).map(function(r){ return '<tr>'+r.map(function(c,n){ return (n===0&&x.head&&x.head.length?'<th>':'<td>')+k10_(c)+(n===0&&x.head&&x.head.length?'</th>':'</td>'); }).join("")+'</tr>'; }).join("")+'</tbody></table></div></div>';
