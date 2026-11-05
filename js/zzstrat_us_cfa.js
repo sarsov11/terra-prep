@@ -4,16 +4,17 @@ ZZSTRAT.add({
   "이름": "CFA Level I",
   "기준": "2026 topic weights",
   "방식": "상대",
-  "한줄": "The estimated pass line has sat near 69 percent for the last several windows. Ethics, FSA, Equity and Fixed Income are 97 of the 180 questions, and that is where either target is won.",
+  "한줄": "Level I is won in four topics: Ethics, FSA, Equity and Fixed Income.",
   "이야기": [
-    "Level I is **180** three-option questions in two sessions, with no penalty for a wrong answer.",
-    "The pass line is not published. Outside estimates put it near **69%**, about **125** questions.",
-    "Ethics, FSA, Equity and Fixed Income are **97** of the 180 questions. Either target is won there.",
-    "Fixed Income, FSA, Portfolio Management, Quant and Derivatives are the topics passers rank hardest.",
-    "Equity, Alternatives and Corporate Issuers are the easy marks. Take every one of them.",
-    "Start with Quant for time value of money. Finish with Economics and Ethics, which are memorization.",
-    "You get about **90 seconds** a question. Strike out, flag, move on, and leave nothing blank.",
-    "Passers report about **300 hours** over three to seven months."
+    "Four topics carry over half of Level I.",
+    "Ethics, FSA, Equity and Fixed Income: **97** of 180 questions.",
+    "The pass line is never published.",
+    "Outside estimates put it near **70%**.",
+    "Equity, Alternatives and Corporate Issuers are the easy marks.",
+    "Start with Quant. Time value of money runs through everything.",
+    "Leave Ethics for last. It is reading, not math.",
+    "About **90 seconds** a question. Flag, move on, never leave a blank.",
+    "Passers report around **300 hours**."
   ],
   "합격선": {
     "설명": "180 three-option questions in two sessions of 90, about 135 minutes each, with no penalty for wrong answers. CFA Institute sets a minimum passing score for each window and does not publish it; your score report only shows where it fell. There is no per-topic minimum.",
@@ -51,7 +52,7 @@ ZZSTRAT.add({
       "id": "edge",
       "이름": "Just clear the line",
       "목표": 128,
-      "설명": "Three above the highest recent estimated pass line (125). Learn the S and A topics fully, skim the B topics, guess on Derivatives.",
+      "설명": "Learn the four big topics and the easy marks in full, skim Quant and Economics, and guess on Derivatives.",
       "범위": {
         "S": "전부",
         "A": "전부",
@@ -64,7 +65,7 @@ ZZSTRAT.add({
       "id": "safe",
       "이름": "Clear with room",
       "목표": 140,
-      "설명": "Fifteen above the highest recent estimate, 78 percent. Every topic gets full study except the deeper parts of Derivatives.",
+      "설명": "Study every topic in full, except the deepest parts of Derivatives.",
       "범위": {
         "S": "전부",
         "A": "전부",

@@ -4,16 +4,16 @@ ZZSTRAT.add({
   "이름": "US CPA — REG",
   "기준": "2026 blueprint",
   "방식": "절대",
-  "한줄": "A 75 is not 75 percent. You need about two thirds of the weighted points, and over half of them sit in two Areas: individual and entity tax.",
+  "한줄": "Win REG in the two tax Areas; hold the line in Business Law.",
   "이야기": [
-    "REG is scored 0 to 99 and **75** passes. There is no curve and no minimum per Area.",
-    "A 75 is not 75 percent. Tutors put it near **two thirds** of the weighted points; that figure is unofficial.",
-    "Individuals and Entities are over **60%** of the exam, so most of your hours go there.",
-    "Business Law and Ethics are recall. Two passers who failed once say Business Law is what cost them.",
-    "Inflation-adjusted amounts are printed in the question. Learn how each rule works, not the numbers.",
-    "Mocks grade harder than the real exam: candidates at **58–69%** on mocks passed with **78–81**.",
-    "Simulations are half the score. Cap any one at **25–30 minutes** and reach every simulation.",
-    "Passers report **110–140 hours** over 4 to 8 weeks."
+    "Most REG points sit in two Areas: individual and entity tax.",
+    "Together they are over **60%** of the exam.",
+    "A 75 is a scaled score, not 75 percent correct.",
+    "Tutors put the line near **two thirds** of the points.",
+    "Two retakers say Business Law is what cost them.",
+    "Dollar limits are printed in the question. Learn the rule, not the number.",
+    "Simulations carry **half** the score. Give each about 30 minutes.",
+    "Passers report **110–140** hours."
   ],
   "합격선": {
     "설명": "Each section is scored 0 to 99 and 75 passes. There is no curve: AICPA converts your weighted raw performance to the scale, with multiple choice and task-based simulations each worth half of REG. You pass three Core sections (AUD, FAR, REG) plus one Discipline (BAR, ISC or TCP), each a separate 4-hour exam.",
@@ -43,7 +43,7 @@ ZZSTRAT.add({
       "id": "edge",
       "이름": "Just clear the line",
       "목표": 68,
-      "설명": "Three points above the commonly estimated two-thirds line. Study Individuals and Entities hard, give Business Law one pass with its multiple choice, and guess on the rest.",
+      "설명": "Study individual and entity tax hard, give Business Law one full pass, and guess on what is left.",
       "범위": {
         "S": "전부",
         "A": "전부",
@@ -56,7 +56,7 @@ ZZSTRAT.add({
       "id": "safe",
       "이름": "Clear with room",
       "목표": 78,
-      "설명": "Thirteen points above the estimated line. Cover B content in every Area, practise simulations on top of multiple choice, and skim the short C items.",
+      "설명": "Add the B topics in every Area and practise simulations, not just multiple choice.",
       "범위": {
         "S": "전부",
         "A": "전부",
