@@ -358,8 +358,8 @@
     $("stage").innerHTML = '<div class="done">' +
       (n ? '<div class="big num">' + ok + " / " + n + "</div>" : '<div class="big">Done</div>') +
       '<p class="muted">' + (todayDone ? "You’ve finished today’s work." : "You’ve finished this set.") + "</p>" +
-      '<div class="grid3"><div><b class="num">' + ok + "</b><span>Correct</span></div><div><b class=\"num\" style=\"color:var(--warn)\">" + mis +
-      '</b><span>Confident but wrong</span></div><div><b class="num">' + GB.streak() + "</b><span>Day streak</span></div></div>" +
+      '<div class="grid3" style="grid-template-columns:repeat(2,1fr)"><div><b class="num">' + ok + "</b><span>Correct</span></div><div><b class=\"num\" style=\"color:var(--warn)\">" + mis +
+      '</b><span>Confident but wrong</span></div></div>' +
       '<div class="acts" style="margin-top:22px"><a class="btn ghost" href="index.html">Home</a>' +
       (mis ? '<a class="btn" href="ox.html?mode=hard">Hard True/False</a>' : '<a class="btn" href="ox.html?mode=wrong">Retry missed sentences</a>') + "</div></div>";
   }
