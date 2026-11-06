@@ -270,6 +270,13 @@
   }
 
   /* ── read the true sentences — shows the true statements for this topic, collected ── */
+  /* 11-06 read-first step in today's list; not counted as correct */
+  var readNow = null;
+  function showLearn(s) { if (!GB.node(s.n)) { readDone(); return; } readNow = s; showRead(s.n, true); }
+  function readDone() {
+    if (readNow) { readNow = null; if (mode === "today") GB.markToday(todayIdx[pos]); }
+    next();
+  }
   function showRead(no, back) {
     /* concept diagrams (2026-10-26): if data/dosik/<subject>.js exists, show diagrams first and fold the source sentences */
     var dkey = (window.TREE && TREE.key) || "";
@@ -282,13 +289,13 @@
     var nd = GB.node(no);
     var os = GB.qs(no).filter(function (q) { return q.ox === "O"; })
       .sort(function (a, b) { return (b.y || 0) - (a.y || 0); }).slice(0, 12);
-    var h = '<div class="readhd"><h2>' + esc(nd.name) + " — true statements</h2></div>" +
+    var h = '<div class="readhd">' + (readNow ? '<span class="chip">Read first</span>' : "") + '<h2>' + esc(nd.name) + " — true statements</h2></div>" +
       '<p class="muted" style="margin:4px 0 0;font-size:14.5px">Only sentences the exam tested as true, newest first.</p>' +
       (dsHtml ? dsHtml + '<details class="yodo-src"><summary>True statements (' + os.length + ')</summary>' : "") + '<div class="readlist">' + os.map(function (q) { return "<p>" + esc(q.t) + "<small>" + esc(GB.src(q)) + "</small></p>"; }).join("") + "</div>" + (dsHtml ? "</details>" : "") +
       '<div class="acts">' + (back ? '<button class="btn" id="nx">Keep solving</button>'
                                    : '<a class="btn" href="ox.html?node=' + no + '">Solve this topic’s True/False</a>') + "</div>";
     $("stage").innerHTML = h;
-    if (back) $("nx").onclick = next;
+    if (back) $("nx").onclick = readDone;
     window.scrollTo(0, 0);
   }
 
@@ -338,7 +345,7 @@
     drawProg();
     if (pos >= seq.length) return finish();
     var s = seq[pos];
-    if (s.k === "pair") showPair(s); else showOX(s);
+    if (s.k === "pair") showPair(s); else if (s.k === "learn") showLearn(s); else showOX(s);
     window.scrollTo(0, 0);
   }
 

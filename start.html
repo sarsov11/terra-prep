@@ -58,7 +58,7 @@
   "use strict";
   var $ = function (id) { return document.getElementById(id); }, esc = GB.esc;
   var LIMIT = 15000;     /* time limit per placement-test sentence — 15s (multi-choice items run longer than a plain 10s True/False) */
-  var STEPS = ["intro", "exam", "series", "subs", "name", "date", "min", "check", "done"];
+  var STEPS = ["intro", "exam", "series", "subs", "name", "date", "min", "how", "check", "done"];
   /* Once subjects are chosen, the placement check runs on the first ready subject among them —
      if that's not the subject currently loaded, reopen start.html on that subject. */
   var startStep = new URLSearchParams(location.search).get("step");
@@ -72,7 +72,7 @@
 
   var SCREENS = {
     intro: function () {
-      $("scr").innerHTML = '<h1>Solve True/False<br>with practice questions</h1>' +
+      $("scr").innerHTML = '<h1>Read the key points,<br>then check with practice questions</h1>' +
         '<p class="lead">Just the time you set, once a day. We pick today’s work for you.</p>' +
         '<div class="body"></div><div class="foot"><button class="btn block" id="n">Get started</button></div>';
       $("n").onclick = nextStep;
@@ -151,6 +151,16 @@
         b.onclick = function () { GB.setMinutes(+b.dataset.v); b.setAttribute("aria-pressed", "true"); setTimeout(nextStep, 120); };
       });
     },
+    how: function () {
+      /* 11-06: concepts first — the quick check only runs if the student picks it */
+      $("scr").innerHTML = "<h1>How do you want to start?</h1>" +
+        '<div class="body"><div class="opts" id="op">' +
+        '<button type="button" id="hc"><span>Start with the concepts<br><small>Read today\'s key points, then move on to questions</small></span></button>' +
+        '<button type="button" id="hd"><span>Start with a quick check<br><small>Find your weak topics with true/false statements</small></span></button>' +
+        "</div></div>";
+      $("hc").onclick = function () { GB.setOnboarded(); location.href = "index.html"; };
+      $("hd").onclick = nextStep;
+    },
     check: function () {
       var mine = GB.subs().filter(function (k) { return CATALOG.ready(k); });
       if (mine.length && mine.indexOf(GB.cur()) < 0) { location.replace("start.html?s=" + mine[0] + "&step=check"); return; }
@@ -222,7 +232,7 @@
   go(startStep && STEPS.indexOf(startStep) >= 0 ? STEPS.indexOf(startStep) : 0);
 })();
 </script>
-<script src="js/zzsfx.js?v=1009a" defer></script><script src="js/zzajan.js?v=1009a" defer></script>
+
 <script src="js/terrahome.js?v=1021h" data-slot=".wrap" defer></script>
 </body>
 </html>

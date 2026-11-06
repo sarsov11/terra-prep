@@ -83,7 +83,7 @@
 
   var t = GB.today(), nm = GB.name();
   var newN = t.seq.filter(function (s) { return s.k === "ox" && !s.re; }).length;
-  var prN = t.seq.filter(function (s) { return s.k === "pair"; }).length;
+  var prN = t.seq.filter(function (s) { return s.k === "pair"; }).length, lrN = t.seq.filter(function (s) { return s.k === "learn"; }).length;
   var foci = t.foci.slice(0, 3).map(function (n) { return n.name; });
   var h;
   if (t.finished) {
@@ -94,6 +94,7 @@
         '<p class="t">About ' + t.min + " min · " + t.total + " sentences</p>" +
         "<ul>" +
         (t.re ? "<li><b class=\"num\">" + t.re + "</b><span>Review — missed items, or ones due for another look</span></li>" : "") +
+        (lrN ? "<li><b class=\"num\">" + lrN + " topics</b><span>Read first — key points and true statements</span></li>" : "") +
         "<li><b class=\"num\">" + newN + "</b><span>New — " + esc(foci.join(" · ")) + "</span></li>" +
         (prN ? "<li><b class=\"num\">" + prN + "</b><span>Pick the true statement</span></li>" : "") +
         "</ul>" +

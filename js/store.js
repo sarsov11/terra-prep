@@ -250,12 +250,24 @@
     foci.forEach(function (n) { pairs(n.no).forEach(function (p) { if (!S.pairs[p.id] && ps.length < 2) ps.push(p.id); }); });
     if (ps.length < 2) PR.forEach(function (p) { if (!S.pairs[p.id] && ps.length < 2 && ps.indexOf(p.id) < 0) ps.push(p.id); });
     /* order — review first, pairs interleaved between new sentences */
-    var seq = due.map(function (id) { return { k: "ox", id: id, re: 1 }; });
-    fresh.forEach(function (id, i) {
-      seq.push({ k: "ox", id: id });
-      if (ps.length && (i === Math.floor(fresh.length / 3) || i === Math.floor(fresh.length * 2 / 3))) seq.push({ k: "pair", id: ps.shift() });
+    /* 11-06 read first: for each focus topic [read -> new statements], pairs in between, reviews last. Topics with nothing to read get no read step */
+    var byNode = {}, base = [];
+    fresh.forEach(function (id) { var no = ITEM[id].n; (byNode[no] = byNode[no] || []).push(id); });
+    foci.forEach(function (n) {
+      if (qs(n.no).some(function (q) { return q.ox === "O"; })) base.push({ k: "learn", n: n.no });
+      (byNode[n.no] || []).forEach(function (id) { base.push({ k: "ox", id: id }); });
+      delete byNode[n.no];
+    });
+    Object.keys(byNode).forEach(function (no) { byNode[no].forEach(function (id) { base.push({ k: "ox", id: id }); }); });
+    var seq = [], solved = 0;
+    base.forEach(function (x) {
+      seq.push(x);
+      if (x.k !== "ox") return;
+      if (ps.length && (solved === Math.floor(fresh.length / 3) || solved === Math.floor(fresh.length * 2 / 3))) seq.push({ k: "pair", id: ps.shift() });
+      solved++;
     });
     ps.forEach(function (id) { seq.push({ k: "pair", id: id }); });
+    due.forEach(function (id) { seq.push({ k: "ox", id: id, re: 1 }); });
     S.today = { date: TODAY, min: minutes(), seq: seq, foci: foci.map(function (n) { return n.no; }), pos: 0 };
     save();
     return decorate(S.today);
